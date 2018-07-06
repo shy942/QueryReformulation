@@ -1,0 +1,3 @@
+63293,org.eclipse.ui.IWorkbench.java,0,0.0
+70503,org.eclipse.ui.commands.ActionHandler.java,3,0.0
+70503,org.eclipse.ui.actions.RetargetAction.java,8,0.0

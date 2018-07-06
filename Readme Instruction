@@ -1,0 +1,25 @@
+On Aug 31, 2016
+Now you can work on BugLocalizationTechnique2.java
+Run BugLocalizationTechnique2.java
+Here you will find training set started with 100 bugs, then querying one new bug. 
+The idea is each time new bug is using for query and then in the next time this query bug is added to
+the training set and the next bug is going to be the next query. 
+All bugs are arranged according to their issue time.
+
+Lets talk about input
+1. In the main function you will see bugFileforMap = "./data/BugCorpus/BugsForMap.txt", this is the text file that
+contains all bug report contents using for creating keyword-source code mapping database.
+2. gitInfoFile = "./data/GitInfoFile2.txt", this file is generated from git database that holding all fixed bug IDs' 
+associate with their change sets.
+3. srcCodeDir = "./data/ExampleSourceCodeFilesSortedContents", in this folder all preprocessed source code files 
+are located.
+
+You will also need some other files in order to run this java code.
+1. Go to function PrePareData(int n) in BugLocalizationTechnique2.java
+2. StaticData.BUGDIR+"/BugReportsTitleAndDescription/ProcessedData/", under ProcessedData folder all processed bugs 
+are kept individually, having Bug ID as file name. I gonna describe next how to create this data.
+3. "./data/BugCorpus/allBug.txt", where all bug ID's arranged according to their occuring time. I am going to upload 
+this file on github.
+4. "./data/BugCorpus/BugsForAdjac.txt","./data/BugCorpus/BugsForMap.txt", these two files will be created each time
+a bug is quired. 
+5. Final result will be save in "./data/Results/itrResult"+n+".txt"

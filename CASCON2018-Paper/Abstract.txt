@@ -1,0 +1,7 @@
+Bug localization is one of the most challending tasks undertaken by the developers during software maintenance.
+Existing studies mostly rely on lexical similarity between the bug reports and source code for bug localization.
+However, such similarity always does not exist, and these studies suffer from vocabulary mismatch issues.
+In this paper, we propose a bug localization technique that (1) not only uses lexical similarity between bug report and source code documents  
+but also (2) exploits the co-occurrences between keywords from the past reports and source tokens from corresponding changed code. 
+Experiments using a collection of ~6000 bug reports show that our technique performs significantly higher in terms of Hit@K and MAP 
+than two IR-based bug localization techniques using TF-IDF and LDA.  
