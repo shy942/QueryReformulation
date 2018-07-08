@@ -41,7 +41,7 @@ public class CalculateLocalizationPerformance {
 		obj.TrueSetResults=obj.RetrieveTrueSetsType2("./data/gitInfoNew.txt");
 		//MiscUtility.showResult(10, TrueSetResults);
 		
-		obj.ActualResultSets=RetrieveFinalSets("./data/Results/June21-100-1000_NoAlpha.txt");	
+		obj.ActualResultSets=RetrieveFinalSets("./data/Results/June21-200-300_NoAlpha.txt"); 	
 	
 		
 		int top_n=5;
@@ -171,7 +171,14 @@ public class CalculateLocalizationPerformance {
 	        		}
 	        		if(AP>0)AP_sum+=AP/Double.valueOf(indexBugRank);
 	        		
-	        		if(found==1) total_found+=1;
+	        		if(found==1) 
+	        		{
+	        			total_found+=1;
+	        		}
+	        		else
+	        		{
+	        			finalRankedResult.add(bugIDfromRetActualResultSets+","+"N/A"+","+"-1"+","+0.0);
+	        		}
 	        	}
 	        }
 	        

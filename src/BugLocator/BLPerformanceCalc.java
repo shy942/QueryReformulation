@@ -207,8 +207,8 @@ public class BLPerformanceCalc {
 		// TODO Auto-generated method stub
 		
 		int TOPK = 10;
-		String fileName="./data/buglocator/eclipseoutput.txt";
-		//String fileName="./data/Results/100-1000-rankedResult.txt";
+		//String fileName="./data/buglocator/eclipseoutput.txt";
+		String fileName="./data/Results/100-1000-rankedResult.txt";
 		BLPerformanceCalc bcalc = new BLPerformanceCalc(fileName, TOPK);
 		double topk = bcalc.getTopKAcc();
 		System.out.println("Top-K: " + topk);
