@@ -1,1 +1,0 @@
-74609.txt: dragging views docking view undocked maximized workbench window hard move don dock great press modifier key shift ctrl dragging view docking disabled maximed workbench window intended problem reproducible issue user undocked view workbench overlap

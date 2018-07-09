@@ -1,1 +1,0 @@
-481318.txt: update abstract plugin methods removal org eclipse core runtime compatibility org eclipse core runtime compatibility removed update javadoc logic public abstract plugin plugin descriptor descriptor startup shutdown bug

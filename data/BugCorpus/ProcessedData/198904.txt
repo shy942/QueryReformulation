@@ -1,1 +1,0 @@
-198904.txt: data binding listeners swt observables removed dispose created attachment additional test cases test method test dipose correctly cleans listeners build steps reproduce apply patch test cases dispose methods tests fail null pointer exception listeners fire events bindings disposed realm null throws

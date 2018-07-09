@@ -1,1 +1,0 @@
-130915.txt: progress button completed task cancel task tooltip progress view completed sync job showing gray button tooltip read cancel task expecting remove task remove completed task

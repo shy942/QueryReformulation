@@ -1,1 +1,0 @@
-487661.txt: revert core runtime requires javax annotation bug initially created clone bug bug workaround bug required

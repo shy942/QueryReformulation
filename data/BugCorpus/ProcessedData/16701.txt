@@ -1,1 +1,0 @@
-16701.txt: import export table selection element high eclipse open java perspective load project org eclipse swt select file control java popup menu packages view select export choose file system tab click control java selected

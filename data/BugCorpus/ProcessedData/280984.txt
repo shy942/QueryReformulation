@@ -1,1 +1,0 @@
-280984.txt: commands org eclipse commands extension point tells user implement subclass created attachment commands schema patch schema reads class subclass org eclipse core commands class provide subclass suggestion automatically

@@ -1,1 +1,0 @@
-71025.txt: perspective bar add drag drop support ordering perspective items order items perspective bar bar occasionally change order ensuring perspectives remain visible

@@ -1,1 +1,0 @@
-267326.txt: common navigator common viewer swallows exception create tree item yum javadoc org eclipse jface viewers abstract tree viewer create tree item org eclipse swt widgets widget java lang object int protected void create tree item widget parent final object element int super create tree item parent element catch exception print stack trace catch error print stack trace

@@ -1,1 +1,0 @@
-152055.txt: common navigator viewer redrawn configured common navigator create control number filters sorter input configured common viewer class leads unnecessary refresh events correct redrawing control disabled configuration completed

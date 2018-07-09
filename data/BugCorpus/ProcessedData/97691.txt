@@ -1,1 +1,0 @@
-97691.txt: perspectives customize perspective dialog mnemonics customize perspective dialog mnemonics cycle tab key

@@ -1,1 +1,0 @@
-32358.txt: key bindings emacs keybindings close current editor opposed current setting reported search didn turn

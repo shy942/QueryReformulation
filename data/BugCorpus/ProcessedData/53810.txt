@@ -1,1 +1,0 @@
-53810.txt: workbench hard coded font spews warnings platforms view pane font hard coded font exist bunch warnings spewed console org eclipse internal view pane create title bar view pane java status set font font status display arial

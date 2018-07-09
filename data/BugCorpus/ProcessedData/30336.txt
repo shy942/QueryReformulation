@@ -1,1 +1,0 @@
-30336.txt: working sets canceling working set remove restore list build select working set navigator working set list open working set selection dialog remove selected working set cancel selection dialog working set longer working set list navigator view menu working set selection dialog restore complete list dialog cancelled

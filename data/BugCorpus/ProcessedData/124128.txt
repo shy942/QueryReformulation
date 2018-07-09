@@ -1,1 +1,0 @@
-124128.txt: common navigator internal navigator package names don follow conventions build eclipse project naming conventions http dev eclipse org naming html java packages internal packages word internal component ensures internal packages don packages org eclipse navigator internal packages don follow convention org eclipse internal navigator

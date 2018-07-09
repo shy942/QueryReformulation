@@ -1,1 +1,0 @@
-42003.txt: dialogs dialog resize buttons dialog font change dialog font larger type observe details buttons sized correctly

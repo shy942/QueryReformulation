@@ -1,1 +1,0 @@
-413538.txt: tooltips reliably truncated view titles backport bug initially created clone bug downloaded eclipse switched resource perspective shrank project explorer outline pane view titles truncated hovered title tooltip outline eclipse tooltip

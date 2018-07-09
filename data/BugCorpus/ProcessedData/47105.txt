@@ -1,1 +1,0 @@
-47105.txt: viewers remove listeners fail build encountering error bug bug double click search view longer functions subsequent search close view perspectives window reopen work viewer removing listener error viewer fire selection changed overly conservative preferable error reoccur logged completely remove listener

@@ -1,1 +1,0 @@
-202208.txt: view mgmt standalone view resize implementing size provider created attachment view implementing size provider build create standalone view size constraints resize constraints change view resize created standalone size provider methods called view created calling fire property change workbench constants methods reevaluated bug info

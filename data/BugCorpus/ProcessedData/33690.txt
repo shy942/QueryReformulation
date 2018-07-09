@@ -1,1 +1,0 @@
-33690.txt: text fonts courier courier replace references courier courier font properties files

@@ -1,1 +1,0 @@
-355763.txt: provide tag prohibits stack collapse empty cleanup addon removes stack contents views additional informations sense application fakes perspective shared editor area making sense collapse stack bug view stack dureable bug fixed view stack restored restart add support stacks collapse empty compat layer support durable

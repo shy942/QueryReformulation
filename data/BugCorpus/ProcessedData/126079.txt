@@ -1,1 +1,0 @@
-126079.txt: commands request add commands open resource path parameter attach patch adds commands org eclipse ide open file resource resource navigator view single optional parameter indicating path resource open existing commands actions existing selection parameters unsure org eclipse ide org eclipse workbench java package organization revise patch

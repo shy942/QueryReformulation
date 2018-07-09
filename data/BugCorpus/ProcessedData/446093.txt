@@ -1,1 +1,0 @@
-446093.txt: view registery fills descriptor category incorrectly view registery set descriptor org eclipse secondary navigation stack org eclipse primary navigation stack org eclipse secondary data stack incorrect category view extension brian pointed https git eclipse org bundles org eclipse workbench eclipse org eclipse internal dialogs view content provider java

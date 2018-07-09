@@ -1,1 +1,0 @@
-381886.txt: debugger keybindings frequently require pressing eclipse debug perspective keybindings don work press key work click stack frame key work debugging painful

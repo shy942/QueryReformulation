@@ -1,1 +1,0 @@
-89992.txt: org eclipse bindings extension point key binding element deprecated org eclipse commands extension point favor org eclipse bindings extension point adapt entry extension point

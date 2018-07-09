@@ -1,1 +1,0 @@
-278871.txt: doc update customize perspective image action sets doc platform plug developer guide programmer guide plugging workbench basic workbench extension points actions org eclipse action sets outdated image customize perspective org eclipse platform doc isv guide images actionsets png

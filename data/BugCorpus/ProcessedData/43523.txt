@@ -1,1 +1,0 @@
-43523.txt: adapter editor status class working multipage editor find replace dialog source plug editor observe status written dialog workbench window status

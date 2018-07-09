@@ -1,1 +1,0 @@
-52830.txt: key bindings pasted text wrong editor build java editors open selected text menu copy command ctrl work reposition cursor editor hit ctrl paste work closer inspection editor find text inserted marking major ctrl work correctly potential data corruption issues pasting text random

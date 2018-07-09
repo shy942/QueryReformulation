@@ -1,1 +1,0 @@
-54150.txt: editor mgmt list opened files close click filename tabs find clicking filename tab openned files file thought open isn recorrent behaviour clicking filename expecting list disapears redrawn hide behaviour list openned files closes click filename

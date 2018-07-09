@@ -1,1 +1,0 @@
-51735.txt: blocked warning dialog improvements based discussion cold camp feb improvements blocked jobs dialog delayed seconds consensus time message clear user interface performing action waiting block held blocking job cancel blocking button renamed cancel lock jobs buttons cancel blocking operation cancel job job core status consensus

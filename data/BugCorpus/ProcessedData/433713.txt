@@ -1,1 +1,0 @@
-433713.txt: close presentation bugs presentation removed close presentation bugs https bugs eclipse org bugs buglist cgi bug status bug status bug status classification eclipse component email lars vogel gmail emailtype exact list product platform query format advanced short desc presentation short desc type allwordssubstr

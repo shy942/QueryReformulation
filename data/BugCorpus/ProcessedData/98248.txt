@@ -1,1 +1,0 @@
-98248.txt: viewers set selection fails select loaded elements virtual table calling set selection table viewers set select elements testcase bug opening issue billy request

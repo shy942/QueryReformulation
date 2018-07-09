@@ -1,1 +1,0 @@
-470720.txt: handle leak dnd manager dnd manager small handle leak org eclipse swt graphics region instance disposed review https git eclipse org solve issue tobias

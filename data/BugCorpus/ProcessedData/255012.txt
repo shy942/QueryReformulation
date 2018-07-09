@@ -1,1 +1,0 @@
-255012.txt: preferences preference dialog handle save called apply click preference store saved expected click apply cancel store saved add subclasses choice save preference needed handle save org eclipse jface preference preference dialog cancel pressed setting return code

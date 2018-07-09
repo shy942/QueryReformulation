@@ -71,7 +71,7 @@ public class BugReportKeywordPointerMaker {
 		}
 		String outputFile = "./data/bug-keyword-pointer/Bug-ID-Keyword-ID-Mapping.txt";
 		ContentWriter.writeContent(outputFile, bugSrcList);
-		System.out.println("Done!"); 
+		System.out.println("Done!");  
 	}
 
 	public static void main(String[] args) {

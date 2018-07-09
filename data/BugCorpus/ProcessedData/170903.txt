@@ -1,1 +1,0 @@
-170903.txt: implement generic animation engine image animations existing animation engine generically implement animations

@@ -1,1 +1,0 @@
-52901.txt: editor mgmt click editor tabs flashing clicking editor tabs tab popup menu opens window flashes

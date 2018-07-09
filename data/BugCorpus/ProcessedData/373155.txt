@@ -1,1 +1,0 @@
-373155.txt: content assist content assist fails dialogs wizards content assist appears stopped working wizards dialogs invoking content assist superclass java class wizard space inserted bringing standard content assist wizards functionality exhibiting problem

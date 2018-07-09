@@ -1,1 +1,0 @@
-294778.txt: face util replace wrong javadoc wrongly introduced follow bug change org eclipse dialogs search pattern assumes org eclipse jface util util replace string replace textual replace regular expressions search pattern trim wildcard characters string rewritten manual loop replace sequences javadoc util replace explicitly support regular expressions contrast string replace

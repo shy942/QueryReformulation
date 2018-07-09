@@ -1,1 +1,0 @@
-184818.txt: data binding typo view model set text string method firing change event test text public void set text string text string text text text fire property change test text changed text

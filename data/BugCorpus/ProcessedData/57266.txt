@@ -1,1 +1,0 @@
-57266.txt: workbench workspace prompt follow platform conventions directory path build eclipse data workspace prompt showing somedir workspace windows somedir workspace directory chooser choose directory appears backslashes trailing slash initial

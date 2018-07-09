@@ -1,1 +1,0 @@
-147848.txt: dialogs context menu copy error dialog ignores details follow bug error dialog verify context menu dialog click details verify context menu detail area context menu copy paste text editor pasted text message dialog detail strange menu details

@@ -1,1 +1,0 @@
-143784.txt: doc update platform isv doc info commands patches update doc

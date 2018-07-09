@@ -1,1 +1,0 @@
-52018.txt: switching focus views slow post transferring focus package explorer outline instantanious slow power book post takes seconds severly hampers usability power book reason view toolbar windows deactivate activate workspace window side severe visual flashing scrollbars turn gray blue

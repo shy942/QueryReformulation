@@ -1,1 +1,0 @@
-32096.txt: key bindings shift keybindings parsed noticed command shift displayed close menu item macintosh command close displayed correctly dump keybindings key combination including shift define binding including shift don beleive worked correctly

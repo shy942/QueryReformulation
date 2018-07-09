@@ -1,1 +1,0 @@
-177150.txt: presentation closing minimized editor restoring build bug editor properly minimized observed attempting close pseudo minimized editor restored previous opposed closing

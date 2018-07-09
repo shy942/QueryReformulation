@@ -1,1 +1,0 @@
-168012.txt: tabbed properties incomplete doc org eclipse views properties tabbed property tabs ext point image indented attributes documented org eclipse views properties tabbed property tabs extension point add description

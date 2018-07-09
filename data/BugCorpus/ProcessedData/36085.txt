@@ -1,1 +1,0 @@
-36085.txt: typo editor action bar contributor javadoc build class javadoc relationship editor contributor defined code org eclipse editorss code extension point plugin registry extension editor class contributor class defined extra extension point

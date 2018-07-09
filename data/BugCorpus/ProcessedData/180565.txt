@@ -1,1 +1,0 @@
-180565.txt: status handling stacktrace details text area build steps reproduce launch platform program argument dir rtl open perspective error status view observe details text area formatted content standard java stacktrace displayed easier readability

@@ -1,1 +1,0 @@
-138021.txt: preferences themes appearance cumulative fixes bug bug bug alignment left radio perspective switcher positions restore defaults disable groups radios unchecked override presentation settings disable groups

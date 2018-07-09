@@ -1,1 +1,0 @@
-223362.txt: global actions regression window working sets wrong location menu window working sets window working set action group item window menu items correct navigation working sets preferences problem separator navigation preferences removed close bug fixed

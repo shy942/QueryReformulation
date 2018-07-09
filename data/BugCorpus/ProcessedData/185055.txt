@@ -1,1 +1,0 @@
-185055.txt: key bindings preference remove delete button schema preference delete button schema combo click guess removed add behavior rename delete add delete dialog add possibilities create schemas restore default schemas

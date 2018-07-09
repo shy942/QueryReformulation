@@ -1,1 +1,0 @@
-167181.txt: fast views ctrl doesn unzoom ctrl toggle zoom accelerator properly zoom won unzoom

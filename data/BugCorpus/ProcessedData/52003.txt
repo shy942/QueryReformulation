@@ -1,1 +1,0 @@
-52003.txt: preferences main workbench pref mnemonic previous dialog open mnemonic

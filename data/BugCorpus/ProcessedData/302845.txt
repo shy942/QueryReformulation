@@ -1,1 +1,0 @@
-302845.txt: editor mgmt changing sort order switch editor lose selection build identifier switch editor select change sort order clicking column heading selection lost reproducible steps reproduce open couple files editor open switch editor ctrl shift default select editors ctrl clicking click column heading change sort order table selection lost

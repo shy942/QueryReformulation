@@ -1,1 +1,0 @@
-65851.txt: decorators schema kind java object class attribute build decorators extension point schema specifies string kind object class attribute java editors provide browse button picking class

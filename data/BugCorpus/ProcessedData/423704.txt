@@ -1,1 +1,0 @@
-423704.txt: update classic theme default color font definitions bug ready update stylesheets proper theme element definitions connect color font preference dialog decided update classic stylesheets feedback

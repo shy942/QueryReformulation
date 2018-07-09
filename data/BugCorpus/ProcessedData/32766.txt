@@ -1,1 +1,0 @@
-32766.txt: preferences map font original setting build open preference workbench fonts select debug console text change select java editor change click apply map java editor original setting note restore defaults change fonts default setting desired behaviour

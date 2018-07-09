@@ -1,1 +1,0 @@
-66776.txt: workbench provide menu item float dock views provide menu item change view floating view menu item dock eclipse window float view dragging eclipse window window maximized isn floated move eclipse window docking impossible float view borders eclipse window eclipse window maximized limiting

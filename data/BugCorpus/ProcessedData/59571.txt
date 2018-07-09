@@ -1,1 +1,0 @@
-59571.txt: editor presentation disposed properly insert breakpoint system println org eclipse internal presentations editor presentationl dispose open eclipse open editors drag editor create editor workbooks stack editors notice dispose method called workbook destroyed resposible leaking command handlers bug

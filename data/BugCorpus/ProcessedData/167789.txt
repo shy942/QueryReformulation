@@ -1,1 +1,0 @@
-167789.txt: data binding colors changing snippet color label provider colors don change person add property change listener property change listener package level public order property change listener registered data binding check change released

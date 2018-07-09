@@ -1,1 +1,0 @@
-62108.txt: contexts context updating takes text editor opening time updating contexts takes time open text editor appears places activation callback shell takes time workbench context support process enabled submissions mouse activation set active control shell calls workbench context support process enabled submissions removed callbacks optimized processing save bit time

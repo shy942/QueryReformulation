@@ -1,1 +1,0 @@
-139407.txt: data binding test master detail updating changing person running org eclipse jface examples databinding src org eclipse jface examples databinding nestedselection test master detail editing person master table isn updated reason person object isn notifying listeners

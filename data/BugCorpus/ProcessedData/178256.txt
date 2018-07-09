@@ -1,1 +1,0 @@
-178256.txt: dialogs filtered items selection dialog delay progress info typing open type open resource progress label updated user sees flickering progress info read delayed test case add java projects version ctrl shift enter array delete chars retype flickering progress label upper corner didn happen open type dialog implementation

@@ -1,1 +1,0 @@
-168506.txt: detached view detached history view created blank window build steps reproduce detached history view view history selected file server pserver authentication canceled input password blank detached window history view don reproducable rid blank window blank window closed reapears restarting eclipse open history view works expected mandrake linux java version

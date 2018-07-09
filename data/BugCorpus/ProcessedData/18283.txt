@@ -1,1 +1,0 @@
-18283.txt: global actions auto build recreates deleted projects refreshing create project delete disk file explorer select project navigator activate refresh observe error dialog project description file press observe project recreated disk nick copy code refresh action refresh external jars bug problem adapt code

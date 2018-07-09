@@ -1,1 +1,0 @@
-427843.txt: linux opening form editor issue linux tested luna steps reproduce form editor configures header pom xml mylyn task editor boss tools central instance error log https issues jboss org browse form heading widget painted configuring issue doesn happen plug manifest editor attached patch

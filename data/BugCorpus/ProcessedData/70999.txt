@@ -1,1 +1,0 @@
-70999.txt: activity mgmt saving activity preferences shutdown serialize activity manager workbench shutdown writing preferences activity set shutdown change activity set capabilities export preferences exported closely bug

@@ -1,1 +1,0 @@
-171522.txt: key bindings ctrl break appended lable menu workbench startup create sample plugin template add shortcut key ctrl break menu action label sample action amp ctrl break icon icons sample gif class test key actions sample action tooltip eclipse menubar path sample menu sample group toolbar path sample group test key actions sample action action startup

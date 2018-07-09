@@ -1,1 +1,0 @@
-26217.txt: preferences auto build preference enable don enable auto build preference development workspace open preference dialog check auto build option click reopen dialog preference unchecked open eclipse workspace works fine reunning build existing workspace

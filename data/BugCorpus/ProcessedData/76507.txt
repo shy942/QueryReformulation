@@ -1,1 +1,0 @@
-76507.txt: encoding properties dialog properties dialog file byte order mark encoding file determined contents test case check properties files file true

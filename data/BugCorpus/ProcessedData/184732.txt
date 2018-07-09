@@ -1,1 +1,0 @@
-184732.txt: key bindings enable preferences version stabilized bug fixed remove preference rename matured lost functionality

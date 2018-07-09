@@ -1,1 +1,0 @@
-60171.txt: japanese translation bug templates preferences translation word export incorrectly displaying import steps recreate main panel click window preferences expand java editor click templates side click import button title bar import correct attachment click cancel click templates list click export button title bar import export attachment

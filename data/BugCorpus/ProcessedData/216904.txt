@@ -1,1 +1,0 @@
-216904.txt: markers configure contents dialog missing mnemonics punctuation follow bug open problems view open view menu open configure contents list labeled configurations column mnemonics size button select small

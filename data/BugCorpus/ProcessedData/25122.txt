@@ -1,1 +1,0 @@
-25122.txt: dialog populate version info plugin xml currentley ini reads properties file feature primary plugin populate dialog version number contained properties exact copy version number contained plugin xml cut file edits version number change dialog populated version plugin xml

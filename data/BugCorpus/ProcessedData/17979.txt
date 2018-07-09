@@ -1,1 +1,0 @@
-17979.txt: cell editor action handler relies english accelerators cell editor action handler creates actions string definitions messages properties org eclipse accelerators definitions set english accelerators translated set explicitly issue handlers

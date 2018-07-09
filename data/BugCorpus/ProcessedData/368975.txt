@@ -1,1 +1,0 @@
-368975.txt: compatibility ctrl hidden views open editor drag view shared area close ctrl editor hidden view list

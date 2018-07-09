@@ -1,1 +1,0 @@
-88919.txt: key bindings registry preference update bindings steps add key binding preference ctrl shift alt command appears file export preferences export choose export key preferences remove key binding set file import preferences choose file exported finish preferences note key binding restart sugest listener preferences calculate bindings changed

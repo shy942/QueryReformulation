@@ -1,1 +1,0 @@
-68078.txt: problems view problems view sorting reuses mnemonics open problems view drop view triangle menu select sorting dialog alt mnemonic ascendings alt mnemonic descendings deselect restore defaults confusing middle radios focus user presses alt alt select radio restore dialog defaults selects radio row

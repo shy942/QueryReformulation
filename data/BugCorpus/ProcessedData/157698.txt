@@ -1,1 +1,0 @@
-157698.txt: common navigator java source directories starting dot visible project explorer view project explorer aka common navigator view filtering java source directories start dot resources filter enabled package explorer view handles correctly fixed service pack release platform major usability problem products dot prefix hide generated source directories user view

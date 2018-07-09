@@ -1,1 +1,0 @@
-46914.txt: menu mgmt eclipse hangs description menubar details reproduce window customize perspective select commands tab select left list search middle list doesn matter press description tooltip widget appears description eclipse react eclipse eclipse platform linux gtk zip eclipse zip linux debian sid

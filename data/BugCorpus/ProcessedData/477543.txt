@@ -1,1 +1,0 @@
-477543.txt: graphics delete unused gifs org eclipse

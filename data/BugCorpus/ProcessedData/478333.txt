@@ -1,1 +1,0 @@
-478333.txt: platform adapters adapter object adapter true adapter requests inconsistent adapter lookups common source bugs plugins helper utility requesting adapters adapters equinox eliminate code repetition created utilities ensure adapter lookups consistent strong reason specific case refactor adapter lookups utility

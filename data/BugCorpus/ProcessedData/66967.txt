@@ -1,1 +1,0 @@
-66967.txt: contributions property parser deprecated removed internal class org eclipse ide org eclipse internal ide model property parser deprecated people extension point org eclipse core runtime content types note tags deprecated remove deprecating

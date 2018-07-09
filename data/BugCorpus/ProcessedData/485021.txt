@@ -1,1 +1,0 @@
-485021.txt: properties view display properties selection scenario reproduce modeling bundle create project ecore resource opened properties view problems view opened front opened sample ecore model editor select tree item resource problems view empty select package switch properties view properties view display properties selection mars properties selection displayed

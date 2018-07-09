@@ -1,1 +1,0 @@
-35578.txt: key bindings keyboard shortcut previous editor assigned shortcut previous editor ctrl tab ctrl shift tab work expected ctrl ctrl shift brings list editors editor selected click tab shift tab key ctrl held select previous list effectively shift editor queue list editors default ctrl shift change ctrl tab ctrl key tab works fine case ctrl shift work

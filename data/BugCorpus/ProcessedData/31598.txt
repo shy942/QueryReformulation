@@ -1,1 +1,0 @@
-31598.txt: key bindings eclipse fails launch turkish locale win eclipse build stable build version build abstract launch eclipse turkish locale produce steps change regional options turkish launch eclipse expected result eclipse start execution result splash screen displayed freezes log file created comments problem occurs problem occur stable build

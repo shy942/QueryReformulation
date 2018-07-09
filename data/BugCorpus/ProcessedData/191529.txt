@@ -1,1 +1,0 @@
-191529.txt: doc user started screen shots needing updating org eclipse platform doc user started htm move dialog yellow required dest field navigator

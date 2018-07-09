@@ -1,1 +1,0 @@
-127658.txt: dialogs icon beween status buttons testing formatter configuration dialog icon middle button area left

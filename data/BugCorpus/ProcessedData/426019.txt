@@ -1,1 +1,0 @@
-426019.txt: key bindings ctrl browser widget dialog wrongly forwarded workbench window bug initially created clone bug cloning broken works fine reason bug open text editor open dialog button eclipse click click link click browser widget press ctrl keystroke wrongly processed workbench window find replace dialog opened workbench window dialog reproduced persisted javadoc hover

@@ -1,1 +1,0 @@
-220412.txt: update extension points identifier add support schema type identifier project nature images exsd resource filters exsd filesystem support exsd

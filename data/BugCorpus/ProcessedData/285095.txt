@@ -1,1 +1,0 @@
-285095.txt: viewers column scrolling breaks cell selection scrolled table build steps reproduce attached snippet scroll table click column item cell table scrolls left opens cell editor cell cursor scrolled left cell cursor clicked mouse tested win eclipse

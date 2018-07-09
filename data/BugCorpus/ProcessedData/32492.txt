@@ -1,1 +1,0 @@
-32492.txt: change containment adapter parameters nick suggested replacing include descendents include ancestors single flags argument addition dirk suggested changing names arguments check descendent checkif ancestor meaningful result boolean object containment context object element int flags int int change declared

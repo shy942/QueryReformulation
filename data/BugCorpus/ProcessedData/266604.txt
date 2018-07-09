@@ -1,1 +1,0 @@
-266604.txt: key bindings import key bindings work eclipse workspace export key bindings file export preferences eclipse workspace import key bindings file export preferences result key bindings imported eclipse eclipse binaries launched paths version idem workspace paths

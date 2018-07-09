@@ -1,1 +1,0 @@
-16762.txt: editor mgmt fast view editor activation inconvenience unit view fast view testsuite doubleclick test hierarchy stacktrace failure editor focused minimize unit view active editor focus expected behaviour

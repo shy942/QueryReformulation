@@ -1,1 +1,0 @@
-308339.txt: translation question build identifier file eclipse plugins org eclipse ide org eclipse internal ide messages properties sentence resource copied virtual folder virtual folder delete incorrect sentences reproducible

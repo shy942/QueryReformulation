@@ -1,1 +1,0 @@
-42763.txt: ctrl del shift arrow stopped working error attach picure

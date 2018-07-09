@@ -1,1 +1,0 @@
-62757.txt: progress busy cursor null shell busy cursor creates dialog shell create parent shell shell disposed waiting careful

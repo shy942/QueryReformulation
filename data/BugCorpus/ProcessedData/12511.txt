@@ -1,1 +1,0 @@
-12511.txt: workbench user prompted exiting eclipse closing workbench window exits eclipse warning user prompted closing window alt closing window shutdown startup easily minutes complete

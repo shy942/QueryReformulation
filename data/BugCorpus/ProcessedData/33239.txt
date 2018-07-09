@@ -1,1 +1,0 @@
-33239.txt: conflicts reported key binding preference build start fresh workspace windows workbench preference commands list select content assist observe conflict reported conflict clicking ctrl space side view entry undefined conflict assume caused kind entries org eclipse plugin xml accelerator locale key ctrl space accelerator

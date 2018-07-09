@@ -1,1 +1,0 @@
-27317.txt: editor mgmt navigation history drop blank items build opening navigating closing files noticed navigation history drop blank entries reproduce opening closing classes binary projects navigating source files

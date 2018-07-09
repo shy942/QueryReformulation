@@ -1,1 +1,0 @@
-55754.txt: size properly integration build observed solaris aix linux motif launch eclipse download workbench intro screen shut eclipse restart eclipse workbench intro screen editor fills width don attach solaris screen shot problem obvious swt problem assigning pde initial investigation

@@ -1,1 +1,0 @@
-206992.txt: data binding java bean observable fires change events change occurred current set java bean observable fire change event change occur

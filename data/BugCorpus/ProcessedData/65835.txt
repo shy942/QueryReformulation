@@ -1,1 +1,0 @@
-65835.txt: view mgmt regression view tabs open random order build window java perspective left view stack order hierarchy package explorer package explorer hierarchy bottom view stack order javadoc declaration problems problems javadoc declaration java perspective factory correct order note order reverse correct order view folder warped

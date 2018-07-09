@@ -1,1 +1,0 @@
-79123.txt: presentations wrong cursor positions switching editors ctrl pageup version steps reproduce open files texteditors multipageeditors place cursor middle text switch editor ctrl pageup switch editor started ctrl pagedown cursorposition changed pageup editor editorselection

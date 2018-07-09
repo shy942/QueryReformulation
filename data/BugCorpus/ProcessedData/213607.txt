@@ -1,1 +1,0 @@
-213607.txt: viewers column viewer incorrectly handles mouse click copy bug integrate head

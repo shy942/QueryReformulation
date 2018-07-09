@@ -1,1 +1,0 @@
-112216.txt: common navigator project explorer forces components dependency project explorer common navigator registered plug ins registered view subclass common navigator implemented common plug common plug additional functionality perform view registration basically clients common navigator depend client

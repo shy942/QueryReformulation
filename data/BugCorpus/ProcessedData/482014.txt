@@ -1,1 +1,0 @@
-482014.txt: face styled string implement char sequence accept char sequence internally check passed styled string

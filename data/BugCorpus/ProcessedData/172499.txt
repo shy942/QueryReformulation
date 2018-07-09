@@ -1,1 +1,0 @@
-172499.txt: resize status details tray automatically open details error dialog resizes long status details tray small move sash attach screen shots

@@ -1,1 +1,0 @@
-45761.txt: perspective menu bad null check thrown perspective shortcuts current perspectives perspective action ids field null patch forthcoming

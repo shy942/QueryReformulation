@@ -1,1 +1,0 @@
-27668.txt: editor mgmt flicker ctrl click close editor

@@ -1,1 +1,0 @@
-320160.txt: compatibility closing editor maximized editor area unmaximize editor area common sense dictates expected behaviour

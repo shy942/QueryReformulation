@@ -1,1 +1,0 @@
-71026.txt: drag drop lot objects created implementers drag listener drag control current control classes create dragdrop target time drag called unnecessary create update time reduce amount garbage created drag perspective switcher implementation classes fast view bar sash container stack perspective helper trim drop target lazily initialized case created

@@ -1,1 +1,0 @@
-61720.txt: valid properties trimmed org eclipse plugin properties trimmed good portion desc properties plugin properties file color font definitions places

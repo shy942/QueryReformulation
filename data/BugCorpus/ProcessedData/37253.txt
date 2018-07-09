@@ -1,1 +1,0 @@
-37253.txt: dialogs font text control input dialog set org eclipse jface dialogs input dialog create dialog area

@@ -1,1 +1,0 @@
-20567.txt: workbench public workbench images image descriptor extension plugin extension point plugin load image plugin workbench images image descriptor extension public

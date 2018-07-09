@@ -1,1 +1,0 @@
-69885.txt: fast view pane force view visible fastview opened fast view pane calls set visible true prevents presentation making decisions visibility

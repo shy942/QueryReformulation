@@ -1,1 +1,0 @@
-188674.txt: view mgmt bad layout views perspective build steps reproduce create perspective add views layout folder layout editor area ratio views fit layout unusable reported searched couldn find

@@ -1,1 +1,0 @@
-486741.txt: delete unused internal extension point proxy

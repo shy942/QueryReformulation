@@ -1,1 +1,0 @@
-461766.txt: cleanup adapter class org eclipse workbench cleanup ide bug observed org eclipse workbench love warnings change object adapter class adapter class org eclipse internal util util org eclipse workbench classes cleanup unnecessary cast warnings coming generified version platform adapter manager adapter

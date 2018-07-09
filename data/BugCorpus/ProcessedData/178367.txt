@@ -1,1 +1,0 @@
-178367.txt: min max stack selected tab handling correctly handle multi instance views processing selected tab view stack honoring secondary multi instance stacks correctly handled restoring stack showing view doesn view selected tab view pane fast view pane point

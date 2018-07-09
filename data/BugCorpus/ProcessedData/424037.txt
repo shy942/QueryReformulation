@@ -1,1 +1,0 @@
-424037.txt: add support active focus stack add support active focus stack org eclipse workbench org eclipse workbench color definitions classic themes

@@ -1,1 +1,0 @@
-67311.txt: view mgmt views docked standalone views steps reproduce modify browser plugin xml browser perspective fixed modify browser perspective factory create initial layout layout add standalone view browser app false layout layout launch browser history view drag history view top browser view

@@ -1,1 +1,0 @@
-174580.txt: progress progress user dialog resizeable build steps reproduce resizing worked doesn start task opens progress popup synchronizing project resize won work backgrounding start task opens progress popup doesn offer background button starting profile application task resize annoying open details entries background window annoying task takes minute blocks entire

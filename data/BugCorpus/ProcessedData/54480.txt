@@ -1,1 +1,0 @@
-54480.txt: font colour import export preferences dialog font reached window preferences export

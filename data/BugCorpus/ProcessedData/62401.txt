@@ -1,1 +1,0 @@
-62401.txt: actions reference cleaner thread action contribution item application exit standalone application exit display disposed call reference cleaner thread cleaning method simply set running field false reference reference queue remove blocking call system exit explicitlly terminate running java virtual machine bug env edition jdk eclipse win eric

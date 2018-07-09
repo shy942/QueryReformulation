@@ -1,1 +1,0 @@
-130182.txt: common navigator missing customize view dialog open filters dialog click button note appears

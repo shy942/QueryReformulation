@@ -1,1 +1,0 @@
-19229.txt: changing color scheme windows messes view colors build win switch windows color scheme started eclipse eclipse hangs colors examples background colors view icons close view gradient color title bar view display properties windows appearance set scheme maple open eclipse set scheme slate eclipse focus views notice views colors scheme

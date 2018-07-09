@@ -1,1 +1,0 @@
-166032.txt: aboutdialog wrap email adresses links current dialog class product info dialog scan method detect html addresses http prefix recognition text fine common exist email addresses hyperlinks open current standard email program reimplementing existing functionality dialog trivial propose extend product info dialog scan recognizes http email addresses notion type mailto

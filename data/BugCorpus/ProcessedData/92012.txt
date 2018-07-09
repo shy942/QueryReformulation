@@ -1,1 +1,0 @@
-92012.txt: detached view redundant activation switching perspective detached views code april reproducable build enable debug logging options org eclipse debug listeners listeners workbench listener create perspectives detached views switch notice activate event fired detached view perspective perspective switch performance problem activation slow

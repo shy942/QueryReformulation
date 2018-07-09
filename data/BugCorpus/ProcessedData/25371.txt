@@ -1,1 +1,0 @@
-25371.txt: key bindings paste text text field dialogs scenario open text editor eclipse copy text text editor file save paste text file field save file dialog paste text

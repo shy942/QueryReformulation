@@ -1,1 +1,0 @@
-472672.txt: generify org eclipse core databinding observable plugin extracted bug bug covers work needed add generics org eclipse core databinding observable plugin

@@ -1,1 +1,0 @@
-483180.txt: ole editor activate underlying object creating editor steps reproduce create project file open file place editor click view ole editor loses focus restart eclipse ole editor created underlying paint activated screenshots follow windows reproduce paint windows place editor paint work bug problem reproduced file type word continuation work started bug

@@ -1,1 +1,0 @@
-366501.txt: compatibility toolbar buttons editor expand selection project open diagram editor tutorial toolbar buttons undo redo copy paste alignment displayed small icons select graphiti sample project project explorer icons expand ugly

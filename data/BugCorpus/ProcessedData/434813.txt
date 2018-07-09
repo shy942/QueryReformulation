@@ -1,1 +1,0 @@
-434813.txt: deprecated org eclipse internal perspective switcher org eclipse internal perspective switcher org eclipse workbench addons perspectiveswitcher perspective switcher deprecated org eclipse internal perspective switcher

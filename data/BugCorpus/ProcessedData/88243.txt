@@ -1,1 +1,0 @@
-88243.txt: perspectives user prompted switch perspectives opening window invoking team synchronize popup message asks switch team perspective preferences set open perspectives workbench window perspective switched opened

@@ -1,1 +1,0 @@
-77740.txt: perspective bar perspective bar redraw properly item removed chevron build mac reproducible mac steps launch eclipse fresh workspace close intro open java perspective open debug perspective open java browsing perspective drag perspective bar left item remains chevron select perspective chevron perspective bar redraw properly attached screenshot

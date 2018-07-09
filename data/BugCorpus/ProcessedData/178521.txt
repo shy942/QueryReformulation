@@ -1,1 +1,0 @@
-178521.txt: min max restored view stack active minimize view stack click restore expect top view restored view stack active presentation

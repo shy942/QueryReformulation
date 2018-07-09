@@ -1,1 +1,0 @@
-335996.txt: dialogs tray dialog include tray saving size bug initially created clone bug broke save restore size feature tray dialogs brought bug add regression test

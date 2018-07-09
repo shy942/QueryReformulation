@@ -1,1 +1,0 @@
-137315.txt: dialogs doubleclickable area restore dialog size small responsive area restore original size eclipse dialogs bug typically pixels button problem tray dialog adds intermediate composite button bar dialog add restore size mouse listeners dive button bar add doubleclick listeners

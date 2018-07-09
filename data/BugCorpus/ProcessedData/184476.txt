@@ -1,1 +1,0 @@
-184476.txt: dialogs open resource dialog capitalization derived resources

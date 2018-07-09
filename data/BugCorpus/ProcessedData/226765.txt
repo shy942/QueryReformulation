@@ -1,1 +1,0 @@
-226765.txt: data binding refactor content providers prevent leaking internal content providers org eclipse jface databinding viewers extend abstract content provider classes org eclipse jface internal databinding viewers protected methods refactored avoid leaking internal

@@ -1,1 +1,0 @@
-130825.txt: properties error log invalid extension element build instances message start session org eclipse plugin org eclipse ide extension org eclipse property unknown extension tag enablement suspect work bug

@@ -1,1 +1,0 @@
-50636.txt: view highlights redraw properly view moved select view folder view drag tab active view dock notice highlight colours drawn incorrectly

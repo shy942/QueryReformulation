@@ -1,1 +1,0 @@
-62997.txt: workbench perspectives toolbar forgets size build resize perspectives toolbar perspective icons arrows eclipse startup toolbar reset smaller size icons hidden chevron arrows

@@ -1,1 +1,0 @@
-60202.txt: commands command callback leaking registered text listeners command callback class stored instance var external action manager leaking action text listeners register listeners removed remove action text listener method call

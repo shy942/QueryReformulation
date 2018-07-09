@@ -1,1 +1,0 @@
-171151.txt: workbench launcher eclipse launcher fails exit linux exit eclipse happen core dumps glibc detected double free corruption fasttop processing dump event abort detail wait requesting system dump users pwebster core dmp eclipse launcher doesn exit killed

@@ -1,1 +1,0 @@
-36886.txt: editor mgmt resource leak working large amount files supect eclipse gtk version motif version leaks resources free working large amount files server consumes memory free eclipse software running investigations running redhat xfree sun jdk runtime eclipse development jdk

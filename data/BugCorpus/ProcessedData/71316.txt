@@ -1,1 +1,0 @@
-71316.txt: fast view restore animation incorrect target https bugs eclipse org bugs bug cgi steps reproduce drag view detached window drag view newly created stack drag fast view bar seperately time restore animation window correctly move top left window number additional views stack animate properly

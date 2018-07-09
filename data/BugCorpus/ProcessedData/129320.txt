@@ -1,1 +1,0 @@
-129320.txt: move external project create project workspace foo bar select project resource navigator choose file move add character project error message file system defined scheme problem initial path foo bar invalid error message human readable path invalid

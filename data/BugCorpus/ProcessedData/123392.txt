@@ -1,1 +1,0 @@
-123392.txt: popup dialog quick outline stays opening view menu bug initially created clone bug quick outline mouse click black triangle view menu click editor area expected outline disappears outline stays top deactivated original bug fixed popup dialog working linux linux motif

@@ -1,1 +1,0 @@
-227327.txt: labels editor selection dialog select file package explorer invoke open dialog choose editor opening java single quotes java internal editors internal editors external programs external programs sentence style capitalization

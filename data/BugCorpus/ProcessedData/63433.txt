@@ -1,1 +1,0 @@
-63433.txt: progress dialogs poor message project deletion delete project workspace operation running dialog titled progress opened dialog useless operation progress deleting resources deleting project

@@ -1,1 +1,0 @@
-476133.txt: update org eclipse jface examples databinding java order desired diamond operator patch https git eclipse org update java java handle diamond operator anonymous classes

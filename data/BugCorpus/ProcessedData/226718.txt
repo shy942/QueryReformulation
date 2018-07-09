@@ -1,1 +1,0 @@
-226718.txt: perspective bar problem perspective switcher bar hide open button persective switcher seperated ini file eclipse path launch eclipse eclipse exe clean plugincustomization custom defaults ini custom defaults ini file org eclipse false launch eclipse error box appairs perspective bar service error log attachment eclipse

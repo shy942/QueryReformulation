@@ -1,1 +1,0 @@
-236668.txt: databinding snippet complex master detail case master detail type combo box radio buttons range text based selection details text boxes representing range text base represent text based selection combo box

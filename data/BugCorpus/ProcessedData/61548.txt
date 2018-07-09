@@ -1,1 +1,0 @@
-61548.txt: view mgmt sticky view declaration optional attributes closable moveable attach patch handles optional closeable attribute moveable attribute sticky views

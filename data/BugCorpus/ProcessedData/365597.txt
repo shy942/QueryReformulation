@@ -1,1 +1,0 @@
-365597.txt: view pane closing closed close view editor view pane sticks painting problem minimize restore window disappears consistently reproducible today

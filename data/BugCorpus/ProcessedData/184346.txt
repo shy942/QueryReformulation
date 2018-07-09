@@ -1,1 +1,0 @@
-184346.txt: viewers double click activation working linux gtk snippet enabling editor double click problem whenm editor activated focus lost event produced putting focus tree table work activating editor display async exec appending patch

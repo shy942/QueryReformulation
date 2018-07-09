@@ -1,1 +1,0 @@
-10629.txt: invisible eclipse window workspace metadata org eclipse workbench xml window values set memory eclipse window temporarily focus result window remains hidden task bar restarting manually changing values reasonable fixes problem

@@ -1,1 +1,0 @@
-87403.txt: commands key bindings parameters convert perspective commands parameterized command perspective commands converted parameterized format

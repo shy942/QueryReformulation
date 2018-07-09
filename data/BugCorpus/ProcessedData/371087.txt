@@ -1,1 +1,0 @@
-371087.txt: store memento current persist allowed save implementing view save pre destroy lifecycle good moment widgets disposed saving application element persisted suggestion add persist annotation call contributed renderer dispose widget work bit save called workbench shutdown bugged

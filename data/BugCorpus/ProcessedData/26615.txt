@@ -1,1 +1,0 @@
-26615.txt: key bindings problems ctrl emacs bindings upgraded renamed directory installed environment data set work ctrl default keybinding configuration emacs opened dialog default behavior eclipse quick enter default binding ctrl remove working didn customization key mappings upgraded reproduce quick

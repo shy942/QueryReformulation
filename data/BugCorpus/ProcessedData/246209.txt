@@ -1,1 +1,0 @@
-246209.txt: viewers open strategy post selection delay hinders automated testing build steps reproduce initialize handler method runs fire post selection event automated tests fail thread sleep arrow key pressed cumbersome member public set testing good idea kind global flag display turn optimizations hostile event driven testing

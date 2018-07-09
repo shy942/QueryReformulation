@@ -1,1 +1,0 @@
-31046.txt: cycle editors showing scroll bars build open editors press dialog scrol bars computes size extra space scrol bars works fine machine

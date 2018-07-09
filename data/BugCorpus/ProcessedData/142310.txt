@@ -1,1 +1,0 @@
-142310.txt: doc editors preference doc org eclipse platform doc user reference htm text file encoding text file delimiter preferences moved workbench doc org eclipse platform doc user reference htm

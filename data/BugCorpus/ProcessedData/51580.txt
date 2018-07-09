@@ -1,1 +1,0 @@
-51580.txt: views ability resize views programmatically ability resize view perspective programmatically

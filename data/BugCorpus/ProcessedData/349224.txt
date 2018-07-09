@@ -1,1 +1,0 @@
-349224.txt: common navigator navigator content provider appears creates hard reference named bug bug appears attribute navigator content extension point dependency referenced content provider workspace soft dependency runtime expect referenced component attribute dev time surely warning error

@@ -1,1 +1,0 @@
-147448.txt: viewers tree viewer holds filters disposed tree viewer filters add filter viewer filter method filters classes declared classes editor class closing editor tree disposed filters removed list tree viewer memory leak entire editor object memory call remove filter unload time tree widget disposed remove filter calls refresh check disposed

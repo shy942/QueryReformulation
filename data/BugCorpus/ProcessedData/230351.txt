@@ -1,1 +1,0 @@
-230351.txt: status handling details area doesn fit dialog

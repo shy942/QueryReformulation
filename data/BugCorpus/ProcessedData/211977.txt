@@ -1,1 +1,0 @@
-211977.txt: dialogs open resource sort entries correctly opened open resource dialog types plugin xml list matches contained plugin xml org eclipse search tests plugin xml org eclipse search sorter shorter entries longer entries prefix plugin xml org eclipse search plugin xml org eclipse search tests

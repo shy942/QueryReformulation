@@ -1,1 +1,0 @@
-213893.txt: data binding add observables button text button image label image label image created attachment implementation mentionned observables attributes common coding observable oneself great supported box accept work write unit tests code released

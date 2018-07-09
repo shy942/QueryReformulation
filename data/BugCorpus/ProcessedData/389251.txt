@@ -1,1 +1,0 @@
-389251.txt: performance idle eclipse constantly allocates hundreds objects idle eclipse constantly allocates hundreds objects char int string idle test case start workspace close wait idle start profile memory allocation objects ced

@@ -1,1 +1,0 @@
-69072.txt: change intro breaks drag drop test suite drag drop tests failing eclipse fact appears perspective tests behavior changed previous versions intentional change shouldn hard update test suites close start test

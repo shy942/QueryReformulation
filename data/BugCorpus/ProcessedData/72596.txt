@@ -1,1 +1,0 @@
-72596.txt: tests porting keyboard events robot display post introduced display post event method generate level keyboard mouse events attaching patch replaces robot calls test suite’s tests display post work platforms display

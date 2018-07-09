@@ -1,1 +1,0 @@
-98118.txt: perspectives doc mention switch perspective motif org blah blah blah perspective descriptor class comment internal preferences rename variable stats rename variable

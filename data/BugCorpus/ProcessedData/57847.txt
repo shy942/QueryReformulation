@@ -1,1 +1,0 @@
-57847.txt: fonts colors tree viewer prefs honour dialog font

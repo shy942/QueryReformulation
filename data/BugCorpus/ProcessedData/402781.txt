@@ -1,1 +1,0 @@
-402781.txt: extend model service provide factory capabilities model elements move exposing factory pattern obvious replacement extend model service implementing discreet methods concrete class implement generic factory capable class returning instance class stack stack model service create element stack class advantage allowing add element types deprecate modify

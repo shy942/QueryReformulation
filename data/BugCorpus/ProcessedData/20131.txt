@@ -1,1 +1,0 @@
-20131.txt: excel place row column headers scroll bars build place editing excel document row column headers scroll bars displayed opening excel document visible resizing reproducable observed office

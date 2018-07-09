@@ -1,1 +1,0 @@
-169697.txt: preferences set encoding field editor group set encoding field editor group set spelling dictionary encoding editor case ability remove group box border group

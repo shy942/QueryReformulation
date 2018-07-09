@@ -1,1 +1,0 @@
-34216.txt: view mgmt option remove fast view animation fast view closing animates needless functionality annoying provide user option turn fast view animation

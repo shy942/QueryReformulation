@@ -1,1 +1,0 @@
-132853.txt: dialogs indicator long messages floating status message floating status exceeds viewable area title area dialog indicator message continues appears cut arrow scroll view rest message status area problem lines problem didn occur steps create java class enter class starts lowercase letter warning message type discouraged convention java type names start uppercase letter

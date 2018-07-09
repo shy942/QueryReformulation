@@ -1,1 +1,0 @@
-474841.txt: fragment editor suggests incorrect class fragment xmi editor adding existing handler class hyperlink find button classes named incorrectly package foo public class outer public static class execute public void clicking find bundleclass thebundle foo fail runtime create bundleclass thebundle foo outer combination package class ignores external classes

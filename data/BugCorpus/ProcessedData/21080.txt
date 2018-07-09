@@ -1,1 +1,0 @@
-21080.txt: editor mgmt editor pinning persisted build turn close editors automatically open editor pin shutdown restart eclipse editor pinned

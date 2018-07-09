@@ -1,1 +1,0 @@
-120921.txt: popup dialog keybindings lost popup dialog verifying bug happen windows open quick outline ctrl choose move resize view menu move resize click editor key binding ctrl longer working tom clarify ctrl key bindings

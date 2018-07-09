@@ -1,1 +1,0 @@
-89374.txt: workbench parts visible editor restored bug tom quering workbench java visible returns false activating java listener receive activated event java visible event editor visible fire visible event matter editor lazily materialized

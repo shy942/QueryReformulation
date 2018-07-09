@@ -1,1 +1,0 @@
-64956.txt: key bindings error message console startup build fragments installed beta starting eclipse spanish french german locale message printed console parse order definition continuing order reason parse order definition continuing order

@@ -1,1 +1,0 @@
-63097.txt: progress bar foreground colour white selected progress view solaris motif open progress view task running select running task progress bar set black background black border bar shade dark grey feel colour bar light grey white visible

@@ -1,1 +1,0 @@
-161299.txt: working sets navigator hierarchy views reverting window working set time start eclipse navigator view resource perspective reverts window working set selected choosing deselect working set restart loses choice window working set views correctly remember working set chosen

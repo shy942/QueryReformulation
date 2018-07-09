@@ -1,1 +1,0 @@
-275171.txt: contributions customize perspective action breaks editor pinning action enabled editor pinning reuse editor pinned editor action toolbar disabled editor pinning opened customized perspective dialog enabling disabling editor pinning pin editor action reappear

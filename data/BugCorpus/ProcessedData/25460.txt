@@ -1,1 +1,0 @@
-25460.txt: error deleting file opened multi editor class cast exception occurs file opened multi editor deleted mpe file created multi org eclipse internal workbench reference method expects instance site site instance multi editor site doesn inherits site

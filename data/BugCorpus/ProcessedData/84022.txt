@@ -1,1 +1,0 @@
-84022.txt: preferences compiler preference layout status messages correctly eventual status messages cropped restore defaults apply button attached screenshot

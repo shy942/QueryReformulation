@@ -1,1 +1,0 @@
-66259.txt: key bindings polish patch support view activation keyboard shortcut patches views ide plugins views accessible keyboard shortcut outline view default shortcut alt shift problems view alt shift registers views brand views category preferences users assign shortcut jump view bug info

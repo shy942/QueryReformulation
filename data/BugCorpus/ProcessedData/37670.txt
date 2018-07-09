@@ -1,1 +1,0 @@
-37670.txt: editor mgmt plan item improve editor management improve editor management current mechanism switching editors tabs scale open editors eclipse provide scalable stable efficient switching editors platform theme user experience

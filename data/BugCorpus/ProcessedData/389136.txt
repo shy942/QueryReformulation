@@ -1,1 +1,0 @@
-389136.txt: external dragged window views maximized drag view workbench window desktop wrapped window working fine juno feature windows eclipse maximize restore views worked fine releases double clicking windows title bar working window maximizing external windows working platforms tested mac click green window decorator maximize restore window

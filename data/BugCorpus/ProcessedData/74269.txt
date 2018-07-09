@@ -1,1 +1,0 @@
-74269.txt: workbench eclipse views remember collapsed maximized startup collapse minimize eclipse view close eclipse reopen views collapsed normal minimized set reproduce open eclipse collapse view navigator view close eclipse workbench open eclipse workbench happends navigator view collapsed closed workbench happend navigator view stay collapsed minimized

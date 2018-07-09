@@ -1,1 +1,0 @@
-180205.txt: progress progress view entries job start workbench select projects team synchronize repository selected debug projects case perspective automatically switches team progress view foreground jobs synch job pressing remove finished operations button progress view removes jobs screen shots attached

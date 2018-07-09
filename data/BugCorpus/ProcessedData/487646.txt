@@ -1,1 +1,0 @@
-487646.txt: remove versionized dependency javax annotation bug versionized dependency

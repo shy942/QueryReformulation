@@ -1,1 +1,0 @@
-122025.txt: dialogs enhancement eclipse org dialogs resource list selection dialog nice add constructor resource list selection dialog constructor takes initial pattern dialog resource items listed initial pattern

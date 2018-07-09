@@ -1,1 +1,0 @@
-28692.txt: editor mgmt external program default setting change requires eclipse restart adding extension changing default editor external program requires eclipse restart gif gimp external program applied double clicked gif opened default text editor closed eclipse success

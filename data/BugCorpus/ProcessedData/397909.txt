@@ -1,1 +1,0 @@
-397909.txt: memory leaks juno opening closing editor created attachment patch issue https bugs eclipse org bugs bug cgi

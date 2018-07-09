@@ -1,1 +1,0 @@
-34690.txt: editor mgmt regression pin editor menu pin longer editor menu regression longer pin editor keyboard toolbar item exists works fine

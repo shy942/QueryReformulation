@@ -1,1 +1,0 @@
-173098.txt: dialogs selection removing items filtered resources selection dialog build steps reproduce open open resource dialog history items enter search pattern history items visible select history items selecting context menu click remove selected items history items deleted selection stays list element user expects reckon dialog focused text field item list

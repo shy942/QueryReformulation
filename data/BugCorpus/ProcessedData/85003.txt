@@ -1,1 +1,0 @@
-85003.txt: workbench regression initial window position puts window screen window size close resolution open eclipse workspace initial window bounds display occurs window size close screen resolution

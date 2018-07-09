@@ -1,1 +1,0 @@
-211433.txt: key bindings changing key binding broken ends wrong context change key binding content assist open dialog offers field assist find replace dialog regex mode press chosen key binding work hovering light bulb correct key binding

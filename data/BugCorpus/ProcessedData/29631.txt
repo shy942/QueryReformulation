@@ -1,1 +1,0 @@
-29631.txt: key bindings add navigation menu items erich points actions ctrl switchers editors views perspectives hidden removed keyboard shortcuts submenu menu items longer needed accelerators keybindings support submenu people basic navigation actions

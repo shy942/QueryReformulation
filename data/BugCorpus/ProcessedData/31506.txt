@@ -1,1 +1,0 @@
-31506.txt: model workbench content provider update delete copy build load latest workbench plugin code includes bug overwriting regular resources linked resources vice versa entails deleting existing resource copy move copy operation icon properly reflect linking resource decorator icon updated

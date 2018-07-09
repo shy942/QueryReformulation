@@ -1,1 +1,0 @@
-24593.txt: navigator work build dragging items resource navigator work drag icon appears drop location feedback navigator drag adapter drag start checks drag source focus display focus control returns null tree viewer focus comment check drag start drop operation continue drop adapter drag enter event package view longer works change wrt motif broken

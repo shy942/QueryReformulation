@@ -1,1 +1,0 @@
-94782.txt: properties mnemonics file properties test pass file properties misses mnemonics read info fields path type location size selectable mnemonics default encoding radio button

@@ -1,1 +1,0 @@
-187026.txt: min max movable views dragged minimized stacks create movable view perspective minimize stack drag

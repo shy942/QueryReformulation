@@ -1,1 +1,0 @@
-220423.txt: commands switcher assume current add switchers bug views multi editor hit obstacle switcher assumes current returned assumption works search view current search result moved top history fails parts intrinsic ordering unit view launching order multi editors switcher additional callback public int current

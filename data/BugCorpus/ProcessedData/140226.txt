@@ -1,1 +1,0 @@
-140226.txt: popup dialog separate persisting bounds location noticed hoping broken submit bug hit ctrl resize tooltip popup size remembered work ctrl lot ship live live brian nelson

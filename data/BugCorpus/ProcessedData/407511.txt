@@ -1,1 +1,0 @@
-407511.txt: tooltips reliably truncated view titles downloaded eclipse switched resource perspective shrank project explorer outline pane view titles truncated hovered title tooltip outline eclipse tooltip

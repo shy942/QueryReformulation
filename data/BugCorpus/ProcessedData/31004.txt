@@ -1,1 +1,0 @@
-31004.txt: dialogs javadoc export wizard dialog resizable resize dialog frustrating long projects package names lot scrolling involved select classes javadoc generated dialog small resizable vote solution flexible solution

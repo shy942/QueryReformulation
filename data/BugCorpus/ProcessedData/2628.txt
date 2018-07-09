@@ -1,1 +1,0 @@
-2628.txt: provide command close editors active close open editors exception working efficiently

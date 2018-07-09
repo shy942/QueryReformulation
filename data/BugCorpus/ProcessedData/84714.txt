@@ -1,1 +1,0 @@
-84714.txt: layout eclipse platform features eclipse platform features dialog details panel shold fized size proportional lot unused space dialog resized

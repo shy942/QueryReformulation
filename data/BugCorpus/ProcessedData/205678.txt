@@ -1,1 +1,0 @@
-205678.txt: clipboard vnc clipboard transfer eclipse build steps reproduce open vnc session logged session vnc display load eclipse eclipse click projects eclipse complain memory crash happened release disable clipboard transfer crashes running vnc client windows pro vnc server ubuntu feisty linux

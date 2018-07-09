@@ -1,1 +1,0 @@
-31365.txt: workbench strings defined eclipse strings defined quick start action messages workbench messages string quick start action error dialog title workbench messages string quick start action error dialog message workbench messages string workbench open editor error dialog title workbench messages string workbench open editor error dialog message

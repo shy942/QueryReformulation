@@ -1,1 +1,0 @@
-50444.txt: merge rectangle geometry chris patch implements suggestion merging static methods rectangles geometry functional

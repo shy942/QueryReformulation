@@ -1,1 +1,0 @@
-358020.txt: commands compat git commit dialog destroys eclipse context calling evaluation context add variable creating file ecore model generator model current package explorer selection point project preselected element wizard point completely current selection package explorer published appropriately

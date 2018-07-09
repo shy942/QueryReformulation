@@ -1,1 +1,0 @@
-41368.txt: paste choose resource field open resource dialogbox work pasting existing resource choose resource field open resource dialogbox result displaying matches matching resources field work version eclipse workaround typing pasting resource

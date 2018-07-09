@@ -1,1 +1,0 @@
-296738.txt: contributions missing label toolbar menu contribution user agent mozilla compatible windows build identifier org eclipse menus extension point label toolbar open customize perspective dialog toolbar label action set reproducible steps reproduce create plugin command template

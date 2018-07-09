@@ -1,1 +1,0 @@
-94039.txt: undo simple needed undo infrastructure good showing adapt existing undo text complicated scenarios good simple demonstrates undo visual domain erich suggested box editor move box resize perform undo nice domain grow time demonstrate selective undo absolute relative representation command idea modify existing sample support separate undo exmaple user focus simply undo

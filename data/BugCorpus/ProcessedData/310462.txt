@@ -1,1 +1,0 @@
-310462.txt: close minimized views context menu start eclipse close view maximize package explorer click javadoc icon close unzoom view

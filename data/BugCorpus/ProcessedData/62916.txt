@@ -1,1 +1,0 @@
-62916.txt: font colour active background externalized string colours fonts preference clicking workbench active background description color active tab start desc solaris

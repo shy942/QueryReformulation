@@ -1,1 +1,0 @@
-133599.txt: field assist left arrow work open proposals list worked find replace dialog enable regex type find field invoke content assist pressing left arrow key closes proposals popup list closed caret moved proposals recalculated caret position

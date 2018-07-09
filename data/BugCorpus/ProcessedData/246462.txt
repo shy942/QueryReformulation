@@ -1,1 +1,0 @@
-246462.txt: data binding databinding extend control observable observe size location bounds focus control created attachment adding observable attributes working prototype application observe bounds shell patch providing control extending control observable

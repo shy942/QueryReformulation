@@ -1,1 +1,0 @@
-127151.txt: contributions warnings menus action set elements plugin xml build latest plugin xml ide warnings action set elements menus extensions extension point org eclipse menus action set label navigate action set label

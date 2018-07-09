@@ -1,1 +1,0 @@
-370617.txt: platform bundles version ranges dependencies bundles single versions version dependencies dependencies break target platform compiler settings worth adding project specific settings ensure plug strings externalized correctly default

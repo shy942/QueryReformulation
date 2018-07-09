@@ -1,1 +1,0 @@
-33399.txt: reusing editor dialog box wording set number open ediors open editor type character open file dialog opens window title capitalized open editor button capitalized file quotes

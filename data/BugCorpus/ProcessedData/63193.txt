@@ -1,1 +1,0 @@
-63193.txt: intro intro view memento eclipse win zip steps reproduce open workbench close workbench intro open workbench creates memento close workbench open workbench close intro clear momento isnt design memonto stored workbench shutdown intro closing close workbench open workbench open intro intro handed momento open intro step sessions

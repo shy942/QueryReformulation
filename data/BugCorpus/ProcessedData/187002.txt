@@ -1,1 +1,0 @@
-187002.txt: min max sample view appears minimized create project view template fire switch resource perspective view appears minimized stack intro handling opening views perspective

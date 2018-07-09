@@ -1,1 +1,0 @@
-16787.txt: wizards wizards recreated returning wizard dialog starting control null support lazy control creation works fine wizard called time disposing control returns disposed control create control container called overwrote method public void dispose super dispose set control null workaround add method wizard

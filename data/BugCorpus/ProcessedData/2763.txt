@@ -1,1 +1,0 @@
-2763.txt: dialogs type filtering dialog public org eclipse internal dialogs type filtering dialog public guarantee selecting type consistent workbench dialog copied search dialog

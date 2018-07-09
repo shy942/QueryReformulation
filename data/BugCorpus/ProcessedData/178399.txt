@@ -1,1 +1,0 @@
-178399.txt: mni max editor area visible minimized build maximize console view paste stack trace java stack trace console click link stack trace editor opened console view unzooms editor visible fast view bar hand side iconified editor area

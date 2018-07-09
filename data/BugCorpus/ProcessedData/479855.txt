@@ -1,1 +1,0 @@
-479855.txt: invisible properties view update selection change exception bug happened perspective properties view visible properties view work workbench selection changed view invisible caused bug

@@ -1,1 +1,0 @@
-205521.txt: reset perspective action missing ellipsis reset perspective action window view pops confirmation dialog ellipses label reset perspective

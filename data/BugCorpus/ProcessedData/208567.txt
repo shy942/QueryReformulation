@@ -1,1 +1,0 @@
-208567.txt: status handling remove java test tool class org eclipse tests statushandlers views jobs runnables runnable java plugin org eclipse tests statushandlers testtool java code boolean parse boolean plugin declares guess bug assigned krzysztof daniel

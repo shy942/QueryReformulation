@@ -1,1 +1,0 @@
-228532.txt: translation clarification org eclipse menus extension point build steps reproduce file eclipse plugins org eclipse platform doc isv reference extension points org eclipse menus html phrase confused meaning item implement workbench contribution service locator explain meaning sentence

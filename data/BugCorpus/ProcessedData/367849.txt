@@ -1,1 +1,0 @@
-367849.txt: shortcuts functional working build identifier update morning eclipse stops working shortcuts restart works minutes exceptions log root reproducible steps reproduce start eclipse work java classes shortcuts open type delete key

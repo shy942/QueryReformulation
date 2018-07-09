@@ -1,1 +1,0 @@
-35117.txt: key bindings missing command project properties build command entry project properties missing code action action definition set command missing plugin xml command org eclipse project property erich reported assuming approve fixed

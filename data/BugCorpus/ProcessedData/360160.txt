@@ -1,1 +1,0 @@
-360160.txt: compatibility saved perspective returns original closed window open perspective debug save perspective close perspective debug perspective

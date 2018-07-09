@@ -1,1 +1,0 @@
-29913.txt: linked resources moving file linked alias deletes file build create project create folder link existing folder junk create folder link folder create file foo txt observe navigator foo txt folders drag foo txt answer asks overwrite foo txt observe foo txt disappears folders expectation operation succeeds fails error file busy

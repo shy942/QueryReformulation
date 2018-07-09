@@ -1,1 +1,0 @@
-113370.txt: dialogs window title safe runnable displays english english language window title safe runnable displays resourced correctly error dialog displays english error english language plugins org eclipse jface src org eclipse jface util safe runnable java safe runnable handle exception throwable message dialog open error null face resources string error message error error

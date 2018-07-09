@@ -1,1 +1,0 @@
-283234.txt: global actions org eclipse window reset perspective action factory build steps reproduce command org eclipse window reset perspective application activate command workbench action reset view action factory create window register reset view application action bar advisor define command activation required lars

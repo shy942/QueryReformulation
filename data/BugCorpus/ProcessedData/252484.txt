@@ -1,1 +1,0 @@
-252484.txt: view mgmt view disabled completly nonfunctional bug initially created clone bug eclipse steps reproduce view visible perspective view fast view perspective click fast view icon select close perspective actual view responding mouse clicks close reopen functional

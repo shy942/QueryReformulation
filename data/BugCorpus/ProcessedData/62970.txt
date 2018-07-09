@@ -1,1 +1,0 @@
-62970.txt: layout problem user presses details error dialog org eclipse internal ide dialogs internal error dialog user presses details button dialog layout corrupted user buttons attach snapshot problem

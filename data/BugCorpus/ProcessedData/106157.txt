@@ -1,1 +1,0 @@
-106157.txt: progress dialogs close error dialog org linux generate job error preference dialog open error dialog opens parented workbench window kwin error dialog top interact preference dialog close preference dialog interacting job dialog favourite moment throw pattern filter

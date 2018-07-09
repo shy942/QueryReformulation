@@ -1,1 +1,0 @@
-128525.txt: view mgmt bottom bar view icon open perspective

@@ -1,1 +1,0 @@
-8228.txt: editor selection dialog busy cursor select external editors selection dialog list populate busy cursor open file editors preference select pattern select add editors select external programs button takes seconds requires busy cursor

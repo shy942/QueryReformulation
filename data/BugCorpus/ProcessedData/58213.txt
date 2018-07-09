@@ -1,1 +1,0 @@
-58213.txt: editor mgmt null pointer exception editor presentation title tool returns null editor returns null title tool null pointer exception thrown org eclipse internal presentations editor presentation design method label text string title tooltip presentable title tool trim

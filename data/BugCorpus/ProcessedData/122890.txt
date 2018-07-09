@@ -1,1 +1,0 @@
-122890.txt: common navigator navigator plugin work container import plugin org eclipse ltk refactoring source compile error caused strange packaging org eclipse navigator plugin folder navigator jar jar navigator jar nested jar workaround host import org eclipse navigator binary plugin connected bug platform submission rebuild

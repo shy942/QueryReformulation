@@ -1,1 +1,0 @@
-177172.txt: org eclipse editors extension point schema mention org eclipse core runtime content types org eclipse editors extension point schema mention content type attribute element content type binding defined org eclipse core runtime content types extension point

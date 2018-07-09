@@ -1,1 +1,0 @@
-101569.txt: examples examples project build samples warnings projects produce warnings checked build preferences set defaults org eclipse examples propertysheet org eclipse examples readmetool release warnings workspace

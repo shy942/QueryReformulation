@@ -1,1 +1,0 @@
-44320.txt: jobs cancel multiple jobs testing bug selected incomplete job chose cancel happend selecting individual jobs cancelled separately choose cancel option menu cancelled job

@@ -1,1 +1,0 @@
-113106.txt: navigator navigator fails existing directory navigator fails existing directory folder dialogue displays resolved actions refreshing project restarting eclipse closing opening project deleting reimporting project cleaning project

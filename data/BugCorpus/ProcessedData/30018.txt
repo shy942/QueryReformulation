@@ -1,1 +1,0 @@
-30018.txt: dialogs resource list selection dialog folder list updating build navigate open resource type wait couple seconds list populate type notice list update folders list completely updated takes awhile folders item wait cursor indication code changed handle scenario

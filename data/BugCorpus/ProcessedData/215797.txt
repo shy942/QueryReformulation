@@ -1,1 +1,0 @@
-215797.txt: view mgmt workbench parts extends org eclipse views restorable views cases view showing dynamic resource restart require views restored previous workbench restart exclude view restored set hidden adding additional boolean flag current org eclipse views defines view hidden restart reasonable markus

@@ -1,1 +1,0 @@
-60063.txt: key bindings ctrl emacs mode bound close build pref choose emacs config type ctrl key field dialogs windows cut windows close wasn determine close windows context dialogs windows context child guess pretty confusing ctrl bound cut emacs

@@ -1,1 +1,0 @@
-72963.txt: editor mgmt window navigation switch editor calls editor dropdown window navigation switch editor menu entry reports ctrl opens editor dropdown ctrl shift call switch editor dialog dropdown opened actions key binding editor chevron window navigation switch editor menu entry switch editor dialog opened key binding

@@ -1,1 +1,0 @@
-420741.txt: decorator manager extension point device resource descriptor classes mention resource life cycle decorator manager extension point device resource descriptor classes mention resource life cycle bug comment details

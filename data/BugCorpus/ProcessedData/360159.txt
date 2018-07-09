@@ -1,1 +1,0 @@
-360159.txt: compatibility saved perspective loses minimized trim stacks minimize stack save perspective close perspective reopen minimized stack views stack opened

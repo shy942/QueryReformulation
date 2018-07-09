@@ -1,1 +1,0 @@
-383767.txt: minimized views disappear restart build identifier minimized view moved top quick access perspective chooser restart eclipse minimized view reopen views opening perspective minimized view reappears perspective worked eclipse reproducible steps reproduce window view breakpoints click minimize move top perpectives restart eclipse

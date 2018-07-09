@@ -1,1 +1,0 @@
-466469.txt: dark adapt solarized dark setttings platform

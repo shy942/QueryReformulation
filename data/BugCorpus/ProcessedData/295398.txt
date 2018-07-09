@@ -1,1 +1,0 @@
-295398.txt: intro intro screen layout set fixed perspective user agent mozilla windows windows gecko firefox build identifier set layout set fixed true create initial layout perspective java intro screen displayed long find error project attached reproducible

@@ -1,1 +1,0 @@
-63212.txt: editor mgmt chevron toolbar switcher needed build open empty workspace grab cool item drag create row drag chevron resource perspective button open perspectives

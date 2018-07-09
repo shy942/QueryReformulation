@@ -1,1 +1,0 @@
-50918.txt: remove scroll lines floating window region space scroll bars table constrain region progress floating window cut space

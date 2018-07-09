@@ -1,1 +1,0 @@
-49770.txt: provide translated html files team hit problem include specific html files plugin feature files working correctly putting html file subdirectory base plugin directory time including html file base directory didn laying correct translation install time html enabled

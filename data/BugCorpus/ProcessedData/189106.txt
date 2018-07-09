@@ -1,1 +1,0 @@
-189106.txt: filtered items selection dialog flickers pattern filtered items selection dialog flickers pattern changed open open type dialog slowly type array wait search keystroke table blank items

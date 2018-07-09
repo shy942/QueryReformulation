@@ -1,1 +1,0 @@
-58127.txt: dialogs button truncation install update dialog language japanese locale build level aix motif version beta summary button truncation install update dialog steps recreate problem software update find install error button truncated expected result truncation

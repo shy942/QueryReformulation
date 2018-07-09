@@ -1,1 +1,0 @@
-482367.txt: add factory create converter lamda expressions subclass converter implement convert method bit cumbersome java lamda method reference conversion method propose add converter create object object function object object conversion

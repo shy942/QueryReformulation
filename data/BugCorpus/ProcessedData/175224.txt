@@ -1,1 +1,0 @@
-175224.txt: progress view leaks resources linux ubuntu build steps reproduce progress view active large project start rebuild watch size xorg process stable rebuild open progress view continue watch xorg memory continuous growth rate close progress view xorg growth behavior indexer running specific reproduced lengthy background job

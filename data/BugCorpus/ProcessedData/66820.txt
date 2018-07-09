@@ -1,1 +1,0 @@
-66820.txt: workbench perspective bar empty restart perspective bar appears empty restarting eclipse button visible open perspective screenshot dragging bar left top buttons opened perspective

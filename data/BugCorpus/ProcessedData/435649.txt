@@ -1,1 +1,0 @@
-435649.txt: add linux ppc support bug needed eclipse platform support linux ppc

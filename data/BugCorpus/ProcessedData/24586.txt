@@ -1,1 +1,0 @@
-24586.txt: dialogs changed initial focus behaviour build win changed worse focus behaviour build select project eclipse press delete warning dialog initial focus default button radio buttons dialog regression bug

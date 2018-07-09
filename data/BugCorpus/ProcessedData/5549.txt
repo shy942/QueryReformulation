@@ -1,1 +1,0 @@
-5549.txt: suggestion document mininum recommended screen resolution workbench testers display dialogs import export dialogs fields inaccessible resolutions dialog resizable intended minimum stated programmer documentation windows stick minimum unable find exception

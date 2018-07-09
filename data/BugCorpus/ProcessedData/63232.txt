@@ -1,1 +1,0 @@
-63232.txt: colors fonts default presentation init explicitly sets font tab init tab method sets font tab irregardless busy tab preference listener hears font change updating folder doesn tabs explicitly defined fonts

@@ -1,1 +1,0 @@
-23291.txt: dialogs jface dialog contrain shell size working correctly multiple workspaces environment top left corner display device boundries member function properly forces properly centered dialogs lined edge screen weighted desktop windowing systems virtual desktops changing physical locations proplem photon

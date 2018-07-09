@@ -1,1 +1,0 @@
-159930.txt: dialogs remove control animator preferences title area dialog decided remove control animations remove background colors error message plain message background

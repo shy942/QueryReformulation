@@ -1,1 +1,0 @@
-376046.txt: contributions customize perspective doesn toolbar button group enabled customize perspective dialog doesn toolbar buttons group enabled originally problem wanted add git push upstream reproduced plain customize perspective tool bar visibility uncheck file customize perspective tool bar visibility check file checking file toolbar flashes button

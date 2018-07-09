@@ -1,1 +1,0 @@
-227982.txt: open resource dialog support colored labels open resource dialog support colored labels

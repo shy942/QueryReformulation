@@ -1,1 +1,0 @@
-50533.txt: patch adds button shrinks views vertically attached files add tiny button bottom views reduce vertical size title bar files work stream midnight saturday jan copied org eclipse internal package

@@ -1,1 +1,0 @@
-206554.txt: data binding remove friends declaration core databinding result bug checked change org eclipse core databinding unnecessary org eclipse core internal databinding friends org eclipse jface databinding friends declaration unnecessary removed

@@ -1,1 +1,0 @@
-216789.txt: wizards wizard error message overlaps description text build steps reproduce happen language english locale set reproduced problem display size fonts file java class enter invalid java class prompt error message error message pops top description text language english doesn happen system windows display bit color font size normal

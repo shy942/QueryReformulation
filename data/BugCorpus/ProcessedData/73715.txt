@@ -1,1 +1,0 @@
-73715.txt: workbench regression workbench menus disappeared closing perspective menu items workbench close perspective perspective bar mouse click perspective tab select close menu items workbench disappeared leaves workbench useable attaching tutorial change tutorial code add configurer set perspective bar true running eclipse work eclipse

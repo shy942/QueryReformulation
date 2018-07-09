@@ -1,1 +1,0 @@
-100993.txt: editor mgmt presentations regression editor tabs remember order active tab restarting eclipse editor tab order restored closing reopening eclipse open editors tabs completely visible drag tabs specific order close reopen eclipse note tabs order closed eclipse

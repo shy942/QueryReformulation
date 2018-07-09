@@ -1,1 +1,0 @@
-378504.txt: drag operation fails exception drags started app dragging causing exception guard boolean dragging set false finally block

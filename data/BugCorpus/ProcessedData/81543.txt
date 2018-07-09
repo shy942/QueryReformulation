@@ -1,1 +1,0 @@
-81543.txt: import export import project wizard problems select root directory projects select root directory projects buttons correctly sized change dialog font buttons aligned side list text area

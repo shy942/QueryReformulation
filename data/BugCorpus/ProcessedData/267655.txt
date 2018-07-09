@@ -1,1 +1,0 @@
-267655.txt: common navigator compiler warnings src org eclipse tests navigator action provider test java display helper sleep dead code src org eclipse tests navigator action provider test java display helper sleep dead code

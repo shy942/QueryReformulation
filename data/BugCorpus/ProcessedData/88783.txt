@@ -1,1 +1,0 @@
-88783.txt: viewers set initial colours table bug occurs table style table viewer label provider implements table color provider initial draw table color provider called cells default white background color select item scroll time cell coloring kicks table cells correct background foreground colors

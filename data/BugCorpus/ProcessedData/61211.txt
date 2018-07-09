@@ -1,1 +1,0 @@
-61211.txt: navigator deleting linked resource asks delete read files linked resource called foo links foo directory read files navigator resource perspective delete resource asks confirm link deleted link target changed dialog read file foo warning file read delete contradicts touching target resource

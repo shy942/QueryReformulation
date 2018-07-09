@@ -1,1 +1,0 @@
-103907.txt: themes colors fonts settings remembered default theme reproduce final small courier font debug console setting remembered clean install eclipse setting smaler font size font setting accepted current session time start eclipse console font reset default size font setting color console completely broken change font color debug console regression comparing

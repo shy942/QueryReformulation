@@ -1,1 +1,0 @@
-458418.txt: typo extension point description navigator extension point

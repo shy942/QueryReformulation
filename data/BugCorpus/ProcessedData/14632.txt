@@ -1,1 +1,0 @@
-14632.txt: string field editor validation strategy mechanism work properly validate strategy variable text control hook listeners perform validation method set validation strategy int sets variable unhook rehook listeners passing validation strategy constructor stragety validation key press

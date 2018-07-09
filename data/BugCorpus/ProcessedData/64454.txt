@@ -1,1 +1,0 @@
-64454.txt: workbench perspective icons docking position isn remembered restarting eclipse perspective icon docking position lost

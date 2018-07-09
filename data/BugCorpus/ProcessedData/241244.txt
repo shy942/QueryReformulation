@@ -1,1 +1,0 @@
-241244.txt: status handling status manager handle status status manager block wizard perform finish created attachment simple application demonstrates problem build steps reproduce import attached demo project start application click finish wizard status dialog block wizard closed dialog shortly appears dialog wizard closed automatically

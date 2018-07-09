@@ -1,1 +1,0 @@
-57384.txt: main window active startup window listeners receive window activated created plugin org eclipse startup extension point early startup add window listener point workbench active workbench window returns null receive window activated event working differently

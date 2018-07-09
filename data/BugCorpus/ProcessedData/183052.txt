@@ -1,1 +1,0 @@
-183052.txt: data binding implement list diff algorithm

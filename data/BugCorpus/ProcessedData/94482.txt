@@ -1,1 +1,0 @@
-94482.txt: perspectives customization dialog scrollbars left pane showing scrollbars resized open customize perspective dialog switch commands listing scrollbar required navigate lefthand group unmtil resize window customize perspective select commands

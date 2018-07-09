@@ -1,1 +1,0 @@
-479282.txt: update mac theme current mac theme shipped eclipse suffers cosmetic issues dark grey background toolbar applications resize bar left quick access odd developed alternative theme address issues wondered sense merge existing mac theme source code https github philwebb eclipse cupertino theme attach images difference

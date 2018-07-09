@@ -1,1 +1,0 @@
-62905.txt: workbench resizing perspective switcher bar slow click drag perspective bar top drag trails movement mouse solaris

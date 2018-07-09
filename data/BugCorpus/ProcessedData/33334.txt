@@ -1,1 +1,0 @@
-33334.txt: preferences regression project open persp preference start eclipse workspace open preference dialog workbench perspective choose option switch perspective project created exit eclipse start workspace check workbench perspective preference notice prompt selected switch option

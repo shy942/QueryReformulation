@@ -1,1 +1,0 @@
-231555.txt: editor mgmt editor history shouldn store invalid items editor history removes existant entries items menu logic included add shouldn add items removed bug

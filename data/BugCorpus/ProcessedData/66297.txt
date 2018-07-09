@@ -1,1 +1,0 @@
-66297.txt: key bindings preference focus broken keybinding prefs assignments table select keybinding assignments tab assignments table arrows behavior random presses change selected tableitem table stops showing focus move retain focus

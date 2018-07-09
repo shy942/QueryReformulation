@@ -1,1 +1,0 @@
-465711.txt: rendering tabs hovering dark theme tab unreadable tab rendering created attachment picture showing issue attaching screenshot issue problem org eclipse workbench renderers swt tab rendering draw unselected tab int rectangle int hardcoded set background device system color patch

@@ -1,1 +1,0 @@
-389879.txt: graphics splash screen kepler splash screen juno

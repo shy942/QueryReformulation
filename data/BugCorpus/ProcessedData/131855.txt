@@ -1,1 +1,0 @@
-131855.txt: tabbed properties provide dynamic tab support tabbed properties view displays tabs sections based property tab property extensions extensions read plugin xml stored internal registry clients override tabs sections tabbed property registry set based selection

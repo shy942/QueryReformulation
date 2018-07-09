@@ -1,1 +1,0 @@
-30017.txt: remove default font definitions font definitions files font called default font eclipse default font system font remove properties files

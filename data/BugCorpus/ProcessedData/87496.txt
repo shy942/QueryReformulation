@@ -1,1 +1,0 @@
-87496.txt: workbench advisor initialize takes startup workbench advisor initialize takes startup workbench java pespective open projects collapsed packages explorer org eclipse core commands org eclipse jface org eclipse org eclipse ide org eclipse views org eclipse workbench time class loader find load lazily startup

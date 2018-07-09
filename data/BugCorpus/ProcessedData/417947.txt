@@ -1,1 +1,0 @@
-417947.txt: key bindings behaving expected content assist pop activated open java file invoke content assist code content assist pop activated user press key expected option content assist pop selected behavior expected key selects option content assist pop window works eclipse eclipse broken

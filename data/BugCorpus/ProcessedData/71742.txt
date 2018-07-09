@@ -1,1 +1,0 @@
-71742.txt: long running operations set encoding released setting file container encoding takes progress monitors resource change events genrated core bug targetting implementation code changed long running version events broadcast attach patch org eclipse ide resource properties dialog editors preference adapted preferred place apply maintenance streams

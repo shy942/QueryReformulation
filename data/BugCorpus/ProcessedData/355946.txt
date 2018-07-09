@@ -1,1 +1,0 @@
-355946.txt: view editor folders color preferences don work view editor folders color preferences don work preview rendering tabs workspace window changing colors doesn affect preview

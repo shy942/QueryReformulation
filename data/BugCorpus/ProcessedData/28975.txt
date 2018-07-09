@@ -1,1 +1,0 @@
-28975.txt: linked resources finish button disabled selecting folder file parent build open file wizard select folder enter file advanced check linking check box error message appears wizard header finish button enabled finish disabled

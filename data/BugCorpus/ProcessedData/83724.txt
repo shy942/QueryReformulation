@@ -1,1 +1,0 @@
-83724.txt: preferences search accept search preferences dialog hits based label text typing fonts match colors fonts match based start label text attach patch

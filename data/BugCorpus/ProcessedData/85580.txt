@@ -1,1 +1,0 @@
-85580.txt: preferences usability issues import preferences dialog solaris motif mnemonic conflict preferences file finish preferences list fill space dialog display error opened preference file set directory

@@ -1,1 +1,0 @@
-187376.txt: data binding packages missing javadoc summary sentences build contents platform plugin developers guide reference reference core jface databinding packages simply written written

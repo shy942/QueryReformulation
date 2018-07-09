@@ -1,1 +1,0 @@
-188269.txt: dialogs conflicting mnemonics caused abstract encoding field editor bug initially created clone bug general spelling conflict restore default default encoding caused encoding field editor hard codes string mnemonic string protected method default button text method encoding field editor marked subclassed resolve conflict

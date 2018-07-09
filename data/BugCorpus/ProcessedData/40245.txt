@@ -1,1 +1,0 @@
-40245.txt: viewers structured selection equals consistent methods method org eclipse jface viewers structured selection treats empty element array null array equals method returns false selections empty elements null structured selection empty null element array

@@ -1,1 +1,0 @@
-23102.txt: key bindings generate language specific accelerator text set accelerator late change nick suggested ideally set accelerators programmatically language insensitive support extracting text generate language specific accelerator text set accelerator failed late change

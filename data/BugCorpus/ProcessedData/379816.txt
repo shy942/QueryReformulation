@@ -1,1 +1,0 @@
-379816.txt: remove quick access border ugly build identifier quick access button pixel border terrible reproducible

@@ -1,1 +1,0 @@
-261861.txt: markers quick dialog doesn location properly build problems view error location file number open quick window displays unknown location column file problems view error org eclipse internal views markers quick class create marker table composite control method creating table label provider column text marker marker guess correct attribute

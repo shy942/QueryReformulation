@@ -1,1 +1,0 @@
-16324.txt: properties dialog project menu missing properties menu item integration build add properties menu item properties menu invoke dialog clicking project view choosing properties

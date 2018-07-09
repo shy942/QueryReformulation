@@ -1,1 +1,0 @@
-164108.txt: project navigator default resource perspective project navigator view resource perspective resource navigator require adding org eclipse navigator resources ide prerequisites changing resource perspective description

@@ -1,1 +1,0 @@
-16889.txt: header banner background preferences background color header preferences set foreground set color themes header title visible chosen foreground default background image top corner white background set header background white image blend header

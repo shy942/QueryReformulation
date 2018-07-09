@@ -1,1 +1,0 @@
-75383.txt: eclipse dialog feature buttons properly voiced eclipse platform dialog eclipse platform graphical buttons representing installed features voiced screen readers jaws button inspect objects attribute

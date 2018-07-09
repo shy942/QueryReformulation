@@ -1,1 +1,0 @@
-351841.txt: examples errors deprecated elements change warnings prove examples work compat layer description resource path location type element action deprecated plugin xml org eclipse examples fieldassist plug problem element action set deprecated plugin xml org eclipse examples contributions plug problem

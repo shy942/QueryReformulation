@@ -1,1 +1,0 @@
-463599.txt: tools unnecessary packaging plugin config root pom eclipse platform tools root pom tools repo configuration tycho packaging plugin duplicates configuration eclipse platform parent pom unnecessary submit small patch remove unnecessary parts root pom building mvn clean verify pbuild individual bundles applying patch difference build output

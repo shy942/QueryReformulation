@@ -1,1 +1,0 @@
-25075.txt: error dialog box accessible standard org eclipse jface dialogs error dialog error dialog doesn keyboard focus readable

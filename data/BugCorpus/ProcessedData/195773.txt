@@ -1,1 +1,0 @@
-195773.txt: preferences search editor preferences handle spaces search string tab width num build steps reproduce open preferences general editors option size opened files list enter rec search won find mentioned option assume won find options add screen shot

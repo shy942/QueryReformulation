@@ -1,1 +1,0 @@
-314623.txt: mac toggle toolbar button missing workbench window workbench window button missing window onwards correctly regression earlier versions works fine

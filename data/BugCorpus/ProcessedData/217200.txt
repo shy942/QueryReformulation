@@ -1,1 +1,0 @@
-217200.txt: markers marker preference setting dialog font window preferences markers dialog font set widgets

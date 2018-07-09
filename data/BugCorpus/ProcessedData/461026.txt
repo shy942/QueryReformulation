@@ -1,1 +1,0 @@
-461026.txt: translation tool menu item working command translation command translation commands save handled tool item refers command defining text label empty defining icon key replaced

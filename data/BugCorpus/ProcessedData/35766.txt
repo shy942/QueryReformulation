@@ -1,1 +1,0 @@
-35766.txt: menu mgmt editor action bars contribution items disposed properly build editor action bars dispose called toolitems contribution items editor action bar disposed toolbar coolitem disposed individual items call tool bar manager update boolean editor action bars dispose method contributions removed toolbar manager action set action bars disposed properly

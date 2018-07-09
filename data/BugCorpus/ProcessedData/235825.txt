@@ -1,1 +1,0 @@
-235825.txt: common navigator resource perspective won refresh actions java perspective build steps reproduce open cleaned workspace open java perspective resource perspective create java project java perspective switch resource perspective find solve close reopen resource perspective

@@ -1,1 +1,0 @@
-26781.txt: key bindings flexible keyboard mappings missing capabilities keyboard mappings visual studio created emacs lisp file common actions setup keyboard shortcuts build actions pre defined action key mapping add additional keystroke sequences alt drop bookmark alt jump bookmark define actions recorded saved macro don feature cool

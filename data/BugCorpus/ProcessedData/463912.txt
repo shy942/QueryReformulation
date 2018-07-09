@@ -1,1 +1,0 @@
-463912.txt: tools core tools feature standard shared license clean source template directories needed longer initial problems tycho source features fixed standard wanted removed inappropriate needed text properties submit gerrit patch local build completed error criteria checked feature spot checked source bundles

@@ -1,1 +1,0 @@
-164984.txt: face default tool shouldn abstract values accessed getter setter declare abstract

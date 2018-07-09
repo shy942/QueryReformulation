@@ -1,1 +1,0 @@
-440304.txt: progress user job busy cursor minimum

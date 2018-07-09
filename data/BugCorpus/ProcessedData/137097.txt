@@ -1,1 +1,0 @@
-137097.txt: trim provide vertically oriented progress bar progress bar left support vertical alignment

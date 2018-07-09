@@ -1,1 +1,0 @@
-37910.txt: tasks tasks pane opens full build tasks view switched tasks view yesterday closed deprecated preferences setup tasks view tasks compilation full build tasks list changed tasks view opened closed tasks view fast view

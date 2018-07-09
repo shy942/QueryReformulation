@@ -1,1 +1,0 @@
-68787.txt: markers messages converted format missing tasks view introduced missing string externalized string literal marker view java org eclipse ide src org eclipse views markers internal

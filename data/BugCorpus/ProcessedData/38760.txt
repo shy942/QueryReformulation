@@ -1,1 +1,0 @@
-38760.txt: tasks problems view doesn persist filter settings open filter settings problems view check severity check error info close dialog close eclipse reopen eclipse observe setting lost

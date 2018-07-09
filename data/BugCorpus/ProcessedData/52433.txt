@@ -1,1 +1,0 @@
-52433.txt: editor mgmt empty editor area wrong background color start eclipse close editors observe background color editor area white screenshot

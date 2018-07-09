@@ -1,1 +1,0 @@
-72489.txt: dialogs error dialog resize behaviour improved resize behaviour error dialog lacks constraints resize dialog arbitrarily minimum size calculated dynamically components visible visisble details field upper left position fixed field resizes

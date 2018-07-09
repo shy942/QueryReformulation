@@ -1,1 +1,0 @@
-80225.txt: preferences export prompt save exporting configuration lost exporting settings external file making clicking steps reproduce window preferences configuration change export file configuration lost file previous configuration exporting user prompted save configuration exporting file linux

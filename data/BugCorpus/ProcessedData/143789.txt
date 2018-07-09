@@ -1,1 +1,0 @@
-143789.txt: editor mgmt add possibility customize table editor activation moment easily configure editor activation

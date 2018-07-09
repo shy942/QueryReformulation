@@ -1,1 +1,0 @@
-51354.txt: jobs minimize maximize job progress hover don consistently clicking minimize button job hover minimizes hover progress view clicking maximize button job hover hover addition brings progress view maximize brings progress view expect hover closed

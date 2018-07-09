@@ -1,1 +1,0 @@
-71454.txt: workbench close project active editor leaves file titlebar editor open close project titlebar updated reflect editor closed window title java test java eclipse platform java eclipse platform expect result file closed closing project

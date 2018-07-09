@@ -1,1 +1,0 @@
-33151.txt: navigator outline work build workspace java project perspective switch prompt java class test position cursor test class editor popup select class test outline choose edit tooltip description works

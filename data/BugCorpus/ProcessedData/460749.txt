@@ -1,1 +1,0 @@
-460749.txt: open resources dialog multiple resources hierarchical project explorer eclipse mars link editor doesn work project explorer choose hierarchical projects presentation option reproduce import maven project submodule webtools jsdt project explorer activate link editor option choose projects presentation hierarchical option open file atl shift tree unfold

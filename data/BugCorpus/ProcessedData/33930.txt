@@ -1,1 +1,0 @@
-33930.txt: key bindings leak open close resource pespective open close resource perspective leaks problem accelerator menu

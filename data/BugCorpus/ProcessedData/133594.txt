@@ -1,1 +1,0 @@
-133594.txt: key bindings key bindings work java editors testing build moments lost key bindings java editor delete ctrl ctrl backspace works restart eclipse log file exception console

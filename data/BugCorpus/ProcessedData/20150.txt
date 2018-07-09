@@ -1,1 +1,0 @@
-20150.txt: key bindings ctrl space lost code assist java editor open focus package view space select items package view navigator space keyboard shortcut select items lists trees close java editors space works select items navigator

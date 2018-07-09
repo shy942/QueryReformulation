@@ -1,1 +1,0 @@
-77332.txt: markers add task dialog improvements text areas combo box share alignment label priority trailing colon priority dialog resizable

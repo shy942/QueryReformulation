@@ -1,1 +1,0 @@
-23562.txt: face listener list remove object extra work method org eclipse jface util listener list remove object lot work maintain ordering items list listener list doesn list ordered list work isn removing element shifting elements close gap list replace removed element element array null element array decrement item count

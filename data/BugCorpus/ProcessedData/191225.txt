@@ -1,1 +1,0 @@
-191225.txt: face source compatibility breakage device resource descriptor create resource source compatibility breakage device resource descriptor create resource longer throws device resource exception clients catch compile errors fixed documented incompatibilities migratin guide

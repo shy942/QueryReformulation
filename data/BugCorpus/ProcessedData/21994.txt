@@ -1,1 +1,0 @@
-21994.txt: preferences request color editor moved jface api eclipse copies color editor org eclipse jdt internal preferences org eclipse compare internal wasteful obvious plugins color preferences request move place org eclipse jface packages

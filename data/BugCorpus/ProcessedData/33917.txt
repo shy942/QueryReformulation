@@ -1,1 +1,0 @@
-33917.txt: properties view editable resource property

@@ -1,1 +1,0 @@
-26207.txt: key bindings perspective active build open resouce perspective window opens active

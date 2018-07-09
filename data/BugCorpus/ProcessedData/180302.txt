@@ -1,1 +1,0 @@
-180302.txt: status handling protect status manager code faulty status handler developed status handler tested dialog open debuged realized throwing null pointer exception code wrap call handle create support method gracely fall default error dialog status handler throws exception catch exception exception runtime exception rethrow

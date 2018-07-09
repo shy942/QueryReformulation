@@ -1,1 +1,0 @@
-348616.txt: don override locale history view local history wrong formats bug http bugs icu project org trac ticket issue format settings differ display language case formats messages workaround set explicit locale passing eclipse sets format display language locale don eclipse pressure

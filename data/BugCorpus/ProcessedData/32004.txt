@@ -1,1 +1,0 @@
-32004.txt: workbench workbench adapter call adapter manager workbench adapter returns null calling platform adapter manager adapter adapter check workbench instanceof pass adpater class adapter manager adapter manager returns construct adaptable resource object type resource resource resource adapter resource class returns resource

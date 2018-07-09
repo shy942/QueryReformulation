@@ -1,1 +1,0 @@
-182046.txt: trim configurer set save restore true doesn work simple tutorial code workbench advisor subclass override public void initialize workbench configurer configurer configurer set save restore true super initialize configurer error dialog time opened application error unable read workbench workbench layout reset works problem eclipse

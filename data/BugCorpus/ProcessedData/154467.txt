@@ -1,1 +1,0 @@
-154467.txt: working sets patch attached smart selection single working sets open select working set dialog check item list press activate working set double click list visible user dialog closed patch extend dialog selecting working set double clicked

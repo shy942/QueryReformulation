@@ -1,1 +1,0 @@
-48589.txt: editor mgmt special chars filenames funny filename tabs behaviour big deal filename tabs interpret names files opened files access window menu alt shortcut win sun eclipse

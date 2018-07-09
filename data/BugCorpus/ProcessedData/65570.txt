@@ -1,1 +1,0 @@
-65570.txt: progress view updater looses events method thread copying add delete update events update info structure array reset update info structure atomic operation consequence events original events copied lost reason leaking jobs progress viewer

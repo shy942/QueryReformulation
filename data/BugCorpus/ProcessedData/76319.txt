@@ -1,1 +1,0 @@
-76319.txt: perspectives poor error reporting unable create perspective build open perspective missing result workbench advisor initial perspective perspective extension cryptic error dialog stating error recreating perspective details perspective problem recreating perspective creating time

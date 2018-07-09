@@ -1,1 +1,0 @@
-55210.txt: colors fonts pref worbench colors fonts double mnemonic mnemonic category apply button

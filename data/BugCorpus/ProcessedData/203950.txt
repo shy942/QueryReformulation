@@ -1,1 +1,0 @@
-203950.txt: viewers tree viewer view filter handle expand correctly build steps reproduce encountered situation tree viewer displays click children displayed disappears occurs view filter filtering children viewer viewer filter call children children filter empty list filter empty log posting newsgroup http dev eclipse org newslists news eclipse tools emf msg html

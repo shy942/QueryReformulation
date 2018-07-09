@@ -1,1 +1,0 @@
-436106.txt: color bar view toolbar switching perspective scenario eclipse fresh workspace close open tasks view switch perspective debug open tasks view expected behaviour tasks view color bar view toolbar perspectives current behaviour perspective java case bar white debug blue views console environment windows build

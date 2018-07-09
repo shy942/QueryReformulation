@@ -1,1 +1,0 @@
-108709.txt: contributions single java editor leaked org eclipse workbench code introduced popup menu extender order bug leaves action delegate instances alive refer editor action code introduced life cycle problem platform action delegate instances created opened editor action delegate dispose called

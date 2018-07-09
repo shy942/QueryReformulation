@@ -1,1 +1,0 @@
-2627.txt: dragging view border scroll bar detaches view pixel wide border scrollbar navigator accidentally drag aiming scrollbar view detach border respond drag

@@ -1,1 +1,0 @@
-419474.txt: project setting missing javadoc comments org eclipse jface snippets open org eclipse jface snippets tons warning messages missing javadoc snippets don javadoc sense write javadoc snippets change org eclipse jdt core compiler problem missing javadoc comments warning org eclipse jdt core compiler problem missing javadoc comments ignore project specific settings

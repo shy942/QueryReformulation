@@ -1,1 +1,0 @@
-42056.txt: dialogs path variable dialog lable alignment location labels bottom aligned text fields

@@ -1,1 +1,0 @@
-179255.txt: closing maximized editor restore views easy implement sense views minimized maximized editor automatically restored editor closed realizing editor area stays maximized editor visible

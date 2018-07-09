@@ -1,1 +1,0 @@
-432186.txt: resource persp png org eclipse ide application blurry

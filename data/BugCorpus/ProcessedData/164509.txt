@@ -1,1 +1,0 @@
-164509.txt: breaking change column viewer item point patch bug introduced breaking change package private class column viewer additional method protected abstract item item point point implemented subclasses abstract tree viewer compile error mock tree viewer org eclipse jdt tests

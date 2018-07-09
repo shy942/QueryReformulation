@@ -1,1 +1,0 @@
-443266.txt: button improperly disabled event loop monitor preference reproduce open event loop monitor preference enable event loop monitoring thread change long event threshold button disabled change stack sample interval error message disappears apply buttons disabled

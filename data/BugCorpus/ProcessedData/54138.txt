@@ -1,1 +1,0 @@
-54138.txt: view mgmt view registry public java doc consideration propose case sense developing application predefined list views provide user facilitities docking views fast views close button provide view menu user reopen views closed providing access view registry manageble retrieve view view icon registry application plugin ordinary eclipse maintain plugin descriptor

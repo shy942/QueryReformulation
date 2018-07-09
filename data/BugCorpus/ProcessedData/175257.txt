@@ -1,1 +1,0 @@
-175257.txt: status handling add properties status adapter

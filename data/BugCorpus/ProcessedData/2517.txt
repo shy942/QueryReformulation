@@ -1,1 +1,0 @@
-2517.txt: copy behavior rename mode incorrect create project file select file choose rename popup rename entry mode showing pick ctrl copy file txt copy text file explorer

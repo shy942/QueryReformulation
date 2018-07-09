@@ -1,1 +1,0 @@
-134750.txt: data binding text observable throws change intial model null binding text model attribute intial null observable text throws updating view update listener assumes null attach unit throws exception

@@ -1,1 +1,0 @@
-55646.txt: forms forms project unwanted project references build plugin xml requires import plugin org eclipse import plugin org eclipse core runtime requires project projects project org eclipse core boot project project org eclipse core runtime project project org eclipse project project org eclipse ide project projects extra project references deleted

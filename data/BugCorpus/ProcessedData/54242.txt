@@ -1,1 +1,0 @@
-54242.txt: ast view multiline toolbars restore correctly resetting perspective drag toolbar fast view bar icons toolbar disappear icons visible reset perspective

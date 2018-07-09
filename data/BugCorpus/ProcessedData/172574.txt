@@ -1,1 +1,0 @@
-172574.txt: delete project dialog inconsequent selection behavior choosing option radio group clicking labels clicking buttons contents restored undo text extra label clicking clicking label select option attached patch select correct radio clicking extra label

@@ -1,1 +1,0 @@
-63996.txt: dangerous code pattern busy cursor build inflate bug count noticed implementation progress manager busy cursor set user interface active false dialog true true runnable set user interface active true runnable throws exception user interface remain inactive moving set user interface active true finally block

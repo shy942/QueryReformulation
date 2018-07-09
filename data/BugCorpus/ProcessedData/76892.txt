@@ -1,1 +1,0 @@
-76892.txt: editor mgmt brings empty editor list editor area hidden app hidden editor area hasn replaced binding default key configuration pressed empty editors list popup aligned left side app pop editor area

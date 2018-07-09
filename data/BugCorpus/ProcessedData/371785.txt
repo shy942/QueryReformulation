@@ -1,1 +1,0 @@
-371785.txt: remove default theme broken redundant platform default theme accidentally default theme appearance preference restart discovered hideous extra black lines place huge margin padding toolbar view editor panes pretty remove current shouldn called default

@@ -1,1 +1,0 @@
-184045.txt: face table column layout leaves space scrollbar shell resized windows attach snippet note blue background selection initially resizing shell column grows extra space

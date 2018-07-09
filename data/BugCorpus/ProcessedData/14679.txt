@@ -1,1 +1,0 @@
-14679.txt: bogus error message check dialog select project workbench choose check project click default location button error message location empty load org eclipse debug core select check project button uncheck default location location blank error message

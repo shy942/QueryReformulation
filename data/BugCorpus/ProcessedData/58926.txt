@@ -1,1 +1,0 @@
-58926.txt: visible views activated attached plugin loaded source workspace launch runtime workbench opens resource perspective view plugin visible tab displayed plugin started marking critical regression

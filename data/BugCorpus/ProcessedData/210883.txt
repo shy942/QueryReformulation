@@ -1,1 +1,0 @@
-210883.txt: link editor fails java projects issue java content provider returning java project project scenario create java project add classes files navigator view open files navigator view open project explorer press link editor button

@@ -1,1 +1,0 @@
-66974.txt: editor mgmt hidden editors areas closing maximized editor open editors drag drop editor diplayed area maximize editor double clicking tab close editor editor visible maximized

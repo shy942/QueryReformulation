@@ -1,1 +1,0 @@
-71480.txt: view mgmt view switching work sticky dup reopen app provide view menu rely ctrl cycle views perspective light theme bug fixed sticky hit ctrl dialog disappears open control panel select accessibility sticky hit ctrl hit list disappears

@@ -1,1 +1,0 @@
-61387.txt: registries perspective registry proper solution exception org eclipse internal registry perspective registry find perspective test suite running doesn perspectives fixed caused org eclipse internal registry registry manager registry objects return null raised registry objects changed return empty array perspective registry changed check null

@@ -1,1 +1,0 @@
-262407.txt: data binding option default values duplexing observable subclassing expected case duplexing observable iterate collection return null empty return element elements return element elements equals return predefined stand replacement provide static method easy public static duplexing observable replacement observable list target object replacement

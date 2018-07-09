@@ -1,1 +1,0 @@
-46551.txt: invalid preference path errors running version org eclipse workbench simple application java exe errors command window invalid preference path appearance invalid preference path file associations invalid preference path fonts invalid preference path invalid preference path label decorations invalid preference path startup invalid preference path work progress

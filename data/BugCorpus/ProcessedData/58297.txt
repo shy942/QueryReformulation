@@ -1,1 +1,0 @@
-58297.txt: invert wording background preference user dialog background

@@ -1,1 +1,0 @@
-66679.txt: externalized strings workbench clean dialog java org eclipse ide src ide org eclipse internal ide dialogs default editor presentation java org eclipse workbench src workbench org eclipse internal presentations view java org eclipse workbench src workbench org eclipse

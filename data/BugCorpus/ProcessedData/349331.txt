@@ -1,1 +1,0 @@
-349331.txt: compatibility closing active perspectives remove views shared area drag problems view shared area window open perspective debug bring context menu icon java perspective close problems view disappeared shared area

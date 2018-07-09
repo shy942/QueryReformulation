@@ -1,1 +1,0 @@
-464464.txt: model editor suggested lowercase created attachment screenshot showing problem conventions model element lowercase create modeleditor suggesting camelcase behavior observed adding labels components model editor conform conventions http vogella tutorials eclipse article html applicationmodel ids observed eclipse mars build

@@ -1,1 +1,0 @@
-29089.txt: create configuration detail editor build open workbench open dialog click button configuration details close eclipse reopen dialog recreate configuration details editor

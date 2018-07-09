@@ -1,1 +1,0 @@
-229440.txt: commands ctrl working marker properties dialog click problem problems view click properties select description text copying ctrl copy context menu work

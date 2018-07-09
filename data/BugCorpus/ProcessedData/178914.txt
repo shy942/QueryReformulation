@@ -1,1 +1,0 @@
-178914.txt: trim maximize restore presentation lose focus eclipse presentation maximize restore workbench current editor loses focus restore transferring view stack leads funny behavior sequence ctrl focus cycle stacks perpective

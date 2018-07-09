@@ -1,1 +1,0 @@
-57739.txt: editor mgmt editor selector wrong size gtk multiple editors open long file names press ctrl keybinding editor note popup editors resized correctly scrollbars cover content assume style flag create dialog rendered differently gtk

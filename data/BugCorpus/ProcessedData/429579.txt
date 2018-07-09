@@ -1,1 +1,0 @@
-429579.txt: opening perspective doesn hide minimized stacks active perspective

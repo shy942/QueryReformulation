@@ -1,1 +1,0 @@
-429338.txt: colors fonts defined overridden color font definition read user modify preference dialog definitions work regular definitions

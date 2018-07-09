@@ -1,1 +1,0 @@
-204683.txt: commands active cycle base handler leaks editor open text editor press ctrl press ctrl active cycle base handler leaks editor

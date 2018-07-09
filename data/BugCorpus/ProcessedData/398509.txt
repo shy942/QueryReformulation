@@ -1,1 +1,0 @@
-398509.txt: regression sending post selection events stops working eclipse developers version kepler release build highlighting variable class eclipse highlight occurrences switch variable class highlight variable highlight variable eclipse lose focus click application highlighting removed highlight variable

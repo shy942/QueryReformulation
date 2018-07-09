@@ -1,1 +1,0 @@
-137693.txt: progress progress dialog huge hides buttons sync originally reported comment bug refreshing synchornize view icon view toolbar modal progress dialog height occupying full screen dialog click background longer impacts developer productivity

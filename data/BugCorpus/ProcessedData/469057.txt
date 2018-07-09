@@ -1,1 +1,0 @@
-469057.txt: pattern filter support attached cell label provider text pattern filter supports label provider attached structured viewer good practise newer cell label providers viewer columns support

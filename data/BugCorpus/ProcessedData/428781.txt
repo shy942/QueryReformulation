@@ -1,1 +1,0 @@
-428781.txt: working sets project explorer doesn recreated working set pull workaround bug initially created clone bug build steps reproduce create projects workspace creating working set foo bar type resource add projects delete working set foo create working set foo choose projects foo wont

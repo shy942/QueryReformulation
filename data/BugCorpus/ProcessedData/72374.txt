@@ -1,1 +1,0 @@
-72374.txt: dialogs provide generic info pop dialog places user create info pop dialog dialogs written scratch share common code utility class creating dialogs reduce code ensure common feel characteristics common dialogs background colour top window list deactivating shell closes resizable remembers size

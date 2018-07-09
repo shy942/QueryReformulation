@@ -1,1 +1,0 @@
-320021.txt: eclipse splash screen progress bar waste precious time bringing workbench window startup

@@ -1,1 +1,0 @@
-72434.txt: workbench toolbars tab items rendering set orientation tab items eclipse window rendering wither whitespace cutoff entries apply patches bug start eclipse attach screenshot

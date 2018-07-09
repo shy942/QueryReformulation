@@ -1,1 +1,0 @@
-372077.txt: context debug view plumbed properly org eclipse core contexts debug nifty context debug view accessible compat layer adds application descriptors view registry view dialog org eclipse internal dialogs view dialog include application descriptor list

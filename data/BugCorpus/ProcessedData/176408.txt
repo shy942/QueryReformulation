@@ -1,1 +1,0 @@
-176408.txt: min max minimizing view stack activates views presentation minimizing stack activate view causing eager loading required plugins note restart workspace minimized stacks works expected actual minimize operation unnecessary loading

@@ -1,1 +1,0 @@
-93015.txt: undo stack wrong entry latest undo redo create classes public class public void foo public class void bar null foo editor rename foo foo java opening package explorer add blanks save undo save redo save open global edit menu observe entry undo rename refactoring incorrect open context menu editor observe entry undo typing correct don undo redo menu activation

@@ -1,1 +1,0 @@
-184666.txt: common navigator navigator rename move delete resource support ltk participants offers language neutral participant story actions perform renames moves copies deletes alls inform refactoring participants chance update resources gap user experience renaming file project explorer depending rename action

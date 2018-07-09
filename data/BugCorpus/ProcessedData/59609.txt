@@ -1,1 +1,0 @@
-59609.txt: eclipse forms whitespace handling form text control form text control spec implement style treatment whitespace text sort spec clients expect

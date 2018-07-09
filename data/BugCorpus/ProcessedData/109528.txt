@@ -1,1 +1,0 @@
-109528.txt: workbench eclipse automatically attempts save modified files memory exception occurs workbench closing exception memory error change save behaviour case save original file eclipse default emergency close behaviour save temporary file access points workbench configurer blocked default private access

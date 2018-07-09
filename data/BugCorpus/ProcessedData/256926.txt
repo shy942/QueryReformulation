@@ -1,1 +1,0 @@
-256926.txt: dialog change mappings dynamic product bug initially created clone bug build steps reproduce rcp application product provider create product dynamically product product defining bundle returns result window problem mapping loaded mapping updated produt defining bundle returns bundle

@@ -1,1 +1,0 @@
-272065.txt: trim restore detached view maximized view throws null pointer exception build steps reproduce application viewparts detach close view maximize remaining views open closed view exception thrown java lang null pointer exception org eclipse internal perspective view perspective java perspective view method detached view trim stack

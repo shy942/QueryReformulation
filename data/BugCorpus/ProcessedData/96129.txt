@@ -1,1 +1,0 @@
-96129.txt: regression multi editor editors returns null create control method class extends org eclipse multi editor calls editors call create control editors editors returns null set children called place method called editor manager open multi editor breakpoint method hit eclipse code worked fine eclipse

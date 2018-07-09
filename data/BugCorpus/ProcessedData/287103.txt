@@ -1,1 +1,0 @@
-287103.txt: common navigator content service label provider doesn properly implement overrides created attachment patch fixes issue text images labels build steps reproduce unit tests bug logic content service label provider doesn support overriding extensions provide labels providing content feature work broken source contribution memory

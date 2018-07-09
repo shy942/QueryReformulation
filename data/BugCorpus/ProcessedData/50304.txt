@@ -1,1 +1,0 @@
-50304.txt: check patch fast view bar patch fast view bar shrink empty docked hand side screen

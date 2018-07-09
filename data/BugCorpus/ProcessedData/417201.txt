@@ -1,1 +1,0 @@
-417201.txt: sash layout corrupted dragging editor area testing behavior drag view shared area affordances depending close edge shared area drop rectangles size shared area shrinks width result attempt sash adopt container data weight shared area wrong place sash model default

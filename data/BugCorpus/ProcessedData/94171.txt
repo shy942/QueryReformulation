@@ -1,1 +1,0 @@
-94171.txt: workbench parts regression close editor sensitive actions enabled editor opened activated build change single click mode general prefs close editors navigator select file editor opens file close disabled suspect action receiving brought top event close editor action active editor actions expect

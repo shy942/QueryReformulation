@@ -1,1 +1,0 @@
-82566.txt: preferences view preferences dialog dialog general view preferences pretty simple initially wrokbench view

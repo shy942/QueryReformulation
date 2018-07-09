@@ -1,1 +1,0 @@
-339227.txt: preferences startup shutdown preference restore defaults work expected created attachment proposed patch steps reproduce disable early startup plugins plugin customization ini org eclipse workbench org eclipse update scheduler open startup shutdown preference restore defaults plugins checked attached patch fixes

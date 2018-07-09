@@ -1,1 +1,0 @@
-230365.txt: status handling status dialog buttons glued bottom edge created attachment screenshot follow bug comment margin buttons size margin buttons buttons bit glued border dialog

@@ -1,1 +1,0 @@
-127851.txt: perspective bar reset perspective disappear toolbar restart workbench debug java perspectives open works java perspective select reset perspective window menu perspective reset java perspective icon longer perspective toolbar

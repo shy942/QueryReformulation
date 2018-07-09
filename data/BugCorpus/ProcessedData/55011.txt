@@ -1,1 +1,0 @@
-55011.txt: keyboard dragging broken click editor title bar select move editor arrow move editor notice direction press edior move diagonally left

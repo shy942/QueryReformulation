@@ -1,1 +1,0 @@
-458728.txt: activity mgmt enabling capability doesn toolbar buttons restart scenario open java perspective preferences capabilities uncheck development capability press preferences capabilities check development capability press expected behavior debug toolbar buttons top trim current behavior debug toolbar buttons missing restart works fine

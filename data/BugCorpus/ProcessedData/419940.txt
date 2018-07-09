@@ -1,1 +1,0 @@
-419940.txt: initial dialog workspace location invalid tested start eclipse plain executable eclipse splash screen dialog workspace matter workspace existing workspace error location directory read starting thinking actual location dialog bug location command eclipse data workspace works fine

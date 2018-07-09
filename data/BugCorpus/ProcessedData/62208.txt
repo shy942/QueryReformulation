@@ -1,1 +1,0 @@
-62208.txt: programmatic enabling decorators doesn thought fixed lazy enablement decorator turns fooled didn disable decorator fixed surfaced bug programmatic setting decorators doesn appears work checked preference items decorated setting lost restart straight duplicate behavior preferences dialog work properly send patch completed

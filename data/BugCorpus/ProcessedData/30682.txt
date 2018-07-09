@@ -1,1 +1,0 @@
-30682.txt: workbench missing project nature images extension point schema file build java file exception eclipse plugins org eclipse pde schema map org eclipse project nature images mxsd das system kann den angegebenen pfad nicht finden lot

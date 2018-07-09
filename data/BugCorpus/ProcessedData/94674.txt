@@ -1,1 +1,0 @@
-94674.txt: preferences preferences dialog separator title stretch separator header title preference stretch border sash margins

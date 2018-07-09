@@ -1,1 +1,0 @@
-185663.txt: trim presentation minimised stack restore button doesn work presentation minimise view stack switch presentation presentation attempt restore view stack restore button fails isn visually pressed

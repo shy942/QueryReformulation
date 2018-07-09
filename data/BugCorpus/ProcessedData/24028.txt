@@ -1,1 +1,0 @@
-24028.txt: key bindings tooltip description content assist don shortcuts tooltip description content assist ctrl space don shortcuts edit menu shortcuts working displayed eclipse version build

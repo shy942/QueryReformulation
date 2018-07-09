@@ -1,1 +1,0 @@
-485829.txt: update bug reference perspective switcher https bugs eclipse org bugs bug cgi https bugs eclipse org bugs bug cgi

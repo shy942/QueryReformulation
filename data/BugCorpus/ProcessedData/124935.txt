@@ -1,1 +1,0 @@
-124935.txt: common navigator resource extension missing actions build latest head open experimental resource navigator view select project press delete resource extension missing actions cut copy paste delete select properties move rename align undo redo support hook undo redo workspace context resource navigator bug details susan clarify requirements undo redo needed

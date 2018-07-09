@@ -1,1 +1,0 @@
-97030.txt: detached views stacked detached views doesn honour workspace tab settings build set workspace preferences rounded tabs set prefs tabs top detach views stack note tabs square bottom view expect detached stacked views inherit workspace settings rounded tabs top view

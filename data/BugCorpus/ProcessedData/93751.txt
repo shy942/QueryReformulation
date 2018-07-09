@@ -1,1 +1,0 @@
-93751.txt: workbench window configurer initial size default implementation conform spec returns size window shell created default return initial size shell public point initial size workbench window configurer initial size point workbench window configurer comply spec default removed spec

@@ -1,1 +1,0 @@
-28084.txt: key bindings binding ctrl alt customize key bindings dialog typed sequence ctrl alt didn complain invalid assumed bind key sequence control alt key pressed didn work binding override implement methods action simlarly true binding ctrl alt valid sequences bind

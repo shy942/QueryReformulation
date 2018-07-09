@@ -1,1 +1,0 @@
-118429.txt: data binding validation status strings order data binding workbench dialogs preference validation terms status objects strings simplistic wizard creating class warning class start uppercase letter don provide package click finish proceed note status classpath introduce dependency org eclipse equinox common status

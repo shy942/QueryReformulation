@@ -1,1 +1,0 @@
-409274.txt: focus lost workbench window including paste package explorer package public class keyboard focus stays java package explorer editor tab active click editor organize imports ctrl shift press enter key keyboard focus lost ctrl shift tab reveal package explorer tab open perspective button

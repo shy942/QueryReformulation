@@ -1,1 +1,0 @@
-235895.txt: common navigator doc incorrect statement excludes documentation created attachment corrections doc org eclipse navigator viewer extension point documentation includes statement takes precedence include excludes excludes examples excludes sense finally spelling error navigator content extension point

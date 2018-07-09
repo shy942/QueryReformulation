@@ -1,1 +1,0 @@
-433600.txt: dark provide reasonable platform defaults syntax color dark theme

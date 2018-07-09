@@ -1,1 +1,0 @@
-50655.txt: patch drag rectangle snap location view drop patch perform drag drop operation tracking rectangles highlight location view dock cursor

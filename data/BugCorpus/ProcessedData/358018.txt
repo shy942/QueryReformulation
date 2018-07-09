@@ -1,1 +1,0 @@
-358018.txt: key bindings working popups problem win works hover element select text popup hit copied clipboard annoying copy eclipse blog keybindings active popup

@@ -1,1 +1,0 @@
-90971.txt: key bindings assist popup correctly sized default dialog font change dialog font bigger font comic sans win columns key assist ctrl shift popup correctly sized widest entries ellipsis

@@ -1,1 +1,0 @@
-25637.txt: perspectives active perspective hangs removing plugin defined plugin defines perspective removed workbench plugin perspective active perspective workbench closed perspective remains list shortcut bar workbench started perspective won open

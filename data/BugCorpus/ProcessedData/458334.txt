@@ -1,1 +1,0 @@
-458334.txt: bug attribute condition impl prevents correct matching elements bug attribute condition impl prevents correct matching elements instance selector elements match match current code case considered full word match correctly rejected matching stops occurrence matches

@@ -1,1 +1,0 @@
-379010.txt: bad window title initial startup starting eclipse time trimmedwindow label eclipse title screenshot

@@ -1,1 +1,0 @@
-56544.txt: editor mgmt tooltip editor tabs primary monitor tooltip editor tab displays full path displayed primary monitor multimonitor setup env eclipse

@@ -1,1 +1,0 @@
-388931.txt: quick access copy qualified doesn work bug introduced regression copy qualified called quick access org eclipse internal handlers legacy handler service execute command context parameterized command event evaluation context create snapshot eclipse context eclipse context active leaf

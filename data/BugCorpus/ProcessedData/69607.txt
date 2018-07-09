@@ -1,1 +1,0 @@
-69607.txt: preferences nonexternalized string preferences workbench appearance mustfix severity build blocking language problem description actual description problem menu bar main workbench panel click window preferences workbench appearance default english current presentation field preferences window

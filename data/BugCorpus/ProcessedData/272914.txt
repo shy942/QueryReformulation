@@ -1,1 +1,0 @@
-272914.txt: multiple software updates menu items menu bug initially created clone bug build steps reproduce performed steps thought reinstalled rational clearcase client update site result software updates menu item menu screenshot attached

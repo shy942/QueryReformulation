@@ -1,1 +1,0 @@
-248410.txt: wizards accessibility user alerted error message displayed wizard dialog build steps reproduce open java class wizard enter text text field error message source folder empty displayed wizard message area scren reader user indication error message appeared

@@ -1,1 +1,0 @@
-229807.txt: face configure columns dialog work correctly reordered columns logic dealing column order column objects objects column order column objects column order objects

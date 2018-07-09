@@ -1,1 +1,0 @@
-87253.txt: common navigator common navigator respect open mode preference project explorers honor general open mode preference pane java debug resource perspectives works fine verified eclipse machines

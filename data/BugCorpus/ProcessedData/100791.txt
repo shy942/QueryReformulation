@@ -1,1 +1,0 @@
-100791.txt: progress decoration scheduler holds java editor start fresh workspace open class file editor default cell editor javax swing close editor

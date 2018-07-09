@@ -1,1 +1,0 @@
-393999.txt: tabbed properties support changing color tab label bug complete missed change bug delivered couple months kepler provision tab color color internally paint method

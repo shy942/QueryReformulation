@@ -1,1 +1,0 @@
-39825.txt: eclipse unresponsive opening progress view start eclipse workspace disable autobuild import plugins switch java perspective open progress view package explorer enable disable filter observe eclipse completely unresponsive minutes eclipse refreshes typically find lots update decoration completion entries progress view unresponsive

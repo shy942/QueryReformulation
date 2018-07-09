@@ -1,1 +1,0 @@
-37144.txt: linked resources calling create linked resource group create contents build calling create linked resource group set link target calling create contents null pointer exception exception create linked resource group resolve variable code calls order designed work fixed

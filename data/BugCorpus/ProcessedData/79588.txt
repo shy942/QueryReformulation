@@ -1,1 +1,0 @@
-79588.txt: themes default solaris gtk fonts change current solaris gtk fonts defined jface based linux gtk work fine don great monospace editor font change solaris gtk fonts solaris motif verified fine solaris gtk

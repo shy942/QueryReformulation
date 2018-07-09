@@ -1,1 +1,0 @@
-416995.txt: code review perspective string turned constant application

@@ -1,1 +1,0 @@
-207619.txt: common navigator stack overflow error attempting import projects workspace eclipse win switch resource perspective create projects simple java file import stack overflow error happen java perspective project explorer

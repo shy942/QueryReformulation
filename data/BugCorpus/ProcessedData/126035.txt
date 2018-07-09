@@ -1,1 +1,0 @@
-126035.txt: tabbed properties article require text article requires org eclipse core resources org eclipse ide text plug ins basically unused dependency workbench content provider base workbench content provider changed array content provider array list input deleted adaptable list

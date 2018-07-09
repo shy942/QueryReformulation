@@ -1,1 +1,0 @@
-173035.txt: editor mgmt save resource opened dialog clearer change shared save change editor dirty open java editor open synchronized view open compare view changed close compare view dialog asks save dialog checkbox prompt save resources open totally clear resources saved future check box guess save resources opened prompting save resources opened

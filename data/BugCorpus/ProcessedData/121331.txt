@@ -1,1 +1,0 @@
-121331.txt: databinding metadata jface databinding declare javadoc location org eclipse jface databinding exposes list plug ins listed org eclipse pde core javadoc extension org eclipse platform doc isv plug maintain lexicographical order plug ins extension

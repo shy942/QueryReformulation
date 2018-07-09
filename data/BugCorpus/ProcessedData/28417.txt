@@ -1,1 +1,0 @@
-28417.txt: context menu correct behaviour java editor build running motif javaeditor menu pop mouse button released views hold button menu behavior motif hold button pop menu javaeditor support control set menu popup menu properly break motif platform behavior menu don input method menu items mac platform behavior

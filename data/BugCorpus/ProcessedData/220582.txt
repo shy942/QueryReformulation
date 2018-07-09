@@ -1,1 +1,0 @@
-220582.txt: filtered items selection dialog add support styled labels created attachment patch patch adds support styled labels filtered items selection dialog label providers filtered items selection dialog set list label provider label provider additionaly implement delegating styled cell label provider styled label provider provide styled label

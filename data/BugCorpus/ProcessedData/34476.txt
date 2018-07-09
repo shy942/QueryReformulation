@@ -1,1 +1,0 @@
-34476.txt: perspectives doc reset perspective preferences button build window preferences workbench perspectives reset button table enable reset perspective menu item

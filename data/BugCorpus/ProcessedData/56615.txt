@@ -1,1 +1,0 @@
-56615.txt: wizards project wizard dialog labels staggered pixels bugging bit wizards description labels align vertically wizards label positioned pixels description label

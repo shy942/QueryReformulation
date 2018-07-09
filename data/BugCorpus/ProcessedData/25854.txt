@@ -1,1 +1,0 @@
-25854.txt: text editor editor unregistering key binding service accelerator scope class holds key binding service instance current service static variable evenif service disposed service holds registered actions disposed severe memory leak action holds editor instance remains memory current service replaced key binding service instance

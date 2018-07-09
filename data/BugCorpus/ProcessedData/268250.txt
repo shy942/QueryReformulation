@@ -1,1 +1,0 @@
-268250.txt: common navigator project labels missing project explorer working sets top level elements switch project explorer working sets top level elements create java working sets projects notice labels projects missing decoration attaching screenshot

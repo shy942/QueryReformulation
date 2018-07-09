@@ -1,1 +1,0 @@
-35076.txt: key bindings menu items command ids quick start tips tricks action definition set command entries plugin xml file discussed category commands org eclipse category preferences correct position tree add key bindings commands complete

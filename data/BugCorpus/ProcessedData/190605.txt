@@ -1,1 +1,0 @@
-190605.txt: keybindings hotkeys mnemonics don work conflicts build steps reproduce create editor label text widgets assign mnemonic label press alt main menu edit activate focus text widget pressing alt sequentially active main menu alt activate local widgets violation accessibility guidelines

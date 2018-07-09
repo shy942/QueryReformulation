@@ -1,1 +1,0 @@
-7789.txt: import open files allowed attempt import open file operation warns file open select overwrite question step appears complete updating navigator error message appears details error opening input stream filename import open stream import user step scenario avoided detecting files user told close attempting import operation

@@ -1,1 +1,0 @@
-226292.txt: data binding set redraw false viewer updaters move replace operations set redraw false updates viewers observable collection listeners minimizes bouncing elements moved noticeable move move actions multi selection patch follow

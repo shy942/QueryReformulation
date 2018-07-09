@@ -1,1 +1,0 @@
-403461.txt: toggling toolbar window basis originally reported didn understand point time bug fixed issues persisting restoring toolbar visible mode pattern result latest visibility change stored single preference approach doesn work multi window setup

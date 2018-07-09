@@ -1,1 +1,0 @@
-387606.txt: contribution toolbar eclipse hang created attachment stack trace accidentally menu contribution toolbar extension point org eclipse menus menu contribution popups false location toolbar command command command style push menu contribution extension result runtime eclipse opened editors content menu bar totally missing eclipse useable stack trace attached

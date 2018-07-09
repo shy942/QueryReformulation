@@ -1,1 +1,0 @@
-410906.txt: workspace save action registered listener view parts eclipse workspace save action registered view org eclipse internal view intro adapter screen screen closed save action doesn register views open perspective registration happening org eclipse internal save action opened workbench org eclipse internal save action job activated work correctly

@@ -1,1 +1,0 @@
-269264.txt: viewers table viewer remove doesn post selection change org eclipse jface viewers table viewer remove object remove includes current selection item deleted selection selection change event fired empty structured selection

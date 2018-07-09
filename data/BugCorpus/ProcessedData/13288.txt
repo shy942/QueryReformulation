@@ -1,1 +1,0 @@
-13288.txt: bad format org eclipse internal layout build candidate description problem translators public class layout implements layout private static final string referenced exist

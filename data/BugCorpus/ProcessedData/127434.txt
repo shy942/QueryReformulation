@@ -1,1 +1,0 @@
-127434.txt: data binding java beans implemented places places getters setters determined code converted property helper

@@ -1,1 +1,0 @@
-441015.txt: provide box monitoring delays starting eclipse luna hooks monitoring delays bug actual monitoring remains reach eclipse users requires writing trivial code eclipse platform ready delay monitoring monitoring turned default eclipse users freezes logged eclipse error log identify ill behaving plug ins file bugs

@@ -1,1 +1,0 @@
-347139.txt: perspective bar perspective bar items lost reopening text option deselected selected build identifier open perspectives closed text deactivated perspective reopened activation text perspective bar items disappear reproducible steps reproduce open perspectives goto perspective bar click deselect text option close perspective reopen select text option

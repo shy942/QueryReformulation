@@ -1,1 +1,0 @@
-84603.txt: perspective bar pref set default perspective bar size add ability set default width size perspective bar dock top preference preloaded perspective bar ala bug

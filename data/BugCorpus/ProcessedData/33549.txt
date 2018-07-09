@@ -1,1 +1,0 @@
-33549.txt: workbench window menu toolbar updating close window cancelled start eclipse open resource perspective open java perspective open java file editor edit file save close window prompt press cancel switch perspective open types editors notice menu tool bars updating problem busy close sets flag avoid updates resets close cancelled

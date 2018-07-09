@@ -1,1 +1,0 @@
-29454.txt: global actions delete resources binary plugin import failure import binary plugins lead failure bug failure delete binary plugins plugins result dialog internal error null refreshing project fixed problem entry log stack trace included org eclipse jan exception org eclipse actions delete resource action java lang null pointer exception

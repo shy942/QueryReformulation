@@ -1,1 +1,0 @@
-42122.txt: dialog switch editor activate selected editor button dialog font window switch editor

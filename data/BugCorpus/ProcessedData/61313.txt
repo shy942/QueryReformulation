@@ -1,1 +1,0 @@
-61313.txt: platform native icons dialogs info icon operations progress error icon exception occurs question icon asked confirm resource deletion native icons windows native regression

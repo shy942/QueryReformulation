@@ -1,1 +1,0 @@
-90273.txt: dialogs list selection dialog dialog alignment deselect aligned cancel reached pref java build path projects add

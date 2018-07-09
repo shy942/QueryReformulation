@@ -1,1 +1,0 @@
-33277.txt: properties dialog style field values bug knut radloff wrote don modified field wrap timestamp long general fields wrap resize properties dialog smaller long fields wrap wrapped text field single don doesn dialog resizable long resize dialog

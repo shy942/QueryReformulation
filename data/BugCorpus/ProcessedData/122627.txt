@@ -1,1 +1,0 @@
-122627.txt: regression coolbar main window resized lines code worked eclipse coolbar resizing top window public class application action bar advisor extends action bar advisor protected void fill cool bar cool bar manager cool bar tool bar manager toolbar tool bar manager cool bar add tool bar contribution item toolbar main toolbar add action factory create window

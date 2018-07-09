@@ -1,1 +1,0 @@
-172673.txt: status handling add status adapter class

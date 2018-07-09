@@ -1,1 +1,0 @@
-116920.txt: data binding handle model change events don happen thread don check thread call face methods main issue implement tie data binding context binding collection binding

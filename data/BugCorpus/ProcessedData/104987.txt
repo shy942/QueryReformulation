@@ -1,1 +1,0 @@
-104987.txt: view contents missing switching perspectives start eclipse fresh workspace opens java perspective create java project class foo java expected switch debug perspective outline view contents debug view empty variables view empty observations closing reopening fixes outline debug view variables view closing reopening effects switching perspectives resource

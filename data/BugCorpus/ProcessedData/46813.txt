@@ -1,1 +1,0 @@
-46813.txt: jobs progress icon left corner configured advisor class public void pre window open final workbench window configurer configurer configurer set shortcut bar false configurer set tool bar false configurer set status false ugly gray box bottom left corner progress icon

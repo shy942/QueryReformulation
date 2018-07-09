@@ -1,1 +1,0 @@
-98009.txt: intro javadoc warnings build build javadoc warnings component builds src plugins org eclipse platform doc isv org eclipse intro src org eclipse intro config customizable intro java warning tag link reference intro builds src plugins org eclipse platform doc isv org eclipse intro src org eclipse intro config customizable intro java warning tag link reference intro

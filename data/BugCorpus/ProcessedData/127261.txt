@@ -1,1 +1,0 @@
-127261.txt: common navigator add support tree path content label provider face tree path based content providers label providers woudl save lot implementation effort common navigator framework supported content provider types attach patch adds support common navigator

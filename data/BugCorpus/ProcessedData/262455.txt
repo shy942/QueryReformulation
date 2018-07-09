@@ -1,1 +1,0 @@
-262455.txt: increment version numbers service segment plug ins missed updating service segment version number release org eclipse exports workbench face changed org eclipse ide org eclipse ide application change missing accelerator key org eclipse navigator org eclipse views properties tabbed

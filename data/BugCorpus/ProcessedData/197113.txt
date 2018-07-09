@@ -1,1 +1,0 @@
-197113.txt: project explorer drag drop selection working properly create java project open project explorer create classes test test close java code editors select test java project explorer select test java mouse test java appears highlighted drag test java code editor area test java displayed occurs project explorer package explorer works fine

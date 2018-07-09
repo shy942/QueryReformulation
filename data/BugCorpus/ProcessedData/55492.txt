@@ -1,1 +1,0 @@
-55492.txt: key bindings bug order listener piece code eclipse build class order listener public void handle event event event remove listener event widget remove listener event type remove listener widget problem widget disposed listener invoked order listener receive widget disposed log check widget disposed don invoke remove listener

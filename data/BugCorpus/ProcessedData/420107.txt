@@ -1,1 +1,0 @@
-420107.txt: eclipse editor pane obscures tab bar

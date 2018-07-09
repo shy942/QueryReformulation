@@ -1,1 +1,0 @@
-407068.txt: source refactor menu appears opening file package explorer source refactor menu appears clicking customize perspective case java script perspective pair menus enabled disabled eclipse indigo java script developers release

@@ -1,1 +1,0 @@
-78623.txt: working sets small improvements working sets build dirk aded check working set editable checks descriptor defines attribute class open working set wizard wrote working set configuration dialog package explorer tweaking existing compilacated requirements fixed problem abstract working set manager updater install wasn

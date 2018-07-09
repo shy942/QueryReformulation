@@ -1,1 +1,0 @@
-136130.txt: tabbed properties incorrect package names org eclipse views properties tabbed eclipse package naming conventions http dev eclipse org naming html java packages internal packages internal segment component segment note component plugin internal packages org eclipse views properties tabbed plugin incorrectly named start org eclipse internal views properties tabbed

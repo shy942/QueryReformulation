@@ -1,1 +1,0 @@
-98972.txt: forms overambitious scrolling triangle selection

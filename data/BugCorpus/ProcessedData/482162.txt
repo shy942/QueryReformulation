@@ -1,1 +1,0 @@
-482162.txt: backports eclipse crashes existing workspace closing window backport bug maintenance maintenance branches backport bug bug strictly required workspaces recover broken workspace serve fallback case clicking close box create broken workbench xmi

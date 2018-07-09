@@ -1,1 +1,0 @@
-169591.txt: common navigator fails editor inputs context method common navigator considers selection context project explorer performed editor selection empty input problematic target adapt input file sort extension project explorer plug proper support

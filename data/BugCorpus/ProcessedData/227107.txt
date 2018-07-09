@@ -1,1 +1,0 @@
-227107.txt: previous commands popup multi editors dislocated popup list opened previous commands centered current view work multi editors plug editor popup centered editor area left edge workbench window editor area window popup appears editor

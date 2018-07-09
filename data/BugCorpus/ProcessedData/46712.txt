@@ -1,1 +1,0 @@
-46712.txt: lost scheduled callback earlier week refactored progress manager extend progress provider job progress adapter moved methods anonymous class created method change listener neglected copy scheduled job change event method progress manager updated jobs scheduled consequence sleeping waiting jobs progress view scheduled method moved anonymous class change listener

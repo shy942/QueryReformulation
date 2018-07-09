@@ -1,1 +1,0 @@
-155873.txt: properties view property sheet integration work wizard created wizard property sheet focus press open occurs occurs property sheet class site workbench window workbench system display site returns null view site called system system acquired didn involve site work works platform workbench system display minor change eclipse required resolve issue attach patch

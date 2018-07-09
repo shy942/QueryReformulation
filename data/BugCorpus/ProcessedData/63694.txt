@@ -1,1 +1,0 @@
-63694.txt: error messages preference dialog correctly sized build reproduce bug long problem message buildpath wizard validation error wasn readable resizing wizard larger read entire message observed message refresh remained unreadable

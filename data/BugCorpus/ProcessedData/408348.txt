@@ -1,1 +1,0 @@
-408348.txt: activating minimized shared area activate shared area single toolitem explicitly pick activate activated area require work activation history activate

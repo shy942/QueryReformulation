@@ -1,1 +1,0 @@
-95744.txt: dialog margins image consistent wizards margins text dialog image

@@ -1,1 +1,0 @@
-466843.txt: invalid preference category path org eclipse trace tracing eclipse mars java fresh workspace warning error log starting eclipse invalid preference category path org eclipse trace tracing bundle org eclipse monitoring org eclipse monitoring

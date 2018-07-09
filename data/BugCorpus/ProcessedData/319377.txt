@@ -1,1 +1,0 @@
-319377.txt: key bindings compatibility multiple dialogs appears confuse context chain open java file ctrl tick regular expressions checkbox java editor ctrl space click content assist window activate don commit operation inserts text click find dialog text field ctrl space java content assist appears regular expressions content assist note broken patch bug

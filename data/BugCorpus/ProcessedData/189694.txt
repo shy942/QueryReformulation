@@ -1,1 +1,0 @@
-189694.txt: application window hang eclipse menu enabled application window call menu enabled cache enabled crawls children menu determine shell disabled return true shell enabled menus inactive attaching steve approved patch

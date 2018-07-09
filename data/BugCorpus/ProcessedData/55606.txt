@@ -1,1 +1,0 @@
-55606.txt: intro internal packages unconventional package names build naming internal packages conventions http dev eclipse org naming html follow pattern org eclipse component internal subcomponent internal position org eclipse internal intro org eclipse intro internal org eclipse internal forms org eclipse forms internal packages fixed fine

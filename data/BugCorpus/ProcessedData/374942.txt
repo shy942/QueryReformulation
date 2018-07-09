@@ -1,1 +1,0 @@
-374942.txt: copy keybinding brings key binding selection popup open select text ctrl copy result keybindings popup opens button entry copy don problem actions problem editors views version build

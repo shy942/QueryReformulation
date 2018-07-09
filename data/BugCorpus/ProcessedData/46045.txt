@@ -1,1 +1,0 @@
-46045.txt: provide option automatic switching consoles hyades switching console profiling console views time stdout stderr output generated running programs annoying behavior option disable behavior active view switch automatically console views time output consoles

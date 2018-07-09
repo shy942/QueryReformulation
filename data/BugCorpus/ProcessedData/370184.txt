@@ -1,1 +1,0 @@
-370184.txt: error javadoc size provider build identifier http eclipse org indigo jsp topic forg eclipse platform doc isv freference fapi forg feclipse fui size provider html compute preferred size height width true height width false width width true reproducible

@@ -1,1 +1,0 @@
-325235.txt: remove unused preferences view message font honored window preferences general appearance colors fonts view editor folders view message font click edit button change font preview pane click apply notice problems view message changed font click dismiss preference dialog closing reopening problems view correct problem

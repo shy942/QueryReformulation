@@ -1,1 +1,0 @@
-93515.txt: preferences console preferences colors gtk console preference color field editor stdout stderr stdin proper colors buttons changing colors works reflected preference

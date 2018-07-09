@@ -1,1 +1,0 @@
-6304.txt: synch java file resource select java file resource properties file instance package viewer open context menu team entry

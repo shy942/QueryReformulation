@@ -1,1 +1,0 @@
-59850.txt: implement style presentation bug tracking work implementing style presentation based code org eclipse internal presentation project bug goal close style choices guide bug dependent individual bugs created track features worked signed work

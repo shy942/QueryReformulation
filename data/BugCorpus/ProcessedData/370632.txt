@@ -1,1 +1,0 @@
-370632.txt: copying moving resources linked local filesystem build identifier https bugs eclipse org bugs bug cgi details reproducible

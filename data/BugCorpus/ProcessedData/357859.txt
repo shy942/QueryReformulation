@@ -1,1 +1,0 @@
-357859.txt: resetting saved perspective destroys detached windows detach view save perspective window reset perspective detached view window close perspective reopen saved perspective detached window

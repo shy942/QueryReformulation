@@ -1,1 +1,0 @@
-25065.txt: properties dialog hourglass long running project properties takes long time bring project properties dialog seconds generic install hourglass needed gary

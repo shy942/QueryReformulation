@@ -1,1 +1,0 @@
-139494.txt: face update manifest compile foundation org eclipse jface org eclipse jface plug modified compile cleanly foundation class libraries bug plug manifest updated releng builder advantage attach patch

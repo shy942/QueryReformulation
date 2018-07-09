@@ -1,1 +1,0 @@
-59089.txt: editor mgmt selecting editor dropdown change order tabs implementation editor tabs tab folder maintains tabs order created sideeffect selecting tab drop visible tabs change created indexes selected

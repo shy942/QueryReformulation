@@ -1,1 +1,0 @@
-182402.txt: face font registry default font record leaks font font registry default font record creates font font font data create font record creates font font data disposes original font font record created

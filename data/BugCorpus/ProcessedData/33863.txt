@@ -1,1 +1,0 @@
-33863.txt: key bindings changing active configuration update menus multi window mode start eclipse open window window window window open preference dialog change active configuration key binding drop edit menu notice accelerator text item changed switch window drop edit menu notice displaying accelerator text pressing accelerator expect pressing accelerator

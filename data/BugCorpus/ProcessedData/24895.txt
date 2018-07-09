@@ -1,1 +1,0 @@
-24895.txt: global actions build enabled workspace empty start eclipse workspace close resource perspective findings navigate menu entry enabled menu entries disabled project rebuild enabled workspace empty window keyboard shortcuts menu entry enabled menu entries disabled window switch editor enabled opens dialog activation editor open

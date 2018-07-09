@@ -1,1 +1,0 @@
-97645.txt: content types add button file associations yields file type dialog content types pref select content type press add button file associations dialog file type terminology title dialog match label button invoked changing label file types file types consistent file associations pref change dialog add

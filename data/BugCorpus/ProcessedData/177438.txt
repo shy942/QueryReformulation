@@ -1,1 +1,0 @@
-177438.txt: accessibility preferences dialog problems high contrast mode build steps reproduce set high contrast mode set font size application font sans restart platform bring preferences eclipse notice displayed completely

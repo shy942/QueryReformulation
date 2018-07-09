@@ -1,1 +1,0 @@
-245359.txt: open resource dialog looses working set selection selected build steps reproduce open open resource dialog select working sets search find resource select close dialog repeat selection working sets lost window working set selected

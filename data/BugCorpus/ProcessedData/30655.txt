@@ -1,1 +1,0 @@
-30655.txt: check selection navigator drag adapter drag start build navigator drag adapter drag start assumes selection true platforms linux selected item dragged click starts drag deselects item drag start check selection empty set doit false abort drag bug

@@ -1,1 +1,0 @@
-142204.txt: presentations editor window displaying file tabs occasion day file tabs java editor pane disappear vertical scroll bar top pane perspective selector tabs file tabs component appears missing click maximize button reduce maximum tabs reappear maximize

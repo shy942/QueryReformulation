@@ -1,1 +1,0 @@
-143950.txt: broken reference links open platform plug developer guide reference reference clicking org eclipse jface layout org eclipse jface menus org eclipse ide file system result message displayed area topic requested link wrong product feature installed online includes documentation features installed entries packages contained references overview problems

@@ -1,1 +1,0 @@
-375393.txt: popup context menu disapears reopening popup menu registered post construct method opens time menu everthing close open rendered flag set false true code called menu registered correctly view closed tested reproduced version build

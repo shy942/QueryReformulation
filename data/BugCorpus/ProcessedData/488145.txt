@@ -1,1 +1,0 @@
-488145.txt: databinding computed provide factory method bug stefan suggested helper method easily create computed

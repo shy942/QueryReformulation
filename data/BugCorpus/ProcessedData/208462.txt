@@ -1,1 +1,0 @@
-208462.txt: perspectives newly created project project explorer build steps reproduce start fresh workspace close java perspective open java perspective create web project web project project explorer view open java perspective appears package explorer view project explorer view omit step problem

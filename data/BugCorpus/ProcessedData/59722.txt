@@ -1,1 +1,0 @@
-59722.txt: basic stack presentation view form basic stack presentation managing toolbar position drawing lines paint listener changed view form

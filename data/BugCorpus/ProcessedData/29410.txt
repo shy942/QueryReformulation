@@ -1,1 +1,0 @@
-29410.txt: editor mgmt full path remembered eclipse option display full path remembered

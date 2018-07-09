@@ -1,1 +1,0 @@
-2796.txt: org eclipse editor actions doc wrong documentation org eclipse editor actions extension point code work toolbar path incorrect error written console additions normal description toolbar path talks token represents toolbar supposed code fails

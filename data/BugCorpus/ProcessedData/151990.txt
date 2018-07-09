@@ -1,1 +1,0 @@
-151990.txt: progress task displayed progress monitor dialog open false set open false progress monitor dialog task displayed correctly steps reproduce instantiate progress monitor dialog call set open false call delay call open actual result default task operation progress displayed expected result task call monitor task method suggested call set message task whenn dialog opened

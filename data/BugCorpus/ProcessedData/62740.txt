@@ -1,1 +1,0 @@
-62740.txt: preferences export preferences dialog selection folder destination build steps launch eclipse window preferences select export button bottom left chose folder store epf file browse button select file press open wrong system dialog instance bug export utility unusable mac

@@ -1,1 +1,0 @@
-387002.txt: main toolbar visible closed close box broken bug comment workspace click close box tab workbench arrow button main toolbar visible

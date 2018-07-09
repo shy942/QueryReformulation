@@ -1,1 +1,0 @@
-206752.txt: error opening files build steps reproduce start eclipse open file doc extension file open file file opened error appears error opening editor error log view error displayed unable create editor org eclipse system place editor invalid input org eclipse ide file store editor input input adapt file

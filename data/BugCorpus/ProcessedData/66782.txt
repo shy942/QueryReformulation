@@ -1,1 +1,0 @@
-66782.txt: intro set initialization data die supply bad image image descriptor create image return null don check

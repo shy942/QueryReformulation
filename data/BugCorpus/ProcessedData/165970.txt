@@ -1,1 +1,0 @@
-165970.txt: editor mgmt somtimes navigate reusing editors steps set editor preferences close editors automatically number opened editors closing open item java item class select text method hit ctrl display method hierarchy pick table item implementation text hit alt left expected item text actual cursor top table item hit alt left item text

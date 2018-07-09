@@ -1,1 +1,0 @@
-359131.txt: fixing dual monitor issue broken tests test window test window broken result bug code force shell display test fails model bounds intersects display bounds appears rectangles width height don intersect

@@ -1,1 +1,0 @@
-32234.txt: key bindings assign key unused longer build preferences workbench select step select key sequence press remove select step selection select key sequence ctrl press remove enter key sequence press add observe icon key sequence expect key doesn front step selection debugger pulldown menu

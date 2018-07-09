@@ -1,1 +1,0 @@
-70321.txt: preferences project reference properties clipped italian language pack bug original problem reported

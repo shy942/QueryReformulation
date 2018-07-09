@@ -1,1 +1,0 @@
-440080.txt: delete private method face resources private static void initialize default colors introduced remove

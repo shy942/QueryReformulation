@@ -1,1 +1,0 @@
-437207.txt: editor persist persist wrapped component https git eclipse org bug initially created clone bug persist model editor unable column widths pre destroy widget disposed persist called editor forwarded wrapped component model editor

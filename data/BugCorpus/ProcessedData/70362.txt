@@ -1,1 +1,0 @@
-70362.txt: editor mgmt topmost editor properly restored latest head simple project file txt txt opened file txt txt opened select tab txt shutdown restart txt active tab contents gray editor instantiated select tab txt gray select tab txt select tab txt txt active tab editor properly instantiated

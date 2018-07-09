@@ -1,1 +1,0 @@
-215129.txt: snippet add snippet demonstrating center image column asked newsgroups

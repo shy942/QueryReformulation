@@ -1,1 +1,0 @@
-82286.txt: workbench face tests failing attempt disposed image build tests failing complaining workbench running turns invocation failing attempt disposed image workbench images default tab folder problems disposed image causing workbench fail completely claiming exited causing subsequent invocations fail platform workbench running returns true

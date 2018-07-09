@@ -1,1 +1,0 @@
-50022.txt: delegating drag adapter delegating drag adapater defines list active listeners initializes drag start list referenced remove drag source listener null check causing null pointer exception drag start occured

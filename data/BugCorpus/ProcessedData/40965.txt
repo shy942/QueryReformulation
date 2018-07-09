@@ -1,1 +1,0 @@
-40965.txt: workbench tool bar buttons require mouse focus read cycle buttons mouse tooltip interface select mouse start inspect objects tab eclipse focus tool bar button move button mouse tool text

@@ -1,1 +1,0 @@
-78666.txt: key bindings errors warning keybinding definitions collide define keybinding default windows context keybinding keybindings silently removed conflict logged ideally user collision keybindings preference case kill mapping explain eclipse dynamic platform lots scenarios keybindings configuration start conflicting working keybindings

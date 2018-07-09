@@ -1,1 +1,0 @@
-280033.txt: contributions improve customize perspective dialog command groups availability tab discussion newsgroup command groups availability confusing command groups action sets command doesn add command set couldn find provide extension point command group add functionality rename tab action sets avoid confusion

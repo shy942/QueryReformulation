@@ -1,1 +1,0 @@
-50438.txt: progress view icon area set status false called build call workbench window configurer set status false workbench advisor pre window open workbench configurer method status hidden action tooltip double click open progress view appears bottom left window action missing find icon empty screen space views left side window

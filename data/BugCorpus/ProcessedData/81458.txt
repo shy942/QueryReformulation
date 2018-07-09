@@ -1,1 +1,0 @@
-81458.txt: preferences preference dialog background colours match platforms solaris motif background colours preference dialog motif wrong left top edges dialog white background widgetry scrollable composite scrollbar dark grey background entire dialog customary motif dark grey

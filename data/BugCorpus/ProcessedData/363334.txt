@@ -1,1 +1,0 @@
-363334.txt: bot test launcher doesn work eclipse created attachment stacktrace bot test launcher command stopped working moving indigo juno error java lang linkage error loader constraint violation loader instance org eclipse osgi internal baseadaptor default class loader initiated loading type org eclipse testing testable object eclipse version build bot version

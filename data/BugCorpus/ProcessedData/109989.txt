@@ -1,1 +1,0 @@
-109989.txt: key bindings preference reordering loses selection open preference dialog view tab sort find select ctrl space sort category selection lost ctrl space selected revealed

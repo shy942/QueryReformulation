@@ -1,1 +1,0 @@
-388661.txt: element reference renderer violates design static map defined don static stuff element reference renderer violates contract causeing problem multi user env holds entries performance decrease don reason static map renderer renderer factory

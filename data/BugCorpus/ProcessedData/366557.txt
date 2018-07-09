@@ -1,1 +1,0 @@
-366557.txt: compatibility legacy command support executing handler org eclipse commands command execute executing matching handler caught org eclipse internal handlers fails org eclipse tests commands bug test test select handler sends selection event

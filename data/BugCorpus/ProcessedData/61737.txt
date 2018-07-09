@@ -1,1 +1,0 @@
-61737.txt: cheatsheet escaped characters description texts doubly escaped description text wrapped form form tags passed form text rendered properly form text parses text originally description included passed form text causing parser throw exception simple ugly work doubly escape character amp read cheat sheet parser passed form text read find handle

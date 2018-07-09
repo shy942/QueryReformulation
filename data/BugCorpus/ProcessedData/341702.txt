@@ -1,1 +1,0 @@
-341702.txt: face composite image descriptor mixes images alpha channel wrong build identifier method mixes images alpha channel face composite image descriptor wrong cases reproducible

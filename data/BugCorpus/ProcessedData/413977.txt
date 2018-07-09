@@ -1,1 +1,0 @@
-413977.txt: key bindings native key bindings working click content assist javadoc latest build paste snippet package explorer public class place caret start content assist left mouse button click javadoc left mouse button click editor active caret type key bindings don work

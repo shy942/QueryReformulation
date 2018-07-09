@@ -1,1 +1,0 @@
-189999.txt: properties view properties view setting slow recursive refresh properties hierarchy read leaf nodes setting takes seconds core duo slower stems call property sheet entry refresh root set method total refresh values dependent shouldn listeners big problem hard users productive slow interface realize late workaround don reimplement property view

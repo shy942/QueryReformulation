@@ -1,1 +1,0 @@
-128243.txt: face jface util listener list deprecation message difference listener list int deprecated org eclipse jface util listener list deprecated link org eclipse core runtime listener list jface listener list explicitly mention constructors classes semantics clients convert core runtime version noticing shift identity equality capacity

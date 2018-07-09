@@ -1,1 +1,0 @@
-143936.txt: tabbed properties undo redo working tabbed properties view undo redo work tabbed properties view contributor editor work frequent cases contributor view contributor selection based implementation interface selected objects case project explorer common navigator narrowed code dealing installing undo redo tabbed property sheet set action bars action bars action bars

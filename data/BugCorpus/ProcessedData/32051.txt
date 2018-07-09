@@ -1,1 +1,0 @@
-32051.txt: decorators decorators schema class required attribute class decorators extension point schema defined required lightweight decorators required provide class

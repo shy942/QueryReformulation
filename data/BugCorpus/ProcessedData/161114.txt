@@ -1,1 +1,0 @@
-161114.txt: presentations close perspectives leaves empty editor area closed perspectives attach screenshot

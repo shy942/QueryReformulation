@@ -1,1 +1,0 @@
-64605.txt: update memory error dialog usability dialog box memory error thrown suggests user increase heap size xmx option doesn vmargs users don initially tweak eclipse installations error dialog force start tweaking command switches unexperienced eclipse user pass xmx eclipse exe error reported assume option accepted spent day users memory error follow instructions

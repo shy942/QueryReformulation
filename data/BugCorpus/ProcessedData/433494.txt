@@ -1,1 +1,0 @@
-433494.txt: trim toolbar handlers bad eclipse started fresh workspace created attachment screenshot toolbars scenario eclipse fresh workspace close problem toolbar handlers wide bad screenshot errors log file workaround restart eclipse environment windows eclipse theme windows

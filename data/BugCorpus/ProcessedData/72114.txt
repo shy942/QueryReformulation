@@ -1,1 +1,0 @@
-72114.txt: view mgmt views implement saveable consulted dirty closed view implements saveable consulted closed view user chance veto event supported close events including workbench shutdown

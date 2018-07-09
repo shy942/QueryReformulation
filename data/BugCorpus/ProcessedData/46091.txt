@@ -1,1 +1,0 @@
-46091.txt: editor mgmt highlight tab represents current edit window edit windows opened moving alot interupted window click package explorer current tab white grey standard appearance current tab visually distinct tabs

@@ -1,1 +1,0 @@
-370448.txt: perspective switcher leaks images perspective switcher calls create image descriptor dispose returned image correctly result image leaked opened closed perspective

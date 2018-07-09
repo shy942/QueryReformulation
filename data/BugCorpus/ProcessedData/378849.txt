@@ -1,1 +1,0 @@
-378849.txt: customize perspective dialog longer action set details selecting action set command groups availability tab menubar details toolbar details empty caused bug bug customize perspective dialog revert code dealt action sets

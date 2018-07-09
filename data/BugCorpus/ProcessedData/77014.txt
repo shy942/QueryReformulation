@@ -1,1 +1,0 @@
-77014.txt: commands request provide close view command binding eclipse key sequence close editor view key sequence close editor view close active view editor view editor view

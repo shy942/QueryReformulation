@@ -1,1 +1,0 @@
-34397.txt: key bindings reassigning previous editor doesn work expected build reassign editor previous editor actions ctrl ctrl shift previous editor popup longer works reverse direction hold ctrl shift repeatedly hit dialog pops disappears key press editor change true previous view perspective actions note common rebind defaults don work motif

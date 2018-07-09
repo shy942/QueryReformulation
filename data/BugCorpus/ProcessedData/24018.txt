@@ -1,1 +1,0 @@
-24018.txt: workbench compiler warnings org eclipse fixed olivier thomann set compiler option static members accessed static reference hundreds errors jdt eclipse good idea basically access static member instance instance useless lead performance issue generating receiver side removed static method call

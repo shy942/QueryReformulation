@@ -1,1 +1,0 @@
-256656.txt: field assist cancel auto activation proposal popup caret moved created attachment proposed open find replace dialog text editor enable regex type quotes press type press arrow ctrl arrow content assist proposal popup auto activated field expected auto activation canceled caret moved

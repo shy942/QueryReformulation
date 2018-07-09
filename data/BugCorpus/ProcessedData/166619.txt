@@ -1,1 +1,0 @@
-166619.txt: trim trim layout compute size hardcoded return build steps reproduce org eclipse internal layout trim layout compute size composite int int boolean bunch work compute preferred size components trim layout throws work simply returns hardcoded point return result packing workbench shell application doesn work final statement wrong hint hint result set correctly

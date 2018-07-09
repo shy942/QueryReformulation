@@ -1,1 +1,0 @@
-144294.txt: performance common navigator easily cache selection improve performance common navigator override selection method expensive called repeatedly clients current selection underlying widget time called simple trick cache selection update result improved performance clients call selection defect refer info submitting patch shortly

@@ -1,1 +1,0 @@
-429728.txt: support stack renderer bug introduced presentation engine define style bits window quote persistent data key contract renderer key element implemented code respect overrides renderer simply define flags int store string version window peristent data map introduce stack renderer solve bug

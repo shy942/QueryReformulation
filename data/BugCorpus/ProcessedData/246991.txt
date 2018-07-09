@@ -1,1 +1,0 @@
-246991.txt: dialogs open resource dialog stays open choose open default editor open resource dialog stays open choose open default editor

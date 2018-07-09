@@ -1,1 +1,0 @@
-138670.txt: common navigator flickering customization dialog steps reproduce open project explorer choose filters view menu resive customizations dialog booktitle captialized layout flickers

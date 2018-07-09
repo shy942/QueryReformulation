@@ -1,1 +1,0 @@
-123230.txt: workbench launcher creates workspace pressing cancel workspace launcher asks default workspace startup created press cancel stops eclipse workspace metadata directory

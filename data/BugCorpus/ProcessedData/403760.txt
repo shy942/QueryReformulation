@@ -1,1 +1,0 @@
-403760.txt: closing maximized editor doesnt restore perspective layout perspectives java perspective instance debug repo exploring synchronize steps reproduce open file editor open editors maximize editor close editor result views perspective remain minimized expected result view configuration details product eclipse org eclipse sdk ide installed features org eclipse platform skf

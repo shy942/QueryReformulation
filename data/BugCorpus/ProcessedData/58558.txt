@@ -1,1 +1,0 @@
-58558.txt: activity mgmt default enabled activities persisted properly activity default enabled setting activity persistance helper sets default true lines check store boolean true enable activity confirm default default enabled activities turned restart

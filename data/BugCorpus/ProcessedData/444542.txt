@@ -1,1 +1,0 @@
-444542.txt: eliminate reliance stack trace filters responsiveness monitoring proposed solution bug https git eclipse org demonstrates responsiveness monitoring work relying stack trace filters eliminating filters completely eliminates overhead imposed responsiveness monitoring scenarios involving real delays

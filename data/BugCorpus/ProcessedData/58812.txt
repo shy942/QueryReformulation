@@ -1,1 +1,0 @@
-58812.txt: perspectives regression custom perspectives disappear shutdown restart create custom perspective windows preferences workbench perspectives view list perspectives notice custom perspective created shutdown eclipse start view list perspectives notice custom perspective created

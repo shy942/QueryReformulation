@@ -1,1 +1,0 @@
-474687.txt: tests improve platform tests readability lambda expressions

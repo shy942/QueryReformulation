@@ -1,1 +1,0 @@
-214488.txt: fast view fast view bar size depends startup shell size build steps reproduce start eclipse small window size resize dock fast views fast view bar size overgrows startup area fast view icons startup area changing fast view bar orientation reveals problems gtk

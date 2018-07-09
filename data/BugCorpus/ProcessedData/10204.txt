@@ -1,1 +1,0 @@
-10204.txt: references internal classes workbench messages references workbench messages internal standard components org eclipse views navigator navigator drag adapter org eclipse views navigator navigator drag adapter setup selections based selected types org eclipse wizards datatransfer wizard file system resource import

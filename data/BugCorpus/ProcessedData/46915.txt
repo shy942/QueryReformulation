@@ -1,1 +1,0 @@
-46915.txt: javadoc perspective listener abbreviations method summary http java sun javadoc writingdoccomments html firstsentence http eclipse org content org eclipse platform doc isv reference api org eclipse perspective listener html method summary

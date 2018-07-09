@@ -1,1 +1,0 @@
-155650.txt: preferences accessibility tab access split button preferences window steps reproduce bug launch eclipse goto preferences window select java anyother left pane select anyother left pane click top split button java tab key access navigate control notice navigate navigation split button

@@ -1,1 +1,0 @@
-60599.txt: editor mgmt draw problem single editor tab running multiple editor tabs turned draw problem tab tab fighting content editor draw single pixel black attach screen shot

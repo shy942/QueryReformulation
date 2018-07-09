@@ -1,1 +1,0 @@
-16129.txt: navigator exception attempting paste deleted file navigator select file copy delete select folder paste big scary error dialog java file sth log java version beta java vendor sun microsystems boot loader constants win win command arguments dev bin data runtime workspace org eclipse thu problems creating buffer org eclipse jdt core thu java exist

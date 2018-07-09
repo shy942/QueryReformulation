@@ -1,1 +1,0 @@
-427777.txt: perspectives restore minimized view reset customized perspective reproduce open perspective minimize view save perspective reset perspective view stack minimized view disappears window view disappeared view restore minimized view solution

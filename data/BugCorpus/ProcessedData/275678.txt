@@ -1,1 +1,0 @@
-275678.txt: dialogs editor mgmt revert usage open editors revert usage open editors remaining issues bug solved reopened bug

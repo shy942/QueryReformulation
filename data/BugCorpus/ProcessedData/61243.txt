@@ -1,1 +1,0 @@
-61243.txt: remove dependence core runtime compatibility plugin reference plugin descriptor

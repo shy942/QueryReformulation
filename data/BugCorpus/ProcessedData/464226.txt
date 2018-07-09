@@ -1,1 +1,0 @@
-464226.txt: editor background color set preferences longer dark theme happened wouldn huge problem darker background light gray background dark gray dark theme usable reproduce consistently windows haven checked platforms latest integration build fresh workspace issue

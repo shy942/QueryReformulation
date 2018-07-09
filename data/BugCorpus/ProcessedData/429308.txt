@@ -1,1 +1,0 @@
-429308.txt: workspace selection dialog visible task manager frequently start eclipse waiting workspace selection dialog start tab application workspace selection dialog task list minimize workspace selection dialog attached proposed change don test workbench selection dialog runtime eclipse

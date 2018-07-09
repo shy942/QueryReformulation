@@ -1,1 +1,0 @@
-431868.txt: trim hide tool control click menu bug hide toolitems mouse click

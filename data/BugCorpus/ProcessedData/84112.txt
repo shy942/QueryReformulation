@@ -1,1 +1,0 @@
-84112.txt: preferences dialog clean build issues checked preferences dialog margin content area left pixels left hand side bold banner text top align clear button text icons square content area tab folder corners adding separator title pref

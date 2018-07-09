@@ -1,1 +1,0 @@
-147545.txt: data binding attempting fire stale event abstract observable throws class cast exception code abstract observable firing stale events appears incomplete listeners type stale listener retrieved cast change listener assuming code copied change listener code completed attaching patch

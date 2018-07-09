@@ -1,1 +1,0 @@
-378684.txt: ctrl disappears switching emacs code master bug start clean workspace switch emacs keybindings preferences general note ctrl editor brings pop keybindings good expected swtich default keybindings ctrl tie command adding restart scenario steps scenario change outcome

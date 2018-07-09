@@ -1,1 +1,0 @@
-257112.txt: data binding split org eclipse core databinding smaller plugins clients observables data binding plugin running constrained environments dependencies converter validator code big decimal bug create smaller plug org eclipse core databinding observables exported org eclipse core databinding compatibility

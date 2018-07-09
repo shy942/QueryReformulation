@@ -1,1 +1,0 @@
-56337.txt: editor mgmt alt menu restore item ungreyed alt menu maximize editor hit alt restore enabled maximize enabled

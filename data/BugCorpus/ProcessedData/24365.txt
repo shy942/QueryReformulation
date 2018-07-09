@@ -1,1 +1,0 @@
-24365.txt: wizards description import existing project wizard vague description import existing project wizard create project resource existing directory clear users eclipse idea word project create project resource existing eclipse project located filesystem point distinguish wizard eclipse project import wizard import directory wizard

@@ -1,1 +1,0 @@
-31564.txt: editor mgmt remove editor list preferences view eclipse removal preferences accessing editor list tab group compression requested prior release remove setting preferences code triggerred preferences set manner users override preference functionality remove editor list view plugin xml file comment users uncomment desire view

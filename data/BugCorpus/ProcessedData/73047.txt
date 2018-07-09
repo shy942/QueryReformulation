@@ -1,1 +1,0 @@
-73047.txt: click drag view menu starts dragging view opening menu click view menu black triangle view toolbar don release mouse dragging mouse starts dragging view opening view menu highlighting menu entry cursor connected bug bug dup strange dragging view menu button initiates view drag operation dragging view toolbar button behaves

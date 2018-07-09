@@ -1,1 +1,0 @@
-170629.txt: dialogs popup dialog quick type hierarchy properly support dialog fonts type hierarchy label dialog font filter field dialog font resize vertically clips text larger fonts

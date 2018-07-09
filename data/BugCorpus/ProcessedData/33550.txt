@@ -1,1 +1,0 @@
-33550.txt: dialogs dialog support remembering size position dialogs remember size position restore size screen size font isn trivial face dialog class support remembering restoring size position realy ease task subclasses steel code open type selection dialog

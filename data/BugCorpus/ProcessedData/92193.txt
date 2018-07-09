@@ -1,1 +1,0 @@
-92193.txt: graphics basic resource wizard initialize default image descriptor invalid image reference basic resource wizard initialize default image descriptor reads image descriptor desc workbench plugin image descriptor wizban wiz gif wiz gif org eclipse ide plugin icons full wizban directory occurs initialize default image descriptor method overridden superclas

@@ -1,1 +1,0 @@
-356634.txt: revert button label perspective preference dialog incorrect work bug rationalize reset revert perspective naming incompletely ported stream bulk work putting checkbox revert dialog moved change revert button preferences steps reproduce open general perspective preferences dialog note button reset revert

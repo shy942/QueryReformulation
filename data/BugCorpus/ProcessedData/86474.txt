@@ -1,1 +1,0 @@
-86474.txt: widget disposed workbench context support unregister shell fixing leak workbench context support widget disposed exception unregister shell happen shell unregistered disposed perfectly legitimate test case previous editor dialogs cycle action

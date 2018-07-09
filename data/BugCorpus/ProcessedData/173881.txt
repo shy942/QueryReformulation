@@ -1,1 +1,0 @@
-173881.txt: error logged missing resource navigator opening resource perspective eclipse windows open resource perspective time logged errorlog referenced exist org eclipse views resource navigator

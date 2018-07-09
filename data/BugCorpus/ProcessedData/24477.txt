@@ -1,1 +1,0 @@
-24477.txt: dialogs face window sized properly opened window reopened time open initialize bounds returns wrong constant remove listener resize fixed lots problem window dialog classes prevent opening instance buttons hash map grow indefinitely open

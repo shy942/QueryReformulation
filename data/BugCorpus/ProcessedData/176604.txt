@@ -1,1 +1,0 @@
-176604.txt: dialogs filtered items selection dialog view menu mouse filtered items selection dialog view menu mouse trivial add filtered items selection dialog create view menu tool bar add mouse listener mouse adapter public void mouse mouse event view menu

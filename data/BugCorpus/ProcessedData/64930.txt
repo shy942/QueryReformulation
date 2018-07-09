@@ -1,1 +1,0 @@
-64930.txt: progress strange build behaviour autobuild workspace locked auto build clean workspace don build create job locks workspace build observe background job scheduled expected bahviour blocked dialog options cancel background cancel foreground build background changing workspace compiler settings preferences java compiler

@@ -1,1 +1,0 @@
-106059.txt: viewers disappearing icon problem view selecting row icon disappears select problem problem view unselected works fine attached screenshot

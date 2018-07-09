@@ -1,1 +1,0 @@
-143935.txt: tabbed properties memory leak tabbed property sheet memory leak org eclipse views properties tabbed tabbed property sheet dispose method clean fields long referenced references objects problematic object references contributor workbench view editor expensive

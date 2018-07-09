@@ -1,1 +1,0 @@
-51157.txt: jobs progress view floater wanders progress view floater thingy moves sits appears middle screen contents buttons inactive window resized job starts floater disappears find floater ugly disturbing progressing open progress view works multiple jobs

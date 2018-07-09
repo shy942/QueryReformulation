@@ -1,1 +1,0 @@
-31393.txt: workbench inconsistent disabled toolbar icons methods draw disabled toolbar icons inconsistent styles disabled icons toolbars icon drawn dark gray save icon drawn highlight shadow colors edit position note difficult depending user color scheme bug

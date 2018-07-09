@@ -1,1 +1,0 @@
-464317.txt: open external programs browse doesn select app bug open external programs browse doesn select app problem editor selection dialog doesn set proper file extensions

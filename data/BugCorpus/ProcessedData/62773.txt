@@ -1,1 +1,0 @@
-62773.txt: dialog file import dialog redraw properly resized build steps file import select item tree press arrow item existing project workspace notice black dots select import source click dialog black dots disappear guess dialog layout call resized resizes dialog message expandes lines

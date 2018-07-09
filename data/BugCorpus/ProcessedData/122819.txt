@@ -1,1 +1,0 @@
-122819.txt: metadata classes classes copyright notices fixed proper license attach file easier read nick adventure builder platform copyright don intentional update template preferences

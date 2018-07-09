@@ -1,1 +1,0 @@
-267425.txt: perspectives problem outline view min max bug rcjsuen paul problem outline view guess caused bug open file supports outline view java file open activate outline view render outline appropriately open activate view invoke ctrl maximize view invoke ctrl unzoom notice outline view content

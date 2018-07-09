@@ -1,1 +1,0 @@
-58942.txt: rewording blocked jobs dialog attached patches blocked jobs dialog achieve wording agreed removes cancel button progress viewer left justifies centre justified text erich pointed unusual

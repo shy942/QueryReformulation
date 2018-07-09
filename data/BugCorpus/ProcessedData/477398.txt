@@ -1,1 +1,0 @@
-477398.txt: manager agents lifecycle support patrik suzzi solution bug reveals manager drag agents drop agents dispose images add add image add dispose method drag agent drop agent call manager dispose

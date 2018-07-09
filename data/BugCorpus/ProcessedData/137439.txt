@@ -1,1 +1,0 @@
-137439.txt: data binding inconsistent type inconsistencies returned types type widget observable values spinner observable returns integer class behaves return int class integer accept null values table observable returns integer class return integer int class accept null values

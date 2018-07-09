@@ -1,1 +1,0 @@
-60498.txt: hover missing progress view button status bar hover text describing button status

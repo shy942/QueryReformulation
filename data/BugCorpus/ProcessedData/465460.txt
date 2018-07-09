@@ -1,1 +1,0 @@
-465460.txt: missing banner png org eclipse ide application org eclipse internal ide application workbench advisor declare workbench images code png declare workbench image ide bundle internal workbench images banner png true org eclipse ide icons full obj banner gif image editor dead

@@ -1,1 +1,0 @@
-53214.txt: memory error dialog incorrectly attached picture

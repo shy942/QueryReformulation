@@ -1,1 +1,0 @@
-69873.txt: theme extension point typo theme extension point typos code font definiton font definition xyz text font category xyz theme category label editor font defaults org eclipse jface textfont description font plugin editor description font defintion font definition

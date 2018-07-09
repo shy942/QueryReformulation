@@ -1,1 +1,0 @@
-71747.txt: move progress view workbench plugin bulk concurrency org eclipse workbench progress view appears defined org eclipse ide include progress view app include ide plugin plugins ide requires progress view moved plugin don include plugins job progress view button appears status progress view open

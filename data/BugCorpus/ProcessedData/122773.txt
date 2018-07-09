@@ -1,1 +1,0 @@
-122773.txt: common navigator open action appears empty selection ensure selected click empty space experimental resource navigator open action appears incorrectly

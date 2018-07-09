@@ -1,1 +1,0 @@
-22450.txt: key bindings rename longer works navigator slelcting file navigator view hitting rename file eclipse feature longer works latest build

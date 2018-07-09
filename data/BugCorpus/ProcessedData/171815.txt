@@ -1,1 +1,0 @@
-171815.txt: metadata org eclipse ide application doesn plugin requirements manifest fixing bug morning noticed plugin version requirements manifest plugin http wiki eclipse org php version numbering plug requirements good practice plugin version meet requirements

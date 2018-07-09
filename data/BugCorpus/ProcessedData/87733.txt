@@ -1,1 +1,0 @@
-87733.txt: cell editors double click behavior tableviewer looked bugs fixed apparent intended behavior table cell editing single click start editing cell toggle flag switch default behavior single click edit cell double click select single click select double click edit cell appears easy reimplementing table viewer impl lot surrounding code

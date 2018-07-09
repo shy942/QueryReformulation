@@ -1,1 +1,0 @@
-162443.txt: undo delete resources operation halts bug test linux guess change delete resource action call operation pops dialog blocks automated testing

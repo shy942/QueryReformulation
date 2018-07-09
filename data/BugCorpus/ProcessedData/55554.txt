@@ -1,1 +1,0 @@
-55554.txt: preferences duplicate accelerator binding appearance assigned accelerator top perspective

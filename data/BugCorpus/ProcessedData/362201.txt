@@ -1,1 +1,0 @@
-362201.txt: compatibility link selection doesn toggle properly git repositories view open git repositories view ctrl link selection ctrl link selection menu item checked tool item toggled works

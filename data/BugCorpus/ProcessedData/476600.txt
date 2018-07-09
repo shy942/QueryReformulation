@@ -1,1 +1,0 @@
-476600.txt: change strictly compatible error message org eclipse core contenttype warning

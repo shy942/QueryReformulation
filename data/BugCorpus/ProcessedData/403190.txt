@@ -1,1 +1,0 @@
-403190.txt: final eclipse kepler final steps core ready declare kepler remove internal manifest ensure bundle version incremented minor ensure packages package html file add packages documentation ensure packages ready noreference wiki add missing javadoc leaking internals

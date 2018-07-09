@@ -1,1 +1,0 @@
-196164.txt: plugin broken missing dependency runtime compatibility dependency org eclipse core runtime compatibility removed org org eclipse core resources breaks application org eclipse ide depends compatibility plugin resource navigator view dependency broken https bugs eclipse org bugs bug cgi

@@ -1,1 +1,0 @@
-140306.txt: dialogs double clicking button disabled button resize dialog open wizard file double click button entire dialog resized default size expected double clicking tab bar proper resizes dialog double clicking button side note resizing helpful main dialog area extremely narrow

@@ -1,1 +1,0 @@
-39080.txt: key bindings backspace deletes character backspace delete character java editor eclipse deletes word single character eclipse version build problem workbench active configuration emacs extends standard switch standard problem disappears backspace deletes character selecting emacs switch previous behaviour backspace deletes word

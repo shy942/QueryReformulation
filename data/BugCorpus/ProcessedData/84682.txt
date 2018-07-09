@@ -1,1 +1,0 @@
-84682.txt: preferences preference dialog layout issues mac layout issues preference dialog optimal mac black border hand side dialog isn native strange margin hand side dialog black edge window separator bottom doesn side border close initial tree width small items tree level truncated combo box default text clipped scrolled left eraser tool wrong background

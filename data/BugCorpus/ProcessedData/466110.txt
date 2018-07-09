@@ -1,1 +1,0 @@
-466110.txt: project settings org eclipse workbench addons swt introduce compiler errors save running reproduce open cleanup addon java trivial edit save observed post save actions removes object casts creates compiler errors place expected compiler errors

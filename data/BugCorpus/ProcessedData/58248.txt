@@ -1,1 +1,0 @@
-58248.txt: progress dialogs modal dialogs block load unit class files reside packages open project properties unit select build path change output folder bin press dialogs progress bar stacked top questions dialog answer question action background

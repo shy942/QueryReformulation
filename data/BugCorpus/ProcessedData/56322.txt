@@ -1,1 +1,0 @@
-56322.txt: intro npe walking swt intropath scratch steps reproduce extract sdk zip start console workspace intro view click samples choose standalone swt launcher click donwload org eclispe strange console messages click click finish npe attachement

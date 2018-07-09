@@ -1,1 +1,0 @@
-42211.txt: jobs exception log exception log don caused java lang null pointer exception java lang throwable init throwable java java lang throwable init throwable java java lang null pointer exception init null pointer exception java org eclipse swt widgets display async exec display java org eclipse progress job job java org eclipse core internal jobs worker worker java

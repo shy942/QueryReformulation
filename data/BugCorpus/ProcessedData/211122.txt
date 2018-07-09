@@ -1,1 +1,0 @@
-211122.txt: markers errors marker logged opening markers view opening markers view error log detail marker marker question stack trace log plug org eclipse core resources resources produce stack trace case debug issue

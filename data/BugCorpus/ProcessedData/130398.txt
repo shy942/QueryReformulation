@@ -1,1 +1,0 @@
-130398.txt: file copy enabled resource location null navigator enable copy action resource null location lives local file system org eclipse views navigator copy action update selection

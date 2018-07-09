@@ -1,1 +1,0 @@
-53427.txt: include tests automated test suite build start close restart workbench session places singleton patterns cleaned properly left registries workbench plugin read image color font registries reused disposed app restart workbench shutting registry changed interval registry workbench invocations apps advantage nice reason benefit test suites

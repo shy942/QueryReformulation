@@ -1,1 +1,0 @@
-292868.txt: dialog fit scroll bar standard setups dialog progress bar works start fresh workspace windows picture bigger fit windows

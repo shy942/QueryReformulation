@@ -1,1 +1,0 @@
-53485.txt: editor mgmt editor list scrollable issue exists report number opened editors windows depends screen resolution position main window screen list editors ctrl grows bottom screen edge scrollable move selection visible area

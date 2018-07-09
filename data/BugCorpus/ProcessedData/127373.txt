@@ -1,1 +1,0 @@
-127373.txt: hyperlinks covered table widget receives link activated event double click table hyperlink widget activated wrongly double click table selection dialog wich covers hyperlink behaviour easily reproduced plugin xml editor choose browse button move upcomming dialog hyperlink widget double click element dialogs table underlying hyperlink activated

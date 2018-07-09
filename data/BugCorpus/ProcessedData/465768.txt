@@ -1,1 +1,0 @@
-465768.txt: adding working set auto select creating importing project eclipse select working sets project clicking select button leads dialog configure working sets choose create working set chances project set set automatically checked change behaviour working sets automatically selected list

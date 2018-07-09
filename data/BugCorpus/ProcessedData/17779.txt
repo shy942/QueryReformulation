@@ -1,1 +1,0 @@
-17779.txt: tasks filter tasks dialog tree control strange behavior checked tree control filter tasks dialog doesn indeterminate children selected deselecting marker subtype automatcially unchecks markers root type case tree checking root type type markers independantly

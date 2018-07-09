@@ -1,1 +1,0 @@
-22991.txt: dialogs filtered list set selection work expected set selection work called event handling loop set elements starts thread synchronously adds items table set selection simply calls table set selection table empty behaviour visible choose package subdialog class dialog pre selected package allways entered box

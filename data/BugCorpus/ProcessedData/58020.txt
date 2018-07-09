@@ -1,1 +1,0 @@
-58020.txt: workbench high contrast setting honoured default theme build choose high contrast black text white background system settings start eclipse tabs apply background foreground gradient hard read hierarchy view pane separator bar visible problem

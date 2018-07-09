@@ -1,1 +1,0 @@
-90935.txt: feature details dialog resize strange open feature details dialog notice large area grey bottom resize vertically notice feature list smaller large grey area remains grey area eliminated completely failing resize

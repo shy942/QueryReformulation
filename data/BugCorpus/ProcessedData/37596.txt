@@ -1,1 +1,0 @@
-37596.txt: editor area drop adapter handling correctly valid style style drag drop events drop target simply modifier pressed application choose operation performed application operations supported drag source informed operation handled drag enter drag operation changed drag time operation change current implementation cursor flicker strange behaviour

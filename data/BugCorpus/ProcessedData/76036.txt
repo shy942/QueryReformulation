@@ -1,1 +1,0 @@
-76036.txt: workbench navigator project explorer testcase edit java file perform search close editor collapse navigator view goto search view select search select navigator context menu workbench beeps file visible navigator view

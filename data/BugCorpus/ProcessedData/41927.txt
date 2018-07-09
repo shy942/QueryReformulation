@@ -1,1 +1,0 @@
-41927.txt: dialogs selecting preference dialog generates invalid entries select entry close dialog reopen selecting anotehr entry result invalid values selected

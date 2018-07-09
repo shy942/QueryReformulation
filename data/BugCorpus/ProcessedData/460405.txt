@@ -1,1 +1,0 @@
-460405.txt: compiler problems generified adaptable adapter bug comment

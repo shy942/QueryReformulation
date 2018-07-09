@@ -1,1 +1,0 @@
-50573.txt: jobs verbose progress window persist sessions progress view verbose filter doesnt stay selected restart eclipse turned verbose comments files received big received received alway turn verbose expand tree node annoying

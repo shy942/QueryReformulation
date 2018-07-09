@@ -1,1 +1,0 @@
-288202.txt: metadata bundles depend bug initially created clone bug org eclipse jface plugin manifest set depend introduced

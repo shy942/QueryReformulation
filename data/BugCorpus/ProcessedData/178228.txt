@@ -1,1 +1,0 @@
-178228.txt: double click java editor ruler broken double click java editor ruler longer works breakpoints caused fixing bug fixed

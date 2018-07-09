@@ -1,1 +1,0 @@
-176043.txt: commands restore toolbar breking plug boundaries hide toolbars mac bug toggle contribution accessing internal code workbench ide convert action command handler property tester define command property tester workbench add menu contribution ide behaviour access internal code

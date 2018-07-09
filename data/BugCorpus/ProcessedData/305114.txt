@@ -1,1 +1,0 @@
-305114.txt: common navigator resource selection util deprecated public replacement public class org eclipse views navigator resource selection util deprecated hint common navigator framework classes counterpart internal

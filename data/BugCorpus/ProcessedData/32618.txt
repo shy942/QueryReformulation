@@ -1,1 +1,0 @@
-32618.txt: dialogs label texts clipped open window preferences workbench obeserve labels workspace save interval preference clipped

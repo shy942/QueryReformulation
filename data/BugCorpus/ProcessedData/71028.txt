@@ -1,1 +1,0 @@
-71028.txt: perspectives add reset perspective perspective switcher context menu apps extend workbench functionality users avoid cluttering main menus workbench specific menu items helpful include reset perspective item context menu perspective switcher main actions opening closing resetting perspectives app include main menus

@@ -1,1 +1,0 @@
-170827.txt: control decoration wrong method render text constructor hover control decoration hover shell add paint listener paint listener public void paint control paint event draw string text draw polygon polygon true size hover correctly performed carriage returns text text painted string painted rest hover empty draw text

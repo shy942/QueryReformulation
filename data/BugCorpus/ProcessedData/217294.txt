@@ -1,1 +1,0 @@
-217294.txt: preferences preferences store shoudn locale storing data build scoped preference store double respects locale number format instance parse double scoped preference store set saves eclipse preferences string double string preferences store shouldn locale storing data changing locale system impossible load saved preferences bug https bugs eclipse org bugs bug cgi

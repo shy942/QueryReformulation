@@ -1,1 +1,0 @@
-380817.txt: doc issues current listed issues bug initially created clone bug customize perspective dialog presentable misses lot functionality link tool bar command command group compare missing pieces point enumerating

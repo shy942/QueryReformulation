@@ -1,1 +1,0 @@
-170731.txt: improve layout behavior eclipse features build steps reproduce click eclipse dialog eclipse click button feature detail dialog named eclipse features maximize dialog table doesn spaces hope table spaces resize dialog

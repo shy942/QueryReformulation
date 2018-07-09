@@ -1,1 +1,0 @@
-310277.txt: revert navigator support navigator view changed change drop operation reverted bug resolved

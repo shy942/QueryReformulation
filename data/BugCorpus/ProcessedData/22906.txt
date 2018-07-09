@@ -1,1 +1,0 @@
-22906.txt: dialogs checked tree selection dialog busy cursor create checked tree selection dialog dialog call create shell created shell workbench set control string subsequent call open dialog dialog permanent busy cursor checked tree selection dialog implementation open includes busy indicator assigns busy cursor shells dialog

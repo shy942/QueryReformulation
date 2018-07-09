@@ -1,1 +1,0 @@
-436503.txt: delete deprecated extension points follow bug remove org eclipse css core element provider org eclipse css swt property handler

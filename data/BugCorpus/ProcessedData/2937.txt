@@ -1,1 +1,0 @@
-2937.txt: task view filter busy cursor filtering reduces tasks displayed takes long time function busy cursor load entire desktop stream select filter choose warningsand info slow

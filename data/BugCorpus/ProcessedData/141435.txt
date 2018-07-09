@@ -1,1 +1,0 @@
-141435.txt: viewers list viewer selection loses scrolled refreshed list viewer selection refreshed loses vertically scrolled position abstract list viewer removes items adds refresh occurs remedied cases selection selected item revealed refresh occurs selection reveal occur loses position

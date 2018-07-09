@@ -1,1 +1,0 @@
-83638.txt: perspectives customize perspective dialog deprecated table item set image indent int deprecated result indented table viewer drepecated customize perspective dialog rewritten tree grid layout grid data horizontal indent set indentation size form layout

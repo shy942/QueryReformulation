@@ -1,1 +1,0 @@
-182446.txt: project hebrew arabic location label properties tab steps reproduce note treat caps lock latin letters letters hebrew arabic note bug produced sessions change system locale locale eclipse create general project window view properties notice location label project location label involve english note bug exist actual result workspace path expected result

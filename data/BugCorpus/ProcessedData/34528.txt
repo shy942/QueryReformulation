@@ -1,1 +1,0 @@
-34528.txt: dialogs error text move dialog red layed select folder context menu select move deselect folder dialog warning message bottom dialog problems warning message long fit dialog clipped multiline wrap layout space left atm text scrunched left edge dialog warning error messages warning error icon preceeding message

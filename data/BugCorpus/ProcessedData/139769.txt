@@ -1,1 +1,0 @@
-139769.txt: progress builds red square cancel reschedulable job auto build showing progress view completed result previous build condition check job completed infos job job infos job result null

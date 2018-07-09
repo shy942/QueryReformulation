@@ -1,1 +1,0 @@
-171262.txt: dialogs uncaught filtered resources selection dialog build steps reproduce open resource dialog click cancel bug occurs applying patch bug

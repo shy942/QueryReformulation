@@ -1,1 +1,0 @@
-82802.txt: commands contexts contributions key bindings performance duplicate strings build command manager stores objects memory command key binding definition strings objects highly duplicated worth interning worst string org eclipse default accelerator configuration memory times total bytes scope platform ids key bindings highly duplicated

@@ -1,1 +1,0 @@
-476541.txt: improve readability application eclipse trainings detail application code formatted reallign code based length group stuff bit general improve readability class

@@ -1,1 +1,0 @@
-171638.txt: dialogs shifted initial text open resource dialog build steps reproduce select text editor open open resource dialog text selected initial pattern dialog text selected selected text longer chars shifted won chars belive open type dialog extends filtered items selection dialog

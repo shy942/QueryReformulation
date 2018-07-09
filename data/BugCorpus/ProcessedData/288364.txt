@@ -1,1 +1,0 @@
-288364.txt: key bindings exporting key preferences warn overwriting file patch bug attachment bug initially created clone bug build windows mac steps reproduce preferences general click export enter filename click click export enter filename click actual result time overwrites file warning expected result existing file customary practice operating systems warn overwriting file

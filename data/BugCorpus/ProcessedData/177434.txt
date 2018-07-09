@@ -1,1 +1,0 @@
-177434.txt: wizards project wizard big enought high contrast build steps reproduce select high contrast mode select sans application font restart platform bring eclipse project dialog notice messed input box visible

@@ -1,1 +1,0 @@
-380570.txt: perspective switcher handler java refers package imported bundle perspective switcher handler java imports classes package org dom css org eclipse workbench bundle import package reported compile error enable tools checks suspect lucky runtime happen copy package tom correct wrong bundle importing package bundle manifest

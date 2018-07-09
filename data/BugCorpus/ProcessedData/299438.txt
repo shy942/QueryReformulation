@@ -1,1 +1,0 @@
-299438.txt: common navigator viewer properly reset activated deactivated map objects reset viewer change avoid stale label tests change viewer

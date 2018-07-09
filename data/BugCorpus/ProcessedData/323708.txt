@@ -1,1 +1,0 @@
-323708.txt: maximized view longer maximized open editor activate package explorer ctrl click restore button editor area side activate editor activated automatically wrong bug ctrl maximize editor ctrl unmaximize restore normal package explorer restore icon clicking ctrl double clicking view tab moment correct reset perspective

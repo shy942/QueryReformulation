@@ -1,1 +1,0 @@
-443399.txt: data binding deprecate outdated beans observables pojo observables advice prefer usage bean properties beans observables deprecate class methods

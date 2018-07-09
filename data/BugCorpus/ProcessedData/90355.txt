@@ -1,1 +1,0 @@
-90355.txt: contributions coolbars investigate performance subactionbars switching types editor plugin xml editor java editor visible flicker coolbar noticeable delay cool items updated flicker delay observed toolbar console view switching consoles contribution manager investigated

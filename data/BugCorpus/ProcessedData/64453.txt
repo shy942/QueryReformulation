@@ -1,1 +1,0 @@
-64453.txt: turning fastview prevents tab selection start stacks views click view stack click view stack click view stack turn fastview view stack revealed click view focus tab active appearance

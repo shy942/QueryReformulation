@@ -1,1 +1,0 @@
-139430.txt: trim linux progress indicator statusbar small application progress indicator bottom corner status small text correctly icon progress bar hidden progress indicator correctly version linux

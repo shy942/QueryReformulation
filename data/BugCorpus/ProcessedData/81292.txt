@@ -1,1 +1,0 @@
-81292.txt: preferences message area disabled empty theme textured background default preference dialog default apply buttons respect suspect empty label text widget background colour set manually screencap forthcoming

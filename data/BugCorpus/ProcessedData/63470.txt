@@ -1,1 +1,0 @@
-63470.txt: workbench toolbar missing starting workspace replicated couple machines running start eclipse workspace workbench button intro window open perspective java perspective switch java perspective toolbar top absent quit restart eclipse workspace button bar

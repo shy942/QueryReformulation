@@ -1,1 +1,0 @@
-51845.txt: intro standby mode correct place restart regression steps reproduce install plugin intro launch fresh workspace note intro maximized unzoom note close activate note maximized unzoom note restart eclipse activate intro note appears bottom

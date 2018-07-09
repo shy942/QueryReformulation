@@ -1,1 +1,0 @@
-265813.txt: status handling reduce incompatibility status dialog jface error dialog automatically open support area error issues bug open support button visible functionality difference error dialog status dialog status dialog display link error log easily remove differences

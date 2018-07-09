@@ -1,1 +1,0 @@
-126699.txt: dialogs open resource dialog select multiple resources open resource select multiple resources

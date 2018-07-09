@@ -1,1 +1,0 @@
-55116.txt: application window puts status top useing set status string method application window puts status top window bottom looked macintosh applications find status top window display main reference safari definetly status bottom

@@ -1,1 +1,0 @@
-89625.txt: workbench window advisor refers workbench internals backdrop code workbench window advisor provide backdrop perspectives closed refers internal workbench classes import org eclipse internal workbench graphic constants import org eclipse internal workbench images import org eclipse internal dialogs select perspective dialog

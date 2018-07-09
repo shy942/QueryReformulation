@@ -1,1 +1,0 @@
-5920.txt: perspective bar fast views reorder shortcut buttons accidentally closed perspective button shortcut bar reopened perspective button appeared bottom top order reorder buttons original settings edit org eclipse workbench xml jon

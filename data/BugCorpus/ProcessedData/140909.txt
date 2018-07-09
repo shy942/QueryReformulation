@@ -1,1 +1,0 @@
-140909.txt: workbench parts limitations implementers saveables source parts implement saveables source satisfy conditions implement saveable saveable objects dirty return true saveable dirty return true saveable save close needed dirty default behaviour editor implement saveable conditions met undefined workbench prompt save dirty saveables closing parts

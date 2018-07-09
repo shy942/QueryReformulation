@@ -1,1 +1,0 @@
-483359.txt: colors fonts preference reset correctly propagated mickael https git eclipse org java editor open open preference edit font java editor set size apply editor updated edit font text editors set size apply check java font tree set default reset text font apply multiple issue java font set default default editor isn updated pts font reopen preference time values unlinked

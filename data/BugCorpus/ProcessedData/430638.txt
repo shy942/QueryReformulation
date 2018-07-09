@@ -1,1 +1,0 @@
-430638.txt: mark deprecated extension points removal org eclipse css core defines extension points deprecated remove don work official save remove org eclipse css core element provider typo org eclipse css swt property handler replaced org eclipse css core property handler

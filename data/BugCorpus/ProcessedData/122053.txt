@@ -1,1 +1,0 @@
-122053.txt: key bindings shortcut key working team repeat synchronization mapped key works team perspective java perspective removing adding mapping

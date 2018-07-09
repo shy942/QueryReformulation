@@ -1,1 +1,0 @@
-436225.txt: view mgmt memory leak closing views open view style view views extension point inheriting view retrieve memory dump instance view expect close view retrieve heap dump view instance occupying memory dump references workbench service view references garbage collected reopening closing view time pending instances expected behavior references view closing

@@ -1,1 +1,0 @@
-105503.txt: view mgmt outline view loses toolbars restart restart eclipse resource java perspective open focus java perspective switching resource perspective result views outline case redrawing open resource perspective open java perspective restart eclipse select resource perspective toolbars missing

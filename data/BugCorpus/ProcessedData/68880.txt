@@ -1,1 +1,0 @@
-68880.txt: progress progress viewer hard coded colours progress viewer series hard coded colours hyperlinks values set workbench face preferences problem code link color display system color link color display system color error color display system color error color display system color highlight color display system color

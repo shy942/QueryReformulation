@@ -1,1 +1,0 @@
-253977.txt: eclipse regression caused bug context accessibility indication view opened focus change bug caused regression bug properties view pressing loss editor properties bug track request

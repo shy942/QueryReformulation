@@ -1,1 +1,0 @@
-48686.txt: checking metadata version bug writing metadata fixed rafael mentionned check startup eclipse check internal boot loader user queried wanted continue startup organisation push plugins decide separate bundle running startlevel

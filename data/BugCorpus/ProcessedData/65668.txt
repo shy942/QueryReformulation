@@ -1,1 +1,0 @@
-65668.txt: view mgmt layout info placeholders persisted properly sessions fixed views plugin xml perspective declared fixed create initial layout method perspective class placeholders views set closeable moveable open views code time workbench view view opening perspective time working fine close workbench reopen views opened closeable moveable close reopen perspective fine

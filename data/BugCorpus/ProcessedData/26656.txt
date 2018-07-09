@@ -1,1 +1,0 @@
-26656.txt: editor mgmt open doesn work correctly editor plugins installed men solar eclipse syntax coloring editor opened file men close file select open syntax coloring editor file opened men workaround select open text editor open registered editors

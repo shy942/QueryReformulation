@@ -1,1 +1,0 @@
-463913.txt: tools core tool poms follow conventions rest eclipse mentioned bug bit version repository pom group org eclipse group artifact eclipse platform tools artifact version version packaging pom packaging study case meaning release

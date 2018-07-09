@@ -1,1 +1,0 @@
-90517.txt: define command editor close option close defind command key bindings option

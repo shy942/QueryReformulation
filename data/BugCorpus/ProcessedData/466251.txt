@@ -1,1 +1,0 @@
-466251.txt: simplify label providers org eclipse navigator resources nestled projects label provider label provider org eclipse navigator resources
