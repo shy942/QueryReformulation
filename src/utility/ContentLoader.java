@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -47,23 +48,34 @@ public class ContentLoader {
 
 	public static ArrayList<String> getAllKeywords(String fileName) {
 		ArrayList<String> temp = new ArrayList<>();
-		try {
-			Scanner scanner = new Scanner(new File(fileName));
-			//discard first token
-			scanner.next();
-			while (scanner.hasNext()) {
-				String token = scanner.next();
-				if (token.matches("\\p{Punct}+|\\d+|\\s+"))
-					continue;
-				else {
-					temp.add(token);
+		
+			try {
+				BufferedReader breader = new BufferedReader(new FileReader(fileName));
+				while (breader.ready()) {
+					String line = breader.readLine().trim();
+					if (!line.isEmpty()) {
+						String[] spilter=line.split(" ");
+						for(String token:spilter)
+						{
+							if (token.matches("\\p{Punct}+|\\d+|\\s+")||token.contains(".txt"))
+								continue;
+							else {
+								token=token.replaceAll("�", "");
+								token=token.replaceAll("�", "");
+								temp.add(token);
+							}
+						}
+					
+					
+					}
 				}
+					breader.close();
+				
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
-			scanner.close();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+			
 		return temp;
 	}
 

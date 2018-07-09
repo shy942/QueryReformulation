@@ -26,9 +26,14 @@ public class BugReportKeywordPointerMaker {
 		int index = 0;
 		HashMap<Integer, String> tempFileMap = new HashMap<>();
 		for (File f : files) {
+			//System.out.println(f.getName());
 			ArrayList<String> keywordList = ContentLoader.getAllKeywords(f
 					.getAbsolutePath());
+			//ArrayList<String> keywordList = ContentLoader.getAllLinesList(f
+					//.getAbsolutePath());
+			//System.out.println(keywordList);
 			for (String keyword : keywordList) {
+				System.out.println(keyword);
 				if (!keywordIDMap.containsKey(keyword)) {
 					keywordIDMap.put(keyword, ++index);
 					tempFileMap.put(index, keyword);
@@ -48,7 +53,7 @@ public class BugReportKeywordPointerMaker {
 		for (int key = 1; key <= size; key++) {
 			tempList.add(key + ": " + tempFileIDMap.get(key));
 		}
-		String outputFile = "./data/bug-keyword-pointer/ID-Keyword.txt";
+		String outputFile = "./data/ID-Keyword.txt";
 		ContentWriter.writeContent(outputFile, tempList);
 		System.out.println("Done!");
 	}
@@ -69,14 +74,14 @@ public class BugReportKeywordPointerMaker {
 			}
 			bugSrcList.add(bugID + ":" + MiscUtility.listInt2Str(tempIDs));
 		}
-		String outputFile = "./data/bug-keyword-pointer/Bug-ID-Keyword-ID-Mapping.txt";
+		String outputFile = "./data/Bug-ID-Keyword-ID-Mapping.txt";
 		ContentWriter.writeContent(outputFile, bugSrcList);
 		System.out.println("Done!");  
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String bugReportDir = "./data/BugCorpus/ProcessedData";
+		String bugReportDir = "/Users/user/Documents/Ph.D/2018/Data/ProcessedData"; 
 		new BugReportKeywordPointerMaker(bugReportDir).developBugKeywordPointer();
 	}
 }
