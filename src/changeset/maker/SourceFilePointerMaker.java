@@ -76,7 +76,7 @@ public class SourceFilePointerMaker {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String changeDir="./data/changeset";
+		String changeDir="/Users/user/Documents/Ph.D/2018/Data/changeset/";
 		new SourceFilePointerMaker(changeDir).developBugSrcFilePointer();
 	}
 }

@@ -26,13 +26,13 @@ public class ChangesetMaker {
 					ArrayList<String> cfiles = new ArrayList<>();
 					for (int j = i + 1; j <= i + cfCount; j++) {
 						String fileURL = lines.get(j);
-						if (fileURL.endsWith(".java")
-								|| fileURL.endsWith(".JAVA")) {
+						{
+							
 							cfiles.add(fileURL);
 						}
 					}
 					// now save the files
-					String outputFile = "./data/changeset/" + bugID + ".txt";
+					String outputFile = "/Users/user/Documents/Ph.D/2018/Data/changeset/" + bugID + ".txt";
 					ContentWriter.writeContent(outputFile, cfiles);
 
 					i = i + cfCount + 1;
@@ -46,9 +46,14 @@ public class ChangesetMaker {
 		}
 	}
 
+	
+	
+
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String gitInfoFile = "./data/GitInfoFile2.txt";
+		String gitInfoFile = "./data/GitInfoNew.txt";
 		new ChangesetMaker(gitInfoFile).makeChangeset();
 	}
 }
