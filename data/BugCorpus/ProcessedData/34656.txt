@@ -1,0 +1,1 @@
+34656.txt: xlation problem string translators believes english string file eclipse plugins org eclipse platform doc isv doc zip reference extension points org eclipse capabilities html string question wizard responsible collecting user adding capability nature natures capabilities capability handles translator comment sentence unclear wordy don making assumption

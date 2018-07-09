@@ -1,0 +1,1 @@
+258170.txt: blank installation dialog loading created attachment screen shot open installation dialog dialog opens empty seconds content appears busy cursor affordance loading

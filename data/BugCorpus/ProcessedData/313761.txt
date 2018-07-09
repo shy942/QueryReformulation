@@ -1,0 +1,1 @@
+313761.txt: viewers doc viewer drop adapter selected object impl doesn match javadoc build identifier doc comment viewer drop adapter selected object method returns null case multiple objects selected fact implementation checks selected object reproducible

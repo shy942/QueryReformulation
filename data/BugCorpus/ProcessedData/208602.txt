@@ -1,0 +1,1 @@
+208602.txt: dialogs open type dialog accessible labels build steps reproduce open type dialog java create type dialog input text field user enter desired class list matching accessible labels microsoft inspect objects inspect fields

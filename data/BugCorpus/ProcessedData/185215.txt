@@ -1,0 +1,1 @@
+185215.txt: common navigator increment version number org eclipse navigator methods attribute extension point org eclipse navigator package org eclipse navigator plugin version identifier org eclipse navigator updated

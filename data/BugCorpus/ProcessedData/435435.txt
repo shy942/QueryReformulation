@@ -1,0 +1,1 @@
+435435.txt: quick access hiding quick access hides workbench windows restart context menu hide quick access disappears workbench window multiple workbench windows open restart disappears windows check tool control renderer event handler check controls disposed caused problem

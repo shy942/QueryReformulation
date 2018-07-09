@@ -1,0 +1,1 @@
+52583.txt: workbench accessibility toolbar broken build view navigator press tab shift tab earlier cycle focus view controls tab coolbars shortcut bar view toolbar top left order problem editors recommend provide menu items actions toolbars isn general mechanism navigating toolbars including items fast views perspective shortcuts reinstate mechanism navigating toolbars keyboard

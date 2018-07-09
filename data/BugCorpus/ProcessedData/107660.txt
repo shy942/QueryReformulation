@@ -1,0 +1,1 @@
+107660.txt: themes busy cursor font editing doesn busy cursor introduced opening font dialog address slowness slow opening font editing dialog meant busy cursor set dialog opened remained closed impression app busy slowness addressed apple busy cursor removed

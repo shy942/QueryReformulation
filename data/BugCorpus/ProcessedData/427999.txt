@@ -1,0 +1,1 @@
+427999.txt: introduce mode allowing user hide trimbars main window working full screen mode implementation eclipse hoping purpose digit defect find bug defect placeholder rendering work needed order functionality expect release actual feature eclipse marketplace

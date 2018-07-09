@@ -1,0 +1,1 @@
+304424.txt: update open doc change created attachment patch renamed introduced constant open doc open document attached patch updates class change released today nightly build platform developers work nightly builds close org eclipse ide application bundle checkout head http eclipse org swt cvs php build

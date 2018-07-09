@@ -1,0 +1,1 @@
+53150.txt: resizing tree pane preferences dialog bizzarre build open preferences dialog expand tree pane horizontally cursor resized close dialog reopen tree pane wider width change close reopen pretty strange

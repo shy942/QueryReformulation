@@ -1,0 +1,1 @@
+445305.txt: editor mgmt editor dragged window working open text file tab eclipse click window window drag tab window window edit find replace greyed ctrl

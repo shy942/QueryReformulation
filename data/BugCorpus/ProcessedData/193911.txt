@@ -1,0 +1,1 @@
+193911.txt: open resource dialog context build steps reproduce open eclipse ctrl shift press icon left

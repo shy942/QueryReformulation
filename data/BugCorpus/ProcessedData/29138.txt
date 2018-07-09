@@ -1,0 +1,1 @@
+29138.txt: face widget disposed exception ocurr org eclipse jface window application window widget disposed exception ocurr org eclipse jface window application window control current focus disposed execution runnable custom content merge viewer circumstances closing saving comparer trigger diff process turn switches content merge viewer content disposed including widget focus

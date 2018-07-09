@@ -1,0 +1,1 @@
+86010.txt: eclipse forms formatting error form toolkit javadoc javadoc form toolkit class toolkit creates common controls populate eclipse forms controls created constructors adapt method change properties supported toolkit controls text monospace adapt revert code adapt samp samp code

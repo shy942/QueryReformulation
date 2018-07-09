@@ -1,0 +1,1 @@
+174908.txt: contributions leakage plugin action contribution item removed activity manager listener eclipse tested resource perspective perspective open opened project explorer click java project realize context menu close project explorer time repeat leakage appears rooted plugin contribution item activity listeners removed listeners note problem limited project explorer testing

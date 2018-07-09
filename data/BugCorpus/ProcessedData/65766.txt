@@ -1,0 +1,1 @@
+65766.txt: perspectives perspective buttons order inconsistant build workspace open java perspective open debug perspective note perspective buttons left position hey behave editors order

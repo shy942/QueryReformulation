@@ -1,0 +1,1 @@
+125138.txt: linked resources extend variable contextual menu project linked source folder build path configure build path source tab select linked source folder edit variables define pointing current workspace root folder select workspace root extend entries point correct expect select subdirectory current workspace pointing variable java project root doesn

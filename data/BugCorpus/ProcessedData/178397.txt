@@ -1,0 +1,1 @@
+178397.txt: status handling view error opens error dialog views errors opening error dialogs opening view empty contents previos releases bring error dialog consistent behaviour empty view indication empty error occured

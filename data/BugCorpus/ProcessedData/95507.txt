@@ -1,0 +1,1 @@
+95507.txt: preferences colors font defaults differ high contrast mode header font size preference changed high contrast mode remains normal mode

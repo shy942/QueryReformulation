@@ -1,0 +1,1 @@
+416902.txt: regression navigation history badly broken works fine start workspace close paste snippet package explorer public class public class public class file close open editor ctrl click editor ctrl click hover left arrow toolbar wrongly java click left arrow

@@ -1,0 +1,1 @@
+286121.txt: data binding error observable tracker description resource path location type missing tag set ignore boolean observable tracker java org eclipse core databinding observable src org eclipse core databinding observable tag problem

@@ -1,0 +1,1 @@
+44524.txt: arrow leave trail carets typing slow moving caret arrow leaves trail typing slow text java editor regression worked replacing org eclipse workbench fixes problem

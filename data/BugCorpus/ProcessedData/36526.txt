@@ -1,0 +1,1 @@
+36526.txt: error dialog leaks clipboard build face error dialog leaks clipboard instance copy clipboard method private void copy clipboard string buffer status buffer string buffer populate copy buffer status status buffer clipboard clipboard clipboard list display clipboard set contents object status buffer string transfer text transfer instance clipboard dispose called method

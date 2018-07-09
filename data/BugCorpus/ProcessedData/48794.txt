@@ -1,0 +1,1 @@
+48794.txt: resource history view opens tabs reset defaults repositories perspective resource history view opens tab

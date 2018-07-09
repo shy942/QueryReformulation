@@ -1,0 +1,1 @@
+227544.txt: data binding provisional internal packages tagged internal true packages tagged internal true long actual org eclipse jface internal databinding provisional swt org eclipse jface internal databinding provisional viewers freeze detected tool post freeze org eclipse jface internal databinding provisional swt util log exception ljava lang exception

@@ -1,0 +1,1 @@
+28725.txt: font defaults honored font defintions extension point build defaults attribute honored font changed property change font definition font data initialized font data font defaults hack plugin startup font work text java editors work font definitions default face text font

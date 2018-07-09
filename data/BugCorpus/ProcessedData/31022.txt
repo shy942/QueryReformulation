@@ -1,0 +1,1 @@
+31022.txt: key bindings error pde convert schema ant task org eclipse build error logged custom ant task pde convert schema generate html doc extention points plugin pde convert schema builds integration src plugins org eclipse platform doc isv org eclipse schema commands exsd file directory

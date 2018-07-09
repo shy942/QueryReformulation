@@ -1,0 +1,1 @@
+267952.txt: splash screen build bug raised issue build info text justified text galileo bug track aspect

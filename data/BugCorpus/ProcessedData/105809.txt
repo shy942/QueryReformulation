@@ -1,0 +1,1 @@
+105809.txt: mnemonics programmatically changed mnemonic assigner class plugin mnemonic assigned string properties file translators properties file assigned mnemonic translated language remove

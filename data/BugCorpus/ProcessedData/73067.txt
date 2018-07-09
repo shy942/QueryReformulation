@@ -1,0 +1,1 @@
+73067.txt: dock views hard editor area created application editor area created views undocked dragging mouse workbench window hard bring workbench window dragging dark gray border appears workbench window release mouse button view jumps workbench window editor area enabled bug doesn occur

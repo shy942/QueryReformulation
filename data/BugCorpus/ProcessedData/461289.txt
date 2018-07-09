@@ -1,0 +1,1 @@
+461289.txt: bad theme org eclipse theme empty theme element category appearance preference bad color font theme called org eclipse theme colors fonts preference empty category don sense created bug http git eclipse org platform eclipse platform git diff bundles org eclipse plugin xml befc dae

@@ -1,0 +1,1 @@
+8594.txt: contributions hierarchy view menu items wrong style drop menu hierarchy view options vertical view orientation horizontal view orientation hierarchy view check mark appears item selected check mark implies select partially case select item selected display menu items checked items radio style impossible deselect current view tested build

@@ -1,0 +1,1 @@
+425987.txt: graphics remove gifs org eclipse jface replaced png files org eclipse org eclipse workbench bug check remove gifs post email cross dev gifs platform uri change link png files prepare gerrit patch remove gifs objects remove gifs aber project adjust

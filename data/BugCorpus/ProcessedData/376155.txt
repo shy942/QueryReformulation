@@ -1,0 +1,1 @@
+376155.txt: remove dummy toolbar fullscreen support lion https bugs eclipse org bugs bug cgi dummy toolbar created cocoa enhancer removed eclipse support full screen feature lion longer required toolbar toggle button mac lion

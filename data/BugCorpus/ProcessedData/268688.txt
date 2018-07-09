@@ -1,0 +1,1 @@
+268688.txt: data binding changing beans thread realm assertion failed exceptions org eclipse core internal databinding beans bean property listener property change property change event call org eclipse core databinding property native property listener fire change object diff checking realm tolerate beans realm reckless shouldn realm async exec required

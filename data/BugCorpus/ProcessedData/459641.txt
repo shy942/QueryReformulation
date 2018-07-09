@@ -1,0 +1,1 @@
+459641.txt: disabled enabled reflected correctly action set availability eclipse mars action set availability toggle check disabled enabled action set updated gray icon text reflected menubar toolbar details toggled action set selected

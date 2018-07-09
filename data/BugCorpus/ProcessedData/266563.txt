@@ -1,0 +1,1 @@
+266563.txt: data binding add widget properties message observables observe message widget text tool message property support widget properties observables

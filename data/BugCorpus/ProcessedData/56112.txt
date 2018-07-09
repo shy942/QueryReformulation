@@ -1,0 +1,1 @@
+56112.txt: mainwindow freezes maximizing fastview pluginexport quickfixpatch steps reproduce open clean workbench open view problems view view fastview open fastview maximize view ctrl observed behavior menubar fastviewbar updated usable editorarea area views refreshed

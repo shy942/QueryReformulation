@@ -1,0 +1,1 @@
+75420.txt: preferences import busy cursor build import preferences file selection dialog disappears import point unresponsive system busy import time cursor busy cursor user happening

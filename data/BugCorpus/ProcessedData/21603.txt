@@ -1,0 +1,1 @@
+21603.txt: global actions close resource action editors save doesn check result active workbench window close resource action editors save calls platform workbench active workbench window assumes result null assumption safe

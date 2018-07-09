@@ -1,0 +1,1 @@
+48364.txt: preference dialog reopen empty close preferences dialog entry default selected empty entry dialog reopen open preferences dialog select appearances close dialog reopen workbench selected contents empty

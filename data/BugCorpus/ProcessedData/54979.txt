@@ -1,0 +1,1 @@
+54979.txt: wizards export create empty file sync create simple project eclipse create file simple project eclipse edit file notepad eclipse export file edited refresh export fails sync message file generated export fails sync message file size created bonus bug https bugs eclipse org bugs bug cgi implemented nice

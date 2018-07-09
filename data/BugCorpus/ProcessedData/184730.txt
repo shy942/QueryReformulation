@@ -1,0 +1,1 @@
+184730.txt: key bindings preference restore binding single command preference restore binding single command restore button single command scenario leaves manually restored key bindings user delta change refactor java rename refactoring alt shift click open prefs change refactor java rename refactoring alt shift user delta indicator stays

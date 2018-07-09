@@ -1,0 +1,1 @@
+97553.txt: working sets odd behaviour select deselect buttons create resource working set selection dialog hit select expand bottom node tree note children checked hit deselect note unchecked hit select note top level nodes checked expanded children collaps expanded node reexpand note children checked suspect bug exist dialogs patched relating bug

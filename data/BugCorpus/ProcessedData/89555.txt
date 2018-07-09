@@ -1,0 +1,1 @@
+89555.txt: splash screen copyright gtk build version build

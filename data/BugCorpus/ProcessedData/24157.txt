@@ -1,0 +1,1 @@
+24157.txt: dialogs message dialog set focus default button message dialog default widgets set focus set focus default button prevent slammed default behaviour

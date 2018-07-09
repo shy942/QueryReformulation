@@ -1,0 +1,1 @@
+55406.txt: properties view combo box cell editor ignores entry select entry combo box cell editor entries open properties view font definition theme select false enabled click lost

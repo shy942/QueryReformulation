@@ -1,0 +1,1 @@
+61899.txt: commands performance investigate start performance commands attach stack trace startup time commands support note bad profiler performance degredation started workbench platform loaded editors open resource perspective default settings open

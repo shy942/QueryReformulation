@@ -1,0 +1,1 @@
+478400.txt: add constraints fragments validation model define constraints manditory values purposes nice define constraints ecore checking fragments merged providing validation tools adding constraints side effects trigger validation

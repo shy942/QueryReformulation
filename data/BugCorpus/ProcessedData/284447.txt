@@ -1,0 +1,1 @@
+284447.txt: workbench add custom workspace front workbench window title multiple instances eclipse running showlocation option identify icons task bar displayed title taskbar icon nice move showlocation front windows title identify multiple instances task bar option preferences users concern regressions compatability

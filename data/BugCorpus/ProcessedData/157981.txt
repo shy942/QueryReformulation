@@ -1,0 +1,1 @@
+157981.txt: open resource dialog missing colons labels navigate open resource labels colon mnemonics

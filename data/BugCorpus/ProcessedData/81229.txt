@@ -1,0 +1,1 @@
+81229.txt: dialogs wizard banner resizing jumpy dialog build test pass export wizard selection banner description top wizards description lines entire dialog resize time change selection item mouse click isn item mouse click entire list shifts banner resizes doesn happen windows

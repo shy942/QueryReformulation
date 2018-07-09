@@ -1,0 +1,1 @@
+183520.txt: fast view presentation closing editor marks maximised editor area restored open editors side side maximise editor area close editor restore button change maximise button area remains maximised editor area restore button change bug visible left editor closed

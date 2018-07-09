@@ -1,0 +1,1 @@
+95168.txt: view mgmt action sets regression lose source menu switching perspectives build open java perspective open java editor focus editor switch resource perspective note source menu disappeared

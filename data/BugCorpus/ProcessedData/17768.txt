@@ -1,0 +1,1 @@
+17768.txt: tasks add task description field select text initially adding task file editor task dialog appears selected editor default description focus description field caret position entire text selected caret

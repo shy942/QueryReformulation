@@ -1,0 +1,1 @@
+183732.txt: data binding swallowing exception set java bean observable bidning beans property change support implemented properly initialized null data binding swallows null pointer exception logging attach listener

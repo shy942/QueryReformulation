@@ -1,0 +1,1 @@
+220766.txt: face image registry work expected crashes null pointer exception created attachment snippet demonstrating behaviour build latest sources retrieve previouly stored image image registry image registry operation crashes null pointer exception activator converter attached snippet demonstrating note image called eclipse png snippet package directory work

@@ -1,0 +1,1 @@
+52780.txt: workbench preference setting revert classic existing separate bug request programmatically exposed apps dont indows preferences

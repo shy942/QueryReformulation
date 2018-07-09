@@ -1,0 +1,1 @@
+21839.txt: remove java builder registered java builder project properties external tools builders removed replace build mechanism java errors current java builder

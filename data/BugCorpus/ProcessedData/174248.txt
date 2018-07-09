@@ -1,0 +1,1 @@
+174248.txt: missing resources running build steps reproduce launch eclipse option open product file product configuration editor missing resource exception occurs unable create editor org eclipse pde product editor java util missing resource exception find resource bundle ibm icu impl resource bundle impl resource table key eclipse launched option editor works fine

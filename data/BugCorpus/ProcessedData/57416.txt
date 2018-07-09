@@ -1,0 +1,1 @@
+57416.txt: workbench disappearing perspectives toolbar finding preference dock perspecitve bar main tool bar diappears action takes place deliberately resize workbench pattern log console sizing workbench horizontally veritically

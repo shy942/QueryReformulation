@@ -1,0 +1,1 @@
+180701.txt: face popup dialog creating image descriptors time opened caching image descriptors popup dialog recreating time issue generate garbage images looked bundles overridden locales symmetric issue looked face resources fixed

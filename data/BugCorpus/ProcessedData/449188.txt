@@ -1,0 +1,1 @@
+449188.txt: perspectives empty perspective restarting eclipse open scenario open restart eclipse close problem perspective empty resetting restarting eclipse brings perspective content closing reopening perspective helps unsaved perspective layout lost log file reproducible

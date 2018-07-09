@@ -1,0 +1,1 @@
+398684.txt: workbench initial size workbench window configurer create workbench window application installation manager override pre window open workbench window advisor set initial size workbench window configurer workbench window configurer set initial size session size initial size create workbench window moved target environment eclipse work adoption

@@ -1,0 +1,1 @@
+219930.txt: dialogs themes filtered items selection dialog small changing dialog font workspace open open resource dialog initial dialog size change dialog font open open resource dialog dialog size small manually dialog size revert dialog font default dialog size small

@@ -1,0 +1,1 @@
+204754.txt: data binding bean observable decorator equals method implementation incorrect build steps reproduce equals method implementation reflexive equals returns false decorator delegating equals method decorated observable check object decorator compared bean observable decorator delegate check equality decorated observable

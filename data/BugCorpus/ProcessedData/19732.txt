@@ -1,0 +1,1 @@
+19732.txt: tasks tasks pane remember column widths closing reopening eclipse tasks pane remember column widths default column small unused space column entire width pane forcing resize column time start eclipse

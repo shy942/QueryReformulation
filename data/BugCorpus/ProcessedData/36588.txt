@@ -1,0 +1,1 @@
+36588.txt: cool bar cleanup investigate global cool bar layout saving coolbar layout perspective investigate simplifying positioning remembered coolitems finally block code sets redraw flag false exception occurs redraw set check tool bar manager action cleanup story cool item multi tool bar manager

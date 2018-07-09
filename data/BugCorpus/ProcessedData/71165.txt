@@ -1,0 +1,1 @@
+71165.txt: application style report bugs views application eclipse rigth left style menu bar views property sheet navigator correctly displayed menu bar displayed left rigth buttons accessible trouble editors org eclipse internal pane org eclipse multi editor org eclipse multi editor constant parent style code depending locale stephane

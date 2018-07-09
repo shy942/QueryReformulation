@@ -1,0 +1,1 @@
+384354.txt: compatibility editor actions registered extension point org eclipse editor actions toolbar build identifier eclipse action registered extension point org eclipse editor actions correctly toolbar main menu entry eclipse juno action toolbar icon behavior main menu ugly problem action checked time checked radio button reproducible

@@ -1,0 +1,1 @@
+52588.txt: separate showing fast view bars perspective bar build shortcut bar left broken fast view bars left bottom ongoing perspective bar top workbench window configurer set shortcut bar boolean broken separate methods set fast view bars boolean set perspective bar boolean preference constants workbench preference constants

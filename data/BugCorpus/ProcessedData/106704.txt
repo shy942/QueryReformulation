@@ -1,0 +1,1 @@
+106704.txt: feature description truncated feature description displayed tester marked severity severe build blocking language bitmap location defects feature jpg tester hiroshi inoue problem description descriptions schema info model truncated steps menu select select eclipse click feature detailes button select schema infoset model

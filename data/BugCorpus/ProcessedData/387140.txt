@@ -1,0 +1,1 @@
+387140.txt: trimmed layout visibility trim area result bug discovered trimmed layout doesn visibility top bottom left composites account toggling visibility contents areas leaves space causing remaining items layed

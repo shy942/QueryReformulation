@@ -1,0 +1,1 @@
+56605.txt: editor mgmt ctrl work multiple editors displayed tile editor area ctrl longer works

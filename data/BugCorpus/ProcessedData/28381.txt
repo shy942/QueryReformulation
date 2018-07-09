@@ -1,0 +1,1 @@
+28381.txt: ole editor set resource guard null resource location build linked resource eventually creating linked resource existent path variables case resource location return null external editor open test condition bug

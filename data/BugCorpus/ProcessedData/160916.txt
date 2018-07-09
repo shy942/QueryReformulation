@@ -1,0 +1,1 @@
+160916.txt: common navigator project explorer filter filter deselects hides filter text box top filters dialog deselects filters hides project explorer select filters view menu filters dialog appears scroll list filters tab entries checked filter box top restrict list deselect filters return showing stuff return filters dialog view menu default settings filters removed

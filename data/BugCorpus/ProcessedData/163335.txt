@@ -1,0 +1,1 @@
+163335.txt: themes face colors hyperlink text returns incorrect color high contrast mode version build fonts colours hardcoded blue result unreadable constants active hypperlink colour turn high contrast open unreadable

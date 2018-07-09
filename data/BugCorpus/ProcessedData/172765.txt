@@ -1,0 +1,1 @@
+172765.txt: data binding consistency registering property change listeners java bean observable add property change listener method accepts property optional java bean spec defined method fall optional spec defined property method signature http java sun products javabeans docs spec html

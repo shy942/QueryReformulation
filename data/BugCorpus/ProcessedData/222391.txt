@@ -1,0 +1,1 @@
+222391.txt: status handling error dialog flickers opening strange temporary button visible repeat steps bug error dialog appears flickers short time text shifted bad closer custom operation action button appearing

@@ -1,0 +1,1 @@
+16948.txt: editor mgmt action disabled editor opened close perspectives window check menu keyboard shortcuts action activate editor enabled

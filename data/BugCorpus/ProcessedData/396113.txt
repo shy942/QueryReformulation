@@ -1,0 +1,1 @@
+396113.txt: bump pom versions remove modules longer exist platform created attachment platform patch attached patch bumps pom versions match manifest files removes modules build longer exist kepler

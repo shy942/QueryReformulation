@@ -1,0 +1,1 @@
+36957.txt: plan item support concurrent activities support background activities eclipse operations builds searches synchronously block user work build completed eclipse platform support operations running asynchronously background user forced idle long running operations progress platform platform core platform text core theme responsive

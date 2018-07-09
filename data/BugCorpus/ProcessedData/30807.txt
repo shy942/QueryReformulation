@@ -1,0 +1,1 @@
+30807.txt: dialogs dialog memory exception caught requests eclips automatically adjust heap size dialog telling user increase heap size caught increase sevicablility

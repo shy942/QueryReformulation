@@ -1,0 +1,1 @@
+358494.txt: commands menu manager renderer filter update element visibility time opening closing views menu manager renderer filter update element visibility method takes time cycle opening view close view method called times cycle open view close view

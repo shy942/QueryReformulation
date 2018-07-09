@@ -1,0 +1,1 @@
+25363.txt: workbench eclipse starts minimized reason start eclipse starts minimized click restore hit maximize fills screen expected maximize window collapses minimizing searched ini config file sizes eclipse failed find

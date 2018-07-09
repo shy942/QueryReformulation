@@ -1,0 +1,1 @@
+55099.txt: holding mouse editor tab long split editor area bug guessing ensure multiple editor tabs open multiple editors click hold mouse button editor tabs seconds don move mouse release button screen split dragged editor position

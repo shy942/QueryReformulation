@@ -1,0 +1,1 @@
+224865.txt: metadata inadvertent deletions metadata schema files extension point schema editor secretly removed metadata exsd files bug removed app info meta element translatable true app info org eclipse schema decorators exsd views exsd don intended check schema files

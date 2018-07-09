@@ -1,0 +1,1 @@
+95792.txt: command opens dialog key press thinks workbench window active org linux command opens dialog user press key command executes time opening dialog time user press key case shell activation event arrive key event arrives contexts handlers workbench window active result dialogs opening press ctrl shift fast succession kludge mentioned bug case appears workaround

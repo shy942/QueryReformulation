@@ -1,0 +1,1 @@
+472660.txt: model editors tooltip icons computed label elements perspective icon string icon computed org eclipse tools emf common image tooltip fixed bug abstract component editor image object key method

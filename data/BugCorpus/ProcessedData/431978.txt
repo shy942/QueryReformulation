@@ -1,0 +1,1 @@
+431978.txt: presentation introduce constant presentation engine bug work possibility hide toobars mouse click integrated customize perspective dialog reset perspective handler nice constant luna string model elements renderer advantage bug

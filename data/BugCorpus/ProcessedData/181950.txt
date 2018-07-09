@@ -1,0 +1,1 @@
+181950.txt: workbench launcher undesired order dir path selecting threw workspace launcher build steps reproduce note treat caps lock latin letters letters hebrew arabic prerequisite previous workspaces characters eclipse file switch workspace select create workspace suggeasted actual result dir path presented workspace text box expected result

@@ -1,0 +1,1 @@
+374289.txt: updating toolbar images tested https github paulweb eclipse examples org eclipse commands toolbar project handlers updating images handled contributionitems updating correctly

@@ -1,0 +1,1 @@
+211212.txt: delete bookmark markers view delete action enabled bookmarks

@@ -1,0 +1,1 @@
+54583.txt: presentations views missing switching perspectives build latest workbench open java perspective switch resource perspective view presentations positioned correctly view contents missing workaround close reopen perspective

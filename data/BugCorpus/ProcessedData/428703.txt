@@ -1,0 +1,1 @@
+428703.txt: version number fully splash screen created attachment picture showing issue missing version number transient eclipse screen

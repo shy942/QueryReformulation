@@ -1,0 +1,1 @@
+258153.txt: making wizard visible menu visible build steps reproduce open customize perspective dialog open menu visibility tab uncheck menu file menu expand menu check java project existing ant buildfile click file menu visible logic determining menus doesn wizards account

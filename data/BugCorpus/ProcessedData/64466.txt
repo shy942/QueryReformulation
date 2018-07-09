@@ -1,0 +1,1 @@
+64466.txt: workbench preference properly set dialog font user dialog font applied background refresh workspace automatically checkboxes

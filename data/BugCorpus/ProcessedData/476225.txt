@@ -1,0 +1,1 @@
+476225.txt: org eclipse images renderer hard coded directory names org eclipse images renderer hard coded directory names eclipse svg eclipse png eclipse gif renderer render eclipse core bundles don naming conventions direcory names acme svg eclipse svg folder names configurable property eclipse svg scale property

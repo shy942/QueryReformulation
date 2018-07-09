@@ -1,0 +1,1 @@
+207844.txt: data binding support observables observe text shells created attachment observables observe text shell patch attached patch adds support observing shell text property

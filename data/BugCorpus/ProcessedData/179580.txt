@@ -1,0 +1,1 @@
+179580.txt: menus action set startup patches bug noticed action set main toolbar startup enabled disabling enabling action set provide minimal patch reproduces problem

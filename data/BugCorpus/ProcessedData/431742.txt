@@ -1,0 +1,1 @@
+431742.txt: provide support class selectors bug refer classes selector class outer widget class composite computed local outer composite select stylesheet write outer composite color red specification selector write rule

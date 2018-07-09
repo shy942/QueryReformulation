@@ -1,0 +1,1 @@
+361673.txt: compatibility closing multiple editors lot churn close multiple editors ctrl shift workbench window title updated active editor changing close active editor prevent activation updates

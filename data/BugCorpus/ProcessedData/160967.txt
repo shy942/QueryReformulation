@@ -1,0 +1,1 @@
+160967.txt: data binding snippets broken snippets examples plugin org eclipse jface examples databinding snippets broken

@@ -1,0 +1,1 @@
+90161.txt: navigator default selecting folders shouldn expand navigator view click folders multiple selected items double click bottom selected folders top selected folders expanded presume item tree selection item expanded double clicked item contained default selection item

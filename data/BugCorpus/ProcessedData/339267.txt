@@ -1,0 +1,1 @@
+339267.txt: tray dialog closes tray button pressed cheat sheet open cheat sheets open java development create application cheat sheet open follow steps cheat sheet create java project press button create project java project dialog open press button expected result tray actual result tray closed regression caused bug improve logic determines close tray

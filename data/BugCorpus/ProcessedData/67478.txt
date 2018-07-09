@@ -1,0 +1,1 @@
+67478.txt: workbench title change closing projects small bug close project open editors close main eclipse title bar change title resource edited setup win eclipse editors eclipse close fault

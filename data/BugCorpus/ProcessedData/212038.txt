@@ -1,0 +1,1 @@
+212038.txt: preferences workbench preference manager mishandles dynamic contributions workbench preference manager issues handling dynamic contributions preference node created programmatically class cast exceptions generated assumes type workbench preference node test preference node simply preference node attach test case noticed tree doesn refresh properly stuff dynamically

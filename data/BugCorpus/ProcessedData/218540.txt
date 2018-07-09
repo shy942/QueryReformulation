@@ -1,0 +1,1 @@
+218540.txt: perspectives perspectives open window preference build steps reproduce close perspectives resource preferences perspective set open perspective window open perspective debug perspective window open perspective debug expected window perspective total windows actual window perspectives note perspective short perspective menu don dialog opens window expected

@@ -1,0 +1,1 @@
+288770.txt: statushandling multiple errors top pane space resizing bottom space

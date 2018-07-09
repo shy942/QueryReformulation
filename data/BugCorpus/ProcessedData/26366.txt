@@ -1,0 +1,1 @@
+26366.txt: dialogs improve label positioning progress dialogs build message appears close icon bit horizontal spacing space icon message top dialog progress bar aligned buttons bit space progress bar buttons bit space bottom buttons compare apps dialogs

@@ -1,0 +1,1 @@
+420035.txt: support color constants gradients bug support color constants colors translated color background color constant gradient definitions patch upcoming

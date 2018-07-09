@@ -1,0 +1,1 @@
+43800.txt: key bindings null strange characters key sequence entry widget latest head sept top build launch target set key bindings emacs mode open text file click word esc delete word key bindings text editing delete word esc bindings type esc key sequence field esc null

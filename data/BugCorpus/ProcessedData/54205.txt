@@ -1,0 +1,1 @@
+54205.txt: contributions dynamic plug loading eagerly dynamic menus start plug defining dynamic menu loaded workbench update active workbench window menu manager boolean method calling menu manager update true disregards dirty dynamic menus forces menus fill ideally menu proxy job delay plug loading bug comments

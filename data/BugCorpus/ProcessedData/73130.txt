@@ -1,0 +1,1 @@
+73130.txt: preferences candidate workspace fully built editor pref setup create workspace java files enable auto build full build test case window preferences workbench editor change preference encoding press apply workspace built regression happen suspect introduced encoding work marking major workbench blocked build doesn happen background

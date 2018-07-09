@@ -1,0 +1,1 @@
+340875.txt: opening file minimized package explorer switch editor minimize package explorer open package explorer fly covering editor double click file open file opens editor package explorer remains open retaining focus expect package explorer minimized focus opened file

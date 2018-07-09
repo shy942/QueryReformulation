@@ -1,0 +1,1 @@
+45005.txt: key bindings impossible map ctrl space content assist emacs mode map ctrl space content assist emacs mode window prefs workbench key sequence dialog press ctrl space remove set mark assignment select edit content assist command dialog add ctrl space mapping removing default emacs alt mapping case conflicting luck tim

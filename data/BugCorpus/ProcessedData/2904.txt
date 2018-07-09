@@ -1,0 +1,1 @@
+2904.txt: face text propagating font field editor moved propagating font field editor moved org eclipse texteditor freeze candidate moved org eclipse jface text breaking change released break running moved org eclipse texteditor deprecated change empty subclass org eclipse jface text

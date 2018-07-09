@@ -1,0 +1,1 @@
+132996.txt: check version startup jar checks correct application longer check patch coming

@@ -1,0 +1,1 @@
+253979.txt: remove dependency update manager created attachment patch org eclipse ide bundle dependency update manager code builds contents configuration details dialog gathers list features plug ins installed system attached patch removes dependency replaces previous list installable units profile bundles system

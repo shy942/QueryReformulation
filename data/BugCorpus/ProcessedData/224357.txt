@@ -1,0 +1,1 @@
+224357.txt: incomplete mirroring outline view created attachment capscreen build steps reproduce windows platform hebrew default locale lauch eclipse argument create java project create class outline view icons correctly mirrored attached capscreen positions correct

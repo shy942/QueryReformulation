@@ -1,0 +1,1 @@
+86703.txt: common navigator double click fails resource java files double click fails open java files intermittently problem sorting extensions open support revisit strategy open service ensure behavior consistent correct

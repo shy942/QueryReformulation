@@ -1,0 +1,1 @@
+145780.txt: action sets org eclipse action sets schema implicitly deprecation descriptions action sets schema html tags deprecated elements attributes extra tags defined automatically generates converting exsd html case causing duplicate red text schema html rendering

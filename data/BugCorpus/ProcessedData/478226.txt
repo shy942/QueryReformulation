@@ -1,0 +1,1 @@
+478226.txt: workbench model activator removed workbench model activator class class appears generated bundles org eclipse model workbench model elements genmodel presence model plugin class org eclipse model application impl workbench model activator attribute activator referenced appears approach remove bundle activator manifest activator class remove attribute gen model

@@ -1,0 +1,1 @@
+19524.txt: workbench resizing workbench window resizes views post reporting workbench window resized docked views outline navigator resized resize editor pane views staying fixed size size permits fact views resized user constantly resizing views changing workbench window size user grow editor pane area common window maximized user restores file explorer docked views smaller

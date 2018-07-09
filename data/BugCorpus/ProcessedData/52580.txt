@@ -1,0 +1,1 @@
+52580.txt: editor mgmt editor context menu pointer invoked mouse build click editor drop context menu appears bottom left drop label invoked mouse context menu mouse pointer works view tabs note invoked keyboard alt bottom left drop label ignoring mouse pointer location

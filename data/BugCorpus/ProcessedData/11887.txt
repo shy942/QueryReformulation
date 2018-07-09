@@ -1,0 +1,1 @@
+11887.txt: import multiple project single zip import zip file multiple projects steps reproduce multi select projects export zip workspace import zip problem moving multiple projects workspaces labor intensive problem reported telematics group work customers repositories

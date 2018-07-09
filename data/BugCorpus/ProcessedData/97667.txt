@@ -1,0 +1,1 @@
+97667.txt: preferences patch pref general editors problems links top dialog font changing mnemonic number opened editors closing depending font suboptimal letter mnemonics screenshot trebuchet alignment problems screenshot

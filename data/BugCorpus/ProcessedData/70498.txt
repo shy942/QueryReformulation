@@ -1,0 +1,1 @@
+70498.txt: initial drag affordance wrong eclipse starting drag initial drag rectangle cursor wrong reproduce drag view tab slowly pixel time dragging drag rectangle appears notice initial rectangle covers entire view stack selected view tab arrow cursor move cursor additional pixel correct affordance drawn

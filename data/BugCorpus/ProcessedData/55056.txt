@@ -1,0 +1,1 @@
+55056.txt: workbench establish workspace longer prompted support provide workspace chooser bug users switch workspaces frequently developers live single workspace change workspaces infrequently turning dialog checkbox open workspace simpler open workspace switch workspace operation user change workspaces fact setting preference turn dialog

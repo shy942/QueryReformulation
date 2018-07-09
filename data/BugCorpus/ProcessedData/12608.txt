@@ -1,0 +1,1 @@
+12608.txt: preference manager fires slow property changed event preference store updated created workbench eclipse imported source save decorator preference enabling binary decorator fire property changed event method preference store takes entire action takes performance hit

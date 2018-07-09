@@ -1,0 +1,1 @@
+226277.txt: project explorer support colored labels attached patch project explorer colored label label provider returned navigator content additionally implement styled label provider provide colored labels required

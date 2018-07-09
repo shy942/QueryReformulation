@@ -1,0 +1,1 @@
+158763.txt: common navigator warning latest nightly build integration build src org eclipse internal navigator resources actions working set root mode action group java image descriptor actions image descriptor local variable read remove unused variable warning week

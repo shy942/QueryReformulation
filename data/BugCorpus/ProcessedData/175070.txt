@@ -1,0 +1,1 @@
+175070.txt: tabbed properties units exception tabbed property title bug raised caused bug tabbed properties view units tests caught bug review tabbed properties view tests view refreshing title bar tear hiding properties view paint event caused exception handled units fixed fail appropriately bug

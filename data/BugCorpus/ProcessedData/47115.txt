@@ -1,0 +1,1 @@
+47115.txt: progress view support delete key messages progress view cleared selecting hitting delete key error messages type launch app unrelated config problem forgot supporting ctrl select pair issue version

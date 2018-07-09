@@ -1,0 +1,1 @@
+265157.txt: editor mgmt ctrl editor area select editor menu open ctrl editor area view stack select editor view menu opened ctrl traverse editor tabs visual order bug tab menu opens shortcut work expect tab ctrl opens menu pre selects list pressing ctrl switcher open select element list

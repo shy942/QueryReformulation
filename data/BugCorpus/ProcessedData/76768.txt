@@ -1,0 +1,1 @@
+76768.txt: view mgmt editor mgmt ability provide custom save prompt view implements saveable applications ability provide application defined custom dialog prompting user save specific view parts implement saveable interface patch follow

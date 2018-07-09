@@ -1,0 +1,1 @@
+355964.txt: compatibility tool bars duplicated main workbench window open functional test execution perspective jubula file restart duplicated tool items window window spawn workaround

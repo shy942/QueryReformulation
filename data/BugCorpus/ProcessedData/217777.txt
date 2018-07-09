@@ -1,0 +1,1 @@
+217777.txt: workbench workbench event loop terminate display closed dispose method application incorrectly closed current display caused workbench event loop exception continue event loop field turned work attached patch problem tested properly exception terminate

@@ -1,0 +1,1 @@
+20510.txt: global actions add bookmark action wrong label navigator packages view select java file navigator edit add bookmark dialog opens open bookmarks view bookmark action open dialog editor label changed

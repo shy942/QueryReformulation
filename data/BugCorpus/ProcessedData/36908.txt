@@ -1,0 +1,1 @@
+36908.txt: workbench workbench window disabled workbench window client area completely disabled save java file toolbar inclusively disabled mouse keyboard set enabled false called menu forced close window enabled day users forced exit eclipse

@@ -1,0 +1,1 @@
+157566.txt: viewers application doesn shutdown background thread running critical bug fixed tool support timer thread started cancled tooltips

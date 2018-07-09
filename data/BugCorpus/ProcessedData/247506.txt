@@ -1,0 +1,1 @@
+247506.txt: markers marker views behave wrong single click mode single click mode view open editor activate double clicking element activate editor marker views don

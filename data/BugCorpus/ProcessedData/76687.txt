@@ -1,0 +1,1 @@
+76687.txt: workbench exceptions logged places build places code exceptions occur log entry generated full details exception log bug org eclipse ide exception org eclipse actions delete resource action java lang null pointer exception senders workbench plugin log string workbench plugin log string checked

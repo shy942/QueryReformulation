@@ -1,0 +1,1 @@
+186614.txt: trim empty fast view stack closing view steps start workspace java perspective minimize top left stack package explorer hierarchy views reset current perspective close package explorer empty fast view trim stack created left hierarchy view empty stack resetting perspective switching perspectives

@@ -1,0 +1,1 @@
+431097.txt: update perspective switcher inject register events perspective switcher registers manually events switch inject https git eclipse org platform eclipse platform git commit addons

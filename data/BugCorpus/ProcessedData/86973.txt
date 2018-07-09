@@ -1,0 +1,1 @@
+86973.txt: dialogs open resource dialog accept pattern matching folder path open resource dialog accepts patterns file plugin match patterns folder path expect pattern jdt plugin xml filters folders list folders matches pattern jdt org eclipse jdt org eclipse jdt tests

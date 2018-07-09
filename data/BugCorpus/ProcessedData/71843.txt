@@ -1,0 +1,1 @@
+71843.txt: error ticks editor tab updated inactive editors reproduce disable autobuild open add error save build error tick appears editor tab remove error save open build error tick editor tab stays switching editor dirtying triggers update error tick

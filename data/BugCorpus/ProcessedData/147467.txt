@@ -1,0 +1,1 @@
+147467.txt: common navigator error markers displayed correctly view error markers common navigator perspective showing properly project error child errors update working create project error empty error view create errors ejb jar xml web xml errors view confusing bad usability regression user errors close inspection problems view

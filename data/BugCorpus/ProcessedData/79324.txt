@@ -1,0 +1,1 @@
+79324.txt: dynamic view perspective descriptors handlers disposed hackish view perspective descriptors register command handlers constructor dyanmic plug ins handler unregistered leak memory degrade performance time clean code inserted note recommend constructor generally managing instances class solution move registration deregistration managers

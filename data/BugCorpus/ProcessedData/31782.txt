@@ -1,0 +1,1 @@
+31782.txt: view mgmt closing view unnecessarily activates left build views stacked navigator package explorer hierarchy unit view activated navigator unit view shutdown restart closed unit view spent time activating hierarchy view left unit activated navigator previous history navigator correct result materialize hierarchy view

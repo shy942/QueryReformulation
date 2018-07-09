@@ -1,0 +1,1 @@
+28555.txt: preferences progress dialog preferences long running pressed causing full rebuild changing installed unbounded considerable length time feedback user busy cursor period long busy cursor rights progress dialog feedback

@@ -1,0 +1,1 @@
+17039.txt: editor mgmt workspace default perspective preference lost build change default perspective workspace running resource java workspace default perspective setting honored

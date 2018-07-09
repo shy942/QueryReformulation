@@ -1,0 +1,1 @@
+172917.txt: error handling possibility accessing status manager workbench starts bug reason problem workspace location set startup case open message dialog touches status manager touches workbench initialized status manager work seperate workbench rely early app lifecycle

@@ -1,0 +1,1 @@
+93436.txt: performance perspective switch test missing fingerprint test flagged fingerprint global fingerprint performance perspective switch test test perspective switch org eclipse jdt java perspective org eclipse debug debug perspective editor java reason isn showing performance webpage

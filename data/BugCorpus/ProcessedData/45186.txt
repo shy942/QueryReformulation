@@ -1,0 +1,1 @@
+45186.txt: guidelines double clicking view activate editor double click outline view location file selected editor active behavior differes package explorer view members package explorer selected memebers selected double clicking member selects member editor editor active outline view exhibit behavior

@@ -1,0 +1,1 @@
+405410.txt: context menu minimized shared area minimize stack views minimize shared editor area click minimized view result menu orientation restore close click minimuzed shared area result menu

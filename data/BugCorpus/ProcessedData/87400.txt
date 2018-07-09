@@ -1,0 +1,1 @@
+87400.txt: unable open synchronize view context menu unable open synchronize view context menu impossible perform functions view functionality appears context menu appears console unhandled event loop exception reason unresolved compilation problem method string string undefined type resource navigator messages

@@ -1,0 +1,1 @@
+59773.txt: add content type info resource info property

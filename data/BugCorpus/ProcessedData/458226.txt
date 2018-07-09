@@ -1,0 +1,1 @@
+458226.txt: status reporter org eclipse ide bug noticed simplify logging usage status reporter add dependencies org eclipse ide org eclipse core services bundles bundles prepare change

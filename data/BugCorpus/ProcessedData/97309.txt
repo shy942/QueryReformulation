@@ -1,0 +1,1 @@
+97309.txt: dialogs edit set encoding group label match preference label edit set encoding dialog group box title text file encoding unfortunate label preferences general editors write text file encoding dialog

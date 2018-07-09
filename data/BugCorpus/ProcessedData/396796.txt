@@ -1,0 +1,1 @@
+396796.txt: org eclipse menus appears broken created attachment plugin demonstrates problem plugin org eclipse menus extension point contrinute additional actions debug view places context menu java stack frame instances works eclipse work attached small standalone demonstrates problem

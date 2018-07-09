@@ -1,0 +1,1 @@
+86207.txt: detached views view menu stops working attached views open workbench window java perspective detach problems view drag workbench window close problems view open problems view click view menu problems view reattach problems view drag workbench window click view menu problems view notice view menu longer opens

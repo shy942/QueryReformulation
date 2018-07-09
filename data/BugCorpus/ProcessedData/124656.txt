@@ -1,0 +1,1 @@
+124656.txt: plug ins references plugin fragment xml build properties references removed plugin xml fragment xmls org eclipse core commands org eclipse jface org eclipse jface databinding org eclipse win causing build errors integration build adding boris doug plug ins

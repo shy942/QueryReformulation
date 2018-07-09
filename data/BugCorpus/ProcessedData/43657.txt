@@ -1,0 +1,1 @@
+43657.txt: key bindings delete selection key entry widget delete current selection key entry widget pressing backspace general selection removed text corrected invalid sequence fragments rest behaviour carried nice complicated ctrl type backspace ctrl ctrl type backspace ctrl type ctrl ctrl ctrl type ctrl type

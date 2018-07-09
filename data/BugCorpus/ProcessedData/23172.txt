@@ -1,0 +1,1 @@
+23172.txt: undo undo support navigator navigator view support undo redo actions delete rename move

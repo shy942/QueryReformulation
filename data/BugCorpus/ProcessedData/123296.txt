@@ -1,0 +1,1 @@
+123296.txt: face memory leak org eclipse jface window window shell window disposed font change listener removed font registry solve problem method close changed lines shell null return true font change listener null face resources font registry remove listener font change listener font change listener null shell disposed return true

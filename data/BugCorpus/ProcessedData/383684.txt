@@ -1,0 +1,1 @@
+383684.txt: wrong placement list opened editors build identifier placement vertial buffer list list editor menu ignores screen boundaries placemet eclipse fine bug reproducible steps reproduce open editors list icon click list button placement popup window presenting editors misplaced running screen

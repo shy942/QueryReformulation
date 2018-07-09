@@ -1,0 +1,1 @@
+407505.txt: maximise restore hidden editor area eclipse based don editor area hide workbench set editor area visible false maximise called view org eclipse workbench addons minmax min max addon maximize element special code finding editor area lines visible elements minimize tagged set visible restore called

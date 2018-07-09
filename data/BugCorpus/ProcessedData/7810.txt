@@ -1,0 +1,1 @@
+7810.txt: rename collapsing tree confusing error rename file inline collapse parent error message assertion failed destination resource hierarchy period consistent behaviour hit return rename problem open folder file parent select rename collapse parent

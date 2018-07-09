@@ -1,0 +1,1 @@
+31179.txt: dialogs save filename dialog text box wrong location file save filename dialog text box left file supposed marked major goofy

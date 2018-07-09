@@ -1,0 +1,1 @@
+443082.txt: constant logging delays user install org eclipse monitoring eclipse luna update site testing http bintray vogellacompany eclipse performance monitoring set log event threhold constants delays reported log don bug clarify works intended provide patch

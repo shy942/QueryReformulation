@@ -1,0 +1,1 @@
+440397.txt: delete org eclipse internal perspective bar manager don org eclipse internal perspective bar manager

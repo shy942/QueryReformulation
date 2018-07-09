@@ -1,0 +1,1 @@
+53217.txt: contributions adapters adapter manager obtaining object class adaptable true split allowed adaptable true object contributions popup menus extension point hacked reflective lookup org eclipse core resources class object class attribute avoid plugin activation class object needed string activating plugin referenced adapters class generic workbench rid reflect hack bug

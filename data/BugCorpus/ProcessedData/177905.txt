@@ -1,0 +1,1 @@
+177905.txt: min max dragging open fast view tab unresponsive repro minimize stack open views drag tab place view stack longer takes input

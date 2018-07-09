@@ -1,0 +1,1 @@
+42616.txt: preferences null pointer exception creating preference build opened regular platform workspace opening preference dialog preference nodes tree message console invalid preference path closing reopening preference dialog prints log

@@ -1,0 +1,1 @@
+96440.txt: tables laying times determine sizes bug attempt layout table scaling columns table client area width returned width table post returning smaller making columns small table layout breakpoint face table layout class launch hosted workspace open preferences ant runtime client area size

@@ -1,0 +1,1 @@
+180758.txt: deleting project contents asks delete read files noticed delete project read files prompt delete files select delete contents files deleted error dialog presented user files deleted don remember earlier

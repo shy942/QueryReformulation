@@ -1,0 +1,1 @@
+414243.txt: keybinding assist popup eats chord shortcuts bug initially created clone bug cloned interim version build steps create simple java class main method editor focus alt shift notice launch occur press alt shift pop displaying shortcuts point pick happen popup close workaround arrow select shortcut hit enter

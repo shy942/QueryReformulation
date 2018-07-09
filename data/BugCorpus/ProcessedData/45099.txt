@@ -1,0 +1,1 @@
+45099.txt: jobs progress view enhancements idea progress view developer happening backgroud view convenient suggestions add clear errors button view header improve error dialog click details button actual error move completion percentage task info narrow view percentage cvs operations build progress

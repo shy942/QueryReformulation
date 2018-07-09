@@ -1,0 +1,1 @@
+48907.txt: dropping perspective control creates fast view drop view perspective control fast detached

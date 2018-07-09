@@ -1,0 +1,1 @@
+169458.txt: error handling status handling wrong severity icons regression introduced bug org eclipse jface util policy face log dialog messes severity constants codes status severity don match message dialog reproduce copy abc clipboard paste package explorer expected error icon warning icon

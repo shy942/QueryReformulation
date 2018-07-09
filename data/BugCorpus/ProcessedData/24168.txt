@@ -1,0 +1,1 @@
+24168.txt: dialogs dialog settings start comment created dialog settings xml plugin entered comment settings fail load class cast exception easy workaround push comment tree org eclipse jface dialogs dialog settings element root element document child child element comment class cast exception thrown

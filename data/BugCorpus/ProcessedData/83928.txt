@@ -1,0 +1,1 @@
+83928.txt: intro restore fast view create fast view screen close restart eclipse workspace error restore workbench layout unable restore perspective workspace java find view org eclipse internal introview

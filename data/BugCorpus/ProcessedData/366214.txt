@@ -1,0 +1,1 @@
+366214.txt: compatibility add support abstract trim widgets code support workbench widget code support abstract workbench trim widget class specialized fill composite int int method bug initially created clone bug installed latest eclipse started eclipse noticed work item trim component missing errors log eric knew issue

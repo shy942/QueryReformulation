@@ -1,0 +1,1 @@
+80942.txt: preferences glitches preference dialog guess list margins missing contents margin left side tab title equal category tree broken pixels missing left corner category tree border initial serach text type filter text improved rendered grey combo allowing access previous searches

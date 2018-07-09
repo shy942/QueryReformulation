@@ -1,0 +1,1 @@
+139792.txt: update manifest compile foundation org eclipse core commands build process setting minimum execution environments bundles attach patch org eclipse core commands bundle stating requires foundation

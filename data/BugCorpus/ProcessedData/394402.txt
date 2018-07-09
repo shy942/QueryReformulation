@@ -1,0 +1,1 @@
+394402.txt: error handling display multiple messages status separate lines status passed error dialog miltiple msg fact msg org eclipse swt widgets list single dialog rendered https issuetracker springsource secure attachment sts png fact https issuetracker springsource secure attachment sts multiline png ignore size dialogs resized manually

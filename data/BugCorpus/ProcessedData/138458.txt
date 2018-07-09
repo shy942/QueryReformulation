@@ -1,0 +1,1 @@
+138458.txt: keybindings ctrl shift working linux red hat constantly losing ctrl shift keybinding java perspective losing keybindings

@@ -1,0 +1,1 @@
+40583.txt: doc key bindings broken workbench extension point doc links build links broken content platform plug developer guide reference extension points reference workbench org eclipse accelerator org eclipse action definitions

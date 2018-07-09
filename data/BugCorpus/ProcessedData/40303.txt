@@ -1,0 +1,1 @@
+40303.txt: global actions action sets don work properly multiple windows java editor ctrl save stoped working reproducable case log file save works expected closing opening editor doesn shutdown eclipse restart

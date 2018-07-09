@@ -1,0 +1,1 @@
+408730.txt: contributions missing label toolbar menu contribution merged bug initially created clone bug user agent mozilla compatible windows build identifier org eclipse menus extension point label toolbar open customize perspective dialog toolbar label action set reproducible steps reproduce create plugin command template

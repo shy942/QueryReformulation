@@ -1,0 +1,1 @@
+32007.txt: file associations preferences assignment editors open preferences dialog file associations assign editor file type dialog select internal external editor type indication error open log file null pointer exception attach log portion bug

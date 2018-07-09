@@ -1,0 +1,1 @@
+394157.txt: editor mgmt list editors longer order version eclipse steps reproduce open editors resources order hold press list editors switching editors list updated result switch editor list order tabs drag tab editor left list behaviour defeats point short cut switch editor hope agree current behaviour regression behaviour restored

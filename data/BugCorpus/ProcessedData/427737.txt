@@ -1,0 +1,1 @@
+427737.txt: upgrade image renderer mortennobel java image scaling

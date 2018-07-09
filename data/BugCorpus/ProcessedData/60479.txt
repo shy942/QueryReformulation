@@ -1,0 +1,1 @@
+60479.txt: editor mgmt switch tabs bottom top redraws open eclipse switch tabs bottom appearance window workbench preferences appearance tabs bottom editor switch tab visible resized window

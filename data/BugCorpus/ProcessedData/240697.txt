@@ -1,0 +1,1 @@
+240697.txt: data binding string number converter extends type number format converter tools error description resource path location type string number converter extends type number format converter string number converter java org eclipse core databinding src org eclipse core databinding conversion usage problem

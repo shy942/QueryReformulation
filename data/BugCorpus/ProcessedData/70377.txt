@@ -1,0 +1,1 @@
+70377.txt: reorder detach perspectives suggested mvm perspectivebar reorder perspective buttons drag drop perspective button view stacks views additionally drag perspective button main eclipse window initiate method detachment perspective spawn workbench window restored

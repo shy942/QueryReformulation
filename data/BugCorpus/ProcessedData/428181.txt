@@ -1,0 +1,1 @@
+428181.txt: misleading error message fixed styling wrong typo plugin xml property application plattform plugin rcp todo css default css property warning plattform plugin rcp todo css default css changed meaning theme support error message misleading case

@@ -1,0 +1,1 @@
+92366.txt: undo execution undo redo fails runtime exception stack flushed sceanrio refactoring undo code caused nice dialog telling stack didn flushed flush stack

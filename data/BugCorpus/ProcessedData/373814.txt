@@ -1,0 +1,1 @@
+373814.txt: missing set focus call maximize minimize restore stack investigating bug double clicking maximize unmaximize works inconsistently based bug buttons actions max min view loses focus

@@ -1,0 +1,1 @@
+62920.txt: workbench pre defined list encodings don bug intended change combo box selecting workspace default encoding workbench editors preference resource specific encoding properties dialog pre defined set popular encodings single default encoding guess

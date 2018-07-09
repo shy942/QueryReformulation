@@ -1,0 +1,1 @@
+485690.txt: comparator errors performance test bundle today build http download eclipse org eclipse downloads drops buildlogs comparatorlogs buildtime comparator unanticipated log txt involves class files team touching bundle chance investigate change class files caused change compiler occurred hard attach artifactcomparison directory investigation easier

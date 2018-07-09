@@ -1,0 +1,1 @@
+66870.txt: workbench full text perspective clicked perspective switcher docked top left buttons ellipsis clicked point expand full text regression worked correctly bug introduced

@@ -1,0 +1,1 @@
+52308.txt: editor mgmt click editor title bar flashes drop system menu pretty description open editor requires multiple click title editor drop list open editors appears click arrow icon appears instant replaced system menu move size close system menu flashes closes

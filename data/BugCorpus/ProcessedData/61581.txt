@@ -1,0 +1,1 @@
+61581.txt: workbench startup build linux gtk bug bug stack traces upgraded dev build started shutdown error problems storing workbench console log rebooted machine startup stack trace console perspectives customizations reset attach log file

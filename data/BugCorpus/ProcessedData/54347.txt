@@ -1,0 +1,1 @@
+54347.txt: dialogs provide dialog debug define dialog prompts user answer interested code generic shipped face component dialog org eclipse debug project type dialog dialog supports passing preference store preference key dialog persist selection cases clients don preference store user response alternatively supports passing string buffer dialog store prompt status

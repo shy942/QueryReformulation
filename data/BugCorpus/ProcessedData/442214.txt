@@ -1,0 +1,1 @@
+442214.txt: incorrect method argument workbench method org eclipse internal workbench widget handler event handler handle event event block impl null impl instanceof compatibility editor reference editor reference changed null editor references remove view reference view reference changed null view references remove typo typo passed

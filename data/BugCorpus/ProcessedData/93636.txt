@@ -1,0 +1,1 @@
+93636.txt: preferences longer closes preference dialog hitting escape close preference dialog clears filter combo

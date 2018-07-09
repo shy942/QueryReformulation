@@ -1,0 +1,1 @@
+59162.txt: editor switching dialogs menu item switch editor belong top level window menu current dialog expose users move switch editor keyboard shortcuts submenu ctrl accelerator open dropdown editor list leave ctrl shift bound dialog upset existing users dilog

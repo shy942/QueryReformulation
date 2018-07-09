@@ -1,0 +1,1 @@
+37691.txt: change editor area drop adapter set build fixes editor area drop adapter bug released maintenance address data loss scenario solaris dragging files editor holding copy modifier key bug

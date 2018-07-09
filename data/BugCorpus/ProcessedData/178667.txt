@@ -1,0 +1,1 @@
+178667.txt: data binding error message printed stdout running test suite

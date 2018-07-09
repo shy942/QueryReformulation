@@ -41,7 +41,7 @@ public class CalculateLocalizationPerformance {
 		obj.TrueSetResults=obj.RetrieveTrueSetsType2("./data/gitInfoNew.txt");
 		//MiscUtility.showResult(10, TrueSetResults);
 		
-		obj.ActualResultSets=RetrieveFinalSets("./data/Results/June21-200-300_NoAlpha.txt"); 	
+		obj.ActualResultSets=RetrieveFinalSets("./data/Results/June21-100-1000_NoAlpha.txt"); 	
 	
 		
 		int top_n=5;

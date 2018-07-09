@@ -1,0 +1,1 @@
+53076.txt: key bindings ctrl shift occurrences file broken ctrl shift occurrences file longer works window command works fine invoked menu steps start fresh workspace create java project window window previous window hit ctrl shift works close window search views repeat close window repeat step works

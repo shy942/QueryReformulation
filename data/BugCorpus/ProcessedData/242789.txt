@@ -1,0 +1,1 @@
+242789.txt: markers hit escape delete markers dialog deletes click problem marker problems view select delete confirmation dialog hit escape marker deleted problem org eclipse internal views markers delete handler execute execution event dialog open window return view dialog open window return view

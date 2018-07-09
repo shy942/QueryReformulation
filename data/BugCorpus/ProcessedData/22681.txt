@@ -1,0 +1,1 @@
+22681.txt: wizards regression bug rendering wizard errors warnings open class wizard enter class rendered warning warning icon strangely alligned enter class rendered error margin rigth border

@@ -1,0 +1,1 @@
+187970.txt: key bindings preferences working expected eclipse testing preferences application assign binding hotkey select command existing binding change removing binding typing hit happened binding completely removed command wrong expect work

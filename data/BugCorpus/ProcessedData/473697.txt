@@ -1,0 +1,1 @@
+473697.txt: delete unused tool item renderer

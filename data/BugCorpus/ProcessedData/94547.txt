@@ -1,0 +1,1 @@
+94547.txt: decorators navigator leak dangling references resource navigator reproduce eclipse memory profiler close perspectives resource perspective close resource navigator force notice references navigator decorator manager

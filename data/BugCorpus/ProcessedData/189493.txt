@@ -1,0 +1,1 @@
+189493.txt: common navigator project explorer missing context menu open project explorer resource perspective create vanilla project create folder create file resource select folder pop context menu missing navigator package explorer oversight

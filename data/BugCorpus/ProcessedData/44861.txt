@@ -1,0 +1,1 @@
+44861.txt: cell editors dialog cell editor handle focus lost org eclipse examples propertysheet open usr file select richard outline view select eyecolor properties view notice button open search dialog notice button select text combo properties notice editor deactivated

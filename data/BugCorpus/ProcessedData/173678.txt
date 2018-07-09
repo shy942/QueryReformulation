@@ -1,0 +1,1 @@
+173678.txt: status handling workbench log dialog swallows dialog title status manager installed message dialog opened message dialog open error shell title message details dialog displayed string message details title bar attach screen capture

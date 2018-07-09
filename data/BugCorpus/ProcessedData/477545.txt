@@ -1,0 +1,1 @@
+477545.txt: graphics delete unused gifs org eclipse views bug initially created clone bug

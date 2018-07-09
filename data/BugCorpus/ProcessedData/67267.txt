@@ -1,0 +1,1 @@
+67267.txt: progress documented progress manager supposed moved public progress constants referenced clients documentation property tested clients job query property ensured progress dialog set property synchronize jobs broken property set dialog opened delay job doesn set property completed synchronizations linger progress view change permission property set earlier

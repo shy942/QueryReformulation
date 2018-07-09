@@ -1,0 +1,1 @@
+478522.txt: mark functional interfaces databinding functional mark interfaces functional org eclipse core databinding util logger change listener

@@ -1,0 +1,1 @@
+202757.txt: contributions tick appearing set checked true called menu item submenu build steps reproduce start application create menu create submenu add menu action call set checked true menu action expected result tick appears menu item actual result works menu items top level menus

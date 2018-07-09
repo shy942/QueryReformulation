@@ -1,0 +1,1 @@
+426506.txt: hide toolbar longer toolbar hide toolbar command longer window menu command contribution org eclipse ide extension point org eclipse menus menu contribution location menu window editor command command org eclipse toggle coolbar action editor item removed split editor work menu window org eclipse editors preserve previous location

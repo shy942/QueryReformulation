@@ -1,0 +1,1 @@
+274450.txt: data binding optimize observable list map set equals identity checks build databinding observable list equals method problem steps reproduce provide observable list based input input viewer observalelist equals method called observable list fails return true object tests wrapped list equality return true

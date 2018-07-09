@@ -1,0 +1,1 @@
+374700.txt: splash screen build misaligned build random places splash screen depending running caused font differences platforms range build properly aligned build clipped

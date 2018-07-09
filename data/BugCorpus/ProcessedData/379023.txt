@@ -1,0 +1,1 @@
+379023.txt: add explicit dependencies org eclipse equinox org eclipse equinox event don infrastructure place avoid problems reported bug add dependencies org eclipse equinox org eclipse equinox event org eclipse workbench swt container application remove dependencies bug fixed

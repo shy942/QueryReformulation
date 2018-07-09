@@ -1,0 +1,1 @@
+119208.txt: common navigator options org eclipse navigator viewer requests org eclipse navigator viewer extension point aggregated collapse link editor actions removeable overridable bug common viewer option decorating label provider bug filter extension dialog removeable

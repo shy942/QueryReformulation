@@ -1,0 +1,1 @@
+53884.txt: workbench perspective switcher eats tabs tab view tool bar eventually hit perspective switcher eating select resource navigator shift tab continue tab tabbing stops perspective switcher

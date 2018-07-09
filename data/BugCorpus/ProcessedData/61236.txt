@@ -1,0 +1,1 @@
+61236.txt: java doc decorators doc issues decorators extension point documentation quadrant decorator lightweight quadrant apply decorator defaults replaced location quadrant deprecated comment referring reworded removed enablement visibility comments refer defining visibility action decorator

@@ -1,0 +1,1 @@
+198880.txt: data binding observables manager dispose model created attachment test case observables manager build steps reproduce observables manager test contained attached patch note test fails model observable dispose method isn called

@@ -1,0 +1,1 @@
+105665.txt: dialogs open resource dialog doesnt remember position size annoying working monitors open resource dialog forget position size closing open type dialog working correcly

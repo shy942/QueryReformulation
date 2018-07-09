@@ -1,0 +1,1 @@
+76588.txt: project clean cancel build choose project clean org eclipse swt eclipse source auto build started choose project clean selected projects block dialog operation waiting build complete clicked detgails button details revealed build eventually clean proceeded manually cancel details

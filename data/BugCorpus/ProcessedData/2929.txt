@@ -1,0 +1,1 @@
+2929.txt: dialogs require mnemonics buttons export prompted overwrite file options cancel hitting work alt works require alt case

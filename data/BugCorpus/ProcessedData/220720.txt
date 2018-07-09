@@ -1,0 +1,1 @@
+220720.txt: ide outdated application definition moved ide ide application requires update http wiki eclipse org plug org eclipse ide considered rich client platform ide

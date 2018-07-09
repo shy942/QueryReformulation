@@ -1,0 +1,1 @@
+53106.txt: workbench launcher splash screen hides dialog switch debug perspective clean environment check projects set breakpoints click debug icon main toolbar java perspective debug dialog create time workbench default configuration click debug button dialog action debug perspective switch perspective respond eclipse splash screen top dialog unable move dialog

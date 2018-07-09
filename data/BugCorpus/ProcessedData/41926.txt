@@ -1,0 +1,1 @@
+41926.txt: ctrl wrong focus paste find dialog ctrl pastes editor dialog open editor copy hit ctrl open find dialog highlight fields hit ctrl paste dialog

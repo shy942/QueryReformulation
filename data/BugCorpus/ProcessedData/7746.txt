@@ -1,0 +1,1 @@
+7746.txt: ctrl tab cycle opened documents steps reproduce launch create project add open documents press ctrl tab cycle documents ctrl tab cycles open views expected behaviour ctrl tab cycle documents standard windows applications

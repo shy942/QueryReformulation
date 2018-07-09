@@ -1,0 +1,1 @@
+21187.txt: working sets working set manager sending bogus property change event build working set manager remove working set sends event removed working set exist list working sets working set manager remove working set ignore remove request working set exist commented failing test case working set manager test test add property change listener add bug fixed

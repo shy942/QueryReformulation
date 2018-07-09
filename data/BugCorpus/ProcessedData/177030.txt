@@ -1,0 +1,1 @@
+177030.txt: add bundle required execution environment manifest file org eclipse testing org eclipse testing plugin file plugin bundle required execution environment set file required build add bundle required execution environment file org eclipse testing plugin setting bug blocker block moving

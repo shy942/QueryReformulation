@@ -1,0 +1,1 @@
+47431.txt: views resize toolbars properly level toolbar resize views smaller

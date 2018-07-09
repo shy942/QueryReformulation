@@ -1,0 +1,1 @@
+353245.txt: compatibility remove unnecessary service factory definitions handler services menu services longer created service factories extension definitions removed plugin xml file

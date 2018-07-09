@@ -1,0 +1,1 @@
+64114.txt: clean dialog close busy cursor clean dialog dangerous busy cursor period clean build starts user push buttons widget disposed exceptions dialog open prevents progress monitor blocked jobs dialog opening user feedback refactored cache close dialog operations polish issues dialogs clean slow clean progress info whatsoever refactoring

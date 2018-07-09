@@ -1,0 +1,1 @@
+71168.txt: progress wrong assertion deferred tree content manager lines org eclipse progress deferred tree content manager public boolean children object element deferred workbench adapter adapter adapter element assert null element progress messages string deferred tree content manager deferred return adapter container isn element adapter

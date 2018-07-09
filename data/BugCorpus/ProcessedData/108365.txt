@@ -1,0 +1,1 @@
+108365.txt: tabbed properties deprecation warnings issue noticed common properties plugin descriptor reading extension points plugin descriptor refactored eclipse functionality moved platform plug descriptor replaced bundle object addition obsolete code sorts plugin descriptor provide patch issue

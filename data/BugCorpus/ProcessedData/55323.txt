@@ -1,0 +1,1 @@
+55323.txt: workbench coolbar doesn resize properly perspective bar manually resized build drag big curve left toolbars disappear resize window pixel reappear

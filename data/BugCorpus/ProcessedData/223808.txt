@@ -1,0 +1,1 @@
+223808.txt: properties dialog properties dialog hierarchy screwed compare contents tree properties dialog org eclipse core expressions multiple child top level

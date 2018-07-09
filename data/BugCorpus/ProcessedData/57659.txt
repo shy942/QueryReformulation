@@ -1,0 +1,1 @@
+57659.txt: view mgmt regression view acitvated toolbar button pressed notice change behaviour view activation click button view causing actions view button resides gain focus activated view gain focus stay activated action invoked

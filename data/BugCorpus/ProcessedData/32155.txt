@@ -1,0 +1,1 @@
+32155.txt: decorators missing elements decorators schema build false schema validation warnings extension org eclipse decorators fact specification enablement subelements missing schema lenient making class attribute optional lightweight decorators require

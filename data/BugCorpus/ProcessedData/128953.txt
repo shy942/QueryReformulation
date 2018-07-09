@@ -1,0 +1,1 @@
+128953.txt: markers problems view loses focus eclipse problems view loses focus click marker opened active feature editor reproduce create feature xml warning close editors double click warning problems view editor opens active single click item result problems view focus feature editor

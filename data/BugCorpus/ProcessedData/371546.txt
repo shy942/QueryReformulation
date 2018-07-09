@@ -1,0 +1,1 @@
+371546.txt: min max maximized editor stack longer maintained perspective switches perspective stacks open maximize editor area switch perspective note reverted restored regression introduced tag perspective switch min max addon tag removed tab folder button wrong

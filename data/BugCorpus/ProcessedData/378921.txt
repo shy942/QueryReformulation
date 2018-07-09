@@ -1,0 +1,1 @@
+378921.txt: incorrect drag drop behavior build identifier split shared area horizontally splits vertically close tabs shared area shrunk size attached video reproducible steps reproduce attached video

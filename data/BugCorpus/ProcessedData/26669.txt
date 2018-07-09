@@ -1,0 +1,1 @@
+26669.txt: editor mgmt add action maximize restore current window functionality custom key binding support bind key current window maximize restore functionality appears defualt key binding maximize restore function bind key action find annoying double click title bar editor window click title bar pick menu key binding

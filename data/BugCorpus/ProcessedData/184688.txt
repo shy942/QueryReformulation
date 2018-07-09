@@ -1,0 +1,1 @@
+184688.txt: org eclipse dialogs search pattern painful glitches org eclipse dialogs search pattern painful glitches corrected subtle problems open type dialog attach problems calls string trim character deleted detect string valid camel case char returns true reproduce problems blocked bugs type paste pattern

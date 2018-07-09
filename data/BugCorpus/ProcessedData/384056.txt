@@ -1,0 +1,1 @@
+384056.txt: disabled icons extension definition declared toolbar menu contribution command disabled icon property respected org eclipse command images extension point verify disabled icon extension org eclipse menus respected success automatically generated version disabled icons images good generated running top eclipse looked fine work

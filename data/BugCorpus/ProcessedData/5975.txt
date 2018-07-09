@@ -1,0 +1,1 @@
+5975.txt: tasks filter dialog reset button poor placement label build task view filters dialog reset button poor placement cancel compare dialogs wizards pref environment labeled restore defaults consistency pref

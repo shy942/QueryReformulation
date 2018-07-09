@@ -1,0 +1,1 @@
+239982.txt: metadata error org eclipse description resource path location type minor version incremented version qualifier reexported bundle org eclipse jface changed minor version org eclipse version numbering problem

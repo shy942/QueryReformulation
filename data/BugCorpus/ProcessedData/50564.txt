@@ -1,0 +1,1 @@
+50564.txt: pref workbench colors description mnemonic description restore defaults button

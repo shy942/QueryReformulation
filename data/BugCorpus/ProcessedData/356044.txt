@@ -1,0 +1,1 @@
+356044.txt: extra packages created import target source folders created attachment package explorer showing extra packages src org eclipse core commands experimenting setups import current runtime target eclipse juno checking source folders selected org eclipse bundles compile errors appears packages created correct package prefixed segment src attach picture clear

@@ -1,0 +1,1 @@
+94669.txt: preferences dialog type filter text list attachment default text combo box

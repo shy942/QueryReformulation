@@ -1,0 +1,1 @@
+264039.txt: wizards selecting project type dialog resizes list box obscures selected item created attachment screencast displaying behavior build steps reproduce attached screencast

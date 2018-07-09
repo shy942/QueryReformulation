@@ -1,0 +1,1 @@
+307201.txt: leaks filtered items selection dialog compound contribution item open menu created attachment open resource dialog leak free problems fixed filtered items selection dialog leaks menu managers compound contribution item leaks nested contribution items open menu caches images private static hashtable shared resource manager workbench plugin

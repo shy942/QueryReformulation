@@ -1,0 +1,1 @@
+4975.txt: status area short status area width reduced longer sufficient status string conflicts incoming outgoing hover works workaround read status

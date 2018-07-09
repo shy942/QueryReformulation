@@ -1,0 +1,1 @@
+45443.txt: key bindings tab indenting tab indenting work correctly setting keybinding shift left shift tab shift tab completely disables tab indenting preferences workbench edit shift left shift press shift tab text selected shifts text cursor indenting depend cursor shifted text selected default key bindings

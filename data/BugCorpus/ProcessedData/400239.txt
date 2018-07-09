@@ -1,0 +1,1 @@
+400239.txt: dialog constants wrongly bogus code wrongly dialog constants pixel constant defined dialog units

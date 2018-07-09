@@ -1,0 +1,1 @@
+175228.txt: opening external files registered editor fails opening external files registered editor fails test case file open file select file named log org eclipse init exception system editor open file base resources

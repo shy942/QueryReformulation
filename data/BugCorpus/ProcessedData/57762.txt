@@ -1,0 +1,1 @@
+57762.txt: dialogs honor platform button dismissal alignment mac button ordering inverted platforms display dismissal alignment equivalent face mechansim

@@ -1,0 +1,1 @@
+59660.txt: progress dual screen setup progress dialogs wrong screen dual screen setup main eclipse window screen progress dialog opened opens screen

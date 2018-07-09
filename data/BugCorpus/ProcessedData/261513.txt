@@ -1,0 +1,1 @@
+261513.txt: data binding error observables manager description resource path location type missing tag collect runnable observables manager java org eclipse core databinding src org eclipse core databinding tag problem collect flagged error

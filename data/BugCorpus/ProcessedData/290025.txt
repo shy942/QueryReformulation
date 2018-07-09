@@ -1,0 +1,1 @@
+290025.txt: update jface bundle version required versions jface text requires jface exports introduced face exports export latest version update qualifier clients face require plug ins result conflicts versions http wiki eclipse org version numbering versions plug ins export plug ins clear john

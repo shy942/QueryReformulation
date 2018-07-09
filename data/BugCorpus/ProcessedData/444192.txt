@@ -1,0 +1,1 @@
+444192.txt: enable warnings externalized strings org eclipse monitoring warnings externalized strings org eclipse monitoring enabled consistency plugins char array string concatenation treated error

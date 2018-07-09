@@ -1,0 +1,1 @@
+433830.txt: background color wrong bug background correctly decoupled tab color good wrongly connected active unselected color white

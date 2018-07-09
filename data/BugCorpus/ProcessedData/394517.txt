@@ -1,0 +1,1 @@
+394517.txt: regression editor fails acquire complete focus activation reproducible editor selected tab change edited file changed file appeared active editing refused typing worked fine switched previous editor

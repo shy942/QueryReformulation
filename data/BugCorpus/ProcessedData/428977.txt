@@ -1,0 +1,1 @@
+428977.txt: eclipse starts opening workspace launcher scenario eclipse don data command parameter switch workspace file switch workspace location restart eclipse current behaviour eclipse starts showing workspace launcher default workspace location workspace changed file switch workspace default workspace location restart build previous build works correctly errors log file

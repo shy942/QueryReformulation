@@ -1,0 +1,1 @@
+177405.txt: preferences layout issues text boxes scrollbars build steps reproduce open preference window notice default size hand tree control big render contents documented item http bugblogger eclipseos html

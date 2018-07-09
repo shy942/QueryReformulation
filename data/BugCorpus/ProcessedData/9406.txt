@@ -1,0 +1,1 @@
+9406.txt: shortcut key switch editor build nice shortcut key window switch editor window decorators mnemonic

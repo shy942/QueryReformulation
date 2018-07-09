@@ -1,0 +1,1 @@
+246103.txt: data binding java bean observable generate correct diff null bean spec specifies bean fire property change event null unknown change occured java bean observable naively converts property change event diff missing legitimate property interpreting property change event correctly

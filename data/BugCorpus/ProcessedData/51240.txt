@@ -1,0 +1,1 @@
+51240.txt: editor mgmt editor dropdown crosses monitor boundries window editor list respect monitor boundies attached screen shot

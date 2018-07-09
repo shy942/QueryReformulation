@@ -1,0 +1,1 @@
+62622.txt: keybindings pressing esc takes focus editor key binding support default key bindings loose focus pressing esc text java editor annoying

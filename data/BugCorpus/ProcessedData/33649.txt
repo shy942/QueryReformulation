@@ -1,0 +1,1 @@
+33649.txt: key bindings close doesn work shortcut platform close editors work version gtk linux

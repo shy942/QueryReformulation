@@ -1,0 +1,1 @@
+217862.txt: metadata ide javadoc plug developement guide package showing plug developement guide org eclipse ide add

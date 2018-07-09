@@ -1,0 +1,1 @@
+429553.txt: color definitions defined modified user wrongly read preference store works fine default theme steps reproduce issue open color font preference switch theme combo reduced palette theme edit color definition overridden hit apply button hit button lost gui correctly stored preference store daniel

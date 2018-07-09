@@ -1,0 +1,1 @@
+324485.txt: metadata org eclipse jface tests databinding conformance bundle version number testing bug noticed number test bundles version numbers bundle updated include qualifier version version number org eclipse jface tests databinding conformance jar

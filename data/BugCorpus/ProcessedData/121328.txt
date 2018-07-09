@@ -1,0 +1,1 @@
+121328.txt: databinding metadata unconventional internal package names jface databinding internal packages org eclipse jface databinding follow eclipse package naming guidelines word internal segment fourth org eclipse jface databinding internal beans changed org eclipse jface internal databinding beans

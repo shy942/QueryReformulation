@@ -1,0 +1,1 @@
+283428.txt: data binding viewer support bind called multiple times build steps reproduce call viewer support bind viewer exception occurs viewer support bind set label provider setting content provider link details http eclipse org newsportal article php group eclipse platform jface

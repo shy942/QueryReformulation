@@ -1,0 +1,1 @@
+164134.txt: data binding compilation errors abstract observable tree observable map label provider couple compilation errors building org eclipse jface databinding observable tree abstract observable tree constructor status int string string undefined org eclipse jface databinding viewers observable map label provider base label provider resolved type

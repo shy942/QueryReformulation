@@ -1,0 +1,1 @@
+187817.txt: viewers select multiple items externalize strings dialog build steps reproduce open externalize strings dialog file string select multiple lines selecting click doesn work works ability strings handle ignore internalize

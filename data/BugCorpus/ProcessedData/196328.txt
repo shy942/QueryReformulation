@@ -1,0 +1,1 @@
+196328.txt: table viewer wizard expand vertically size wizard expands build steps reproduce place tableviewer wizard resize wizard vertically height table viewer remains unchanged wizard height resized table viewer resized

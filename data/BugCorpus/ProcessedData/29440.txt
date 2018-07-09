@@ -1,0 +1,1 @@
+29440.txt: navigation missing action definition resource resource navigation action set actions open resource resource action definition default accelerator entries accelerator sets action definition customization default accelerator

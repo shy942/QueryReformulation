@@ -1,0 +1,1 @@
+186808.txt: face regression face standalone apps work org eclipse osgi bug introduced dependency org eclipse osgi optional standalone face applications reflection handle cases

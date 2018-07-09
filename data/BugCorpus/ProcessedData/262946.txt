@@ -1,0 +1,1 @@
+262946.txt: data binding widget properties tooltip text observes text property tooltip text

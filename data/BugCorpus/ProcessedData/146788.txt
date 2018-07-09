@@ -1,0 +1,1 @@
+146788.txt: common navigator interface description provider respected extension point schema description label provider optionally implement description provider interface provide status text interface respected label provider implements common label provider extends description provider

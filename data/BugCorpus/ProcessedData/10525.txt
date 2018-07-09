@@ -1,0 +1,1 @@
+10525.txt: free table viewer column edited table viewer instance created column created free works handles resizing table code activate cell editor ignores explicitly created columns heads released test code integration build editors broken rename entries lists

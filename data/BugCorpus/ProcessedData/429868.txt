@@ -1,0 +1,1 @@
+429868.txt: open project action catches exception bug initially created clone bug http git eclipse org platform eclipse platform git commit ecbf catch exception unacceptable coding style

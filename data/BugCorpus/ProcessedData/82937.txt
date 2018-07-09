@@ -1,0 +1,1 @@
+82937.txt: dialogs title dialog file dialog class eclipse linux solaris motif title dialog confirms operations select menu item file file click advanced button check link file file system click browse button

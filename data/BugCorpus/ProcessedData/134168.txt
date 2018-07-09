@@ -1,0 +1,1 @@
+134168.txt: common navigator org eclipse navigator resources javadoc plugin org eclipse navigator resources packages xml org eclipse platform isv doc platform options txt file pbe properly updated sonia package plugin question options file add package list packages javadoc generated

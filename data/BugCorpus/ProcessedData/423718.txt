@@ -1,0 +1,1 @@
+423718.txt: regression closing view leaves strange checking workspace maximized editor installed git restarted closed screen ended stacks restored presentation shared area maximized closing shouldn affect regular presentation

@@ -1,0 +1,1 @@
+89707.txt: undo menu item missing text wrongly enabled undo history build workspace set text editor undo history size create simple project create text file type text text file click text editor undo action text missing showing blank space menu increase history size reappears

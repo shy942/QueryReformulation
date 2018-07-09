@@ -1,0 +1,1 @@
+178083.txt: contributions provide selection adapter factory core expression interfaces provide interfaces bug update patch https bugs eclipse org bugs attachment cgi

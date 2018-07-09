@@ -1,0 +1,1 @@
+269210.txt: high contrast mode installation details dialog improperly sized tab sizes high contrast mode installation details dialog tab selection arrows default dialog size tabs tabs occupy space expected dialog enable high contrast mode open control pannel open accessibility options display tab select high contrast checkbox

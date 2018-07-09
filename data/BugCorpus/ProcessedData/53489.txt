@@ -1,0 +1,1 @@
+53489.txt: key bindings delete key deletes styled text summary problem occurs flag event consumed work

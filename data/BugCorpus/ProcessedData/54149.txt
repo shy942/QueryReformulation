@@ -1,0 +1,1 @@
+54149.txt: activities preference build defined activities org eclipse platform plugin customization ini org eclipse workbench false reveal hidden checkboxes wizards preferences dialogs pref checked workbench activity helper senders address needed bug

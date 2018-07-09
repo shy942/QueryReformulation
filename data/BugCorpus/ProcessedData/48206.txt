@@ -1,0 +1,1 @@
+48206.txt: jobs progress view opened perspectives closed start long running process start import project close perspectives double click left hand corner progress indicator observe progress view opened case default perspective opened progress view version build

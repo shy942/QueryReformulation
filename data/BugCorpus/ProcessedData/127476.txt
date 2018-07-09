@@ -1,0 +1,1 @@
+127476.txt: trim drag handles don initiate drag lost drag handles

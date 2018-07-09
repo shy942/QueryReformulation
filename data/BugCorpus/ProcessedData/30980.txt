@@ -1,0 +1,1 @@
+30980.txt: linked resources folder dialog claims location doesn exist build create local folder temp location create project open folder wizard select advanced enter folder temp location location warning message location exist link target exist folder wizard folder dialog

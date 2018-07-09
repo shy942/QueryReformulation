@@ -1,0 +1,1 @@
+120591.txt: viewers filtered tree clicking clear button disables button windows filtered tree view import type filter text arrow select item note enabled click clear button disabled click item expected behaviour button stays enabled selection tree change

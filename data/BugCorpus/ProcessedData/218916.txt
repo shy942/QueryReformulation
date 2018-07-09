@@ -1,0 +1,1 @@
+218916.txt: jface interfaces component refreshing removing interface build steps reproduce create class interfaces group add interface iterable interfaces list updates interface portion icon surrounded blue string iterable click remove icon text remains text editable text field screen snapshots

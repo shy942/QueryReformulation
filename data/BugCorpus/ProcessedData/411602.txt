@@ -1,0 +1,1 @@
+411602.txt: keyboard shortcut dialog closes workbench option save steps reproduce issue open java editor press view inplace outline press eclipse surpisingly closed keyboard shortcut java editor triggers jump modification workbench closed press inplace outline view open class org eclipse internal workbench exit handler internally called intended behavior tobias melcher

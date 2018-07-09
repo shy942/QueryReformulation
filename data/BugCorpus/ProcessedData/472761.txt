@@ -1,0 +1,1 @@
+472761.txt: toolbar drag drop css theme mentioned bug comment eclipse started css theme command argument toolbar selected dragged place simply drag handler confirm linux eclipse themes disabled toolbars movable drag drop

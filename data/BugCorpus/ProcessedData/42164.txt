@@ -1,0 +1,1 @@
+42164.txt: customize perspective dialog working build windows press description command dialog flashes tooltip flashes closes linux motif tooltip doesn disappear mouse moved pressed additional tooltips stack pressing repeatedly motif

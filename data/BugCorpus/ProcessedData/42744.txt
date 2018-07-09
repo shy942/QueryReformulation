@@ -1,0 +1,1 @@
+42744.txt: jobs redraw build log redraw error sep internal error occurred redraw java lang null pointer exception org eclipse swt widgets display async exec display java org eclipse progress job job java org eclipse core internal jobs worker worker java

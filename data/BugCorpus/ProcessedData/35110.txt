@@ -1,0 +1,1 @@
+35110.txt: key bindings key bindings extension point doc incomplete incorrect extension point doc org eclipse commands incomplete extension point docs org eclipse accelerator configurations org eclipse accelerator scopes org eclipse accelerator sets org eclipse action definitions marked obsolete references extension point

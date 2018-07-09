@@ -44,8 +44,8 @@ public class TestingDatasetPreparation {
 			ArrayList <String> listFromTrueSets=retTrueSetResults.get(key);
 			
 			if(listFromTrueSets.size()>=0){
-				utility.ContentWriter.appendContent("./data/TruthSetFromGit.txt", key+" "+listFromTrueSets.size());
-				utility.ContentWriter.appendContent("./data/TruthSetFromGit.txt", listFromTrueSets);
+				utility.ContentWriter.writeContent("./data/TruthSetFromGit.txt", key+" "+listFromTrueSets.size());
+				utility.ContentWriter.writeContent("./data/TruthSetFromGit.txt", listFromTrueSets);
 				System.out.println(++i+" "+key+": "+listFromTrueSets.get(0));
 			}
 					

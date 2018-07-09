@@ -1,0 +1,1 @@
+357875.txt: saving perspective minimized stack leaves closed minimize stack save perspective open perspective minimized stack trim stack

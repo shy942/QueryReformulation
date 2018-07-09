@@ -1,0 +1,1 @@
+93720.txt: workbench regression memento converts newlines string values spaces deserialization string newline characters set xml memento string key nvalue nwith nnewlines spaces newlines serialization subsequent deserialization case memento release

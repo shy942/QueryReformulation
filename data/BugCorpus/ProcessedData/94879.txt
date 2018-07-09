@@ -1,0 +1,1 @@
+94879.txt: properties dialog preferences esc dismiss properties preferences dialog build select file navigator choose properties properties press esc dismiss dialog dismissing dialog clears filter field pressing esc dismisses problem preferences dialog unexpected behaviour esc clear field esc dialog dismiss intercepting esc allowing backspace clear field selected default

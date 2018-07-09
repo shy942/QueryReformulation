@@ -1,0 +1,1 @@
+73086.txt: encoding remove hard coded encodings encoding extension point current hard coded values moved ide workbench

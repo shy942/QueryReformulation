@@ -1,0 +1,1 @@
+377963.txt: restarting brings emacs scheme keybindings started clean workspace create plugin project examples navigate open java editor switched emacs scheme preferences general moves deletes popup undo switched default key scheme selects undo restart start moving moves moving editor

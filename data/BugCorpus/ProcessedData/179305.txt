@@ -1,0 +1,1 @@
+179305.txt: data binding required bundle org eclipse core runtime bundle org eclipse core databinding required bundle dependency org eclipse core runtime isn needed remove compiles don confuse org eclipse core runtime bundle package living org eclipse equinox common bundle referenced required bundle don needed removed

@@ -1,0 +1,1 @@
+104558.txt: workbench default values workbench window perspective bar visible cool bar visible match values configurer workbench window configurer set cool bar perspective bar false bars created expected populate fields workbench window true default result querying window visibility items returns true visible feel free punt don time deal requirement bug

@@ -1,0 +1,1 @@
+110918.txt: dynamic action set menuitems install unistall install bundle loading plugins runtime created plugin wizard packed jar context install bundle file open stream start uninstall context install bundle file open stream start steps work fine time call context install bundle install action sets menu contributions don visual representation working expected

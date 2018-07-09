@@ -1,0 +1,1 @@
+171433.txt: preferences double click diaabled button preference dialog shrinks dialog preference dialog resize dialog larger default size pick preference enter invalid button greyed double click disabled greyed button dialog resizes smaller

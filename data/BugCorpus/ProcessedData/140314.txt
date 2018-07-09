@@ -1,0 +1,1 @@
+140314.txt: tabbed properties advanced info tab doesn scroll reveal properties view short display properties file navigating list keyboard scroll contents view selected row visible

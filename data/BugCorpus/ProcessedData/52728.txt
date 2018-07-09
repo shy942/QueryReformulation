@@ -1,0 +1,1 @@
+52728.txt: fonts colors prefpage dialog font reset button colors list texts dialog font

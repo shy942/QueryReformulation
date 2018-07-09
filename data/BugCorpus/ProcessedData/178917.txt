@@ -1,0 +1,1 @@
+178917.txt: databinding create snippet demonstrate databinding table inline editing

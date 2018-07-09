@@ -1,0 +1,1 @@
+61490.txt: cheat sheets items href attribute render incorrectly cheat sheet item declare href attribute content file item rendered incorrectly icon items href attribute big empty space overlaps remaining item renderding screenshot attached

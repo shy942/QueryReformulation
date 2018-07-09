@@ -1,0 +1,1 @@
+173970.txt: import export export file system dialog box resizes unexpectedly choosing export file menu choosing file system clicking brings screen select files select destination screen double click area buttons dialog resizes automatically predefined size dont feature bug

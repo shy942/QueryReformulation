@@ -1,0 +1,1 @@
+240562.txt: data binding strange constants string number converter stumbled code org eclipse core databinding conversion string number converter double double double double private static final double double double error private static final long long long float float problem double private static final float float float check code feels extremely wrong

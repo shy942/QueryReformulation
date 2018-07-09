@@ -1,0 +1,1 @@
+179032.txt: key bindings table preference sort arrows clicking table column header preference sorts table column changing column title title table set sort column display native platform sort indicator sort column header

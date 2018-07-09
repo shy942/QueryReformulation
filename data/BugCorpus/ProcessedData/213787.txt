@@ -1,0 +1,1 @@
+213787.txt: databinding bean observable decorator update property descriptor bean observable decorator initialized null selection viewer propertydescriptor doesnt delegates class delegates set null property descriptor class descriptor set descriptors validators based model annotations fine master detail observables null viewer selection properties idea workaround solution thomas

@@ -1,0 +1,1 @@
+58151.txt: dock perspective buttons left doc perspective buttons tool bar area swish usability problem extra vertical real estate lost tool bar multiple rows breaks upper left centrism languages user interfaces previous versions docked buttons left options docking location default left regression bug bug

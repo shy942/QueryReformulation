@@ -1,0 +1,1 @@
+102885.txt: perspective bar large empty area top perspectivebar left define application wizard define method application workbench window advisor pre window open configurer set cool bar false configurer set menu bar false configurer set perspective bar true platform preference store workbench preference constants workbench preference constants result large empty area top

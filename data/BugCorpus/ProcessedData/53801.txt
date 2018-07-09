@@ -1,0 +1,1 @@
+53801.txt: editor mgmt pressing esc editor drop list open kills list pressed esc key editor area drop list opened managed kill close dispose list shell open restart eclipse restore expected behaviour list shell hidden closed disposed completely

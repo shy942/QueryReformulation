@@ -1,0 +1,1 @@
+31707.txt: dialogs resource list selection dialog label providers inconsistently resource list selection dialog label provider result text parent label resource ignores decorations workbench label provider decorating label provider workbench label provider decorating workbench label provider decorate label provider labels

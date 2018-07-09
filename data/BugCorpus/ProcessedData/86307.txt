@@ -1,0 +1,1 @@
+86307.txt: workbench parts workbench open editor called activate false unmaximizes current view brings workbench window front window stack workbench minimized debug view method open editor selected stack frame debug view selects stack frame result debug events unexpected behavior workbench bug

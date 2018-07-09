@@ -1,0 +1,1 @@
+22274.txt: navigator sync selection editor drag resources open editors drag navigator view navigator flip active active editor making impossible drop avoid checking dragsourceevent doit drag start callback storing drag finished callback occurred true native drag start mousedown selection event drag start event link navigator selection active editor suppressed

@@ -1,0 +1,1 @@
+310394.txt: common navigator common viewer refresh turns redraw breaks team sync view build perform team synchronize compare latest synchronize view remains empty existing workspace eclipse projects including core resources modified locally workspace project expected empty synchronize view assuming issue block testing platform team functionality test pass

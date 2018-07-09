@@ -1,0 +1,1 @@
+410208.txt: multiwindow application restore created attachment patch correct window plain application consists multi windows explicit window perspective defined window maximize window window press restore expect parts window resized problem window method model service top level window method unzoom method attach patch fixes behavior cheers eugen

@@ -1,0 +1,1 @@
+23840.txt: workbench restore workbench layout mac started eclipse exited restarted eclipse restore workbench layout unable restore perspective workspace resource unable create editor

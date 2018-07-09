@@ -1,0 +1,1 @@
+343160.txt: key bindings preference duplicated mnemonic appearance preferences dialog option mixed fonts button restore defaults hot key key binding view description restore defaults hot key note prevents restoring defaults alt combination

@@ -1,0 +1,1 @@
+63159.txt: progress progress dialog background button resize larger font set dialog font large background button correctly resize

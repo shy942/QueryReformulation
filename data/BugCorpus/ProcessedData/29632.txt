@@ -1,0 +1,1 @@
+29632.txt: workbench warn user migrating workspace build jeff don remember mentioned dialog started workspace eclipse coming good work workspaces main problem scenario user mistakenly unwittingly starts eclipse workspace metadata migrated potential making workspace useless eclipse notice workspace minor verision generic dialog allowing user exit consequences

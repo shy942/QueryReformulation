@@ -1,0 +1,1 @@
+20717.txt: drag drop read file opens strange message dialog project read file file drag drop navigator view area view desktop opens dialog filename read move didn move file message wrong message opened dropped area navigator

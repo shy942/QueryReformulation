@@ -1,0 +1,1 @@
+79380.txt: perspective bar perspective switcher resizes small top slide banner curve perspective buttons showing regression button visible

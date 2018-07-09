@@ -1,0 +1,1 @@
+122685.txt: common navigator cascading failure context menu bug project explorer opening common component fixed eclipse code moved problem contributor context menu fails project action fill context menu blocks entire context menu appearing explorer hardened extenders break block extensions appearing case simple catch block calls extender solve problem context menu items fail

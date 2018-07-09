@@ -1,0 +1,1 @@
+95548.txt: editors sized properly startup build open preferences dialog editors general close open dialog note dialog short

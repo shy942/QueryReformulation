@@ -1,0 +1,1 @@
+235179.txt: global actions tips tricks menu missing start eclipe open menu expected result tips tricks menu actual result tips tricks missing works fine eclipse missing time eclipse note tips tricks initiated tips tricks action org eclipse internal ide testing tips tricks test plan detected earlier component owns code guess changed org eclipse ide menu showing

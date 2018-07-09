@@ -1,0 +1,1 @@
+420779.txt: cleanup eclipse platform project resources luna release access contributors easier cleanups platform project delete obsolete plug ins delete obsolete wiki retire obsolete examples kind umbrella bug activities

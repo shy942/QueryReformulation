@@ -1,0 +1,1 @@
+51679.txt: delete progress window hook delete key progress window selected group job cancelled

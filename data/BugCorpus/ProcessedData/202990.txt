@@ -1,0 +1,1 @@
+202990.txt: viewers column viewer editor incorrectly handles mouse click activated cell editor tree viewer tree viewer editor jface viewers editing support text cell editor activate editor keyboard wait couple seconds mouseclick area doubleclick event dispatched viewer open listener attach activated event time column viewer editor time activation time negative mac condition true

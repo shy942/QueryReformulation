@@ -1,0 +1,1 @@
+437485.txt: text alignment follow text direction text widget

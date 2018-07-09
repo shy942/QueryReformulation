@@ -1,0 +1,1 @@
+190006.txt: quick access empty string element steps press ctrl type console hit return opens console view press ctrl hit return press ctrl type javadoc hit return opens javadoc view press ctrl actual console selected expected javadoc selected

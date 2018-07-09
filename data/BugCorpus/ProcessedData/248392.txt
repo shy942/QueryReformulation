@@ -1,0 +1,1 @@
+248392.txt: view disabled completly nonfunctional eclipse steps reproduce view visible perspective view fast view perspective click fast view icon select close perspective actual view responding mouse clicks close reopen functional

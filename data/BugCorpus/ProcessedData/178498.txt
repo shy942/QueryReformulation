@@ -1,0 +1,1 @@
+178498.txt: font prefs lost switching appearance font lost switched system font switching theme marked major settings weird font obvious steps install clean eclipse start fresh workspace check text font preference courier switch appearance theme click apply check text font preference courier restart check text font preference thaoma bug courier font

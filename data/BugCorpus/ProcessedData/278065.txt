@@ -1,0 +1,1 @@
+278065.txt: global actions regression command link preference broken works command open preference longer works opens opened correct clicked preference dialog

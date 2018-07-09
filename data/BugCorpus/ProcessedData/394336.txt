@@ -1,0 +1,1 @@
+394336.txt: file close menu item disabled current editor activated eclipse stpes reproduce create project import files open file default editor open file menu notice close menu action disabled reproduce repeat steps problem

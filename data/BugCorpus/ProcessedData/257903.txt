@@ -1,0 +1,1 @@
+257903.txt: contributions tool tool bar menu visibility tabs customize perspective dialog delay build steps reproduce navigate menu window customize perspective selecting deselecting item tool bar menu visibility tab tooltip appears position mouse pointer hide mouse moved difficult change selections checkboxes tooltip offset delay

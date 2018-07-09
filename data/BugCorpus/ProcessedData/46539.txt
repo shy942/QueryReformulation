@@ -1,0 +1,1 @@
+46539.txt: dialogs save resources dialog duplicated entries save resources dialog opened launch configuration synchronize shoutdown eclipse duplicated entries instance dirty editors files foo txt bar txt triggers dialog foo txt bar txt foo txt bar txt pair duplicated entries checked saved default

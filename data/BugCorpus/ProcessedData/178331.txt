@@ -1,0 +1,1 @@
+178331.txt: dialog invalid result open resource dialog spaces pattern

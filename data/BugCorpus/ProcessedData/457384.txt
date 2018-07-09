@@ -1,0 +1,1 @@
+457384.txt: perspectives rename command groups availability tab action set availability pauls comment https bugs eclipse org bugs bug cgi mislabled command groups availability tab discussed andrey thinks rename tab confusing users label command groups availability action sets availability

@@ -1,0 +1,1 @@
+52301.txt: font colour add color rework removing preference color icons toolbars making default behavior don prefers black white color

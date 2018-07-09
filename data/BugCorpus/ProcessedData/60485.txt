@@ -1,0 +1,1 @@
+60485.txt: plugin details dialog incorrect click plugins details button dialog plugins platform feature error plugins dialog bundles bundle bundles bundle groups bundles bundle bundles bundle groups bundles nested loop accidentally increment var loop

@@ -1,0 +1,1 @@
+173108.txt: dialogs small fixes manual tests filtered resources selection dialog text file containg manual tests detailed misspellings wipe

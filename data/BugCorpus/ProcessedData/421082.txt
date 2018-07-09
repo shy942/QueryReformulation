@@ -1,0 +1,1 @@
+421082.txt: backport bug key binding keybinding assist popup eats chord shortcuts alt shift wait esc opens view dialog shouldn catch esc bug comment

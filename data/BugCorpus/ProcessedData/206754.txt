@@ -1,0 +1,1 @@
+206754.txt: key bindings command contribution item pick key binding created attachment command contribution item patch build steps reproduce create context menu contribution add command contribution org eclipse edit cut command contribution item resolving key bindings choosing returned actions cut resolving shift delete ctrl attached patch calls active binding active bindings

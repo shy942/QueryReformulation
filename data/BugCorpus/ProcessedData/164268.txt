@@ -1,0 +1,1 @@
+164268.txt: data binding beans observables observe list returns list element type constructing observable list beans observables list returned doesn element type scenario issue attempting observe detail list test master detail exception thrown person selected detail list element type object class type ensure type set list returned observables factory

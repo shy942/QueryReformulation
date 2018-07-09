@@ -1,0 +1,1 @@
+262578.txt: common navigator extension point description aligned children trigger points handling bug bug meaning children trigger points originally documented exsd files updated reflect

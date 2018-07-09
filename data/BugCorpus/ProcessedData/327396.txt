@@ -1,0 +1,1 @@
+327396.txt: working sets updating working sets workbench restore loss working sets bug detailed description problem basically working set set elements invoked working set manager restore running partial workingsets xml file written disk loaded point case working sets modified workbench session working set manager save invoked write loaded working sets persisted lost

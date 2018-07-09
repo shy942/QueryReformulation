@@ -1,0 +1,1 @@
+32591.txt: editor mgmt ctrl editor list isn updated properly current editor top ctrl editor list editor list properly updated user switches editor clicking package explorer navigator clicking editor tab works breaks ability toggle editors successive ctrl

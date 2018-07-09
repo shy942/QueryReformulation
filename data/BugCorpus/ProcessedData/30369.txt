@@ -1,0 +1,1 @@
+30369.txt: key bindings warnings wrong action definitions schema defintion build converted projects projects set compiler preferences produce warnings lots warnings plugin xml extension point org eclipse action definitions warning unknown attribute description warning unknown attribute remove attributes key binding support longer works assume schema incorrect

@@ -1,0 +1,1 @@
+52912.txt: editor mgmt pinning editors multiple tabs work reuse editors close editors automatically pinned editors list switching multiple tabs reveals pinned editors

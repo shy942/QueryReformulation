@@ -1,0 +1,1 @@
+264650.txt: viewers face java doc tree selection wrong build default constructor tree selection note tree selection equals structured viewer tree selection equals structured viewer true

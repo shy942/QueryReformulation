@@ -1,0 +1,1 @@
+98569.txt: perspectives customization dialog support dialog font change dialog font window customize perspective pick dialog font

@@ -1,0 +1,1 @@
+259048.txt: contributions toolbar control contributions plugin startup bug lazy loading implemented control contribution populated piece trim invisible load plugin control instantiate optimization proxy control contribution don load plugin long calls fill won requested bug minute thought bug addressed issue doesn case

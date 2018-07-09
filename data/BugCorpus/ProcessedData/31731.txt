@@ -1,0 +1,1 @@
+31731.txt: key bindings dialogs support key bindings class dialog support entry fields click choose select slows keyboard based usage eclipse odd discrepency places eclipse great eclipse annoying nits cleaned pass request version build

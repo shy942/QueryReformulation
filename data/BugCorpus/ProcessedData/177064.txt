@@ -1,0 +1,1 @@
+177064.txt: viewers org eclipse jface viewers tree selection equals hashcode element comparer build steps reproduce equals hashcode methods call tree path equals tree selection ignoring element comparer constructor missing calling tree path equals tree path element comparer turned issue experiencing erroneous notifications selection refresh outline

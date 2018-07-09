@@ -1,0 +1,1 @@
+187007.txt: min max closeable view close menu item closeable view minimize stack close context menu entry

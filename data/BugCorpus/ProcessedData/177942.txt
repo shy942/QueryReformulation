@@ -1,0 +1,1 @@
+177942.txt: min max drag mock editor tests fail presentation scenarios test cases choose arbitrary point relative upper corner editor stack determine drag start operation adjust choice account possibility presentation editor stacks showing min max buttons

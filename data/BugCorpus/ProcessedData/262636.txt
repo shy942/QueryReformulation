@@ -1,0 +1,1 @@
+262636.txt: hidden menu items updated perspective switches checking customize perspective dialog behavior java debug perspective open hide menu toolbar item visible search search item won hidden switch perspectives

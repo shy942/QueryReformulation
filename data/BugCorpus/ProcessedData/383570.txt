@@ -1,0 +1,1 @@
+383570.txt: progress progress view duplicates job broken bug progress view renders job lot git refresh jobs initially thought bug git turned bad bug reproduce select type java lang string choose open call hierarchy

@@ -1,0 +1,1 @@
+208804.txt: common navigator change navigator view perspective links bug comment change resource perspective view links window view navigator view project explorer view full featured replacement legacy navigator view perspectives team synchronizing plugin developement java java browsing java type hierarchy repositories

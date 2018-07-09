@@ -1,0 +1,1 @@
+55360.txt: editor mgmt closing editors fails splitted view turn multiple editor tabs open editor java java move editor editor splitted view move editor splitted view close editors clicking tab editor doesn close properly workbench completly unusable widget dipose close workbench stack trace closing

@@ -1,0 +1,1 @@
+65731.txt: editor mgmt editor extension panel missing icon eclipse plugin xml editor edit editor extension icon field required assuming names required field

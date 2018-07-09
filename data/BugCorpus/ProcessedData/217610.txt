@@ -1,0 +1,1 @@
+217610.txt: contributions main menu longer populated org eclipse menus bug contributions main menu managers longer menu file additions recurse code changed populate newly items populate contribution managers items code calls populate recurse true false insure newly items recursed pass

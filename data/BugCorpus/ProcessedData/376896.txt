@@ -1,0 +1,1 @@
+376896.txt: contributions toolbar button order newly created window attachment startup debug navigation toolbar buttons wrong order restart

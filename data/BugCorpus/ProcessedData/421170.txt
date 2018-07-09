@@ -1,0 +1,1 @@
+421170.txt: ctrl popup saves dirty editors prompting testing bug handling silently closes editor saving repro open editors dirty hit ctrl arrow dirty editors hit result editor closed persisted

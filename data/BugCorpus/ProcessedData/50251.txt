@@ -1,0 +1,1 @@
+50251.txt: editor mgmt double click plugin xml project focus plugin xml editor project plugin projects open plugin xml plugin properties plugin xml plugin properties close eclipse bring double click plugin xml focus switches plugin xml opening plugin xml

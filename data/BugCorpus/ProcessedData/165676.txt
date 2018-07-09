@@ -1,0 +1,1 @@
+165676.txt: face add javadoc window close shell closed event bug caused issue bug comment problem window close call shell close shell listeners receive shell closed event method called clients default buttons dialog pressed caveat mentioned javadoc window close adding note method call code shell close code code shell listener code receive code shell closed code event

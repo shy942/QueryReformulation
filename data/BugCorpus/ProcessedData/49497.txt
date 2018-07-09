@@ -1,0 +1,1 @@
+49497.txt: face dependency org eclipse core runtime enlarges standalone face applications org eclipse jface refers progress monitor places standalone face program depend org eclipse core runtime runtime jar turn depends org eclipse osgi osgi jar dependency core runtime standalone face programs larger

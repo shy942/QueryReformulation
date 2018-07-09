@@ -1,0 +1,1 @@
+25946.txt: dialogs element tree selection dialog result return null element tree selection dialog result returns selected element cancel dialog window button top hand corner window return null user presses cancel button

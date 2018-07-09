@@ -1,0 +1,1 @@
+183036.txt: move high contrast check preference initializer high contrast check preference initializer workbench move initialization theme manager runs thread adding bug dependant theme manager initialize thier preference constants sense register theme listener update thier preferences change check thier preferences

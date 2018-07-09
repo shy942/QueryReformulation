@@ -1,0 +1,1 @@
+41147.txt: editor mgmt spread open files tabs multiple lines lots file concurrently open sufficient tabs scrolling spreads tabs multiple lines open files visible window menu outline additionally switch editor

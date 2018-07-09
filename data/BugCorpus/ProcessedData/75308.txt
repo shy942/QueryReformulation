@@ -1,0 +1,1 @@
+75308.txt: encoding reset encoding xml file encoding set encoding properties dialog unicode set encoding properties dialog default obeserve entry org eclipse core resources prefs file eclipse read encoding file step

@@ -1,0 +1,1 @@
+166500.txt: viewers abstract viewer editor optimization optimization recreating listeners time ways solve writing instance variable recreating listener everytime applies mouse listener

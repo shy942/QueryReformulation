@@ -1,0 +1,1 @@
+410900.txt: color preferences applied restart high contrast theme steps reproduce reproduced switch windows theme high contrast start eclipse windows preferences colors change foreground color content assist blue content assist foreground color blue restart eclipse content assist foreground color content assist point blue set point

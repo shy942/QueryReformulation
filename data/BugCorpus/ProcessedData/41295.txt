@@ -1,0 +1,1 @@
+41295.txt: dialogs displays dual monitor setup summary nice dialogs centered current focused display current eclipse window maximized screens annoying move dialogs visible display

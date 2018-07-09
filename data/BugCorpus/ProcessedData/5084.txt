@@ -1,0 +1,1 @@
+5084.txt: editor mgmt open external editor open menu pick external editor

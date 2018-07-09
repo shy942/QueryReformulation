@@ -1,0 +1,1 @@
+277795.txt: data binding warnings official build org eclipse jface examples databinding org eclipse jface examples databinding introduced compile warnings build

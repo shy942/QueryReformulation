@@ -1,0 +1,1 @@
+449859.txt: add method org eclipse internal workbench helper check valid bundleclass notation

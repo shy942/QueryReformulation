@@ -1,0 +1,1 @@
+55209.txt: eclipse forms forms depend core runtime compatibility build org eclipse forms plug requires org eclipse core runtime compatibility customers require org eclipse core runtime compatibility depend facilities org eclipse core runtime runtime plug appears adaptable

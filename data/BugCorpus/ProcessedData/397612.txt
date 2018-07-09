@@ -1,0 +1,1 @@
+397612.txt: support multi instance views current support multi instance views lacks ability add wildcard placeholders perspective

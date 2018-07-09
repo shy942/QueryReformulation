@@ -1,0 +1,1 @@
+66810.txt: class cast exception workbench intro manager intro created create error view workbench intro mananager view intro adapter blind cast view intro adapter

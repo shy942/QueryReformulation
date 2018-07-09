@@ -1,0 +1,1 @@
+411051.txt: model assembler fails silently fragment applied print offending bundle ported bug initially created clone bug model assembler class fails merge model fragment runtime application model fails info message console hard identify problem markus kuppe lars vogel created attached patch info message

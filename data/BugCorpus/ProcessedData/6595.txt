@@ -1,0 +1,1 @@
+6595.txt: java projects project references platform jdt switch java perspective open properties dialog project project references

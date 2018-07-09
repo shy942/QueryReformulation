@@ -1,0 +1,1 @@
+85578.txt: preferences usability issues export preferences dialog solaris motif opens radio button selected check boxes preferences list expect automatically select choose specific preferences export radio button select deselect crazy point entry preferences list fill vertical space mnemonic conflict preference file finish dialog display error preference file set directory opened

@@ -1,0 +1,1 @@
+371027.txt: model platform plugin fragment uri org eclipse workbench model extension point similiar https bugs eclipse org bugs bug cgi consistent org eclipse workbench model platform plugin prefix resources icons currenty plugin extension point org eclipse workbench model fragment uri fragment xmi fragment extension plugin

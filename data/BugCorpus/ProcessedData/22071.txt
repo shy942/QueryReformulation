@@ -1,0 +1,1 @@
+22071.txt: editor mgmt graphical hint pinned editor nice pinned editor window graphical decorator sees pinned

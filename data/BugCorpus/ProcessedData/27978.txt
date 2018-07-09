@@ -1,0 +1,1 @@
+27978.txt: features missing dialog restarting eclipse eclispe start eclipse workspace verify feature details feature details exit eclipse restart feature details empty expectation list displayed repeated test closing prior exit hosting command arguements ide eclipse eclipse exe jdk ibm jdk jre bin java data ide workspace showlocation win win arch

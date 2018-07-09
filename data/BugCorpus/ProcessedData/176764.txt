@@ -1,0 +1,1 @@
+176764.txt: undo delete resources operation handle overlapped selections project create folder create folder select delete undo fails info restore message problem resource description checks parent valid time check restored validity check smarter deletes collapsed

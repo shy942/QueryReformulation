@@ -1,0 +1,1 @@
+194221.txt: commands slow close dialogs context authority source changed triggering multiple menu updates noticed slow closing dialogs kit profile call context authority source changed int leading calls menu manager update issue reported fixed aspect problem remains

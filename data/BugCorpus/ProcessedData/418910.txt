@@ -1,0 +1,1 @@
+418910.txt: clean action org eclipse css core whitespace mickael istria issues trailing whitespace https git eclipse org platform discourages trailing whitespace http wiki eclipse org platform contribute clean action whitespace org eclipse css core

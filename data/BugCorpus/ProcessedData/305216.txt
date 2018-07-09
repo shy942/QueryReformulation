@@ -1,0 +1,1 @@
+305216.txt: editor mgmt focus lost closing dirty editor editor selection dialog open file dirty ctrl shift select file click close selected editors pick editor closed focus granted workbench window modal dialog focus granted modal dialog clear problem

@@ -1,0 +1,1 @@
+249378.txt: viewers array content provider singleton array content provider intended subclassed adding static getter class sharing single instance array content provider improve performance reduce memory usage

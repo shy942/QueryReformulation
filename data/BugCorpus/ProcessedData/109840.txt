@@ -1,0 +1,1 @@
+109840.txt: preferences color selector wrong event source class org eclipse jface preference color selector property change event constructor passed pointer enclosing class object event source property unusable parties constructor argument point enclosing class color selector

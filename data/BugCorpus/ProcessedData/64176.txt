@@ -1,0 +1,1 @@
+64176.txt: workbench perspective switcher loses width workbench restart perspective switcher upper corner workbench drag left border free space toolbar perspectives time workbench restart setting lost switcher starts rightmost position perspective add perspective button

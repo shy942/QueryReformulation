@@ -1,0 +1,1 @@
+31018.txt: editor mgmt flickering cursor navigator entering demo double click java file navigator open watch closely cursor rapidly change selection arrow busy cursor times settles

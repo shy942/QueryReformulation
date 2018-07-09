@@ -1,0 +1,1 @@
+177037.txt: status handling remove style status adapter change decided remove style param set methods status adapter status handlers don change style pass argument handle method covered attached patch

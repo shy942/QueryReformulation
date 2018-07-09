@@ -1,0 +1,1 @@
+376329.txt: arrow quick access dialog move carat search box version build bug steps type quick access text field popup arrow start traversing content popup realize list press arrow popup notice carat search field moves expect carat move search field left confirmed problem windows affect linux test mac

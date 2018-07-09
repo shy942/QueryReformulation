@@ -1,0 +1,1 @@
+364352.txt: launching eclipse instance broken mac created attachment exception details mac current code org eclipse cocoa bundle launching instance exception eclipse quit unexpectedly libswt coco jnilib plugin invalid memory access location rip fff attached file exception details

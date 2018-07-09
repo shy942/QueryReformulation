@@ -1,0 +1,1 @@
+158606.txt: base label provider public class org eclipse jface viewers base label provider public current default access leads subtle problems bug

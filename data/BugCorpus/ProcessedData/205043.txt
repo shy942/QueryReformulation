@@ -1,0 +1,1 @@
+205043.txt: commands dynamically loading plugin command framework error command framework correctly handle dynamic plugin awareness dynamic plugin command framework references dumps correctly read

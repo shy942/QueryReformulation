@@ -1,0 +1,1 @@
+58987.txt: progress job property actions define tooltip actions set property job define tool tooltip hovering link job set property qualified org eclipse workbench progress goto action public void goto action null goto action public boolean enabled return goto action null

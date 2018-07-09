@@ -1,0 +1,1 @@
+64606.txt: progress viewer leaked progress tree content provider dispose method called result removed collection collectors progress view updater open close progress view progress viewer progress tree content provider progress mananger util sorter leaked

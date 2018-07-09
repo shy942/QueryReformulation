@@ -1,0 +1,1 @@
+480102.txt: add appearance menu toogle visibility toolsbars move hide toolbar toolbar menu entries increase decrease font size commands bug

@@ -1,0 +1,1 @@
+398776.txt: regression workbench starts startup plug ins fully initialized works fine workbench starts startup plug ins workbench start plugins fully initialized regression bad reported bug test case bug comment

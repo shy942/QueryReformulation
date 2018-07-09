@@ -1,0 +1,1 @@
+64390.txt: presentations default presentation child property changed view pane flickering update feature console output turned merges require lot clicking sync feature limited earlier console repaint message area console tab output foreground heavy repaint fickering tabs status bar lot red cvs update messages printed

@@ -1,0 +1,1 @@
+254550.txt: save dialog running build steps reproduce launch attached application ctrl wizard select untitled text file press finish add text untitled text editor ctrl save saved failed java lang null pointer exception save dialog internal image descriptor key application started image public suggestion

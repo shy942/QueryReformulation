@@ -1,0 +1,1 @@
+276755.txt: data binding snippet demonstrate data binding combo viewer enum created attachment patch project org eclipse jface examples databinding submitting face data binding snippet demonstrates binding combo viewer java enum patch org eclipse jface examples databinding project java dependent

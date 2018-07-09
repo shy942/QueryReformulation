@@ -1,0 +1,1 @@
+256422.txt: data binding set writable redefined equals hashcode method object instances equals create writable initialize set getvalue returned set writable public void set object boolean changed false null null changed true null equals changed true changed fire change diffs create diff change equals

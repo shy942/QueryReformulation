@@ -1,0 +1,1 @@
+210837.txt: common navigator project explorer doesn open closed projects double click project explorer perspective open closed project user double clicks package explorer java perspective fact previous release java perspective thought huge usability improvement start consistency

@@ -1,0 +1,1 @@
+58095.txt: preferences selecting pref moved dialog screen move preferences dialog secondary screen change prefpage entire dialog moves primary screen hugs border main screen

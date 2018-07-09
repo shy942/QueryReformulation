@@ -1,0 +1,1 @@
+427794.txt: bidi extend org eclipse jface util bidi utils apply bidi processing cover combo box widget bidi utils introduced bug moment cover text widget public static void apply bidi processing text field string handling type text widget handling combo box bug bidi utils cover combo box public static void apply bidi processing combo field string handling type

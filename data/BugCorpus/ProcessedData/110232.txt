@@ -1,0 +1,1 @@
+110232.txt: key bindings preference adding keybinding removes keybinding specific context define navigate windows scope text word editing text scope removed shouldn happen scope specific overrides keybinding workaround word command add original binding

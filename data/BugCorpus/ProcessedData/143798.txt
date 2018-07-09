@@ -1,0 +1,1 @@
+143798.txt: actions enhance menu manager subclassable custom menu widget custom menu widget custom menu item meet requirements project working needed modifications base menu manager class order subclass menu manager work custom menu widget attach patch file revolve assuming widget eclipse menu widget eclipse menu widget subclassed

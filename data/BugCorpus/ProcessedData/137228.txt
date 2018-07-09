@@ -1,0 +1,1 @@
+137228.txt: trim click start trim drag position cursor top screen move cursor heap status drag handle click mouse button start dragging cursor snaps top

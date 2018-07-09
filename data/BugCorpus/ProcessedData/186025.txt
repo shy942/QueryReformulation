@@ -1,0 +1,1 @@
+186025.txt: viewers virtual manager cleared viewer disposed nasty memory leak workbench disposed viewer field registered selection provider structured viewer handle disposed input set null clear virtual manager table viewer table viewer clear cache virtual manager handle dispose reference model object retained

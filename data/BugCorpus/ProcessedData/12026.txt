@@ -1,0 +1,1 @@
+12026.txt: editor mgmt request workbench close editors workbench methods closing editors close editor editor boolean close editors boolean editor view making bug allowing users multi select open editors choose close current call close editor repeatedly poor performance method workbench close editors editor boolean close multiple editors

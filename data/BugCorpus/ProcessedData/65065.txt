@@ -1,0 +1,1 @@
+65065.txt: editor mgmt close editors takes long time running linux sun jdk eclipse build closing editors takes long time editors open kind flashes notification turned

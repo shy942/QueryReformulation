@@ -1,0 +1,1 @@
+456530.txt: rename element model fragment editor label element easily mistaken model fragment prevent propose rename extended element changed org eclipse tools emf src org eclipse tools emf internal messages properties string model fragment parent element

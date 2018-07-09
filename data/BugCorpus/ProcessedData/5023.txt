@@ -1,0 +1,1 @@
+5023.txt: editor mgmt associations editor selection dialog multiselect version description originally reported bug editor selection dialog multiple selections double click select accept work dialog steps window preferences expand workbench select file editors click add button editors table notice list multi select notice double click

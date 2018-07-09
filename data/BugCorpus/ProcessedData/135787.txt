@@ -1,0 +1,1 @@
+135787.txt: adopt complete plan item deliver support eclipse bug code migrated ibm icu classes place default java implementation component attach patches required import point

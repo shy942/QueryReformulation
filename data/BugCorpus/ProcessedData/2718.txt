@@ -1,0 +1,1 @@
+2718.txt: default text editor font preference simply bringing default text editor preference sets font current font starting eclipse install hasn default text editor changed open file default text editor note font style size open window preferences workbench default text editor don change click note font style size changed

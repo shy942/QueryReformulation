@@ -1,0 +1,1 @@
+247933.txt: status handling modality switch details support preserved correctly

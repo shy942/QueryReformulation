@@ -1,0 +1,1 @@
+122910.txt: common navigator types subclassing implementation contract build common navigator classes subclassed interfaces implemented clients generally explicitly assumption client constrains kind future conservative maintaining compatibility helpful methods implemented subclasses overridden examples workbench view site label provider

@@ -1,0 +1,1 @@
+24508.txt: editor mgmt java browsing views track current editor consistently major problems java browsing views track current editor settings close editors automatically true number open editors open java file ctrl shift select type open editor press editor opened java browsing views update item selected

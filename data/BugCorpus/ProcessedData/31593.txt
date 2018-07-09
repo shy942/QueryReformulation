@@ -1,0 +1,1 @@
+31593.txt: dialogs folder dialog check existing files build create file test project folder open java build path properties project click browse button source properties select parent file select create folder enter test button enabled pressing error message test exists console button disabled file folder exists

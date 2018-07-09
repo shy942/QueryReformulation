@@ -1,0 +1,1 @@
+156747.txt: adopt resource device face resource managers resource device method improvements face resource managers inefficient complex heuristics detect device creating temporary resources removed argument descriptor factories don device efficient argument versions descriptor factory methods device deprecated argument longer required argument version efficient

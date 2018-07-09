@@ -1,0 +1,1 @@
+176418.txt: workbench launcher display progress bar splash screen build steps reproduce create project brand product splash screen create splash handler attached file splash handler java progress bar discussed kim horne asked file bug dumb user error attached splash handler java sample plug

@@ -1,0 +1,1 @@
+55592.txt: contributions action bars properly handle menu listeners build investigating leak java editors bug java outline custom filters action group hooks menu listener menu manager site action bars menu manager implementation add menu listener simply delegates parent problems menu listeners disposed action bars disposed menu listener parent menu manager add menu manager

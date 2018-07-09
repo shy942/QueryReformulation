@@ -1,0 +1,1 @@
+30450.txt: global actions array bounds jdt internal compiler parser scanner build resources perspective open resource type class files select class files exception occurred opening resource log exception array bounds scanner

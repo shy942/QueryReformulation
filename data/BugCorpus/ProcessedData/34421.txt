@@ -1,0 +1,1 @@
+34421.txt: encodings encodings inconsistent pref editor build list encodings workbench editors pref edit encoding menu default latin big endian endian pref machine readable encoding names human readable names edit encoding menu default differ locales combo pref default edit menu add default encodings

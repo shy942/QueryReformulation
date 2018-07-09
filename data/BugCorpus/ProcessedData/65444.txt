@@ -1,0 +1,1 @@
+65444.txt: close button views closeable build browser presentation views close buttons titlebar perspective fixed true meaning initial views moveable closeable

@@ -1,0 +1,1 @@
+205069.txt: trim dragging maximized editor tab restores editor dragging maximized editor tab restores unmaximizes editor area expect reorder tabs editor maximized

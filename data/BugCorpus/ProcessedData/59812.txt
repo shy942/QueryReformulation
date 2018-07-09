@@ -1,0 +1,1 @@
+59812.txt: progress dialog cuts info separate size attached png progress dialog displays file bytes post wraps top displayed suggestion provide separate text field display size progress version

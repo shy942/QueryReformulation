@@ -1,0 +1,1 @@
+213315.txt: viewers face combo box viewer cell editor handle nulls activation correctly set object handle case null selected updated set lead bug cell activated mouse click tabbed interacting combo cell editor returns null fixed setting selected set attaching patch implements features set development test patch

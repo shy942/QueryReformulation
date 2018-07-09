@@ -1,0 +1,1 @@
+385128.txt: workbench preference constants eclipse app workbench advisor initialize workbench configurer method add platform preference store set workbench preference constants false eclipse stops progress bar showing splash screen startup progress bar splash screen startup

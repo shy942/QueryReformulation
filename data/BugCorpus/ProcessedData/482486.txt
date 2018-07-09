@@ -1,0 +1,1 @@
+482486.txt: change widget properties text varargs bug initially created clone bug

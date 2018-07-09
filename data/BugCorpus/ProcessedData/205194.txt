@@ -1,0 +1,1 @@
+205194.txt: error handling status handling status adapter action explanation constants created attachment patch adding elements build steps reproduce current direction status handling additional predefined properties required status adapter suggested action explanation time stamp default status adapter created

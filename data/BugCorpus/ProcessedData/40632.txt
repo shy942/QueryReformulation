@@ -1,0 +1,1 @@
+40632.txt: dialogs open resource open area override default open behavior open resource window items open choose open text editor accept default open behavior resource

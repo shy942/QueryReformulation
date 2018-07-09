@@ -1,0 +1,1 @@
+15822.txt: view mgmt support view making active console views output views unit test focus active workaround remember active view ouput view focus active view quick activation flicker view method activating

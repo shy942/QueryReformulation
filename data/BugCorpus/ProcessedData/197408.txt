@@ -1,0 +1,1 @@
+197408.txt: data binding text editable observable doesn fire change events set object invoked change events change events fired

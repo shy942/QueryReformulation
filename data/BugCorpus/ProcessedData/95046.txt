@@ -1,0 +1,1 @@
+95046.txt: preferences content type preference type charset text field selecting content type org eclipse java lang null pointer exception java lang null pointer exception org eclipse internal dialogs content types preference key released content types preference java org eclipse swt widgets typed listener handle event typed listener java

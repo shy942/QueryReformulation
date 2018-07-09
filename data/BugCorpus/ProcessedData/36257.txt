@@ -1,0 +1,1 @@
+36257.txt: dialogs container selection dialog returns array null element bug container selection dialog returns element array null selected return empty array items selected

@@ -1,0 +1,1 @@
+85698.txt: preferences import button hooked import wizard build window preferences import brings file chooser dialog expect bring import wizard expect window preferences export bring export wizard

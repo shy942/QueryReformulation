@@ -1,0 +1,1 @@
+372992.txt: editor save close needed called closing editor app running compatibility layer eclipse editor parts class editor ride save close needed return false modified save dialog workbench editor dirty user manually closes editor save close needed called dialog

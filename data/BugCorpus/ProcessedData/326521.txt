@@ -1,0 +1,1 @@
+326521.txt: convert delimiter action enablement broken build steps reproduce open text file activate problems view activate editor changing selection actions file convert delimiters disabled actions disabled step changing selection editor enables worked galileo

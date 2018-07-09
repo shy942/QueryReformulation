@@ -1,0 +1,1 @@
+427133.txt: navigator view menu disappears project explorer scenario fresh workspace open project explorer view menu disappears opening view minimize restore view view menu visible create java project project explorer unfold content project select item view menu disappears eclipse reproduce bug

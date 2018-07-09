@@ -1,0 +1,1 @@
+62346.txt: workbench chevron disappears perspective bar dragged completely drag perspective bar elements disappear element partially visible chevron click partially hidden item pop menu appears build

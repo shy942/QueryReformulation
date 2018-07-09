@@ -1,0 +1,1 @@
+177130.txt: presentation editor minimize properly build pres strange minimize behavior opening editors drag side side minimize editor ends smaller reduce icon attached screenshot

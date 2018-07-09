@@ -1,0 +1,1 @@
+431001.txt: dark theme disabled text controls blurry eclipse build eclipse linux gtk theme adwaita vesion screenshot bug

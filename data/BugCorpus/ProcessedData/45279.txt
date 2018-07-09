@@ -1,0 +1,1 @@
+45279.txt: tasks stale marker problems view build problems view java problem marker compile error longer exists clicking marker message appearing log org eclipse oct error accessing marker type org eclipse core resources oct marker view catch error remove stale marker

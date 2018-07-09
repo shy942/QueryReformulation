@@ -1,0 +1,1 @@
+58976.txt: editor mgmt regression editor drop missing asterisk build drop editor list editors dirty obvious dirty asterisk inconsistent tab presentation change asterisk throwing sort order sort based editor input adding asterisk presenting sorted list addressed

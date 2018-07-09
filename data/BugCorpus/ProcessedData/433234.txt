@@ -1,0 +1,1 @@
+433234.txt: presentation engine toolbar manager renderer bug introduced constant hiding elements implementation bug adjusted

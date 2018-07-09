@@ -1,0 +1,1 @@
+392398.txt: bump version org eclipse workbench pom file created attachment version patch bump version pom file org eclipse workbench match manifest

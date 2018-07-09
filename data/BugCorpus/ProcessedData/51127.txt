@@ -1,0 +1,1 @@
+51127.txt: decorators schema missing kind attributes kind attributes decorator schema icon type resource

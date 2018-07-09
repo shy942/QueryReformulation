@@ -1,0 +1,1 @@
+155537.txt: multi restore editor restart shut eclipse editor maximized restart editor maximized double clicking editor tab restore views nneed manually close groups trim works expected

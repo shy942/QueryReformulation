@@ -1,0 +1,1 @@
+178280.txt: face abstract column layout updating column sizes working correct gtk problem resize event column resize control desired behaviour

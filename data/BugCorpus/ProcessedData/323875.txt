@@ -1,0 +1,1 @@
+323875.txt: viewers face setting font styled string work build identifier label provider styled string custom org eclipse jface viewers styler string styler set style styled string apply styles method font system font display default system font font data system font font data set style text style font font display default tree viewer don bold font applied label reproducible

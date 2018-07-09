@@ -1,0 +1,1 @@
+62045.txt: progress progress indicator active job build clicked sync button sync view started sync pressed background progress view sync jobs active terminated cleared list synchronizing null job continued progress progress indicator bottom showing

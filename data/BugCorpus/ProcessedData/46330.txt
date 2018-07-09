@@ -1,0 +1,1 @@
+46330.txt: jobs widget disposed error executing refactoring tests log org eclipse core runtime nov internal error occurred status update org eclipse swt exception device disposed org eclipse swt error java org eclipse swt error java org eclipse swt widgets display error display java org eclipse swt widgets display async exec display java org eclipse progress job job java

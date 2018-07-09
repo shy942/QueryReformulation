@@ -1,0 +1,1 @@
+177119.txt: deleting project deleting content asks read deletion confirmation create simple project directory external workspace mark files read project delete project deleting contents observe confirmation dialog read file project

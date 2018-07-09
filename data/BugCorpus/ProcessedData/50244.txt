@@ -1,0 +1,1 @@
+50244.txt: cool bar regression contributions disposed editor toolbar toolbar disappearing editorpart active happened flashing extra layouts hte toolbar outline retargets editor actions actions visible custom contribution item control disposed disposed removes listener recreated doesn receive notification item disposed fill toolbar called

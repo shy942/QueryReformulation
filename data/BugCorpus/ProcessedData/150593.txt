@@ -1,0 +1,1 @@
+150593.txt: enhancements resource manager attached patch addresses resource manager fixes java doc bugs adds image method implements common pattern return existing image allocate image

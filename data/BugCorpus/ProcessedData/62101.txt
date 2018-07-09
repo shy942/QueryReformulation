@@ -1,0 +1,1 @@
+62101.txt: commands command updating takes text editor startup time trace time open text editor spent updating command support main areas abstract text editor create actions invocations add handler submission abstract text editor create navigation actions invocations add handler submission opening build properties file org eclipse workbench resource perspective perspectives open

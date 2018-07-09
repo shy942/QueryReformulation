@@ -1,0 +1,1 @@
+137073.txt: preferences encoding field editor fires change events class abstract encoding field editor fires property change events validaty changed attach patch corrects problem

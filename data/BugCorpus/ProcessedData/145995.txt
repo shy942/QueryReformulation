@@ -1,0 +1,1 @@
+145995.txt: keybindings detached views activate editor frame linux mulitple frames activate editor works frame editor active

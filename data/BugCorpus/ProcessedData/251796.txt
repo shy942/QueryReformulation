@@ -1,0 +1,1 @@
+251796.txt: contributions metadata org eclipse menu menu element labeled mnemonic label created attachment screenshot bug build steps reproduce create plug project choose plug contributions choose custom plug wizard check command contribution template plugin xml editor org eclipse menus elements tree labeled mnemonic label intuitive pain strings externalized

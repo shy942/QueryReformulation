@@ -1,0 +1,1 @@
+428643.txt: modify menu manager event helper access static fields menu manager event helper fields accessed good modify patterns menu manager event helper instance set menu manager event helper set provide custom implementation bound session

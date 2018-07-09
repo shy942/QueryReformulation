@@ -1,0 +1,1 @@
+32346.txt: key bindings preference users create key configurations nice completely seperate key binding configurations restricted emacs default people create key bindings distribute accross team

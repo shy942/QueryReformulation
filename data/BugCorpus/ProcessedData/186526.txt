@@ -1,0 +1,1 @@
+186526.txt: key bindings preference removed binding command initial keybinding conflict java element view http eclipse org jdt update site open preference sort binding conflict views history views java element view alt shift change binding java element view alt shift bug front history alt shift stays conflict close reopen pref views history lost binding work expected alt shift

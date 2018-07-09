@@ -1,0 +1,1 @@
+90096.txt: progress repositories view flashes browsing browse repository repositories view eclipse entire tree flashes expand nodes tree flashing caused calls tree viewer control set redraw org eclipse progress deferred tree content manager calls version file remove extra refresh remove calls repositories view usable calls harmful removed problem working solved

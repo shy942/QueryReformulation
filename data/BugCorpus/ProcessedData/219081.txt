@@ -1,0 +1,1 @@
+219081.txt: filtered items selection dialog avoid unecessary calls elements created attachment patch attached patch filtered items selection dialog avoids content provider elements null called unnecessarily number elements size don content provider elements evaluate selected elements remembered selection

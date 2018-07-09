@@ -1,0 +1,1 @@
+213448.txt: common navigator linking open editors content project explorer working restart project explorer clicking link navigator icon links editor closing eclipse reopening link automatically activate editor open specific file clicking icon reactives link

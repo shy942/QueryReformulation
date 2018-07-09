@@ -1,0 +1,1 @@
+45322.txt: key bindings bindings pref build open pref select command file close bindings ctrl bindings work defined ctrl file close working bound ctrl shift file close working scope problem ctrl define text scope global scope order work bug close doesn problem

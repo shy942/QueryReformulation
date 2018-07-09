@@ -1,0 +1,1 @@
+465504.txt: platform icon renderer disabled filters thread safe bug discovered jhlabs filters disabled icons internally thread safe filters static global variables tables purposes artifacting rasterizing disabled icon set linked bug solution instantiate filters worker thread

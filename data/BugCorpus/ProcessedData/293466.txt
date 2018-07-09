@@ -1,0 +1,1 @@
+293466.txt: dialogs shortcuts tab doesn honour dialog font settings window preferences general appearance colors fonts basic dialog font click edit button increase font size bit click close dialog window customize perspective tabs honour font size change shortcuts tab

@@ -1,0 +1,1 @@
+210424.txt: trim regression minimize view fails expand adjacent views place created attachment screenshot build steps reproduce launch eclipse minimize view notice view collapses title bar empty space filled adjacent views editor area expected attached screenshot

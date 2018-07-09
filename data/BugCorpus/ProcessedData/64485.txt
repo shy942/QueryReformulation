@@ -1,0 +1,1 @@
+64485.txt: view mgmt remove fast view called frequently build problem noticed workbench remove fast view called frequently opening regular view expensive updates fastview bar fires event workaround add fast view return early method

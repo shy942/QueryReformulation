@@ -1,0 +1,1 @@
+157314.txt: common navigator overriding action provider elements bug requests action provider override org eclipse navigator resources actions refactor actions globally elements contributed extension support common navigator framework targeted

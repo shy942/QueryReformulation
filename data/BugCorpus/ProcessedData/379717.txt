@@ -1,0 +1,1 @@
+379717.txt: views lost window earlier builds repro steps start workspace close minimizing restoring package explorer works window window close window minimizing package explorer fails minimized trim bring full restart

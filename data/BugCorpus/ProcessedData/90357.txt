@@ -1,0 +1,1 @@
+90357.txt: workbench parts avoid redundant activation switching perspectives workbench maintains active switching perspectives workbench deactivates reactives active perspective switch ends remianing unchanged large portion runtime switching perspectives recomputing commands action sets contribution items occurs result activation change

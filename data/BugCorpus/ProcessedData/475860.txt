@@ -1,0 +1,1 @@
+475860.txt: mark functional interfaces face functional interface

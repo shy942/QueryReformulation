@@ -1,0 +1,1 @@
+337378.txt: data binding composite map returns incorrect diff build identifier bug composite map incorrect returned diff error implementation map listener handle map change case removed false values changed key incorrect map key map values values map returned diff incorrect type reproducible steps reproduce snippet problem hoping won

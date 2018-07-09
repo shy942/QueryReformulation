@@ -1,0 +1,1 @@
+382839.txt: compatibility longer work content assist pop longer work content assist pop works fine steps start workspace assign key binding paste class package explorer invoke content assist don focus pop key binding step moves selection pop expected moves editor code installs handlers org eclipse jface text contentassist content assistant install

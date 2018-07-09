@@ -1,0 +1,1 @@
+232541.txt: view mgmt reset perspective ignores saveable parts reproduce ensure dirty saveable view open perspective reset perspective result prompt save chance cancel

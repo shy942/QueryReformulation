@@ -1,0 +1,1 @@
+94490.txt: performance tests showing fingerprints assigning

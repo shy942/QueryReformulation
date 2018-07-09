@@ -1,0 +1,1 @@
+301370.txt: data binding map simple observable map test returns wrong replaced map simple observable map test detail queried detail property map key master lead wrong return values worse class cast exceptions property wrong source passed property

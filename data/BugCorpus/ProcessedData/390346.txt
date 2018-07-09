@@ -1,0 +1,1 @@
+390346.txt: listener methods called closing created attachment project illustrating problem listener method contribution class send matching event event broker message printed repeatedly close reopen view message printed multiple times grows number close open cycles

@@ -1,0 +1,1 @@
+31028.txt: workbench workbench starting starting flag initialized false instance workbench created set true init called leaves time starting returns false started fact started starting set true instance creation leave short indeterminite lifecyle encountered bug write internal automated tests stuff thread wanted wait workbench started tests

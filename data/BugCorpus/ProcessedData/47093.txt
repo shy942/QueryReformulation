@@ -1,0 +1,1 @@
+47093.txt: key bindings refresh doesn work navigator view selection java project refresh java project navigator view pressing works package explorer pretty annoying

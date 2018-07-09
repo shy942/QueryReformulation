@@ -1,0 +1,1 @@
+59257.txt: progress autobuild job progress view initially build started build existing workspace started status bar told building workspace cool icon clicked brought progress view progress view empty drop menu verbose build operation turned verbose mode build operation stayed progress view

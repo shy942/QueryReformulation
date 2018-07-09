@@ -1,0 +1,1 @@
+249876.txt: common navigator tests tolerate pristine workspace play

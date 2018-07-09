@@ -1,0 +1,1 @@
+66065.txt: test verify editor references working write test verifiy bug verify defeating editor reference support avoid initializing unseen editors

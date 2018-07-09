@@ -1,0 +1,1 @@
+413516.txt: editor closed content lost dropping detached editor tab window backport bug initially created clone bug editor dirty change content drag workbench window create detached editor shell create workbench window drag detached editor tab workbench window expected drop cursor drop dropping drop works dirty editor ends window editor closed questions content lost

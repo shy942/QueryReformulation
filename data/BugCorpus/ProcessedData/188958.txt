@@ -1,0 +1,1 @@
+188958.txt: min max dragging view presentation doesn unzoom maximize editor area drag icon minimized stacks view stack presentation maximized failing workbench zoomout wasn handling min max behavior

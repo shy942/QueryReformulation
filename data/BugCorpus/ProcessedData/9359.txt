@@ -1,0 +1,1 @@
+9359.txt: label decorators lazily loaded label decorator manager agressive creating decorator instances extensions checking decorator enabled window menu lazy create decorators demand late create decorators checking decorator master switch

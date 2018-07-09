@@ -1,0 +1,1 @@
+186475.txt: activity mgmt wizard entry displayed dialog activities extension hide wizard entry build steps reproduce wizard entry displayed dialog activities extension hide wizard entry result debugging method returns local plug method plugin org eclipse workbench folder eclipse org eclipse internal dialogs file workbench wizard node java method plugin

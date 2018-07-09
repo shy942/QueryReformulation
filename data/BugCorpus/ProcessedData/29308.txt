@@ -1,0 +1,1 @@
+29308.txt: resources properties dialog project editable project property sheet editable false windows navigator select project click bring context menu select properties click read checkbox project read bringing property sheet view project property editable false add file project remove file project eclipse user perform steps shouldn prevent occurring

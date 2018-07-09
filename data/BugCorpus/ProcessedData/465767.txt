@@ -1,0 +1,1 @@
+465767.txt: graphics remove unnecessary icons org eclipse images

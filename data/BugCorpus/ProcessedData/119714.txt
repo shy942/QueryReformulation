@@ -1,0 +1,1 @@
+119714.txt: workbench launcher splash screen bidi enabled loading dialog bidi enabled text reading order dailog mirrored progres bar moving left fixed arabic times screen capture dialog

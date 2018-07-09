@@ -1,0 +1,1 @@
+54593.txt: key bindings restore defaults keyboard shortcuts dialog restore keyboard shortcut defaults spefic dialog dialog font reached restore defaults button workbench

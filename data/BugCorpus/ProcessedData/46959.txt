@@ -1,0 +1,1 @@
+46959.txt: jobs progress montior jobs dialog disable running jobs button cancel button disabled running jobs button disable cancel button disabled

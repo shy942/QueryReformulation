@@ -1,0 +1,1 @@
+433197.txt: switching theme handles disappear trim bars switching theme preference dialog handles disappear trim bars user bars restart workbench handles

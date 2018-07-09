@@ -1,0 +1,1 @@
+173292.txt: contributions menus command label attribute mandatory org eclipse menus command element requires label attribute letting fall command attribute defined mandatory

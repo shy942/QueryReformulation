@@ -1,0 +1,1 @@
+260904.txt: capture functionality customize perspective dialog users hide menu items toolbar items discreetly provide access functionality products apps define set initial values override list obvious place provide declarative extension existing perspective extensions providing current shortcut extensions seed workspaces seeded mechanism manage persistence programmatic equivalent

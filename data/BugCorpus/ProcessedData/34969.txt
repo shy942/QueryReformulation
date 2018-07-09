@@ -1,0 +1,1 @@
+34969.txt: contributions menu manager enabled empty org eclipse jface action menu manager menu context sensitive menu items menu current selection cases items series menu item disabled contained items draws menu item enabled pops menu selected behaviour confusing note repeat bug deals menus disabled items refers menus items

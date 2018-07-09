@@ -1,0 +1,1 @@
+342807.txt: viewers jface table layout option reserve space vertical scroll bar table layout set column weight data table vertical scroll bar horizontal scroll bar computation doesn vertical scroll bar width account add table layout reserve space vertical scroll bar

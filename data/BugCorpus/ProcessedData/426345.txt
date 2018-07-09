@@ -1,0 +1,1 @@
+426345.txt: view mgmt view shortcuts working view ctrl view shortcuts working view eclipse based application shortcuts working ctrl maximize view ctrl view menu alt system menu view change view current editor ctrl view ctrl shift previous view

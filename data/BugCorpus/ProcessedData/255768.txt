@@ -1,0 +1,1 @@
+255768.txt: common navigator tag noextend unsupported final class wizard action group description resource path type location tag noextend unsupported final class wizard action group java org eclipse navigator src org eclipse navigator unsupported tag problem

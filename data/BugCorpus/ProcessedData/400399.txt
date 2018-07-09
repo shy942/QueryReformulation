@@ -1,0 +1,1 @@
+400399.txt: import export project import wizard remember selected folder archive import projects deeply nested source code location workspace existing projects workspace wizard stores selected location session restart eclipse browse folder attached patch saves project archive location workspace preferences

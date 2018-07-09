@@ -1,0 +1,1 @@
+341220.txt: update migration guide notify adopters properties view post selection events update migration guide adopters notified post selection provider post selection events properties view refresh selection changed

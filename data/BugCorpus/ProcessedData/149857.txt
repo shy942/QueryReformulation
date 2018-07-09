@@ -1,0 +1,1 @@
+149857.txt: progress calling canceled job progress view entry stick comment bug https bugs eclipse org bugs bug cgi call canceled progress monitor job job entry readded progress view occurs remove job view

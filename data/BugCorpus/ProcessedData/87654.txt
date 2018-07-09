@@ -1,0 +1,1 @@
+87654.txt: move content outline messages nick outline view properties views separate contained move package org eclipse internal views contentoutline

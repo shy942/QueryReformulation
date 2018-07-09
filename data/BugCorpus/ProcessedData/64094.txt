@@ -1,0 +1,1 @@
+64094.txt: perspective bar perspective toolbar remember size docking perspective toolbar upper corner default text perspective button visible resize toolbar restart eclipse forgotten size perspective button visible

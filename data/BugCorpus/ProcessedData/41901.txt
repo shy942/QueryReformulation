@@ -1,0 +1,1 @@
+41901.txt: startup build startup pasted logged times error aug internal error occurred open progress view java lang null pointer exception org eclipse swt widgets display async exec display java org eclipse progress job job java org eclipse core internal jobs worker worker java

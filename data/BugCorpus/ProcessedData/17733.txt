@@ -1,0 +1,1 @@
+17733.txt: view mgmt leak view panes closing view panes stack close scenario close navigator view pane instance navigator reused case package expolorer figure removed free memory dispose nullify fields

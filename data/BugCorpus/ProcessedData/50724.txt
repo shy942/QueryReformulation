@@ -1,0 +1,1 @@
+50724.txt: decorators useless descriptor field declarative decorator descriptor field declarative decorator assigned

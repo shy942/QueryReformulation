@@ -1,0 +1,1 @@
+35325.txt: global actions build button appears disappears startup build start workspace turn auto build import external plugins fragments select finish turn auto build exit eclipse restart notice toolbar build toolitem removed

@@ -1,0 +1,1 @@
+166052.txt: viewers regression decorator decorating label provider completely replaces label provider including bug works fine decorator decorating label provider completely replaces base label provider implements color decorator font decorator attached returning null decorator methods viewer color font base label provider null overrides original

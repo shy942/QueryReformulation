@@ -1,0 +1,1 @@
+220535.txt: themes colored labels preferences colors defined face configurable workbench attached snippet jdt workbench define global preference defines labels views colored suggestion appearance enable colored labels views default options defined search removed decide configurable enabled configurable

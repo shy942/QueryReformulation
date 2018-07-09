@@ -1,0 +1,1 @@
+478547.txt: invalid entry build properties file org eclipse jface databinding plugin output databinding jar bin property org eclipse jface databinding plugin warning quickfix suggests remove entry text warning library databinding jar bundle classpath

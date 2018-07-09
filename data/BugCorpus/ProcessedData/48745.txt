@@ -1,0 +1,1 @@
+48745.txt: colors preference properly handle ancestor color color properly reflect ancestor colors descendant override preference descendant interpret colour custom wrong ancestor ancestor preference ancestor registry registry descendant colors

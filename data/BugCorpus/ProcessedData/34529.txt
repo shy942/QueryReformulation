@@ -1,0 +1,1 @@
+34529.txt: key bindings preference tables fields updated properly tables fields preferences reflect current selected items window preferences select activate editor select global standard select add task point assigned key sequence fields tables blanked fields display values activate editor

@@ -1,0 +1,1 @@
+177779.txt: progress progress dialog resizes double click eclipse progress dialog displayed long background task reproduce double click empty area left background button dialog resize hide progress area click details button resize

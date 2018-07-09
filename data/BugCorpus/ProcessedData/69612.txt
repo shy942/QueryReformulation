@@ -1,0 +1,1 @@
+69612.txt: font colour duplicated mnemonics preferences workbench colors fonts mustfix severity build blocking language problem description actual description problem menu bar main workbench panel click window preferences workbench colors fonts expand basic pane select console text font duplicated mnemonics color fonts change preferences window

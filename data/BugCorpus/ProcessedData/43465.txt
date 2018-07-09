@@ -1,0 +1,1 @@
+43465.txt: key bindings key modes survive focus build emacs mode open editors type text switch hit esc switch hit backspace mode survives switch editors deletes word open windows mode survives window switch editor loses focus key mode reset compare real emacs regression

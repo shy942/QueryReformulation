@@ -1,0 +1,1 @@
+341923.txt: improve checked tree selection dialog add possibility choose style tree viewer dialog checked tree selection dialog style tree viewer tree viewer style case change style wanted override method create tree viewer field accessible private propose add constructor parameter int style style instantiate tree viewer

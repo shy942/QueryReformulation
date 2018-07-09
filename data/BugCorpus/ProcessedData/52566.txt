@@ -1,0 +1,1 @@
+52566.txt: properties dialog filtering mechanism property eclipse extension point org eclipse property filter takes extension kind filtering mechanisms enablement mutiple conditions case action contributions

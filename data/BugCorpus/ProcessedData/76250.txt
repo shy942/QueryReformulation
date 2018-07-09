@@ -1,0 +1,1 @@
+76250.txt: progress dialogs dialog small showing details linux progress dialog opens details collapsed nice size details expanded change sizes problem assign

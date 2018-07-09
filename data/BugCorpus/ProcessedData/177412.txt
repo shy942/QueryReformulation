@@ -1,0 +1,1 @@
+177412.txt: decorators contributions legacy resource support cache reflective method lookups decorator performance garbage creation reflective method lookups legacy resource support garbage created expanding packages project items bug details

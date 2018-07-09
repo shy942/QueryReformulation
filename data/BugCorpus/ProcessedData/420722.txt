@@ -1,0 +1,1 @@
+420722.txt: key bindings key assist popup doesn work commands key assist popup broken commands work commands windows context don care shell focus view commands correct implementation close popup execute command fixing bug solve bug

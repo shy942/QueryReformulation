@@ -1,0 +1,1 @@
+55722.txt: editor mgmt ctrl shortcut doesn activate editor properly open java file editor open java file ctrl switch file opened step ctrl bring quick outline contents quick outline file opened step visible

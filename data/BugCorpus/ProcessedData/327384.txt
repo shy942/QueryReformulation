@@ -1,0 +1,1 @@
+327384.txt: mac cocoa enhancer cocoa handler needlessly disable services menu bug initially created clone bug cocoa enhancer cocoa handler lightly modified cocoa enhancer disable mac services menu bit annoying invoke service keyboard shortcut running disabling code removed haven noticed issues permanent remember rationale disabling services menu

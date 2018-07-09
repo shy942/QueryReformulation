@@ -1,0 +1,1 @@
+18351.txt: dialogs buttons switch editor dialog small set min size dialog create button

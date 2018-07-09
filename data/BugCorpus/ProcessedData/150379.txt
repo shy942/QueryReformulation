@@ -1,0 +1,1 @@
+150379.txt: warning multi editor change int editor additional controls provide selections multpage editor parts replace multi selection provider implementation works fine logs warning message changing multi editor change int simple remove warning works fine

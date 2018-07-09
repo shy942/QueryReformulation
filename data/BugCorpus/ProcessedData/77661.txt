@@ -1,0 +1,1 @@
+77661.txt: key bindings interactions esc shift key binding doesn work create binding esc shift hit esc hold shift point system beep honoured hold shift hit esc hit command executes expected hit esc wait hint dialog hold shift hit command executes expected

@@ -1,0 +1,1 @@
+71942.txt: editor mgmt closing editor zoomed unzoom open editors double click zoom close editor editorstack unzoom intended behaviour unexpected user clicked editor tabs time zoomed time editors closed stack didn unzoom happen close zoomed don remember unzoom working fully maximized workbench fastviews annoying ideally editorstack unzoom explicitly told

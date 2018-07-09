@@ -1,0 +1,1 @@
+206877.txt: commands context menus update displayed revert original key released build steps reproduce context menu displayed element initially disabled open context menu mouse release click job scheduled check element disabled job completes element set enabled context menu updated release key context menu reverts initial element disabled

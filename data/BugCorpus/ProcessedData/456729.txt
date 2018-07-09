@@ -1,0 +1,1 @@
+456729.txt: move customize perspective dialog tree manager cpd package customize perspective dialog huge maintainable moved tree manager java separated package classes moved parent class https git eclipse org

@@ -1,0 +1,1 @@
+41930.txt: key bindings don work java editor start fresh workspace create java project create class test commands text editor java editor scope don work examples comment ctrl incremental find ctrl note ctrl works text editor

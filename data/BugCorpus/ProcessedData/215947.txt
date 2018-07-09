@@ -1,0 +1,1 @@
+215947.txt: global actions breadcrumb delete project select java project breadcrumb press delete delete context menu delete workbench menu invoke delete project action

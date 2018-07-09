@@ -1,0 +1,1 @@
+198694.txt: editor mgmt registry improve instantiation exception message thrown registry strategy create executable extension log entry org eclipse unable create editor org eclipse default text editor editor class instantiated editor class mistyped plugin xml common mistake public default constructor message

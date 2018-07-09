@@ -1,0 +1,1 @@
+218673.txt: data binding util timer exec async exec event lot cross realm bindings current implementation display realm generates lot flicker excess async execs util greedy exec note change remove display filter work queue methods called event filter running arbitrary async execs filter safe

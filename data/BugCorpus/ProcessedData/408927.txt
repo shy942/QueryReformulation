@@ -1,0 +1,1 @@
+408927.txt: debug view global toolbar vanishes restart global debug toolbar debug view start eclipse time global debug toolbar vanishes restart eclipse reenable drop menu start string drop menu incorrect debug toobar version build bug release appeared installed plugin devs told toolbar platform

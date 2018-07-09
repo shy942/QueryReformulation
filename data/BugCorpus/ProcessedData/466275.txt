@@ -1,0 +1,1 @@
+466275.txt: dark theme memory color heap monitor incorrect created attachment background color heap monitor dark theme build locale english steps reproduce click window preferences click general appearance change theme dark click apply button click general check heap status option click apply button problem description background color black white

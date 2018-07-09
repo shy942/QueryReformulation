@@ -1,0 +1,1 @@
+190519.txt: min max reordering maximized editors unmaximized default presentation style maximizing editor attempting reorder tabs restored views minimized reproduce maximize editor double clicking tab attempt change order tab observe views restored behaviour exhibited editor maximized minimizing views reordering expected eclipse version build reproduce eclipse version build

@@ -1,0 +1,1 @@
+69988.txt: wizards wizards contexts modal dialogue boxes project wizard prevent access eclipse documentation steps reproduce contents select requires scrolling order view entire contents select file project attempt scroll contents window reproducable win tested operating systems workaround view documentation normal browser window

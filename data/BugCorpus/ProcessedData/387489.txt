@@ -1,0 +1,1 @@
+387489.txt: ole editor hides content losing focus build steps reproduce create project file open file place editor editor focus file correct click view editor loses focus editor loses content blank composite wrong images showing problem follow modified colors set background calls parts hidden problem word power point case word don middle text equivalent canvas visible paint

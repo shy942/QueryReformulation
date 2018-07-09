@@ -1,0 +1,1 @@
+387894.txt: remove package import ibm icu text face databinding bundle bundle org eclipse jface databinding manifest doesn import package ibm icu text http git eclipse org platform eclipse platform git plain bundles org eclipse jface databinding nice import removed create smaller target dependencies

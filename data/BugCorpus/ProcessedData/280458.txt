@@ -1,0 +1,1 @@
+280458.txt: data binding showing galileo javadocs missed property contents online http eclipse org galileo jsp topic org eclipse platform doc isv reference api html org eclipse core databinding property bundle completely left org eclipse jface databinding bundle packages jface databinding dialog jface databinding preference jface databinding util missing

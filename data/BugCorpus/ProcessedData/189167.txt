@@ -1,0 +1,1 @@
+189167.txt: key bindings binding equals wrong org eclipse jface bindings binding equals return type binding type expression false true values change return type binding type

@@ -1,0 +1,1 @@
+239523.txt: tabbed properties java doc warnings noticed java doc warnings org eclipse views properties tabbed warnings errors

@@ -1,0 +1,1 @@
+42526.txt: patch rename resource action copy resource action process adding general operations copy paste delete live sync view rename resource action move resource action workbench process tsting bugs code atatch patch

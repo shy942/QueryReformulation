@@ -1,0 +1,1 @@
+169529.txt: databinding bug writable list add build source file org eclipse core databinding observable list writable list java int add size replaced int add wrapped list size

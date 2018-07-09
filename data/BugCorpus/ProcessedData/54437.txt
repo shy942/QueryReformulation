@@ -1,0 +1,1 @@
+54437.txt: font colour view title background doesn striped pattern view title background color doesn match striped background pattern toolbar

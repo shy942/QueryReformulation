@@ -1,0 +1,1 @@
+54835.txt: fast view pane code comment fastview redraw code wri tten improve support problem resizing fastviews usefull platforms mention bug real problem solve future coders simply remove feature assuming fixes problem based experience platform counts times scheduled redraw avoid resizing widgetry resize requests faster process private int redraw counter

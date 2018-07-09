@@ -1,0 +1,1 @@
+365773.txt: window navigation maximize work intro view version build window navigation maximize active view editor minimize work intro view items enabled menu intro stack min max works fine

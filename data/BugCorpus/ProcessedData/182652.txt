@@ -1,0 +1,1 @@
+182652.txt: viewers performance penalty cell focus manager usage keeping row key pressed control redraw replace redraw needed parts control control redraw cell focus manager moved drawin delegate

@@ -1,0 +1,1 @@
+54020.txt: editor mgmt multiple editor tabs active area split build open editors split editor area dragging tabs edge editor area note tabs active wrong focus top editor boths tabs active wrong focus bottom editor bottom tab appears active correct regression

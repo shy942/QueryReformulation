@@ -1,0 +1,1 @@
+51596.txt: jobs progress dialog dual monitor setup opens wrong monitor build dual monitor setup eclipse monitor normal progress dialog opens correctly centered monitor progress monitor operation blocked background process list background tasks operating opens monitor

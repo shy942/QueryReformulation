@@ -1,0 +1,1 @@
+411465.txt: editor save close needed called closing editor advised bug open bug report behaviour bug time caused regression introduced bug based app running build compatibility layer editor parts class editor ride save close needed return false resource modified save dialog workbench editor dirty user manually closes editor save close needed called dialog works ctrl clicking

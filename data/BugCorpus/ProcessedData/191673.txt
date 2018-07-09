@@ -1,0 +1,1 @@
+191673.txt: quick access tooltips partially overlap hovered item tooltip behavior quick access dialog feel native hovering item tooltip partially overlaps item hard read windows tree items native tooltip drawn top item cut border table tree bug bug

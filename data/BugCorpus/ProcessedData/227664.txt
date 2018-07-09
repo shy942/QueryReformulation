@@ -1,0 +1,1 @@
+227664.txt: status handling support tray resize issues time support tray appears doesn resize content tray pixels user manually expand tray subsequent tray resizes horizontally vertically case bottom support area cutoff user manually resize dialog

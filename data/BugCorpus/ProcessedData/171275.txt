@@ -1,0 +1,1 @@
+171275.txt: dialogs filtered items selection dialog work pattern filtered items selection dialog key work pattern field regression open type dialog extra check pattern caret position pattern char count filtered items selection dialog create dialog area key adapter key pressed key event sense removed

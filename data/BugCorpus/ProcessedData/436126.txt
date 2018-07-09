@@ -1,0 +1,1 @@
+436126.txt: backport bug opened file history erased restarting workspace opened file list file menu persisted workspace restarted steps reproduce create project file opened editor open file editor eclipse application restart open file menu observe file longer opened files list

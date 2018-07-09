@@ -1,0 +1,1 @@
+241208.txt: markers problems view restore defaults working preferences bug initially created clone bug problems view view menu preferences move column hide click restore defaults button

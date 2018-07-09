@@ -1,0 +1,1 @@
+120818.txt: workbench manifest cleanup plug ins extensions extension points plugin xml empty files unnecessary removed plug ins include org eclipse core commands org eclipse jface org eclipse jface text

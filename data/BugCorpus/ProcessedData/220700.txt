@@ -1,0 +1,1 @@
+220700.txt: data binding simplify binding update suggested gergely bug binding update method approachable inverting conditional expressions patch follow

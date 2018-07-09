@@ -1,0 +1,1 @@
+118934.txt: dialogs introduce dialog trays requirement dynamically allocate portion dialog tray tray examples include toolbar palette context cheat sheets amount work required inherit functionality minimal transparent dialog hide tray dialog time dialog

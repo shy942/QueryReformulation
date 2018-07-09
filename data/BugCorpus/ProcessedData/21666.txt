@@ -1,0 +1,1 @@
+21666.txt: global actions copy resource action delete create set contents build org eclipse actions copy resource action calls workspace delete incoming resources collide current resources replaced validate edit set contents call watch filesystem continue tracking versions file

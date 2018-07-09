@@ -1,0 +1,1 @@
+33139.txt: key bindings preference layout resize correctly window preferences workbench preference dialog jumps huge width resize smaller width wise notice tables text fields resize clipped handled gracefully allowing items size smaller clipping

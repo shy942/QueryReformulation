@@ -1,0 +1,1 @@
+52729.txt: font colour typo face colors error text defualt spelled default

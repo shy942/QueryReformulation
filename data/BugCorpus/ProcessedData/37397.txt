@@ -1,0 +1,1 @@
+37397.txt: editor mgmt open files opened eclipse started close eclipse files open start eclipse opened files opened change previous behavior

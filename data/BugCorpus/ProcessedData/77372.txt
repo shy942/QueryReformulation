@@ -1,0 +1,1 @@
+77372.txt: progress clicking progress button generates error org eclipse workkbench doesn include progress view definition plugin xml file job completed button appears progress viewer region status open progress view view isn smarter application provide view open button pressed disable buttons action plug

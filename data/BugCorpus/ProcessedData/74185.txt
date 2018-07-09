@@ -1,0 +1,1 @@
+74185.txt: job test potential concurrency failure job test testing flags prematurely assertions wait test job complete test job set true test job loop break join completed delay job join checking flag job preventing background thread finished set removing test altogether fixes main test join booleans volatile prevent copies created dual processors

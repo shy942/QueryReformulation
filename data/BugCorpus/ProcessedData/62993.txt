@@ -1,0 +1,1 @@
+62993.txt: basic stack presentation externalized string literal protected string pane return pane

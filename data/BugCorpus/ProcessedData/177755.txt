@@ -1,0 +1,1 @@
+177755.txt: data binding javadoc org eclipse core databinding observable observable event subclasses provide general description class purpose diff field initially thought accidentally internal class names generic plugins declared class names javadoc tooltip easy figure code maintain classes

@@ -1,0 +1,1 @@
+100270.txt: update copyrights examples html examples copyrights updated adding meta tag removing copyright gif org eclipse platform doc isv build doc xml lists platform examples include org eclipse examples javaeditor doc html include org eclipse examples multipageeditor doc html include org eclipse examples propertysheet doc html include org eclipse examples readmetool doc html

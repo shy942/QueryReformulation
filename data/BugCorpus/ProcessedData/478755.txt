@@ -1,0 +1,1 @@
+478755.txt: remove org eclipse internal util util adapter bug initially created clone bug bug fixed remove org eclipse internal util util adapter object source object class adapter type

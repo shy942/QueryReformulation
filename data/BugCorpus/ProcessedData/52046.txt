@@ -1,0 +1,1 @@
+52046.txt: book view adapter working adapter method book view delegate super method current doesn adapt returns null adapter current progress service hooks implemented adapter implementation workbench don work book views

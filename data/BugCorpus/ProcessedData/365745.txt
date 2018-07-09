@@ -1,0 +1,1 @@
+365745.txt: screen empty maximized workspace start start workspace screen close save workspace restart workspace note tab visible maximized empty

@@ -1,0 +1,1 @@
+485139.txt: properties view toolbar icons missing created attachment screenshot result bug https git eclipse org properties view toolbar icons trivial patch

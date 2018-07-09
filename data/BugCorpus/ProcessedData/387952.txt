@@ -1,0 +1,1 @@
+387952.txt: org eclipse core databinding property bundle wrong bundle org eclipse core databinding face data binding face data binding properties noticed karaf console active face data binding active face data binding observables active face data binding

@@ -1,0 +1,1 @@
+230955.txt: viewers keyboard navigation scrolling column view bug navigation viewer keyboard tabbing editor editor arrow possibility scroll selected cell horizontall view visible

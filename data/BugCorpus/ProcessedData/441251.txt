@@ -1,0 +1,1 @@
+441251.txt: rendering engine request render child windows top level windows top main window create window existing perspective treated top level window child windows rendered detached windows contrary window top level window application top main application window minimized icon representation windows task bar issues adressed presentation engine bug directed closing gap adressing

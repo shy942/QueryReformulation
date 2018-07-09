@@ -1,0 +1,1 @@
+21013.txt: properties view combo box property descriptor provide defualt label provider combo box property descriptor requires array string values contructor display combo box cell editor typically clients supply label provider array values order correct cell editor active descriptor create default label provider based values passed constructor

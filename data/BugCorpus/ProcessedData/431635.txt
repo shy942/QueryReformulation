@@ -1,0 +1,1 @@
+431635.txt: dark theme remove gradient headers form editors

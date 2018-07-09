@@ -1,0 +1,1 @@
+470866.txt: calling set enabled false scale field editor doesn disable scale control set enabled disable label control

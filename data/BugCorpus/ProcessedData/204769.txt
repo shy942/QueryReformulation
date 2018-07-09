@@ -1,0 +1,1 @@
+204769.txt: multi editor change sets focus unconditionally check editor active workbench calling set focus case create control calls set active change view active case workbench view active open single click enabled activating editor desirable java editor correctly workbench calls workbench set focus active understand
