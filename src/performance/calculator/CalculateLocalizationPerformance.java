@@ -41,7 +41,10 @@ public class CalculateLocalizationPerformance {
 		obj.TrueSetResults=obj.RetrieveTrueSetsType2("./data/gitInfoNew.txt");
 		//MiscUtility.showResult(10, TrueSetResults);
 		
-		obj.ActualResultSets=RetrieveFinalSets("./data/Results/June21-100-1000_NoAlpha.txt"); 	
+		//MiscUtility.convertNumbertoSourceFile("./data/Results/finalResultTest1.txt","./data/changeset-pointer/ID-SourceFile.txt","./data/Results/FinalResultSidTest1.txt");
+		
+		
+		obj.ActualResultSets=RetrieveFinalSets("./data/Results/FinalResultSidTest1.txt"); 	
 	
 		
 		int top_n=5;
@@ -190,7 +193,7 @@ public class CalculateLocalizationPerformance {
 	    System.out.println("Total found: "+total_found);
 	    System.out.println("Top "+top_n+" %: "+(Double.valueOf(total_found)/Double.valueOf(no_of_bug_matched))*100);
 	    System.out.println("MAP: "+MAP+"----------"+"MRR: "+MRR_i/no_of_bug_matched);
-	    ContentWriter.writeContent("./data/Results/100-1000-rankedResult.txt", finalRankedResult);
+	    ContentWriter.writeContent("./data/Results/test1-rankedResult.txt", finalRankedResult);
 	}
 
 	private static HashMap<String, ArrayList<String>> RetrieveTrueSets(

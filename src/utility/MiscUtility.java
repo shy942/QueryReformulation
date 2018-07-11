@@ -148,4 +148,61 @@ public class MiscUtility {
 		return temp.trim();
 }
 	
+	
+	public void convertSourcetoNumberFile(String inputfileAddress, String IDaddress, String fileName)
+    {
+    	ArrayList<String> lines=ContentLoader.getAllLinesList(IDaddress);
+    	HashMap<String, Integer> IDmap=new HashMap<>();
+    	for(String line:lines)
+    	{
+    		String[] spilter=line.split(":");
+    		String sourceID=spilter[0];
+    		String sourceFile=spilter[1];
+    		IDmap.put(sourceFile.trim(), Integer.valueOf(sourceID));
+    	}
+    	
+        lines=ContentLoader.getAllLinesList(inputfileAddress);
+        ArrayList<String> saveContent=new ArrayList<>();
+        for(String line:lines)
+        {
+        	String[] spilter=line.split(",");
+        	String fileaddress=spilter[1];
+        	
+        	if(IDmap.containsKey(fileaddress))
+        	{
+        		int Sid=IDmap.get(fileaddress);
+        		saveContent.add(spilter[0]+","+Sid+","+spilter[2]+","+spilter[3]);
+        	}
+        }
+        ContentWriter.writeContent(fileName, saveContent);
+    }
+	
+	public static void convertNumbertoSourceFile(String inputfileAddress, String IDaddress, String fileName)
+	{
+		ArrayList<String> lines=ContentLoader.getAllLinesList(IDaddress);
+    	HashMap<Integer, String> IDmap=new HashMap<>();
+    	for(String line:lines)
+    	{
+    		String[] spilter=line.split(":"); 
+    		String sourceID=spilter[0];
+    		String sourceFile=spilter[1];
+    		IDmap.put( Integer.valueOf(sourceID),sourceFile.trim());
+    	}
+    	
+        lines=ContentLoader.getAllLinesList(inputfileAddress);
+        ArrayList<String> saveContent=new ArrayList<>();
+        for(String line:lines)
+        {
+        	String[] spilter=line.split(",");
+        	int Sid=Integer.valueOf(spilter[1]);
+        	
+        	if(IDmap.containsKey(Sid))
+        	{
+        		String fileAddress=IDmap.get(Sid);
+        		saveContent.add(spilter[0]+","+fileAddress+","+spilter[2]);
+        	}
+        }
+        ContentWriter.writeContent(fileName, saveContent);
+	}
+	
 }

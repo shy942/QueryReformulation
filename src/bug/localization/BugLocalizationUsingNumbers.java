@@ -1,6 +1,7 @@
 package bug.localization;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 import utility.ContentLoader;
@@ -27,7 +28,7 @@ public class BugLocalizationUsingNumbers {
     	this.testSet= new HashMap<>();
     	this.bugIDKeywordMapAddress=bugIDKeywordMapAddress;
     	this.bugIdKeywordMap=new HashMap<>();
-    	this.bugIDKeywordMapAddress=bugLocatorOutput;
+    	this.bugLocatorOutput=bugLocatorOutput;
     	this.bugLocatorOutputMap=new HashMap<>();
     }
     
@@ -96,56 +97,67 @@ public class BugLocalizationUsingNumbers {
 		obj.testSet=obj.loadHashMap(obj.testSetAddress);
 		obj.bugIdKeywordMap=obj.loadHashMap(obj.bugIDKeywordMapAddress);
 		obj.bugLocatorOutputMap=obj.loadHashMapCommaSep(obj.bugLocatorOutput);
-		MiscUtility.showResult(10, obj.bugLocatorOutputMap);
+		//MiscUtility.showResult(10, obj.bugLocatorOutputMap);
+		ArrayList<String> finalResult=new ArrayList<>();
 		
-		/*
 		for(int queryID:testSet.keySet())
 		{
-			obj.findBugForEachQuery(queryID);
-		}*/
+			
+			if(this.bugLocatorOutputMap.containsKey(queryID))
+			{	
+				HashMap<Integer,Double> resultBugLocator=obj.findRVSMscore(queryID);
+				//MiscUtility.showResult(20, resultBugLocator);
+				HashMap<Integer,Double> resultMyTool=obj.findBugForEachQuery(queryID);
+				//MiscUtility.showResult(20, resultMyTool);
+				HashMap<Integer, Double> resultMap=obj.CombileScoreMaker(queryID,resultBugLocator, resultMyTool);
+				String result=queryID+",";
+				int count=0;
+				for(int key:resultMap.keySet())
+				{
+					count++;
+					if(count>10)break; 
+					finalResult.add(queryID+","+key+","+resultMap.get(key));
+				}
+			}
+			
+			ContentWriter.writeContent("./data/Results/finalResultTest1.txt", finalResult);
+		}
+		
 		//do this once
 		//obj.convertInputFile("./data/buglocator/eclipseoutput.txt", "./data/changeset-pointer/ID-SourceFile.txt");
     }
     
-    public void findRVSMscore(String queryID)
+    public HashMap<Integer, Double> CombileScoreMaker(int queryID, HashMap<Integer,Double> resultBugLocator,HashMap<Integer,Double> resultMyTool)
     {
     	
-    }
-    
-    public void convertInputFile(String inputfileAddress, String IDaddress)
-    {
-    	ArrayList<String> lines=ContentLoader.getAllLinesList(IDaddress);
-    	HashMap<String, Integer> IDmap=new HashMap<>();
-    	for(String line:lines)
+    	HashMap<Integer, Double> tempCombineResult=new HashMap<>();
+    	int count = 0;
+    	for(int key:resultMyTool.keySet())
     	{
-    		String[] spilter=line.split(":");
-    		String sourceID=spilter[0];
-    		String sourceFile=spilter[1];
-    		IDmap.put(sourceFile.trim(), Integer.valueOf(sourceID));
+    		if(resultBugLocator.containsKey(key))
+    		{
+    			count++;
+    			double combineScore=resultMyTool.get(key)+resultBugLocator.get(key);
+    			tempCombineResult.put(key, combineScore);
+    		}
+    		else
+    		{
+    			tempCombineResult.put(key, resultMyTool.get(key));
+    		}
     	}
-    	System.out.println(IDmap);
-        lines=ContentLoader.getAllLinesList(inputfileAddress);
-        ArrayList<String> saveContent=new ArrayList<>();
-        for(String line:lines)
-        {
-        	String[] spilter=line.split(",");
-        	String fileaddress=spilter[1];
-        	System.out.println(fileaddress);
-        	System.out.println(IDmap.get(fileaddress.trim()));
-        	if(IDmap.containsKey(fileaddress))
-        	{
-        		int Sid=IDmap.get(fileaddress);
-        		saveContent.add(spilter[0]+","+Sid+","+spilter[2]+","+spilter[3]);
-        	}
-        }
-        ContentWriter.writeContent("./data/buglocator/eclipseOutputInNumbers.txt", saveContent);
+    	HashMap<Integer, Double> sortedCombineResult=MiscUtility.sortByValues(tempCombineResult);
+    	System.out.println(sortedCombineResult);
+    	System.out.println(queryID+" : "+count);
+    	return sortedCombineResult;
     }
     
-    public void findBugForEachQuery(int queryID)
+    
+    
+    public HashMap<Integer,Double> findBugForEachQuery(int queryID)
     {
     	ArrayList<Integer> keywordList=this.bugIdKeywordMap.get(queryID);
     	
-    	HashMap<Integer,Integer> tempResultMap=new HashMap();
+    	HashMap<Integer,Double> tempResultMap=new HashMap();
     	for(int keyword:keywordList)
     	{
     		if(this.trainMap.containsKey(keyword))
@@ -155,31 +167,75 @@ public class BugLocalizationUsingNumbers {
     		    {
     		    	if(tempResultMap.containsKey(source))
     		    	{
-    		    		int count=tempResultMap.get(source);
-    		    		count+=1;
+    		    		double count=tempResultMap.get(source);
+    		    		count+=1.0;
     		    		tempResultMap.put(source, count);
     		    	}
     		    	else
     		    	{
-    		    		tempResultMap.put(source, 1);
+    		    		tempResultMap.put(source, 1.0);
     		    	}
     		    }
     		}
     	}
     	
     	
-    	HashMap<Integer,Integer> sortedHashMap=MiscUtility.sortByValues(tempResultMap);
-    	System.out.println(queryID);
-    	System.out.println(sortedHashMap);
+    	
+    	//Normalize term frequency
+    	HashMap<Integer,Double> normalizedResult=this.normalizeTF(tempResultMap);
+    	//Sort the result
+    	HashMap<Integer,Double> sortedHashMap=MiscUtility.sortByValues(normalizedResult);
+    	//System.out.println(queryID);
+    	//System.out.println(sortedHashMap);
+    	return sortedHashMap;
+    	
+    }
+    
+    public HashMap<Integer,Double> normalizeTF(HashMap<Integer,Double> sortedHashMap)
+    {
+    	HashMap<Integer,Double> normalizedResult=new HashMap<>();
+    	//Find maximum term frequency
+    	double maxTF=0.0;
+    	double a=0.4;
+    	for(int key:sortedHashMap.keySet())
+    	{
+    		double tf=sortedHashMap.get(key);
+    		if(tf>maxTF)maxTF=tf;
+    	}
+    	
+    	for(int key:sortedHashMap.keySet())
+    	{
+    		double tf=sortedHashMap.get(key);
+    		//double normalizedTF=a+(1-a)*(tf/maxTF);
+    		double normalizedTF=tf/maxTF;
+    		normalizedResult.put(key, normalizedTF);
+    	}
+    	return normalizedResult;
     }
     
     
+    public HashMap<Integer,Double> findRVSMscore(int queryID)
+    {
+    	HashMap<Integer,Double> RVSMresult=new HashMap<>();
+    	ArrayList<String> listFromBugLocator=this.bugLocatorOutputMap.get(queryID);
+        for(String line:listFromBugLocator)
+        {
+        	String[] spilter=line.split(",");
+        	int Sid=Integer.valueOf(spilter[0]);
+        	int rank=Integer.valueOf(spilter[1]);
+        	double score=Double.valueOf(spilter[2]);
+        	RVSMresult.put(Sid, score);
+        }
+    	//System.out.println(listFromBugLocator);
+    	HashMap<Integer,Double> normalizedResult=this.normalizeTF(RVSMresult);
+    	return normalizedResult;
+    }
     
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset1.txt", "./data/testset/test1.txt","./data/Bug-ID-Keyword-ID-Mapping.txt",".data/buglocator/eclipseOutputInNumbers.txt");
+		BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset1.txt", "./data/testset/test1.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","./data/buglocator/eclipseOutputInNumbers.txt");
 		obj.bugLocator(obj);
 		
 		
