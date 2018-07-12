@@ -2,10 +2,7 @@ package BugLocator;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
 import utility.ContentLoader;
-
-
 
 public class BLPerformanceCalc {
 
@@ -16,43 +13,115 @@ public class BLPerformanceCalc {
 	HashMap<String, Integer> rankMap;
 	HashMap<Integer, ArrayList<String>> resultMap;
 	boolean IROnly;
+	HashMap<Integer, ArrayList<String>> goldMap;
 
-	public BLPerformanceCalc(String outputFileName, int TOPK) {
+	public BLPerformanceCalc(String outputFileName, int TOPK, String goldFile) {
 		this.resultFile = outputFileName;
 		this.TOPK = TOPK;
 		this.selectedBugs = new ArrayList<>();
 		this.rankMap = new HashMap<>();
-		this.resultMap = extractResults();
+		this.resultMap = extractResultsForOwn();
+		this.goldMap = loadGoldsetMap(goldFile);
+	}
+
+	protected HashMap<Integer, ArrayList<String>> loadGoldsetMap(String goldFile) {
+		HashMap<Integer, ArrayList<String>> goldMap = new HashMap<>();
+		ArrayList<String> lines = ContentLoader.getAllLinesOptList(goldFile);
+		for (int i = 0; i < lines.size();) {
+			String[] parts = lines.get(i).split("\\s+");
+			if (parts.length == 2) {
+				int bugID = Integer.parseInt(parts[0].trim());
+				int bugCount = Integer.parseInt(parts[1].trim());
+				for (int j = i + 1; j <= i + bugCount; j++) {
+					if (goldMap.containsKey(bugID)) {
+						ArrayList<String> temp = goldMap.get(bugID);
+						temp.add(lines.get(j).trim());
+						goldMap.put(bugID, temp);
+					} else {
+						ArrayList<String> temp = new ArrayList<>();
+						temp.add(lines.get(j).trim());
+						goldMap.put(bugID, temp);
+					}
+				}
+				i = i + bugCount + 1;
+			}
+		}
+		return goldMap;
 	}
 
 	protected HashMap<Integer, ArrayList<String>> extractResults() {
-		ArrayList<String> lines =ContentLoader.getAllLinesList(this.resultFile);
-				//.getAllLinesOptList(this.resultFile);
+		ArrayList<String> lines = ContentLoader
+				.getAllLinesList(this.resultFile);
+		// .getAllLinesOptList(this.resultFile);
 		HashMap<Integer, ArrayList<String>> resultMap = new HashMap<>();
 		for (String line : lines) {
 			String[] parts = line.trim().split(",");
 			int bugID = Integer.parseInt(parts[0]);
 			int rank = Integer.parseInt(parts[2].trim());
 			// if (rank >= 0 && rank < TOPK) {
-			//if (selectedBugs.contains(bugID)) {
-				String fileURL = parts[1].trim();
-				String key = bugID + "-" + fileURL;
-				if(!this.selectedBugs.contains(bugID)){
-					this.selectedBugs.add(bugID);
-				}
-				if (resultMap.containsKey(bugID)) {
-					ArrayList<String> files = resultMap.get(bugID);
-					files.add(fileURL);
-					resultMap.put(bugID, files);
-				} else {
-					ArrayList<String> files = new ArrayList<>();
-					files.add(fileURL);
-					resultMap.put(bugID, files);
-				}
-				// storing the ranks
-				this.rankMap.put(key, rank);
-			//}
+			// if (selectedBugs.contains(bugID)) {
+			String fileURL = parts[1].trim();
+			String key = bugID + "-" + fileURL;
+			if (!this.selectedBugs.contains(bugID)) {
+				this.selectedBugs.add(bugID);
+			}
+			if (resultMap.containsKey(bugID)) {
+				ArrayList<String> files = resultMap.get(bugID);
+				files.add(fileURL);
+				resultMap.put(bugID, files);
+			} else {
+				ArrayList<String> files = new ArrayList<>();
+				files.add(fileURL);
+				resultMap.put(bugID, files);
+			}
+			// storing the ranks
+			this.rankMap.put(key, rank);
+			// }
 		}
+		// }
+		// System.out.println(repoName + ": Results:" + resultMap.size() + "\t"
+		// + selectedBugs.size());
+		return resultMap;
+	}
+
+	protected HashMap<Integer, ArrayList<String>> extractResultsForOwn() {
+		ArrayList<String> lines = ContentLoader
+				.getAllLinesList(this.resultFile);
+		// .getAllLinesOptList(this.resultFile);
+		HashMap<Integer, ArrayList<String>> resultMap = new HashMap<>();
+		for (String line : lines) {
+			String[] parts = line.trim().split(",");
+			int bugID = Integer.parseInt(parts[0]);
+			// int rank = Integer.parseInt(parts[2].trim());
+			// if (rank >= 0 && rank < TOPK) {
+			String fileURL = parts[1].trim();
+			String key = bugID + "-" + fileURL;
+			if (!this.selectedBugs.contains(bugID)) {
+				this.selectedBugs.add(bugID);
+			}
+			if (resultMap.containsKey(bugID)) {
+				ArrayList<String> files = resultMap.get(bugID);
+				files.add(fileURL);
+				resultMap.put(bugID, files);
+			} else {
+				ArrayList<String> files = new ArrayList<>();
+				files.add(fileURL);
+				resultMap.put(bugID, files);
+			}
+			// rank initialization
+			this.rankMap.put(key, -1);
+		}
+
+		// now develop the ranks
+		for (String key : this.rankMap.keySet()) {
+			String[] parts = key.split("-");
+			int bugID = Integer.parseInt(parts[0].trim());
+			String fileURL = parts[1].trim();
+			ArrayList<String> results = resultMap.get(bugID);
+			int rank = results.indexOf(fileURL) + 1;
+			this.rankMap.put(key, rank);
+		}
+		// develop the ranks
 		// }
 		// System.out.println(repoName + ": Results:" + resultMap.size() + "\t"
 		// + selectedBugs.size());
@@ -69,17 +138,44 @@ public class BLPerformanceCalc {
 					if (rankMap.containsKey(key)) {
 						int rank = rankMap.get(key);
 						if (rank >= 0 && rank < TOPK) {
-							//if (checkEntryFound(goldFiles, rFile)) {
-								found++;
-								// System.out.println(bugID+"\t"+key+"\t"+rank);
-								// System.out.println(bugID);
-								break;
-							//}
+							// if (checkEntryFound(goldFiles, rFile)) {
+							found++;
+							// System.out.println(bugID+"\t"+key+"\t"+rank);
+							// System.out.println(bugID);
+							break;
+							// }
 						}
 					}
 				}
 			}
 		}
+		return (double) found / this.selectedBugs.size();
+	}
+
+	protected double getTopKAccOwn() {
+		int found = 0;
+		for (int bugID : this.selectedBugs) {
+			if (resultMap.containsKey(bugID)) {
+				ArrayList<String> resFiles = resultMap.get(bugID);
+				ArrayList<String> goldFiles = this.goldMap.get(bugID);
+				for (String rFile : resFiles) {
+					String key = bugID + "-" + rFile;
+					if (rankMap.containsKey(key)) {
+						int rank = rankMap.get(key);
+						if (rank > 0  && rank <= 10) {
+							if (checkEntryFound(goldFiles, rFile)) {
+								found++;
+								// System.out.println(bugID+"\t"+key+"\t"+rank);
+								// System.out.println(bugID);
+								break;
+							}
+						}
+					}
+				}
+
+			}
+		}
+		System.out.println("Top@10" + found);
 		return (double) found / this.selectedBugs.size();
 	}
 
@@ -107,13 +203,13 @@ public class BLPerformanceCalc {
 			ArrayList<String> resultFiles) {
 		int matched = 0;
 		for (String rFile : resultFiles) {
-			//if (checkEntryFound(goldFiles, rFile)) {
-				String key = bugID + "-" + rFile;
-				int rank = rankMap.get(key);
-				if (rank >= 0 && rank < TOPK) {
-					matched++;
-				}
-			//}
+			// if (checkEntryFound(goldFiles, rFile)) {
+			String key = bugID + "-" + rFile;
+			int rank = rankMap.get(key);
+			if (rank >= 0 && rank < TOPK) {
+				matched++;
+			}
+			// }
 		}
 		return (double) matched / resultFiles.size();
 	}
@@ -123,8 +219,8 @@ public class BLPerformanceCalc {
 		for (int bugID : this.selectedBugs) {
 			if (resultMap.containsKey(bugID)) {
 				ArrayList<String> resultFiles = resultMap.get(bugID);
-				//ArrayList<String> goldFiles = GoldsetLoader.goldsetLoader(
-				//		repoName, bugID);
+				// ArrayList<String> goldFiles = GoldsetLoader.goldsetLoader(
+				// repoName, bugID);
 				double recall = getRecall(bugID, null, resultFiles);
 				sumRecall += recall;
 			}
@@ -153,19 +249,19 @@ public class BLPerformanceCalc {
 
 				double sumLinePrec = 0;
 				int found = 0;
-				
+
 				for (String rFile : resultFiles) {
 					String key = bugID + "-" + rFile;
-					int rank = rankMap.get(key);					
+					int rank = rankMap.get(key);
 
 					if (rank >= 0 && rank < TOPK) {
 						found++;
-						//int index = resultFiles.indexOf(rFile);
-						//sumLinePrec += getPrecisionK(resranks, index + 1);
-						sumLinePrec+= (double)found/(rank+1);
+						// int index = resultFiles.indexOf(rFile);
+						// sumLinePrec += getPrecisionK(resranks, index + 1);
+						sumLinePrec += (double) found / (rank + 1);
 						resranks.add(rank);
 					}
-					
+
 					if (resranks.size() == TOPK) {
 						break;
 					}
@@ -205,18 +301,20 @@ public class BLPerformanceCalc {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		int TOPK = 10;
-		//String fileName="./data/buglocator/eclipseoutput.txt";
-		String fileName="./data/Results/100-1000-rankedResult.txt";
-		BLPerformanceCalc bcalc = new BLPerformanceCalc(fileName, TOPK);
-		double topk = bcalc.getTopKAcc();
+		// String fileName="./data/buglocator/eclipseoutput.txt";
+		String resultFile = "./data/result-June11/FinalResultSidTest1.txt";
+		String goldFile = "./data/result-June11/gitInfoNew.txt";
+		BLPerformanceCalc bcalc = new BLPerformanceCalc(resultFile, TOPK,
+				goldFile);
+		double topk = bcalc.getTopKAccOwn();
 		System.out.println("Top-K: " + topk);
-		double preck = bcalc.getMeanAvgPrecisionAtK();
-		System.out.println("MAP@K: " + preck);
-		double recallk = bcalc.getMeanRecall();
-		System.out.println("MR@K: " + recallk);
-		double rrK = bcalc.getMRRK(TOPK);
-		System.out.println("MRR@K: " + rrK);
+		/*
+		 * double preck = bcalc.getMeanAvgPrecisionAtK();
+		 * System.out.println("MAP@K: " + preck); double recallk =
+		 * bcalc.getMeanRecall(); System.out.println("MR@K: " + recallk); double
+		 * rrK = bcalc.getMRRK(TOPK); System.out.println("MRR@K: " + rrK);
+		 */
 	}
 }
