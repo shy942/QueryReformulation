@@ -303,12 +303,14 @@ public class BLPerformanceCalc {
 		// TODO Auto-generated method stub
 
 		int TOPK = 10;
+
 		// String fileName="./data/buglocator/eclipseoutput.txt";
 		String resultFile = "./data/result-June11/FinalResultSidTest1.txt";
 		String goldFile = "./data/result-June11/gitInfoNew.txt";
 		BLPerformanceCalc bcalc = new BLPerformanceCalc(resultFile, TOPK,
 				goldFile);
 		double topk = bcalc.getTopKAccOwn();
+
 		System.out.println("Top-K: " + topk);
 		/*
 		 * double preck = bcalc.getMeanAvgPrecisionAtK();
