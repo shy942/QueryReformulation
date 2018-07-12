@@ -99,7 +99,7 @@ public class BugLocalizationUsingNumbers {
 		obj.bugLocatorOutputMap=obj.loadHashMapCommaSep(obj.bugLocatorOutput);
 		//MiscUtility.showResult(10, obj.bugLocatorOutputMap);
 		ArrayList<String> finalResult=new ArrayList<>();
-		
+		ArrayList<String> bugLocatorResultForTestingk=new ArrayList<>();
 		for(int queryID:testSet.keySet())
 		{
 			
@@ -122,9 +122,30 @@ public class BugLocalizationUsingNumbers {
 			
 			ContentWriter.writeContent("./data/Results/finalResultTest1.txt", finalResult);
 		}
-		
+		obj.TestingFileBugLocatorResult("./data/buglocator/test1Result.txt",finalResult);
 		//do this once
 		//obj.convertInputFile("./data/buglocator/eclipseoutput.txt", "./data/changeset-pointer/ID-SourceFile.txt");
+    }
+    
+    public void TestingFileBugLocatorResult(String filepath, ArrayList<String> finalResult)
+    {
+    	ArrayList<String> list=new ArrayList<>();
+    	
+    	for(String line:finalResult)
+    	{
+    		int queryID=Integer.valueOf(line.split(",")[0]);
+			if(this.bugLocatorOutputMap.containsKey(queryID))
+			{	
+				ArrayList<String> tempList=this.bugLocatorOutputMap.get(queryID);
+        		for(String temp:tempList)
+        		{
+        			list.add(queryID+","+temp);
+        		}
+			}
+    	}
+			
+		
+    	ContentWriter.writeContent(filepath, list);
     }
     
     public HashMap<Integer, Double> CombileScoreMaker(int queryID, HashMap<Integer,Double> resultBugLocator,HashMap<Integer,Double> resultMyTool)
@@ -146,7 +167,7 @@ public class BugLocalizationUsingNumbers {
     		}
     	}
     	HashMap<Integer, Double> sortedCombineResult=MiscUtility.sortByValues(tempCombineResult);
-    	System.out.println(sortedCombineResult);
+    	//System.out.println(sortedCombineResult);
     	System.out.println(queryID+" : "+count);
     	return sortedCombineResult;
     }
