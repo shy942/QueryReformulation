@@ -362,17 +362,7 @@ public class BugExtractorForBugLocator {
 	    		bug.setAttribute("opendate", list.get(0));
 	    		bug.setAttribute("fixdate", list.get(1));
 	    		
-//	    		Attr id  = doc.createAttribute("id");
-//	    		id.setValue(key);
-//	    		bug.setAttributeNode(id);
-//	    		
-//	    		Attr opendate=doc.createAttribute("opendate");
-//	    		opendate.setValue(list.get(0));
-//	    		bug.setAttributeNode(opendate);
-//	    		
-//	    		Attr fixdate=doc.createAttribute("fixdate");
-//	    		fixdate.setValue(list.get(1)+"\n");
-//	    		bug.setAttributeNode(fixdate);
+
 	    		
 	    		Element buginformation = doc.createElement("buginformation");
 	    		bug.appendChild(buginformation);
