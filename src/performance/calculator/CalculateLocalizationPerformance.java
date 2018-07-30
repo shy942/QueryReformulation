@@ -82,12 +82,13 @@ public class CalculateLocalizationPerformance {
 	    for(String line: list)
 	    {
 	    	//System.out.println(line);
-	    	String [] spilter=line.split(":");
+	    	String [] spilter=line.split(",");
 	    	String bugID=spilter[0];
-	    	ArrayList<String> fileAddress=new ArrayList<String>();
-	    	if(spilter.length>1)
+	    	String file=spilter[1];
+	    	ArrayList<String> fileAddress;
+	    	/*if(spilter.length>1)
 	    	{
-	    		for(int i=1;i<spilter.length;i++)
+	    		for(int i=1;i<spilter.length-1;i++)
 	    		{
 	    			String file=spilter[i].toLowerCase().trim();
 	    			int index = nthOccurrence(file, '/', 3);
@@ -97,6 +98,16 @@ public class CalculateLocalizationPerformance {
 					fileAddress.add(file);
 	    			//fileAddress.add(spilter[i].toLowerCase().trim());
 	    		}
+	    	}*/
+	    	if(hm.containsKey(bugID))
+	    	{
+	    		fileAddress=hm.get(bugID);
+	    		fileAddress.add(file);
+	    	}
+	    	else
+	    	{
+	    		fileAddress=new ArrayList<String>();
+	    		fileAddress.add(file);
 	    	}
 	    	hm.put(bugID, fileAddress);
 	    }
@@ -149,13 +160,13 @@ public class CalculateLocalizationPerformance {
 	        	    found=0;
 	        	    
 	        	    //Loop for Top 1 and Top5
-	        	   for(int i=0;i<10;i++)
-	        		//for(int i=0;i<listFromActualResult.size()-1;i++)
+	        	   //for(int i=0;i<10;i++)
+	        		for(int i=0;i<listFromActualResult.size()-1;i++)
 	        		{
 	        			String resultedFilePath=listFromActualResult.get(i);
 	        			//if(found_at_least1>0)break;
 	        			
-	        			for(int j=0;j<listFromTrueSets.size();j++)
+	        			for(int j=0;j<listFromTrueSets.size()-1;j++)
 	        			{
 	        				String trueSetsFilePath=listFromTrueSets.get(j);
 	        				if(resultedFilePath.equalsIgnoreCase(trueSetsFilePath)==true)

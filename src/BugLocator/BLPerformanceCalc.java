@@ -175,7 +175,7 @@ public class BLPerformanceCalc {
 
 			}
 		}
-		System.out.println("Top@10" + found);
+		System.out.println("Top@10: " + found);
 		return (double) found / this.selectedBugs.size();
 	}
 
@@ -304,19 +304,18 @@ public class BLPerformanceCalc {
 
 		int TOPK = 10;
 
-		// String fileName="./data/buglocator/eclipseoutput.txt";
-		String resultFile = "./data/result-June11/FinalResultSidTest1.txt";
+		String resultFile="./data/buglocator/eclipseoutput.txt";
+		//String resultFile = "./data/result-June11/FinalResultSidTest1.txt";
 		String goldFile = "./data/result-June11/gitInfoNew.txt";
 		BLPerformanceCalc bcalc = new BLPerformanceCalc(resultFile, TOPK,
 				goldFile);
 		double topk = bcalc.getTopKAccOwn();
 
 		System.out.println("Top-K: " + topk);
-		/*
-		 * double preck = bcalc.getMeanAvgPrecisionAtK();
-		 * System.out.println("MAP@K: " + preck); double recallk =
-		 * bcalc.getMeanRecall(); System.out.println("MR@K: " + recallk); double
-		 * rrK = bcalc.getMRRK(TOPK); System.out.println("MRR@K: " + rrK);
-		 */
+		double preck = bcalc.getMeanAvgPrecisionAtK();
+		System.out.println("MAP@K: " + preck); double recallk =
+		bcalc.getMeanRecall(); System.out.println("MR@K: " + recallk); double
+		rrK = bcalc.getMRRK(TOPK); System.out.println("MRR@K: " + rrK);
+		
 	}
 }
