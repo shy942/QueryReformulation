@@ -133,17 +133,18 @@ public class BLPerformanceCalc {
 		for (int bugID : this.selectedBugs) {
 			if (resultMap.containsKey(bugID)) {
 				ArrayList<String> resFiles = resultMap.get(bugID);
+				ArrayList<String> goldFiles = this.goldMap.get(bugID);
 				for (String rFile : resFiles) {
 					String key = bugID + "-" + rFile;
 					if (rankMap.containsKey(key)) {
 						int rank = rankMap.get(key);
 						if (rank >= 0 && rank < TOPK) {
-							// if (checkEntryFound(goldFiles, rFile)) {
+							 if (checkEntryFound(goldFiles, rFile)) {
 							found++;
 							// System.out.println(bugID+"\t"+key+"\t"+rank);
 							// System.out.println(bugID);
 							break;
-							// }
+							 }
 						}
 					}
 				}
@@ -165,7 +166,7 @@ public class BLPerformanceCalc {
 						if (rank > 0  && rank <= 10) {
 							if (checkEntryFound(goldFiles, rFile)) {
 								found++;
-								// System.out.println(bugID+"\t"+key+"\t"+rank);
+								 System.out.println(bugID+"\t"+key+"\t"+rank);
 								// System.out.println(bugID);
 								break;
 							}
@@ -304,13 +305,14 @@ public class BLPerformanceCalc {
 
 		int TOPK = 10;
 
-		String resultFile="./data/buglocator/eclipseoutput.txt";
+		//String resultFile="./data/buglocator/eclipseoutput.txt";
+		String resultFile="./data/Results/100-1000-rankedResult.txt";
 		//String resultFile = "./data/result-June11/FinalResultSidTest1.txt";
 		String goldFile = "./data/result-June11/gitInfoNew.txt";
 		BLPerformanceCalc bcalc = new BLPerformanceCalc(resultFile, TOPK,
 				goldFile);
 		double topk = bcalc.getTopKAccOwn();
-
+        System.out.println(bcalc.selectedBugs.size()); 
 		System.out.println("Top-K: " + topk);
 		double preck = bcalc.getMeanAvgPrecisionAtK();
 		System.out.println("MAP@K: " + preck); double recallk =
