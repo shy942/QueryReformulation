@@ -1,3 +1,4 @@
+/LIB/
 /BugLocator/
 /Test10FoldCrVld/
 /adjacent/
@@ -9,7 +10,6 @@
 /file/
 /graph/
 /lucene/
-/parameter/
 /performance/
 /query/
 /source/
@@ -19,3 +19,4 @@
 /text/
 /token/
 /utility/
+/parameter/
