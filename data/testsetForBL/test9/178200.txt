@@ -1,0 +1,1 @@
+org workbench export org swt org workbench export packag org swt manifest avoid problem futur set plug manifest compil properti plug error warn incompat environ warn

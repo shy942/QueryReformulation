@@ -1,0 +1,1 @@
+dialog error dialog resiz behaviour improv resiz behaviour error dialog lack constraint resiz dialog arbitrarili minimum size calcul dynam compon visibl visisbl detail field upper left position fix field resiz

@@ -1,0 +1,1 @@
+command compat git comm dialog destroi context call evalu context variabl creat file ecor model gener model current packag explor selec point project preselect elem wizard point complet current selec packag explor publish appropri

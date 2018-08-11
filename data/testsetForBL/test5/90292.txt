@@ -1,0 +1,1 @@
+editor mgmt default editor unknown exten configur set gener file associ set editor unknown file type default editor open editor unknown file type default editor editor list editor

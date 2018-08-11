@@ -1,0 +1,1 @@
+workbench manifest cleanup plug exten exten point plugin xml file unnecessari remov plug org core command org jface org jface text

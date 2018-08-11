@@ -1,0 +1,1 @@
+project set miss javadoc comment org jface snippet open org jface snippet ton warn messag miss javadoc snippet don javadoc sens write javadoc snippet org jdt core compil miss javadoc comment warn org jdt core compil miss javadoc comment ignor project specif set

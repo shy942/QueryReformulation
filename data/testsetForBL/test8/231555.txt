@@ -1,0 +1,1 @@
+editor mgmt editor histori shouldn store invalid item editor histori remov exist entri item menu logic includ shouldn item remov

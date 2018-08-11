@@ -1,0 +1,1 @@
+view mgmt view implem saveabl consult dirti close view implem saveabl consult close view user chanc veto event support close event includ workbench shutdown

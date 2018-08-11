@@ -1,0 +1,1 @@
+kei bind scroll work consol ctrl ctrl consol build

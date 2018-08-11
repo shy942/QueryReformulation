@@ -1,0 +1,1 @@
+view mgmt tab group closeabl view move closeabl view tab group view move drop tab group detach

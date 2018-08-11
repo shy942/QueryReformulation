@@ -1,0 +1,1 @@
+compat close activ perspect set window activ perspect close current perspect perspect activ perspect list perspect switcher perspect activ order pick perspect activ

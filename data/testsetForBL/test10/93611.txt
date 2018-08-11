@@ -1,0 +1,1 @@
+viewer refactor tabl layout behav standard layout tabl layout doesn follow expect protocol layout lai ignor subsequ size set tabl size size result layout set size size layout pure function current size previou size widget nonzero size initi column width layout behav defer column initi layout caus problem view error view view workaround nice extra code

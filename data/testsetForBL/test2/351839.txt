@@ -1,0 +1,1 @@
+org emf xpath compil error version chang fix descrip resourc path locat type ecor path context factori resolv queri case java org emf xpath src org emf xpath java

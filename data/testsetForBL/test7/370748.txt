@@ -1,0 +1,1 @@
+compat instruc step mode work cpp juno win project build project debug project main debug view tree thread process step instruc button button press button enabl disassembli view open step step instruc disassembli view

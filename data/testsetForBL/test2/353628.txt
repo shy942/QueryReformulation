@@ -1,0 +1,1 @@
+bind tabl org context dialog print syserr startup bind tabl org context dialog

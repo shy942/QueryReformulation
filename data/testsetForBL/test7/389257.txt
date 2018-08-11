@@ -1,0 +1,1 @@
+object leak open close editor object leak simpl close open text editor scenario simpl case start workspac prepar perspect navig view open text file reset instanc counter profil open editor close editor instanc leak memento context navig histori entri comput

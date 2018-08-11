@@ -1,0 +1,1 @@
+call set enabl fals scale field editor doesn disabl scale control set enabl disabl label control

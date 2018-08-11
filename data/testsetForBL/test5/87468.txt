@@ -1,0 +1,1 @@
+improv workbench handl excep current initi code handl excep thrown view editor request excep thrown method workbench invalid workbench part workbench return workbench refer fulli initi log excep stack trace wrapper excep core excep excep stack trace specif log code path initi excep open modal dialog excep initi error open excep shutdown log interrupt user

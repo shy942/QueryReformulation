@@ -1,0 +1,1 @@
+face style string implem char sequenc accept char sequenc intern pass style string

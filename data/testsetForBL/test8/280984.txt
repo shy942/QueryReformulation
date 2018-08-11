@@ -1,0 +1,1 @@
+command org command exten point tell user implem subclass creat attach command schema patch schema read class subclass org core command class provid subclass sugges automat

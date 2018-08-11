@@ -1,0 +1,1 @@
+plug tabl dialog sort arrow press plug detail button tabl header plug tabl sort column entri visual indic column header tabl set sort column tabl set sort direc need

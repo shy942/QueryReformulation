@@ -81,7 +81,7 @@ public class BugReportKeywordPointerMaker {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String bugReportDir = "/Users/user/Documents/Ph.D/2018/Data/ProcessedData"; 
+		String bugReportDir = "/Users/user/Documents/Ph.D/2018/Data/ProcessedBugData";  
 		new BugReportKeywordPointerMaker(bugReportDir).developBugKeywordPointer();
 	}
 }

@@ -1,0 +1,1 @@
+code cleanup work org jface sourc numer warn unnecessari cast indirect static field access read privat field superflu semicolon volunt clean

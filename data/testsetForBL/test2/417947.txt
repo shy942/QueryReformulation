@@ -1,0 +1,1 @@
+kei bind behav expect content assist pop activ open java file invok content assist code content assist pop activ user press kei expect option content assist pop select behavior expect kei select option content assist pop window work broken

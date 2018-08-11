@@ -1,0 +1,1 @@
+reset save perspect destroi detach window detach view save perspect window reset perspect detach view window close perspect reopen save perspect detach window

@@ -1,0 +1,1 @@
+invalid entri build properti file org jface databind plugin output databind jar bin properti org jface databind plugin warn quickfix suggest remov entri text warn librari databind jar bundl classpath

@@ -1,0 +1,1 @@
+perform idl constantli alloc hundr object idl constantli alloc hundr object char int string idl case start workspac close idl start profil memori alloc object ced

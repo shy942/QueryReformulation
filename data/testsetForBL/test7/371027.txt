@@ -1,0 +1,1 @@
+model platform plugin fragment uri org workbench model exten point similiar http bug org bug cgi consist org workbench model platform plugin prefix resourc icon currenti plugin exten point org workbench model fragment uri fragment xmi fragment exten plugin

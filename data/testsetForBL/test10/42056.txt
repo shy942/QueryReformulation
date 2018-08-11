@@ -1,0 +1,1 @@
+dialog path variabl dialog labl align locat label align text field

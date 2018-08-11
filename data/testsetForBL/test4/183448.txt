@@ -1,0 +1,1 @@
+contribu action deleg dispos call view close toolbar action implem view action deleg action deleg switch memori block action memori view debug view opend method action call view close dispos method action call check dispos method call view close

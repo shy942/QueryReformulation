@@ -1,0 +1,1 @@
+action set undead tooltip custom perspect dialog open custom perspect dialog command tab select action set hit note tooltip hit hold button black border tooltip appear spawn tooltip shell

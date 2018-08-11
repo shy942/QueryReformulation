@@ -1,0 +1,1 @@
+undo oper histori event distinguish cancel event fail event oper histori event includ notif oper complet statu client distinguish oper cancel oper statu problemat action handler prune histori oper occur histori prune user cancel undo action handler differ instanc reason observ origin undo redo decid prune histori oper attempt statu return caller

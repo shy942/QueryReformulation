@@ -1,0 +1,1 @@
+multi editor input overrid equal method org multi editor input class overrid equal method launch view class check input current frame frame equal method reload multi editor input editor told reload equal return fals input type file editor input overrid equal method subclass multi editor input java doc

@@ -1,0 +1,1 @@
+error handl workbench plugin log err method log err updat log log messag platform log excep hand log string throwabl statu object hand log string statu conveni method intern workbench call workbench param messag high level messag describ happen public static void log string messag default log log statu util statu statu messag null err println messag log statu plugin record

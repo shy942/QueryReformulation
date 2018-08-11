@@ -1,0 +1,1 @@
+editor mgmt multi editor support propag event nikolai botev implem split editor function idea file save work invok save command file save work make editor mark editor tab dirti

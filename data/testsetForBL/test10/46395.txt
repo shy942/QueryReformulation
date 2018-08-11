@@ -1,0 +1,1 @@
+open persist start fresh workspac type java project close java editor select file open text editor close text editor doubl file open java editor rememb editor

@@ -1,0 +1,1 @@
+kei bind ctrl shift popup focu easier pref press ctrl shift place cursor popup ctrl shift open prefer inconsist popup inspect text hover popup

@@ -1,33 +1,65 @@
 package Test10FoldCrVld;
 
+import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import utility.ContentLoader;
 import utility.ContentWriter;
+import utility.MiscUtility;
 
 public class DataSetsPreaparation {
 
 	private ArrayList<String> bugIDlist;
 	ArrayList<String> bugKeywordLines;
-	
-	public DataSetsPreaparation(String bugIDFile, String bugKeywordFile)
+	private String bugInFolder;
+	private HashMap<String, String> bugContentHM;
+	public DataSetsPreaparation(String bugIDFile, String bugKeywordFile, String bugInFolder)
 	{
 		this.bugIDlist=bugIDlist;
 		this.bugKeywordLines=bugKeywordLines;
 		bugIDlist=ContentLoader.getAllLinesList(bugIDFile);
 		bugKeywordLines= ContentLoader.getAllLinesList(bugKeywordFile);
+		this.bugInFolder=bugInFolder;
+		this.bugContentHM=new HashMap<>();
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//Divide data sets
-		DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/bug-keyword-pointer/Bug-ID-Keyword-ID-Mapping.txt");
-		//obj.DataPreparation("./data/BugCorpus/allBug.txt","./data/GitInfoFile2.txt","./data/bugIDs.txt");
+		DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","/Users/user/Documents/Ph.D/2018/Data/ProcessedBugData/");
+		
+		//Dont do this now//obj.DataPreparation("./data/BugCorpus/allBug.txt","./data/GitInfoFile2.txt","./data/bugIDs.txt");
+		
+		
+		obj.LoadBugData();
 		ArrayList<String> foldList=obj.FoldPreparation();
 		obj.TrainAndTestSetPrep(foldList);
-				
 	}
       
+	public void LoadBugData()
+	{
+		File[] files = new File(this.bugInFolder).listFiles();
+		
+		for (File file : files) {
+			String content = ContentLoader.readContentSimple(file
+					.getAbsolutePath());
+			String fileName=file.getName().substring(0,file.getName().length()-4);
+			this.bugContentHM.put(fileName, content);
+		
+		}
+		//MiscUtility.showResult(10, this.bugContentHM);
+	}
+	
+	public void CreateTestSetForBL(String bugOutFolder, ArrayList<String> testIDs, int step)
+	{
+		for(String bugID: testIDs)
+		{
+			String content=this.bugContentHM.get(bugID);
+			String outFile=bugOutFolder+"test"+step+"/"+bugID+".txt";
+			ContentWriter.writeContent(outFile, content);
+		}
+	}
 	
     public void TrainAndTestSetPrep(ArrayList<String> foldList)
     {
@@ -86,6 +118,10 @@ public class DataSetsPreaparation {
     		testID.add(bugIDlist.get(i-1));
     	}
     	
+    	
+    	//For Creating test set for Bug Locator
+    	CreateTestSetForBL("./Data/testsetForBL/", testID, step);
+    	
     	ArrayList<String> createdTestData=new ArrayList<>();
     	//System.out.println(bugKeywordLines);
     
@@ -110,6 +146,7 @@ public class DataSetsPreaparation {
     	}
     	ContentWriter.writeContent(outfilepath+"test"+step+".txt", createdTestData);
     	System.out.println(createdTestData);
+    	
     }
     
     

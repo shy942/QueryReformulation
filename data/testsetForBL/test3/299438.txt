@@ -1,0 +1,1 @@
+common navig viewer properli reset activ deactiv map object reset viewer avoid stale label test viewer

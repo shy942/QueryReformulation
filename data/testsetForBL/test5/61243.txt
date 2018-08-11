@@ -1,0 +1,1 @@
+remov depend core runti compat plugin refer plugin descriptor

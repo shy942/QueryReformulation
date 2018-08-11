@@ -1,0 +1,1 @@
+command command handler dispos call notic handler dispos method call plugin project base command class wizard creat samplehandl java overrid dispos method abstract handler breakpoint method debug runti workbench command shut notic dispos call

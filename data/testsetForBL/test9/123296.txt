@@ -1,0 +1,1 @@
+face memori leak org jface window window shell window dispos font listen remov font registri solv method close chang line shell null return true font listen null face resourc font registri remov listen font listen font listen null shell dispos return true

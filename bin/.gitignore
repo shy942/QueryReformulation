@@ -1,7 +1,10 @@
-<<<<<<< HEAD
-/parameter/
-=======
+/BugLocator/
+/Test10FoldCrVld/
+/adjacent/
 /bug/
+/changeset/
+/code/
+/config/
 /corpus/
 /file/
 /graph/
@@ -16,5 +19,3 @@
 /text/
 /token/
 /utility/
-/BugLocator/
->>>>>>> d63bd683a77d1502226a3fc963a25bda8ca25506

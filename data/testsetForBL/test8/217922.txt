@@ -1,0 +1,1 @@
+kei bind work consol launch testcas debug mode consol type enter expect testcas completion actual testcas read run completion testcas public static void main string arg int count read count println input count char catch excep auto gener catch block print stack trace

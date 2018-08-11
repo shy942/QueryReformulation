@@ -1,0 +1,1 @@
+editor mgmt open dialog set focu list open open dialog tab set focu list dialog open ideal filter text field user type part editor filter list

@@ -1,0 +1,1 @@
+theme font prefer default font open color font prefer java java editor text font observ default text font user clue set default text editor font

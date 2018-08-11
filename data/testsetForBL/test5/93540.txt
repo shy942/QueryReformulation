@@ -1,0 +1,1 @@
+view mgmt regres view restor memento close reopen build window resourc perspect select resourc navig shutdown restart navig selec restor properli select resourc navig close navig reopen navig selec expect selec memento view restor previou session view refer helper clear memento request view factori view

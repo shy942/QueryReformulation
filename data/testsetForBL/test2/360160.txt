@@ -1,0 +1,1 @@
+compat save perspect return origin close window open perspect debug save perspect close perspect debug perspect

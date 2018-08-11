@@ -1,0 +1,1 @@
+global action close disabl editor open workspac project file txt editor txt open file close disabl

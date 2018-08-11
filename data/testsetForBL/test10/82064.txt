@@ -1,0 +1,1 @@
+dialog titl area dialog set titl imag call open case imag icon imag displai gif titl area dialog dlg titl area dialog shell dlg set titl imag icon dlg open

@@ -1,0 +1,1 @@
+bump pom version remov modul exist platform creat attach platform patch attach patch bump pom version match manifest file remov modul build exist kepler

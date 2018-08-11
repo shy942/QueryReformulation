@@ -1,0 +1,1 @@
+file close menu item disabl current editor activ stpe reproduc project import file open file default editor open file menu notic close menu action disabl reproduc repeat step

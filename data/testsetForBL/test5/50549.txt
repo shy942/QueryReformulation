@@ -1,0 +1,1 @@
+dialog pref workbench advanc dialog font checkbox control tab sheet dialog font

@@ -1,0 +1,1 @@
+remov unnecessari manual activ event admin injec event org test

@@ -105,28 +105,28 @@ public class BugLocalizationUsingNumbers {
 			
 			if(this.bugLocatorOutputMap.containsKey(queryID))
 			{	
-				HashMap<Integer,Double> resultBugLocator=obj.findRVSMscore(queryID);
+				//HashMap<Integer,Double> resultBugLocator=obj.findRVSMscore(queryID);
 				//MiscUtility.showResult(20, resultBugLocator);
 				HashMap<Integer,Double> resultMyTool=obj.findBugForEachQuery(queryID);
 				//MiscUtility.showResult(20, resultMyTool);
-				HashMap<Integer, Double> resultMap=obj.CombileScoreMaker(queryID,resultBugLocator, resultMyTool);
+				//HashMap<Integer, Double> resultMap=obj.CombileScoreMaker(queryID,resultBugLocator, resultMyTool);
 				String result=queryID+",";
 				int count=0;
-				for(int key:resultMap.keySet())
+				//for(int key:resultMap.keySet())
 				{
 					count++;
 					if(count>10)break; 
-					finalResult.add(queryID+","+key+","+resultMap.get(key));
+					//finalResult.add(queryID+","+key+","+resultMap.get(key));
 				}
 			}
 			
 			ContentWriter.writeContent("./data/Results/finalResultTest1.txt", finalResult);
 		}
-		obj.TestingFileBugLocatorResult("./data/buglocator/test1Result.txt",finalResult);
+		//obj.TestingFileBugLocatorResult("./data/buglocator/test1Result.txt",finalResult);
 		//do this once
 		//obj.convertInputFile("./data/buglocator/eclipseoutput.txt", "./data/changeset-pointer/ID-SourceFile.txt");
     }
-    
+    /*
     public void TestingFileBugLocatorResult(String filepath, ArrayList<String> finalResult)
     {
     	ArrayList<String> list=new ArrayList<>();
@@ -146,7 +146,7 @@ public class BugLocalizationUsingNumbers {
 			
 		
     	ContentWriter.writeContent(filepath, list);
-    }
+    }*/
     
     public HashMap<Integer, Double> CombileScoreMaker(int queryID, HashMap<Integer,Double> resultBugLocator,HashMap<Integer,Double> resultMyTool)
     {
@@ -235,7 +235,7 @@ public class BugLocalizationUsingNumbers {
     }
     
     
-    public HashMap<Integer,Double> findRVSMscore(int queryID)
+   /* public HashMap<Integer,Double> findRVSMscore(int queryID)
     {
     	HashMap<Integer,Double> RVSMresult=new HashMap<>();
     	ArrayList<String> listFromBugLocator=this.bugLocatorOutputMap.get(queryID);
@@ -250,7 +250,7 @@ public class BugLocalizationUsingNumbers {
     	//System.out.println(listFromBugLocator);
     	HashMap<Integer,Double> normalizedResult=this.normalizeTF(RVSMresult);
     	return normalizedResult;
-    }
+    }*/
     
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

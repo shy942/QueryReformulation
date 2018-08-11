@@ -1,0 +1,1 @@
+global action convert move individu action reason clear

@@ -1,0 +1,1 @@
+viewer style cell label provid paint respect column align current version style cell label provid paint respect current align current column difficult version implem org jface viewer packag vital interfac packag local style cell label provid paint overriden class need method privat style cell label provid viewer cell

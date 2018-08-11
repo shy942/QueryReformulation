@@ -1,0 +1,1 @@
+dialog window titl safe runnabl displai english english languag window titl safe runnabl displai resourc correctli error dialog displai english error english languag plugin org jface src org jface util safe runnabl java safe runnabl handl excep throwabl messag dialog open error null face resourc string error messag error error

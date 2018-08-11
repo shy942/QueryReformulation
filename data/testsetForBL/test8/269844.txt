@@ -1,0 +1,1 @@
+global action close unrel project danger confirm close unrel project danger oper confirm dialog don nag checkbox inadvert execut action context menu manual restor workspac undo work build close project
