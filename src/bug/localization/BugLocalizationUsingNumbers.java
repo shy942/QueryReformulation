@@ -20,8 +20,9 @@ public class BugLocalizationUsingNumbers {
     public HashMap<Integer, ArrayList<Integer>> testSet;
     public HashMap<Integer, ArrayList<Integer>> bugIdKeywordMap;
     public  HashMap<String,Integer> IdsourceMap;
+    public  HashMap<Integer,String> SourceIDMap;
     HashMap<Integer, HashMap<String, Double>> buglocatorRESULT;
-    public BugLocalizationUsingNumbers(String trainMapAddress, String testSetAddress, String bugIDKeywordMapAddress, String bugLocatorOutput, String IdSourceAddress)
+    public BugLocalizationUsingNumbers(String trainMapAddress, String testSetAddress, String bugIDKeywordMapAddress, String IdSourceAddress)
     {
     	this.trainMapAddress=trainMapAddress;
     	this.trainMap= new HashMap<>();
@@ -31,6 +32,7 @@ public class BugLocalizationUsingNumbers {
     	this.bugIdKeywordMap=new HashMap<>();
     	this.IdSourceAddress=IdSourceAddress;
     	this.IdsourceMap=new HashMap<>();
+    	this.SourceIDMap=new HashMap<>();
     	this.IdsourceMap=this.LoadIdSourceMap(this.IdSourceAddress);
     	this.buglocatorRESULT=new HashMap<>();
     }
@@ -106,24 +108,27 @@ public class BugLocalizationUsingNumbers {
 		for(int queryID:testSet.keySet())
 		{
 			
-			if(buglocatorRESULT.containsKey(queryID))
+			//if(buglocatorRESULT.containsKey(queryID))
 			{	
-				HashMap<Integer,Double> resultBugLocator=obj.convertSIDtoNum(queryID,obj.buglocatorRESULT);
+				HashMap<Integer,Double> resultBugLocator=new HashMap<>();
+				if(obj.buglocatorRESULT.containsKey(queryID)) resultBugLocator=obj.convertSIDtoNum(queryID,obj.buglocatorRESULT);
+				//System.out.println("BL result");
 				//MiscUtility.showResult(20, resultBugLocator);
+				//System.out.println("My result");
 				HashMap<Integer,Double> resultMyTool=obj.findBugForEachQuery(queryID);
 				//MiscUtility.showResult(20, resultMyTool);
 				HashMap<Integer, Double> resultMap=obj.CombileScoreMaker(queryID,resultBugLocator, resultMyTool);
 				String result=queryID+",";
 				int count=0;
-				//for(int key:resultMap.keySet())
+				for(int key:resultMap.keySet())
 				{
 					count++;
 					if(count>10)break; 
-					//finalResult.add(queryID+","+key+","+resultMap.get(key));
+					finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key));
 				}
 			}
 			
-			ContentWriter.writeContent("./data/Results/finalResultTest1Aug11.txt", finalResult);
+			ContentWriter.writeContent("./data/Results/finalResultTest1Aug12.txt", finalResult);
 		}
 		//obj.TestingFileBugLocatorResult("./data/buglocator/test1Result.txt",finalResult);
 		//do this once
@@ -148,6 +153,11 @@ public class BugLocalizationUsingNumbers {
     		{
     			tempCombineResult.put(key, resultMyTool.get(key)*0.4);
     		}
+    	}
+    	for(int key:resultBugLocator.keySet())
+    	{
+    		count++;
+    		if(!tempCombineResult.containsKey(key))tempCombineResult.put(key, resultBugLocator.get(key));
     	}
     	HashMap<Integer, Double> sortedCombineResult=MiscUtility.sortByValues(tempCombineResult);
     	//System.out.println(sortedCombineResult);
@@ -245,6 +255,7 @@ public class BugLocalizationUsingNumbers {
     		int value=Integer.valueOf(spilter[0]);
     		String Sid=spilter[1].trim();
     		this.IdsourceMap.put(Sid, value);
+    		this.SourceIDMap.put(value, Sid);
     	}
     	
 		return this.IdsourceMap;
@@ -255,13 +266,13 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset1.txt", "./data/testset/test1.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","./data/buglocator/eclipseOutputInNumbers.txt","./data/changeset-pointer/ID-SourceFile.txt");
+		BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset1.txt", "./data/testset/test1.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","./data/changeset-pointer/ID-SourceFile.txt");
 		String bugReportFolder = "./data/testsetForBL/test1/";
 		String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
 		String goldsetFile = "./data/gitInfoNew.txt";
 		obj.buglocatorRESULT=new MasterBLScoreProvider(sourceFolder, bugReportFolder, goldsetFile)
 				.produceBugLocatorResults();
-		
+		//MiscUtility.showResult(10, obj.buglocatorRESULT);
 		obj.bugLocator(obj);
 		
 		

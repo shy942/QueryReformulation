@@ -63,16 +63,21 @@ public class BugReportKeywordPointerMaker {
 		File[] files = new File(this.bugReportDir).listFiles();
 		ArrayList<String> bugSrcList = new ArrayList<>();
 		for (File f : files) {
-			int bugID = Integer.parseInt(f.getName().split("\\.")[0]);
-			ArrayList<String> keywords = ContentLoader.getAllKeywords(f
+			if(!f.getName().equals(".DS_Store"))
+			{
+				 int bugID = Integer.parseInt(f.getName().split("\\.")[0]);
+				
+				 ArrayList<String> keywords = ContentLoader.getAllKeywords(f
 					.getAbsolutePath());
-			ArrayList<Integer> tempIDs = new ArrayList<>();
-			for (String keyword : keywords) {
-				if (keywordIDMap.containsKey(keyword)) {
-					tempIDs.add(keywordIDMap.get(keyword));
-				}
+				 ArrayList<Integer> tempIDs = new ArrayList<>();
+				 for (String keyword : keywords) {
+					 if (keywordIDMap.containsKey(keyword)) {
+						 tempIDs.add(keywordIDMap.get(keyword));
+					 }
+				 }
+				
+				 bugSrcList.add(bugID + ":" + MiscUtility.listInt2Str(tempIDs));
 			}
-			bugSrcList.add(bugID + ":" + MiscUtility.listInt2Str(tempIDs));
 		}
 		String outputFile = "./data/Bug-ID-Keyword-ID-Mapping.txt";
 		ContentWriter.writeContent(outputFile, bugSrcList);

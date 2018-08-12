@@ -118,7 +118,7 @@ public class Mapper {
 		System.out.println("Time elapsed:"+(end-start)/1000+" s");
 		
 		
-		obj.bugSourceMap=obj.LoadBugKeywordMap("./data/changeset-pointer/Bug-ID-SrcFile-ID-Mapping.txt");
+		obj.bugSourceMap=obj.LoadBugKeywordMap("./data/Bug-ID-Keyword-ID-Mapping.txt");
 		obj.CreateTokenSouceFileMap(obj.tokenBugMap,obj.bugSourceMap, "./data/FinalMap/TokenSourceMapTrainset"+train+".txt");
 	}
 

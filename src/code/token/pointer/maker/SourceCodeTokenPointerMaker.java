@@ -89,7 +89,8 @@ public class SourceCodeTokenPointerMaker {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String sourceDir = "./data/ExampleSourceCodeFilesFiltered";
+		String sourceDir = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL";
+				//"./data/ExampleSourceCodeFilesFiltered";
 		String idSrcFile = "./data/changeset-pointer/ID-SourceFile.txt";
 		new SourceCodeTokenPointerMaker(sourceDir, idSrcFile)
 				.developFileKeywordPointer();

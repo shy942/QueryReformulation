@@ -81,7 +81,7 @@ public class BugKeywordLoader {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String bugKeywordFile = "./data/bug-keyword-pointer/Bug-ID-Keyword-ID-Mapping.txt";
+		String bugKeywordFile = "./data/Bug-ID-Keyword-ID-Mapping.txt";
 		System.out.println(new BugKeywordLoader(bugKeywordFile)
 				.loadBugKeywordMap().size());
 	}

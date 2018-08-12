@@ -6,6 +6,7 @@ import java.util.Map;
 import java.io.*;
 
 import performance.calculator.CalculateLocalizationPerformance;
+import performance.calculator.CalculateLocalizationPerformanceQR;
 import utility.ContentLoader;
 import utility.MiscUtility;
 
@@ -31,7 +32,7 @@ public class TuningParamMain {
 		String base="./data/ParamTuning/100-1000/";
         //Read the data
 		TuningParamMain objTP=new TuningParamMain(TrueSetResults, retActualResultSets,hmMatchedbug);
-		CalculateLocalizationPerformance obj=new CalculateLocalizationPerformance(objTP.TrueSetResults);
+		CalculateLocalizationPerformanceQR obj=new CalculateLocalizationPerformanceQR(objTP.TrueSetResults);
 		
 		//Obtain truthSet 
 		objTP.TrueSetResults=obj.RetrieveTrueSetsType2("./data/TruthSetFromGit.txt");
@@ -174,7 +175,7 @@ public class TuningParamMain {
 	public static void ReadData(TuningParamMain objTP, String truthFilePath)
 	{
 		
-		CalculateLocalizationPerformance obj=new CalculateLocalizationPerformance(objTP.TrueSetResults);	
+		CalculateLocalizationPerformanceQR obj=new CalculateLocalizationPerformanceQR(objTP.TrueSetResults);	
 		objTP.TrueSetResults=obj.RetrieveTrueSetsType2(truthFilePath);
 		
 		

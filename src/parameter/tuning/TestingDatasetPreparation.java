@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import performance.calculator.CalculateLocalizationPerformance;
+import performance.calculator.CalculateLocalizationPerformanceQR;
 
 public class TestingDatasetPreparation {
 
@@ -35,7 +36,7 @@ public class TestingDatasetPreparation {
 		//Step 1: Create a file from git that contains bugs for which 10 source code files have been fixed.
 	
 				
-		CalculateLocalizationPerformance obj=new CalculateLocalizationPerformance(retTrueSetResults);
+		CalculateLocalizationPerformanceQR obj=new CalculateLocalizationPerformanceQR(retTrueSetResults);
 				
 		TDPobj.retTrueSetResults=obj.RetrieveTrueSetsType2(gitInfoFile);
 		int i=0;
