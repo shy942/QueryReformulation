@@ -13,6 +13,7 @@ public class Mapper {
 	static HashMap<Integer, ArrayList<Integer>> bugKeywordMap;
 	static HashMap<Integer, ArrayList<Integer>> bugSourceMap;
 	static HashMap<Integer, ArrayList<Integer>> tokenBugMap;
+	static HashMap<Integer, ArrayList<Integer>> tokenSourceMap;
 	
 	public Mapper(String bugKeywordFile)
 	{
@@ -20,6 +21,7 @@ public class Mapper {
 		this.bugKeywordMap=new HashMap<Integer, ArrayList<Integer>>();
 		this.bugSourceMap=new HashMap<Integer, ArrayList<Integer>>();
 		this.tokenBugMap=new HashMap<Integer, ArrayList<Integer>>();
+		this.tokenSourceMap=new HashMap<>();
 	}
 	
 	
@@ -82,9 +84,10 @@ public class Mapper {
 		return tokenBugMap;
 	}
 	
-	public  void CreateTokenSouceFileMap(HashMap<Integer, ArrayList<Integer>> tokenBugMap, HashMap<Integer, ArrayList<Integer>> bugSourceMap, String tokenSourceFile)
+	public  HashMap<Integer, ArrayList<Integer>> CreateTokenSouceFileMap(HashMap<Integer, ArrayList<Integer>> tokenBugMap, HashMap<Integer, ArrayList<Integer>> bugSourceMap, String tokenSourceFile)
 	{
-		ArrayList<String> tokenSourceMap=new ArrayList<>();
+		HashMap<Integer, ArrayList<Integer>> tokenSourceMap=new HashMap<>();
+		ArrayList<String> List=new ArrayList<>();
 		for (int keyword : tokenBugMap.keySet()) {
 			ArrayList<Integer>  bugIDs= tokenBugMap.get(keyword);
 			ArrayList<Integer> tokenSourceList=new ArrayList<>();
@@ -100,12 +103,44 @@ public class Mapper {
 				}
 			}
 			//System.out.println(keyword+"  "+ MiscUtility.listInt2Str(tokenSourceList));
-			tokenSourceMap.add(keyword + ":" + MiscUtility.listInt2Str(tokenSourceList));
+			List.add(keyword + ":" + MiscUtility.listInt2Str(tokenSourceList));
+			tokenSourceMap.put(keyword, tokenSourceList);
 		}
-		System.out.println(tokenSourceMap);
-		ContentWriter.writeContent(tokenSourceFile, tokenSourceMap);
+		System.out.println(List);
+		ContentWriter.writeContent(tokenSourceFile, List);
 		System.out.println("Done!!!!!!!!");
+		return tokenSourceMap;
 	}
+	
+	public  void CreateSourceToTokenMap(HashMap<Integer, ArrayList<Integer>> tokenSourceMap, String SourceTokenFile)
+	{
+		ArrayList<String> SourceTokenList=new ArrayList<>();
+		HashMap<Integer, ArrayList<Integer>> SourceTokenMap=new HashMap<>();
+		for(int key:tokenSourceMap.keySet())
+		{
+			ArrayList<Integer> sourceList=tokenSourceMap.get(key);
+			for(int Sid:sourceList)
+			{
+				ArrayList<Integer> list=new ArrayList<>();
+				if(SourceTokenMap.containsKey(Sid))
+				{
+					list=SourceTokenMap.get(Sid);
+					list.add(key);
+				}
+				else
+				{
+					list.add(key);
+				}
+				SourceTokenMap.put(Sid, list);
+			}
+		}
+		for(int Sid:SourceTokenMap.keySet())
+		{
+			SourceTokenList.add(Sid+":"+MiscUtility.listInt2Str(SourceTokenMap.get(Sid)));
+		}
+		ContentWriter.writeContent(SourceTokenFile, SourceTokenList);
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -119,7 +154,8 @@ public class Mapper {
 		
 		
 		obj.bugSourceMap=obj.LoadBugKeywordMap("./data/Bug-ID-Keyword-ID-Mapping.txt");
-		obj.CreateTokenSouceFileMap(obj.tokenBugMap,obj.bugSourceMap, "./data/FinalMap/TokenSourceMapTrainset"+train+".txt");
+		obj.tokenSourceMap=obj.CreateTokenSouceFileMap(obj.tokenBugMap,obj.bugSourceMap, "./data/FinalMap/TokenSourceMapTrainset"+train+".txt");
+		obj.CreateSourceToTokenMap(obj.tokenSourceMap, "./data/FinalMap/SourceTokenMapTrainset"+train+".txt");
 	}
 
 	
