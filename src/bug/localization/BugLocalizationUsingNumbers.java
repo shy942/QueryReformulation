@@ -8,6 +8,7 @@ import bug.locator.provide.MasterBLScoreProvider;
 import simi.score.calculator.CosineSimilarity;
 import utility.ContentLoader;
 import utility.ContentWriter;
+import utility.CosineSimilarity2;
 import utility.MiscUtility;
 import bug.locator.provide.*;
 import simi.score.calculator.*;
@@ -135,7 +136,7 @@ public class BugLocalizationUsingNumbers {
 				}
 			}
 			
-			ContentWriter.writeContent("./data/Results/finalResultTest1Aug12.txt", finalResult);
+			ContentWriter.writeContent("./data/Results/finalResultTest1Aug13.txt", finalResult);
 		}
 		//obj.TestingFileBugLocatorResult("./data/buglocator/test1Result.txt",finalResult);
 		//do this once
@@ -230,8 +231,10 @@ public class BugLocalizationUsingNumbers {
     		double tf=sortedHashMap.get(key);
     		//double normalizedTF=a+(1-a)*(tf/maxTF);
     		double normalizedTF=tf/maxTF;
+    		CosineSimilarity2 cs1 = new CosineSimilarity2();
+    		double cosineSimScore=cs1.Cosine_Similarity_Score(String.valueOf(key), String.valueOf(queryID));
     		
-    		double cosineSimScore=CosineSimilarity.similarity(String.valueOf(key), String.valueOf(queryID));
+    		//double cosineSimScore=CosineSimilarity.similarity(String.valueOf(key), String.valueOf(queryID));
     		//System.out.println("----------------------------"+cosineSimScore+" "+normalizedTF+" "+(normalizedTF*cosineSimScore));
     		normalizedResult.put(key, cosineSimScore);
     	}
