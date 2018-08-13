@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import config.StaticData;
 import utility.ContentLoader;
+import utility.ContentLoaderQR;
 import utility.ContentWriter;
 import utility.FileMapLoader;
 import utility.MiscUtility;
@@ -72,8 +73,8 @@ public class SourceCodeTokenPointerMaker {
 		for (int fileKey : this.keyFileMap.keySet()) {
 			String fileURL = this.keyFileMap.get(fileKey);
 			String fileName = new File(fileURL).getName();
-			String filePath = this.sourceDir + "/" + fileName;
-			ArrayList<String> keywords = ContentLoader.getAllKeywords(filePath);
+			String filePath = this.sourceDir + "\\" + fileName;
+			ArrayList<String> keywords = ContentLoader.getDocTokensAll(filePath);
 			ArrayList<Integer> tempIDs = new ArrayList<>();
 			for (String keyword : keywords) {
 				if (keywordIDMap.containsKey(keyword)) {
@@ -89,7 +90,8 @@ public class SourceCodeTokenPointerMaker {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String sourceDir = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL";
+		String sourceDir = "E:\\PhD\\Data\\ProcessedSourceMethodLevel";
+		//String sourceDir = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL";
 				//"./data/ExampleSourceCodeFilesFiltered";
 		String idSrcFile = "./data/changeset-pointer/ID-SourceFile.txt";
 		new SourceCodeTokenPointerMaker(sourceDir, idSrcFile)
