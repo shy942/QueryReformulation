@@ -142,7 +142,7 @@ public class MiscUtility {
 	
 	public static String listInt2Str(ArrayList<Integer> items) {
 		String temp = new String();
-		for (int d : items) {
+		for (Integer d : items) {
 			temp += d + " ";
 		}
 		return temp.trim();

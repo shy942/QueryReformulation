@@ -6,6 +6,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Locale;
 
+import javax.net.ssl.SSLEngineResult.HandshakeStatus;
+
 import stemmer.Stemmer;
 import utility.ContentLoader;
 import utility.ContentLoaderQR;
@@ -16,12 +18,19 @@ public class SourceCodeMethodLevelStemm {
 
 	public HashMap <String, String>sourceContentMethod;
 	public HashMap<String, String> sourceContent;
+	public HashMap<String, ArrayList<String>> processedContent;
+	
+	HashMap<String, Integer> IDkeywordMap;
+	HashMap<String, Integer> IDSourceMap;
 	Stemmer stemmer;
 	ArrayList<String> stopwords;
-	public SourceCodeMethodLevelStemm(String metInPath, String inPath)
+	public SourceCodeMethodLevelStemm(String metInPath, String inPath, String IDkeywordAddress, String IDSourceAddress)
 	{
 		this.sourceContentMethod=this.LoadContent(metInPath);
 		this.sourceContent=this.LoadContent(inPath);
+		this.processedContent=new HashMap<>();
+		this.IDkeywordMap=this.loadHashMap(IDkeywordAddress);
+		this.IDSourceMap=this.loadHashMap(IDSourceAddress);
 		this.stemmer = new Stemmer();
 		this.loadStopWords();
 	}
@@ -34,10 +43,11 @@ public class SourceCodeMethodLevelStemm {
         //For Mac
 		//new SourceCodeMethodLevelStemm().PreprocessMethodLevelFiles("/Users/user/Documents/workspace-Sep16/QueryReformulation/data/ExampleSourceCodeFilesSortedContents/");
 		//For Windows
-		SourceCodeMethodLevelStemm obj=new SourceCodeMethodLevelStemm("C:\\Users\\Mukta\\Dropbox\\WorkinginHome\\SCAM\\QueryReformulation\\data\\ExampleSourceCodeFilesMethodLevel\\","E:\\PhD\\Data\\ProcessedSourceForBL\\");
+		SourceCodeMethodLevelStemm obj=new SourceCodeMethodLevelStemm("C:\\Users\\Mukta\\Dropbox\\WorkinginHome\\SCAM\\QueryReformulation\\data\\ExampleSourceCodeFilesMethodLevel\\","E:\\PhD\\Data\\ProcessedSourceForBL\\",".\\data\\ID-Keyword.txt",".\\data\\changeset-pointer\\ID-SourceFile.txt");
 	    //MiscUtility.showResult(10, obj.sourceContentMethod);
 	    //MiscUtility.showResult(10, obj.sourceContent);
-	    obj.ProcessContent(obj.sourceContentMethod, "E:\\PhD\\Data\\ProcessedSourceMethodLevel\\");
+	    obj.processedContent=obj.ProcessContent(obj.sourceContentMethod, "E:\\PhD\\Data\\ProcessedSourceMethodLevel\\");
+	    obj.ConvertToNumber();
 	}
 
 	public HashMap<String, String> LoadContent(String folderPath)
@@ -54,7 +64,7 @@ public class SourceCodeMethodLevelStemm {
 		return hm;
 	}
 	
-	public void ProcessContent(HashMap <String, String>sourceContentMethod, String outFolder)
+	public HashMap<String, ArrayList<String>> ProcessContent(HashMap <String, String>sourceContentMethod, String outFolder)
 	{
 		
 		for(String Sid:sourceContentMethod.keySet())
@@ -72,31 +82,34 @@ public class SourceCodeMethodLevelStemm {
 			int index = nthOccurrence(filePathOld, '/', 7);
 			 filePathOld = filePathOld.substring(index+1, filePathOld.length());
 			String filePathNew=filePathOld.replaceAll("/", ".");
-			
+	
+			int noOfMethod=Integer.valueOf(spilter[1]);
+			if(noOfMethod>0){
 			if(this.sourceContent.containsKey(filePathNew.trim()))
 				{
 					ArrayList<String> outContent=new ArrayList<>();
-					System.out.println(filePathNew);
-				
-			
-					int noOfMethod=Integer.valueOf(spilter[1]);
-					if(noOfMethod>0){
-				    for(int i=0;i<noOfMethod;i++)
+					//System.out.println(filePathNew);
+					for(int i=2;i<spilter.length-2;i++)
 				    {
-				    	String methodContent=spilter[i+2];
-				    	//System.out.println(methodContent);
+				    	String methodContent=spilter[i];
+				    	if(!methodContent.equalsIgnoreCase(""))
+				    	{
+				    	//System.out.println(i);
 						String afterStopWordRemoval=this.StopWordRemover(methodContent);
 						//System.out.println(afterStopWordRemoval);
 						
 						String ProcessedContent=this.performNLP(afterStopWordRemoval);
 						//System.out.println(ProcessedContent);
 						outContent.add(ProcessedContent);
+				    	}
 				    }
+					this.processedContent.put(filePathNew, outContent);
 				    ContentWriter.writeContent(outFolder+filePathNew, outContent);
 				}
-				}
+			}
 			}
 		}
+		return this.processedContent;
 	}
 	
 	protected ArrayList<String> splitContent(String content) {
@@ -159,4 +172,63 @@ public class SourceCodeMethodLevelStemm {
 	        nthOccurrence(s, index + 1, c, curr + 1, expected);
 	}
 
+	   public HashMap<String, Integer> loadHashMap(String address)
+	    {
+		   HashMap<String, Integer> temp=new HashMap<>();
+	        ArrayList<String> lines=ContentLoader.getAllLinesList(address);
+	        for(String line:lines)
+	        {
+	        	//System.out.println(line);
+	        	String[] spilter=line.split(":");
+	        	if(spilter.length>1)
+	        	{
+	        		int id=Integer.valueOf(spilter[0]);
+	        		String word=spilter[1].trim();
+	        		temp.put(word, id);
+	        	}
+	        	
+	        }
+	        return temp;
+	    }
+	
+	public void ConvertToNumber()
+	{
+		ArrayList <String> outputContent=new ArrayList<>();
+		for(String Sid:this.processedContent.keySet())
+		{
+			if(this.IDSourceMap.containsKey(Sid.trim())&&this.processedContent.containsKey(Sid.trim()))
+			{
+				int sourceIntId=this.IDSourceMap.get(Sid);		
+				String contentEachSource="";
+				for(String pcontent:this.processedContent.get(Sid))
+				{
+					int found=0;
+					ArrayList<Integer> content=new ArrayList<>();
+					String[] spilter=pcontent.split(" ");
+					for(int i=0;i<spilter.length;i++)
+					{
+						String key=spilter[i].trim();
+						if(this.IDkeywordMap.containsKey(key))
+						{
+							content.add(this.IDkeywordMap.get(key));
+							//System.out.print(key+" "+this.IDkeywordMap.get(key));
+							found++;
+							
+						}
+					}
+					if(found!=0)
+					{
+						System.out.println(found+" "+content.size());
+						String output=MiscUtility.listInt2Str(content);
+						contentEachSource+=output+",";
+						
+					}
+				}
+				//System.out.println(sourceIntId+": "+output);
+				outputContent.add(sourceIntId+":"+contentEachSource);
+			}
+		
+		}
+		ContentWriter.writeContent(".\\data\\Sid-MatchWord.txt", outputContent);
+	}
 }
