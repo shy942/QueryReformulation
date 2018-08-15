@@ -1,1 +1,1 @@
-idl helper job idl helper job period collect garbag job show progress view
+idle helper system job idle helper system job periodically collecting garbage job showing progress view

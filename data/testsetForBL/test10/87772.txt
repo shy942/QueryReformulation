@@ -1,1 +1,1 @@
-view mgmt javadoc view layout tag intend implem view layout tag interfac intend implem client docum break
+view mgmt javadoc view layout tagged intended implemented view layout tagged interface intended implemented clients change document breaking change

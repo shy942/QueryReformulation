@@ -1,1 +1,1 @@
-workbench memento lose text data deseri child call text child memento set text data memento serial child type memento serial text data text data text data serial deseri memento
+workbench memento loses text data deserialization create child called text create child memento set text data memento serialize create child type memento serialize text data text data text data longer serializing deserializing memento

@@ -1,1 +1,1 @@
-kei bind prefer combo set visibl item count int keybind prefer set visibl combo item reason combo set combo set visibl item count call combo
+key bindings preference combo set visible item count int keybinding preference set number visible combo items reasonable bug combo set combo set visible item count called combos

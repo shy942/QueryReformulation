@@ -1,1 +1,1 @@
-regres layout move progress indic left progress indic move stream left obscur statu
+regression layout moved progress indicator left progress indicator moved stream left obscuring status

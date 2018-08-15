@@ -1,1 +1,0 @@
-open folder project action project descrip reader open folder project action project descrip reader workspac project descrip string solution

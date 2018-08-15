@@ -1,1 +1,1 @@
-common navig common navig inher viewer bind enhanc describ abil common navig viewer instanc inher action content bind viewer
+common navigator common navigator inherited viewer bindings enhancement describes ability common navigator viewer instances inherit action content bindings viewers

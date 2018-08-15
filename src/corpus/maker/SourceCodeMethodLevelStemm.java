@@ -3,6 +3,7 @@ package corpus.maker;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Locale;
 
@@ -46,7 +47,7 @@ public class SourceCodeMethodLevelStemm {
 		SourceCodeMethodLevelStemm obj=new SourceCodeMethodLevelStemm("C:\\Users\\Mukta\\Dropbox\\WorkinginHome\\SCAM\\QueryReformulation\\data\\ExampleSourceCodeFilesMethodLevel\\","E:\\PhD\\Data\\ProcessedSourceForBL\\",".\\data\\ID-Keyword.txt",".\\data\\changeset-pointer\\ID-SourceFile.txt");
 	    //MiscUtility.showResult(10, obj.sourceContentMethod);
 	    //MiscUtility.showResult(10, obj.sourceContent);
-	    obj.processedContent=obj.ProcessContent(obj.sourceContentMethod, "E:\\PhD\\Data\\ProcessedSourceMethodLevel\\");
+	    obj.processedContent=obj.DoNotProcessContent(obj.sourceContentMethod, "E:\\PhD\\Data\\NotProcessedSourceMethodLevel\\");
 	    obj.ConvertToNumber();
 	}
 
@@ -63,6 +64,50 @@ public class SourceCodeMethodLevelStemm {
 		}
 		return hm;
 	}
+	
+	public HashMap<String, ArrayList<String>> DoNotProcessContent(HashMap <String, String>sourceContentMethod, String outFolder)
+	{
+		
+		for(String Sid:sourceContentMethod.keySet())
+		{
+			String content=sourceContentMethod.get(Sid);
+			String[] spilter=content.split("\n");
+			if(spilter.length>2)
+			{
+			//line 1 contains full path
+			//line 2 contains no. of methods
+			//line 3 to line n contain method contents.
+			String filePathOld=spilter[0];
+			
+			//System.out.println(filePathOld);
+			int index = nthOccurrence(filePathOld, '/', 7);
+			 filePathOld = filePathOld.substring(index+1, filePathOld.length());
+			String filePathNew=filePathOld.replaceAll("/", ".");
+			//if(filePathNew.equalsIgnoreCase("org.eclipse.jface.viewers.IStructuredSelection.java")){
+			int noOfMethod=Integer.valueOf(spilter[1]);
+			if(noOfMethod>0){
+			if(this.sourceContent.containsKey(filePathNew.trim()))
+				{
+					ArrayList<String> outContent=new ArrayList<>();
+					//System.out.println(filePathNew);
+					for(int i=2;i<spilter.length;i++)
+				    {
+				    	String methodContent=spilter[i];
+				    	if(!methodContent.equalsIgnoreCase(""))
+				    	{
+				    		outContent.add(methodContent);
+				    	}
+				    }
+					this.processedContent.put(filePathNew, outContent);
+				    ContentWriter.writeContent(outFolder+filePathNew, outContent);
+				}
+			}
+			}
+			//}
+		}
+		return this.processedContent;
+	}
+	
 	
 	public HashMap<String, ArrayList<String>> ProcessContent(HashMap <String, String>sourceContentMethod, String outFolder)
 	{
@@ -82,18 +127,19 @@ public class SourceCodeMethodLevelStemm {
 			int index = nthOccurrence(filePathOld, '/', 7);
 			 filePathOld = filePathOld.substring(index+1, filePathOld.length());
 			String filePathNew=filePathOld.replaceAll("/", ".");
-	
+			//if(filePathNew.equalsIgnoreCase("org.eclipse.jface.viewers.IStructuredSelection.java")){
 			int noOfMethod=Integer.valueOf(spilter[1]);
 			if(noOfMethod>0){
 			if(this.sourceContent.containsKey(filePathNew.trim()))
 				{
 					ArrayList<String> outContent=new ArrayList<>();
 					//System.out.println(filePathNew);
-					for(int i=2;i<spilter.length-2;i++)
+					for(int i=2;i<spilter.length;i++)
 				    {
 				    	String methodContent=spilter[i];
 				    	if(!methodContent.equalsIgnoreCase(""))
 				    	{
+				    		
 				    	//System.out.println(i);
 						String afterStopWordRemoval=this.StopWordRemover(methodContent);
 						//System.out.println(afterStopWordRemoval);
@@ -108,6 +154,7 @@ public class SourceCodeMethodLevelStemm {
 				}
 			}
 			}
+			//}
 		}
 		return this.processedContent;
 	}
@@ -198,10 +245,14 @@ public class SourceCodeMethodLevelStemm {
 		{
 			if(this.IDSourceMap.containsKey(Sid.trim())&&this.processedContent.containsKey(Sid.trim()))
 			{
-				int sourceIntId=this.IDSourceMap.get(Sid);		
+				int sourceIntId=this.IDSourceMap.get(Sid);	
+				//if(sourceIntId==2190){
 				String contentEachSource="";
+				int containContent=0;
+				String ppcontent= this.processedContent.get(Sid).get(0);
 				for(String pcontent:this.processedContent.get(Sid))
 				{
+					
 					int found=0;
 					ArrayList<Integer> content=new ArrayList<>();
 					String[] spilter=pcontent.split(" ");
@@ -213,7 +264,7 @@ public class SourceCodeMethodLevelStemm {
 							content.add(this.IDkeywordMap.get(key));
 							//System.out.print(key+" "+this.IDkeywordMap.get(key));
 							found++;
-							
+							containContent=1;
 						}
 					}
 					if(found!=0)
@@ -225,9 +276,9 @@ public class SourceCodeMethodLevelStemm {
 					}
 				}
 				//System.out.println(sourceIntId+": "+output);
-				outputContent.add(sourceIntId+":"+contentEachSource);
+				if(containContent==1)outputContent.add(sourceIntId+":"+contentEachSource);
 			}
-		
+			//}
 		}
 		ContentWriter.writeContent(".\\data\\Sid-MatchWord.txt", outputContent);
 	}

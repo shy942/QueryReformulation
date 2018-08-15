@@ -1,1 +1,1 @@
-face default tool shouldn abstract valu access getter setter declar abstract
+face default tool shouldn abstract values accessed getter setter declare abstract

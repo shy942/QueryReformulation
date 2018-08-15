@@ -1,1 +1,1 @@
-workbench hide toolbar window menu discus hide toolbar option window menu
+workbench add hide toolbars window menu bug discussion hide toolbar option window menu

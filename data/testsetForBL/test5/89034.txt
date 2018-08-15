@@ -1,1 +1,1 @@
-activ mgmt activ javadoc issu trigger point manag deprec workbench activ helper deprec delet activ categori prefer javadoc
+activity mgmt activities javadoc issues trigger point manager deprecated workbench activity helper deprecated deleted activity category preference javadoc

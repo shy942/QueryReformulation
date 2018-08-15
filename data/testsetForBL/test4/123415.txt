@@ -1,1 +1,1 @@
-command handler action set handler work workbench window open version build java perspect ctrl shift open type perform work navig menu ctrl shift ctrl shift broken ctrl alt ring bell doesn work
+commands handlers action set handlers working workbench windows open version build java perspective ctrl shift open type perform works fine navigate menu ctrl shift ctrl shift broken ctrl alt ring bell doesn work

@@ -1,1 +1,1 @@
-kei bind press ctrl close editor list press ctrl open list open editor easili switch build list appear press ctrl close travers list editor
+key bindings pressing ctrl closes editor list pressing ctrl opens list open editors easily switching build list appearing pressing ctrl closes traverse list editors

@@ -1,1 +1,1 @@
-face font registri default font record leak font font registri default font record creat font font font data font record creat font font data dispos origin font font record creat
+face font registry default font record leaks font font registry default font record creates font font font data create font record creates font font data disposes original font font record created

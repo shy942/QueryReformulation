@@ -1,1 +1,1 @@
-kei bind toggl mark occurr shortcut broken mileston work
+key bindings toggle mark occurrences shortcut broken milestone work

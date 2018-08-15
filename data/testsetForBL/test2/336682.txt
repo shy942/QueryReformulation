@@ -1,1 +1,1 @@
-error handl support swallow excep catch claus fail final propag excep
+error handling test support swallows exception catch clause fail finally propagate exception

@@ -1,1 +1,0 @@
-updat org startup schema descrip org startup speak org core runti compat remov

@@ -1,1 +1,1 @@
-compat remov unnecessari servic factori defini handler servic menu servic creat servic factori exten defini remov plugin xml file
+compatibility remove unnecessary service factory definitions handler services menu services longer created service factories extension definitions removed plugin xml file

@@ -1,1 +1,1 @@
-common navig action provid
+common navigator action provider

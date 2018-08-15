@@ -1,1 +1,1 @@
-workbench workbench extend intern servic provid build head compon framework intern workbench left extend servic provid intern remov note doug discuss make workbench extend adapt provid command handler servic
+workbench workbench extend internal service provider build latest head move component framework internals workbench left extending service provider internal removed note doug discussing making workbench extend adaptable provide command handler services

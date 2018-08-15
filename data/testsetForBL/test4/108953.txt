@@ -1,1 +1,1 @@
-content type prefer entri content type pref unsort build base content type pref entri content type pane unsort expect sort alphabet level file associ pane sort alphabet order defin content type exten
+content types preferences entries content types pref unsorted build based eclipse content types pref entries content types pane unsorted expect sorted alphabetically level file associations pane sorted alphabetically order defined content type extension

@@ -145,9 +145,9 @@ public class Mapper {
 		// TODO Auto-generated method stub
 
 		long start=System.currentTimeMillis();
-		int train=1;
-		Mapper obj=new Mapper("./data/trainset/Train1.txt");
-		obj.bugKeywordMap=obj.LoadBugKeywordMap("./data/trainset/Train1.txt");
+		int train=2;
+		Mapper obj=new Mapper("./data/trainset/Train2.txt");
+		obj.bugKeywordMap=obj.LoadBugKeywordMap("./data/trainset/Train2.txt");
 		obj.CreateTokenBugMap(obj.bugKeywordMap);
 		long end=System.currentTimeMillis();
 		System.out.println("Time elapsed:"+(end-start)/1000+" s");

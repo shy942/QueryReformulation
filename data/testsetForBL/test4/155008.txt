@@ -1,1 +1,1 @@
-contribu improv javadoc action bar updat action bar javadoc action bar updat action bar accur client remov item menu tool bar statu manag method propag workbench method call global action menu retarget action bar set global action handler
+contributions improve javadoc action bars update action bars javadoc action bars update action bars accurate clients add remove items menu tool bar status managers call method propagated workbench method called global action menu retargeted action bars set global action handler

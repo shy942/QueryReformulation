@@ -1,1 +1,1 @@
-command radio doesn work creat attach radio radio save radio group weren set reset
+commands radio doesn work created attachment radio radio saving radio groups weren set reset

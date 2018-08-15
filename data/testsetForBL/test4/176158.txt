@@ -1,1 +1,1 @@
-tool flicker tool support org jface window tool tool flicker mous move elem mous tool hidden tool unus mous hover item visibl position tooltip stabl attach plugin show issu
+tool flickers tool support org eclipse jface window tool problem tool flickers mouse moved element mouse move tool hidden tool unusable check mouse hovering item visibility position tooltip stable attach plugin showing issue

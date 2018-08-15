@@ -1,1 +1,0 @@
-updat pom version creat attach platform pom version

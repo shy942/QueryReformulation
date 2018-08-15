@@ -1,1 +1,1 @@
-global action breadcrumb project select java project breadcrumb press context menu workbench menu invok project action
+global actions breadcrumb delete project select java project breadcrumb press delete delete context menu delete workbench menu invoke delete project action

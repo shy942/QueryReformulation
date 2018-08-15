@@ -1,1 +1,1 @@
-undo exist resourc restor delet project content read warn undo restor content check project select undo resourc overwrot code project undo resourc invalid resourc exist replac content keep backup
+undo delete check existence resources restored deleted projects content read warning undo delete restore content checked projects selected undo delete resources overwrote code empty projects undo delete resources invalid resources exist replacing content keeping backup

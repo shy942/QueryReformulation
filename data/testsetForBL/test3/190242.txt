@@ -1,1 +1,1 @@
-snippet demonstr inlin tree viewer summari case
+snippet demonstrate inline editing tree viewer summary test case

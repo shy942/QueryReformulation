@@ -1,1 +1,1 @@
-provid shorthand creat grid layout creat layout take lot code util class face simplifi matter
+provide shorthand creating grid layouts creating layouts takes lot code add utility classes face simplify matter

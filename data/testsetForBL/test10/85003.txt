@@ -1,1 +1,1 @@
-workbench regres initi window position put window screen window size close resolu open workspac initi window bound displai occur window size close screen resolu
+workbench regression initial window position puts window screen window size close resolution open eclipse workspace initial window bounds display occurs window size close screen resolution

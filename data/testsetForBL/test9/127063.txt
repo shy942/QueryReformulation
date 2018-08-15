@@ -1,1 +1,1 @@
-kei bind doc javadoc refer bind servic clean bind servic refer workbench workbench window workbench site refer bind servic
+key bindings doc javadoc references binding service cleaned binding service referred workbench workbench window workbench site reference binding service

@@ -1,1 +1,1 @@
-doc view mgmt workbench view registri editor registri workbench view registri return editor registri workbench return view registri workbench
+doc view mgmt workbench view registry editor registry workbench view registry returns editor registry workbench returns view registry workbench

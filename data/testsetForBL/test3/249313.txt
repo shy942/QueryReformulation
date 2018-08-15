@@ -1,1 +1,1 @@
-tab properti properti tab label exten point properti tab mark translat creat attach properti tab plugin tab label patch label exten point properti tab mark translat attach patch
+tabbed properties properties tabbed label extension point property tab marked translatable created attachment properties tabbed plugin tab label patch label extension point property tab marked translatable attached patch

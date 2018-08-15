@@ -1,1 +1,1 @@
-org workbench compat fragment properti
+org eclipse workbench compatibility fragment properties

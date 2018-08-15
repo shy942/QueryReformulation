@@ -1,1 +1,1 @@
-common navig project explor drop hierarchi view drag drop elem hierarchi view outlin packag explor project explor drop disabl cursor
+common navigator project explorer drop hierarchy view drag drop element hierarchy view outline package explorer project explorer drop disabled cursor

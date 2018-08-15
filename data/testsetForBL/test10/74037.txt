@@ -1,1 +1,1 @@
-view mgmt schema org elem factori specif class attribut schema elem factori declar type java base org elem factori
+view mgmt schema org eclipse element factories specific class attribute schema element factories declared type java based org eclipse element factory

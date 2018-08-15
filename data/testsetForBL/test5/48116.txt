@@ -1,1 +1,1 @@
-prefer file associ prefer export modifi file associ editor xml export prefer launch workspac import prefer file associ prefer default valu
+preferences file associations preferences exported modify file associations add ant editor xml export preferences launch eclipse workspace import preferences file associations preference default values

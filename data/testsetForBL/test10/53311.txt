@@ -1,1 +1,1 @@
-kei bind doesn work version build
+key bindings doesn work version build

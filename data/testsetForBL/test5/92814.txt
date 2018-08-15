@@ -1,1 +1,1 @@
-api wizard menu set enabl boolean delet wizard menu public void set enabl boolean enabl method appear delet cycl break scoop
+api wizard menu set enabled boolean deleted wizard menu public void set enabled boolean enabled method appears deleted cycle breaking change scoop

@@ -1,1 +1,1 @@
-viewer tooltip support deleg style cell label provid build step reproduc deleg style cell label provid support font provid color provid tooltip method defin cell label provid deleg deleg style cell label provid style label provid nice standard api
+viewers add tooltip support delegating styled cell label provider build steps reproduce delegating styled cell label provider support font provider color provider tooltip methods defined cell label provider delegate delegating styled cell label provider styled label provider nice standard api

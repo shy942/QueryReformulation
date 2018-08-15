@@ -1,1 +1,1 @@
-marker resolu exten point broken exten point org marker resolu broken marker registri resolu return
+marker resolution extension point broken change extension point org eclipse ide marker resolution broken marker registry resolutions return

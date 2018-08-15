@@ -1,1 +1,0 @@
-deprec warn help properti deprec simpl properti simpl deprec renam swt simpl

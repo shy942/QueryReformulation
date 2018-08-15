@@ -1,1 +1,1 @@
-contribu miss label toolbar menu contribu user agent mozilla compat window build identifi org menu exten point label toolbar open custom perspect dialog toolbar label action set reproduc step reproduc plugin command templat
+contributions missing label toolbar menu contribution user agent mozilla compatible windows build identifier org eclipse menus extension point label toolbar open customize perspective dialog toolbar label action set reproducible steps reproduce create plugin command template

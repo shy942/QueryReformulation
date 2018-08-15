@@ -1,1 +1,1 @@
-kei bind conflict emac keybind scheme local command start switch keybind scheme emac work pref sort bind conflict command content assist entri bind alt conflict bind command hit
+key bindings conflicts emacs keybindings scheme locale command start switch keybindings scheme emacs click work bug pref sort binding conflicts command content assist entries binding alt conflicting bindings commands hit

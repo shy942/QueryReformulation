@@ -1,1 +1,1 @@
-face provid customiz tool face level elem face request customiz tooltip support provid common class provid solid base tooltip implement
+face provide customizable tool face level elements face request customizable tooltip support providing common class providing solid base tooltip implementations

@@ -1,1 +1,0 @@
-command registri start code bind persist lead start

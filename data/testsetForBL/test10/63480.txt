@@ -1,1 +1,1 @@
-view mgmt standalon view ignor titl arg build titl argum standalon view
+view mgmt standalone views ignore title arg build title argument add standalone view

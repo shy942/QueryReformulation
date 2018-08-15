@@ -1,1 +1,1 @@
-kei bind work consol launch testcas debug mode consol type enter expect testcas completion actual testcas read run completion testcas public static void main string arg int count read count println input count char catch excep auto gener catch block print stack trace
+key bindings longer works console launch testcase debug mode console type enter expected testcase completion actual testcase read runs completion testcase public static void main string args int count system read count system println input count chars catch exception auto generated catch block print stack trace

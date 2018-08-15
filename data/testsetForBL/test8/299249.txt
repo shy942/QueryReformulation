@@ -1,1 +1,1 @@
-common navig resourc wrapper content label provid test creat attach patch
+common navigator add resource wrapper content label provider tests created attachment patch

@@ -1,1 +1,1 @@
-command handler inspect doesn work keybind inspect displai work
+commands handlers inspect doesn work keybindings inspect display work

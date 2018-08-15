@@ -1,1 +1,1 @@
-command registri radio properli initi registri radio configur contribut command read registri thrown radio privat final void activ member final radio activ activ set boolean activ initi activ provid null read activ activ null
+commands registry radio properly initialize registry radio configured contributed command read registry thrown radio private final void activate member final radio active active set boolean active initial active provide null read active active null

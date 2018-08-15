@@ -1,1 +1,1 @@
-undo resourc oper halt linux guess resourc action oper pop dialog block autom test
+undo delete resources operation halts bug test linux guess change delete resource action call operation pops dialog blocks automated testing

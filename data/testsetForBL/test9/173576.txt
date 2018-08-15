@@ -1,1 +1,1 @@
-contribu menu toolbar elem support visibl toolbar elem
+contributions menus toolbar element support visible add toolbar element

@@ -1,1 +1,1 @@
-contribu command contribu item gener menu meaning config elem string
+contributions command contribution item generated menus meaningful config element string

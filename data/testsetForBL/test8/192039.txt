@@ -1,1 +1,1 @@
-snippet demonstr list viewer usag
+snippet demonstrate list viewer usage

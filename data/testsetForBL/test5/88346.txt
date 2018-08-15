@@ -1,1 +1,1 @@
-face workbench jar enabl platform plug ship jar build involv remov runti elem plugin xml replac jar elem build properti replac sourc xyz jar kei sourc build properti unpack fals elem platform featur xml
+face workbench jars enable platform plug ins ship jars build bug change involves removing runtime element plugin xml replacing jar element build properties replacing source xyz jar key source build properties adding unpack false element platform feature xml

@@ -1,1 +1,1 @@
-command org command exten point tell user implem subclass creat attach command schema patch schema read class subclass org core command class provid subclass sugges automat
+commands org eclipse commands extension point tells user implement subclass created attachment commands schema patch schema reads class subclass org eclipse core commands class provide subclass suggestion automatically

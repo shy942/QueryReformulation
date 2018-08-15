@@ -1,1 +1,1 @@
-contribu singl java editor leak org workbench code introduc popup menu extend order leav action deleg instanc aliv refer editor action code introduc life cycl platform action deleg instanc creat open editor action deleg dispos call
+contributions single java editor leaked org eclipse workbench code introduced popup menu extender order bug leaves action delegate instances alive refer editor action code introduced life cycle problem platform action delegate instances created opened editor action delegate dispose called

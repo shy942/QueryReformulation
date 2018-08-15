@@ -1,1 +1,1 @@
-control travers int event creat attach implem recurs behavior travers kei event locat
+control traverse int event created attachment implement recursive behavior traversal key events locations

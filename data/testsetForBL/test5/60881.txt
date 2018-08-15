@@ -1,1 +1,1 @@
-command ctrl work ctrl jave editor work
+commands ctrl work ctrl jave editor work

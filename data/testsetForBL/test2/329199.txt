@@ -1,1 +1,1 @@
-error editor implem set focu error editor implem set focu doesn set focu break spec problem kei bind activ ctrl
+error editor implement set focus error editor implement set focus doesn set focus breaks spec problems wrong key binding activations ctrl

@@ -1,1 +1,1 @@
-reposi trim elem minim stack drag position workbench
+reposition trim elements move minimized stack dragging position workbench

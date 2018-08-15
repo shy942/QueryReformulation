@@ -1,1 +1,1 @@
-command javadoc issu command exten point file icon command undocu
+commands javadoc issues commands extension point wrong top file icon command undocumented

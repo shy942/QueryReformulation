@@ -1,1 +1,1 @@
-statushandl deselect text
+statushandling deselect text

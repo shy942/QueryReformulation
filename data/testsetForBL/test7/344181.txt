@@ -1,1 +1,1 @@
-compat emac keybind overrid default keybind emac keybind don treat conflict overrid default scheme version org keybind test bind persist past bind emac
+compatibility emacs keybindings override default keybindings emacs keybindings don treated conflict override default scheme version org eclipse keybinding tests binding persistence test test paste binding emacs

@@ -1,1 +1,1 @@
-view mgmt packag explor messag clip set packag explor hierarch mode org jdt intern core observ packag explor input titl bar packag explor progress narrow observ packag titl bar clip indic clip mislead think context
+view mgmt package explorer message clipped set package explorer hierarchical mode org eclipse jdt internal core observe package explorer input title bar package explorer progressively narrower observe package title bar clipped indication clipped mislead thinking context

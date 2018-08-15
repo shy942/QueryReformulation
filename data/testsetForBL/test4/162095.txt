@@ -1,1 +1,1 @@
-workbench default icon quick access default icon quick access node elem aaron
+workbench add default icons quick access add default icons quick access nodes elements aaron

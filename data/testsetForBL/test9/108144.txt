@@ -1,1 +1,1 @@
-undo action handler refer adapt request undo redo action handler provid adapt describ info trigger action provid progress monitor undo context workbench answer null unknown request pass adapt request don recogn class specif editor provid text viewer respond undo manag
+undo action handlers refer adapter requests undo redo action handlers provide adaptable describes info triggering action provide progress monitor undo context workbench answer null unknown requests pass adapter request don recognize class specific editor provide text viewer responding undo manager

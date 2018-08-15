@@ -1,1 +1,1 @@
-snippet snippet tabl layout layout packag
+snippets move snippet table layout layout package

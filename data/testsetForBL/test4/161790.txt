@@ -1,1 +1,1 @@
-undo copi resourc oper invalid sourc resourc copi resourc oper consid valid undo valid resourc descrip resourc overwritten copi resourc target exist resourc sourc exist lose data copi copi restor overwritten copi invalid sourc resourc
+undo copy resources operation invalidate source resources copy resources operation considers valid undo valid resource descriptions resources overwritten copy resources target exist resources source longer exist lose data copy delete copies restore overwritten copy invalid source resources longer

@@ -1,1 +1,0 @@
-remov workaround newtablook tag

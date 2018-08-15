@@ -1,1 +1,1 @@
-common navig common navig select reveal expand select elem link editor option enabl file select project explor expand plain file differ expand case compil translat behaviour annoi packag explor resourc navig project view expand select elem
+common navigator common navigator select reveal expand selected elements link editor option enabled file selected project explorer expanded plain file difference expandable case compilation unit translation unit behaviour annoying package explorer resource navigator projects view expand selected element

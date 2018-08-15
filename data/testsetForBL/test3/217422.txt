@@ -1,1 +1,0 @@
-global action open perspect start fresh workspac window window close java perspect open button menu doesn work bring window

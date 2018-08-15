@@ -1,1 +1,1 @@
-compat view descriptor implem restor correctli view defin restor attribut restor return true fals
+compatibility view descriptor implement restorable correctly view define restorable attribute restorable return true false

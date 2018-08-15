@@ -1,1 +1,1 @@
-face local selec transfer support face layer core common navig plugin meant client local selec transfer type contain layer depend layer version layer
+face local selection transfer supported face layer core common navigator plugin meant client local selection transfer type contained layer dependencies layer version layer

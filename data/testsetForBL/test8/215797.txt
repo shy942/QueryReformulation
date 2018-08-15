@@ -1,1 +1,1 @@
-view mgmt workbench part extend org view restor view case view show dynam resourc restart requir view restor previou workbench restart exclud view restor set hidden addition boolean flag current org view defin view hidden restart reason marku
+view mgmt workbench parts extends org eclipse views restorable views cases view showing dynamic resource restart require views restored previous workbench restart exclude view restored set hidden adding additional boolean flag current org eclipse views defines view hidden restart reasonable markus

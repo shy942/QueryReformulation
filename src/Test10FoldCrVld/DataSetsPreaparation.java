@@ -27,17 +27,20 @@ public class DataSetsPreaparation {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//Divide data sets
-		DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","/Users/user/Documents/Ph.D/2018/Data/ProcessedBugData/");
+		//For MAc
+		//DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","/Users/user/Documents/Ph.D/2018/Data/ProcessedBugData/");
+		//For Windows
+		DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\Data\\BugDataNew\\");
 		
 		//Dont do this now//obj.DataPreparation("./data/BugCorpus/allBug.txt","./data/GitInfoFile2.txt","./data/bugIDs.txt");
 		
 		
-		obj.LoadBugData();
+		obj.bugContentHM=obj.LoadBugData();
 		ArrayList<String> foldList=obj.FoldPreparation();
 		obj.TrainAndTestSetPrep(foldList);
 	}
       
-	public void LoadBugData()
+	public HashMap<String, String> LoadBugData()
 	{
 		File[] files = new File(this.bugInFolder).listFiles();
 		
@@ -48,6 +51,7 @@ public class DataSetsPreaparation {
 			this.bugContentHM.put(fileName, content);
 		
 		}
+		return this.bugContentHM;
 		//MiscUtility.showResult(10, this.bugContentHM);
 	}
 	
@@ -55,9 +59,11 @@ public class DataSetsPreaparation {
 	{
 		for(String bugID: testIDs)
 		{
+			if(this.bugContentHM.containsKey(bugID)){
 			String content=this.bugContentHM.get(bugID);
 			String outFile=bugOutFolder+"test"+step+"/"+bugID+".txt";
 			ContentWriter.writeContent(outFile, content);
+			}
 		}
 	}
 	

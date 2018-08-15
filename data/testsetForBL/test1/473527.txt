@@ -1,1 +1,0 @@
-copyright org jface exampl databind

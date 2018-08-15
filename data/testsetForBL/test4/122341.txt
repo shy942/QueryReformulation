@@ -1,1 +1,0 @@
-model memento reject doc memento alphanumer string accept kei legitim illegitim doc specif

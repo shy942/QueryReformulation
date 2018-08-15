@@ -1,1 +1,1 @@
-workbench part workbench open editor call activ fals unmaxim current view bring workbench window window stack workbench minim debug view method open editor select stack frame debug view select stack frame result debug event unexpect behavior workbench
+workbench parts workbench open editor called activate false unmaximizes current view brings workbench window front window stack workbench minimized debug view method open editor selected stack frame debug view selects stack frame result debug events unexpected behavior workbench bug

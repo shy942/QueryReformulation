@@ -1,1 +1,1 @@
-compat debug action global debug toolbar enabl prematur action global debug toolbar enabl startup disabl start disabl
+compatibility debug actions global debug toolbar enabled prematurely actions global debug toolbar enabled startup click disabled start disabled

@@ -1,1 +1,1 @@
-product brand elem product platform configur build product product window imag gener workbench platform configur info primari featur platform configur mechan specif updat featur stori org core runti compat plugin depend remov compon org
+product branding elements product platform configuration build product product window image generic workbench platform configuration info primary features platform configuration mechanism specific update feature story org eclipse core runtime compatibility plugin dependency remove components org eclipse

@@ -1,1 +1,1 @@
-global action open resourc dialog doesn filter class file build press ctrl shift open open resourc dialog type class file workspac class dialog class file exist case simpl program default packag java class directori dialog java
+global actions open resource dialog doesn filters class files build press ctrl shift open open resource dialog type class file workspace class dialog class file exists case simple program default package java class directory dialog find java

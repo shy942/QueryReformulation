@@ -1,1 +1,1 @@
-dialog provid gener info pop dialog place user info pop dialog dialog written scratch share common code util class creat dialog reduc code ensur common feel characterist common dialog background colour window list deactiv shell close resiz rememb size
+dialogs provide generic info pop dialog places user create info pop dialog dialogs written scratch share common code utility class creating dialogs reduce code ensure common feel characteristics common dialogs background colour top window list deactivating shell closes resizable remembers size

@@ -1,1 +1,1 @@
-dialog error dialog resiz behaviour improv resiz behaviour error dialog lack constraint resiz dialog arbitrarili minimum size calcul dynam compon visibl visisbl detail field upper left position fix field resiz
+dialogs error dialog resize behaviour improved resize behaviour error dialog lacks constraints resize dialog arbitrarily minimum size calculated dynamically components visible visisble details field upper left position fixed field resizes

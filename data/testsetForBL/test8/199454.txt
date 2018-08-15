@@ -1,1 +1,1 @@
-command provid sourc variabl properti tester perspect activ sourc activ perspect variabl restrict view menu specif perspect visibl variabl activ equal org view equal visibl
+commands provide source variable property tester perspective active sources active perspective variable restrict view menus specific perspective visible variable active equals org eclipse test view equals visible

@@ -1,1 +1,1 @@
-wizard descrip set messag set messag error warn displai widget descrip code place wizard dialog updat descrip messag avoid set descrip messag separ widget displai error warn messag descrip set
+wizard description set message set messages errors warnings displayed widget description code place wizard dialog update description message avoid setting description message separate widget displaying error warning messages description set

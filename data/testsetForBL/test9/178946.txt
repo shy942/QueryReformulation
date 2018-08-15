@@ -1,1 +1,1 @@
-viewer column viewer editor deactiv event hold inform editor deactiv propos constant instanc field action type
+viewers column viewer editor deactivation event hold informations editor deactivated propose constants instance field action type

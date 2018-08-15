@@ -1,1 +1,1 @@
-command command callback leak regist text listen command callback class store instanc var extern action manag leak action text listen regist listen remov remov action text listen method
+commands command callback leaking registered text listeners command callback class stored instance var external action manager leaking action text listeners register listeners removed remove action text listener method call

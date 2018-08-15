@@ -1,1 +1,0 @@
-model servic elem bind bindingt bug

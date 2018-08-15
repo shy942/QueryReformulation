@@ -1,1 +1,1 @@
-dock view hard editor area creat applic editor area creat view undock drag mous workbench window hard bring workbench window drag dark grai border appear workbench window releas mous button view jump workbench window editor area enabl doesn occur
+dock views hard editor area created application editor area created views undocked dragging mouse workbench window hard bring workbench window dragging dark gray border appears workbench window release mouse button view jumps workbench window editor area enabled bug doesn occur

@@ -1,1 +1,1 @@
-command improv menu command coverag creat attach start coverag report
+commands improve menu command test coverage created attachment starting test coverage report

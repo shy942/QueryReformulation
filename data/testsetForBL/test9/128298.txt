@@ -1,1 +1,1 @@
-viewer sorter compar overridden superclass viewer compar class superclass viewer sorter viewer sorter overrid compar viewer compar superclass implement compar compar call compar compar
+viewer sorter compare overridden superclass viewer comparator class superclass viewer sorter viewer sorter overrides compare viewer comparator superclass implementation comparator compare called comparator compare

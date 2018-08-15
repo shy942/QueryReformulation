@@ -1,1 +1,1 @@
-wizard perspect menu separ shortcut build debug perspect open file menu separ project
+wizards perspectives menu separators shortcuts build debug perspective open file menu separators project

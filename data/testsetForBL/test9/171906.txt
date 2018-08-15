@@ -1,1 +1,1 @@
-data bind saniti pass
+data binding sanity pass

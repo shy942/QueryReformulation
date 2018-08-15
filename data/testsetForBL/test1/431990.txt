@@ -1,1 +1,0 @@
-render sett visibl properti fals toolbar ignor render set visibl properti tool bar item fals stai visibl toolbar

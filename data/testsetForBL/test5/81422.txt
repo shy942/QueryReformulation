@@ -1,1 +1,1 @@
-contribu regres action deleg dispos build regres
+contributions regression test action delegate dispose build regression test bug

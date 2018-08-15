@@ -1,1 +1,1 @@
-navig deprec resourc navig replac common navig framework
+navigator deprecate resource navigator replaced common navigator framework

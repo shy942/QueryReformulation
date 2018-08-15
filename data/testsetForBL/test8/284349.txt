@@ -1,1 +1,1 @@
-org menu exten contribu factori set initi data declar throw core excep subclass throw core excep overwr method
+org eclipse menus extension contribution factory set initialization data declare throws core exception subclasses longer throw core exceptions overwriting method

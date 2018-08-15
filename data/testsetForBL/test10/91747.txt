@@ -1,1 +1,1 @@
-view mgmt editor mgmt workbench control refer exist interfac build workbench control javadoc regist global action code action servic code regist popup menu code action servic code regist selec provid code selec servic code option interfac action servic
+view mgmt editor mgmt workbench create control refers existent interfaces build workbench create control javadoc register global actions code action service code register popup menus code action service code register selection provider code selection service code optional interface action service

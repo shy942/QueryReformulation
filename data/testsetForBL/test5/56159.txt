@@ -1,1 +1,0 @@
-kei bind short cut kei pref annot shortcut kei prefer default appl annot

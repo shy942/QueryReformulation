@@ -1,1 +1,1 @@
-org navig resourc friend org discourag access warn code resourc mgmt action provid protect imag descriptor imag descriptor string rel path return workbench plugin imag descriptor rel path ear
+org eclipse navigator resources friend org eclipse ide discouraged access warning code resource mgmt action provider protected image descriptor image descriptor string relative path return workbench plugin image descriptor relative path ears

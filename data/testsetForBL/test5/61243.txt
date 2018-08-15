@@ -1,1 +1,1 @@
-remov depend core runti compat plugin refer plugin descriptor
+remove dependence core runtime compatibility plugin reference plugin descriptor

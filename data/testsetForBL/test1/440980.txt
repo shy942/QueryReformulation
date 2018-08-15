@@ -1,1 +1,0 @@
-view action org intern view action delet

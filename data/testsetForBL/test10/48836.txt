@@ -1,1 +1,1 @@
-kei bind multi stroke kei delai set delai multistrok kei long enter error second attach
+key bindings multi stroke key delay set delay multistroke key long enter error milliseconds attachment

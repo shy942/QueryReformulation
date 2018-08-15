@@ -1,1 +1,1 @@
-kei bind pref sort user column user column sort order custom set
+key bindings pref sort user column user column sorted order custom settings

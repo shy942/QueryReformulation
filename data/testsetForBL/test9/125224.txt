@@ -1,1 +1,1 @@
-project persist properti tester build org intern model project persist properti tester duplic function core resourc properti tester remov migrat core implement function test properti resourc map worri compat
+delete project persistent property tester build org eclipse internal ide model project persistent property tester duplicates functionality core resources property tester removed migrated core implementation functionality testing properties resource mappings delete worrying compatibility bug

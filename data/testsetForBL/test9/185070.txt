@@ -1,1 +1,1 @@
-kei bind pref remov bind remov selec press remov bind remov selec select restor
+key bindings pref remove binding removes selection pressing remove binding removes selection select restore change

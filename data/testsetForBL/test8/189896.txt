@@ -1,1 +1,1 @@
-command handler servic snapshot context asser fail snapshot context fill sourc account null accept null valu
+commands handler service snapshot context assertion failed snapshot context filled sources account null accept null values

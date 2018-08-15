@@ -1,1 +1,1 @@
-tab properti getter setter current tab case rememb current activ tab lifecycl select function
+tabbed properties getters setters current tab cases remember current active tab lifecycle select functionality

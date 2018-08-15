@@ -1,1 +1,0 @@
-compat ctrl close activ editor prepar program file deep breakpoint file close open editor open file main method start debug session debug view stack frame file ctrl editor file close activ editor file

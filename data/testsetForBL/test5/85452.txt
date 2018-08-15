@@ -1,1 +1,1 @@
-regres backdrop miss perspect close close perspect main blank backdrop text button explain open perspect
+regression backdrop missing perspectives closed close perspectives main blank backdrop text button explaining open perspective

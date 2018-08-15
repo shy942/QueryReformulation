@@ -1,1 +1,1 @@
-face memori leak org jface window window shell window dispos font listen remov font registri solv method close chang line shell null return true font listen null face resourc font registri remov listen font listen font listen null shell dispos return true
+face memory leak org eclipse jface window window shell window disposed font change listener removed font registry solve problem method close changed lines shell null return true font change listener null face resources font registry remove listener font change listener font change listener null shell disposed return true

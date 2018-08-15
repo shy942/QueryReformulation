@@ -1,1 +1,1 @@
-kei bind remov word kei assist menu kei assist menu item word infront entri dialog ellips suffici cue simpli menu item kei assist
+key bindings remove word key assist menu key assist menu item word infront entries dialog ellipses sufficient cue simply call menu item key assist

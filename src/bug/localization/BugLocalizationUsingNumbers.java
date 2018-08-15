@@ -24,7 +24,6 @@ public class BugLocalizationUsingNumbers {
 	public String IDKeywordAddress;
 	
     public HashMap<Integer, ArrayList<Integer>> trainMapTokenSource;
-    //public HashMap<Integer, ArrayList<Integer>> trainMapST;
     public HashMap<Integer, ArrayList<Integer>> testSet;
     public HashMap<Integer, ArrayList<Integer>> bugIdKeywordMap;
     public  HashMap<String,Integer> IdsourceMap;
@@ -115,7 +114,7 @@ public class BugLocalizationUsingNumbers {
     {
     	
     	obj.trainMapTokenSource=obj.loadHashMap(obj.trainMapTokenSourceAddress);
-    	//obj.trainMapST=obj.loadHashMap(obj.trainMapSTA);
+    	
 		obj.testSet=obj.loadHashMap(obj.testSetAddress);
 		obj.bugIdKeywordMap=obj.loadHashMap(obj.bugIDKeywordMapAddress);
 		
@@ -129,11 +128,12 @@ public class BugLocalizationUsingNumbers {
 			//if(buglocatorRESULT.containsKey(queryID))
 			{	
 				HashMap<Integer,Double> resultBugLocator=new HashMap<>();
-				if(obj.buglocatorRESULT.containsKey(queryID)) resultBugLocator=obj.convertSIDtoNum(queryID,obj.buglocatorRESULT);
+				//if(obj.buglocatorRESULT.containsKey(queryID)) resultBugLocator=obj.convertSIDtoNum(queryID,obj.buglocatorRESULT);
 			
 				HashMap<Integer,Double> resultMyTool=obj.findBugForEachQuery(queryID);
 			
-				HashMap<Integer, Double> resultMap=obj.CombileScoreMaker(queryID,resultBugLocator, resultMyTool);
+				HashMap<Integer, Double> resultMap=resultMyTool;
+						//obj.CombileScoreMaker(queryID,resultBugLocator, resultMyTool);
 				String result=queryID+",";
 				int count=0;
 				for(int key:resultMap.keySet())
@@ -144,11 +144,9 @@ public class BugLocalizationUsingNumbers {
 				}
 			}
 			
-			ContentWriter.writeContent("./data/Results/finalResultTest1Aug14.txt", finalResult);
+			ContentWriter.writeContent("./data/Results/finalResultTest1Aug15myTool.txt", finalResult);
 		}
-		//obj.TestingFileBugLocatorResult("./data/buglocator/test1Result.txt",finalResult);
-		//do this once
-		//obj.convertInputFile("./data/buglocator/eclipseoutput.txt", "./data/changeset-pointer/ID-SourceFile.txt");
+		
     }
    
     
@@ -176,8 +174,7 @@ public class BugLocalizationUsingNumbers {
     		if(!tempCombineResult.containsKey(key))tempCombineResult.put(key, resultBugLocator.get(key));
     	}
     	HashMap<Integer, Double> sortedCombineResult=MiscUtility.sortByValues(tempCombineResult);
-    	//System.out.println(sortedCombineResult);
-    	//System.out.println(queryID+" : "+count);
+    
     	return sortedCombineResult;
     }
     
@@ -266,16 +263,16 @@ public class BugLocalizationUsingNumbers {
     	String queryContent=MiscUtility.listInt2Str(keywordList);
     	
     	if(this.SidMatchWoord.containsKey(Sid)){
-    	ArrayList<String> SidMatch=this.SidMatchWoord.get(Sid);
-    	//System.out.println(Sid+" "+SidMatch);
-    	for(String content:SidMatch)
-    	{
-    		double cosineSimScore=CosineSimilarity.similarity(queryContent, content);
+    		ArrayList<String> SidMatch=this.SidMatchWoord.get(Sid);
+    		//System.out.println(Sid+" "+SidMatch);
+    		for(String content:SidMatch)
+    		{
+    			double cosineSimScore=CosineSimilarity.similarity(queryContent, content);
     		
-    		if(cosineSimScore>maxCosineSim) maxCosineSim=cosineSimScore;
-    	}
-    	}
+    			if(cosineSimScore>maxCosineSim && cosineSimScore>0.0) maxCosineSim=cosineSimScore;
     	
+    		}
+    	}
     	//System.out.println("maxcosineSimScore     " +maxCosineSim);
     	return maxCosineSim;
 	
@@ -330,36 +327,23 @@ public class BugLocalizationUsingNumbers {
 		return this.IdKeywordMap;
     	
     }
-    public HashMap<String, ArrayList<String>> LoadSourceCodes(String folderPath)
-    {
-    	HashMap<String, ArrayList<String>> hm = new HashMap<>();
-    	File[] files = new File(folderPath).listFiles();
-		HashMap<String, ArrayList<String>> docMap = new HashMap<>();
-		for (File file : files) {
-			if(!file.getName().equals(".DS_Store")){
-			    ArrayList<String> content=ContentLoader.getAllLinesList(file.getAbsolutePath());
-				hm.put(file.getName(), content);
-			}
-		}
-		MiscUtility.showResult(10, hm);
-    	return hm;
-    }
+   
 
     
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset1.txt", "./data/FinalMap/SourceTokenMapTrainset1.txt","./data/testset/test1.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","./data/changeset-pointer/ID-SourceFile.txt","./data/ID-Keyword.txt","./data/Sid-MatchWord.txt");
-		String bugReportFolder = "./data/testsetForBL/test1/";
+		BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset2.txt", "./data/FinalMap/SourceTokenMapTrainset2.txt","./data/testset/test2.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","./data/changeset-pointer/ID-SourceFile.txt","./data/ID-Keyword.txt","./data/Sid-MatchWord.txt");
+		String bugReportFolder = "./data/testsetForBL/test2/";
 		//For Mac
 		//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
 		//ForWindows
-		String sourceFolder = "E:\\PhD\\Data\\ProcessedSourceMethodLevel\\";
+		String sourceFolder = "E:\\PhD\\Data\\NotProcessedSourceMethodLevel\\";
 		String goldsetFile = "./data/gitInfoNew.txt";
 		
-		obj.buglocatorRESULT=new MasterBLScoreProvider(sourceFolder, bugReportFolder, goldsetFile)
-				.produceBugLocatorResults();
+		//obj.buglocatorRESULT=new MasterBLScoreProvider(sourceFolder, bugReportFolder, goldsetFile)
+				//.produceBugLocatorResultsForMyTool();
 	
 		obj.bugLocator(obj);
 		

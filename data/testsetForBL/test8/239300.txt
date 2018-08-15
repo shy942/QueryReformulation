@@ -1,1 +1,1 @@
-tab properti underlin miss tab label tab focu keyboard access requir navig keyboard tab properti view support capabl mistakenli remov code underlin tab label tab focu ident underlin view editor tab focu
+tabbed properties underline missing tab label tab focus keyboard accessibility requires navigate keyboard tabbed properties view supports capability bug mistakenly removed code underlines tab label tabs focus identical underline view editor tabs focus

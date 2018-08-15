@@ -1,1 +1,1 @@
-compat handler selec function comput time switch view handler selec function comput org intern handler legaci handler servic take time open close view call method cycl open view close view
+compatibility handler selection function compute time switching views handler selection function compute org eclipse internal handlers legacy handler service takes time opening closing views calls method cycle open view close view

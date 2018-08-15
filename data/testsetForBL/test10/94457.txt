@@ -1,1 +1,1 @@
-workbench part regres toggl debug view restor properli workbench debug perspect logic structur toggl restart workbench toggl remain start debug session
+workbench parts regression toggles debug views restore properly exit workbench debug perspective logical structures toggle restart workbench toggle remains start debug session

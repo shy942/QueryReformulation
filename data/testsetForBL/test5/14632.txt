@@ -1,1 +1,1 @@
-string field editor valid strategi mechan work properli valid strategi variabl text control hook listen perform valid method set valid strategi int set variabl unhook rehook listen pass valid strategi constructor strageti valid kei press
+string field editor validation strategy mechanism work properly validate strategy variable text control hook listeners perform validation method set validation strategy int sets variable unhook rehook listeners passing validation strategy constructor stragety validation key press

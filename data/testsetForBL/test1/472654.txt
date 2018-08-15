@@ -1,1 +1,0 @@
-remov redund type paramet java higher platform

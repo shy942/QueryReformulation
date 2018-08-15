@@ -1,1 +1,1 @@
-undo undo support navig navig view support undo redo action rena
+undo undo support navigator navigator view support undo redo actions delete rename move

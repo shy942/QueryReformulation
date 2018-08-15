@@ -1,1 +1,1 @@
-kei bind keybind reassign action list editor kei bind workbench team ctrl purpos ctrl bound action kei bind plan reassign displai ctrl ctrl alt reassign ctrl eras assign ctrl switch editor
+key bindings keybinding reassignments action list editors good key binding workbench team ctrl purpose ctrl bound delete action good key binding plan reassign display ctrl ctrl alt reassign ctrl erase assign ctrl switch editors

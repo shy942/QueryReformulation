@@ -32,7 +32,8 @@ public class ChangesetMaker {
 						}
 					}
 					// now save the files
-					String outputFile = "/Users/user/Documents/Ph.D/2018/Data/changeset/" + bugID + ".txt";
+					//String outputFile = "/Users/user/Documents/Ph.D/2018/Data/changeset/" + bugID + ".txt";
+					String outputFile = "E:\\PhD\\Data\\changeset\\" + bugID + ".txt";
 					ContentWriter.writeContent(outputFile, cfiles);
 
 					i = i + cfCount + 1;

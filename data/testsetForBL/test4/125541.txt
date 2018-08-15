@@ -1,1 +1,1 @@
-command servic site command servic workbench window site site multi editor site
+add command service sites add command service workbench window site site multi editor site

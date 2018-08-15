@@ -1,1 +1,1 @@
-workbench remov depend xerc remov depenc xerc workbench
+workbench remove dependencies xerces remove depencies xerces workbench

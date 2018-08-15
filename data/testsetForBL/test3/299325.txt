@@ -1,1 +1,1 @@
-common navig plugin xml configur pipelin test
+common navigator add plugin xml configuration pipeline tests

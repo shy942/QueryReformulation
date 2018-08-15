@@ -1,1 +1,1 @@
-intro abil overrid string
+intro ability override string

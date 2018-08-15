@@ -1,1 +1,1 @@
-command handler ctrl ctrl don work ctrl ctrl don work java editor navig annot action main menu work keybind work search view ctrl ctrl trigger kind content assist guess auto activ insert docum
+commands handlers ctrl ctrl don work ctrl ctrl don work java editors navigate annotation action main menu works keybindings work search view ctrl ctrl triggers kind content assist guess auto activation inserted document

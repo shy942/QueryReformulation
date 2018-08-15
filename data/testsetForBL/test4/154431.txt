@@ -1,1 +1,1 @@
-editor mgmt navig broken close editor editor close open file close editor file navig tool bar button bring work editor close
+editor mgmt navigation broken closed editor editors closed open file close editor file navigation tool bar button bring works editor closed

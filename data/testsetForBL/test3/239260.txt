@@ -1,1 +1,1 @@
-mac kei bind keybind cocoa ctrl kei command platform return cocoa
+mac key bindings keybindings wrong cocoa ctrl key command platform returns cocoa

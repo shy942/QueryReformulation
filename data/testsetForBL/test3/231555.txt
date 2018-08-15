@@ -1,1 +1,1 @@
-editor mgmt editor histori shouldn store invalid item editor histori remov exist entri item menu logic includ shouldn item remov
+editor mgmt editor history shouldn store invalid items editor history removes existant entries items menu logic included add shouldn add items removed bug

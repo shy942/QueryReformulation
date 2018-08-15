@@ -1,1 +1,0 @@
-ppc support swt launcher resourc initi creat clone packag ppc support build platform refer swt launcher resourc elem

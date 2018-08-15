@@ -1,1 +1,1 @@
-prefer color font prefer hook context progress view color font prefer
+preferences colors fonts preference hook contexts progress view colors fonts preference

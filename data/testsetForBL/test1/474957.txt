@@ -1,1 +1,0 @@
-case tear org test har call super tear method

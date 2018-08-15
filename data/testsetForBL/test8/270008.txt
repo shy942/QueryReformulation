@@ -1,1 +1,1 @@
-common navig abil extend bind inher bind tag requir extend common navig instanc includ bind abil addition bind follow http bug org bug cgi inher bind addition
+common navigator ability extend bindings inherits bindings tag requirement extend common navigator instance including bindings ability add additional bindings follow https bugs eclipse org bugs bug cgi inherited bindings longer add additional

@@ -1,1 +1,1 @@
-common navig selec view fail load regres
+common navigator problem selection view fail load regression bug comment

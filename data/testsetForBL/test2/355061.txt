@@ -1,1 +1,1 @@
-command compat target popup menu contribu appear file menu step open file menu juno java packag item list creat repositori mylyn reus platform wizard
+commands compatibility targeted popup menu contribution appears file menu steps open file menu juno java package item list creating repository eclipse mylyn reuse platform wizard

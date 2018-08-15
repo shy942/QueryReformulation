@@ -1,1 +1,1 @@
-startup doc nitpick org startup exten point tini nitpick exampl elem
+startup doc nitpicking org eclipse startup extension point tiny nitpick examples elements

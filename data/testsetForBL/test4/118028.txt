@@ -1,1 +1,1 @@
-command misc ident entri uncategor uncategor categori prefer ident entri entri auto gener action contribu task entri
+commands misc identical entries uncategorized uncategorized category preference identical entries entries auto generated action contributions add task entries

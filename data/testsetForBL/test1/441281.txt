@@ -1,1 +1,0 @@
-workbench logger view registri workbench plugin log

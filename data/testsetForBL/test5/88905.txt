@@ -1,1 +1,1 @@
-prefer import export wizard advoc epf exten support lost move pref dialog wizard default exten prefer file protect static final string epf
+preference import export wizards advocate epf extension support lost moving pref dialog wizard default extension preferences files protected static final string epf

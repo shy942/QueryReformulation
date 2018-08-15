@@ -1,1 +1,1 @@
-common navig edit text widget common navig filter dialog attach imag text content edit open common navig select view menu filter content tab type text dialog
+common navigator editable text widget common navigator filter dialog attached image text content editable open common navigator select view menu filters content tab type text bottom dialog

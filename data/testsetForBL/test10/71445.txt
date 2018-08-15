@@ -1,1 +1,1 @@
-kei bind emac kei bind sugges nice emac mode kei bind editor drop close standard emac bind switch buffer
+key bindings emacs key binding suggestion nice emacs mode key binding editor drop close standard emacs binding switch buffer

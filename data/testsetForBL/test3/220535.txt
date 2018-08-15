@@ -1,1 +1,0 @@
-theme color label prefer color defin face configur workbench attach snippet jdt workbench defin global prefer defin label view color sugges appear enabl color label view default option defin search remov decid configur enabl configur

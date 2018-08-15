@@ -1,1 +1,1 @@
-common navig regres project explor remov selec set broken work project explor remov selec set start workspac switch resourc perspect close project explor open navig simpl project navig project explor selec set project explor remov broken
+common navigator regression project explorer removes selection setting broken works project explorer removes selection setting start workspace switch resource perspective close project explorer open navigator create simple project navigate project explorer selection set project explorer removed broken

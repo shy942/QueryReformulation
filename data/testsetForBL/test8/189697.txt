@@ -1,1 +1,1 @@
-command doc incomplet exten point descrip org handler incomplet exten point descrip org handler miss descrip attribut class caveat support paramet class deprec favor child elem class attribut command child elem class child paramet attribut paramet
+commands doc incomplete extension point description org eclipse handlers incomplete extension point description org eclipse handlers missing descriptions attribute class caveat support parameter class deprecated favor child element class attribute command child element class child parameter attributes parameter

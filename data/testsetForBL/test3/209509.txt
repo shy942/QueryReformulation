@@ -1,1 +1,1 @@
-statu handl addition statu adapt binari compat class subclass client addition field org statushandl statu adapt org statushandl statu adapt binari compat specif class explicit class subclass client
+status handling addition status adapter binary compatible class subclassed clients addition fields org eclipse statushandlers status adapter org eclipse statushandlers status adapter binary compatible specification class explicitely class subclassed clients

@@ -1,1 +1,1 @@
-trim open close window leak trim area open workbench window close drag util trim drop target arrai list hold trim layout trim area
+trim opening closing window leaks trim areas open workbench window close drag util trim drop target array list holds trim layout trim areas

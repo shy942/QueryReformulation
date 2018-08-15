@@ -1,1 +1,1 @@
-progress workbench site progress servic show job cancel start workspac project open java file choos context menu team annot confirm quick diff provid histori view cursor reproduc close histori view close perspect choos revision hide revision ruler context menu
+progress workbench site progress service showing job canceled started workspace check project open java file choose context menu team annotation confirm quick diff provider history view cursor reproduce close history view closed perspectives choose revisions hide revision change ruler context menu

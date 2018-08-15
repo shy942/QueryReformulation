@@ -1,1 +1,1 @@
-editor mgmt test creat attach test patch reason break editor icon depend bundl icon
+editor mgmt create tests bug created attachment bug tests patch reasons test breaks editor icon test test dependant bundle icon

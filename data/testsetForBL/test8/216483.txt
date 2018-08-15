@@ -1,1 +1,1 @@
-command contribu handler proxi refresh elem updat load handler moment handler implem elem updat load handler proxi elem updat startup handler proxi refresh instanti real handler implem elem updat
+commands contributions handler proxy refresh element updater loading handler moment handler implements element updater loaded handler proxy element updated startup handler proxy refresh instantiates real handler implements element updater

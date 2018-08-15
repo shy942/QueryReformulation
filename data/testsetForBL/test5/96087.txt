@@ -1,1 +1,1 @@
-heap statu remov special action kyrsoft memori monitor
+heap status remove special action kyrsoft memory monitor

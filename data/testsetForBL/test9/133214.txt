@@ -1,1 +1,1 @@
-field assist requir field color hard requir field color subtl cue lieu show error statu messag field
+field assist required field color hard required field color subtle good cue lieu showing error status message fields empty bug

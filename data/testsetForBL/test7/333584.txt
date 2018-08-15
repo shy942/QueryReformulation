@@ -1,1 +1,1 @@
-global action save work broken bad text editor open start editor save work
+global actions save work broken bad bug text editor open exit eclipse start editor change save work

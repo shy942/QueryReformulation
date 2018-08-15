@@ -1,1 +1,0 @@
-avoid unnecessari redraw properti font handler avoid unnecessari redraw properti font handler workaround add lot unnecessari redraw

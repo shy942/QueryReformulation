@@ -1,1 +1,1 @@
-servic support servic locat creation support parent servic locat creat declar servic support servic locat reuabl compon depend injec instanti suppli servic
+services support service locator creation support bug parented service locators created declarative services supported service locator create reuable component dependency injection instantiator supply services

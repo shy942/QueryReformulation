@@ -1,1 +1,1 @@
-kei bind messag gener incorrect messag content plugin org workbench initi creat clone build messag kei incorrect properti file unus messag matc messag org intern kei assist dialog org osgi miss messag matc messag org intern kei assist dialog
+key bindings messages generated incorrect message content plugin org eclipse workbench bug initially created clone bug build message key incorrect properties file unused message matches message org eclipse internal key assist dialog org eclipse osgi missing message matches message org eclipse internal key assist dialog

@@ -1,1 +1,1 @@
-filter tree widget constructor hit wall access client data construct custom tree viewer subclass filter tree implem tree viewer reason filter tree creat widget constructor static field access client instanc tree viewer execut
+filtered tree create widgets constructor bug hit wall access client data constructing custom tree viewer subclassing filtered tree implementing create tree viewer reason filtered tree creates widgets constructor static fields access client instance create tree viewer executed

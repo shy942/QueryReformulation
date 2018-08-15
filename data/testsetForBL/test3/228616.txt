@@ -1,1 +1,1 @@
-kei bind view menu command open view menu dialog occur view menu command open view menu dialog step focu view view menu press ctrl window prefer ctrl expect open prefer menu open view menu workbench window fix don break ctrl dialog open type quick outlin
+key bindings view menu command open view menu dialog occurs view menu command open view menu dialog steps focus view view menu check pressing ctrl window preferences ctrl expected opens preferences menu opens view menu workbench window fixing don break ctrl dialogs open type quick outline

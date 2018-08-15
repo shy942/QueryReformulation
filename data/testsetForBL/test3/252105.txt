@@ -1,1 +1,1 @@
-javadoc warn build src plugin org platform doc isv org workbench org workbench action constant java warn tag refer org intern action warn
+javadoc warnings builds src plugins org eclipse platform doc isv org eclipse workbench eclipse org eclipse workbench action constants java warning tag reference org eclipse internal action warning

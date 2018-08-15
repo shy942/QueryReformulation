@@ -1,1 +1,1 @@
-properti view properti sheet typo javadoc class descrip properti sheet slection selec
+properties view property sheet typo javadoc class description property sheet slection selection

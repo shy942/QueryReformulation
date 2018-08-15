@@ -1,1 +1,1 @@
-dialog set encod group label match prefer label set encod dialog group box titl text file encod unfortun label prefer gener editor write text file encod dialog
+dialogs edit set encoding group label match preference label edit set encoding dialog group box title text file encoding unfortunate label preferences general editors write text file encoding dialog

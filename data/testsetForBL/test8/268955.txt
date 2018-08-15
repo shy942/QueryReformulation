@@ -1,1 +1,1 @@
-command workbench command constant miss restric workbench command constant miss restric imposs futur constant noimplem interfac intend implem client noextend interfac intend extend client
+commands workbench command constants missing restrictions workbench command constants missing restrictions impossible future add constants add noimplement interface intended implemented clients noextend interface intended extended clients

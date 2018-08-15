@@ -1,1 +1,1 @@
-editor mgmt default editor unknown exten configur set gener file associ set editor unknown file type default editor open editor unknown file type default editor editor list editor
+editor mgmt default editor unknown extensions configuration setting general file associations set editor unknown file types default editor opened editor unknown file types default system editor editor list editors

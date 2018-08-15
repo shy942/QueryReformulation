@@ -1,1 +1,1 @@
-filena exten regist editor enter file exten file editor prefer editor exten point trail lookup work
+filenames extensions registering editors enter file extension file editor preference editors extension point add trailing lookup work

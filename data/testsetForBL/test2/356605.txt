@@ -1,1 +1,1 @@
-perform compil error stream perform test compil error
+performance test compile errors stream performance tests compile errors

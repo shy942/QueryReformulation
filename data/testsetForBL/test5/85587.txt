@@ -1,1 +1,1 @@
-save clean plan platform build prompt save unsav resourc clean prompt appear
+save clean test plan platform build prompt save unsaved resources clean prompt appears

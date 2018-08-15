@@ -1,1 +1,1 @@
-command text origin text start null reset null illeg argum excep
+commands text original text starts null reset null illegal argument exception

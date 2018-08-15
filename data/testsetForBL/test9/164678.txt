@@ -1,1 +1,1 @@
-prefer remov method replac string string undefin type string org workbench org intern prefer java
+preference remove method replace string string undefined type string org eclipse workbench eclipse org eclipse internal preference java

@@ -1,1 +1,0 @@
-remov unnecessari activ org test css core

@@ -1,1 +1,1 @@
-command perform investig start perform command attach stack trace startup time command support note bad profil perform degred start workbench platform load editor open resourc perspect default set open
+commands performance investigate start performance commands attach stack trace startup time commands support note bad profiler performance degredation started workbench platform loaded editors open resource perspective default settings open

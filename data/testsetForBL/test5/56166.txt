@@ -1,1 +1,1 @@
-default multipl tab editor tradition
+defaults multiple tabs editors traditional

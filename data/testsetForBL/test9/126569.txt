@@ -1,1 +1,1 @@
-field assist duplic javadoc decor field duplic paramet defini method decor field position int position decor field form data int paramet position javadoc method method paramet
+field assist duplicate javadoc decorated field eclipse duplication parameter definitions methods decorated field position int position decorated field create form data int describe parameter position javadoc method describe method describe parameter

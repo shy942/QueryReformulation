@@ -1,1 +1,1 @@
-review org core command oper comment come
+review org eclipse core commands operations comments coming

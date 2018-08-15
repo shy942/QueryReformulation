@@ -1,1 +1,1 @@
-deprec kei bind servic addition servic locat interfac nest slave context handler servic kei bind servic requir kei bind servic proxi code place site kei bind servic proxi call legaci kei bind servic simpli call handler servic context servic stuff
+deprecate key binding service addition service locator interface nested slave context handler services key binding service longer required good delete key binding service create proxy code place call site key binding service proxy called legacy key binding service simply calls handler service context service stuff

@@ -1,1 +1,1 @@
-contribu control elem visibl option org menu exten point build exten point org menu contribu custom control workbench toolbar control elem elem visibl control control visibl subel contribu context depend control close useless omis
+contributions control element visible option org eclipse menus extension point build extension point org eclipse menus contribution custom controls workbench toolbars control element elements visibility controls controlled visible subelement contribution context dependent controls close useless omission

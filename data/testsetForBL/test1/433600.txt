@@ -1,1 +1,0 @@
-dark provid reason platform default syntax color dark theme

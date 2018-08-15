@@ -1,1 +1,0 @@
-face color registri string return null color registri string return null spece javadoc

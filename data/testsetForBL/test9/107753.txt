@@ -1,1 +1,1 @@
-decor excep handl messag decor job improv appear decor manag disabl decor throw runti excep behavior error messag improv current messag excep decor improv messag woudl excep decor decor disabl
+decorators exception handling message decoration job improved appears decoration manager disable decoration throws runtime exception behavior good error message improved current message exception decorator improved message woudl exception decorator decorator disabled

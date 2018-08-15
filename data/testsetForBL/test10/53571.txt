@@ -1,1 +1,1 @@
-action set acceler int deprec method assign acceler keycod action assign acceler keycod eric
+action set accelerator int deprecated method assign accelerator keycode action assign accelerator keycode eric

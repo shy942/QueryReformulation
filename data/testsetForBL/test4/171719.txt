@@ -1,1 +1,1 @@
-memento memento extend function build step reproduc notic reus org memento suit name return list elem attribut name boolean boolean method util purpos set float extend memento interfac support
+memento memento extended add functionality build steps reproduce notice reusing org eclipse memento suit names returns list element attribute names boolean boolean method utility purposes set float extend memento interface support

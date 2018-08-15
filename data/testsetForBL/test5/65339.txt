@@ -1,1 +1,1 @@
-ast view fast view fix perspect closeabl
+ast view fast views fixed perspectives closeable

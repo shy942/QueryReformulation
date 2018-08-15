@@ -1,1 +1,1 @@
-compat dispos servic creat context dispos servic implem dispos interfac dispos servic creat context dispos context doesn dispos interfac servic retriev servic locat deleg context store return servic servic locat servic dispos servic locat dispos
+compatibility disposable services created context disposed services implement disposable interface disposed services created context disposed context doesn disposable interface services retrieved service locator delegated context store returned service service locator service disposed service locator disposed

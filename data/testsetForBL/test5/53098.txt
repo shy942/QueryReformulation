@@ -1,1 +1,1 @@
-kei bind kei bind servic bind kei action factori workbench action builder action action factori explicitli regist keybind servic bind ctrl alt shift doesn work wors kei doesn regist global action handler instal hardcod kei listen control react kei
+key bindings key binding service bind key action factory workbench action builder actions action factory explicitly registered keybinding service binding edit delete ctrl alt shift doesn work worse key doesn registered global action handler install hardcoded key listener control react key

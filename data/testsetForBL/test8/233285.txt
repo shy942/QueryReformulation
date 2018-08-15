@@ -1,1 +1,1 @@
-tab properti adopt tool tab properti plug tool enabl
+tabbed properties adopt tooling tabbed properties plug tooling enabled

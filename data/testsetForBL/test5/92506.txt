@@ -1,1 +1,0 @@
-undo oper remov undo redo error current default oper histori implement remov offend undo redo oper undo redo stack undo redo request undo context problem integr text refactor scenario refactor undo fail editor subsequ local correct behavior oper stack fail context flush oper multipl context correct step maintain integr undo redo stack context flush

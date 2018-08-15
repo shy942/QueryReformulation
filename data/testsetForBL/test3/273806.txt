@@ -1,1 +1,1 @@
-global action kei bind shortcut kei properti chang cmd mac cmd place mac properti select item shortcut kei properti mac kei alt enter window left
+global actions key bindings shortcut key properties changed cmd mac cmd places mac properties selected item change shortcut key properties eclipse mac key alt enter windows left

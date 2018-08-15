@@ -1,1 +1,1 @@
-migrat dialog sign content creat attach patch dialog intern provision packag access signer instal bundl org osgi intern provision verifi packag replac packag org osgi intern signedcont patch migrat org updat core bundl
+migrate dialog signed content created attachment patch dialog internal provisional package access signer installed bundles system org eclipse osgi internal provisional verifier package replaced package org eclipse osgi internal signedcontent patch migrates org eclipse update core bundle

@@ -1,1 +1,1 @@
-dialog support filter tree filter tree support bit set toolbar clear button
+dialogs support filtered tree filtered tree support bit set create toolbar clear button

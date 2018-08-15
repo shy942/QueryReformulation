@@ -1,1 +1,1 @@
-dialog titl area dialog fail properli recreat instanc reopen titl area dialog creat open close open instanc messag area properli check dispos access set warn messag throw excep dispos messag area updat time dialog open
+dialogs title area dialog fails properly recreate instance reopened title area dialog created opened closed opened instance message area properly checked disposal accessed set warning message throwing exception disposed message area updated time dialog opened

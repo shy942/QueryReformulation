@@ -1,1 +1,1 @@
-marker view doesn util adapt focu selec chang
+marker view doesn util adapter focus selection changed

@@ -1,1 +1,1 @@
-prefer word color label color descrip typo color label color descrip counter color color render counter view abil support color render counter view color label render counter info support
+preferences wording colored labels color descriptions typos colored labels color descriptions counter color color render counter views ability supported color render counter views colored labels render counter info supported

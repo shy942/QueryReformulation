@@ -1,1 +1,1 @@
-kei bind emac bind emac open file file buffer switch buffer conveni instanc file directori vis file directori leav keyboard difficult
+key bindings emacs binding emacs open file file buffer switch buffer convenient instance editing file directory visit file directory leaving keyboard eclipse difficult

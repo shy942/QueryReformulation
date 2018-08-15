@@ -1,1 +1,0 @@
-cvsignor platform git repositori

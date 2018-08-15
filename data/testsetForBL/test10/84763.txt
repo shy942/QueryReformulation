@@ -1,1 +1,1 @@
-variabl view switch editor activ debug session debug view variabl view outlin view stack tab group launch runti debug mode hit breakpoint switch editor variabl view hide outlin view case build inconveni workaround disabl view manag debug view view menu
+variables view front switching editors active debug session debug view variables view outline view stacked tab group launch runtime eclipse debug mode hitting breakpoint switch editor variables view front hides outline view case build inconvenient workaround disable view management debug view view menu

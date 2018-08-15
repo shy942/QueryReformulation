@@ -1,1 +1,1 @@
-import export overwrit prompt resourc select prompt file export archiv clear select resourc enter archiv file file exist finish prompt overwrit file choos resourc select export resourc prompt bother export wizard
+import export overwrite prompt resources selected prompt file export archive clear selected resources enter archive file file exists finish prompts overwrite file choose resources selected export resources prompt bother check export wizards

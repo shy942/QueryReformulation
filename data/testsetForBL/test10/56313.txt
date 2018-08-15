@@ -1,1 +1,1 @@
-context menu select text dialog choos platform doubleclick build selec open context menu shift expect context menu copi appear invok error count view select context menu
+context menu selectable text dialog choose eclipse platform doubleclick build number click selection open context menu shift expected context menu copy appears invoked error count unit view selected context menu

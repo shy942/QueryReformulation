@@ -1,1 +1,1 @@
-workbench part workbench refer boolean method refer editor javadoc return workbench referenc object return code null code editor instanti fail restor restor editor code restor code true incorrect view workbench part
+workbench parts workbench reference boolean method refers editors javadoc returns workbench referenced object returns code null code editors instantiated failed restored restore editor code restore code true incorrect views workbench parts

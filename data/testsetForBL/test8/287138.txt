@@ -1,1 +1,1 @@
-common navig test simul
+common navigator add tests simulating

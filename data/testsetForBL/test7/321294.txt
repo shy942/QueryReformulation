@@ -1,1 +1,1 @@
-compat ctrl unimpl build identifi detail refer http bug org bug cgi featur support miss reproduc
+compatibility ctrl unimplemented build identifier details refer https bugs eclipse org bugs bug cgi feature supported eclipse missing eclipse reproducible

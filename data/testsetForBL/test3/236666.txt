@@ -1,1 +1,1 @@
-data bind snippet combo case combo box male femal list name selec list filter base selec select male displai male name guess doesn combo set radio button
+data binding snippet combo case combo boxes male female list names selection list filtered based selection select male display male names guess doesn combo set radio buttons

@@ -1,1 +1,1 @@
-statu handl workbench statu dialog manag dialog closur workbench statu dialog shell packag scope method listen mechan shell method
+status handling workbench status dialog manager inform dialog closure bug workbench status dialog shell package scope method listeners mechanism shell method

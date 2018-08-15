@@ -1,1 +1,1 @@
-face abstract resourc manag return count creat resourc attempt abstract resourc manag subclass count object resourc bound desir descriptor count privat class unus client address address inten method descrip
+face abstract resource manager find returns count created resource attempt call find abstract resource manager subclass count object resource bound desired descriptor count private class unusable clients addressed address intention method description

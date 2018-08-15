@@ -1,1 +1,1 @@
-kei bind unus shortcut gener support bind initi creat clone build step reproduc appl keyboard extra function open prefer gener attempt bind command perspect command displai space text field doesn perform action press don press text field work normal
+key bindings unusable shortcut general add support binding bug initially created clone bug build steps reproduce apple keyboard extra function open eclipse preferences general attempt bind commands perspective commands displays space text field doesn perform action pressed don pressed text field work normal eclipse

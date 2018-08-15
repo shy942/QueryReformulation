@@ -1,1 +1,1 @@
-compat view action disabl view activ breakpoint view remov select breakpoint remov breakpoint action disabl view inact enabl view activ view activ
+compatibility view action disabled view active breakpoints view remove selected breakpoints remove breakpoints actions disabled view inactive enable view active view active

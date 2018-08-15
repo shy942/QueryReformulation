@@ -1,1 +1,0 @@
-kei bind launch close resourc persp hit ctrl wizard list menu file wizard disabl launch close resourc persp hit ctrl wizard list menu file disabl

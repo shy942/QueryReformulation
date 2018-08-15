@@ -1,1 +1,1 @@
-global action close unrel project danger confirm close unrel project danger oper confirm dialog don nag checkbox inadvert execut action context menu manual restor workspac undo work build close project
+global actions close unrelated projects dangerous confirmation close unrelated projects dangerous operation confirmation dialog don nag checkbox inadvertently executed action context menu manually restore workspace undo work full build closed projects

@@ -1,1 +1,1 @@
-link resourc file import wizard inconsist widget selec file import wizard complet folder structur option button set virtual folder set advanc option creat partial hierarchi level link folder
+linked resources file system import wizard inconsistent widget selection file system import wizard create complete folder structure option button set create virtual folders set advanced option creates partial hierarchy create top level link folder

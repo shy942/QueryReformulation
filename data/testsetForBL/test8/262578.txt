@@ -1,1 +1,1 @@
-common navig exten point descrip align children trigger point handl mean children trigger point origin docum exsd file updat reflect
+common navigator extension point description aligned children trigger points handling bug bug meaning children trigger points originally documented exsd files updated reflect

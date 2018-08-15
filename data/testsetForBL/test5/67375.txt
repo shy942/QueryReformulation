@@ -1,1 +1,0 @@
-theme descrip area color font prefer big linux motif open prefer color prefer notic descrip area big note size gtk

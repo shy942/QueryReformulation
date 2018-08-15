@@ -1,1 +1,1 @@
-snippet item tabl viewer background thread
+snippet add items table viewer background thread

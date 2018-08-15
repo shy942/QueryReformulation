@@ -1,1 +1,1 @@
-snippet updat snippet cell editor row work box cell editor implement pass event appropi
+snippets update snippet cell editor row work check box cell editor implementation passing events appropiately

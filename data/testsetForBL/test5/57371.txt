@@ -1,1 +1,1 @@
-prefer link resourc list sort ignor case prefer workbench link resourc list sort alphabet ignor case aaa
+preferences linked resource list sorted ignoring case preferences workbench linked resources list sorted alphabetically ignoring case aaa

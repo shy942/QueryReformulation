@@ -1,1 +1,1 @@
-workbench doc selec enabl selec class intern nest class selec enabl selec class implement selec enabl expos document packag visibl docum migrat guid
+workbench doc selection enabler selection class internal nested class selection enabler selection class implementation detail selection enabler exposed documentation package visible document change migration guide

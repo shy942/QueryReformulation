@@ -1,1 +1,1 @@
-contribu enabl work view detach build step reproduc check current org exampl contribu dev org info view select item enabl swap entri toolbar command detach view swap entri disabl reattach work count variabl selec enabl selec work detach view
+contributions enabled work view detached build steps reproduce checked current org eclipse examples contributions dev eclipse org info view select items enable swap entries toolbar command detach view swap entries disabled reattach works count variable selection enabled selection work detached view

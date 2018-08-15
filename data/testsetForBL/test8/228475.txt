@@ -1,1 +1,1 @@
-statu handl statu dialog creat attach screenshot disabl statu dialog tooltip support don suppos enabl
+status handling bug status dialog created attachment screenshot disabled bug status dialog tooltip support don supposed enabled

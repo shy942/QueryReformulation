@@ -1,1 +1,1 @@
-kei bind enabl prefer version stabil fix remov prefer rena matur lost function
+key bindings enable preferences version stabilized bug fixed remove preference rename matured lost functionality

@@ -1,1 +1,0 @@
-global action regres command link prefer broken work command open prefer work open open correct click prefer dialog

@@ -1,1 +1,1 @@
-command workbench deprec workbench deprec command listen listen implement method workbench static class bogu remov method interfac sens updat interfac command class provid implement method
+commands workbench system deprecated workbench system deprecation command create listener create listener implementation method workbench static class bogus remove method interface sense update interface command class provide implementation method

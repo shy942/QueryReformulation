@@ -1,1 +1,1 @@
-kei bind prefer print kei bind print kei bind
+key bindings preference add print key bindings print key bindings

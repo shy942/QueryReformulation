@@ -1,1 +1,0 @@
-dialog open resourc dialog accept pattern match folder path open resourc dialog accept pattern file plugin match pattern folder path expect pattern jdt plugin xml filter folder list folder matc pattern jdt org jdt org jdt test

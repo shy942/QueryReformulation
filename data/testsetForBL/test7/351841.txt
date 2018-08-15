@@ -1,1 +1,1 @@
-exampl error deprec elem warn prove exampl work compat layer descrip resourc path locat type elem action deprec plugin xml org exampl fieldassist plug elem action set deprec plugin xml org exampl contribu plug
+examples errors deprecated elements change warnings prove examples work compat layer description resource path location type element action deprecated plugin xml org eclipse examples fieldassist plug problem element action set deprecated plugin xml org eclipse examples contributions plug problem

@@ -1,1 +1,1 @@
-align dialog prefer dialog text combo doesn align titl area
+alignment dialog top preference dialog text combo doesn align title area

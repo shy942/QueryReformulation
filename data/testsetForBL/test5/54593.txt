@@ -1,1 +1,1 @@
-kei bind restor default keyboard shortcut dialog restor keyboard shortcut default spefic dialog dialog font reach restor default button workbench
+key bindings restore defaults keyboard shortcuts dialog restore keyboard shortcut defaults spefic dialog dialog font reached restore defaults button workbench

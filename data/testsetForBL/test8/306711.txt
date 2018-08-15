@@ -1,1 +1,1 @@
-editor mgmt switch editor displai sort indic column header click column header perform sort sort indic
+editor mgmt switch editor display sort indicators column headers clicking column headers perform sort sort indicators

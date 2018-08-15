@@ -1,1 +1,1 @@
-kei bind kei delet style text summari occur flag event consum work
+key bindings delete key deletes styled text summary problem occurs flag event consumed work

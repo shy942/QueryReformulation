@@ -1,1 +1,1 @@
-undo workspac undo util attempt open project build simpl project shutdown project directori disk restart project navig view project delet deletion attempt reopen project project open project descrip miss deletion attempt reopen close project
+undo workspace undo util delete attempt open project build create simple project shutdown eclipse delete project directory disk restart eclipse delete project navigator view project deleted deletion attempt reopen project project opened project description missing deletion attempt reopen closed project

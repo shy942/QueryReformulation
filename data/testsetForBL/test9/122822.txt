@@ -1,1 +1,1 @@
-workbench part error editor javadoc javadoc editor class subclass implem goto marker method isn interfac compat note method replac adapt
+workbench parts error editor javadoc javadoc editor class subclasses implement goto marker method isn interface compatibility notes method replaced adapter

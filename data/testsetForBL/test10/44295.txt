@@ -1,1 +1,1 @@
-workbench part workbench shutdown startup save restor cursor position texteditor window restor cursor position texteditor window workbench startup
+workbench parts workbench shutdown startup saving restoring cursor positions texteditor windows restoring cursor positions texteditor windows workbench startup

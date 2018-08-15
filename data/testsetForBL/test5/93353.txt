@@ -1,1 +1,1 @@
-dialog intern error dialog button press explicitli super
+dialogs internal error dialog button pressed explicitly call super

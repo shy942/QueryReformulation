@@ -1,1 +1,1 @@
-global action text selec navig locat hold docum leak search docum referenc text selec navig locat store navig histori docum belong connect text buffer
+global actions text selection navigation location holds document leak test search problem documents referenced text selection navigation locations stored navigation history documents belonging connected text buffers

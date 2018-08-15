@@ -1,1 +1,1 @@
-command handler provid context command handler replac action capabl provid context identifi open resourc handler org context defin code
+commands handlers provide context ids commands handlers replace actions capable providing context identifiers open resource handler org eclipse ide context definable code

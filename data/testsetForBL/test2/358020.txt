@@ -1,1 +1,1 @@
-command compat git comm dialog destroi context call evalu context variabl creat file ecor model gener model current packag explor selec point project preselect elem wizard point complet current selec packag explor publish appropri
+commands compat git commit dialog destroys eclipse context calling evaluation context add variable creating file ecore model generator model current package explorer selection point project preselected element wizard point completely current selection package explorer published appropriately

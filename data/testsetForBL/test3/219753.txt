@@ -1,1 +1,1 @@
-snippet updat snippet dispos elem correctli
+snippets update snippet dispose elements correctly

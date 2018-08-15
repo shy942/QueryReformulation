@@ -1,1 +1,0 @@
-undo clarif thread issu conven respect callback notif compon oper histori oper histori notifi client oper histori occur client work updat action handler enabl client refactor flush oper histori background thread gener oper framework forc client thread dispatch callback thread tell client call thread explicitli sync exec async exec protocol access oper histori callback

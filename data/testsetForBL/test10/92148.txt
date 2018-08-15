@@ -1,1 +1,1 @@
-workbench part global refactor disabl open editor build build select code class read purpos extract method entri refactor menu disabl make file writabl menu item enabl regres work
+workbench parts global refactorings disabled opening editor build build selected code class read purpose extracting method entries refactor menu disabled making file writable menu items enabled regression work

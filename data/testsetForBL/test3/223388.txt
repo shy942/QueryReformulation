@@ -1,1 +1,1 @@
-command ensur sourc sourc org servic entri variabl sens
+commands ensure sources sources org eclipse services entry variables sense

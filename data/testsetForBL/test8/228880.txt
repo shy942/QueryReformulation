@@ -1,1 +1,1 @@
-theme run suit high contrast cras launch build step reproduc enabl high contrast window control panel access displai enabl high contrast prompt relaunch applic test configur fail launch
+themes running test suites high contrast crashes launch build steps reproduce enable high contrast windows control panel accessibility display enable high contrast eclipse prompt relaunch eclipse application tests configuration fail launch

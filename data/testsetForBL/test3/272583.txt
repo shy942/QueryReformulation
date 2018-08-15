@@ -1,1 +1,1 @@
-dialog button position dialog explicitli call layout initi bound select project packag explor hit resourc dialog pop confirm button displai order preview cancel mac preview cancel appear cocoa carbon version build
+dialogs button wrong position dialog explicitly calls layout initialize bounds select project package explorer hit delete delete resources dialog pops confirmation buttons displayed order preview cancel mac preview cancel appears problem cocoa carbon eclipse version build

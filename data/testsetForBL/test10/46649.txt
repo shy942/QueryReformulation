@@ -1,1 +1,1 @@
-previou editor view perspect switcher broken build ctrl switcher work build haven determin exact step reproduc specif kei bind window keyboard shortcut previou action work
+previous editor view perspective switchers broken build ctrl switchers working build haven determine exact steps reproduce problem specific key bindings window keyboard shortcuts previous actions working

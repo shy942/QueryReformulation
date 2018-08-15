@@ -1,1 +1,1 @@
-workbench part org workbench constant clarifi restric interfac implem client explicitli state doc interfac constant breakag interfac implem compon xml locat plugin org doesn implem fals restric type
+workbench parts org eclipse workbench constants clarify restrictions interface implemented client explicitly stated doc interface constant breakage interface implemented components xml located plugin org eclipse doesn implements false restriction type

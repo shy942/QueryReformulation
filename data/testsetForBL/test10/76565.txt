@@ -1,1 +1,1 @@
-kei bind esc ctrl work properli linux press esc start multi stroke kei bind esc appear statu pop appear press ctrl esc disappear press esc ctrl pop workbench keyboard dai
+key bindings esc ctrl work properly linux press esc start multi stroke key binding esc appears status pop appears press ctrl esc disappears pressing esc ctrl wait pop workbench keyboard days

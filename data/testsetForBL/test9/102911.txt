@@ -1,1 +1,1 @@
-kei bind assist correctli size window narrow short attach imag shell screen narrow kei assist small shell left work
+key bindings assist correctly sized window narrow short attached image move shell top screen narrow key assist small shell left bottom works fine

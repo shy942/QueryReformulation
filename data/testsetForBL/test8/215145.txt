@@ -1,1 +1,1 @@
-snippet cell editor tree viewer menu selec creat attach snippet sourc
+snippet cell editor tree viewer menu selection created attachment snippet source

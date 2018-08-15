@@ -1,1 +1,1 @@
-undo undo redo action handler nit undo action handler redo action handler small nit set handler undo redo action toolbar don set disabl imag descriptor don set tool text undo redo perform oper histori action handler nit guess
+undo undo redo action handler nits undo action handler redo action handler small nits setting handlers undo redo actions toolbar don set disabled image descriptor don set tool text describe undo redo performed operation history action handler nit guess

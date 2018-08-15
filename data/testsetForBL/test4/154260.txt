@@ -1,1 +1,1 @@
-command correct org handler exten point document exampl exten point descrip variabl context incorrect
+commands correct org eclipse handlers extension point documentation examples extension point description variable context incorrect

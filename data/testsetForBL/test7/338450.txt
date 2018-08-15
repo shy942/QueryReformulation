@@ -1,1 +1,1 @@
-compat list open editor persist workbench restart list open editor file menu persist restart
+compatibility list opened editors persisted workbench restarts list opened editors file menu persisted restarts

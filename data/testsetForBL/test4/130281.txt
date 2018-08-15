@@ -1,1 +1,1 @@
-dialog error messag shouldn focu face input dialog step repro project ear select project facet wizard choos custom preset save enter press tab result user cursor focu unknown field expect result user focu button
+dialogs empty error message shouldn focus face input dialog steps repro create project ear select project facets wizard choose custom presets click save enter press tab result user cursor focus unknown field expected result user focus button
