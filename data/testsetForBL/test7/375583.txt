@@ -1,1 +1,0 @@
-set foreground colour tab item turn properti handler regist tab item

@@ -1,1 +1,0 @@
-jface interfac compon refresh remov interfac build step reproduc class interfac group interfac iter interfac list updat interfac portion icon surround blue string iter remov icon text remain text edit text field screen snapshot

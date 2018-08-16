@@ -1,0 +1,1 @@
+tabbed properties tabbed property sheet extensibility option created attachment patch extending tabbed property sheet title bar title image title label provide title current selection defined tabbed property sheet current selection pass tabbed property sheet title registry private variable class internal class work pass selection title text title imge attached patch change

@@ -1,0 +1,1 @@
+commands document services workbench javadoc workbench enumerate services adapter hints clients javadoc deprecated deprecated code adapter context service class code org eclipse contexts context service workbench context support context support explicit clients rely workbench adapter context service class return null service instance

@@ -1,0 +1,1 @@
+preferences accessibility preferences dialog menu button tooltip build org eclipse internal dialogs filtered preference dialog method container tool bar composite composite filtered preference dialog class popup menu action tool text text tool bar manager tooltip text tool item showing image needed accessibility screen readers tool bar manager class based tooltip text

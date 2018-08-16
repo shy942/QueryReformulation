@@ -1,1 +1,0 @@
-kei bind pref tabl updat bind clear tabl updat delet text bind field tabl

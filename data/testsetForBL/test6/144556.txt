@@ -1,0 +1,1 @@
+dialogs title area dialog fails properly recreate instance reopened title area dialog created opened closed opened instance message area properly checked disposal accessed set warning message throwing exception disposed message area updated time dialog opened

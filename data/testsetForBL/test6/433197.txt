@@ -1,1 +1,0 @@
-switch theme handl disappear trim bar switch theme prefer dialog handl disappear trim bar user bar restart workbench handl

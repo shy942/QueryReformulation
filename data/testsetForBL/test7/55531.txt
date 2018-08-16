@@ -1,0 +1,1 @@
+single click mode opens collapse java search set group project expand tree method match select method collapse project selection observe node collapses selection set project node node expanded single selection enabled

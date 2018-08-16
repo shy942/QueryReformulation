@@ -1,1 +1,0 @@
-avoid call dispos method view registri remov method

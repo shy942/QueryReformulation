@@ -1,0 +1,1 @@
+contributions workbench menu service unregister activity manager listener build eclipse workbench menu service constructor registers activity manager listener instance activity manager unregistered don causing actual harm noticed code reviewing bugzilla thought didn notice encountered bug

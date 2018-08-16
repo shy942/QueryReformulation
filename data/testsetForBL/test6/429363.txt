@@ -1,1 +1,0 @@
-workbench thread complet displai sleep creat attach app sleep code call displai wake thread main loop displai sleep doesn wake true displai read dispatch break err println sleep displai sleep err println syserr log sleep wake thread displai wake don reproduc import attach plugin open plugin xml launch app stai asleep org applic workbench advisor open window

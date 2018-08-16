@@ -1,0 +1,1 @@
+common navigator sorting items work expected opened david slubicki project explorer doesn properly sort content create dynamic web project add jsp webcontent folder jsp jsp jsp create folder named myfolder folder notice folder sorted alphabetically files amoung folders contents web content folder folder jsp file jsp file myfolder folder jsp file create file sorted properly

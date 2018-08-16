@@ -1,1 +1,0 @@
-stream leak abstract engin code abstract engin read line open manipul stream singl close method stream leak class

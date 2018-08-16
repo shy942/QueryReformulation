@@ -1,0 +1,1 @@
+compatibility debug views empty opened version build don exact steps reproduce problem couple times view empty activated happened variables breakpoints debug views switch hidden stack empty bring view stack focus switch populated correct contents

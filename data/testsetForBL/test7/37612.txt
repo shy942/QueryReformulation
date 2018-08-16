@@ -1,0 +1,1 @@
+key bindings accelerators don work changed multi editor accelerators don work changed editor multi editor subclass multi editor scopes key bindings key binding service set scopes register action called activated accelerators don work accelerators updated win key binding service update accelerators called editor view activated problem editor panes panes scopes key bindings

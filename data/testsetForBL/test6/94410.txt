@@ -1,0 +1,1 @@
+undo time triggered progress dialog busy cursor refactoring text scenarios don notice problem complete report progress dialog pops org eclipse operations examples repository sample undoable operations lot work reporting progress perceived delay progress operations report progress

@@ -1,0 +1,1 @@
+wizards double click untitled text file create file ctrl double click simple untitled text file expected file created actual note pressing return works expected

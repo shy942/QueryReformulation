@@ -1,1 +1,0 @@
-test enabl org core command test tycho build migrat test jun integr tycho build

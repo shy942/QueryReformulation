@@ -1,0 +1,1 @@
+undo action handlers refer adapter requests undo redo action handlers provide adaptable describes info triggering action provide progress monitor undo context workbench answer null unknown requests pass adapter request don recognize class specific editor provide text viewer responding undo manager

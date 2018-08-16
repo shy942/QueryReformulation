@@ -1,1 +1,0 @@
-command contribu item restor contribut tooltip handler elem updat set tooltip command contribu item moment tooltip restor handler reset contribut tooltip label icon

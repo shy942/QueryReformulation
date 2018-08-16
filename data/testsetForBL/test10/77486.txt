@@ -1,1 +1,0 @@
-global action deprec action factori action appear

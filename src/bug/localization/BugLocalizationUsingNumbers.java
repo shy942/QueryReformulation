@@ -110,7 +110,7 @@ public class BugLocalizationUsingNumbers {
   
     
     
-    public void bugLocator(BugLocalizationUsingNumbers obj)
+    public void bugLocator(BugLocalizationUsingNumbers obj, String outputFilePath)
     {
     	
     	obj.trainMapTokenSource=obj.loadHashMap(obj.trainMapTokenSourceAddress);
@@ -128,12 +128,11 @@ public class BugLocalizationUsingNumbers {
 			//if(buglocatorRESULT.containsKey(queryID))
 			{	
 				HashMap<Integer,Double> resultBugLocator=new HashMap<>();
-				//if(obj.buglocatorRESULT.containsKey(queryID)) resultBugLocator=obj.convertSIDtoNum(queryID,obj.buglocatorRESULT);
+				if(obj.buglocatorRESULT.containsKey(queryID)) resultBugLocator=obj.convertSIDtoNum(queryID,obj.buglocatorRESULT);
 			
 				HashMap<Integer,Double> resultMyTool=obj.findBugForEachQuery(queryID);
 			
-				HashMap<Integer, Double> resultMap=resultMyTool;
-						//obj.CombileScoreMaker(queryID,resultBugLocator, resultMyTool);
+				HashMap<Integer, Double> resultMap=obj.CombileScoreMaker(queryID,resultBugLocator, resultMyTool);
 				String result=queryID+",";
 				int count=0;
 				for(int key:resultMap.keySet())
@@ -143,8 +142,8 @@ public class BugLocalizationUsingNumbers {
 					finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key));
 				}
 			}
-			
-			ContentWriter.writeContent("./data/Results/finalResultTest1Aug15myTool.txt", finalResult);
+			ContentWriter.writeContent(outputFilePath, finalResult);
+			//ContentWriter.writeContent("./data/Results/finalResultTest2Aug16.txt", finalResult);
 		}
 		
     }
@@ -160,12 +159,12 @@ public class BugLocalizationUsingNumbers {
     		if(resultBugLocator.containsKey(key))
     		{
     			count++;
-    			double combineScore=resultMyTool.get(key)+resultBugLocator.get(key);
+    			double combineScore=resultMyTool.get(key)*0.2+resultBugLocator.get(key);
     			tempCombineResult.put(key, combineScore);
     		}
     		else
     		{
-    			tempCombineResult.put(key, resultMyTool.get(key));
+    			tempCombineResult.put(key, resultMyTool.get(key)*0.2);
     		}
     	}
     	for(int key:resultBugLocator.keySet())
@@ -209,7 +208,7 @@ public class BugLocalizationUsingNumbers {
     	
     	
     	//Normalize term frequency
-    	HashMap<Integer,Double> normalizedResult=this.ResultBasedOnCocineSimi(tempResultMap, queryID);
+    	HashMap<Integer,Double> normalizedResult=this.normalizeTF(tempResultMap, queryID);
     	//Sort the result
     	HashMap<Integer,Double> sortedHashMap=MiscUtility.sortByValues(normalizedResult);
     	//System.out.println(queryID);
@@ -334,18 +333,19 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset2.txt", "./data/FinalMap/SourceTokenMapTrainset2.txt","./data/testset/test2.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","./data/changeset-pointer/ID-SourceFile.txt","./data/ID-Keyword.txt","./data/Sid-MatchWord.txt");
-		String bugReportFolder = "./data/testsetForBL/test2/";
+		int test=9;
+		BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset"+test+".txt", "./data/FinalMap/SourceTokenMapTrainset"+test+".txt","./data/testset/test"+test+".txt","./data/Bug-ID-Keyword-ID-Mapping.txt","./data/changeset-pointer/ID-SourceFile.txt","./data/ID-Keyword.txt","./data/Sid-MatchWord.txt");
+		String bugReportFolder = "./data/testsetForBL/test"+test;
 		//For Mac
 		//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
 		//ForWindows
 		String sourceFolder = "E:\\PhD\\Data\\NotProcessedSourceMethodLevel\\";
 		String goldsetFile = "./data/gitInfoNew.txt";
-		
-		//obj.buglocatorRESULT=new MasterBLScoreProvider(sourceFolder, bugReportFolder, goldsetFile)
-				//.produceBugLocatorResultsForMyTool();
+		String outputFilePath="./data/Results/finalResultAug16Test"+test+".txt";
+		obj.buglocatorRESULT=new MasterBLScoreProvider(sourceFolder, bugReportFolder, goldsetFile)
+				.produceBugLocatorResultsForMyTool();
 	
-		obj.bugLocator(obj);
+		obj.bugLocator(obj, outputFilePath);
 		
 		
 		//call the bug localizer

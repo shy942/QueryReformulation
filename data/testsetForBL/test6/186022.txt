@@ -1,0 +1,1 @@
+key bindings keybindings don work legacy actions multipage editors continuation bug shortcut don work legacy actions multipage editors work fine regular editors shortcut appears menu doesn work

@@ -1,0 +1,1 @@
+open workspace dialog opens splash screen start eclipse dialog prompts workspace opens splash screen rarely spot

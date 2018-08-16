@@ -1,0 +1,1 @@
+key bindings delete key work combo boxes combo box toolbar steps reproduce reproducible stand application contribute control contribution toolbar combo boxes enter text combo box place cursor middle text press delete key bug notice happend text deleted problem workbench keyboard java bug discovered text widgets submitted text widget case apply combo widgets patch follow

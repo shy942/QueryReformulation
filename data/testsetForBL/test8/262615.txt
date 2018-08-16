@@ -1,1 +1,0 @@
-command text action handler creat attach text action handler test valid test

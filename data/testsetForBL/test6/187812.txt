@@ -1,0 +1,1 @@
+key bindings binding service active bindings parameterized command work binding service active bindings parameterized command work returns empty array test case org eclipse jdt internal preferences code assist advanced configuration block change keyboard shortcut active bindings start target define key binding java editor content assist advanced observe key binding

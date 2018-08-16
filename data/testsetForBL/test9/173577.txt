@@ -1,1 +1,0 @@
-contribu deactiv action set context doesn menu disappear visibl claus read tool action clear menu item action set disabl visibl enabl fals variabl activ context iter oper equal org exampl readmetool action set equal iter visibl

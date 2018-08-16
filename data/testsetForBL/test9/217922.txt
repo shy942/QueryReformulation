@@ -1,0 +1,1 @@
+key bindings longer works console launch testcase debug mode console type enter expected testcase completion actual testcase read runs completion testcase public static void main string args int count system read count system println input count chars catch exception auto generated catch block print stack trace

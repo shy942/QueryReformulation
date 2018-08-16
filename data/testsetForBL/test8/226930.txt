@@ -1,1 +1,0 @@
-debug test nightli build debug test download nightli build view mangem test hang

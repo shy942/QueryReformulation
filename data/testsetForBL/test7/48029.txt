@@ -1,0 +1,1 @@
+provide emacs derivative key configuration pretty explanatory emacs key configuration ported standard key configuration

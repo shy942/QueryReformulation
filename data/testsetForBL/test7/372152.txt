@@ -1,1 +1,0 @@
-deprec workbench window advisor method custom window creation method deprec workbench window advisor window content shell shell window content composit parent workbench window configur public menu menu bar public control cool bar control composit parent public control statu control composit parent public control composit composit parent public statu save memento memento

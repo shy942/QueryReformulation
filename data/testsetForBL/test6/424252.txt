@@ -1,1 +1,0 @@
-editor mgmt split editor provid command main menu split editor command main menu window editor solution combin command submenu window main menu editor split horizont ctrl split vertic ctrl clone editor

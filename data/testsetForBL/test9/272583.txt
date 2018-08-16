@@ -1,0 +1,1 @@
+dialogs button wrong position dialog explicitly calls layout initialize bounds select project package explorer hit delete delete resources dialog pops confirmation buttons displayed order preview cancel mac preview cancel appears problem cocoa carbon eclipse version build

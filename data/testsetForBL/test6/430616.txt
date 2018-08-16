@@ -1,1 +1,0 @@
-model servic object creation view registri factori

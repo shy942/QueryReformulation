@@ -1,0 +1,1 @@
+view mgmt placeholder lost multi view instanced view opened steps reproduce create placeholder view supports multiple instances open view programmatically view open instance view bug perpsective presentation opens instance view considers bottom container expect instances view opened relative placeholder critical workaround stopper

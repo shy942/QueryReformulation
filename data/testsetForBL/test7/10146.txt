@@ -1,0 +1,1 @@
+adopting support classes drag drop classes copied clients generally considered promoted workbench level org eclipse jdt internal dnd delegating drag adapter org eclipse jdt internal dnd local selection transfer org eclipse jdt internal dnd transfer drag source listener org eclipse jdt internal dnd transfer drop target listener

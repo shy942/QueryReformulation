@@ -1,1 +1,0 @@
-undo abstract oper string append bogu comma string abstract oper put comma undo context put pretti bogu oper histori view clean comma

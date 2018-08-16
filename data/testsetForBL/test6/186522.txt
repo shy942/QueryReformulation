@@ -1,0 +1,1 @@
+key bindings preference resort binding conflicts preference select build clear filter sort binding change ctrl build binding ctrl top conflicting binding quick access expected binding column properly resort conflicts visible

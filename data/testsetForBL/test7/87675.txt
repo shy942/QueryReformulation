@@ -1,0 +1,1 @@
+undo review composite open close operation scenario integration refactoring undo introduced experimental operation history javadoc open operation undoable operation close operation close operation boolean boolean discussion bug freeze approaching additional comments solution add comments received emails sources bugt

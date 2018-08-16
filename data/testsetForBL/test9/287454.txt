@@ -1,0 +1,1 @@
+key bindings unusable shortcut general add support binding bug initially created clone bug build steps reproduce apple keyboard extra function open eclipse preferences general attempt bind commands perspective commands displays space text field doesn perform action pressed don pressed text field work normal eclipse

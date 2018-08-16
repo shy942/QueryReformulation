@@ -1,0 +1,1 @@
+features tab eclipse installation details dialog display sort direction created attachment add features sort column indicators patch build eclipse installation details click plug ins tab click column headers times sorting indicator pointing problems view click features tab click column headers entries sorted properly sort arrow drawn

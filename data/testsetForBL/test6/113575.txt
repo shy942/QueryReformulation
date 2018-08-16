@@ -1,0 +1,1 @@
+dialogs opening dialog top popup dialog closes popup linux gtk patches bug open quick outline view menu choose filters expected filter dialog opens stays visible actual filter dialog dialog popup disappear stems event ordering linux gtk platform remember observing activate focus events order

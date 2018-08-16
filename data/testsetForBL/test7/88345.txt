@@ -1,0 +1,1 @@
+view mgmt close closable view docked fastviewbar create workspace closable view movable drag view dock fast view click icon fastview click close

@@ -1,0 +1,1 @@
+preferences provide showing preference plugin open workbench preference dialog peference selected enabling plugins refer user preference misconfiguration detected execution action enables developers write search panel find text preference user method select preference select preference node node select string path org eclipse jface preference preference dialog

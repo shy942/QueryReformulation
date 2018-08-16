@@ -1,0 +1,1 @@
+error handling status handling fatal error appears reported job reports fatal error memory exception reported window prompting user close workbench appears investigated reported progress manager internal listener method report picked log status manager status manager log listener

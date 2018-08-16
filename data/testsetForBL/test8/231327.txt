@@ -1,1 +1,0 @@
-tab tabl set focu column visibl creat attach snippet tab tabl time focu cell set column visibl creat strang arrow focu cell snippet reproduc snippet tab tabl hit arrow focu cell visibl row column snippet button tab tabl hit arrow focu cell invis row column

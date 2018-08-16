@@ -6,17 +6,21 @@ import java.util.HashMap;
 
 import config.StaticData;
 import utility.ContentLoader;
+import utility.ContentLoaderQR;
 import utility.ContentWriter;
 import utility.MiscUtility;
 
 public class BugReportKeywordPointerMaker {
 
+	String bugIDsAddress;
 	String bugReportDir;
 	HashMap<String, Integer> keywordIDMap;
 	HashMap<Integer, String> bugIDKeywordMap;
-
-	public BugReportKeywordPointerMaker(String bugReportDir) {
+    ArrayList<String> bugIDsList;
+	public BugReportKeywordPointerMaker(String bugReportDir, String bugIDsAddress) {
 		this.bugReportDir = bugReportDir;
+		this.bugIDsAddress=bugIDsAddress;
+		this.bugIDsAddress=ContentLoader.readContentSimple(this.bugIDsAddress);
 		this.keywordIDMap = new HashMap<>();
 		this.bugIDKeywordMap = new HashMap<>();
 	}
@@ -65,6 +69,7 @@ public class BugReportKeywordPointerMaker {
 		for (File f : files) {
 			if(!f.getName().equals(".DS_Store"))
 			{
+				if(this.bugIDsAddress.contains(f.getName().split("\\.")[0].trim())){
 				 int bugID = Integer.parseInt(f.getName().split("\\.")[0]);
 				
 				 ArrayList<String> keywords = ContentLoader.getAllKeywords(f
@@ -78,6 +83,7 @@ public class BugReportKeywordPointerMaker {
 				
 				 bugSrcList.add(bugID + ":" + MiscUtility.listInt2Str(tempIDs));
 			}
+			}
 		}
 		String outputFile = "./data/Bug-ID-Keyword-ID-Mapping.txt";
 		ContentWriter.writeContent(outputFile, bugSrcList);
@@ -87,6 +93,6 @@ public class BugReportKeywordPointerMaker {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String bugReportDir = "E:\\PhD\\Data\\BugDataNew\\";  
-		new BugReportKeywordPointerMaker(bugReportDir).developBugKeywordPointer();
+		new BugReportKeywordPointerMaker(bugReportDir,".\\data\\bugIDs.txt").developBugKeywordPointer();
 	}
 }

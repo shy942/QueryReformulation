@@ -1,1 +1,0 @@
-field assist left arrow work open propos list work replac dialog enabl regex type field invok content assist press left arrow kei close propos popup list close caret move propos recalcul caret position

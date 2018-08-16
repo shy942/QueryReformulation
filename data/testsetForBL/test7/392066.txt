@@ -1,1 +1,0 @@
-string method memento creat attach string patch implement string memento return content accept patch

@@ -1,1 +1,0 @@
-remov compon xml file build properti compon xml file includ regular build includ build properti file

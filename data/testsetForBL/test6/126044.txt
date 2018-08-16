@@ -1,0 +1,1 @@
+contexts latest key binding break quick view key bindings latest key binding context architecture broken key binding support quick views earlier open quick view view menu ctrl command org eclipse window view menu deprecated code org eclipse jdt internal text abstract control longer working migrate code ensure deprecated code works

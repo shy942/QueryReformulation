@@ -1,1 +1,0 @@
-dark provid reason default syntax color dark theme

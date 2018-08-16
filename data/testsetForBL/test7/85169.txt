@@ -1,0 +1,1 @@
+commands errors context error message build message log starting build org eclipse jface command undefined command error message message external action manager active

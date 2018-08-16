@@ -1,0 +1,1 @@
+workbench launcher painting splash screen application starts splash screen process main thread eclipse enable splash screen periodically paint display application starting event loop starts running startup framework handles painting splash screen startup application started

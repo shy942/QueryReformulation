@@ -1,0 +1,1 @@
+workbench memento loses text data deserialization create child called text create child memento set text data memento serialize create child type memento serialize text data text data text data longer serializing deserializing memento

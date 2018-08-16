@@ -1,1 +1,0 @@
-dialog open resourc dialog rememb position size annoi work monitor open resourc dialog forget position size close open type dialog work correcli

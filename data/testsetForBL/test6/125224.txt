@@ -1,0 +1,1 @@
+delete project persistent property tester build org eclipse internal ide model project persistent property tester duplicates functionality core resources property tester removed migrated core implementation functionality testing properties resource mappings delete worrying compatibility bug

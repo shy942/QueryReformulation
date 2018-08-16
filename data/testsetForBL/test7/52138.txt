@@ -1,0 +1,1 @@
+key bindings exception thrown action raise dialog execution action throws exception exception silently written log bug hear system beep dialog action invoked shortcut menu fails user informed wishes served adding behavior workbench keyboard execute command string event action contribution item handle widget selection event boolean

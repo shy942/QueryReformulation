@@ -24,6 +24,10 @@ public class DataSetsPreaparation {
 		this.bugContentHM=new HashMap<>();
 	}
 	
+	public DataSetsPreaparation()
+	{
+		
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//Divide data sets
@@ -32,7 +36,8 @@ public class DataSetsPreaparation {
 		//For Windows
 		DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\Data\\BugDataNew\\");
 		
-		//Dont do this now//obj.DataPreparation("./data/BugCorpus/allBug.txt","./data/GitInfoFile2.txt","./data/bugIDs.txt");
+		//Dont do this now
+		//new DataSetsPreaparation().DataPreparation("./data/BugCorpus/allBug.txt","./data/GitInfoNew.txt","./data/bugIDs.txt");
 		
 		
 		obj.bugContentHM=obj.LoadBugData();
@@ -94,8 +99,8 @@ public class DataSetsPreaparation {
     		CreateTrainSet(i, trainP1start,trainP1end,trainP2start,trainP2end,"./data/trainset/");
     		
     		//Create testing sets
-    		line=foldList.get(Fj);
-    		spilter=line.split(" ");
+    		String line2=foldList.get(Fj);
+    		spilter=line2.split(" ");
     		teststart=Integer.valueOf(spilter[0]);
     		testend=Integer.valueOf(spilter[1]);
     		CreateTestSet(i, teststart, testend, "./data/testset/");

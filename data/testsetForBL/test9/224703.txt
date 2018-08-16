@@ -1,0 +1,1 @@
+working sets project explorer doesn recreated working set build steps reproduce create projects workspace creating working set foo bar type resource add projects delete working set foo create working set foo choose projects foo wont

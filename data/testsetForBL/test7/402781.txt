@@ -1,1 +1,0 @@
-extend model servic provid factori capabl model elem expos factori pattern obviou replac extend model servic implem discreet method concret class implem gener factori capabl class return instanc class stack stack model servic elem stack class advantag allow elem type deprec modifi

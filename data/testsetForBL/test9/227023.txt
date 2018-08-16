@@ -1,0 +1,1 @@
+tabbed properties header fixed font size accessibility header font size fixed customizable preferences

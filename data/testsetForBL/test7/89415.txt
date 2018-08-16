@@ -1,0 +1,1 @@
+commands handlers ctrl build ctrl open editor plain text java moment choosing switch editor window navigation menu works

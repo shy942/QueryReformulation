@@ -1,0 +1,1 @@
+data binding test case delayed observable attach patch

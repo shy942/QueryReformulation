@@ -1,0 +1,1 @@
+multi editor site forwarding post selection events editor doesn implement post selection events fired multi selection provider implements interface

@@ -1,0 +1,1 @@
+key bindings key binding service bind key action factory workbench action builder actions action factory explicitly registered keybinding service binding edit delete ctrl alt shift doesn work worse key doesn registered global action handler install hardcoded key listener control react key
