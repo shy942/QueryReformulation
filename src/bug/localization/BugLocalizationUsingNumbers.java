@@ -394,7 +394,7 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		int test=9;
+		int test=10;
 		BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset"+test+".txt", "./data/FinalMap/SourceTokenMapTrainset"+test+".txt","./data/testset/test"+test+".txt","./data/Bug-ID-Keyword-ID-Mapping.txt","./data/changeset-pointer/ID-SourceFile.txt","./data/ID-Keyword.txt","./data/Sid-MatchWord.txt");
 		String bugReportFolder = "./data/testsetForBL/test"+test;
 		//For Mac
