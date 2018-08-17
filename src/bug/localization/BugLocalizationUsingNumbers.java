@@ -123,17 +123,21 @@ public class BugLocalizationUsingNumbers {
 		int i=0;
 		for(int queryID:testSet.keySet())
 		{
-			System.out.println(++i);
 			
-			//if(buglocatorRESULT.containsKey(queryID))
-			{	
+				
 				HashMap<Integer,Double> resultBugLocator=new HashMap<>();
-				if(obj.buglocatorRESULT.containsKey(queryID)) resultBugLocator=obj.convertSIDtoNum(queryID,obj.buglocatorRESULT);
+				if(obj.buglocatorRESULT.containsKey(queryID)){
+					System.out.println(++i);
+					//if(i>100) break;
+					resultBugLocator=obj.convertSIDtoNum(queryID,obj.buglocatorRESULT);
+				
 			
-				//HashMap<Integer,Double> resultMyTool=obj.findBugForEachQuery(queryID);
+				HashMap<Integer, Double> SortedBLresult=MiscUtility.sortByValues(resultBugLocator);
+				HashMap<Integer,Double> sortedResultMyTool=obj.findBugForEachQueryCosineSimBased(queryID);
 			
-				HashMap<Integer, Double> resultMap=resultBugLocator;
-				//=obj.CombileScoreMaker(queryID,resultBugLocator, resultMyTool);
+				HashMap<Integer, Double> resultMap
+				//=SortedBLresult;
+				=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool);
 				String result=queryID+",";
 				int count=0;
 				for(int key:resultMap.keySet())
@@ -142,15 +146,48 @@ public class BugLocalizationUsingNumbers {
 					if(count>10)break; 
 					finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key));
 				}
-			}
-			ContentWriter.writeContent(outputFilePath, finalResult);
+			}	
 			//ContentWriter.writeContent("./data/Results/finalResultTest2Aug16.txt", finalResult);
 		}
-		
+		ContentWriter.writeContent(outputFilePath, finalResult);
     }
    
     
-    public HashMap<Integer, Double> CombileScoreMaker(int queryID, HashMap<Integer,Double> resultBugLocator,HashMap<Integer,Double> resultMyTool)
+    private HashMap<Integer, Double> findBugForEachQueryCosineSimBased(int queryID) {
+		// TODO Auto-generated method stub
+    	ArrayList<Integer> keywordList=this.bugIdKeywordMap.get(queryID);
+    	
+    	ArrayList <Integer> tempResultList=new ArrayList<>();
+    	
+    	for(int keyword:keywordList)
+    	{
+    		if(this.trainMapTokenSource.containsKey(keyword))
+    		{
+    			ArrayList<Integer> tempList=this.trainMapTokenSource.get(keyword);
+    		    for(int source:tempList)
+    		    {
+    		    	if(!tempResultList.contains(source))
+    		    	{
+    		    		tempResultList.add(source);
+    		    		
+    		    	}
+    		    }
+    		}
+    	}
+    	
+    	
+    	
+    	//Normalize term frequency
+    	HashMap<Integer,Double> normalizedAndSortedResult=this.ResultBasedOnCocineSimi(tempResultList, queryID);
+    	//Sort the result
+    	//HashMap<Integer,Double> sortedHashMap=MiscUtility.sortByValues(normalizedResult);
+    	//System.out.println(queryID);
+    	//System.out.println(normalizedAndSortedResult);
+    	return normalizedAndSortedResult;
+	}
+
+
+	public HashMap<Integer, Double> CombileScoreMaker(int queryID, HashMap<Integer,Double> resultBugLocator,HashMap<Integer,Double> resultMyTool)
     {
     	
     	HashMap<Integer, Double> tempCombineResult=new HashMap<>();
@@ -180,11 +217,12 @@ public class BugLocalizationUsingNumbers {
     
     
     
-    public HashMap<Integer,Double> findBugForEachQuery(int queryID)
+    public HashMap<Integer,Double> ResultBasedOnTF(int queryID)
     {
     	ArrayList<Integer> keywordList=this.bugIdKeywordMap.get(queryID);
     	
     	HashMap<Integer,Double> tempResultMap=new HashMap();
+    	
     	for(int keyword:keywordList)
     	{
     		if(this.trainMapTokenSource.containsKey(keyword))
@@ -201,6 +239,7 @@ public class BugLocalizationUsingNumbers {
     		    	else
     		    	{
     		    		tempResultMap.put(source, 1.0);
+    		    		
     		    	}
     		    }
     		}
@@ -209,66 +248,87 @@ public class BugLocalizationUsingNumbers {
     	
     	
     	//Normalize term frequency
-    	HashMap<Integer,Double> normalizedResult=this.normalizeTF(tempResultMap, queryID);
+    	HashMap<Integer, Double> normalizedMap=normalizeTFandSorted(tempResultMap);
     	//Sort the result
-    	HashMap<Integer,Double> sortedHashMap=MiscUtility.sortByValues(normalizedResult);
+    	HashMap<Integer,Double> sortedHashMap=MiscUtility.sortByValues(normalizedMap);
     	//System.out.println(queryID);
-    	//System.out.println(sortedHashMap);
+    	//System.out.println(normalizedAndSortedResult);
     	return sortedHashMap;
     	
     }
     
-    public HashMap<Integer,Double> normalizeTF(HashMap<Integer,Double> sortedHashMap, int queryID)
+    public HashMap<Integer,Double> normalizeTFandSorted(HashMap<Integer,Double> tempResult)
     {
-    	ArrayList<Integer> keywordList=this.bugIdKeywordMap.get(queryID);
+    	//ArrayList<Integer> keywordList=this.bugIdKeywordMap.get(queryID);
     	HashMap<Integer,Double> normalizedResult=new HashMap<>();
     	//Find maximum term frequency
     	double maxTF=0.0;
     	double a=0.4;
-    	for(int key:sortedHashMap.keySet())
+    	for(int key:tempResult.keySet())
     	{
-    		double tf=sortedHashMap.get(key);
+    		double tf=tempResult.get(key);
     		if(tf>maxTF)maxTF=tf;
     	}
     	
-    	for(int key:sortedHashMap.keySet())
+    	for(int key:tempResult.keySet())
     	{
-    		double tf=sortedHashMap.get(key);
+    		double tf=tempResult.get(key);
     		//double normalizedTF=a+(1-a)*(tf/maxTF);
     		double normalizedTF=tf/maxTF;
     
     		normalizedResult.put(key, normalizedTF);
     	}
-    	return normalizedResult;
+    	HashMap <Integer, Double> sortedHashMap=MiscUtility.sortByValues(normalizedResult);
+    	
+    	return sortedHashMap;
     }
     
-    public HashMap<Integer,Double> ResultBasedOnCocineSimi(HashMap<Integer,Double> resultMap, int queryID)
+    public HashMap<Integer,Double> ResultBasedOnCocineSimi(ArrayList<Integer> resultList, int queryID)
     {
     	
-    	HashMap<Integer, Double> hm=new HashMap<>();
-    	for(int Sid:resultMap.keySet())
+    	ArrayList<Integer> keywordList=this.bugIdKeywordMap.get(queryID);
+    	HashMap<Integer, Double> hmCosineScore=new HashMap<>();
+    	for(int Sid:resultList)
     	{
     		
-    		double maxScore=this.returnMaxCosine(queryID, Sid);
-    		hm.put(Sid, maxScore);
+    		double maxScore=this.returnMaxCosine(keywordList, Sid);
+    		if(maxScore>0.0)hmCosineScore.put(Sid, maxScore);
     		
     	}
-    	return hm;
+    	//Normalize the cosine score
+    	HashMap<Integer, Double> normalizedHMCos=normalizeTFandSorted(hmCosineScore);
+    	//Return first top 10 results
+    	HashMap<Integer, Double> justGetTop10Results=getTop10Result(normalizedHMCos);
+    	
+    	return justGetTop10Results;
     }
-    
-    public double returnMaxCosine(int queryID, int Sid)
+    public HashMap<Integer, Double> getTop10Result(HashMap <Integer, Double> sortedHashMap)
     {
-    	ArrayList<Integer> keywordList=this.bugIdKeywordMap.get(queryID);
+    	HashMap<Integer, Double> justGetTop10Result=new HashMap<>();
+    	int count=0;
+    	for(int Sid: sortedHashMap.keySet())
+    	{
+    		count++;
+    		if(count>10) break;
+    		justGetTop10Result.put(Sid, sortedHashMap.get(Sid));
+    	}
+    	
+    	return justGetTop10Result;
+    }
+    public double returnMaxCosine(ArrayList<Integer> keywordList, int Sid)
+    {
+    	
     	double maxCosineSim=0.0;
     	String queryContent=MiscUtility.listInt2Str(keywordList);
     	
     	if(this.SidMatchWoord.containsKey(Sid)){
     		ArrayList<String> SidMatch=this.SidMatchWoord.get(Sid);
     		//System.out.println(Sid+" "+SidMatch);
-    		for(String content:SidMatch)
+    		for(int i=0;i<SidMatch.size()-1;i++)
     		{
-    			double cosineSimScore=CosineSimilarity.similarity(queryContent, content);
-    		
+    			String content=SidMatch.get(i);
+    			double cosineSimScore=0.0;
+    			if(!content.equals("")) cosineSimScore=CosineSimilarity.similarity(queryContent, content);
     			if(cosineSimScore>maxCosineSim && cosineSimScore>0.0) maxCosineSim=cosineSimScore;
     	
     		}
@@ -342,13 +402,13 @@ public class BugLocalizationUsingNumbers {
 		//ForWindows
 		String sourceFolder = "E:\\PhD\\Data\\NotProcessedSourceMethodLevel\\";
 		String goldsetFile = "./data/gitInfoNew.txt";
-		String outputFilePath="./data/Results/finalResultAug16BLTest"+test+".txt";
+		String outputFilePath="./data/Results/Aug17CosineNormalizedAllTest"+test+".txt";
+		double ALPHA=0.6;
+		double BETA=0.2;
 		obj.buglocatorRESULT=new MasterBLScoreProvider(sourceFolder, bugReportFolder, goldsetFile)
-				.produceBugLocatorResultsForMyTool();
+				.produceBugLocatorResultsForMyTool(ALPHA, BETA);
 	
 		obj.bugLocator(obj, outputFilePath);
-		
-		
 		//call the bug localizer
 	}
 
