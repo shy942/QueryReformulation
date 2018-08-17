@@ -130,9 +130,10 @@ public class BugLocalizationUsingNumbers {
 				HashMap<Integer,Double> resultBugLocator=new HashMap<>();
 				if(obj.buglocatorRESULT.containsKey(queryID)) resultBugLocator=obj.convertSIDtoNum(queryID,obj.buglocatorRESULT);
 			
-				HashMap<Integer,Double> resultMyTool=obj.findBugForEachQuery(queryID);
+				//HashMap<Integer,Double> resultMyTool=obj.findBugForEachQuery(queryID);
 			
-				HashMap<Integer, Double> resultMap=obj.CombileScoreMaker(queryID,resultBugLocator, resultMyTool);
+				HashMap<Integer, Double> resultMap=resultBugLocator;
+				//=obj.CombileScoreMaker(queryID,resultBugLocator, resultMyTool);
 				String result=queryID+",";
 				int count=0;
 				for(int key:resultMap.keySet())
@@ -341,7 +342,7 @@ public class BugLocalizationUsingNumbers {
 		//ForWindows
 		String sourceFolder = "E:\\PhD\\Data\\NotProcessedSourceMethodLevel\\";
 		String goldsetFile = "./data/gitInfoNew.txt";
-		String outputFilePath="./data/Results/finalResultAug16Test"+test+".txt";
+		String outputFilePath="./data/Results/finalResultAug16BLTest"+test+".txt";
 		obj.buglocatorRESULT=new MasterBLScoreProvider(sourceFolder, bugReportFolder, goldsetFile)
 				.produceBugLocatorResultsForMyTool();
 	
