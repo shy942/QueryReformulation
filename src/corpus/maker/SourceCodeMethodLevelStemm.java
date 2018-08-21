@@ -248,12 +248,16 @@ public class SourceCodeMethodLevelStemm {
 				int sourceIntId=this.IDSourceMap.get(Sid);	
 				//if(sourceIntId==2190){
 				String contentEachSource="";
+				String contentToWrite="";
 				int containContent=0;
+				int no_of_method=0;
 				String ppcontent= this.processedContent.get(Sid).get(0);
 				for(String pcontent:this.processedContent.get(Sid))
 				{
 					
 					int found=0;
+					contentToWrite=sourceIntId+"\n";
+					
 					ArrayList<Integer> content=new ArrayList<>();
 					String[] spilter=pcontent.split(" ");
 					for(int i=0;i<spilter.length;i++)
@@ -269,17 +273,22 @@ public class SourceCodeMethodLevelStemm {
 					}
 					if(found!=0)
 					{
+						no_of_method++;
 						System.out.println(found+" "+content.size());
 						String output=MiscUtility.listInt2Str(content);
-						contentEachSource+=output+",";
+						contentEachSource+="\n"+output;
 						
 					}
 				}
 				//System.out.println(sourceIntId+": "+output);
-				if(containContent==1)outputContent.add(sourceIntId+":"+contentEachSource);
+				if(containContent==1)
+					{
+						contentToWrite+=no_of_method+contentEachSource;
+						outputContent.add(contentToWrite);
+					}
 			}
 			//}
 		}
-		ContentWriter.writeContent(".\\data\\Sid-MatchWord.txt", outputContent);
+		ContentWriter.writeContent(".\\data\\Sid-MatchWord2.txt", outputContent);
 	}
 }

@@ -52,7 +52,7 @@ public class BugLocalizationUsingNumbers {
     	this.IdKeywordMap=this.LoadIdKeywordMap(this.IDKeywordAddress);
     	this.buglocatorRESULT=new HashMap<>();
     	this.SidMatchWoord=new HashMap<>();
-    	this.SidMatchWoord=this.loadHashMapComma(SidMatchWordAddress);
+    	this.SidMatchWoord=this.loadSidMatchMap(SidMatchWordAddress);
     	
     }
     
@@ -82,28 +82,24 @@ public class BugLocalizationUsingNumbers {
         }
         return temp;
     }
-    public HashMap<Integer, ArrayList<String>> loadHashMapComma(String address)
+    public HashMap<Integer, ArrayList<String>> loadSidMatchMap(String address)
     {
     	HashMap<Integer, ArrayList<String>> temp=new HashMap<>();
         ArrayList<String> lines=ContentLoader.getAllLinesList(address);
-        for(String line:lines)
+       ;
+        for(int index=0;index<lines.size();index++)
         {
         	//System.out.println(line);
-        	String[] spilter=line.split(":");
-        	if(spilter.length>1)
+        	int id=Integer.valueOf(lines.get(index));
+        	index++;
+        	int no_of_method=Integer.valueOf(lines.get(index));
+            ArrayList<String> list=new ArrayList<>(); 
+        	for(int i=index+1;i<=index+no_of_method;i++)
         	{
-        	int id=Integer.valueOf(spilter[0]);
-        	String[] mapedID=spilter[1].split(",");
-        	
-        	ArrayList<String> list=new ArrayList<>();
-        	for(String content:mapedID)
-        	{
-        		
-        		list.add(content);
+        		list.add(lines.get(i));
         	}
+        	index=index+no_of_method;
         	temp.put(id, list);
-        	}
-        	
         }
         return temp;
     }
@@ -133,12 +129,15 @@ public class BugLocalizationUsingNumbers {
 				
 			
 				HashMap<Integer, Double> SortedBLresult=MiscUtility.sortByValues(resultBugLocator);
-				//HashMap<Integer,Double> sortedResultMyTool
-				//=obj.findBugForEachQueryCosineSimBased(queryID);
+				
+				HashMap<Integer,Double> sortedResultMyTool
+				=obj.findBugForEachQueryCosineSimBased(queryID);
 				//=obj.ResultBasedOnTF(queryID);
+				
 				HashMap<Integer, Double> resultMap
-				=SortedBLresult;
-				//=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool);
+				//=SortedBLresult;
+				=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool);
+				
 				String result=queryID+",";
 				int count=0;
 				for(int key:resultMap.keySet())
@@ -395,8 +394,8 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		int test=9;
-		BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset"+test+".txt", "./data/FinalMap/SourceTokenMapTrainset"+test+".txt","./data/testset/test"+test+".txt","./data/Bug-ID-Keyword-ID-Mapping.txt","./data/changeset-pointer/ID-SourceFile.txt","./data/ID-Keyword.txt","./data/Sid-MatchWord.txt");
+		int test=10;
+		BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset"+test+".txt", "./data/FinalMap/SourceTokenMapTrainset"+test+".txt","./data/testset/test"+test+".txt","./data/Bug-ID-Keyword-ID-Mapping.txt","./data/changeset-pointer/ID-SourceFile.txt","./data/ID-Keyword.txt","./data/Sid-MatchWord2.txt");
 		String bugReportFolder = "./data/testsetForBL/test"+test;
 		//For Mac
 		//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
@@ -405,8 +404,9 @@ public class BugLocalizationUsingNumbers {
 		String goldsetFile = "./data/gitInfoNew.txt";
 		
 		String outputFilePath
-		="./data/Results/Aug18BLAllTest"+test+".txt";
-		//="./data/Results/Aug18CosineBasedAllTest"+test+".txt";
+		//="./data/Results/Aug20BLTest"+test+".txt";
+		="./data/Results/Aug21CosineBasedTest"+test+".txt";
+		//="./data/Results/Aug20TFbasedTest"+test+".txt";
 		double ALPHA=0.6;
 		double BETA=0.2;
 		int TOPK_SIZE=200;

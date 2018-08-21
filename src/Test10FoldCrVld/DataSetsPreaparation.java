@@ -14,10 +14,12 @@ public class DataSetsPreaparation {
 	ArrayList<String> bugKeywordLines;
 	private String bugInFolder;
 	private HashMap<String, String> bugContentHM;
-	public DataSetsPreaparation(String bugIDFile, String bugKeywordFile, String bugInFolder)
+	String bugOutFolderBL;
+	public DataSetsPreaparation(String bugIDFile, String bugKeywordFile, String bugInFolder, String bugOutFolderBL)
 	{
 		this.bugIDlist=bugIDlist;
 		this.bugKeywordLines=bugKeywordLines;
+		this.bugOutFolderBL=bugOutFolderBL;
 		bugIDlist=ContentLoader.getAllLinesList(bugIDFile);
 		bugKeywordLines= ContentLoader.getAllLinesList(bugKeywordFile);
 		this.bugInFolder=bugInFolder;
@@ -34,7 +36,7 @@ public class DataSetsPreaparation {
 		//For MAc
 		//DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","/Users/user/Documents/Ph.D/2018/Data/ProcessedBugData/");
 		//For Windows
-		DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\Data\\BugDataNew\\");
+		DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\Data\\ProcessedBugDataSnowballStem\\", "E:\\PhD\\Data\\testsetForBLprocessedData\\");
 		
 		//Dont do this now
 		//new DataSetsPreaparation().DataPreparation("./data/BugCorpus/allBug.txt","./data/GitInfoNew.txt","./data/bugIDs.txt");
@@ -96,14 +98,14 @@ public class DataSetsPreaparation {
     		line=foldList.get(Fj-1);
     		spilter=line.split(" ");
     		trainP1end=Integer.valueOf(spilter[1]);
-    		CreateTrainSet(i, trainP1start,trainP1end,trainP2start,trainP2end,"./data/trainset/");
+    		CreateTrainSet(i, trainP1start,trainP1end,trainP2start,trainP2end,this.bugOutFolderBL+"./data/trainset/");
     		
     		//Create testing sets
     		String line2=foldList.get(Fj);
     		spilter=line2.split(" ");
     		teststart=Integer.valueOf(spilter[0]);
     		testend=Integer.valueOf(spilter[1]);
-    		CreateTestSet(i, teststart, testend, "./data/testset/");
+    		CreateTestSet(i, teststart, testend, this.bugOutFolderBL+"./data/testset/");
     		
     		//Create training sets part-2
     		trainP2start=teststart;
@@ -112,10 +114,10 @@ public class DataSetsPreaparation {
     		
     	}
     	//Create last training set
-    	CreateTrainSet(10, 0, 0, teststart+1, trainP2end,"./data/trainset/");
+    	CreateTrainSet(10, 0, 0, teststart+1, trainP2end, this.bugOutFolderBL+"./data/trainset/");
     	
     	//Create last testing set
-    	CreateTestSet(10, 1,trainP2start-1 , "./data/testset/");
+    	CreateTestSet(10, 1,trainP2start-1 ,  this.bugOutFolderBL+"./data/testset/");
     	
     	
     }
@@ -131,7 +133,7 @@ public class DataSetsPreaparation {
     	
     	
     	//For Creating test set for Bug Locator
-    	CreateTestSetForBL("./Data/testsetForBL/", testID, step);
+    	CreateTestSetForBL(this.bugOutFolderBL, testID, step);
     	
     	ArrayList<String> createdTestData=new ArrayList<>();
     	//System.out.println(bugKeywordLines);
