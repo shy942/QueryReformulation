@@ -1,1 +1,0 @@
-action sets undead tooltips customize perspective dialog open customize perspective dialog commands tab select action set hit note tooltip hit hold button wait thick black border tooltip appears spawning tooltip shells

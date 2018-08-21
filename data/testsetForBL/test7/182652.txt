@@ -1,0 +1,2 @@
+viewers performance penalty cell focus manager usage keeping row key pressed control redraw replace redraw needed parts control control redraw cell focus manager moved drawin delegate created attachment performance patch profiler time spent didn redrawing table tree good idea usage simply system mac sytem built profiler eclipse admit created attachment apply tested win mac linux gtk released cvs verified code inspection
+ 

@@ -1,1 +1,0 @@
-early startup mechanism reflect compatibility early activation mechansim class extension class supplying plugin plugin class eclipse access random plugin objects runtime compatibility code support cases current implementation plugin object changed reflection

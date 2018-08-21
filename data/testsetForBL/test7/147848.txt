@@ -1,0 +1,2 @@
+dialogs context menu copy error dialog ignores details follow bug error dialog verify context menu dialog click details verify context menu detail area context menu copy paste text editor pasted text message dialog detail strange menu details fixed copy code including message exception nested core exceptions child status objects fixed code include exception message details message list populated bug marked duplicate bug verified win
+ 

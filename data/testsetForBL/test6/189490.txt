@@ -1,1 +1,2 @@
-common navigator resource won enable open project explorer resource perspective create vanilla project create folder create file resource open navigate file resource remain disabled
+common navigator resource won enable open project explorer resource perspective create vanilla project create folder create file resource open navigate file resource remain disabled bug marked duplicate bug kevin action group contributes retargetable actions org eclipse navigate action set action set contributed org eclipse ide resource retarget action released verified
+ 

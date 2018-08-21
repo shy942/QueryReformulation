@@ -1,1 +1,2 @@
-key bindings delete prompts create simple project text file select file navigator hit key confirm prompt click prompts time delete key dispatched
+keybind delet prompt creat simpl project text file select file navig hit del kei confirm prompt click prompt time delet kei dispatch fix night nightli build week integr build bug mark duplic bug confirm step descrip solari motif cde
+ 

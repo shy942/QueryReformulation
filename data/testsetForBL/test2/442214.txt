@@ -1,0 +1,2 @@
+incorrect method argum eref vref workbenchpag method org eclips intern workbenchpag widgethandl eventhandl handleev event block impl null impl instanceof compatibilitypart editorrefer eref geteditorrefer changedpart eref null editorrefer remov eref viewrefer vref getviewrefer changedpart vref null viewrefer remov eref typo typo eref pass vref subm review http git eclips org cornel cornel releas http git eclips org platform eclips platform git comm verifi daniel
+ 

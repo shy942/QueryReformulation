@@ -1,0 +1,2 @@
+platformuitest testwithoutdisplayaccess sync fail java head platformuitest testwithoutdisplayaccess sync fail java jre test fail subsequ run eclips sdk test oracl java jre reproduc run window linux box bug creat attach patch reproduc possibl don sync valu variabl rcptestworkbenchadvisor setter synchron block getter access variabl order platformuitest incorrect testcreateandrunworkbenchwithexceptiononstartup test startup variabl normal case test variabl static bunch assert startup variabl reason separ test patch appli head oleg test java remain issu fix bug
+ 

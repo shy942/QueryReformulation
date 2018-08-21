@@ -1,1 +1,2 @@
-key bindings delete key deletes styled text summary problem occurs flag event consumed work
+keybind delet kei delet styledtext summari problem occur swt flag event consum work fix test case avoid regres verifi press delet styledtext
+ 

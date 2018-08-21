@@ -11,6 +11,7 @@ import utility.ContentLoader;
 import utility.ContentLoaderQR;
 import utility.ContentWriter;
 import utility.CosineSimilarity2;
+import utility.JaccardIndexSimilarity;
 import utility.MiscUtility;
 import bug.locator.provide.*;
 import simi.score.calculator.*;
@@ -86,7 +87,7 @@ public class BugLocalizationUsingNumbers {
     {
     	HashMap<Integer, ArrayList<String>> temp=new HashMap<>();
         ArrayList<String> lines=ContentLoader.getAllLinesList(address);
-       ;
+       
         for(int index=0;index<lines.size();index++)
         {
         	//System.out.println(line);
@@ -104,16 +105,57 @@ public class BugLocalizationUsingNumbers {
         return temp;
     }
   
-    
+    public HashMap<Integer, ArrayList<Integer>> loadTrainMap(String address)
+    {
+    	HashMap<Integer, ArrayList<Integer>> temp=new HashMap<>();
+        ArrayList<String> lines=ContentLoader.getAllLinesList(address);
+       
+        for(int index=0;index<lines.size();index++)
+        {
+        	//System.out.println(line);
+        	String id=lines.get(index);
+        	id=id.substring(0, id.length()-1);
+        	int tokenID=Integer.valueOf(id);
+        	index++;
+        	String line=lines.get(index);
+        	String[] spilter=line.split(",");
+        	 ArrayList<Integer> list=new ArrayList<>();
+        	 String Idstr="";
+        	if(spilter.length>1)
+        	{
+           
+             Idstr=spilter[0].trim();
+            Idstr=Idstr.substring(1, Idstr.length());
+            list.add(Integer.valueOf(Idstr));
+        	for(int i=1;i<spilter.length-1;i++)
+        	{
+        		Idstr=spilter[i].trim();
+        		list.add(Integer.valueOf(Idstr));
+        	}
+        	 Idstr=spilter[spilter.length-1];
+             Idstr=Idstr.substring(0, Idstr.length()-1);
+             list.add(Integer.valueOf(Idstr.trim()));
+        	
+        	}
+        	else
+        	{
+        		Idstr=spilter[0].trim();
+                Idstr=Idstr.substring(1, Idstr.length()-1);
+                list.add(Integer.valueOf(Idstr));
+        	}
+        	temp.put(tokenID, list);
+        }
+        return temp;
+    }
     
     public void bugLocator(BugLocalizationUsingNumbers obj, String outputFilePath)
     {
     	
-    	obj.trainMapTokenSource=obj.loadHashMap(obj.trainMapTokenSourceAddress);
-    	
+    	obj.trainMapTokenSource=obj.loadTrainMap(obj.trainMapTokenSourceAddress);
+    	MiscUtility.showResult(10, obj.trainMapTokenSource);
 		obj.testSet=obj.loadHashMap(obj.testSetAddress);
 		obj.bugIdKeywordMap=obj.loadHashMap(obj.bugIDKeywordMapAddress);
-		
+		MiscUtility.showResult(10, obj.bugIdKeywordMap);
 		
 		ArrayList<String> finalResult=new ArrayList<>();
 		int i=0;
@@ -135,6 +177,7 @@ public class BugLocalizationUsingNumbers {
 				//=obj.ResultBasedOnTF(queryID);
 				
 				HashMap<Integer, Double> resultMap
+				//=sortedResultMyTool;
 				//=SortedBLresult;
 				=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool);
 				
@@ -156,7 +199,7 @@ public class BugLocalizationUsingNumbers {
     private HashMap<Integer, Double> findBugForEachQueryCosineSimBased(int queryID) {
 		// TODO Auto-generated method stub
     	ArrayList<Integer> keywordList=this.bugIdKeywordMap.get(queryID);
-    	
+    	System.out.println(keywordList);
     	ArrayList <Integer> tempResultList=new ArrayList<>();
     	
     	for(int keyword:keywordList)
@@ -164,6 +207,7 @@ public class BugLocalizationUsingNumbers {
     		if(this.trainMapTokenSource.containsKey(keyword))
     		{
     			ArrayList<Integer> tempList=this.trainMapTokenSource.get(keyword);
+    			System.out.println(tempList);
     		    for(int source:tempList)
     		    {
     		    	if(!tempResultList.contains(source))
@@ -176,7 +220,7 @@ public class BugLocalizationUsingNumbers {
     	}
     	
     	
-    	
+    	System.out.println(tempResultList);
     	//Normalize term frequency
     	HashMap<Integer,Double> normalizedAndSortedResult=this.ResultBasedOnCocineSimi(tempResultList, queryID);
     	//Sort the result
@@ -220,7 +264,7 @@ public class BugLocalizationUsingNumbers {
     public HashMap<Integer,Double> ResultBasedOnTF(int queryID)
     {
     	ArrayList<Integer> keywordList=this.bugIdKeywordMap.get(queryID);
-    	
+    	System.out.println(keywordList);
     	HashMap<Integer,Double> tempResultMap=new HashMap();
     	
     	for(int keyword:keywordList)
@@ -228,7 +272,8 @@ public class BugLocalizationUsingNumbers {
     		if(this.trainMapTokenSource.containsKey(keyword))
     		{
     			ArrayList<Integer> tempList=this.trainMapTokenSource.get(keyword);
-    		    for(int source:tempList)
+    		    System.out.println(tempList);
+    			for(int source:tempList)
     		    {
     		    	if(tempResultMap.containsKey(source))
     		    	{
@@ -285,7 +330,8 @@ public class BugLocalizationUsingNumbers {
     
     public HashMap<Integer,Double> ResultBasedOnCocineSimi(ArrayList<Integer> resultList, int queryID)
     {
-    	
+    	System.out.println("queryID "+queryID);
+    	System.out.println(resultList);
     	ArrayList<Integer> keywordList=this.bugIdKeywordMap.get(queryID);
     	HashMap<Integer, Double> hmCosineScore=new HashMap<>();
     	for(int Sid:resultList)
@@ -320,15 +366,16 @@ public class BugLocalizationUsingNumbers {
     	
     	double maxCosineSim=0.0;
     	String queryContent=MiscUtility.listInt2Str(keywordList);
-    	
+    	System.out.println("queryContent "+queryContent);
     	if(this.SidMatchWoord.containsKey(Sid)){
     		ArrayList<String> SidMatch=this.SidMatchWoord.get(Sid);
-    		//System.out.println(Sid+" "+SidMatch);
+    		System.out.println("Sid "+Sid+" SidMatch "+SidMatch);
     		for(int i=0;i<SidMatch.size()-1;i++)
     		{
     			String content=SidMatch.get(i);
+    			System.out.println("content "+content);
     			double cosineSimScore=0.0;
-    			if(!content.equals("")) cosineSimScore=CosineSimilarity.similarity(queryContent, content);
+    			if(!content.equals("")) cosineSimScore=JaccardIndexSimilarity(queryContent, content).ComputeJaccardIndexSimilarity();
     			if(cosineSimScore>maxCosineSim && cosineSimScore>0.0) maxCosineSim=cosineSimScore;
     	
     		}
@@ -338,7 +385,13 @@ public class BugLocalizationUsingNumbers {
 	
     }
     
-    public HashMap<Integer,Double> convertSIDtoNum(int queryID, HashMap<Integer, HashMap<String, Double>> buglocatorRESULT)
+    private JaccardIndexSimilarity JaccardIndexSimilarity(String queryContent, String content) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	public HashMap<Integer,Double> convertSIDtoNum(int queryID, HashMap<Integer, HashMap<String, Double>> buglocatorRESULT)
     {
     	
     	HashMap<Integer, Double> convertedResult=new HashMap<>();
@@ -394,7 +447,7 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		int test=10;
+		int test=1;
 		BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset"+test+".txt", "./data/FinalMap/SourceTokenMapTrainset"+test+".txt","./data/testset/test"+test+".txt","./data/Bug-ID-Keyword-ID-Mapping.txt","./data/changeset-pointer/ID-SourceFile.txt","./data/ID-Keyword.txt","./data/Sid-MatchWord2.txt");
 		String bugReportFolder = "./data/testsetForBL/test"+test;
 		//For Mac
@@ -405,7 +458,7 @@ public class BugLocalizationUsingNumbers {
 		
 		String outputFilePath
 		//="./data/Results/Aug20BLTest"+test+".txt";
-		="./data/Results/Aug21CosineBasedTest"+test+".txt";
+		="./data/Results/Aug21TFbasedTest"+test+".txt";
 		//="./data/Results/Aug20TFbasedTest"+test+".txt";
 		double ALPHA=0.6;
 		double BETA=0.2;

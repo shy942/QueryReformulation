@@ -1,1 +1,0 @@
-global actions leak retarget actions leaked java editor open close open java editor close java editor repeat open close org eclipse actions retarget action leaked instances remain registered property change listeners action bars

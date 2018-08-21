@@ -1,1 +1,0 @@
-org eclipse navigator resources friend org eclipse ide discouraged access warning code resource mgmt action provider protected image descriptor image descriptor string relative path return workbench plugin image descriptor relative path ears

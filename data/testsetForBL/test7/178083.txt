@@ -1,0 +1,2 @@
+contributions provide selection adapter factory core expression interfaces provide interfaces bug update patch https bugs eclipse org bugs attachment cgi reason work default variable adapt selection provide contents structured selection selection contents created attachment selection adapter factory updated work selection structured selection covered tests differently move extension org eclipse workbench org eclipse wouldn depend core expressions talked tod isn released build verified bug
+ 

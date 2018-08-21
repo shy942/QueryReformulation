@@ -1,0 +1,2 @@
+workbench operation stress tests takes long time workbench operation stress tests takes seconds making long test suites idea tests hammer iterations operation handling workbench open action handler listeners fire repeatedly reduce number repetitions arbitrary acceptable amount time cut minute reduced seconds fixed build submission fixed test suites verified source inspection tagged build
+ 

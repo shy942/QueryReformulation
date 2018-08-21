@@ -1,1 +1,2 @@
-toolbars items set view form toolbar items view form view form slot set top center set null toolbar items
+rcp toolbar item set viewform toolbar item viewform viewform slot settopcent set null toolbar item support viewpan updateactionbar handl initi case handl case toolbar updat independ isv iactionbar updateactionbar code chang merg chang back move respons view toolbar placem present ensur capabl make decision notifi present number tool item chang updat viewform assum critic lwp list defer toolbar placem manag present fix time
+ 

@@ -1,1 +1,2 @@
-common navigator sorter inconsistently children trigger points discovered code inspection common viewer sorter converted trigger points children bug place code children switched trigger points
+common navigator sorter inconsistently children trigger points discovered code inspection common viewer sorter converted trigger points children bug place code children switched trigger points created attachment patch released
+ 

@@ -1,1 +1,0 @@
-remove dependency org eclipse update core build final noticed browsing code workbench advisor method check updates call update manager site manager handle history site manager handle method empty body release call reference removed org eclipse ide application remove dependency org eclipse update gradually removing dependencies classic update easy place start

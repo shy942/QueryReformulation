@@ -1,1 +1,2 @@
-workbench platform marked experimental org eclipse dialogs working set configuration block working set group org eclipse services source provider service org eclipse statushandlers abstract status area provider file separate bugs set bug lumped figured follow suit
+workbench platform marked experimental org eclipse dialogs working set configuration block working set group org eclipse services source provider service org eclipse statushandlers abstract status area provider file separate bugs set bug lumped figured follow suit created attachment patch working set issues working set fixed created attachment status handling released
+ 

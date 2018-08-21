@@ -1,1 +1,0 @@
-themes dialog fonts don build window preferences general appearance color fonts dialog font change font italics press close preferences dialog reopen fonts wizard

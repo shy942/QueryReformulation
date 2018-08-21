@@ -1,1 +1,0 @@
-contributions update action extension points identifier add support schema type identifier action sets exsd action set associations exsd editor actions exsd popup menus exsd view actions exsd

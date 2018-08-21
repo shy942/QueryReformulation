@@ -1,0 +1,2 @@
+viewmgmt editormgmt iworkbenchpart createpartcontrol refer exist interfac build iworkbenchpart createpartcontrol javadoc regist global action code iactionservic code regist popup menu code iactionservic code regist selec provid code iselectionservic code option interfac iactionservic regist selec provid code iselectionservic code correct chang regist global action site code iactionbar code regist context menu site regist selec provid site workbench code iselectionservic code option view spec clarif correc api chang requir pmc approv verifi
+ 

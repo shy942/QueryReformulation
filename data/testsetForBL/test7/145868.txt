@@ -1,0 +1,2 @@
+workbench remove unused messages properties files noticed bunch unused messages properties files rid tool find broken externalized strings find duplicates unused properties files message classes attach patches projects messages removed stream translated created attachment patch workbench ide win plugins created attachment patch navigator navigator resources projects michael check apply patch navigator navigator resources projects boris messages databinding plugin committed workbench ide win patch stream fixed released databinding messages misspelled mislabelled verified
+ 

@@ -1,0 +1,2 @@
+key bindings restore experimental key bindings restore experimental current bad experimental complete functionality missing threw exceptions investigated hoping dexperimental key bindings continue working released work bring small plugin deployed markup extension point org eclipse preference key category org eclipse preference workbench class org eclipse extension factory preference org eclipse preference keyword reference org eclipse ide extension shipped
+ 

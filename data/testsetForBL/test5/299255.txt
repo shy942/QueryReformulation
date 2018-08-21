@@ -1,1 +1,2 @@
-common navigator hook tests plugin xml patch contributed franck mangin bug bug
+commonnavig hook cnf test plugin xml patch contribut franck mangin fico bug bug creat attach patch releas head
+ 

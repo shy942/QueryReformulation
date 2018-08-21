@@ -1,0 +1,2 @@
+themes font setting don restart build switched presentation theme editor fonts changed attempt change font preference setting demo reproduce tod theme work restart today usual font font preference completely broken change font hit reopen preferences change discarded clarify completely ignore change font settings change restart updating summary issues pref side realized colors fonts wasn reacting properly applied apperance theme pref listener wasn updating values wasn modified theme system verified
+ 

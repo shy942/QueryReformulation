@@ -1,0 +1,2 @@
+viewers viewer row reused connected item create viewer row ver item create degrade performance cache row reuse created attachment patch tests pass created attachment revised patch clone calling neighbor created attachment element viewer row consitency created attachment reapply fixed minor tweaks created attachment fixed equal methods row cell created attachment updated javadoc explain caching scheme javadoc spell clients subclasses returned viewer row objects change request mailing list based performance win released verified code inspection
+ 

@@ -1,0 +1,2 @@
+workbench excep log place build place code excep occur log entri gener full detail excep log bug entri org eclips messag excep org eclips action deleteresourceac java lang nullpointerexcep sender ideworkbenchplugin log string workbenchplugin log string check fix case conveni method workbenchplugin log class clazz string methodna throwabl equival ideplugin clean javadoc log method verifi
+ 

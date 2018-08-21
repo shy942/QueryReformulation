@@ -1,0 +1,2 @@
+formeditor getselectedpag return null expect maven pom editor method formeditor getselectedpag return null pom text editor type check getactivepageinst enforc return null isn implem iformpag appear constraint formeditor implem iformpag method return result independ actual type gerr chang creat http git eclips org target neon simpl chang enabl text command maven pom editor text editor consid bug worth fix gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm beda cbbab
+ 

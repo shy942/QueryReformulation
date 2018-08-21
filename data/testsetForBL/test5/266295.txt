@@ -1,1 +1,2 @@
-contributions context selection called needed editors computing selection context expensive java editor reconcile java model current document reason selection queried menu opened handler called time java editor activated reconcile thread input input calling input
+contributions context selection called needed editors computing selection context expensive java editor reconcile java model current document reason selection queried menu opened handler called time java editor activated reconcile thread input input calling input created attachment paul reply comment created attachment details straight performance tests current usecases pass released confirmed usecases work dani perf improvement expected verified fixes issued
+ 

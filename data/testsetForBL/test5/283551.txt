@@ -1,0 +1,2 @@
+field assist content proposal adapter class java doc method java doc contradict class documentation class intended subclassed methods open proposal popup close proposal popup method subclasses explicitly invoke opening popup proposals popup open beep sounded opened class release forgot update java doc class opened class release forgot update java doc class happened assigning fixed javadoc explains methods controlling popup behavior implementation private verified win build source inspection
+ 

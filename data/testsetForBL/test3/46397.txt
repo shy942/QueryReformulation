@@ -1,1 +1,0 @@
-key bindings ability map keypad events bug resolved map keypad events key bindings dialog doesn distinguish keypad events mentioned bug told open request

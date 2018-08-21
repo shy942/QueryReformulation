@@ -1,0 +1,2 @@
+themes running test suites high contrast crashes launch build steps reproduce enable high contrast windows control panel accessibility display enable high contrast eclipse prompt relaunch eclipse application tests configuration fail launch jason exceptions reported log file eclipse application tests configuration fails running tests fails created attachment patch org eclipse workbench fixes case default eric eric bit confused comment defaults font doesn exist talking defaulting color code font color verified
+ 

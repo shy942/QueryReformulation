@@ -1,1 +1,2 @@
-snippet demonstrate inline editing tree viewer summary test case
+snippet demonstrate inline editing tree viewer summary test case cvs
+ 

@@ -1,0 +1,2 @@
+test disabl auto save job bug comment featur default eclips forc long wait job finish test wait job finish avoid conflict disabl job explicitli avoid build valid issu run test build speed unitest plugin custom ini sustain disabl plugn custom ini test plugin configur tycho eclips wors system properti ensur job sens test run http git eclips org disabl test dorg eclips testsdisableworkbenchautosav true excel repli comment excel releas http git eclips org platform eclips platform git comm ecef
+ 

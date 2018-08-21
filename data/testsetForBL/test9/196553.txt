@@ -1,1 +1,0 @@
-dialogs support color provider font provider filtered items selection dialog wrapper label provider implementation filtered items selection dialog cancels color provider returns null implement font provider moving class loose color font decoration bug

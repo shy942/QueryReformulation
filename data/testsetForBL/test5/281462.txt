@@ -1,1 +1,0 @@
-common navigator required bundle versions org eclipse navigator required bundle versions org eclipse navigator resources outdated doubt compiles runs

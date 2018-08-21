@@ -1,0 +1,2 @@
+workbench add hide toolbar action context menu hide toolbar action context menu toolbars looked critical lowering priority verified
+ 

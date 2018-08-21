@@ -1,0 +1,2 @@
+navigator layout deprecated explanation view workbench resource navigator standard component deprecated public static string org eclipse views resource navigator alternative assume common navigator stuff planned released
+ 

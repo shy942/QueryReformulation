@@ -1,1 +1,2 @@
-workaround multi editor change int workaround tab folder child visibility false notification multi editor change int check workaround editor activated restored previous session removed
+workaround multi editor change int workaround tab folder child visibility false notification multi editor change int check workaround editor activated restored previous session removed workarounds don hurt reopen investigation paul investigate issue problems attach patch removal created attachment remove workarounds problems released
+ 

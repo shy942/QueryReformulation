@@ -1,1 +1,2 @@
-minimized views restore active minimized view active user input automatically activated restored active view minimized focus move minimized view
+minim view restor activ minim view activ user input automat activ restor activ view minim focu move minim view creat attach patch implem featur patch implem featur fix bug caus float toobar continu minim view chri comm patch appli problem view creat problem problem view restor stai minim view tab top quick problem view problem view open automat problem doesn focu patch work correctli suppos restor view focu
+ 

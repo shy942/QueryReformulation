@@ -1,1 +1,0 @@
-detached views tearing maximized view disappear windows multi monitor start fresh workspace drag view workbench window tear view disappears screen move view selecting typing alt space shell system menu selecting move menu view

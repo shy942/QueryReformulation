@@ -1,0 +1,2 @@
+undo delete resources operation halts bug test linux guess change delete resource action call operation pops dialog blocks automated testing test case invoking undoable operations actions ensure set advanced validation user approver true fixes block actualloy exposes bug deleting closed project opened bug track fixed verified thest runs completes win failure reported linux replicate windows time verified linux
+ 

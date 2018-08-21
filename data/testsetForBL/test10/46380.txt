@@ -1,1 +1,2 @@
-key bindings key widget keyboard navigation insert special keyboard ability insert backspace tab shift tab backspace problem tabbing widget selects text ideally tabbing widget button add key select text position cursor text widget
+keybind kei widget keyboard navig insert special keyboard abil insert backspac tab shift tab backspac problem tab widget select text ideal tab widget buttonaddkei select text position cursor text widget defer bug swt provid requir support time fix head problem problem simpl solv swt work verifi
+ 

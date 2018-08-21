@@ -1,0 +1,2 @@
+undo undo deleting properties file sets explicit encoding create properties file encoding default determined content delete file navigator choose edit undo file restored encoding explicitly set fixed file restore charset retrieved file history charset assigned resource changed charset assigned resource deleted verified win deleted build properties file restored undo charset default
+ 

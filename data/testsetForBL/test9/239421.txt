@@ -1,1 +1,0 @@
-editor mgmt multi editor support propagate events nikolay botev implement split editor functionality idea bug comment file save works invokes save command file save work making change editor mark editor tab dirty

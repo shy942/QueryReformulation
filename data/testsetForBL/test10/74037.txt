@@ -1,1 +1,2 @@
-view mgmt schema org eclipse element factories specific class attribute schema element factories declared type java based org eclipse element factory
+viewmgmt schema org eclips elementfactori specif class attribut schema elementfactori declar type java base org eclips ielementfactori base org eclips ielementfactori kind java restric blank type string requir experi unpleas attribut trail whitespac attribut interfac shure pde fix note chang delta schema larger expect marker chang paragraph attribut assu issu nick verifi
+ 

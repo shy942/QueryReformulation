@@ -1,1 +1,2 @@
-common navigator single object allowed created attachment patch anton plugin transfer handling reporting drag anton nice patch fixes
+common navigator single object allowed created attachment patch anton plugin transfer handling reporting drag anton nice patch fixes approach patch problem common drop adaptor drag enter calling superclass setting transfer type funny settings transfer type changed call superclass transfer type set plugin transfer type conditions released bug marked duplicate bug reply comment approach patch problem common drop adaptor drag enter calling superclass setting transfer type funny settings transfer type changed call superclass transfer type set plugin transfer type conditions released francis proper
+ 

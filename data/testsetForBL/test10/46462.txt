@@ -1,1 +1,2 @@
-preferences workbench switches double click startup pre workspace startup switch single mode
+rcp prefer workbench switc doubl click startup pre rcp workspac startup switch singl mode issu prefer bug bug mark duplic bug bug happen frequent startup ideworkbenchpreferencepag block parent class default fix verifi build don option chang bug work
+ 

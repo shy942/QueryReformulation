@@ -1,0 +1,2 @@
+activitymgmt enabl capabl doesn toolbar button restart scenario open java perspect prefer capabl uncheck develop capabl press prefer capabl check develop capabl press expect behavior debug toolbar button top trim current behavior debug toolbar button miss restart work fine introduc comm bug setchildvis method coolbartotrimmanag chang overriddenvis flag copi visibl contribu elem model elem respons bug modelitem setvis item isvis remov fix issu point setchildvis method appli overrid http git eclips org repli andrei loskutov comment http git eclips org andrei merg url
+ 

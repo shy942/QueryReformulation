@@ -1,1 +1,2 @@
-dialogs input dialog invoking set error message early build setting error message early anticipated shouldn throw exception public class main public static void main string args display display display shell shell shell display input dialog dialog input dialog shell test null dialog set error message error dialog open shell open
+dialog inputdialog npe invok seterrormessag earli build set error messag earli anticip shouldn throw excep public class main public static void main string arg displai displai displai shell shell shell displai inputdialog dialog inputdialog shell test test null dialog seterrormessag error dialog open shell open move api bug investig move dialog bug mileston move individu rcx mileston work fix autom test case ing mcq fyi verifi autom test
+ 

@@ -1,0 +1,2 @@
+common navigator navigator service interfaces navigator service class interface function properly patch attached created attachment small created attachment common drop adapter bad cast common drop adapter internal package takes navigator content service parameter calls service casts interface private type class private functions class internal class bad patches good released
+ 

@@ -1,1 +1,2 @@
-unit property retrieval check instanceof return null created attachment junit test
+unit property retrieval check instanceof return null created attachment junit test patch points tests tab folder test java tests testing tab folder property handlers return null tab folder test class misleading called retrieve property test property retrieval tests tab folder test agree move tests resubmit reminder adding test class remember add class css swt test suite won test suite created attachment junit test retrieve property released
+ 

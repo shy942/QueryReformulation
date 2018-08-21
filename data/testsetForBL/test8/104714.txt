@@ -1,0 +1,2 @@
+activity mgmt preferences capabilities sorted alphabetically preferences capabilities sorted alphabetically plugin lauched defines seagull activity appears capabilities list box development team confirmed implement text method activity category preference category label provider class org eclipse workbench eclipse org eclipse activities activity category preference java executes code org eclipse workbench eclipse org eclipse internal activities activity category label provider java text method verified
+ 

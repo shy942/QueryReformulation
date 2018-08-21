@@ -1,1 +1,0 @@
-message dialog toggle returns wrong message dialog toggle class buttons message dialog toggle dialog message dialog toggle display current active shell core plugin string confirm delete dialog title null message message dialog string dialog constants dialog constants dialog constants dialog constants builder plugin string checkbox values returned buttons wrong dialog constants

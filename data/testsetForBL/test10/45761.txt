@@ -1,1 +1,2 @@
-perspective menu bad null check thrown perspective shortcuts current perspectives perspective action ids field null patch forthcoming
+perspectivemenu bad null check npe thrown getperspectiveshortcut current perspect perspectiveactionid field null patch forthcom creat attach patch org eclips workbench find getperspectiveactionid return null null check bogu appli patch verifi resolv bug provid futur patc top level project individu file reason nice conven don open patch eclips figur suppos appli call lazi lazi lazi lazi gener patch top level occasion work batch small bug case patc seper lazi refresh workspac chang call lazi nice patch dialog select file wish diff hrm smell featur request null check version teach preserv tradition close
+ 

@@ -1,1 +1,2 @@
-editor mgmt special chars filenames funny filename tabs behaviour big deal filename tabs interpret names files opened files access window menu alt shortcut win sun eclipse
+editormgmt special char filena funni filena tab behaviour big deal filena tab interpret name file open file access window menu alt shortcut win sun jdk eclips ctabitem behav text ctabitem ampersand interpret mnemon ctabitem settext javadoc clear tabitem settext updat move report detect case ampersand escap file txt invok ctabitem settext txt displai txt comm test suit verifi creat file txt txt txt simpl project file open mnemon verifi linux motif build
+ 

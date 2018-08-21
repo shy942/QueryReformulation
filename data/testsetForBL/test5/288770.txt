@@ -1,0 +1,2 @@
+statushandling multiple errors top pane space resizing bottom space tests verified resizing correct details area space
+ 

@@ -1,0 +1,2 @@
+snippet add snippet demonstrating center image column asked newsgroups fixed
+ 

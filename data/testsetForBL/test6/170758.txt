@@ -1,1 +1,0 @@
-common navigator org eclipse navigator resources export packages org eclipse navigator resources export packages set project properties plug development plug manifest compiler exported packages error missing internal package org eclipse internal navigator workingsets

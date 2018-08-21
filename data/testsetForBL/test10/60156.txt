@@ -1,1 +1,2 @@
-commands warning suspicious compiler logs warning suspicious hiding bug local variables called context binding definitions builds src plugins org eclipse workbench eclipse org eclipse internal commands preference command registry java context binding definitions context binding definitions assignment variable context binding definitions problem warning
+command warn suspici compil log warn suspici hide bug local variabl call contextbindingdefini warn build src plugin org eclips workbench eclips org eclips intern command preferencecommandregistri java contextbindingdefini contextbindingdefini assign variabl contextbindingdefini problem warn nope compil warn strip need command infrastructur simpl work compil warn fix compil warn
+ 

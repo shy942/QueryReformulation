@@ -1,0 +1,2 @@
+wrong position option contributedpartrender javadoc cleanup option inject privat logger logger option inject tini remov unnecessari javadoc chang problem order repli thoma schindl comment problem order didn consist reason chang order weird http git eclips org fix http git eclips org platform eclips platform git comm
+ 

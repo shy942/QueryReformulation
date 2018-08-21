@@ -1,1 +1,0 @@
-editor mgmt switch editor dialog prompts dirty editor individually batching open editors dirty open switch editor dialog select editors click close selected editors confirm save individually save

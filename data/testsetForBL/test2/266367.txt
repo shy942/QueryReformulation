@@ -1,1 +1,0 @@
-error closing dialog build opened dialog clicking tabs installation details closed dialog error dialog org eclipse internal plugins encountered problem internal error occurred pressing details widget disposed log file don stack trace note happened times eclipse session trigger clicked tabs

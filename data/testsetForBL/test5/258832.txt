@@ -1,0 +1,2 @@
+working sets test basic working set element adapter class tests tests fine build test basic working set element adapter direct test basic working set element adapter inheritance test basic working set element adapter adaptable test basic working set element adapter adapter manager
+ 

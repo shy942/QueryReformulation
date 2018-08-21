@@ -1,0 +1,2 @@
+working sets click select working set dialog open select working set dialog click close dialog button disabled click active button button activated expect button active dialog opens dialog initially disabled select working set dialog created attachment screenshot happen navigator open view menu
+ 

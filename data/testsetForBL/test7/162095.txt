@@ -1,0 +1,2 @@
+workbench add default icons quick access add default icons quick access nodes elements aaron created attachment default icons patch patch adds default icons quick access created attachment element icon created attachment node icon released reopened add action contribution item icons menu created attachment action contribution item patch patch adds icons quick access dialog elements type action contribution item resolved persistance extension patch bug verified windows
+ 

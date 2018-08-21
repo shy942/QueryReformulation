@@ -1,0 +1,2 @@
+key bindings view menu command open view menu dialog occurs view menu command open view menu dialog steps focus view view menu check pressing ctrl window preferences ctrl expected opens preferences menu opens view menu workbench window fixing don break ctrl dialogs open type quick outline created attachment pref menu preferences dialog problem occurs dialogs software updates default view menu handler active workbench windows detached views behaviour fixed bug patch add accessibility dropdown menu tod review released
+ 

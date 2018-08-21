@@ -1,0 +1,2 @@
+commands view action longer respects fast parameter clicking selecting view menu opening dialog view opened perspective fast view paul
+ 

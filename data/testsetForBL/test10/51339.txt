@@ -1,1 +1,2 @@
-editor mgmt switch editor dialog prompts dirty editor individually batching open editors dirty open switch editor dialog select editors click close selected editors confirm save individually save
+editormgmt switch editor dialog prompt dirti editor individu batch open editor dirti open switch editor dialog select editor click close select editor confirm save individu save press save select editor press close work option move doug bug http wiki eclips org platform bug triag chang remi respons watch editormgmt compon area creat attach workbencheditorsdialog patch batch save oper saveableslist fix head bug report sebastian verifi window cherri pick develop http git eclips org platform eclips platform git comm develop bef
+ 

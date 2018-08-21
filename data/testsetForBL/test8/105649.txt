@@ -1,0 +1,2 @@
+undo object undo context label object null label returns object label stored label null object null fixed verified inspection source don solution null case object null label returned null super implementation called returns empty string reopening case handled correctly issue shipped fixed verified code inspection
+ 

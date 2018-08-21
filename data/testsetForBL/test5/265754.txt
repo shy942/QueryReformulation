@@ -1,0 +1,2 @@
+javadoc abstract plugin method talks shutdown build steps reproduce javadoc abstract plugin javadoc activator extends abstract plugin method talks shutdown wrong unclear fixed verified
+ 

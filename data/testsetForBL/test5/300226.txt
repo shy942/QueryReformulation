@@ -1,1 +1,2 @@
-editor mgmt create tests bug created attachment bug tests patch reasons test breaks editor icon test test dependant bundle icon
+editormgmt creat test bug creat attach bug test patch reason test break editoricontest testdependantbundleicon invok save registri caus problem impli test clean gener editor registri problem line test fail fileeditormap src fileeditormap registri getfileeditormap registri setfileeditormap src registri saveassoci icontest file platform plugin org eclips icon full obj font gif platform plugin org eclips jdt icon full obj class obj gif creat attach bug test patch root unfortun case copi past plugin xml editor defini caus icon chang patch releas head verifi run test local
+ 

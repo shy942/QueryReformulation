@@ -1,0 +1,2 @@
+screen empti maxim workspac start start workspac screen close save workspac restart workspac note tab visibl maxim empti resiz window redraw properli doubl click tab minim sound push comm set initi standbi viewintroadapterpart createpartcontrol
+ 

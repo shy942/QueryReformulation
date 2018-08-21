@@ -1,1 +1,0 @@
-detached views detached view behavior accessibility dragging floating view dock workbench window dock floating views dock user invoke dock view context menu toolitem view title choosing icon pretty hard accessibility float view view context menu opening view context menu broken floating views floated moved resized keyboard

@@ -1,1 +1,2 @@
-key bindings messages generated incorrect message content plugin org eclipse workbench bug initially created clone bug build message key incorrect properties file unused message matches message org eclipse internal key assist dialog org eclipse osgi missing message matches message org eclipse internal key assist dialog
+key bindings messages generated incorrect message content plugin org eclipse workbench bug initially created clone bug build message key incorrect properties file unused message matches message org eclipse internal key assist dialog org eclipse osgi missing message matches message org eclipse internal key assist dialog released
+ 

@@ -1,1 +1,0 @@
-compatibility contributed view perspective extension moved shared area install mylyn open task repositories view place shared area open repository exploring perspective time shared area

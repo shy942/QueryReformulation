@@ -1,1 +1,2 @@
-commands update command action update command action parameterized command generate command method work initialize images command image service check command contribution item wait week committed parameterized command
+commands update command action update command action parameterized command generate command method work initialize images command image service check command contribution item wait week committed parameterized command created attachment create command calls parameterized command generate command image descriptors set init released verified
+ 

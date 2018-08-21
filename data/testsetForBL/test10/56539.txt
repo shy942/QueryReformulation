@@ -1,1 +1,2 @@
-key bindings unbind key preference impossible remove default key bindings debug actions step build reason impossibility select key binding list selection resets key binding team actions update commit
+keybind unbind kei prefer imposs remov default kei bind debug action step build reason imposs select kei bind list selec reset kei bind team action updat comm chang separ bug report issu platform debug issu platform team reassign platform debug selec reset problem prefer debugg bug mark duplic bug problem debug context imposs select debug context combo box bottom caus context doesn member variabl position error getcontextid fix head bug mark duplic bug verifi select step kei bind solari motif cde
+ 

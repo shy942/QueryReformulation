@@ -1,1 +1,2 @@
-workbench potential workbench window cool bar locked body method protected boolean cool bar locked return cool bar manager lock layout javadoc cool bar manager return null check haven real product test cases lock tool bar action installed workbench window closed workbench advisor post startup
+workbench potenti npe workbenchwindow iscoolbarlock bodi method protect boolean iscoolbarlock return getcoolbarmanag getlocklayout javadoc getcoolbarmanag return null check haven real product test case locktoolbarac instal workbench window close workbenchadvisor poststartup creat attach check null coolbarmanag isn patch return fals iscoolbarlock workbench close poststartup locktoolbarac creat doesn afterward patch releas head stream close
+ 

@@ -1,0 +1,2 @@
+keybindings creating key binding untitled empty text file weirdness assign key untitled text file wizard category file named patly wizard creates empty untitle text file invoke key empty wizard finish button generated command respect finish early flag org eclipse wizards extension point created attachment released patch bug marked duplicate bug
+ 

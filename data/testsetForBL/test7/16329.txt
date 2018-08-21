@@ -1,1 +1,0 @@
-editor mgmt activate editor set focus editor activate editor shortcut work moving ctrl tab java editor toolbars pressing doesnt activate editor

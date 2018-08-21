@@ -1,1 +1,0 @@
-key bindings ctrl shift popup focus easier pref pressing ctrl shift place cursor popup ctrl shift open preference inconsistent popups inspect text hover popup

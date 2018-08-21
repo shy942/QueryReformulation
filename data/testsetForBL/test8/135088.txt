@@ -1,0 +1,2 @@
+face abstract resource manager find returns count created resource attempt call find abstract resource manager subclass count object resource bound desired descriptor count private class unusable clients addressed address intention method description created attachment patch jface reviewed committed patch released resource manager test test resource manager find verify original failure kim verified test case passed bug marked duplicate bug
+ 

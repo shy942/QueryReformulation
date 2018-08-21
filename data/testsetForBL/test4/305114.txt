@@ -1,0 +1,2 @@
+commonnavig resourceselectionutil deprec public replac public api class org eclips view navig resourceselectionutil deprec hint common navig framework class cnf counterpart intern sworn class kind workbench code cnf find creat attach propos patch fit org eclips resourceutil move api continu org eclips view navig deprec point remov entir packag bori releas todai api chang depend toni subm bug week releas head repli comment depend toni subm bug week releas head quick turnaround wasn stumbl warn plan bug moment
+ 

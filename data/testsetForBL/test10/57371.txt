@@ -1,1 +1,2 @@
-preferences linked resource list sorted ignoring case preferences workbench linked resources list sorted alphabetically ignoring case aaa
+prefer link resourc list sort ignor case prefer workbench link resourc list sort alphabet ignor case zzz aaa reopen ship plan work happi review patc http wiki eclips org platform bug triag chang gerr chang creat http git eclips org fix subm gerr greatfix add greatfix keyword assign gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm fix robert verifi
+ 

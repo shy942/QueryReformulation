@@ -1,0 +1,2 @@
+performance tests collator collator dependant bug ensure performance regressions java text implementation adjust target milestone point closed milestone hitesh writing test pretty easy created attachment patch created attachment updated patch updated patch larger array iterations sizes repetitions wasn reliable measure future reference measure test takes finish perf perf perf streams verified
+ 

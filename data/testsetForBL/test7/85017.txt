@@ -1,1 +1,0 @@
-key bindings preference hang org eclipse swt internal gtk gtk tree view column cell size org linux xia preference open select context combo box bottom modify tab response system repainting stopped

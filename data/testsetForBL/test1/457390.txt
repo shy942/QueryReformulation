@@ -1,0 +1,2 @@
+fastview deprec fast view api support fast view modeledpagelayout addfastview call util unsupport addfastview viewid remov api remov field fastviewwithradio org eclips view method ipagelayout iworkbenchwindowconfigur getshowfastviewbar setshowfastviewbar mark deprec mark deprec remov bug set api deprec remov repli deni zygann comment bug set api deprec remov deprec http wiki eclips org eclips api central deprec polici http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm dfe deni contribu delai side
+ 

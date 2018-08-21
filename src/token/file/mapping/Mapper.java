@@ -12,22 +12,23 @@ public class Mapper {
 	String bugKeywordFile;
 	static HashMap<Integer, ArrayList<Integer>> bugKeywordMap;
 	static HashMap<Integer, ArrayList<Integer>> bugSourceMap;
+	static HashMap<Integer, ArrayList<Integer>> KeywordSourceMap;
 	static HashMap<Integer, ArrayList<Integer>> tokenBugMap;
-	static HashMap<Integer, ArrayList<Integer>> tokenSourceMap;
 	
 	public Mapper(String bugKeywordFile)
 	{
 		this.bugKeywordFile=bugKeywordFile;
 		this.bugKeywordMap=new HashMap<Integer, ArrayList<Integer>>();
 		this.bugSourceMap=new HashMap<Integer, ArrayList<Integer>>();
-		this.tokenBugMap=new HashMap<Integer, ArrayList<Integer>>();
-		this.tokenSourceMap=new HashMap<>();
+		this.KeywordSourceMap=new HashMap<Integer, ArrayList<Integer>>();
+		this.tokenBugMap=new HashMap<>();
 	}
 	
 	
 	//Load file 
-	public HashMap<Integer, ArrayList<Integer>> LoadBugKeywordMap(String filePath)
+	public HashMap<Integer, ArrayList<Integer>> LoadMap(String filePath)
 	{
+		HashMap<Integer, ArrayList<Integer>> hm= new HashMap<>();
 		ArrayList<String> lines = ContentLoader
 				.getAllLinesOptList(filePath);
 		
@@ -43,12 +44,12 @@ public class Mapper {
 					intKeyword.add(Integer.parseInt(key));
 				}
 			
-			bugKeywordMap.put(BugID, intKeyword);
+			hm.put(BugID, intKeyword);
 			System.out.println(BugID);
 		}
 		
 		//MiscUtility.showResult(100, bugKeywordMap);
-		return this.bugKeywordMap;
+		return hm;
 		
 	}
 	
@@ -87,7 +88,7 @@ public class Mapper {
 	public  HashMap<Integer, ArrayList<Integer>> CreateTokenSouceFileMap(HashMap<Integer, ArrayList<Integer>> tokenBugMap, HashMap<Integer, ArrayList<Integer>> bugSourceMap, String tokenSourceFile)
 	{
 		HashMap<Integer, ArrayList<Integer>> tokenSourceMap=new HashMap<>();
-		ArrayList<String> List=new ArrayList<>();
+		
 		for (int keyword : tokenBugMap.keySet()) {
 			ArrayList<Integer>  bugIDs= tokenBugMap.get(keyword);
 			ArrayList<Integer> tokenSourceList=new ArrayList<>();
@@ -102,12 +103,25 @@ public class Mapper {
 					
 				}
 			}
-			//System.out.println(keyword+"  "+ MiscUtility.listInt2Str(tokenSourceList));
-			List.add(keyword + ":" + MiscUtility.listInt2Str(tokenSourceList));
+			
+			if(tokenSourceList.size()>0)
+			{
+				System.out.println(tokenSourceList.size());
+				String slist="";
+				for(int i=0;i<tokenSourceList.size();i++)slist+=tokenSourceList.get(i)+" ";
+				System.out.println(keyword+"\n"+ slist);
+				
+			
 			tokenSourceMap.put(keyword, tokenSourceList);
+			}
 		}
-		System.out.println(List);
-		ContentWriter.writeContent(tokenSourceFile, List);
+	
+		for(int token:tokenSourceMap.keySet())
+		{
+			ContentWriter.appendContent(tokenSourceFile, token+":\n"+tokenSourceMap.get(token));
+		}
+		//ContentWriter.writeContent(tokenSourceFile, List);
+		MiscUtility.showResult(10, tokenSourceMap);
 		System.out.println("Done!!!!!!!!");
 		return tokenSourceMap;
 	}
@@ -131,7 +145,7 @@ public class Mapper {
 				{
 					list.add(key);
 				}
-				SourceTokenMap.put(Sid, list);
+				if(!list.isEmpty())SourceTokenMap.put(Sid, list);
 			}
 		}
 		for(int Sid:SourceTokenMap.keySet())
@@ -145,17 +159,17 @@ public class Mapper {
 		// TODO Auto-generated method stub
 
 		long start=System.currentTimeMillis();
-		int train=9;
+		int train=10;
 		Mapper obj=new Mapper("./data/trainset/Train"+train+".txt");
-		obj.bugKeywordMap=obj.LoadBugKeywordMap("./data/trainset/Train"+train+".txt");
+		obj.bugKeywordMap=obj.LoadMap("./data/trainset/Train"+train+".txt");
 		obj.CreateTokenBugMap(obj.bugKeywordMap);
 		long end=System.currentTimeMillis();
 		System.out.println("Time elapsed:"+(end-start)/1000+" s");
 		
 		
-		obj.bugSourceMap=obj.LoadBugKeywordMap("./data/Bug-ID-Keyword-ID-Mapping.txt");
-		obj.tokenSourceMap=obj.CreateTokenSouceFileMap(obj.tokenBugMap,obj.bugSourceMap, "./data/FinalMap/TokenSourceMapTrainset"+train+".txt");
-		obj.CreateSourceToTokenMap(obj.tokenSourceMap, "./data/FinalMap/SourceTokenMapTrainset"+train+".txt");
+		obj.bugSourceMap=obj.LoadMap("./data/changeset-pointer/Bug-ID-SrcFile-ID-Mapping.txt");
+		obj.KeywordSourceMap=obj.CreateTokenSouceFileMap(obj.tokenBugMap,obj.bugSourceMap, "./data/FinalMap/TokenSourceMapTrainset"+train+".txt");
+		//obj.CreateSourceToTokenMap(obj.tokenSourceMap, "./data/FinalMap/SourceTokenMapTrainset"+train+".txt");
 	}
 
 	

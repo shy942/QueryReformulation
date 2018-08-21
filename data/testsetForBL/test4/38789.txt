@@ -1,1 +1,0 @@
-commands parameters provide commands menu items allowing key bindings assigned key package explorer ctrl alt open java file press key file package explorer open text file press key select menu navigate package explorer file package explorer

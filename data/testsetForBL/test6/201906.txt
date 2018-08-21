@@ -1,1 +1,2 @@
-viewers column viewer editor leaks viewer cell instances clone bug
+viewers column viewer editor leaks viewer cell instances clone bug released introduced bug released unit test marking fixed bug marked duplicate bug created attachment leaking editor activation cancled missed cases activation cancled created attachment patch leak boris bug created attachment cell editor code base
+ 

@@ -1,0 +1,2 @@
+deprec workbench window advisor method custom window creation method longer deprec workbenchwindowadvisor createwindowcont shell shell createemptywindowcont composit parent iworkbenchwindowconfigur public menu createmenubar public control createcoolbarcontrol composit parent public control createstatuslinecontrol composit parent public control createpagecomposit composit parent public istatu savest imemento memento http git eclips org platform eclips platform git comm efb
+ 

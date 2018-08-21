@@ -1,0 +1,2 @@
+editormgmt fileeditormap implem hashcod improv clone equal bug comment creat attach fileeditormap patch patch correct implement equal object clone addition hashcod implement releas verifi sourc inspec window
+ 

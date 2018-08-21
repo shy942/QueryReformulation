@@ -1,1 +1,0 @@
-compatibility mylyn activate task trim steps open mylyn tasks preference select active task window trim trim displayed

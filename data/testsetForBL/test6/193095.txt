@@ -1,1 +1,0 @@
-marker view doesn util adapter focus selection changed

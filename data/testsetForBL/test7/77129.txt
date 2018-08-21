@@ -1,1 +1,0 @@
-key bindings esc doesn close dialogs build esc doesn close pop open type dialog steps enable emacs bindings open open type modal dialog hit esc observe dialog doesn close observe status bar esc pressed

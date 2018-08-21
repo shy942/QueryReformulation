@@ -1,1 +1,0 @@
-code cleanup working org eclipse jface source numerous warnings unnecessary casts indirect static field access read private fields superfluous semicolons volunteer clean

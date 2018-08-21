@@ -1,0 +1,2 @@
+navig defaultselect folder shouldn expand navig view ctrl click folder multipl select item doubl click bottom select folder top select folder expand presu item tree getselec item expand doubl click item contain defaultselec item select packag packag explor view don path navig view log report jdt doubl click clear multi selec ctrl doubl click work assu structuredview selec tree event fix ctrl doubl click mention caus bug assum event item case list viewer prevent doubl click list item fix logic event item bug mark duplic bug verifi
+ 

@@ -1,1 +1,0 @@
-common navigator action provider

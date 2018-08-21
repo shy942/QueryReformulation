@@ -1,1 +1,0 @@
-field assist javadoc warnings builds src plugins org eclipse platform doc isv org eclipse jface src org eclipse jface fieldassist control decoration java warning tag find set decoration field decoration org eclipse jface fieldassist control decoration

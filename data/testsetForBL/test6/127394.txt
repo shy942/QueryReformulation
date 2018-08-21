@@ -1,1 +1,0 @@
-commands handlers ctrl ctrl key bindings constantly broken editor open editor change content save error warning ctrl ctr navigate error work work wassim comment bug comment

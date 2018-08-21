@@ -1,0 +1,2 @@
+context javadoc org eclips context issu asser design understand class comment collec mention type idea icontextbind bind imutablecontextmanag iworkbenchcontextsupport miss javadoc workbenchpartsit deprec code inher javadoc parent contextexcep paramet name constructor notdefinedexcep remov icontextbind move imutablecontextmanag intern packag fix excep remov arg constructor notic miss comment comment collec tod happi api extra time extra verif move verifi
+ 

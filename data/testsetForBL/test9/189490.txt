@@ -1,1 +1,0 @@
-common navigator resource won enable open project explorer resource perspective create vanilla project create folder create file resource open navigate file resource remain disabled

@@ -1,1 +1,0 @@
-restore scope support commands extension point scope element commands extension point removed june accelerator scopes extension point pulled deprecation support appears broken test cases covering ensuring read correctly behave properly inspecting current test cases context empty stubs grumble fixed

@@ -1,1 +1,0 @@
-commands provide source variable property tester perspective active sources active perspective variable restrict view menus specific perspective visible variable active equals org eclipse test view equals visible

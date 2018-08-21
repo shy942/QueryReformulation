@@ -1,0 +1,2 @@
+navigator resource navigator init working set filter protected visibility mentioned method mistakingly incorrect visibility method init resource sorter protected don init resource sorter protected created attachment init working set filter protected method package visibility init methods protected clear attaching trivial patch change kim agree comment release patch applied
+ 

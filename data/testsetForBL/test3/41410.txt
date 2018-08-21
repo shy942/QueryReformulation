@@ -1,1 +1,0 @@
-default text font fixed width linux preferences workbench fonts default fonts derived sans font variable width font banner font dialog font header font text font fixed width font user draw columns art code comments expected behaviour recommend courier regular monospace regular default font text font

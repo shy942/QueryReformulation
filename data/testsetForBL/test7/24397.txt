@@ -1,1 +1,0 @@
-working sets resource working set empty working set build create resource working set expand project child select child project gray checked close edit dialog edit working set uncheck gray checked project elements checked finish button enabled error message displayed

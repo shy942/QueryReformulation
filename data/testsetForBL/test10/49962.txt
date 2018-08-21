@@ -1,0 +1,2 @@
+rcp iworkbenchwindowconfigur settitl shell creat iworkbenchwindowconfigur settitl call window shell creat call prewindowopen fix rememb titl workbenchwindowconfigur check workbenchwindow configureshel fix asyncexec hack remov browser verifi
+ 

@@ -1,1 +1,2 @@
-key bindings contexts scopes don preference selecting commands preference don context
+keybind context scope don prefer select command prefer don context problem caus attempt revert format persist appli miss crucial chang read kei bind null context meant window context bug mark duplic bug effect bug kei listen nativ widget behaviour work dialog bug mark duplic bug bug mark duplic bug bug mark duplic bug verifi open prefer check command correctli context
+ 

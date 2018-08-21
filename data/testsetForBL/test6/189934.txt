@@ -1,1 +1,2 @@
-working sets break working set action set discussions bug requested break working set action sets ability change window working set modify contents sets patch wont lose sleep
+working sets break working set action set discussions bug requested break working set action sets ability change window working set modify contents sets patch wont lose sleep created attachment patch org eclipse ide gotcha strings generated plugin properties bring window working set selection button menus hidden default views dialog offer window working set filter patch doesn include default true flag window working set action set didn breaking alleviate peoples annoyance button patch split actions sets verified
+ 

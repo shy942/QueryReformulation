@@ -1,0 +1,2 @@
+prefer npe content type prefer npe type charset text field select content type entri org eclips messag java lang nullpointerexcep stack java lang nullpointerexcep org eclips intern dialog contenttypespreferencepag keyreleas contenttypespreferencepag java org eclips swt widget typedlisten handleev typedlisten java head verifi
+ 

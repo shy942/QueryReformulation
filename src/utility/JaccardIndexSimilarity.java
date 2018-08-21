@@ -18,6 +18,7 @@ public class JaccardIndexSimilarity {
 		this.listOfReformedQueryWords=listOfReformedQueryWords;
 	}
 	
+	
 	public Double ComputeJaccardIndexSimilarity()
 	{
 		System.out.println("[[[[[[[[[[[[[["+keywordList);
@@ -47,13 +48,13 @@ public class JaccardIndexSimilarity {
 		// TODO Auto-generated method stub
         
 		ArrayList<String> keywordList=new ArrayList<>();
-		keywordList.add("times");
-		keywordList.add("tool");
-		keywordList.add("dirty");
+		keywordList.add("1");
+		keywordList.add("2");
+		keywordList.add("3");
 		ArrayList<String> listOfReformedQueryWords=new ArrayList<>();
-		listOfReformedQueryWords.add("imes");
-		listOfReformedQueryWords.add("tool");
-		listOfReformedQueryWords.add("dirty");
+		listOfReformedQueryWords.add("11");
+		listOfReformedQueryWords.add("22");
+		listOfReformedQueryWords.add("333");
 		
 		JaccardIndexSimilarity objJSim=new JaccardIndexSimilarity(keywordList, listOfReformedQueryWords);
         System.out.println(objJSim.ComputeJaccardIndexSimilarity());   

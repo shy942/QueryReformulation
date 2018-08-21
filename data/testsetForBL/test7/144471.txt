@@ -1,0 +1,2 @@
+update org eclipse isv docs include trim documentation basic workbench extension points updated demonstrate contribute trim elements org eclipse menus extension point modified readmetool naive trim contribution committed tod pick screen cap org eclipse platform doc isv guide workbench basicext trim htm explain trim extension readmetool works committed tod review screen caps chkpii fixed committed verified
+ 

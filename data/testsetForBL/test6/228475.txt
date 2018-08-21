@@ -1,0 +1,2 @@
+status handling bug status dialog created attachment screenshot disabled bug status dialog tooltip support don supposed enabled intentionally agree visible support tray reply comment don supposed enabled support icon opens tray details issue form reporting bugs don provide default extended apps created attachment toolbar disabled bug visible enabled hand hover place bug supposed created attachment updated disable toolbar invisible toolitems created attachment updated disable toolbar released verified bug icon support
+ 

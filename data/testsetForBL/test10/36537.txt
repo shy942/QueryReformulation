@@ -1,1 +1,2 @@
-key bindings bindings duplicated emacs configuration commands duplicate binding emacs configuration emacs configuration inherits bindings standard configuration noticed activate editor system menu view menu
+keybind bind duplic emac configur command duplic bind emac configur emac configur inher bind standard configur notic activ editor system menu view menu fix confirm close check jdt pde bound carbon default platform alt left arrow alt arrow alt bound emac standard kei configur ctrl bound default carbon emac set alt ctrl insert creat attach patch plugin xml remov duplic kei bind nick review appli comm
+ 

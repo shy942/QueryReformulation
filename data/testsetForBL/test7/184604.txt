@@ -1,0 +1,2 @@
+undo action handlers initially support local context operations bug fixing bug action handlers set ignore local undo context activity detected local undo context operations history supported basically active context initialized based history local context automatically initialized false symptom problem open source file note edit undo global workspace operation correct type text note edit undo undo typing correct open editor file note edit undo workspace operation undo typing incorrect fixed verified win scenario comment
+ 

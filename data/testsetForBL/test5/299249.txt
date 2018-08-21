@@ -1,1 +1,2 @@
-common navigator add resource wrapper content label provider tests created attachment patch
+commonnavig add resourcewrappercont label provid cnf test creat attach patch patch contribut franck manguin fico bug bug releas head
+ 

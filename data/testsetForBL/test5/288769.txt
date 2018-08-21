@@ -1,1 +1,2 @@
-statushandling deselect text
+statushandling deselect text fixed default details area verified deselect text details area
+ 

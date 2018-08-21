@@ -1,0 +1,2 @@
+workbenchpart compat editor view context popul late compatibilityeditor compatibilityview don place ieditorpart iviewpart context createpartcontrol call difficult servic creat context ieditorpart iviewpart context sens mpart context call createpartcontrol don fine granular mpart instanti compatibilityeditor view set call quick modifi initi method editorrefer viewrefer includ getmodel getcontext set iviewpart class view call haven test fix http git eclips org comm http git eclips org platform eclips platform git comm aef updat statu
+ 

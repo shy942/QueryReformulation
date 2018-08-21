@@ -1,1 +1,2 @@
-regression layout moved progress indicator left progress indicator moved stream left obscuring status
+regres layout move progress indic left progress indic move stream left obscur statu fix hold work depend layout creat attach regres fastview dock bottom patch add trimlayoutdata allow individu control size hint flag grow fix regres progress monitor correct locat fastview bar dock bottom workbench window creat attach case problem appli patch full sourc patch comm work head
+ 

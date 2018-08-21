@@ -1,1 +1,2 @@
-key bindings compiler error binding manager test changed dunno build wasn error method event type binding manager test test listener locally
+key bindings compiler error binding manager test changed dunno build wasn error method event type binding manager test test listener locally updated dead code scanning abilities released
+ 

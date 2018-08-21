@@ -1,1 +1,0 @@
-editor mgmt default editor unknown extensions configuration setting general file associations set editor unknown file types default editor opened editor unknown file types default system editor editor list editors

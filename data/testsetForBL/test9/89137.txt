@@ -1,0 +1,2 @@
+jface api review temporari api abstracttreeview abstracttreeview method docum temporari internalrefresh widget object internaladd widget object object structuredview internalupd widget object string work set docum exist jdt javadoc method experiment jdt method support jdt explor group work set requir viewer support multipl equal elem bug detail support remov eclips favour proper support multipl equal elem verifi
+ 

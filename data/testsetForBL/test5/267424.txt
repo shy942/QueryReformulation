@@ -1,1 +1,2 @@
-perspectives closing hidden editor closing hidden editor works
+perspectives closing hidden editor closing hidden editor works bug reply comment bug dosen work correctly closing rcp project errormessage hidden editor widget disposed early workbench editor references returns open editors workbench dispose close editors addressed bug marked duplicate bug created attachment closing hidden editor work released workaround eclipse reply comment workaround eclipse workaround consume product based patch deploy workbench plugin
+ 

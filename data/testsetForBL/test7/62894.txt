@@ -1,1 +1,0 @@
-ide missing fragment plugin properties build plugin properties file org eclipse ide plug missing fragment win fragment plug details dialog org eclipse win plug win fragment fragment note assume plugin properties equinox team consulted ensure behaviour current bug report plug host strings fragments

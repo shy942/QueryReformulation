@@ -1,1 +1,2 @@
-common navigator test contribution patch contributed franck mangin bug bug
+commonnavig test contribu cnf patch contribut franck mangin fico bug bug creat attach patch releas head
+ 

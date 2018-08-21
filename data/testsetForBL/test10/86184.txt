@@ -1,1 +1,0 @@
-key binding registry missing key binding paste emacs scheme start fresh workspace window preferences general switch modify select emacs scheme select edit category select paste command key bindings missing binding editing text caused fact ctrl declared org eclipse plugin xml redo command

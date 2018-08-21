@@ -1,1 +1,0 @@
-icons decorator icon linked resource missing undefined target bug requests feedback linked resource missing target location points temp directory exist linked resource bound path variable exist scenarios icon file org eclipse icons full ovr linkwarn ovr gif size existing linked resource decorator

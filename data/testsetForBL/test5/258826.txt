@@ -1,1 +1,2 @@
-commands text original text starts null reset null illegal argument exception
+commands text original text starts null reset null illegal argument exception created attachment text released
+ 

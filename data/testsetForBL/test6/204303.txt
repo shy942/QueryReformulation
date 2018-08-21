@@ -1,1 +1,2 @@
-global actions convert handlers convert action factory handlers
+global actions convert handlers convert action factory handlers created attachment converted actions handlers instance minimize ctrl shift binding doesn work switch binding ctrl alt works switch binding ctrl shift works minimize active editor oops work ctrl shift binding didn work binding conflict add import active editors wasn conflict minimize set active windows released verified
+ 

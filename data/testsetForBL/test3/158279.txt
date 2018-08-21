@@ -1,1 +1,0 @@
-filtered tree create widgets constructor bug hit wall access client data constructing custom tree viewer subclassing filtered tree implementing create tree viewer reason filtered tree creates widgets constructor static fields access client instance create tree viewer executed

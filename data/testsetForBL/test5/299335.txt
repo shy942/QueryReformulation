@@ -1,0 +1,2 @@
+progress finish task progress view fix bug initi creat clone bug build step reproduc launch eclips plugin click eclips icon toolbar progress icon statu bar click open progress view wait job finish clear finish job view close progress view window view progress problem notic task appear run progress view finis debug progress view code appear job task finishedjob object finis close view open job run job view task view task job separ appear run appear place progressviewcontentprovid getel origin bug releas head
+ 

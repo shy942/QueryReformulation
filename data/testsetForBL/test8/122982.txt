@@ -1,0 +1,2 @@
+key bindings errors warning creating invalid keybinding sequence map plug xml set unrecognized warning log file indicating invalid sequence set debug keybindings enabled options file spew complaints attach snippet registry key command org eclipse edit text goto column previous context org eclipse gef contexts text editing scheme org eclipse default accelerator configuration sequence fixed verified invalid key sequence org eclipse tests plug
+ 

@@ -1,1 +1,2 @@
-mac key bindings keybindings wrong cocoa ctrl key command platform returns cocoa
+mac key bindings keybindings wrong cocoa ctrl key command platform returns cocoa created attachment patch scanned references platform issues preventing hosting cocoa hate peppering checks place paul consolidate checks happy patching dealing problem replication win wpf problem quick build work general solution sounds good patch revisit palatable solution bug verified degree verified kim doesn fixed bug mind closing
+ 

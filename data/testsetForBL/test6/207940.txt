@@ -1,1 +1,2 @@
-mac clear preferences filter mac completely clear pre set preferences filter mac platforms click clear button doesn work mac steps open open type dialog open menu button upper choose type filters
+mac clear preferences filter mac completely clear pre set preferences filter mac platforms click clear button doesn work mac steps open open type dialog open menu button upper choose type filters created attachment patch org eclipse workbench adds default selection listener listens cancel flag performs action pressed dont time shake mac platforms verified behavior windows
+ 

@@ -1,0 +1,2 @@
+delete project dialog inconsequent selection behavior choosing option radio group clicking labels clicking buttons contents restored undo text extra label clicking clicking label select option attached patch select correct radio clicking extra label created attachment deletenoundoclick diff released modified patch prefer mouse adapter code minimum note don visual cue selecting label update radio move mouse radio text windows dead space indent pixels lines bit odd helpful users incorporate complaints behavior lack visual emphasis yank forgot patch verified win
+ 

@@ -1,1 +1,2 @@
-contributions widgets tooltips menu toolbar items include key bindings tooltips include short cut key tooltip resume button resume short cut key displayed newline resume feature configurable turned experienced users configured resume resume resume
+contribu widget tooltip menu toolbar item includ kei bind tooltip includ short cut kei tooltip resu button resu short cut kei displai newlin resu featur configur turn experienc user configur resu resu resu doug esp custom format popup bug mark duplic bug bug mark duplic bug plan work featur creat attach patch repli comment patch target mileston fortifi statem patch work simpli copi code updat menu item acceler tool item case releas head bug mark duplic bug
+ 

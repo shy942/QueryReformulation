@@ -1,0 +1,2 @@
+jface api review derivedimagedescriptor complet review api derivedimagedescriptor notic constructor paramet originalimag assign constructor instanc variabl originalimag creation method doubt class work createresourc method doesn throw deviceresourceexcep docum fix head
+ 

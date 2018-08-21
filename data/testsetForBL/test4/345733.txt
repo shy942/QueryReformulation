@@ -1,0 +1,2 @@
+jface treeview add debug messag find client add duplic elem creat attach head follow bug bug comment bug debug flag find content provid return duplic elem check perform item manual parent bug comment patch patch good add perform overhead abstracttreeview internaladd flag disabl assertelementsnotnul badli format bad api doesn arrai treeitem fix http git eclips org platform eclips platform git comm dbd http git eclips org platform eclips platform git comm
+ 

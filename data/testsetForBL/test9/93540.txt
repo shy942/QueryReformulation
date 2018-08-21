@@ -1,0 +1,2 @@
+viewmgmt regres view restor memento close reopen build window resourc perspect select resourc navig shutdown restart navig selec restor properli select resourc navig close navig reopen navig selec expect selec empti memento view restor previou session viewrefer createparthelp clear memento request viewfactori getviewst fix head verifi
+ 

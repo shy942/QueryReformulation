@@ -1,0 +1,2 @@
+face provide possibility subclasses check column visible viewer row decided checking width nebula grid fail created attachment patch created attachment boris good java doc check column cell visible probable returns code true code column visible released verified running nebula snippet attached referenced bug
+ 

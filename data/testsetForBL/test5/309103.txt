@@ -1,1 +1,0 @@
-editor mgmt numpad enter recognized confirmation key editor drop open editor ctrl hit numpad enter key

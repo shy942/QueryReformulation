@@ -1,1 +1,0 @@
-commands text original text starts null reset null illegal argument exception

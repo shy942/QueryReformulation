@@ -1,1 +1,0 @@
-key bindings multi stroke keyboard shortcut popup swallows preferences workbench choose emacs configuration advanced tab check multi stroke keyboard shortcuts edit file press ctrl wait popup press ctrl multi stroke keybindings

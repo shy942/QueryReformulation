@@ -1,1 +1,2 @@
-action set accelerator int deprecated method assign accelerator keycode action assign accelerator keycode eric
+iaction setacceler int deprec method swt jface rcp assign acceler keycod action assign acceler keycod eric method longer deprec explanatori note attach method explain behaviour chang eclips workbench verifi javadoc comment close
+ 

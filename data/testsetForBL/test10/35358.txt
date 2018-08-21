@@ -1,1 +1,2 @@
-global actions missing icon file refresh menu icon file refresh menu missing
+global action miss icon file refresh menu icon file refresh menu miss icon navig problem request bug action creat actionfactori org eclips commandimag exten point doesn cut incorrectli paul chang handler imag org eclips copi past org eclips org eclips workbench correct option turn actionfactori refresh workbenchcommandac copi icon org eclips add commandimag exten default path workbenchcommandac super class icommandimageservic imag set iaction interfac creat attach patch chang actionfactori class creat workbenchcommandac patch updat actionfactori class includ updat diff commandimag exten plugin xml refresh nav gif imag releas head
+ 

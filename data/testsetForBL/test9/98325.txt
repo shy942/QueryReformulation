@@ -1,0 +1,2 @@
+test jface test dialogset dialogset chang xmlwriter order compil jcl foundat bug written test class attach creat attach dialogsettingstest java patch org eclips test add class dialogsettingstest patch includ chang test suit call test test pass fix bug jface dialogset handl null case replac tab space mark candid creat attach updat patch bug updat test class test null case bug reason add test patch appli bori verifi test includ suit pass verifi
+ 

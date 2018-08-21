@@ -1,1 +1,0 @@
-common navigator unused copy quick menu action common navigator references copy quick menu action org eclipse internal navigator resources actions check bug

@@ -1,1 +1,2 @@
-global actions convert action factory actions
+global actions convert action factory actions created attachment converted action handler called existing code perspective menu adds actions menus open perspective action action class open perspective dialog action executed close perspectives click button screen perspective menu open perspective action don write ensure executing command command execution events fired created attachment actions open perspective dialog execute handler released minor verified
+ 

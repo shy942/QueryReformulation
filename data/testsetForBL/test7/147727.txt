@@ -1,0 +1,2 @@
+incorrectly prevents overlapping project locations disk build support project content locations overlap disk bug project wizard incorrectly disallows places check occurs wizard project creation validate wizard project location validate code created attachment reference patch tested released marking verified bug marked duplicate bug
+ 

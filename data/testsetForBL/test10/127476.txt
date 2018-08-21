@@ -1,1 +1,0 @@
-trim drag handles don initiate drag lost drag handles

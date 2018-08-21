@@ -1,0 +1,2 @@
+commands handlers retarget action handlers registered properly build ctrl shift performs global search references method works editor select method outline view search result hit ctrl shift action continues work select context menu key binding issue key assist key binding context mistake action set retargettable action handlers registered fixed doesn work longer consistently reproducible entered separate bug verified ctrl shift outline view
+ 

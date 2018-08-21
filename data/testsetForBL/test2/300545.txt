@@ -1,1 +1,0 @@
-viewers column scrolling breaks cell selection scrolled table bug initially created clone bug build steps reproduce attached snippet scroll table click column item cell table scrolls left opens cell editor cell cursor scrolled left cell cursor clicked mouse tested win eclipse

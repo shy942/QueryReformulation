@@ -1,1 +1,2 @@
-common navigator compile errors tests
+commonnavig compil error cnf test releas head
+ 

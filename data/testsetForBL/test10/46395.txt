@@ -1,1 +1,2 @@
-open persistent start fresh workspace create type java project close java editor select file open text editor close text editor double click file opens java editor remember editor
+rcp open persist start fresh workspac creat type java project close java editor select file open text editor close text editor doubl click file open java editor rcp rememb editor fix call setdefaulteditor file editorid openwithmenu openeditor ideal code call openeditor file editorid equival post rcp call openeditor file editorid api equival openeditor method includ openeditor ieditorinput variant handl special case ifileeditorinput fix file bug openeditor api problem
+ 

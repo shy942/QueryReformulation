@@ -1,1 +1,0 @@
-metadata org eclipse workbench compatibility fragment bundle classpath boggus bundle classpath entry missing file fragment bundle classpath true bundle classpath defined bundle class path compatibility jar tooling create valid model org eclipse workbench bundle fragment properly insert fragment classes host classes needed asap

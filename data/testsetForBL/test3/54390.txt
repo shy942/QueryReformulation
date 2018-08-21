@@ -1,1 +1,0 @@
-key bindings delete prompts create simple project text file select file navigator hit key confirm prompt click prompts time delete key dispatched

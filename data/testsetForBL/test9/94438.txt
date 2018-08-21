@@ -1,0 +1,2 @@
+undo javadoc clarifi oper remain histori undo redo info warn javadoc ioperationhistori undo redo method explic oper remain histori cancel error statu move undo redo histori minor clarif lack explic statem info warn oper remain histori case technic statu oper guarante move stack redo undo redo won transfer stack remov histori releas javadoc head appear verifi code inspec
+ 
