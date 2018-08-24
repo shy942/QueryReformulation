@@ -1,2 +1,2 @@
-property retrieval check instanceof return null bug checking ensure widget class instanceof check matching return null created attachment instanceof check return null committed ideally junits caught bug add test open separate bug dependent
+property retrieval instanceof return null checking ensure widget right class instanceof matching return null
  

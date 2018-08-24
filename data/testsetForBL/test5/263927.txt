@@ -1,2 +1,2 @@
-event helper drag drop broken change removed display map call released
+event helper drag drop broken removed display map
  

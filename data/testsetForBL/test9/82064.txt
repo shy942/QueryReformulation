@@ -1,2 +1,2 @@
-dialog titleareadialog settitleimag call open bug test case imag icon imag displai sampl gif titleareadialog dlg titleareadialog shell dlg settitleimag icon dlg open creat attach creat attach test compon org eclips test clean stuff move api bug investig move dialog bug mileston move individu mileston rcx work bug mark duplic bug fix late chang spec advert null imag set code check case test case clean bug titl ing mcq fyi verifi autom test bug mark duplic bug
+dialogs title area dialog set title image called open case image icon image display gif title area dialog dlg title area dialog shell dlg set title image icon dlg open
  

@@ -1,2 +1,2 @@
-wizards update wizards extension points identifier add support schema type identifier import wizards exsd export wizards exsd wizards exsd fixed build verified
+wizards update wizards extension points use identifier support schema type identifier import wizards exsd export wizards exsd wizards exsd
  

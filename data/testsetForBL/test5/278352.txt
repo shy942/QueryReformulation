@@ -1,2 +1,2 @@
-quick access quick access numeric pad enter working build steps reproduce open quick access ctrl type active selection numeric pad enter normal enter activates selection remy responsible watching bugs quick access component area created attachment quick access dialog patch dialog handled events modified code handle events released bug report andras verified windows bug report andras
+quick access quick access right numeric pad enter working build steps reproduce open quick access using ctrl type active selection using right numeric pad enter happens normal enter activates selection information
  

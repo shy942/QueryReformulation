@@ -1,2 +1,2 @@
-commonnavig textactionhandl navig resourc poor duplic good copi real org eclips cnf creat need updateactionbar method diverg fix paul year modifi origin add requir method refer origin releas head franci refer org eclips intern navig textactionhandl real wouldn hurt chang intern textactionhandl simpli subclass public intern subclass real copi code close don place rena comment remov
+common navigator text action handler navigator resources poor duplicate looks copied real org ide created needed update action bars method actually diverged fixes paul year modify original required method refer original
  

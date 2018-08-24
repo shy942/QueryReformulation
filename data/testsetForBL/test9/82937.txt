@@ -1,2 +1,2 @@
-dialog titl dialog filedialog class eclips sdk linux gtk solari motif titl dialog confirm oper select menu item file file click advanc button check link file file system click brows button code dialog createlinkedresourcegroup org eclips creat titl platform behaviour motif gtk dialog titl reassign want dialog titl fix head titl directori chooser file chooser verifi winxp titl select link target
+dialogs title dialog file dialog class linux solaris motif title dialog confirms following operations select menu item file file advanced button link file file browse button
  

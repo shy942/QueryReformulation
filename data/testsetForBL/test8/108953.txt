@@ -1,2 +1,2 @@
-content types preferences entries content types pref unsorted build based eclipse content types pref entries content types pane unsorted expect sorted alphabetically level file associations pane sorted alphabetically order defined content type extension sorting file associations list manner user defined bindings default bindings user defined extension bindings default extension bindings verified verified motif
+content types preferences entries content types pref page unsorted build based content types pref page entries content types pane appear unsorted expect sorted alphabetically level file associations pane sorted alphabetically appear order defined content type extension
  

@@ -1,2 +1,2 @@
-themes undefined color entry looked color descriptor theme color registered descriptor null color result null handle null descriptor check created attachment plug color test entry main menu default theme created attachment source fixing technically breaking change color registry prior calling color descriptor color descriptor method created takes default parameter method calls method ugly color cyan default javadoc updated default method verified test cases code inspection
+themes undefined color entry cause looked color descriptor theme color registered descriptor null color result null handle null descriptor
  

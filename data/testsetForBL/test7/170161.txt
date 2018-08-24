@@ -1,2 +1,2 @@
-themes font preview visible high contrast mode preferences general appearance colors fonts view editor folders preview visible high contrast mode attachment created attachment eclipse preference font preview high contrast mode created attachment eclipse preference font preview normal mode created attachment patch preview high contrast mode created attachment patch jason patch verify works set colors pick pair work problem code verified jason verified
+themes font preview visible high contrast mode preferences general appearance colors fonts view editor folders preview visible high contrast mode attachment
  

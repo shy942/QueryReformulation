@@ -1,2 +1,2 @@
-global actions convert handler convert action factory action handler created attachment converted action handler created attachment close perspective conversion released parameterized command change respun patch conversion generates errors tests apply patch work full workspace modules platform platform tests platform examples respin patch tests suites runs created attachment changed test cases execute close perspective command action rerun test suite making execute command running action released minor org eclipse tests stress open close test note calling execute command null event verified
+global actions convert handler convert action factory action handler
  

@@ -1,2 +1,2 @@
-css style engin pars swt color constant swt access specif theme color provid stylesheet fix master curiou http git eclips org platform eclips platform git comm fab bug mark duplic bug inten valu recogn color widget foreground color widget foreground repli robin stocker comment bug
+styling engine parse color constants provides access specific theme colors currently used provide way used directly stylesheets
  

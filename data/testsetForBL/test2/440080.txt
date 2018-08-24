@@ -1,2 +1,2 @@
-delet privat method jfaceresourc privat static void initializedefaultcolor introduc remov http git eclips org fix http git eclips org platform eclips platform git comm fee test
+used private method face resources private static void initialize default colors introduced used suggest remove
  

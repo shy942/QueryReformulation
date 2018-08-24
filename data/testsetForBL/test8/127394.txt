@@ -1,2 +1,2 @@
-commands handlers ctrl ctrl key bindings constantly broken editor open editor change content save error warning ctrl ctr navigate error work work wassim comment bug comment understand problem distinction workbench action bars form editor contributor action bars form editor contributor global action handler map data structure copied action bars workbench global action handler map real link handler service service locator mechanism action bars serve role depending constructor called running test suites tests pass committing verified
+commands handlers ctrl ctrl key bindings constantly broken editor open editor content save error warning use ctrl ctr navigate error work used work according wassim changes
  

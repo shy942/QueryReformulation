@@ -1,2 +1,2 @@
-add tycho scmurl eclips platform git creat attach eclips platform patch tycho gener eclips sourcerefer header properti pom tycho scmurl repo includ branc releas repo
+tycho scm url platform git created attachment platform patch tycho generate source reference headers property needs added pom tycho scm url repo included branches
  

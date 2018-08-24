@@ -1,2 +1,2 @@
-key bindings binding equals wrong org eclipse jface bindings binding equals return type binding type expression false true values change return type binding type odd created attachment patch correct error equals method test case created attachment extending testing previous patch created attachment repun patch diet created attachment bindng minor mod patch wouldn bother released
+key bindings binding equals gives value org jface bindings binding equals return type binding type expression gives false instead true values return type binding type
  

@@ -1,2 +1,2 @@
-workbench doc selectionenabl selectionclass intern nest class selectionenabl selectionclass implement detail selectionenabl expos api document api packag visibl docum chang migrat guid api chang docum migrat guid migrat guid selectionenabl selectionclass packag visibl plug org eclips selectionenabl selectionclass descrip eclips nest implement class org eclips selectionenabl selectionclass public restric usag oversight address eclips class packag visibl action requir class instanti extend org eclips selectionenabl selectionclass rework longer refer class verifi
+workbench doc selection enabler selection class internal nested class selection enabler selection class implementation selection enabler exposed documentation package visible document migration guide
  

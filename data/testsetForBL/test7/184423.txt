@@ -1,2 +1,2 @@
-face color registry string return null color registry string return null speced javadoc fixed javadoc verified javadoc win
+face color registry string return null color registry string return null speced javadoc
  

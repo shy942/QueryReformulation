@@ -1,2 +1,2 @@
-test workbench migrat org eclips core command test jun migrat org eclips core command test jun review http git eclips org repli thibault ouai comment review http git eclips org http git eclips org platform eclips platform git comm cfff dacaf thibault improv platform test suit
+tests workbench migrate org core commands tests unit migration org core commands tests unit
  

@@ -1,2 +1,2 @@
-editorwithstatetest workingsettest fail java editorwithstatetest test fail java attach test reason test assu order guarante jun creat attach test creat attach navig test editorwithstatetest test fail java workingsettest solution add test order suit class reli reflec editorwithstatetest class workingsettest fix head workingsettest java rev creat attach patch patch appli head fast oleg verifi editorwithstatetest workingsettest pass java
+editor state working set fail java editor state fails java attached results reason assumes certain order guaranteed unit
  

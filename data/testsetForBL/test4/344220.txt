@@ -1,2 +1,2 @@
-commonnavig navigatorcontentservicedescriptionprovid doesn handl singl selec size case singl item select statu messag read item select navig navigatorcontentservicedescriptionprovid getdefaultstatusbarmessag handl singl case differ multi case creat attach patch support singl selec patch return string selec size contribu kevin appreci peopl provid patch kevin
+common navigator navigator content service description provider doesn handle single selection size case currently single item selected status message reads items selected navigators navigator content service description provider default status bar message handle single case differently multi case
  

@@ -1,2 +1,2 @@
-jface api review derivedimagedescriptor complet review api derivedimagedescriptor notic constructor paramet originalimag assign constructor instanc variabl originalimag creation method doubt class work createresourc method doesn throw deviceresourceexcep docum fix head
+face review derived image descriptor complete reviewing derived image descriptor noticed constructor parameter original image assigned constructor instance variable original image used creation methods doubt class works resource method doesn throw device resource exception documented
  

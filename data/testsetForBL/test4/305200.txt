@@ -1,2 +1,2 @@
-editormgmt fileeditormappingcontentprovid replac arraycontentprovid class doesn creat attach fileeditormappingcontentprovid patch technic conceiv implement fileeditormappingcontentprovid chang handl object opt deprec fix head agre deprec helper verifi sourc code inspec window workbench fix comm defa
+editor mgmt file editor mapping content provider replaced array content provider class doesn useful
  

@@ -1,2 +1,2 @@
-commonnavig enabl cnf test enabl contribut cnf test minor test improv releas head
+common navigator enable tests enable contributed tests minor improvements
  

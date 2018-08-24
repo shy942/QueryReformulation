@@ -1,2 +1,2 @@
-command nullpointerexcep widgetmethodhandl getmethodtoexecut trigger solari motif cde defens null focu control verifi defend reproduc case suffici
+commands null pointer exception widget method handler method execute triggered solari motif
  

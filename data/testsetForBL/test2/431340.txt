@@ -1,2 +1,2 @@
-emodelservic workbenchpag emf factori http git eclips org fix http git eclips org platform eclips platform git comm cabf bdc dcaa cdb verifi git
+use model service workbench page instead factory
  

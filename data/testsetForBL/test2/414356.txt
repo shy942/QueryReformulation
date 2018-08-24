@@ -1,2 +1,2 @@
-viewer add gener listview listview jface viewer support java gener upload patch http git eclips org releas http git eclips org platform eclips platform git comm cbd hendrik futur don refer gerr bodi comment
+viewers generics list viewer list viewer face viewer support java generics
  

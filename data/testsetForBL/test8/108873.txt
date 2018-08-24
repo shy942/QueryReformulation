@@ -1,2 +1,2 @@
-properties view properties view broken mac add extension point mac properties view observe initial column size small values column doesn default select row column resized buttons clipped label visible bug marked duplicate bug introduced properties view change eric kim investigate bug screen shots property sheet viewer version check columns width mac true changed bug mac minimum column width width required expansion arrow changed area width columns width area width kim load kim spend time worked verified
+properties view properties view broken mac extension point mac using properties view observe initial column size small values second column doesn default select row value second column resized buttons clipped half label visible
  

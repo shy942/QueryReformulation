@@ -105,14 +105,14 @@ public class DataSetsPreaparation {
     		line=foldList.get(Fj-1);
     		spilter=line.split(" ");
     		trainP1end=Integer.valueOf(spilter[1]);
-    		CreateTrainSet(i, trainP1start,trainP1end,trainP2start,trainP2end,"./data/trainset/");
+    		CreateTrainSet(i, trainP1start,trainP1end,trainP2start,trainP2end,".\\data\\trainset\\");
     		
     		//Create testing sets
     		String line2=foldList.get(Fj);
     		spilter=line2.split(" ");
     		teststart=Integer.valueOf(spilter[0]);
     		testend=Integer.valueOf(spilter[1]);
-    		CreateTestSet(i, teststart, testend, "./data/testset/");
+    		CreateTestSet(i, teststart, testend, ".\\data\\testset\\");
     		
     		//Create training sets part-2
     		trainP2start=teststart;
@@ -121,10 +121,10 @@ public class DataSetsPreaparation {
     		
     	}
     	//Create last training set
-    	CreateTrainSet(10, 0, 0, teststart+1, trainP2end, "./data/trainset/");
+    	CreateTrainSet(10, 0, 0, teststart+1, trainP2end, ".\\data\\trainset\\");
     	
     	//Create last testing set
-    	CreateTestSet(10, 1,trainP2start-1 ,  "./data/testset/");
+    	CreateTestSet(10, 1,trainP2start-1 ,  ".\\data\\testset\\");
     	
     	
     }

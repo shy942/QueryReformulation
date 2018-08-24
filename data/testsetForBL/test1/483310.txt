@@ -1,2 +1,2 @@
-remov unnecessari manual activ eventadmin injectioneventtest org eclips test afaik ensureeventadminstart method injectioneventtest unnecessari accesst servic start osgi gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm dac daaf caus bug revert bug fix test error occur test local revert chang differ plan gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm ddd
+remove unnecessary manual activation event admin injection event org tests
  

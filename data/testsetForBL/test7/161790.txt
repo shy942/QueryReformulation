@@ -1,2 +1,2 @@
-undo copy resources operation invalidate source resources copy resources operation considers valid undo valid resource descriptions resources overwritten copy resources target exist resources source longer exist lose data copy delete copies restore overwritten copy invalid source resources longer test case automated tests fixed verified workspace operation tests test project copy undo invalid verified win passage workspace operation tests test project copy undo invalid
+undo copy resources operation invalidate source resources gone copy resources operation considers itself valid undo valid resource descriptions resources overwritten copy resources target exist resources source exist lose data undoing copy copies restore overwritten copy invalid source resources
  

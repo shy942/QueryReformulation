@@ -1,2 +1,2 @@
-add tostr method xmlmemento creat attach tostr patch implement tostr xmlmemento return xml content accept patch rememb want coupl year btw don reformat code patch bigger file comm master http git eclips org platform eclips platform git comm baab verifi
+string method memento created attachment string patch implementation string memento returns content acceptable added appropriate patch
  

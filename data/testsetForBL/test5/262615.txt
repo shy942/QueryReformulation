@@ -1,2 +1,2 @@
-commands add test text action handler created attachment text action handler tests add validation tests released failing tests
+commands text action handler created attachment text action handler tests validation tests
  

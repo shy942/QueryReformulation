@@ -1,2 +1,2 @@
-viewmgmt regres view acitv toolbar button press notic chang behaviour view activ click button view caus action view button resid gain focu activ view gain focu stai activ action invok problem build regres fix problem defer higher prioriti issu address fix head activ listen view toolbar verifi build window kim mark bug verifi mark verifi behalf
+view mgmt regression view acitvated toolbar button pressed notice behaviour view activation button view causing actions view button resides gain focus activated view gain focus stay activated action invoked
  

@@ -1,2 +1,2 @@
-keybind esc ctrl work properli gtk kde linux press esc start multi stroke kei bind esc appear statu pop appear press ctrl esc disappear press esc ctrl wait pop workbenchkeyboard dai problem chang order send doubl event solution style text widget eat order attach order verifi listen kei bug mark duplic bug verifi motif solari verifi gtk
+key bindings esc ctrl work properly linux press esc start multi stroke key binding esc appears status pop appears press ctrl esc disappears pressing esc ctrl possible unless pop appear significant changes workbench keyboard past days likely cause
  

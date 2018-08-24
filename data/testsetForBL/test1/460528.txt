@@ -1,2 +1,2 @@
-view tab close tab left menu bug close tab close tab left incomplet menu close tab left view stack close tab view stack close part activ trivial gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm andrei verifi
+view tabs close tabs left menu fix added close tabs right close tabs left incomplete menu close tabs left shown view stacks close tabs right view stacks closed parts active fix trivial
  

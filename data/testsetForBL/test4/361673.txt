@@ -1,2 +1,2 @@
-compat close multipl editor lot churn close multipl editor ctrl shift workbench window titl updat activ editor chang close activ editor prevent activ updat push develop http git eclips org platform eclips platform git comm develop ffa adf eda aeaa verifi window
+compatibility closing multiple editors causes lot churn close multiple editors using ctrl shift workbench window title keeps getting updated active editor keeps changing close active editor prevent activation updates
  

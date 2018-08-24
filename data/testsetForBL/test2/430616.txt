@@ -1,2 +1,2 @@
-emodelservic object creation viewregistri emf factori http git eclips org fix http git eclips org platform eclips platform git comm aecd fdbe verifi git
+use model service object creation view registry instead factory
  

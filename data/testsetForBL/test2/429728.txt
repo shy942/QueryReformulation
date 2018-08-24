@@ -1,2 +1,2 @@
-support style overrid kei stackrender bug introduc ipresentationengin style overrid kei defin style bit swt window quot persist data kei style overrid kei contract render kei elem implem code respect overrid wbwrender simpli defin swt flag int store string version mwindow peristentdata map introduc stackrender solv bug http git eclips org fix http git eclips org platform eclips platform git comm acbf bug mark duplic bug lar great eclipsecon verifi build
+support stack renderer introduced presentation engine define style bits window quote persistent data key allows contract renderer using key element far implemented code respect overrides renderer simply define flags int store string version window peristent data map suggest introduce stack renderer allow example solve
  

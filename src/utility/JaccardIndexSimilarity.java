@@ -21,7 +21,8 @@ public class JaccardIndexSimilarity {
 	
 	public Double ComputeJaccardIndexSimilarity()
 	{
-		System.out.println("[[[[[[[[[[[[[["+keywordList);
+		//System.out.println(keywordList);
+		//System.out.println(listOfReformedQueryWords);
 		double similarity=0.0;
 	    int common=0;
 		
@@ -40,7 +41,7 @@ public class JaccardIndexSimilarity {
 			maxLenth=queryWordLength;
 		}
 		similarity=Double.valueOf(common)/Double.valueOf(maxLenth);
-		
+		//System.out.println(similarity);
 		return similarity;
 	}
 	
@@ -52,7 +53,7 @@ public class JaccardIndexSimilarity {
 		keywordList.add("2");
 		keywordList.add("3");
 		ArrayList<String> listOfReformedQueryWords=new ArrayList<>();
-		listOfReformedQueryWords.add("11");
+		listOfReformedQueryWords.add("1");
 		listOfReformedQueryWords.add("22");
 		listOfReformedQueryWords.add("333");
 		

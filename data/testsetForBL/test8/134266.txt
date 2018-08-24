@@ -1,2 +1,2 @@
-wizard description set message set messages errors warnings displayed widget description code place wizard dialog update description message avoid setting description message separate widget displaying error warning messages description set created attachment removes condition wizard dialog bug marked duplicate bug reassigning karice pretty owns wizards face check server won serve component owner shaun test case uncover bug verified
+wizard page description set page message set page messages errors warnings used displayed widget page description code place wizard dialog update description message avoid setting page description message separate widget displaying error warning messages page description set
  

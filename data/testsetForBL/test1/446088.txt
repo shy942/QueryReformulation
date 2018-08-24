@@ -1,2 +1,2 @@
-move pars applic model uri applic method fix http git eclips org platform eclips platform git comm
+parsing application model application method
  

@@ -159,7 +159,7 @@ public class Mapper {
 		// TODO Auto-generated method stub
 
 		long start=System.currentTimeMillis();
-		int train=10;
+		int train=8;
 		Mapper obj=new Mapper("./data/trainset/Train"+train+".txt");
 		obj.bugKeywordMap=obj.LoadMap("./data/trainset/Train"+train+".txt");
 		obj.CreateTokenBugMap(obj.bugKeywordMap);

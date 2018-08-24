@@ -1,2 +1,2 @@
-jface snippet cleanup remov unnecessari import cast review cleanup jface snippet http git eclips org chang depend abandon paul review request updat fix http git eclips org platform eclips platform git comm
+face snippets cleanup removes unnecessary imports casts review cleanup face snippets https git org
  

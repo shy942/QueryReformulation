@@ -1,2 +1,2 @@
-preferences preference store set default fires redundant property change events created attachment patch time method called expect event fired actual provide target problem pretty straightforward attached patch chance unit created attachment patch oleg attached test previous comment idea relocate enhance created attachment bit modified patch easier check test patch unit good bit safer check properties key properties null preference store null values tiny bit safer case manages null reply comment neater patches applied head pawel verified unit passed passes locally build
+preferences preference store set default fires redundant property events created attachment patch happens time method called expect event fired actual state changes
  

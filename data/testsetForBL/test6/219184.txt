@@ -1,2 +1,2 @@
-commands commands handler dispose called noticed handler dispose method called create create plugin project based command sample edit class wizard creates samplehandler java override dispose method abstract handler breakpoint method debug runtime workbench command shut notice dispose called created attachment handler persistence handler legacy action bridge disposed normal handlers disposed service shutdown released
+commands commands handler dispose called noticed handler dispose method called plugin project based hello world command edit class wizard creates samplehandler java override dispose method abstract handler breakpoint method debug runtime workbench command shut notice dispose called
  

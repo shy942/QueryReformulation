@@ -1,2 +1,2 @@
-regist compat workbench osgi registri workbench regist osgi servic registri org eclips workbench iworkbench peopl find workbench osgiservic registri workbench implem org eclips workbench iworkbench regist osgi servic registri http git eclips org releas http git eclips org platform eclips platform git comm verifi visual
+register compat workbench registry workbench registers itself service registry org workbench workbench allows people workbench service registry workbench implement org workbench workbench register service registry
  

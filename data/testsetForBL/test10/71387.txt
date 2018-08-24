@@ -1,2 +1,2 @@
-activitymgmt activ api log pars error workbench log malform activ exten fail silent log failur easi time creat attach patch patch add error messag activ class paul patch releas head lot error
+activity mgmt activity needs log parsing errors workbench log malformed activity extensions currently fail silently log failures
  

@@ -1,2 +1,2 @@
-face jface snippet title snippet doule click cell editor typo snippet double click cell editor http dev eclipse org viewcvs cgi org eclipse jface snippets eclipse face snippets org eclipse jface snippets viewers gerrit change created https git eclipse org tomasz update reference snippet wiki gerrit change https git eclipse org merged master commit http git eclipse org platform eclipse platform git commit abbc faec dede tomasz update wiki mark bug fixed https wiki eclipse org face snippets snippet double click cell editor updated tomasz
+face jface snippet title snippet doule cell editor typo snippet double cell editor came http dev org viewcvs index cgi org jface snippets face snippets org jface snippets viewers
  

@@ -1,2 +1,2 @@
-layoutgener handl link correctli layoutgener griddatafactori gridlayoutfactori handl link control incorrectli link control wrap griddatafactori incorrectli classifi wrap control patch forthcom gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm dbc eaa chang subm
+layout generator handle link correctly layout generator used grid data factory grid layout factory currently handling link control incorrectly link controls wrap grid data factory incorrectly classifying non wrapping control patch forthcoming
  

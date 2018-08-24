@@ -1,2 +1,2 @@
-viewel creat imagedescriptor null icon uri view icon attribut result model descriptor iconuri featur null viewel check null creat imag descriptor releas master http git eclips org platform eclips platform git comm
+view element image descriptor null icon welcome view specify icon attribute result model descriptor icon feature null view element null value instead trying use image descriptor
  

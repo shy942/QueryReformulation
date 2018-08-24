@@ -1,2 +1,2 @@
-remov depend ipluginregistri remov depend ipluginregistri favour iextensionregistri trivial migrat bug pass bugzilla test paul creat attach patch intern creat attach patch test patc good test pass hour mark nick consent repli comment patc good test pass hour yup jface test test rcp test pass patc subm check
+remove dependency plugin registry remove dependency plugin registry favour extension registry trivial migration
  

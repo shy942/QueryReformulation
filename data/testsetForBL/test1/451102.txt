@@ -1,2 +1,2 @@
-updat org eclips startup schema descrip org eclips startup speak org eclips core runti compat remov eclips http git eclips org http git eclips org platform eclips platform git comm becfdbbea daec
+update org startup schema description org startup speaks org core runtime compatibility removed
  

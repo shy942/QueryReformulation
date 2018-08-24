@@ -1,2 +1,2 @@
-compat contribut view perspect exten move share area instal mylyn open task repositori view place share area open repositori explor perspect time share area switch java perspect context menu close repositori explor perspect error log entri org eclips core messag unabl process compatibilityview eventbrok actual argum ieventbrok entri org eclips core messag unabl process compatibilityview logger actual argum logger push develop http git eclips org platform eclips platform git comm develop verifi window
+compatibility contributed view perspective extension gets moved shared area install mylyn open task repositories view place shared area open repository exploring perspective time gets outside shared area
  

@@ -1,2 +1,2 @@
-prefer rcp verifi prefer kei close editor shutdown api intern ipreferenceconst close editor fix pref constant api rcp app configur behaviour properli fix pref read intern store patch workbench busyclos boolean closeeditor prefutil getapipreferencestor getboolean iworkbenchpreferenceconst close editor workaround rcp app org eclips workbench close editor true org eclips close editor true plugin custom ini file fix org eclips close editor true woop meant verifi
+preferences verify preference key close editors shutdown
  

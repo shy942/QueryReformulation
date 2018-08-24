@@ -1,2 +1,2 @@
-activitymgmt imagebindingregistri hook exten registri wire listen registri event registri hook exten registri head verifi
+activity mgmt image binding registry hooked extension registry despite wired listen registry events registry actually hooked extension registry
  

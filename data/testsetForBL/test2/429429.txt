@@ -1,2 +1,2 @@
-css chang font size eclips chang text font set current theme javadoc displai font javadoc view javadoc hover addition content assist current theme creat attach screenshot demonstr problem mark dup bug bug mark duplic bug regres bug fix separ daniel releas http git eclips org platform eclips platform git comm beec daniel repli daniel rolka comment releas http git eclips org platform eclips platform git comm beec daniel verifi local build work great verifi build
+font size looks text font anymore set current theme example javadoc display font used javadoc view javadoc hovers additional information content assist available current theme
  

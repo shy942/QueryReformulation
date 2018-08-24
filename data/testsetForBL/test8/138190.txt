@@ -1,2 +1,2 @@
-wizards save doesn check validity location build create project file txt open editor txt file save file field enter temp txt thinking save file file system click creates file temp txt expected error wizard entered character valid character file names windows save dialog reassigning problem file file dialog enter file foo proceed valid file validated workspace validate created attachment apply patch org eclipse ide patch fixes file wizard save dialog fixed build
+wizards save doesn validity location build project containing file txt open editor txt file save file field enter temp txt thinking save file file creates file temp txt expected error wizard soon entered character valid character file names windows
  

@@ -1,2 +1,2 @@
-data binding broke suites code checked bug broke test suites detail observable detail observable test package plug ins detail observable package private illegal access exception running suites suites checked temporary detail observable public tests suites plug unit bug assuming bug marked classes public don rely test suites stable bug obsolete
+data binding fix broke suites code checked broke suites observable value observable value package different plug ins observable value package private results illegal access exception running suites suites right
  

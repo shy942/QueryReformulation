@@ -1,2 +1,2 @@
-viewers focus cell focused row sync apply bug applied head released
+viewers focus cell focused row sync apply fix applied head
  

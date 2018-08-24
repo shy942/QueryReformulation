@@ -1,2 +1,2 @@
-status handling clipboard created attachment released
+status handling clipboard used created attachment fix
  

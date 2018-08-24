@@ -1,2 +1,2 @@
-doc update services javadoc correct insure services javadoc mentions retrieved service locators level methods provide auto cleanup marked created attachment services workbench legacy workbench services reply comment created attachment details services workbench released minor cut paste error released created attachment services commands update command javadoc reply comment created attachment details services commands released updated command image service binding service updated org eclipse services source provider service updated focus service
+doc update services javadoc correct information insure services javadoc mentions retrieved service locators level methods provide auto cleanup marked
  

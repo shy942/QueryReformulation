@@ -1,2 +1,2 @@
-vararg constructor workingsetconfigurationblock platform vararg constructor workingsetconfigurationblock gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm edd
+use varargs constructor working set configuration block platform use varargs constructor working set configuration block
  

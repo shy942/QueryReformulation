@@ -1,2 +1,2 @@
-remov dummi toolbar fullscreen support lion http bug eclips org bug bug cgi dummi toolbar creat cocoauienhanc remov eclips support full screen featur lion longer requir toolbar toggl button mac lion creat attach patch patch check version creat dummi toolbar creat attach patch patch develop branch patch comm master develop http git eclips org platform eclips platform git comm develop bdeb http git eclips org platform eclips platform git comm fdd fba
+remove dummy toolbar fullscreen support lion https bugs org bugs cgi dummy toolbar created cocoa enhancer removed support screen feature lion required toolbar toggle button available mac lion
  

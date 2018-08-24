@@ -1,2 +1,2 @@
-editormgmt fileeditorinput getstorag api chang eclips fileeditorinput getstorag chang longer throw coreexcep class public break api chang workaround cast fileeditorinput ifileeditorinput wow good catch bit zealou cleanup head verifi
+editor mgmt file editor input storage file editor input storage changed throw core exception class public breaking workaround cast file editor input file editor input
  

@@ -1,2 +1,2 @@
-undo extern string undo action handler approv initi releas class externaliz string mark class develop stori chang string prompter class extern appli class nonlocalundouserapprov linearundoviolationuserapprov advancedvalidationuserapprov operationhistoryactionhandl string extern assu order undo command switch stori bind lieu messageformat releas head appear build verifi recheck mark oper intern oper
+undo externalize strings undo action handlers approvers initial release classes externalizable strings marked classes developed story changing strings prompters classes externalized
  

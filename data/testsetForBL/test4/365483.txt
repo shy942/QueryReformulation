@@ -1,2 +1,2 @@
-gener wrong deprec constant uievent fix bug gener wrong deprec constant topic model elem compil error patch fix code deprec constant break deprec topic constant creat attach patch gentop string topic static var interfac uievent deprec constant renam topic releas http git eclips org platform eclips platform git comm ffb verifi correct sourc build
+generated deprecated constant events fixing generated deprecated constant instead model element compile error patch fixed code use deprecated constant break anybody using deprecated constant
  

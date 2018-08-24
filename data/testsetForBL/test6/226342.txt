@@ -1,2 +1,2 @@
-key bindings preference conflict table hard read conflict table hard read entries space separated minimally tab separated columns header acceptable remove shortcut conflicts table conflicts shortcut created attachment patch table columns binding context remy good debating add category context conflict boris review pixels good width reply comment pixels good width arbitrary figure layouts layout data space columns properly ears time burn created attachment improved patch good released good unrelated bug
+key bindings keys preference page conflict table hard read conflict table hard read entries space separated minimally tab separated columns header acceptable
  

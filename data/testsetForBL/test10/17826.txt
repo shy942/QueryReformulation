@@ -1,2 +1,2 @@
-wizards folder wizard large creating folder container long path create folder long select folder open folder wizard wide file java creation wizards problem set character text limit created attachment patch project org eclipse ide patch stream created attachment patch org eclipse ide modified patch removed unused width constant fixed indentation problem organize imports remove import awhile submitted verified
+wizards folder wizard large creating folder container long path folder long select folder open folder wizard wide similar file java creation wizards
  

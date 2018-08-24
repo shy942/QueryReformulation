@@ -1,2 +1,2 @@
-context command enabledsubmis activepartid work creat enabl submis specif shell identifi enabl submis appear enabl entir shell activ creat enabl submis specif shell identifi site enabl submis work expect bug site case exist creat enabl submis refer speak doug problem exist handler submis mark major bit api goof command problem context stuff darin verifi work work mark verifi
+contexts commands enabled submission active working enabled submission specific shell identified enabled submission appears enabled entire shell associated active enabled submission specific shell identified site enabled submission works expected using ids sites case use exist enabled submission reference speaking doug says exists handler submissions
  

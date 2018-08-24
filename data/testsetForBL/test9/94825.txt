@@ -1,2 +1,2 @@
-workingset problem shutdown sequenc bug problem oper support dispos workbenchplugin dispos oper plug move dispos code workbenchplugin workbenchplugin reset notic support registri object manag workbenchplugin dispos reset method workingsetmanag method don problem thought point differ investig scari punt creat attach patch workbench bori work workbench reset ooop forgot add bori head
+working sets possible shutdown sequence operations support disposed workbench plugin stop trying dispose operations plug ins gone fix dispose code workbench plugin stop workbench plugin reset noticed support registry objects managed workbench plugin disposed reset method working set manager methods don thought point difference
  

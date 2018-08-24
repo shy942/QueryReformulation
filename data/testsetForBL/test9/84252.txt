@@ -1,2 +1,2 @@
-activitymgmt prefer plugabl compon activ prefer hardcod provid default replac product suffici defin prefer sdk plugin activ head move activitiespreferencepag public api packag capabl respond iexecutableexten paramet paramet overrid default label tree capabl labl tooltip checkbox product design refer activ term desir verifi sourc
+activity mgmt allow preference page plugable component activity preference page hardcoded provide default page replaced products sufficient define preference page plugin activities
  

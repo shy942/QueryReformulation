@@ -1,2 +1,2 @@
-typo themeengin getplatformmatc method string wsname bundl getbundlecontext getproperti ogsi typo ogsi osgi gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm fdf chang push master
+typo theme engine platform matches method string wsname bundle bundle context property ogsi typo ogsi osgi
  

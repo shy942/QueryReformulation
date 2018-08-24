@@ -1,2 +1,2 @@
-compil warn org eclips jface action caus move jface java compil warn packag org eclips jface action caus move java upload patch gerr http git eclips org correct link http git eclips org repli comment upload patch gerr http git eclips org review merg http git eclips org platform eclips platform git comm
+fix compiler warnings org jface action caused moving face java fix compiler warnings package org jface action caused moving java
  

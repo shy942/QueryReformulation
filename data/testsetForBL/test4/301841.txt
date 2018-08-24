@@ -1,2 +1,2 @@
-linkedresourc importtypedialog javadoc head importtypedialog javadoc type constructor setresourc noextend tag javadoc bug bug noextend fix
+linked resources import type dialog needs javadoc import type dialog needs javadoc type constructor set resource probably noextend tag
  

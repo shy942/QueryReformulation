@@ -1,2 +1,2 @@
-compat viewdescriptor implem isrestor correctli view defin restor attribut isrestor return true fals push develop http git eclips org platform eclips platform git comm develop cbf fbf verifi code inspec window
+compatibility view descriptor implement restorable correctly view define restorable attribute restorable return true instead false
  

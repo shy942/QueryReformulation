@@ -1,2 +1,2 @@
-exten point miss doc org eclips workbench model bundl org eclips workbench org eclips workbench org eclips workbench model exten point doc improv impres decid api api doc reason descrip suppos notic api bug mark duplic bug http git eclips org platform eclips platform common git comm head releas add exten point doc creat attach patch oleg minor updat push patch http git eclips org platform eclips platform git comm ada verifi doc
+extension point missing doc org workbench model bundle org workbench org workbench org workbench model extension point appear doc needs improved
  

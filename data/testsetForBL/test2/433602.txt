@@ -1,2 +1,2 @@
-move org eclips test java http git eclips org fix http git eclips org platform eclips platform git comm bae dcd verifi git
+org tests java
  

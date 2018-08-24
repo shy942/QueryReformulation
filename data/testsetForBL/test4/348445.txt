@@ -1,2 +1,2 @@
-remov view menu string build method org eclips workbench render swt stackrender showmenubutton mpart ctabfold mmenu code settooltiptext view menu string view menu depend string depend code rewritten creat attach local patch patch extern string translat repli comment creat attach detail local patch releas head find problem carolyn verifi sourc inspec window
+remove view menu string build method org workbench renderers swt stack renderer menu button tab folder menu following code set tool tip text view menu string view menu depends string dependent code rewritten
  

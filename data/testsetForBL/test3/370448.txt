@@ -1,2 +1,2 @@
-perspect switcher leak imag perspectiveswitch call createimag descriptor dispos return imag correctli result imag leak open close perspect push master http git eclips org platform eclips platform git comm ffd verifi window
+perspective switcher leaks images perspective switcher calls image descriptor dispose returned image correctly result image leaked opened closed perspective
  

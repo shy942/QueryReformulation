@@ -1,2 +1,2 @@
-snippet demonstrate inline editing tree viewer summary test case cvs
+snippet demonstrate inline editing tree viewer summary says used case
  

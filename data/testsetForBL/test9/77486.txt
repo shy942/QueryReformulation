@@ -1,2 +1,2 @@
-globalac deprec ideactionfactori rebuild project rebuild action longer appear defer fix remov unus global action handler navig verifi sourc chang
+global actions deprecate action factory actions appears
  

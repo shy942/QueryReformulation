@@ -1,2 +1,2 @@
-common navigator add tests simulating created attachment tests released tests don pass tests execute org eclipse tests navigator cdt cdt test
+common navigator tests simulating
  

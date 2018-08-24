@@ -1,2 +1,2 @@
-viewers double click activation working linux gtk snippet enabling editor double click problem whenm editor activated focus lost event produced putting focus tree table work activating editor display async exec appending patch created attachment problem gtk testing mac win win created attachment apply mac problem patch applied boris comments resolve friday moving created attachment double click listener async exec test linux gtk mac patch works released verified snippet test case
+viewers double activation working linux gtk snippet enabling editor double whenm editor activated focus lost event produced putting focus tree table work activating editor display async exec appending patch
  

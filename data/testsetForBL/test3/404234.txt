@@ -1,2 +1,2 @@
-bidi enforc base text direc project project wizard creat attach project wizard enforc base text direc project field api bidiutil applybidiprocess introduc bug creat attach enforc base text direc bidiutil applybidiprocess api marku review patch fix http git eclips org platform eclips platform git comm fba dbb bffa bug comment cover rest platform verifi visual
+bidi enforce base text direction project project wizard created attachment project wizard enforce base text direction project field using bidi utils apply bidi processing introduced
  

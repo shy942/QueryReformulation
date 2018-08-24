@@ -1,2 +1,2 @@
-compil warn packag org eclips jface window caus move java compil warn packag org eclips jface window caus move java push gerr http git eclips org http git eclips org platform eclips platform git comm baf
+fix compiler warnings package org jface window caused moving java fix compiler warnings package org jface window caused moving java
  

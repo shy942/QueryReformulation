@@ -1,2 +1,2 @@
-eclips unnecessari asser fail applic loadapplicationmodel iapplicationcontext appcontext ieclipsecontext eclipsecontext asser wether appmodelpath null fail iworkbench xmi uri arg set appmodelpath set default null http git eclips org fix http git eclips org platform eclips platform git comm cdcf dfacb cdc test rcp app defin paramet default caught
+unnecessary assertion fail application load application model application context app context context context assertion wether app model path null fail workbench set app model path set default value different null
  

@@ -1,2 +1,2 @@
-lazystackrender collect elem hidden make collect hide showrecurs remov push master
+lazy stack renderer collects elements shown hidden making use collected hide recursive used removed
  

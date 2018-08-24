@@ -1,2 +1,2 @@
-common navigator reorg test identifiers released verified tests passed
+common navigator reorg identifiers
  

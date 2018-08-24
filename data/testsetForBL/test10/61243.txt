@@ -1,2 +1,2 @@
-rcp remov depend core runti compat uiplugin refer iplugindescriptor creat attach patch org eclips project refer gratuit uiplugin iplugindescriptor constructor call plug delet constructor remov deprec warn workbenchplugin problem remov javadoc iworkbenchpartsit getpluginid implement iplugindescriptor gener workbench
+remove dependence core runtime compatibility plugin contains reference plugin descriptor
  

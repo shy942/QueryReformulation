@@ -1,2 +1,2 @@
-checkpii errors errors org eclipse menu html extension point http download eclipse org downloads drops testresults chkpii linux gtk org eclipse nls html txt released bookkeeping
+checkpii errors errors org menu html extension point http download org downloads drops testresults chkpii linux gtk org nls html txt
  

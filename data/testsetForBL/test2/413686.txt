@@ -1,2 +1,2 @@
-compil warn org eclips jface resourc caus move jface java compil warn packag org eclips jface resourc caus move java upload patch bug http git eclips org http git eclips org platform eclips platform git comm cfb
+fix compiler warnings org jface resource caused moving face java fix compiler warnings package org jface resource caused moving java
  

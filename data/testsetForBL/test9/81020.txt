@@ -1,2 +1,2 @@
-perspect regres save perspect download version version build save current perspect java button disabl verifi interest bug save perspect exist perspect nick roll correct behaviour regres chang spec validatelabel method validatelabel perspectiveregistri createperspect disallow exist perspect wasn saveperspectivedialog updatebutton exist allow case caus problem bug mark duplic bug fix move findperspectivewithlabel call perspectiveregistri createperspect revert verifylabel behaviour dup check clarifi javadoc verifi work close
+perspectives regression save perspective downloaded version version build tried save current perspective java button disabled verify fix
  

@@ -1,2 +1,2 @@
-undo undo notification turned deleting project notified removes undo history add don checkbox dialog settings reasonable user prompted fixed ended moving explanatory text delete project dialog punting extra warning dialog completely dumb workspace preference titled don extra reminder undo project content deletion warn user choice delete content sense add extra warning deleting content won restorable undo
+undo allow undo notification turned deleting project notified removes undo history don checkbox dialog settings thanx
  

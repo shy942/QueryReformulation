@@ -1,2 +1,2 @@
-viewer column scroll break cell selec scroll tabl bug initi creat clone bug build step reproduc attach snippet scroll tabl click column item cell tabl scroll left open cell editor cell cursor scroll left cell cursor click mous test winxp eclips target remov obsolet target mileston patch origin bug appli mainten stream creat attach patch bug miss work patch comm head
+viewers column scrolling breaks cell selection scrolled table initially created clone build steps reproduce attached snippet scroll table way right column item cell table scrolls left opens cell editor cell cursor scrolled left cell cursor clicked mouse information tested win
  

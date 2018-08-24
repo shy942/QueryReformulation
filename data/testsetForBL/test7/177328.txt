@@ -1,2 +1,2 @@
-javadoc warning builds src plugins org eclipse platform doc isv org eclipse workbench eclipse org eclipse menus contribution root java warning tag link find add contribution item contribution item org eclipse menus contribution root verified
+javadoc warning builds src plugins org platform doc isv org workbench org menus contribution root java warning tag link contribution item contribution item org menus contribution root
  

@@ -1,2 +1,2 @@
-javadoc warning builds src plugins org eclipse platform doc isv org eclipse workbench eclipse org eclipse fieldassist content assist field java warning tag link class package control decoration fixed verified doc logs clean
+javadoc warning builds src plugins org platform doc isv org workbench org fieldassist content assist field java warning tag link class package control decoration
  

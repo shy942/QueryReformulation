@@ -1,2 +1,2 @@
-themes dialog fonts don build window preferences general appearance color fonts dialog font change font italics press close preferences dialog reopen fonts wizard bug marked duplicate bug caused innocuous cleanup started incorrect preference store based misleading javadoc verified
+themes dialog fonts don build window preferences general appearance color fonts dialog font font italics example press close preferences dialog reopen fonts taken effect effect wizard
  

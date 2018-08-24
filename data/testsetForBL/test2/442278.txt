@@ -1,2 +1,2 @@
-getstructuredselec structuredview platform code jface snippet http git eclips org repli lar vogel comment jface snippet http git eclips org merg http git eclips org platform eclips platform git comm bfcd org eclips jface exampl databind rework http git eclips org platform eclips platform git comm ddcb dbc viewspreferencepag http git eclips org repli lar vogel comment viewspreferencepag http git eclips org platform eclips platform git comm feab repli lar vogel comment repli lar vogel comment viewspreferencepag http git eclips org platform eclips platform git comm feab introduc compil warn offici build fix http git eclips org platform eclips platform git comm effdaaef cae mark fix chang find code
+use structured selection structured viewer platform code
  

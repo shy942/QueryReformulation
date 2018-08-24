@@ -1,2 +1,2 @@
-undo inconsistent button labeling prompt local dialog discard undo cancel discard undo cancel fixed released verified win
+undo inconsistent button labeling prompt undoing non local changes dialog yes discard undo cancel discard undo cancel
  

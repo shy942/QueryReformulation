@@ -1,2 +1,2 @@
-services doc add documentation org eclipse services documentation advanced guide released entry services guide released workbench list services created attachment services doc service contribution doc releasd
+services doc documentation org services documentation needs added advanced section guide
  

@@ -1,2 +1,2 @@
-model baseworkbenchcontentprovid class javadoc incomplet class javadoc baseworkbenchcontentprovid plugin org eclips workbench eclips org eclips model baseworkbenchcontentprovid java leav hang end phrase subclass don extra condition remov subclass verifi
+model base workbench content provider class javadoc incomplete class javadoc base workbench content provider plugins org workbench org model base workbench content provider java leaves hanging ends phrase subclassed following
  

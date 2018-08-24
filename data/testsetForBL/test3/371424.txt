@@ -1,2 +1,2 @@
-workbenchpag getperspectivestack call lot open close view cycl open view close view workbenchpag getperspectivestack call time method turn call emodelservic findel take time search model return getperspectivestack chang execu add cac hold result method chang improv view open close http git eclips org platform eclips platform git comm dff verifi updat code build
+workbench page perspective stack gets called lot opening closing views cycle open view close view workbench page perspective stack gets called times method turn calls model service elements takes time search model value returned perspective stack execution cache hold result method
  

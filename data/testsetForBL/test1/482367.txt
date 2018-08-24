@@ -1,2 +1,2 @@
-add factori creat iconvert lamda expres subclass convert implem convert method bit cumberso java lamda method refer conver method propos add iconvert creat object object function object object conver gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm aba dcaa
+factory converter lamda expressions currently needs subclass converter implement convert method bit cumbersome java use lamda method reference conversion method propose converter object object function object object conversion
  

@@ -1,2 +1,2 @@
-jface listeditor select item remov listeditor select item remov press doesn set selec user manual select item remov fix http git eclips org platform eclips platform git comm ffc
+face list editor select item remove list editor select item remove pressed currently doesn set selection user manually select item remove
  

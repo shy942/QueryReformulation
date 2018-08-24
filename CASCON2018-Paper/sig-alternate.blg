@@ -1,49 +1,6 @@
-This is BibTeX, Version 0.99d (TeX Live 2018)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: sig-alternate.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: sig-alternate.aux
 The style file: plainnat.bst
 Database file #1: test.bib
 Warning--to sort, need author or key in eclipseGit
 Warning--empty year in eclipseGit
-You've used 9 entries,
-            2773 wiz_defined-function locations,
-            654 strings with 6819 characters,
-and the built_in function-call counts, 5336 in all, are:
-= -- 467
-> -- 294
-< -- 8
-+ -- 99
-- -- 90
-* -- 424
-:= -- 730
-add.period$ -- 26
-call.type$ -- 9
-change.case$ -- 57
-chr.to.int$ -- 9
-cite$ -- 21
-duplicate$ -- 264
-empty$ -- 451
-format.name$ -- 100
-if$ -- 1195
-int.to.chr$ -- 1
-int.to.str$ -- 1
-missing$ -- 8
-newline$ -- 52
-num.names$ -- 32
-pop$ -- 145
-preamble$ -- 1
-purify$ -- 48
-quote$ -- 0
-skip$ -- 219
-stack$ -- 0
-substring$ -- 232
-swap$ -- 85
-text.length$ -- 7
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 99
-warning$ -- 2
-while$ -- 40
-width$ -- 0
-write$ -- 120
 (There were 2 warnings)

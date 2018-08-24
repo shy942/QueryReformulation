@@ -1,2 +1,2 @@
-tabbed properties header fixed font size accessibility header font size fixed customizable preferences fonts properties view workbench preferences mistakenly hard coded title points points larger default font tabs fixed title font points larger tab font fonts correctly adjust workbench restarted applying high contracts mode
+tabbed properties section header fixed font size accessibility section header font size fixed customizable preferences
  

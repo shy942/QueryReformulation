@@ -1,2 +1,2 @@
-wizard doubl click untitl text file creat file ctrl doubl click simpl untitl text file expect file creat actual note press return work expect work properli requir api wizard explicitli close iwizardcontain cast contain wizarddialog call close perform expect hack close side call cancel wizard case wizard chang futur hack investig introduc method iwizardcontain grant abil forc close abort contain creat attach patch org eclips workbench patch incident work uncov bug newwizardnewpag doubleclick listen tree viewer work respons flicker wizard don address patch subm head enter bug track api verifi
+wizards double untitled text file file ctrl double simple untitled text file expected file created actual happens note pressing return works expected
  

@@ -1,2 +1,2 @@
-status handling modality switch details support preserved correctly created attachment comment status adapter selected modality switch comment close tray action modify tray closed flag modality switch restore dialog reopened created attachment mylyn context zip released
+status handling modality switch state details support preserved correctly
  

@@ -1,2 +1,2 @@
-editor mgmt contribu editor action enabl editor open activ build chang open singl click navig packag explor singl click read file read editor toolbar button enabl editor activ problem editoractionbar initi enabledallow true fals enabl setenabledallow true call fix verifi
+editor mgmt contributions editor actions enabled editor opened activating build open single navigator package explorer single readme file readme editor toolbar button enabled editor activated editor action bars initializes enabled allowed true instead false enabled set enabled allowed true called
  

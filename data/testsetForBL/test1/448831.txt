@@ -1,2 +1,2 @@
-handleobjectmanag thrown iae npe protect final void checkid final string null throw nullpointerexcep handl object null identifi http git eclips org http git eclips org platform eclips platform git comm bbb
+handle object manager thrown instead protected final void final string null throw null pointer exception handle object null identifier
  

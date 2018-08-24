@@ -1,2 +1,2 @@
-mark function interfac databind function mark interfac function org eclips core databind util ilogg ivaluechangelisten gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm simon
+mark functional interfaces databinding functional mark interfaces functional org core databinding util logger value listener
  

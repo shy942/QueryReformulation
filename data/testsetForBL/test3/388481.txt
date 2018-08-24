@@ -1,2 +1,2 @@
-css add support style toolbar toolitem fix master comm ada cee acc
+support styling tool bar tool items
  

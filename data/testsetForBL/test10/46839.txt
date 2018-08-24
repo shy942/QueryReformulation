@@ -1,2 +1,2 @@
-rcp auto save build leav progress bar show statu build turn workbench pref save build open file don save ctrl progress bar statu left show ctrl problem regres progress monitor method call free call workspac editormanag saveal remov rcp bug explic call saveal reinstat eventloopprogressmonitor bug
+auto save build leaves progress bar showing status build turn workbench pref save changes build open file changes don save ctrl progress bar status left showing ctrl regression
  

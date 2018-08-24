@@ -1,2 +1,2 @@
-viewmgmt regres view restor memento close reopen build window resourc perspect select resourc navig shutdown restart navig selec restor properli select resourc navig close navig reopen navig selec expect selec empti memento view restor previou session viewrefer createparthelp clear memento request viewfactori getviewst fix head verifi
+view mgmt regression view restored memento closing reopening build window resource perspective select resource navigator shutdown restart navigator selection restored properly select resource navigator close navigator reopen navigator selection expectation selection memento used views restored previous session looks view reference helper clearing memento requesting view factory view state
  

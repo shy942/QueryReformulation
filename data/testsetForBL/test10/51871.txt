@@ -1,2 +1,2 @@
-keybind scroll longer work consol longer pageup pagedown ctrl ctrl consol build work darin standard kei bind scroll switch origin default kei bind switch stop work normal kei bind move platform comment keybind issu kei eaten kei bind architectur reac consol window problem bound complet kei configur overrid nativ behaviour remov bind kei configur note time constraint kei configur pull verifi scroll consol multipl line
+key bindings scrolling works console use page page ctrl home ctrl end console build
  

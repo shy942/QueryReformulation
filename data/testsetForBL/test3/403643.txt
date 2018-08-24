@@ -1,2 +1,2 @@
-bidi bidiutil applytextdirec control string segment listen style text bidiutil applytextdirec control string segment listen style text control control settextdirec swt left equival bidiutil applybidiprocess style text bidiutil left doesn work gtk fix http git eclips org platform eclips platform git comm dfb verifi visual code test
+bidi bidi utils apply text direction control string use segment listener styled text bidi utils apply text direction control string use segment listener styled text controls control set text direction equivalent bidi utils apply bidi processing styled text bidi utils currently doesn work
  

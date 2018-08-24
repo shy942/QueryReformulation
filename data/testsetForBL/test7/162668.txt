@@ -1,2 +1,2 @@
-field assist javadoc warnings builds src plugins org eclipse platform doc isv org eclipse jface src org eclipse jface fieldassist control decoration java warning param argument decoration parameter fixed verified javadoc warnings fieldassist doc logs
+field assist javadoc warnings builds src plugins org platform doc isv org jface src org jface fieldassist control decoration java warning param argument decoration parameter
  

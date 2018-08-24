@@ -1,2 +1,2 @@
-intro finish javadoc schema doc close
+intro finish javadoc schema doc
  

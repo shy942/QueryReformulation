@@ -1,2 +1,2 @@
-composit requestlayout method partrenderingengin http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm
+use composite request layout method rendering engine
  

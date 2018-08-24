@@ -1,2 +1,2 @@
-viewer add gener customhasht org eclips jface viewer customhasht class jface viewer support java gener upload patch gerr http git eclips org releas http git eclips org platform eclips platform git comm fcb
+viewers generics custom hashtable org jface viewers custom hashtable class face viewer support java generics
  

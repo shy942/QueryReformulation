@@ -1,2 +1,2 @@
-commonnavig scari error messag incorrectli log messag miss navigatorcont log regres caus bug messag benign creat attach patch releas head referenc scari messag plugin plugin exten org eclips navig navigatorcontentunknown exten tag navigatorcont repli comment referenc scari messag plugin plugin exten org eclips navig navigatorcontentunknown exten tag navigatorcont yup build scari
+common navigator scary looking error messages incorrectly appear log messages missing navigator content appear log regression caused messages benign
  

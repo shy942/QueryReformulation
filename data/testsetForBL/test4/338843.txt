@@ -1,2 +1,2 @@
-updat displai getappmenubar call creat attach patch swt renam displai getappmenubar getmenubar bug updat workbench avoid break build patch appli head verifi code chang build
+update display app menu bar calls created attachment patch renamed display app menu bar menu bar update workbench avoid breaking build
  

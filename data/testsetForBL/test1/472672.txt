@@ -1,2 +1,2 @@
-generifi org eclips core databind observ plugin extract bug bug cover work need add gener org eclips core databind observ plugin warn patchset line code requir contribu questionnair author committ project http wiki eclips org project manag infrastructur creat contribu questionnair fix master repli stefan xeno comment fix master stefan afaic refer comm http git eclips org platform eclips platform git comm dffcb gerr review http git eclips org foundat boot automat base comm messag time work
+generify org core databinding observable plugin extracted covers work needed generics org core databinding observable plugin
  

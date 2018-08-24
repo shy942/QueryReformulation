@@ -1,2 +1,2 @@
-compatibilti npe shutdown workbenchpag getperspectivedesc unabl reproduc encount run debugg fix fcdc verifi version build
+compatibilty shutdown workbench page perspective desc reproduce encounter running debugger
  

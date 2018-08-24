@@ -1,2 +1,2 @@
-jface add deprec annot elem deprec javadoc annot discuss mail list add deprec exist elem deprec javadoc annot gerr review http git eclips org sourc clean gener deprec annot fix http git eclips org platform eclips platform git comm addb ffea repli lar vogel comment fix http git eclips org platform eclips platform git comm addb ffea mark fix verifi visual
+face deprecated annotation elements having deprecated javadoc annotation discussed mailing list useful deprecated existing elements currently use deprecated javadoc annotation gerrit review https git org used source clean generate deprecated annotations
  

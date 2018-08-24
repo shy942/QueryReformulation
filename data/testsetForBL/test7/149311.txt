@@ -1,2 +1,2 @@
-working sets working set selection wizard faulty layout layout working set type label edit working set type wizard correct select type label layout grabbing excess vertical space shouldn patch created attachment apply patch org eclipse workbench released build verified
+working sets working set selection wizard page faulty layout layout working set type label edit working set type page wizard page correct select type label layout grabbing excess vertical space shouldn patch fix
  

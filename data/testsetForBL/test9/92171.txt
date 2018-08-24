@@ -1,2 +1,2 @@
-workbenchpag getviewstack eager activ view method eager activ view method return iviewpart stack part creat stack call getview true perform issu unnecessari creation current behavior mislead caller believ method return set tab stack method tab iviewpart fix head reopen assign close assign field updat
+workbench page view stack eager activate views method eager activate views method states returns view parts stacked given actually causes parts created stack calling view true performance issue unnecessary creation current behavior mislead callers believing method returns set tabs stack method tab associated view
  

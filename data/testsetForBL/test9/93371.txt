@@ -1,2 +1,2 @@
-prefer color font prefer hook context progress view color font prefer renam precis progress view cover bug creat attach org eclips platform doc user creat attach org eclips workbench andrea doc portion appli doc hook version build mvm code hook patch appli fix verifi gtk
+preferences colors fonts keys preference pages hook contexts progress view colors fonts preference page
  

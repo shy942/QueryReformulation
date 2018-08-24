@@ -44,7 +44,7 @@ public class SourceCodeMethodLevelStemm {
         //For Mac
 		//new SourceCodeMethodLevelStemm().PreprocessMethodLevelFiles("/Users/user/Documents/workspace-Sep16/QueryReformulation/data/ExampleSourceCodeFilesSortedContents/");
 		//For Windows
-		SourceCodeMethodLevelStemm obj=new SourceCodeMethodLevelStemm("C:\\Users\\Mukta\\Dropbox\\WorkinginHome\\SCAM\\QueryReformulation\\data\\ExampleSourceCodeFilesMethodLevel\\","E:\\PhD\\Data\\ProcessedSourceForBL\\",".\\data\\ID-Keyword.txt",".\\data\\changeset-pointer\\ID-SourceFile.txt");
+		SourceCodeMethodLevelStemm obj=new SourceCodeMethodLevelStemm("C:\\Users\\Mukta\\Dropbox\\WorkinginHome\\SCAM\\QueryReformulation\\data\\ExampleSourceCodeFilesMethodLevel\\","E:\\PhD\\Data\\NotProcessedSourceMethodLevel\\",".\\data\\ID-Keyword.txt",".\\data\\changeset-pointer\\ID-SourceFile.txt");
 	    //MiscUtility.showResult(10, obj.sourceContentMethod);
 	    //MiscUtility.showResult(10, obj.sourceContent);
 	    obj.processedContent=obj.DoNotProcessContent(obj.sourceContentMethod, "E:\\PhD\\Data\\NotProcessedSourceMethodLevel\\");

@@ -1,2 +1,2 @@
-workbench bundle events narrow starting bug platform synchronized bundle listener created attachment bundle listener workbench plugin contributed tom created attachment bundle listener event minor modification plugin doesn expose listener method tom check patch didn break moved stuff patch released reviewed code fine works testcase posted bug fixed verified inspection
+workbench use bundle events narrow starting state platform needs use synchronized bundle listener state
  

@@ -1,2 +1,2 @@
-typo javadoc resource selection dialog java javadoc org eclipse dialogs resource selection dialog dialog set initial selections selected resources note extra noticed paste code fixed
+typo javadoc resource selection dialog java javadoc org dialogs resource selection dialog example says dialog set initial selections selected resources note extra noticed trying paste example code
  

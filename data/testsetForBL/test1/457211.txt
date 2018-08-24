@@ -1,2 +1,2 @@
-jface cleanup toolbarmanag bug code toolbarmanag clean http git eclips org repli andrei loskutov comment http git eclips org merg http git eclips org platform eclips platform git comm feca ebb
+face cleanup tool bar manager similar code tool bar manager cleaned fix follows
  

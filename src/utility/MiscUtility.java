@@ -140,6 +140,17 @@ public class MiscUtility {
 		return new ArrayList<String>(Arrays.asList(items));
 	}
 	
+	public static ArrayList<String> str2ListMukta(String itemLine) {
+		ArrayList<String> list=new ArrayList<>();
+		String[] spilter=itemLine.split(" ");
+		for(int i=0;i<spilter.length;i++)
+		{
+			list.add(spilter[i]);
+		}
+		return list;
+	}
+	
+	
 	public static String listInt2Str(ArrayList<Integer> items) {
 		String temp = new String();
 		for (Integer d : items) {
@@ -147,6 +158,15 @@ public class MiscUtility {
 		}
 		return temp.trim();
 }
+	public static ArrayList<String> ListIntTOListStr(ArrayList<Integer> listInt) {
+		ArrayList<String> listStr=new ArrayList<>();
+		for(int item:listInt)
+		{
+			String strItem=String.valueOf(item);
+			listStr.add(strItem);
+		}
+		return listStr;
+	}
 	
 	
 	public void convertSourcetoNumberFile(String inputfileAddress, String IDaddress, String fileName)

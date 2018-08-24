@@ -1,2 +1,2 @@
-trimmedpartlayout visibl trim area result bug discov trimmedpartlayout doesn visibl top bottom left composit account toggl visibl content area leav space caus remain item lai creat attach patch trimmedpartlayout fix master comm verifi
+trimmed layout use visibility trim area result discovered trimmed layout doesn visibility left right composites account toggling visibility contents areas leaves space causing remaining items layed
  

@@ -1,2 +1,2 @@
-view bother categori categori view dialog collaps tree occur role creat attach patch org eclips workbench viewcontentprovid detect icategori iviewregistri activ filter provid simpli return children icategori icategori creat attach patch org eclips jface previou wrong patch appli patch resubm creat attach patch org eclips workbench patch invalid rcp merg appli patch note buildnot workbench html test suit test pass tomorrow integr build close
+views bother categories category view dialog collapse tree occurs roles currently
  

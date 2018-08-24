@@ -1,2 +1,2 @@
-statushandling initial size small ratio error content created attachment detailed description required created attachment mylyn context zip created attachment patch test created attachment mylyn context zip fixed attachment verified
+statushandling initial size small ratio error content
  

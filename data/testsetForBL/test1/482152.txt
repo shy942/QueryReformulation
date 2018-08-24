@@ -1,2 +1,2 @@
-deprec makecontribu setactionbar javadoc method exist compat subclass reimplem code code gerr chang creat http git eclips org deprec mark gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm eae deni correct javadoc tag deprec content assist descrip full sentenc sentenc case deprec annot miss gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm cfb ffd
+deprecated page contributions page set action bars javadoc says method exists backward compatibility subclasses reimplement code init code
  

@@ -1,2 +1,2 @@
-activitymgmt activ javadoc issu itriggerpointmanag unknown trigger deprec workbenchactivityhelp allowuseof deprec delet activitycategorypreferencepag javadoc allowuseof unknown trigger support doc updat verifi
+activity mgmt activities javadoc issues trigger point manager deprecated workbench activity helper allow use deprecated deleted activity category preference page needs javadoc
  

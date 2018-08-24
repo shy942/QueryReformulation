@@ -1,2 +1,2 @@
-add miss annot org eclips jface snippet gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm ddf revert chang repositori close mar appli chang includ test doc gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm bcfc
+missing annotations org jface snippets
  

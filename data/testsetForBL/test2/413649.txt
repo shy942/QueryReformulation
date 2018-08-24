@@ -1,2 +1,2 @@
-compil warn org eclips jface layout caus move jface java compil warn packag org eclips jface layout caus move java upload patch gerr http git eclips org fix http git eclips org platform eclips platform git comm
+fix compiler warnings org jface layout caused moving face java fix compiler warnings package org jface layout caused moving java
  

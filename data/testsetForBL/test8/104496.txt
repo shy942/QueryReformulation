@@ -1,2 +1,2 @@
-support hebrew language code change org eclipse workbench plugin check command locale check hebrew platform javadoc locale class changed compatibility add languages check method http ics uci pub ietf http iso txt list locales workbench plugin stay compatibility forgot mark resolved fixed verified
+support hebrew language code org workbench plugin command locale hebrew platform according following javadoc locale class changed backward compatibility languages method http www ics uci edu pub ietf http related iso txt
  

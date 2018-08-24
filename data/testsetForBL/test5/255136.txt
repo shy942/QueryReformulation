@@ -1,2 +1,2 @@
-commands services evaluation reference remove provisional claim org eclipse services evaluation reference spec provisional release door comment removed released
+commands services evaluation reference needs remove provisional claim org services evaluation reference spec provisional release door needs removed
  

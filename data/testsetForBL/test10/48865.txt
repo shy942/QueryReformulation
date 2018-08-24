@@ -1,2 +1,2 @@
-rcp rena getdefaultwindowinput getdefaultpageinput build input workbench workbenchadvisor getdefaultwindowinput spec return default input newli creat workbench renam getdefaultpageinput method renam suggest renam intern workbench method left exist method workbenchadv mark final deprec warn disappear chang releas head safe includ rebuild delet getdefaultwindowinput verifi
+rename default window input default page input build input workbench page obtained workbench advisor default window input spec returns default input newly created workbench pages renamed default page input
  

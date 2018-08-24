@@ -1,2 +1,2 @@
-commonnavig add plugin xml configur pipelin test patch contribut franck mangin fico bug bug creat attach patch releas head
+common navigator plugin xml configuration pipeline tests
  

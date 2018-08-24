@@ -1,2 +1,2 @@
-remov javadoc statem org eclips navig bug initi creat clone bug gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm eaf edb
+remove non javadoc statements org navigator initially created clone
  

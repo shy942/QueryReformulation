@@ -1,2 +1,2 @@
-simplifi widget data access css css widgetel class conveni method set css widget displai codebas chang conveni method clean widgetel set cssclass fix master comm baf dec bef verifi patch failur visibl
+simplify widget data accesses information widget element class provides convenience methods getting setting information widget display codebase changed use convenience methods
  

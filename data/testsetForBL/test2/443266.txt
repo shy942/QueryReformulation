@@ -1,2 +1,2 @@
-button improperli disabl event loop monitor prefer reproduc open event loop monitor prefer enabl event loop monitor thread chang long event threshold button disabl chang stack sampl interv error messag disappear appli button disabl propos http git eclips org repli sergei prigogin comment propos http git eclips org sergei merg http git eclips org platform eclips platform git comm bcdf
+button improperly disabled event loop monitor preference page reproduce open event loop monitor preference page enable event loop monitoring thread long event threshold button gets disabled stack interval error message disappears apply buttons disabled
  

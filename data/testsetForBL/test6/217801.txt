@@ -1,2 +1,2 @@
-common navigator capability filtering common wizard extensions wrong identifier created attachment wizard contribution capability filtering introduced bug extension attribute wizard compute identifier activity pattern matching inconsistent areas wizards capability filtered kim mind reviewing tested fact automated test fine created attachment revised add test cases released maintenance test case passed
+common navigator capability filtering common wizard extensions uses identifier created attachment use wizard contribution fix capability filtering introduced uses associated extension attribute instead wizard compute identifier activity pattern matching inconsistent areas wizards capability filtered
  

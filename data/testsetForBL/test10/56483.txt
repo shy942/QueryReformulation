@@ -1,2 +1,2 @@
-theme perspectivebarmanag access jfaceresourc fontregistri opps current theme workbench color font retriev current theme addition font small font declar registri font need defini org eclips plugin xml reus view messag font intend small font origin creat attach patch org eclips workbench hell easi easi heck didn vei head slowpok verifi
+themes perspective bar manager accesses face resources font registry directly oppsed current theme workbench color font retrieval current theme additionally tries obtain font declared registry font needed definition added org plugin xml value reused view message font intended small font originally
  

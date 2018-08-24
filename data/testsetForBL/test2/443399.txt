@@ -1,2 +1,2 @@
-databind deprec outdat beansobserv pojoobserv advic prefer usag beanproperti beansobserv deprec class method matthew deprec http git eclips org fix http git eclips org platform eclips platform git comm fec dcac
+data binding deprecate outdated beans observables pojo observables advice prefer usage bean properties instead beans observables suggest deprecate class methods
  

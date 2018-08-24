@@ -1,2 +1,2 @@
-wizards icon showing wizard icons showing dialog disabled created attachment screenshot button list wizards originally wizard supposed selected wizard disabled button enabled remove don happen created attachment apply patch org eclipse workbench released stream release patch stream released patch stream deletion externalized strings verified
+wizards icon showing twice wizard icons showing dialog currently disabled
  

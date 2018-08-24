@@ -1,2 +1,2 @@
-dialogs remove required field color dialogs deprecated class field assist colors shouldn color required fields dialogs folder dialog create linked resource group resource working set container selection group resource container group bug marked duplicate bug bug marked duplicate bug fixed verified win
+dialogs remove required field color dialogs using deprecated class field assist colors shouldn color required fields anymore dialogs folder dialog linked resource group resource working set page container selection group resource container group
  

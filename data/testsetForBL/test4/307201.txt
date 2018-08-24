@@ -1,2 +1,2 @@
-leak filtereditemsselectiondialog compoundcontributionitem openwithmenu creat attach open resourc dialog leak free problem fix filtereditemsselectiondialog leak menumanag compoundcontributionitem leak nest contribu item openwithmenu cac imag privat static hashtabl share resourcemanag ideworkbenchplugin releas head verifi
+leaks filtered items selection dialog compound contribution item open menu created attachment fix open resource dialog leak free problems fixed filtered items selection dialog leaks menu managers compound contribution item leaks nested contribution items open menu caches images private static hashtable fix use shared resource manager workbench plugin
  

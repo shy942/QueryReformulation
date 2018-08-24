@@ -1,2 +1,2 @@
-api control travers int event creat attach implem recurs behavior travers kei event locat swt api fix head verifi sourc inspec window rebind travers pde editor correctli
+use control traverse int event created attachment fix implement recursive behavior traversal key events locations use
  

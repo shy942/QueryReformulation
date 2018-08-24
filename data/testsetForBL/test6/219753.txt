@@ -1,2 +1,2 @@
-snippets update snippet dispose elements correctly released
+snippets update snippet dispose elements correctly described
  

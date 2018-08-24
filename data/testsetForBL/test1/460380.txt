@@ -1,2 +1,2 @@
-chang checkboxtreeview setcheckedchildren privat protect requir bug gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm dde simon make method protect doesn case subclass allow noextend class intend subclass client public class checkboxtreeview extend treeview implem icheck
+checkbox tree viewe set checked children private protected required
  

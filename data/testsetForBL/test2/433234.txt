@@ -1,2 +1,2 @@
-ipresentationengin hidden explicitli toolbarmanagerrender bug introduc constant hide elem implement bug adjust http git eclips org fix http git eclips org platform eclips platform git comm ebbb verifi git
+use presentation engine toolbar manager renderer introduced constant hiding elements implementation needs adjusted
  

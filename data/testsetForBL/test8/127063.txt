@@ -1,2 +1,2 @@
-key bindings doc javadoc references binding service cleaned binding service referred workbench workbench window workbench site reference binding service fixed build deleting javadoc tags reference wasn import fixed verified build process
+key bindings doc javadoc references binding service cleaned binding service referred workbench workbench window workbench site reference binding service
  

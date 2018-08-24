@@ -1,2 +1,2 @@
-updat abstractuiplugin method remov org eclips core runti compat org eclips core runti compat remov updat javadoc logic public abstractuiplugin iplugindescriptor descriptor startup shutdown bug gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm cfb
+update abstract plugin methods removal org core runtime compatibility org core runtime compatibility removed update javadoc logic public abstract plugin plugin descriptor descriptor startup shutdown
  

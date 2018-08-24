@@ -1,2 +1,2 @@
-emodelservic workbenchwindow emf factori http git eclips org fix http git eclips org platform eclips platform git comm repli lar vogel comment fix http git eclips org platform eclips platform git comm correct comm http git eclips org platform eclips platform git comm fcd dddfd emodelservic elem http git eclips org platform eclips platform git comm bbd trivial verifi build
+use model service workbench window instead factory
  

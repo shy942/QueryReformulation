@@ -1,2 +1,2 @@
-detachedview redund activ switch perspect detach view code head april reproduc build enabl debug log option org eclips debug listen listen iworkbenchpag ipartlisten creat perspect detach view switch notic activ event fire detach view perspect perspect switch perform problem activ slow fix head verifi
+detached view redundant activation changes switching perspective detached views using code april probably reproducable using recent build enable following debug logging options org debug listeners listeners workbench page listener perspectives containing detached views switch notice activate event fired detached view perspective perspective switch performance activation quite slow
  

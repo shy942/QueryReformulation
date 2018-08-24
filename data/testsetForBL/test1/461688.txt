@@ -1,2 +1,2 @@
-test org eclips swt graphic rgba cast org eclips swt graphic rgb http download eclips org eclips download drop testresult html org eclips test macosx cocoa html org eclips test gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm aefc gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm fcc afb
+tests org swt graphics cast org swt graphics http download org downloads drops testresults html org tests macosx cocoa html org tests
  

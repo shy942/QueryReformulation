@@ -1,2 +1,2 @@
-move handlerprocessingaddon inject regist event handlerprocessingaddon subscrib event instal annot chang eventbrok subscrib uievent handlercontain topic handler eventhandl eventbrok subscrib uievent context topic context contexthandl http git eclips org sopot fix http git eclips org platform eclips platform git comm
+handler processing addon use inject register events handler processing addon subscribes directly events install using annotations event broker subscribe events handler container event handler event broker subscribe events context context handler
  

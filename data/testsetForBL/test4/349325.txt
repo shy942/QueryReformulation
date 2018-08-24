@@ -1,2 +1,2 @@
-compat isavehandl implement shouldn editor dialog view prompt save creat attach workbenchwindow patch repli comment creat attach detail workbenchwindow patch patch releas head
+compatibility save handler implementation shouldn consider editors use dialogs view prompted saved
  

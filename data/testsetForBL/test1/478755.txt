@@ -1,2 +1,2 @@
-remov org eclips intern util util getadapt bug initi creat clone bug bug fix remov org eclips intern util util getadapt object sourceobject class adaptertyp gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm aeac remov comm http git eclips org platform eclips platform git comm
+remove org internal util util adapter initially created clone fixed remove org internal util util adapter object source object class adapter type
  

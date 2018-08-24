@@ -1,2 +1,2 @@
-compat workbenchwindowcontrolcontribu dispos method call workbench window creat close instanti workbenchwindowcontrolcontribu instanc dispos leak push master http git eclips org platform eclips platform git comm bde dcac
+compatibility workbench window control contributions dispose method called workbench window created closed instantiated workbench window control contribution instances getting disposed cause leak
  

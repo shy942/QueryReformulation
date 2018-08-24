@@ -1,2 +1,2 @@
-rcp review abstractuiplugin initializedefaultpluginprefer api plugin initializedefaultpluginprefer deprec stori place abstractuiplugin implem method offer api subclass review abstractuiplugin api method app org eclips core runti compat plugin doesn provid prefer initi copi deprec tag info plugin deprec call runti compat layer deprec comment link plugin initializedefaultpluginprefer comment legaci method initializedefaultprefer ipreferencestor
+review abstract plugin initialize default plugin preferences plugin initialize default plugin preferences deprecated story place abstract plugin implements method offers subclasses review abstract plugin
  

@@ -1,2 +1,2 @@
-tests memory error errors tests caused leak workbench menu manager dispose menu authority investigation continuing closing workbench window workbench menu service disposing menu authority trim bar manager holding workbench window menu service fixed verified
+tests memory error errors tests caused leak workbench menu manager dispose menu authority investigation continuing
  

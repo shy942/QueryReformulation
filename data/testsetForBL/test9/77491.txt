@@ -1,2 +1,2 @@
-viewmgmt view dialog rememb selec build window view java packag explor window view select item packag explor rememb stale work packag explor view wasn rememb stale rememb selec tree work window select top item scroll bottom save select view verifi
+view mgmt view dialog remember selection build window view java package explorer window view selected item package explorer remembering stale state work package explorer view
  

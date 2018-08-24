@@ -1,2 +1,2 @@
-swt handl leak dndmanag dndmanag small swt handl leak org eclips swt graphic region instanc dispos review http git eclips org solv issu tobia gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm bfec afc tobia fix
+handle leak dnd manager dnd manager small handle leak org swt graphics region instance disposed review https git org solve issue thanks best regards tobias
  

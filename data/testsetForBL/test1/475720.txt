@@ -1,2 +1,2 @@
-css unnecessari cast warn cssswtcolorhelp getperc method unnecessari cast warn org eclips css swt helper cssswtcolorhelp method public static int getperc gradient grad unnecessari cast integ getperc method gradient java return list integ http git eclips org revision feed edc patch zip gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm dab ffe fcd christian
+unnecessary cast warning color helper percents method unnecessary cast warning org css swt helpers color helper method public static int percents gradient grad unnecessary cast integer percents method gradient java returns list integer https git org changes revisions feed edc patch zip
  

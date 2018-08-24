@@ -1,2 +1,2 @@
-doc view mgmt workbench view registry editor registry workbench view registry returns editor registry workbench returns view registry workbench referred package html org eclipse views bug fixed return tag verified
+doc view mgmt workbench view registry says editor registry workbench view registry returns editor registry workbench returns view registry workbench
  

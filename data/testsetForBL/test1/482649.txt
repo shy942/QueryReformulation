@@ -1,2 +1,2 @@
-rework commandserviceaddon commandserviceaddon dead code gener rework gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm bfa
+rework command service addon command service addon contains dead code general reworked
  

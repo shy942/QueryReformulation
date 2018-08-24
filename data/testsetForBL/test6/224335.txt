@@ -1,2 +1,2 @@
-multi editor dispose calling super dispose released
+multi page editor dispose calling super dispose
  

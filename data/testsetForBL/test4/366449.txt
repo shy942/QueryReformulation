@@ -1,2 +1,2 @@
-compat hook event idl loop org eclips part test partsreferencestestsuit depend implem org eclips applic workbenchadvisor eventloopidl displai eclips hook event idl loop test hang creat attach event idl advisor render engin take advic ieventloopadvisor patc partsreferencestestsuit finish take second compar second switch runonc variabl releas http git eclips org platform eclips platform git comm
+compatibility hook event idle loop org parts tests parts references suite depends implementing org application workbench advisor event loop idle display hook event idle loop tests hang
  

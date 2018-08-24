@@ -1,2 +1,2 @@
-remov compon xml file build properti compon xml file includ regular build includ build properti file mvm assu approv ask releas chang build properti file core command jface view verifi
+remove component xml files build properties component xml files included regular builds stop including build properties files
  

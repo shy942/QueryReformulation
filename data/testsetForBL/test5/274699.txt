@@ -1,2 +1,2 @@
-key bindings bug test test font reset leaks font whoops hit enter mistake font initialized disposed created attachment dispose font fine don forget update copyright header reply comment fine don forget update copyright header copyright tool released
+key bindings font reset leaks font
  

@@ -1,2 +1,2 @@
-command commandcallback leak regist text listen commandcallback class store instanc var externalactionmanag leak iactiontextlisten regist listen remov removeactiontextlisten method call great build easier find remain leak surfac simpl good catch remov push build
+commands command callback leaking registered text listeners command callback class stored instance var external action manager leaking action text listeners register listeners removed remove action text listener method
  

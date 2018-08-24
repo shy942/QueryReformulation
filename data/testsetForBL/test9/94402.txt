@@ -1,2 +1,2 @@
-undo javadoc clarifi dispos respons icompositeoper composit oper dispos dispos children child composit oper remov composit dispos dispos remov oper docum releas head verifi code inspec
+undo javadoc clarify disposal responsibilities composite operation composite operation disposed dispose children child composite operation removed composite disposed dispose removed operation documented
  

@@ -1,2 +1,2 @@
-viewers keyboard navigation scrolling column view bug navigation viewer keyboard tabbing editor editor arrow possibility scroll selected cell horizontall view visible vertical scrolling imagine broad spreadsheet application adressed bug created attachment patch add feature boris viewer cell scroll view viewer row scroll cell view int boris missing viewer cell org eclipse jface viewers viewer row scroll cell view int return boolean true scrolling succeeded default implementation return false concrete implementations return true released verified running snippet
+viewers keyboard navigation scrolling column view suggest navigation viewer using keyboard tabbing editor editor using arrow keys possibility scroll selected cell horizontall view visible
  

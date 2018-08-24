@@ -1,2 +1,2 @@
-field assist popup shell dismissing correctly target control moved dialog moved popup shell close move secondary shell platform text text cases code assist popup additional info popup closed moved sense closing popups overlooked implementation dismissal general implemented scenarios bug open code assist replace field decide edit find field clicking code assist stays open hitting ctrl space code assists popups open code assist wait hover switch application hover stay top application fixed verified win find replace patch bug field assist popup closes dialog moved popup closes app activated popup closes field dialog clicked
+field assist popup shell dismissing correctly target control moved example containing dialog moved popup shell close secondary shell
  

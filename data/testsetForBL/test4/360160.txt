@@ -1,2 +1,2 @@
-compat save perspect return origin close window open perspect debug save perspect close perspect debug perspect push develop http git eclips org platform eclips platform git comm develop fde ebc verifi window
+compatibility saved perspective returns original closed window open perspective debug save perspective close perspective debug perspective comes
  

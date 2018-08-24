@@ -1,2 +1,2 @@
-trimbarlayout proper javadoc constant final javadoc trimbarlayout improvd spacer glue constant tag proper javadoc todai tag toolcontrol trimbar custom workshop guidanc constant add javadoc constant final feedback appreci gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm ccc simon
+trim bar layout proper java doc constants final java doc trim bar layout improvded especially constants used tag proper java doc today used tags toolcontrols trim bar customer workshop saw guidance use constants java doc constants final feedback appreciated
  

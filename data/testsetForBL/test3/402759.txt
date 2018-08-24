@@ -1,2 +1,2 @@
-css npe swtstylehelpersgetswtwidgetstyleasstr dispos widget npe shutdown fix master http git eclips org platform eclips platform git comm eae verifi
+style helpersget widget style string disposed widget shutdown
  

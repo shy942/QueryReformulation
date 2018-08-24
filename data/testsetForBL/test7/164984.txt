@@ -1,2 +1,2 @@
-face default tool shouldn abstract values accessed getter setter declare abstract verified code inspection
+face default tool tip shouldn abstract values accessed using getter setter declare abstract
  

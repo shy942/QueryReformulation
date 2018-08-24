@@ -1,2 +1,2 @@
-dialog save resourc dialog duplic entri save resourc dialog open launch configur synchron shoutdown eclips duplic entri instanc dirti editor file foo txt bar txt trigger dialog foo txt bar txt foo txt bar txt pair duplic entri check save default bug mark duplic bug fix constructor adaptablelist collec collec elem bug mark duplic bug
+dialogs save resources dialog shows duplicated entries save resources dialog opened things launch configuration synchronize shoutdown shows duplicated entries instance dirty editors files foo txt bar txt triggers dialog foo txt bar txt foo txt bar txt pair duplicated entries checked saved default
  

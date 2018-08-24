@@ -1,2 +1,2 @@
-bidi extend applybidiprocess api support visual input field extend api http bug eclips org bug bug cgi extend api applybidiprocess support visual input field visual input field articl http connec ibm wiki lang wiki gig gig properli work bidi data visual layout web applic basic introduc constant visual left visual left ltr rtl visual field implement base text direc add lro rlo string pdf creat attach visual input field support marku review patch creat attach visual input field support patch ibm intern link comment help eclips commun http org intern question visual logic describ link javadoc fix tag releas cleanup http git eclips org platform eclips platform git comm fbca
+extend apply bidi processing support visual input field extend provided https bugs org bugs cgi
  

@@ -1,2 +1,2 @@
-common navigator update metadata metadata tags correct version released
+common navigator update metadata metadata tags correct version
  

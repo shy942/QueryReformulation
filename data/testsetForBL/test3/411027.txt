@@ -1,2 +1,2 @@
-workbenchpag remov raw type warn actionset gerr review http git eclips org releas http git eclips org platform eclips platform git comm eaaa ccdf verifi
+workbench page remove raw type warnings action sets gerrit review https git org
  

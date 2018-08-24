@@ -1,2 +1,2 @@
-missing view toolbars build missing view toolbars build occurs switch view view stack hidden breakpoints view synchronize view attach screenshot created attachment screen shot views package explorer outline unit hierarchy console resizing maximizing view toolbar pop existence john direct result bug sequence steps reproduce maximize editor stack sequence steps reproduce windows stack multiple views package explorer junit hierarchy switch perspective select tab stack toolbars disappear toolbars stack undone bug handle windows cases released bookkeeping
+missing view toolbars build getting missing view toolbars build occurs switch view view stack previously hidden breakpoints view synchronize view far attach screenshot
  

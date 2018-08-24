@@ -1,2 +1,2 @@
-import export ignor space mode size field tar file space charact special tar file null charact field space mode size field tar file tarinputstream throw excep attach patch fix creat attach patch creat attach tar file tar file creat aix machin origin bug mvm fix head verifi
+import export ignore spaces mode size fields tar files space character special tar files used instead null character certain fields unfortunately space mode size fields tar file tar input stream throws exception attached patch fixes
  

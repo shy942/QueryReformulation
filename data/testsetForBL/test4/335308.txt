@@ -1,2 +1,2 @@
-jface javadoc controldecor setdescriptiontext wrong creat attach patch current set imag control decor updat render decor expect set descrip text hover decor updat render decor releas head
+face java doc control decoration set description text created attachment patch current set image shown control decoration update rendered decoration expected set description text shown hover decoration update rendered decoration
  

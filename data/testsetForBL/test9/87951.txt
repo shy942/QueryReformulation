@@ -1,2 +1,2 @@
-viewmgmt view registri api expos intern categori class iviewregistri public categori getcategori categori intern provid iviewcategori iwizardcategori provid share icategori interfac multipl exten registri api freez minim solution head iviewcategori getview getid getlabel getpath elabor reopen minim fine verifi
+view mgmt view registry exposes internal category class view registry public category categories category internal provide view category similar wizard category provide shared category interface used multiple extension registries
  

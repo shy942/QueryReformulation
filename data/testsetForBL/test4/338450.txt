@@ -1,2 +1,2 @@
-compat list open editor persist workbench restart list open editor file menu persist restart problem issu fix verifi don todai releas http git eclips org platform eclips platform git comm fbcdb verifi build bug mark duplic bug
+compatibility list recently opened editors persisted workbench restarts list recently opened editors file menu needs persisted restarts
  

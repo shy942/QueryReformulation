@@ -1,2 +1,2 @@
-rcp rcp app tradition tab default build latest head workbenchplugin initializedefaultprefer chang store setdefault ipreferenceconst tradition style tab true chang store setdefault ipreferenceconst tradition style tab fals rcp app tradition tab default overrid default ideworkbenchadvisor prestartup chang true bug revert fals revert fals rcp app simpl tab default instanc curvi tab default rcp browser squar tab decid default
+apps traditional tabs default build workbench plugin initialize default preferences changed store set default preference constants true previously changed store set default preference constants false apps traditional tabs default overrides default workbench advisor pre startup
  

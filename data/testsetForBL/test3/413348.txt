@@ -1,2 +1,2 @@
-css stream leak abstractcssengin code abstractcssengin read line open manipul stream singl close method stream leak class suggest chang http git eclips org style shouldn affect behaviour interest search close comment gerr patch basic larg format chang don subm front bunch field don suggest chang merg guess mark resolv verifi build
+stream leaks abstract engine looking code abstract engine read lines opening manipulating streams single close methods looks stream leak class
  

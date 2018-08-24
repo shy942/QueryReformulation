@@ -1,2 +1,2 @@
-workbench xmlmemento lose text data deseri createchild call puttext creat child memento set text data mementotoseri createchild type mementotoseri puttextdata textdata text data longer serial deseri memento creat attach propos nick review comm test class attach bug patch review appli bori fix verifi regres test xmlmemento testputtextdatawithchildrenbug pass
+workbench memento loses text data deserialization child called text child memento set text data memento serialize child type memento serialize text data text data text data serializing deserializing memento
  

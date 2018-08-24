@@ -1,2 +1,2 @@
-test port keyboard event awt robot swt displai post swt introduc displai post event method gener level keyboard mous event attach patch replac awt robot call keystestsuit test swt displai post work platform swt displai creat attach patch replac awt robot call displai post event util class call automationutil method mimic kei event method mimic mous event need test replac robot call displai post event method entir suit linux gtk window mac ensur break feel free updat chang fit patch comm suit pass gtk
+tests porting keyboard events robot display post introduced display post event method generate low level keyboard mouse events attaching patch replaces robot calls keys suite’s tests display post work platforms display
  

@@ -1,2 +1,2 @@
-widget dispos workbenchcontextsupport unregistershel fix leak workbenchcontextsupport widget dispos excep unregistershel happen shell unregist dispos perfectli legitim test case previou editor dialog cyclepartac fix head check shell dispos remov listen work motif
+widget disposed workbench context support unregister shell thanks fixing leak workbench context support widget disposed exception unregister shell shell unregistered disposed perfectly legitimate case use previous editor dialogs cycle action
  

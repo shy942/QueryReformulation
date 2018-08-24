@@ -1,2 +1,2 @@
-common navigator wrong sorter unit tests build build steps reproduce tests sorter test rely dynamic add model objects method method breaks contract viewer add method called content provider single element model calls viewer add data doesn add data project tests fail viewer add parent children implemented viewer refresh parent difference released
+common navigator sorter unit tests build build steps reproduce tests sorter rely dynamic model objects method method breaks contract viewer method called content provider single element added model calls viewer data doesn actually data project information corresponding tests fail example viewer parent children implemented viewer refresh parent difference
  

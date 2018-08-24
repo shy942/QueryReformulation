@@ -1,2 +1,2 @@
-warn platform introduc gener iserviceloc bug plan introduc gener iserviceloc bug unnecessari cast warn creat david find addition warn build fix warn org eclips http git eclips org platform eclips platform git comm ffc org eclips navig resourc http git eclips org platform eclips platform git comm ffc org eclips workbench http git eclips org platform eclips platform git comm cbf test updat http git eclips org platform eclips platform git comm mark fix reopen overse
+fix warnings platform introduction generics service locator plan introduce generics service locator fix unnecessary casts warnings created fix
  

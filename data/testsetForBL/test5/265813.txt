@@ -1,2 +1,2 @@
-status handling reduce incompatibility status dialog jface error dialog automatically open support area error issues bug open support button visible functionality difference error dialog status dialog status dialog display link error log easily remove differences created attachment work progress chris introduce enable compatibility method disable hide differencies jface error dialog status dialog modified patch released
+status handling reduce incompatibility status dialog jface error dialog possible automatically open support area error issues open support button visible functionality difference error dialog status dialog status dialog display link error log possible easily remove differences
  

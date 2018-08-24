@@ -1,2 +1,2 @@
-compat workbenchwindow don default titl workbench window default titl set product workbenchwindow configureshel shell code appear lost window blank titl set workbenchwindowadvisor step repeat creat plug project select rcp mail rcp mail app window blank titl comm master aca verifi
+compatibility workbench windows don default title workbench windows normally default title set product workbench window configure shell shell code appears lost windows blank title unless set workbench window advisor steps repeat plug project select mail example mail example app window blank title
  

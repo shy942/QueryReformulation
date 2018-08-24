@@ -1,2 +1,2 @@
-getrealm method displayrealm class getrealm method displayrealm class deprec swtobserv class http git eclips org http git eclips org http git eclips org http git eclips org http git eclips org merg http git eclips org platform eclips platform git comm eaaf cecc http git eclips org merg http git eclips org platform eclips platform git comm acfc ecc repli simon scholz comment http git eclips org merg http git eclips org platform eclips platform git comm bfcff repli simon scholz comment http git eclips org merg git eclips org platform eclips platform git comm cec bunch simon work
+realm method display realm class used realm method display realm class used instead deprecated observables class
  

@@ -1,2 +1,2 @@
-snippetsideeffecttwowaybind task writablevalu task class snippetsideeffecttwowaybind class writablevalu deriv modelobject class gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm fbdc aaba fee
+snippet effect way binding task use writable value task class inside snippet effect way binding class use writable value deriving model object class
  

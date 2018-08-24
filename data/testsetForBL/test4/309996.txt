@@ -1,2 +1,2 @@
-dialog drop indent depend elem dialog ask copi link drop indent depend elem checkbox combo creat attach patch creat attach fix head verifi
+dialog drop indent dependent elements dialog asks copy linking drop indent dependent elements checkbox combo
  

@@ -1,2 +1,2 @@
-common navigator add dynamic tracing options tracing hooked released verified
+common navigator dynamic tracing options tracing actually hooked
  

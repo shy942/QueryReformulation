@@ -1,2 +1,2 @@
-org eclipse menus extension contribution factory set initialization data declare throws core exception subclasses longer throw core exceptions overwriting method released resolved records breaks source compatibility reply comment records breaks source compatibility rules apply source incompatibilities long binary compatible trivial clients react worry source compatibilities careful source incompatibilities avoiding documenting migration guide tooling support cases
+org menus extension contribution factory set initialization data declare throws core exception subclasses throw core exceptions overwriting method
  

@@ -1,2 +1,2 @@
-contributions evaluation context object contributions eager plug loading evaluation context created object contribution set plugin activation true test condition plugins loaded honoured kim find general rule plugins load bug bug verified bug marked duplicate bug
+contributions evaluation context object contributions allow eager plug loading evaluation context created object contribution set allow plugin activation true means condition ask plugins loaded honoured
  

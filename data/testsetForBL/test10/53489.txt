@@ -1,2 +1,2 @@
-keybind delet kei delet styledtext summari problem occur swt flag event consum work fix test case avoid regres verifi press delet styledtext
+key bindings key deletes twice styled text summary says occurs flag event consumed work
  

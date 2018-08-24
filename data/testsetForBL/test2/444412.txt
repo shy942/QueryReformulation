@@ -1,2 +1,2 @@
-updat eventbrok usag partrenderingengin bug bug partrenderingengin http git eclips org gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm cadaf bab philip introduc bug css switch bug chang eventbrok wrap eventhandl uieventhandl event handl runnabl thread chang depend injec callback wrap dieventhandl execut thread trigger event project instanc iworkbenchpag closeeditor incorrectli call workbenchmodifyoper thread work bug hidden uieventhandl trigger swtexcep invalid thread access notic todai fix code time mar releas platform intention longer meant safeguard invalid thread access eventbrok subscrib event
+update event broker usage rendering engine similar rendering engine
  

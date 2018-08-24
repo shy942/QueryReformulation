@@ -1,2 +1,2 @@
-command javadoc issu command exten point wrong top file icon command undocu fix remov helpid icon tod happi api extra time extra verif move verifi
+commands javadoc issues commands extension point file icon command undocumented
  

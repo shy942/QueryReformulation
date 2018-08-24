@@ -1,2 +1,2 @@
-viewer javadoc incomplet javadoc dialogcelleditor javadoc opendialogbox dialog box cancel facto behaviour null return consid cancel assu method declar class dialogcelleditor clarifi spec opendialog open dialog box parent control return dialog close code null code dialog cancel selec dialog framework method implem concret subclass call user press button dialog box pop param celleditorwindow parent control cell editor window subclass adjust dialog box return select code null code dialog cancel selec dialog view spec clarif break api chang caller handl null
+viewers javadoc incomplete javadoc dialog cell editor javadoc open dialog box say indicate dialog box canceled facto behaviour null returned considered cancel
  

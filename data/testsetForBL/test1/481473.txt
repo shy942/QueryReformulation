@@ -1,2 +1,2 @@
-cleanup work set dialog code work set dialog rework foreach loop warn break gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm
+cleanup working set dialog code working set dialog reworked foreach loops warnings breaks
  

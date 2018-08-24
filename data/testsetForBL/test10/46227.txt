@@ -1,2 +1,2 @@
-markerresolu exten point broken rcp chang exten point org eclips markerresolu broken getmarkerhelpregistri getresolu return markerhelpregistri wrong plugin fix
+marker resolution extension point broken extension point org ide marker resolution broken marker registry resolutions return
  

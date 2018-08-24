@@ -1,2 +1,2 @@
-globalac doesn call intern runti method build workbenchactionbuild makefeaturedependantac call platform getplatformadmin ask timestamp creat method platform getstatestamp call reli intern runti bug platform getplatformadmin deprec updat javadoc basic open door api doesn follow eclips api rule platformadmin intern packag discus decid leav api recommend chang platform getstatestamp platform getstatestamp eclips api support encourag chang code call fix verifi code chang
+global actions doesn internal runtime methods build workbench action builder feature dependant actions calls platform platform admin asks state timestamp created method platform state stamp directly rely internals runtime
  

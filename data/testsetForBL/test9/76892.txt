@@ -1,2 +1,2 @@
-editormgmt rcp ctrl bring empti editor list editor area hidden rcp app hidden editor area hasn replac ctrl bind default kei configur ctrl press empti editor list popup align left side app pop editor area notic didn view frustrat rcp case fix verifi solari motif
+editor mgmt brings editor list editor area hidden app hidden editor area hasn replaced binding using default key configuration pressed editors list popup aligned left app pop editor area
  

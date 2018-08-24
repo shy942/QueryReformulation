@@ -1,2 +1,2 @@
-workbench parts org eclipse workbench constants clarify restrictions interface implemented client explicitly stated doc interface constant breakage interface implemented components xml located plugin org eclipse doesn implements false restriction type created attachment change constants javadoc component boris implications changing workbench constants stuck simply marking constant breaking change migration guide released
+workbench parts org workbench constants clarify restrictions looks interface implemented client explicitly stated doc interface constant added breakage interface implemented components xml located plugin org doesn implements false restriction type
  

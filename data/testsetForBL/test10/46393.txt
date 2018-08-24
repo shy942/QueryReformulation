@@ -1,2 +1,2 @@
-rcp lost natur icon project start fresh workspac creat java project miss natur icon registri reader wrong plugin fix markerimageproviderregistri capabilityregistryread fix bug mark duplic bug
+lost nature icon project start fresh workspace java project missing nature icon
  

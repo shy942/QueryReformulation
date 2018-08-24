@@ -1,2 +1,2 @@
-test context access org eclips core command test base class http git eclips org fix http git eclips org platform eclips platform git comm verifi git
+tests context access org core commands tests based class
  

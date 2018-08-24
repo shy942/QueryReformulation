@@ -1,2 +1,2 @@
-minor cleanup prefer export wizard getstructuredselec typo javadoc loop http git eclips org http git eclips org platform eclips platform git comm
+minor cleanup preference export wizard use structured selection fix typos javadoc use loop
  

@@ -1,2 +1,2 @@
-compat dispos servic creat context dispos servic implem idispos interfac dispos servic creat context dispos context doesn idispos interfac servic retriev servic locat deleg context store return servic servic locat servic dispos servic locat dispos push develop subm bugzilla form earli http git eclips org platform eclips platform git comm develop
+compatibility disposable services created context disposed services implement disposable interface getting disposed services created context disposed context doesn disposable interface services retrieved service locator delegated context store returned service service locator service gets disposed service locator gets disposed
  

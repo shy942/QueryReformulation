@@ -1,2 +1,2 @@
-dialog open resourc folder sort revers build press ctrl shift open open resourc dialog type plugin xlm notic typo delet charact type typo folder area revers sort equival step type plugin xml backspac bug mark duplic bug bug mark duplic bug toggl deriv resourc box annoi user filter folder path bug fix final repli comment fix final reproduc step comment comment fix head verifi comment comment scenario
+dialogs open resource folder sorting gets reversed build press ctrl shift open open resource dialog type plugin xlm notice typo characters type fix typo folders area shows reversed sorting
  

@@ -1,2 +1,2 @@
-prefer npe content type prefer npe type charset text field select content type entri org eclips messag java lang nullpointerexcep stack java lang nullpointerexcep org eclips intern dialog contenttypespreferencepag keyreleas contenttypespreferencepag java org eclips swt widget typedlisten handleev typedlisten java head verifi
+preferences content type preference page type charset text field selecting content type org java lang null pointer exception java lang null pointer exception org internal dialogs content types preference page key released content types preference page java org swt widgets typed listener handle event typed listener java
  

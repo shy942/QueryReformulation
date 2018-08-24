@@ -1,2 +1,2 @@
-gentop gener uievent comment javadoc warn supres told uievent gener class gener add comment class gener super delux includ comment instruc gener gener warn suppresswarn javadoc suffici clear variabl descrip app gener class org eclips intern workbench swt gentop creat attach patch add comment copyright repli comment creat attach detail patch add comment copyright appli patch dean doesn work push develop dean http git eclips org platform eclips platform git comm develop cafe bbd verifi
+gen topic generate events comments javadoc warning supression told events generated class generator probably class generated super deluxe comments instructions generator generate warnings suppress warnings javadoc likely sufficient clear variables description
  

@@ -1,2 +1,2 @@
-command iworkbenchhelpsystem deprec iworkbenchhelpsystem deprec icommand creat listen createhelplisten implement method workbenchhelp static class bogu remov method interfac sens updat interfac command class provid implement method long break api ideal action org eclips core command command class method signatur action deprec method command method requir contribu item widget deprec headless aspect command support remov method interfac verifi
+commands workbench deprecated workbench contains deprecation uses command listener listener given implementation method taken workbench static class bogus sensible remove method interface sense update interface use command class provide implementation method actually sensible
  

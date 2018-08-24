@@ -1,2 +1,2 @@
-key bindings binding service return active bindings parameterized command binding service supports active binding final string command equivalent method parameterized commands created attachment initial patch active bindings parameterized command created attachment binding manager patch created attachment binding manager test patch created attachment binding service patch released
+key bindings binding service return best active bindings parameterized command binding service supports best active binding final string command equivalent method parameterized commands
  

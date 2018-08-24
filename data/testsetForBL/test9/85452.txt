@@ -1,2 +1,2 @@
-regres backdrop miss perspect close close perspect main blank backdrop text button explain open perspect createemptywindowcont left advisor refactor fix verifi
+regression backdrop missing perspectives closed close perspectives main page blank backdrop text button explaining open perspective
  

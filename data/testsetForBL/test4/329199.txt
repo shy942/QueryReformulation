@@ -1,2 +1,2 @@
-erroreditorpart implem setfocu head erroreditorpart implem setfocu doesn set focu break spec problem wrong kei bind activ ctrl pageup pagedown fix head erroreditorpart verifi didn stream cherri pick comm adb daf
+error editor implement set focus error editor implement set focus currently doesn set focus breaks spec causes problems key binding activations ctrl page page
  

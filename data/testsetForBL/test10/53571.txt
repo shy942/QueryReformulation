@@ -1,2 +1,2 @@
-iaction setacceler int deprec method swt jface rcp assign acceler keycod action assign acceler keycod eric method longer deprec explanatori note attach method explain behaviour chang eclips workbench verifi javadoc comment close
+action set accelerator int deprecated method instead use assign accelerator keycode action way assign accelerator keycode regards eric
  

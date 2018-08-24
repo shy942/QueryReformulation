@@ -1,2 +1,2 @@
-statushandling reduce code responsible image resolving methods retrieve images depending status type sufficient readable fixed
+statushandling reduce code responsible image resolving currently methods necessary retrieve different images depending status type sufficient readable
  

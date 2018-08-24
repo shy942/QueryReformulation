@@ -1,2 +1,2 @@
-commands request add command intro main noticed command action class org eclipse internal intro action attaching patch defines command org eclipse set action definition intro action constructor associate action command created attachment defines command showing bug marked duplicate bug simply quick start command outlined bug intro action action definition set match command org eclipse quick start action verified adding key binding command checking
+commands request command intro welcome main page noticed command corresponding action class org internal intro action attaching patch defines command org uses set action definition intro action constructor associate action command
  

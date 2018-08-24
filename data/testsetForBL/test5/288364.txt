@@ -1,2 +1,2 @@
-key bindings exporting key preferences warn overwriting file patch bug attachment bug initially created clone bug build windows mac steps reproduce preferences general click export enter filename click click export enter filename click actual result time overwrites file warning expected result existing file customary practice operating systems warn overwriting file released
+key bindings exporting key preferences warn overwriting file patch attachment initially created clone build tried windows mac steps reproduce preferences general keys export enter filename export enter filename actual result second time overwrites file warning expected result specify existing file customary practice operating systems warn overwriting file
  

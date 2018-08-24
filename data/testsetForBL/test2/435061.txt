@@ -1,2 +1,2 @@
-avoid unnecessari redraw csspropertyfontswthandl avoid unnecessari redraw csspropertyfontswthandl workaround bug comment add lot unnecessari redraw creat attach readi review http git eclips org confirm work linux flicker singl click activ select work chang redraw open dialog view dialog bug fix http git eclips org platform eclips platform git comm afb aef fea verifi verifi
+avoid unnecessary redraws property font handler avoid unnecessary redraws property font handler workaround adds lot unnecessary redraws
  

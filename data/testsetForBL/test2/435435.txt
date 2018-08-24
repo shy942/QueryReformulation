@@ -1,2 +1,2 @@
-quickaccess hide quick access hide workbench window restart context menu hide quick access disappear workbench window multipl workbench window open restart disappear window check toolcontrolrender event handler check control isdispos caus problem suspect problem org eclips intern workbenchwindow hidequickaccess event http git eclips org releas http git eclips org platform eclips platform git comm bdfbf master releas http git eclips org platform eclips platform git comm mainten verifi luna build
+quick access hiding quick access hides workbench windows restart use context menu hide quick access disappears workbench window multiple workbench windows open restart disappears windows tool control renderer event handler controls disposed caused
  

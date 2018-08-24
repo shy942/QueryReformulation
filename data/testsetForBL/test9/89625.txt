@@ -1,2 +1,2 @@
-ideworkbenchwindowadvisor refer workbench intern backdrop code ideworkbenchwindowadvisor provid backdrop perspect close refer intern workbench class import org eclips intern iworkbenchgraphicconst import org eclips intern workbenchimag import org eclips intern dialog selectperspectivedialog api need add api actionfactori open perspect dialog verifi
+workbench window advisor refers workbench internals backdrop code workbench window advisor provide backdrop perspectives closed refers internal workbench classes import org internal workbench graphic constants import org internal workbench images import org internal dialogs select perspective dialog using
  

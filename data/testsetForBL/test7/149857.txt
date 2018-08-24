@@ -1,2 +1,2 @@
-progress calling canceled job progress view entry stick comment bug https bugs eclipse org bugs bug cgi call canceled progress monitor job job entry readded progress view occurs remove job view created attachment patch tod patch simple objections release released bug marked duplicate bug
+progress calling canceled job causes progress view entry stick https bugs org bugs cgi noted canceled progress monitor job cause job entry readded progress view occurs way remove job view
  

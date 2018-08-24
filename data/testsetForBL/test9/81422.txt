@@ -1,2 +1,2 @@
-contribu regres test action deleg dispos build regres test bug bori case creat attach test method iworkbenchpagetest test fail chang succe patch appli test method move iworkbenchwindowactiondelegatetest confirm test pass latest head bori verifi test run pass verifi build testdisposeworkbenchwindowactiondelegatebug call pass
+contributions regression action delegate dispose build regression
  

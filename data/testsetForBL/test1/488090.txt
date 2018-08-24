@@ -1,2 +1,2 @@
-editormgmt replac unknown exten unassoci replac unknown exten unassoci editor unknown editor eclips align file associ prefer term code exten point gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm eee
+editor mgmt replace unknown extensions unassociated replace unknown extensions unassociated editors unknown associated editor aligns file associations preference page use term fix code extension point
  

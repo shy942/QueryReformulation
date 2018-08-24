@@ -1,2 +1,2 @@
-commandcontributionitem restor contribut tooltip handler ielementupdat set tooltip commandcontributionitem moment tooltip restor handler reset contribut tooltip label icon http wiki eclips org platform contribut propos http git eclips org creat patch http git eclips org leonid stephan merg http git eclips org platform eclips platform git comm adf bde
+command contribution item restore contributed tooltip handler changes element updater set tooltip command contribution item moment tooltip restored handler changes reset contributed tooltip label icons
  

@@ -1,2 +1,2 @@
-org eclips emf xpath test compil error version chang fix descrip resourc path locat type ecorexpathcontextfactori resolv examplequeriestestcas java org eclips emf xpath test src org eclips emf xpath test java problem
+org emf xpath compile errors probably related version changed fixed quickly description resource path location type ecore path context factory resolved example queries case java org emf xpath src org emf xpath java
  

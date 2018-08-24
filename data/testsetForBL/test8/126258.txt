@@ -1,2 +1,2 @@
-commands handlers inspect doesn work keybindings inspect display work enablement expression actions failing evaluation context empty selection text selection editor moving platform bug marked duplicate bug precise don work simple case working reproducible steps windows display ctrl shift works linux rest broken linux mac windows debug breakpoint public class public static void main string args string breakpoint system println step highlight ctrl shift response open inpsector menu works fixed optimizing code missed code path needed flush cache case source changed call expression authority missing check selection changed bug marked duplicate bug verified
+commands handlers inspect doesn work keybindings inspect display work
  

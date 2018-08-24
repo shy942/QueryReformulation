@@ -1,2 +1,2 @@
-rcp iworkbenchwindowconfigur settitl shell creat iworkbenchwindowconfigur settitl call window shell creat call prewindowopen fix rememb titl workbenchwindowconfigur check workbenchwindow configureshel fix asyncexec hack remov browser verifi
+workbench window configurer set title effect shell created workbench window configurer set title called window shell created called pre window open
  

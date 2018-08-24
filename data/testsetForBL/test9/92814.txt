@@ -1,2 +1,2 @@
-api newwizardmenu seten boolean delet head newwizardmenu public void seten boolean enabledvalu api method appear delet cycl break api chang scoop remov nick uninten major restructur bug longer call seten remov api verifi
+api wizard menu set enabled boolean deleted wizard menu public void set enabled boolean enabled value method appears deleted cycle breaking scoop
  

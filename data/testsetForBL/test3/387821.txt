@@ -1,2 +1,2 @@
-contribu cpd customizeperspectivedialog requir check hide navig build open cpd navig menu uncheck real menu disappear check uncheck dialog broken toolbar button hide save print patch bug don issu mention comment latest patc bug comment issu mention comment bug eclips problem dynamiccontributionitem project build work set http git eclips org repli noopur gupta comment don issu mention comment latest patc bug comment issu mention comment bug eclips problem dynamiccontributionitem project build work set http git eclips org subm http git eclips org platform eclips platform git comm cfff dbacf fba ccdd
+contributions customize perspective dialog requires checks hide navigate build open navigate menu unchecked shows real menu disappear uncheck dialog
  

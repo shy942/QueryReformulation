@@ -1,2 +1,2 @@
-editor mgmt menu items don open dropdown menus build navigate menu menu items lost functionality open dropdown menu edit locations enablement correct menu items essentially dummy menu items good luck created attachment navigation history action contribution item expecting menu creator navigation history action received null navigation history action changed return menu creator toolbar button drop menu menu displayed recreate menu navigation history changed bug marked duplicate bug fixed reply comment created attachment details navigation history released
+editor mgmt forward menu items don open dropdown menus build navigate menu forward menu items lost functionality open dropdown menu edit locations enablement state correct menu items essentially dummy menu items
  

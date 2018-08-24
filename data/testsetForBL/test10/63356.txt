@@ -1,2 +1,2 @@
-progress delet unus iworkbenchwindow showprogressind iworkbenchconst progress indic constant wrong interfac fix
+progress unused workbench window progress indicator workbench constants constant interface
  

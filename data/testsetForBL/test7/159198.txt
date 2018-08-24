@@ -1,2 +1,2 @@
-time configuration details panel localized install language pack launch eclipse simplified chinese locale eclipse configuration detail time top configuration details panel localized icu time attached picture created attachment configuration details panel configuration details produced addressed attach patch risk assesment backport created attachment patch workbench patch formatter patch creates string format time closest match previous string string exact risk backporting whirl release works fine applied stream verified
+date time configuration details panel localized install language pack launch simplified chinese locale configuration date time configuration details panel localized probably use icu date time attached picture
  

@@ -1,2 +1,2 @@
-provid default method icontentprovid java provid default method provid empti default method inputchang dispos icontentprovid gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm cbf case defin default implement interfac complet harmless chang caus compil error dali bug dali interfac structuredstateprovid indirectli extend icontentprovid ibaselabelprovid ibaselabelprovid defin dispos method compil error read default method dispos inher icontentprovid conflict method inher ibaselabelprovid defin default implement dispos structuredstateprovid
+provide default methods content provider java allows provide default methods provide default methods input changed dispose content provider
  

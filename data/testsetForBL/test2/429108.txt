@@ -1,2 +1,2 @@
-remov delet file bin includ bundl org eclips workbench osgi inf localechangeservic xml bin includ file delet remov bin includ patch http git eclips org releas verifi
+remove deleted file bin includes bundle org workbench localechangeservice xml bin includes file deleted removed bin includes
  

@@ -1,2 +1,2 @@
-add constraint fragment valid model defin constraint manditori valu purpos nice defin constraint ecor check fragment merg provid valid tool constraint side effect trigger valid objec add constraint string fragment bug gerr chang creat http git eclips org gerr chang http git eclips org merg master comm http git eclips org platform eclips platform git comm ecbcd jona forgot mark fix renam constraint open add constraint name gener draw atten gener discus add constraint object fine
+constraints fragments allow validation currently model define constraints manditory values purposes nice define constraints ecore checking fragments merged providing validation tools adding constraints effects trigger validation
  

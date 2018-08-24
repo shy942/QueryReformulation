@@ -1,2 +1,2 @@
-css deprec warn help messag css properti deprec simpl messag css properti simpl deprec renam swt simpl comm http git eclips org platform eclips platform git comm dcfa
+deprecation warnings helpful currently property deprecated simple useful property simple deprecated renamed swt simple
  

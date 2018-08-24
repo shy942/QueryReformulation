@@ -1,2 +1,2 @@
-css selector restric ctabitem css implement css rule mpartstack ctabitem color blue ctabitemel doesn implem getpar put selector css spy select ctabitem children stack patch forthcom creat attach patch add ctabitemel getpar creat attach patch incl test revis includ test safe fix master comm edea mainten comm acdedd eea
+use selector restrictions tab item implementation currently allow rules stack tab item color blue tab item element doesn implement parent putting selector spy means select tab items children stack patch forthcoming
  

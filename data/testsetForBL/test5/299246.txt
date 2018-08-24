@@ -1,2 +1,2 @@
-commonnavig add model object cnf test creat attach propos patch add set model object parallel resourc model object basi cnf test releas head umm patch contribut franck manguin fico bug bug
+common navigator model objects tests created attachment proposed patch set model objects parallel resource model objects used basis tests
  

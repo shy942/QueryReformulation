@@ -1,2 +1,2 @@
-advanc button work caus bug bug comment comment creat attach serg verifi good szymon reproduc step patch safe null check problem solv problem step instal data tool helio updat site eclips sdk start eclips creat project java project creat sql file project sql develop sql file click advanc open sql file wizard npe log resiz dialog multipl advanc section http bug eclips org bug attach cgi comm head bug mark duplic bug
+advanced button working caused fix following comments
  

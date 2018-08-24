@@ -1,2 +1,2 @@
-compat close activ perspect remov view share area drag problem view share area window open perspect debug bring context menu icon java perspect close problem view disappear share area regres caus bug fix develop http git eclips org platform eclips platform git comm develop eec ffa eaf
+compatibility closing non active perspectives remove views shared area drag problems view shared area window open perspective debug bring context menu icon java perspective close problems view disappeared shared area
  

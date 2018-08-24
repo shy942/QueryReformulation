@@ -1,2 +1,2 @@
-activity mgmt update activities extension points identifier add support schema type identifier activities exsd activity support exsd attributes bug verified
+activity mgmt update activities extension points use identifier support schema type identifier activities exsd activity support exsd
  

@@ -1,2 +1,2 @@
-viewmgmt javadoc iviewlayout tag intend implem iviewlayout tag interfac intend implem client chang docum break api chang api chang docum migrat guid migrat guid api contract iviewlayout plug implem org eclips iviewlayout descrip eclips class org eclips iviewlayout mark client implem oversight address eclips class mark intend implem client action requir implem class rework longer implem org eclips iviewlayout verifi
+view mgmt javadoc view layout tagged intended implemented view layout tagged interface intended implemented clients document breaking
  
