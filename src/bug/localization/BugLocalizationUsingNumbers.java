@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.HashMap;
 
 import bug.locator.provide.MasterBLScoreProvider;
+import rvsm.calculator.CosineMeasure;
 import simi.score.calculator.CosineSimilarity;
 import utility.ContentLoader;
 import utility.ContentLoaderQR;
@@ -173,8 +174,8 @@ public class BugLocalizationUsingNumbers {
 				HashMap<Integer, Double> SortedBLresult=MiscUtility.sortByValues(resultBugLocator);
 				
 				HashMap<Integer,Double> sortedResultMyTool
-				=obj.findBugForEachQueryCosineSimBased(queryID);
-				//=obj.ResultBasedOnTF(queryID);
+				//=obj.findBugForEachQueryCosineSimBased(queryID);
+				=obj.ResultBasedOnTF(queryID);
 				
 				HashMap<Integer, Double> resultMap
 				//=sortedResultMyTool;
@@ -369,7 +370,7 @@ public class BugLocalizationUsingNumbers {
     	double maxCosineSim=0.0;
     	String queryContent=MiscUtility.listInt2Str(keywordList);
     	ArrayList<String> queryList=MiscUtility.ListIntTOListStr(keywordList);
-    
+       
   
     	if(this.SidMatchWoord.containsKey(Sid)){
     		ArrayList<String> SidMatch=this.SidMatchWoord.get(Sid);
@@ -379,12 +380,16 @@ public class BugLocalizationUsingNumbers {
     			String content=SidMatch.get(i);
     			//System.out.println(content);
     			ArrayList<String> contentList=MiscUtility.str2ListMukta(content);
-    			//System.out.println("contentList "+contentList);
+    			ArrayList<Integer> contentListInt=MiscUtility.str2ListInt(content);
+    			//System.out.println("contentListInt "+contentListInt+"\n"+keywordList);
     			double cosineSimScore=0.0;
-    			if(!content.equals("")) cosineSimScore=new JaccardIndexSimilarity(queryList, contentList).ComputeJaccardIndexSimilarity();
+    			//if(!content.equals("")) cosineSimScore=new JaccardIndexSimilarity(queryList, contentList).ComputeJaccardIndexSimilarity();
+    			//if(!content.equals("")) cosineSimScore= new CosineSimilarity2().Cosine_Similarity_Score(queryContent, content);
+    			
+    			if(!content.equals("")) cosineSimScore= CosineMeasure.getCosineSimilarity(keywordList, contentListInt);
     			if(cosineSimScore>maxCosineSim && cosineSimScore>0.0)
     			{
-    				//System.out.println(queryList+"\n"+contentList+"\n"+cosineSimScore);
+    				System.out.println(queryList+"\n"+contentList+"\n"+cosineSimScore);
     				maxCosineSim=cosineSimScore;
     			}
     	
@@ -465,7 +470,7 @@ public class BugLocalizationUsingNumbers {
 		
 		String outputFilePath
 		//="./data/Results/Aug24BLTest"+test+".txt";
-		="./data/Results/Aug24CosineSimBasedTest"+test+".txt";
+		="./data/Results/Aug27CosineSimBasedTest"+test+".txt";
 		//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		double ALPHA=0.6;
 		double BETA=0.2;

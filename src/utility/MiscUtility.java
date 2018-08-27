@@ -140,6 +140,18 @@ public class MiscUtility {
 		return new ArrayList<String>(Arrays.asList(items));
 	}
 	
+	public static ArrayList<Integer> str2ListInt(String line)
+	{
+		ArrayList<Integer> list=new ArrayList<>();
+		String[] spilter=line.split(" ");
+		for(int i=0;i<spilter.length;i++)
+		{
+			int item=Integer.valueOf(spilter[i]);
+			list.add(item);
+		}
+		return list;
+	}
+	
 	public static ArrayList<String> str2ListMukta(String itemLine) {
 		ArrayList<String> list=new ArrayList<>();
 		String[] spilter=itemLine.split(" ");

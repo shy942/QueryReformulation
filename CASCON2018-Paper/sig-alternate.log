@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  24 AUG 2018 14:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  27 AUG 2018 13:06
 entering extended mode
 **./sig-alternate.tex
 (sig-alternate.tex
@@ -1087,34 +1087,38 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <Mapping.png, id=135, 542.025pt x 184.2885pt>
 File: Mapping.png Graphic file (type png)
 <use Mapping.png>
-Package pdftex.def Info: Mapping.png  used on input line 454.
+Package pdftex.def Info: Mapping.png  used on input line 457.
 (pdftex.def)             Requested size: 406.51775pt x 138.21602pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.467 \section
-              {Proposed Approach}\label{sec:proposedApproach} [2]
-Overfull \hbox (3.44206pt too wide) in paragraph at lines 531--531
+l.534 \subsection
+                 {Construction of Association Map Database Between Bug Repor...
+[2]
+Overfull \hbox (3.44206pt too wide) in paragraph at lines 534--534
 []\secfnt Construction of As-so-ci-a-tion Map Database
  []
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 535.
+put line 538.
 
-Underfull \hbox (badness 1577) in paragraph at lines 557--558
+Underfull \hbox (badness 1577) in paragraph at lines 560--561
 [] $\OML/cmm/m/it/9 MAP\OT1/cmr/m/n/9 [\OML/cmm/m/it/9 KB[]\OT1/cmr/m/n/9 ]\OML
 /cmm/m/it/9 :links \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 MAP\OT1/cmr/m/n/9 [\OML/cm
 m/m/it/9 KB[]\OT1/cmr/m/n/9 ]\OML/cmm/m/it/9 :links \OT1/cmr/m/n/9 +
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.615 
-       [3 <./Mapping.png>]
-Overfull \hbox (4.43127pt too wide) in paragraph at lines 633--634
+l.619 ...ction{Localizing Buggy Source Code Files}
+                                                   [3 <./Mapping.png>]
+Overfull \hbox (4.43127pt too wide) in paragraph at lines 636--637
 [] $\OML/cmm/m/it/9 K[] \OMS/cmsy/m/n/9  $ \T1/aer/m/n/9 getKeywordsFromReformu
 latedQuery($\OML/cmm/m/it/9 Q[]$\T1/aer/m/n/9 ) 
  []
@@ -1122,26 +1126,26 @@ latedQuery($\OML/cmm/m/it/9 Q[]$\T1/aer/m/n/9 )
 <Localization.png, id=155, 1445.4pt x 556.0775pt>
 File: Localization.png Graphic file (type png)
 <use Localization.png>
-Package pdftex.def Info: Localization.png  used on input line 666.
+Package pdftex.def Info: Localization.png  used on input line 669.
 (pdftex.def)             Requested size: 433.62335pt x 166.82454pt.
 
-Overfull \hbox (7.29738pt too wide) in paragraph at lines 678--679
+Overfull \hbox (7.29738pt too wide) in paragraph at lines 681--682
 []\T1/aer/m/n/9 We have repli-cated two ex-ist-ing bug lo-cal-iza-tion ap-proac
 hes:
  []
 
 
-Overfull \hbox (7.70108pt too wide) in paragraph at lines 679--679
+Overfull \hbox (7.70108pt too wide) in paragraph at lines 682--682
 []\secfnt TF-IDF Based Bug Lo-cal-iza-tion Tech-nique: 
  []
 
 <3layers.png, id=159, 401.24907pt x 263.48438pt>
 File: 3layers.png Graphic file (type png)
 <use 3layers.png>
-Package pdftex.def Info: 3layers.png  used on input line 715.
+Package pdftex.def Info: 3layers.png  used on input line 718.
 (pdftex.def)             Requested size: 260.80879pt x 171.2628pt.
 
-Overfull \hbox (20.80879pt too wide) in paragraph at lines 715--716
+Overfull \hbox (20.80879pt too wide) in paragraph at lines 718--719
  [][] 
  []
 
@@ -1149,28 +1153,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.720 
+l.723 
        [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (1.8708pt too wide) in paragraph at lines 755--756
+\T1/aer/m/n/9 with topic-keywords of each topic ex-tracted from source
+ []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.752 \item N
-             ow we need to work with topic keywords. We are going to perform...
+l.756 \item W
+             e will rank them based on topic-keyword similarity. So, now we ...
 [5 <./Localization.png> <./3layers.png>]
-Overfull \hbox (1.8708pt too wide) in paragraph at lines 752--753
-\T1/aer/m/n/9 with topic-keywords of each topic ex-tracted from source
- []
-
-
-Overfull \hbox (12.33217pt too wide) in paragraph at lines 789--789
+Overfull \hbox (12.33217pt too wide) in paragraph at lines 792--792
 []\secfnt EXPERIMENTAL RE-SULTS AND DIS-CUS-
  []
 
 
-Overfull \hbox (9.50508pt too wide) in paragraph at lines 834--835
+Overfull \hbox (9.50508pt too wide) in paragraph at lines 837--838
  [][] 
  []
 
@@ -1178,18 +1182,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.900 
-       [6]
-Overfull \hbox (1.48601pt too wide) in paragraph at lines 902--902
+l.905 \subsection
+                 {Bug Localization using Mapping Database and Cosine Relatio...
+[6]
+Overfull \hbox (1.48601pt too wide) in paragraph at lines 905--905
 []\secfnt Bug Lo-cal-iza-tion us-ing Map-ping Database
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 933.
+               Default added (so using `tbp') on input line 936.
 
 
-Overfull \hbox (4.2559pt too wide) in paragraph at lines 984--985
+Overfull \hbox (4.2559pt too wide) in paragraph at lines 987--988
 \T1/aer/m/n/9 com-mit mes-sages and in the git com-mit com-mands the change
  []
 
@@ -1198,34 +1203,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 []\T1/aer/m/n/7 Eclipse plat-form ui git project.
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.53 
-      [7]
+
 Underfull \hbox (badness 1675) in paragraph at lines 55--60
 []\T1/aer/m/n/7 Chu-Pan Wong, Yingfei Xiong, HongYu Zhang, Dan Hao,
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1056.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1056 \end{document}
+l.61 ...hou et~al.(2012)Zhou, Zhang, and Lo]{Jian}
+                                                   [7])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1059.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1059 \end{document}
                       [8
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1056.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1059.
  (sig-alternate.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1056.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1056.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1059.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1059.
 
 Package rerunfilecheck Info: File `sig-alternate.out' has not changed.
 (rerunfilecheck)             Checksum: 0D4083B4C8B7BC70F5B15CE9FA212223;1878.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1056.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1059.
  ) 
 Here is how much of TeX's memory you used:
  17769 strings out of 492973
@@ -1234,7 +1239,7 @@ Here is how much of TeX's memory you used:
  21403 multiletter control sequences out of 15000+200000
  589268 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,16n,61p,1512b,433s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,16n,61p,1512b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }<C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx9.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
@@ -1260,7 +1265,7 @@ ms/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Mukta/AppData/Local
 a/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Mukta/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Mukt
 a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sig-alternate.pdf (8 pages, 409292 bytes).
+Output written on sig-alternate.pdf (8 pages, 409068 bytes).
 PDF statistics:
  290 PDF objects out of 1000 (max. 8388607)
  57 named destinations out of 1000 (max. 500000)
