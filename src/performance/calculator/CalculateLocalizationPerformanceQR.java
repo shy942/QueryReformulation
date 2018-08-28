@@ -44,10 +44,10 @@ public class CalculateLocalizationPerformanceQR {
 		//MiscUtility.convertNumbertoSourceFile("./data/Results/finalResultTest1.txt","./data/changeset-pointer/ID-SourceFile.txt","./data/Results/FinalResultSidTest1.txt");
 		
 		
-		obj.ActualResultSets=RetrieveFinalSets("./data/Results/FinalResultTest1Aug11.txt"); 	
+		obj.ActualResultSets=RetrieveFinalSets("./data/Results/Aug27CosineSimBasedTest10.txt"); 	
 	
 		
-		int top_n=5;
+		int top_n=10;
 		//ComputePerformant(1);
 		//ComputePerformant(5);
 		ComputePerformant(10);

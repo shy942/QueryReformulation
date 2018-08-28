@@ -505,7 +505,7 @@ We perform the following steps in order to localize buggy files for newly report
 \end{itemize}
 \section{Proposed System Diagram}\label{sec:proposedsystemDiagram}
 Our proposed approach combine lexical similarity and co-occurence similarity measure.  \citet{Jian} proposed BugLocator based on two different similarity scores- one is rVSM score and the other one is Simi score. In our porposed bug localization approach, we retrieve relevant ranked files based on three different scores- 1) rVSM, 2) Simi and 3) Word Co-occurence. So,
-we have divided our approach into two different sections or parts- 1) calculate rVSM and Simi scores and co-occurence measure and 2) combine all three scores in order to localize recommended buggy source files for a given newly reported bug. As we have combined two existing scores with our proposed word co-occirence score, we will discuss the system diagram of association map database in Part I and then we represent our overall system diagram in Part II.
+we have divided our approach into two different sections or parts- 1) calculate rVSM and Simi scores and co-occurence measure and 2) combine all three scores in order to localize recommended buggy source files for a given newly reported bug.
 %\subsection{Part I: Query Reformulation}
 %\begin{figure*}
 %\centering
@@ -528,20 +528,17 @@ we have divided our approach into two different sections or parts- 1) calculate 
 %leverage the information contained in the adjacency list database in order to suggest keywords for reformulating the initial query. Here the idea is, for each natural keywords presented in the preprocessed initial query, we retrieve the adjacent keywords list from the adjacency database. We use cosine similarity metric to measure the similarity between the adjacent keywords list of each query term and other individual terms presented in the adjacency list database. Using this formula we formulate candidate keywords for the initial query, which we mention as candidate query terms.
  
 \subsection{Part I: Mapping Bug Source Code Links}
-In Part I, we construct an association map database - between keywords extracted from previously fixed bug reports collection and source code links. The system diagram for Part I is given in Fig. \ref{fig:MP}.
+In Part I, we construct two association map databases -  one between keywords extracted from bug reports collection and source code links and another one is between source code links and keywords contained in those source code files. The system diagram for Part I is given in Fig. \ref{fig:MP}.
 
-This mapping construction involves two steps.
-At first we create association map using information contained in bug reports collection and commit logs. We collect information from title and description fields of each bug report. There are also developers comment section in a bug report, which is highly informative. But large documents also tend to reduce performance by taking too long to process. So, we reluctant to include developers comments of each bug report. However, we extract keywords from each bug report after preprocessing them such as stop word removal. 
+At first we create association map using information contained in bug reports collection and commit logs. We extract keywords from each bug report after preprocessing them. We collect information from title, description and developers comments of each bug report.
 %In this part, information are collected from bug report, version repository and source code repository. 
-In version repository, we have commit logs, where the developers commit for several changes in a software project. For example, when a bug report is fixed, the developer who fixed this bug also creates a commit log containing which type of change he had to made to resolve the bug associated with the location of the source code files where the change has made. So, if we analyze commit logs, we can retrieve source code files information which have been changed in order to fix a given bug. Here the idea is, we first extract keywords from bug report and source code links for the same bug from commit log and then construct an association map database containing this mapping information. The links between keywords and source code links can be described as: each or several keywords can be linked to one or more source code links and each source code link can be linked to one or several keywords. This way we connect keywords and source code links to form an association map database named keyword-source code links. 
-
-%Then we analyze commit logs and source code repository. We collect source code links for a solved bug from the commit log and each of these source code contains source code contents. We preprocess these source code content by removing stop words from them but we do not perform stemming on them. Then we connect each source code links to one or may be more source code tokens to form our another association map database named source code-code token links.
-\begin{figure}
+In version repository repository, we have commit logs, where the developers commit for several changes in a software project. For example, when a bug report is fixed, the developer who fixed this bug also creates a commit log containing which type of change he had to made to resolve the bug associated with the location of the source code files where the change has made. So, if we analyze commit logs, we can retrieve source code files information which have been changed in order to fix a given bug. Here the idea is, we first extract keywords from bug report and source code links for the same bug from commit log and then construct an association map database containing this mapping information. The links between keywords and source code links can be described as: each or several keywords can be linked to one or more source code links and each source code link can be linked to one or several keywords. This way we connect keywords and source code links to form an association map database named keyword-source code links.  Then we analyze commit logs and source code repository. We collect source code links for a solved bug from the commit log and each of these source code contains source code contents. We preprocess these source code content by removing stop words from them but we do not perform stemming on them. Then we connect each source code links to one or may be more source code tokens to form our another association map database named source code-code token links.
+\begin{figure*}
 \centering
-\includegraphics[scale=0.55]{Map}
+\includegraphics[scale=0.75]{Mapping}
 \caption{Proposed System Diagram: Mapping}
 \label{fig:MP}
-\end{figure}
+\end{figure*}
 \subsection{Part II: Bug Localization}
 
 The system diagram for this part has illustrated in Fig. \ref{fig:BL}.

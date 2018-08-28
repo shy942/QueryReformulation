@@ -316,7 +316,7 @@ public class BLPerformanceCalc {
 		= "./data/Results/Aug27CosineSimBasedTest10.txt";
 		//= "./data/Results/Aug24TFbasedTest2.txt";
 		//= "./data/Results/Aug24BLTest7.txt";
-		String goldFile = "./Data/gitInfoNew.txt";
+		String goldFile = "./data/gitInfoNew.txt";
 		BLPerformanceCalc bcalc = new BLPerformanceCalc(resultFile, TOPK,
 				goldFile);
 
