@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  28 AUG 2018 13:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  29 AUG 2018 15:15
 entering extended mode
 **./sig-alternate.tex
 (sig-alternate.tex
@@ -1094,7 +1094,7 @@ Overfull \hbox (7.70108pt too wide) in paragraph at lines 427--427
 []\secfnt TF-IDF Based Bug Lo-cal-iza-tion Tech-nique: 
  []
 
-<3layers.png, id=136, 401.24907pt x 263.48438pt>
+<3layers.png, id=132, 401.24907pt x 263.48438pt>
 File: 3layers.png Graphic file (type png)
 <use 3layers.png>
 Package pdftex.def Info: 3layers.png  used on input line 463.
@@ -1120,76 +1120,78 @@ een already used, duplicate ignored
                    \relax 
 l.537 
        [3 <./3layers.png>]
-<Map.png, id=169, 403.5075pt x 149.96025pt>
+<Map.png, id=165, 403.5075pt x 149.96025pt>
 File: Map.png Graphic file (type png)
 <use Map.png>
 Package pdftex.def Info: Map.png  used on input line 541.
 (pdftex.def)             Requested size: 221.92981pt x 82.47838pt.
+<SD1.png, id=166, 607.67026pt x 265.59225pt>
+File: SD1.png Graphic file (type png)
+<use SD1.png>
+Package pdftex.def Info: SD1.png  used on input line 549.
+(pdftex.def)             Requested size: 455.75157pt x 199.19368pt.
 
-Overfull \hbox (3.44206pt too wide) in paragraph at lines 618--618
+Overfull \hbox (4.23407pt too wide) in paragraph at lines 554--554
+[]\secfnt Part II: Bug Lo-cal-iza-tion Us-ing rVSM, and
+ []
+
+
+Overfull \hbox (3.44206pt too wide) in paragraph at lines 629--629
 []\secfnt Construction of As-so-ci-a-tion Map Database
  []
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 622.
+put line 633.
 
-Underfull \hbox (badness 1577) in paragraph at lines 644--645
+Underfull \hbox (badness 1577) in paragraph at lines 655--656
 [] $\OML/cmm/m/it/9 MAP\OT1/cmr/m/n/9 [\OML/cmm/m/it/9 KB[]\OT1/cmr/m/n/9 ]\OML
 /cmm/m/it/9 :links \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 MAP\OT1/cmr/m/n/9 [\OML/cm
 m/m/it/9 KB[]\OT1/cmr/m/n/9 ]\OML/cmm/m/it/9 :links \OT1/cmr/m/n/9 +
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.666 
-       [4 <./Map.png>]
-Overfull \hbox (4.43127pt too wide) in paragraph at lines 720--721
+l.712 ...ction{Localizing Buggy Source Code Files}
+                                                   [4 <./Map.png>]
+Overfull \hbox (4.43127pt too wide) in paragraph at lines 729--730
 [] $\OML/cmm/m/it/9 K[] \OMS/cmsy/m/n/9  $ \T1/aer/m/n/9 getKeywordsFromReformu
 latedQuery($\OML/cmm/m/it/9 Q[]$\T1/aer/m/n/9 ) 
  []
 
-<Localization.png, id=180, 1445.4pt x 556.0775pt>
-File: Localization.png Graphic file (type png)
-<use Localization.png>
-Package pdftex.def Info: Localization.png  used on input line 753.
-(pdftex.def)             Requested size: 433.62335pt x 166.82454pt.
-
-Overfull \hbox (12.33217pt too wide) in paragraph at lines 796--796
-[]\secfnt EXPERIMENTAL RE-SULTS AND DIS-CUS-
- []
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.804 \end{equation}
-                     [5]
-Overfull \hbox (9.50508pt too wide) in paragraph at lines 841--842
+l.808 \end{equation}
+                     [5 <./SD1.png>]
+Overfull \hbox (9.50508pt too wide) in paragraph at lines 845--846
  [][] 
  []
 
 
-Overfull \hbox (1.48601pt too wide) in paragraph at lines 909--909
+Overfull \hbox (1.48601pt too wide) in paragraph at lines 913--913
 []\secfnt Bug Lo-cal-iza-tion us-ing Map-ping Database
  []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 944.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.928 
-       [6 <./Localization.png>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 940.
-
-
-Underfull \vbox (badness 1902) has occurred while \output is active []
-
-
-Overfull \hbox (4.2559pt too wide) in paragraph at lines 991--992
+l.1019 ...posed Techniques and Existing Technique}
+                                                   [6]
+Overfull \hbox (4.2559pt too wide) in paragraph at lines 1023--1024
 \T1/aer/m/n/9 com-mit mes-sages and in the git com-mit com-mands the change
  []
 
@@ -1204,35 +1206,30 @@ Underfull \hbox (badness 1675) in paragraph at lines 55--60
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1063.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1095.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1063 \end{document}
-                      [7]pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1063 \end{document}
-                      [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1063.
+l.1095 \end{document}
+                      [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1095.
  (sig-alternate.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1063.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1063.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1095.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1095.
 
 Package rerunfilecheck Info: File `sig-alternate.out' has not changed.
-(rerunfilecheck)             Checksum: A0C0C0F59CD627027257672F36CA18A6;1878.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1063.
+(rerunfilecheck)             Checksum: E317566D6607F371D71FC4D07BD0879A;1840.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1095.
  ) 
 Here is how much of TeX's memory you used:
- 17769 strings out of 492973
- 298429 string characters out of 3126692
- 366355 words of memory out of 3000000
- 21403 multiletter control sequences out of 15000+200000
+ 17766 strings out of 492973
+ 298353 string characters out of 3126692
+ 371289 words of memory out of 3000000
+ 21402 multiletter control sequences out of 15000+200000
  589268 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,16n,61p,1352b,335s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,16n,61p,1352b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }<C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx9.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
@@ -1258,9 +1255,9 @@ ms/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Mukta/AppData/Local
 a/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Mukta/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Mukt
 a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sig-alternate.pdf (8 pages, 403055 bytes).
+Output written on sig-alternate.pdf (7 pages, 406636 bytes).
 PDF statistics:
- 291 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
- 208 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 284 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 

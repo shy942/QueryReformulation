@@ -27,18 +27,133 @@ public class PerformanceCalculatorPerfect {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int TOP_K=10;
-		PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Aug24TFbasedTest6.txt");		
+		PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Aug24TFbasedTest10.txt");		
 		obj.gitResultsMap=obj.getGitOutput(obj.gitPath);
-		//MiscUtility.showResult(10, obj.gitResultsMap);
+		
 		System.out.println();
 		obj.resultsMap=obj.getResults(obj.resultPath); 	
-		//MiscUtility.showResult(10, obj.resultsMap);
-		System.out.println(obj.gitResultsMap.size());
-		System.out.println(obj.resultsMap.size());
-		ComputePerformancePercent(TOP_K, obj);
+		
+		//System.out.println(obj.gitResultsMap.size());
+		//System.out.println(obj.resultsMap.size());
+		showResult(obj);
+		
+		
 	}
 
+	
+	
+	public static void showResult(PerformanceCalculatorPerfect obj)
+	{
+		
+		int TOP_K=1;
+		System.out.println("Result for Top-"+TOP_K);
+		ComputePerformancePercent(TOP_K, obj);
+		//MiscUtility.showResult(100, finalRankedResult);
+		System.out.println("MAP at "+TOP_K+" "+ComputeMAP(finalRankedResult,obj));
+		System.out.println("MRR at "+TOP_K+" "+ComputeMRR(finalRankedResult,obj, TOP_K));
+		
+		System.out.println("=============================================================================");
+		TOP_K=5;
+		System.out.println("Result for Top-"+TOP_K);
+		ComputePerformancePercent(TOP_K, obj);
+		//MiscUtility.showResult(100, finalRankedResult);
+		System.out.println("MAP at "+TOP_K+" "+ComputeMAP(finalRankedResult,obj));
+		System.out.println("MRR at "+TOP_K+" "+ComputeMRR(finalRankedResult,obj, TOP_K));
+		
+		System.out.println("=============================================================================");
+		TOP_K=10;
+		System.out.println("Result for Top-"+TOP_K);
+		ComputePerformancePercent(TOP_K, obj);
+		//MiscUtility.showResult(100, finalRankedResult);
+		System.out.println("MAP at "+TOP_K+" "+ComputeMAP(finalRankedResult,obj));
+		System.out.println("MRR at "+TOP_K+" "+ComputeMRR(finalRankedResult,obj, TOP_K));
+	}
+	
+	
+	
+	
+	public static double ComputeMAP(HashMap<String, ArrayList<String>> finalRankedResult, PerformanceCalculatorPerfect obj)
+	{
+		double averagePrecision=0.0;
+		for(String queryID: finalRankedResult.keySet())
+		{
+			ArrayList<String> rankList=finalRankedResult.get(queryID);
+			averagePrecision+=getAvgPrecisionEachQuery(rankList);
+		}
+		int totalQuery=obj.resultsMap.size();
+		double MAP=averagePrecision/Double.valueOf(totalQuery);
+		return MAP;
+	}
+	
+	public static double getAvgPrecisionEachQuery(ArrayList<String> rankList)
+	{
+		double Precision=0.0;
+		int count =0;
+		for(String rankStr:rankList)
+		{
+			count++;
+			int rank=Integer.valueOf(rankStr);
+			Precision+=Double.valueOf(count)/Double.valueOf(rank);
+		}
+		
+		double AvgPrecision=Precision/Double.valueOf(count);
+		
+		return AvgPrecision;
+		
+	}
+	
+	public static double ComputeMRR(HashMap<String, ArrayList<String>> finalRankedResult, PerformanceCalculatorPerfect obj, int TOP_K)
+	{
+		double averageRecall=0.0;
+		for(String queryID: finalRankedResult.keySet())
+		{
+			ArrayList<String> rankList=finalRankedResult.get(queryID);
+			averageRecall+=getAvgRecallEachQuery(rankList,TOP_K);
+		}
+		int totalQuery=obj.resultsMap.size();
+		double MRR=averageRecall/Double.valueOf(totalQuery);
+		return MRR;
+	}
+	
+	public static double getAvgRecallEachQuery(ArrayList<String> rankList, int TopK)
+	{
+		double Recall=0.0;
+		int count =0;
+		int length=rankList.size();
+		String curRankStr=rankList.get(0);
+		int rankCur=Integer.valueOf(curRankStr);
+		//System.out.println(rankList);
+	
+		for(int r=1;r<rankList.size();r++)
+		{ 
+			String nextRankStr=rankList.get(r);
+			count++;
+			int rankNext=Integer.valueOf(nextRankStr);
+			Recall+=getRecall(rankCur, rankNext, length, count);
+			//System.out.println(rankCur+" "+rankNext+" "+length+" "+count);
+			//System.out.println(getRecall(rankCur, rankNext, length, count));
+			rankCur=rankNext;
+		}
+		Recall+=getRecall(rankCur, TopK+1, length, ++count);
+		//System.out.println(getRecall(rankCur, TopK, length, count));
+		double AvgPrecision=Recall/TopK;
+		//System.out.println("Avg: "+AvgPrecision);
+		return AvgPrecision;
+		
+	}
+	
+	public static double getRecall(int currentRank, int nextRank, int length, int count)
+	{
+		//System.out.println(currentRank+" "+nextRank+" "+length+" "+count);
+		double recall=0.0;
+		for(int i=1;i<=nextRank-currentRank;i++)
+		{
+			recall+=Double.valueOf(count)/Double.valueOf(length);
+			//System.out.println(i+" Recall: "+Double.valueOf(count)/Double.valueOf(length));
+		}
+		return recall;
+	}
+	
 	private static boolean IsMatched(ArrayList <String> resultList, ArrayList <String> gitList, String bugID, int TOP_K)
 	{
 	
@@ -88,7 +203,7 @@ public class PerformanceCalculatorPerfect {
 	        }
 	       
 	    }
-	    System.out.println(finalRankedResult.size());
+	    //System.out.println(finalRankedResult.size());
 	    System.out.println("Total bug: "+no_of_bug_matched);
 	    System.out.println("Total found: "+total_found);
 	    System.out.println("Top "+TOP_K+" %: "+(Double.valueOf(total_found)/Double.valueOf(no_of_bug_matched))*100);

@@ -309,11 +309,11 @@ public class BLPerformanceCalc {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int TOPK = 5;
+		int TOPK = 10;
 
 		//String resultFile = "./Data/Results/eclipseoutput.txt"; 
 		String resultFile
-		= "./data/Results/Aug27CosineSimBasedTest10.txt";
+		= "./data/Results/Aug24TFbasedTest6.txt";
 		//= "./data/Results/Aug24TFbasedTest2.txt";
 		//= "./data/Results/Aug24BLTest7.txt";
 		String goldFile = "./data/gitInfoNew.txt";

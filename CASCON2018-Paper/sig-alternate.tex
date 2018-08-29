@@ -422,7 +422,7 @@ Provide an example such as say for bug B1 source code files F1, F2, F3 are modif
 Lets consider a bug having ID "" from Eclipse-UI-Platform software. From Git repository it is discoverd that so far n number of file have been modified in order to fix this bug. We also csn find the source code address of those changed files. Now, 
 
 In another example, show that the words or keywords of a bug B are aslo presented in the source code files F1, F2 or F3. 
-\section{Existing Approaches}
+\section{Existing Approaches}\label{sec:existing}
 We have replicated two existing bug localization approaches: (i) TF-IDF based bug localization approach and (ii) LDA topic based bug localization technique. In the following subsections we will briefly discuss each of them.
 \subsection{TF-IDF Based Bug Localization Technique:}
 In this technique, each source code file is ranked based on source code file scores and similar bugs information. Source code file contains words those can be also occurred in the bug reports. This is considered as a hint to locate buggy files. If a new bug is similar to a given previously located bug, then there is a possibility that the source code files located for the past bug can provide useful information in finding buggy files for that new bug. Based on these two assumptions, we compute scores for all source code files for a given project. However, we need to focus on some concepts which are required to understand the  system. They are described as follows:
@@ -542,13 +542,24 @@ In version repository, we have commit logs, where the developers commit for seve
 \caption{Proposed System Diagram: Mapping}
 \label{fig:MP}
 \end{figure}
-\subsection{Part II: Bug Localization}
+
+
+\begin{figure*}
+	\centering
+	\includegraphics[scale=0.75]{SD1}
+	\caption{Proposed System Diagram: Bug Localization}
+	\label{fig:BL}
+\end{figure*}
+
+\subsection{Part II: Bug Localization Using rVSM, and Co-occurence Ranks}
 
 The system diagram for this part has illustrated in Fig. \ref{fig:BL}.
-We have constructed two association map databases from keywords collected from bug report to its source code location information and source code location to their content keywords as described in Section \ref{sec:proposedsystemDiagram}.
-We also have two adjacent list databases both for bug reports and source code files from Section \ref{sec:proposedsystemDiagram}. Now we are going to use our formulated query to retrieve relevant source code files. 
-For the candidate keyword tokens for the initial query, we exploit association map database (i.e., keyword-source code links) and retrieve the relevant source code files. We use some heuristic functions in order to rank all those relevant source code links and this is one part of our predicted locations for buggy source code files.
-Then we investigate another association map database (i.e., source code-code token links) that results some source code token. These source code tokens are also connected to some other source code files. We retrieve those links and use some heuristics to rank all those relevant files. This is the extended part of our predicted source code locations for a given newly reported bugs.
+In our system, we have three different ranks i.e., rVSM, Simi and Co-occurence. We utlize an existing technique proposed by \citet{Jian} for computing rVSM and Similarity scores. Basically, rVSM is a TF-IDF based score, which is measured between query and source code files.
+On the other hand, Simi score refers to that fact that if a bug is similar to another bug, then they both tend to relate to same sources. However, we describe both scores in Section \ref{sec:existing}.
+We have constructed an association map databases from keywords collected from bug report to its source code location information in Section \ref{sec:proposedsystemDiagram}.
+For the candidate keyword tokens for the initial query, we exploit association map database (i.e., keyword-source code links) and retrieve the relevant source code files. We use some heuristic functions in order to combine three ranks and recommend buggy relevant source files.  
+%and this is one part of our predicted locations for buggy source code files.
+
 % these source code files we also find some keywords extracted from those source code files.  
 
 \section{Proposed Approach}\label{sec:proposedApproach}
@@ -664,41 +675,39 @@ We go through all commit messages and try to find those commit message that cont
 \textbf{Keyword- Source Code Linking:}
 At this point, in one side we have pre-processed keywords associated with each bug report and on the other side we have a relationship information between bug report ID and buggy source code links. We construct a bipartite graph between keywords collected from a bug report to its buggy source code locations. Here, one or more keywords can be linked to one or more buggy source code files links and a source code file link can be linked to one or more keywords.
 
-\textbf{Code Tokens Extraction from Source Codes:}
-We extract source code content from buggy source code files. We perform standard natural language pre-processing on the corpus such as stop word removal, splitting. We remove several source code specific keywords. We split camel case identifier extracted from source code corpus. We also split each word containing any punctuation mark (e.g., ?,:,;), and transforms it into a list of words.
-
-\begin{algorithm}[!t]
-\caption{Construction of Association Map Database Between Source Files and Code Tokens}
-\label{mapsfandct}
-\begin{algorithmic}[1]
-\Procedure{SOURCE FILES }{$SF$}\Comment{$SF$: a collection of source code files}
-\State $MAP_{FT} \gets$ \{\}\Comment{an association map}
-\LineComment{creating adjacency map database from source code files to its code tokens}
-\State $SF_{all} \gets$ getAllSourceCodeFiles($SF$)
 
 
-\LineComment{Linking files from a project corpus into its code tokens}
-\For{Source Files $SF_{_i}$ $\in$ $SF_{all}$}
-\State $CD_{i} \gets$ retrieveCodeTokens ($SF_i$)
-%\For{each bug id $BUG_{id_j} \in BUG_{id}$}
-\State $CD_{pi} \gets$ preprocessSourceCodeTokens($CD_{i}$)
-\LineComment{generate a link between source files to its preprocessed code contents}
-%\State $MAO_{BUG_{id}} \gets$ linkSourceCodeFiles$Adj_{T_i}, Adj_{K_j}$) 
-\State $MAP[SF_i].tokens \gets MAP[SF_{i}].tokens + CD_{pi}$
+%\begin{algorithm}[!t]
+%\caption{Construction of Association Map Database Between Source Files and Code Tokens}
+%\label{mapsfandct}
+%\begin{algorithmic}[1]
+%\Procedure{SOURCE FILES }{$SF$}\Comment{$SF$: a collection of source code files}
+%\State $MAP_{FT} \gets$ \{\}\Comment{an association map}
+%\LineComment{creating adjacency map database from source code files to its code tokens}
+%\State $SF_{all} \gets$ getAllSourceCodeFiles($SF$)
+%
+%
+%\LineComment{Linking files from a project corpus into its code tokens}
+%\For{Source Files $SF_{_i}$ $\in$ $SF_{all}$}
+%\State $CD_{i} \gets$ retrieveCodeTokens ($SF_i$)
+%%\For{each bug id $BUG_{id_j} \in BUG_{id}$}
+%\State $CD_{pi} \gets$ preprocessSourceCodeTokens($CD_{i}$)
+%\LineComment{generate a link between source files to its preprocessed code contents}
+%%\State $MAO_{BUG_{id}} \gets$ linkSourceCodeFiles$Adj_{T_i}, Adj_{K_j}$) 
+%\State $MAP[SF_i].tokens \gets MAP[SF_{i}].tokens + CD_{pi}$
+%%\EndFor
 %\EndFor
-\EndFor
+%
+%\LineComment{collecting all source files-token links}
+%\State $MAP_{FT} \gets$ collect ($MAP[KB]$ )
+%%\LineComment{put them into map}
+%%\State $MAP \gets$ mapping()
+%\State \textbf{return} $MAP_{FT}$
+%\EndProcedure
+%\end{algorithmic}
+%\end{algorithm}
 
-\LineComment{collecting all source files-token links}
-\State $MAP_{FT} \gets$ collect ($MAP[KB]$ )
-%\LineComment{put them into map}
-%\State $MAP \gets$ mapping()
-\State \textbf{return} $MAP_{FT}$
-\EndProcedure
-\end{algorithmic}
-\end{algorithm}
-
-\textbf{Source Code-Code Token Linking}
-At this point, we create another association map database for source code corpus. To construct this database, we make several links between one or more buggy source code files into code-token extracted from those changed source code files. This association maps buggy source code files into source code tokens. This association map is represented by a bipartite graph, where there is no relationship either among source code files or code-tokens.  
+  
 
 \subsection{Localizing Buggy Source Code Files} 
 
@@ -748,12 +757,7 @@ At this point, we create another association map database for source code corpus
 
 This is the final part of our proposed approach. In this part two sets of predicted buggy source code files are resulted. At first, we search through keyword-source code links association map database using candidate query terms as search query terms. This step predicts some source code links as buggy files, but we need to apply some heuristics to rank those buggy source code files. Finally we can locate top-n source code files as relevant candidates for bug localization. Then we retrieve our second set of predicted source code files. For this, we retrieve code-tokens which are linked to our first set of top-n source code files exploiting source code-code token association map database. This retrieved code token are also linked with some other source code files locations. We apply another heuristics into these code token-source code links and select another top-n relevant source code files as predicted location for a given bug. This second set of source code files are used to locate our extended source code locations that could be relevant fo a given query.
 
-\begin{figure*}
-\centering
-\includegraphics[scale=0.3]{Localization}
-\caption{Proposed System Diagram: Bug Localization}
-\label{fig:BL}
-\end{figure*}
+
 %In this paper, we implement two existing bug localization technoques: (i)TF-IDF based bug localization and  (ii)  LDA topic based bug localization techniques. In the following sections we will discuss both techniques in detail.
 %\begin{figure*}
 %\centering
@@ -793,7 +797,7 @@ We work with Eclipse data set. We downloaed a git based Eclipse project from git
 \subsection{Data Collection}
 We have two parts in our corpus. One is source code files downloaded as git based project and another part is bug reports collection. All bug reports are collected from \textit{Bugzilla}. In order to obtain the links between previously fixed bugs and source code files, we analyze git project commit message. We ran through all commit messages and track Bug IDs associated with examined source code files.
 
-\section{Experimental Results and Discussion}
+
 \subsection{Evaluation Metrices}
 \textbf{Ton N-Rank:} It represents the number of bug, for which their associated files are returned in a ranked list. Here, \textit{N} may be 1, 5 or 10. We assume that if at least one associated file is presented in the resulted ranked list, then the given bug is located.
 
@@ -943,21 +947,49 @@ we compute the cosine relationship between query keywords and all keywords assoc
 \label{tab:T2}
 \begin{tabular}{@{}|c|c|c|c|c|c|c|@{}}
 \toprule
-\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} & \begin{tabular}[c]{@{}c@{}}\#Bugs for \\ locating \\ issues\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 1\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 5\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 10\\ \%\end{tabular} & MRR & MAP \\ \midrule
-100                                                                               & 100                                                                      & 11.11\%                                               & 37.78\%                                            & 48.89\%                                                &   0.27  & 0.19    \\ \midrule
-200                                                                               & 100                                                                      & 13.89\%                                               & 30.56\%                                              & 44.44\%                                             &   0.27  &   0.17  \\ \midrule
-300                                                                               & 100                                                                      & 14.81\%                                            & 40.74\%                                            & 51.85\%                                             &   0.39  &  0.24   \\ \midrule
-400                                                                               & 100                                                                      & \multicolumn{1}{l|}{16.67\%}                       & \multicolumn{1}{l|}{23.33\%}                       & 76.67\%                                                &  0.33   &  0.29  \\ \midrule 
-500                                                                               & 100                                                                      & 20\%                                                 & 40\%                                                 & 45.71\%                                                  &  0.43   & 0.25     \\ \midrule
-600
+%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
+\begin{tabular}[c]{@{}c@{}}\# Test  \\ Case \\ \end{tabular} & \begin{tabular}[c]{@{}c@{}}\#Bugs for \\ locating \\ issues\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 1\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 5\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 10\\ \%\end{tabular} & MRR & MAP \\ \midrule
+1                                                                               & 385                                                                      & 13.58\%                                               & 27.68\%                                            & 44.62\%                                                &   0.32  & 0.40    \\ \midrule
+2                                                                               & 385                                                                      & 11.69\%                                               & 35.58\%                                              & 49.09\%                                             &   0.34  &   0.38  \\ \midrule
+3                                                                               & 385                                                                      & 10.90\%                                            & 31.95\%                                            & 46.23\%                                             &   0.31  &  0.35   \\ \midrule
+4                                                                               & 385                                                                      & \multicolumn{1}{l|}{11.95\%}                       & \multicolumn{1}{l|}{35.58\%}                       & 47.79\%                                                &  0.33   &  0.38  \\ \midrule 
+5                                                                               & 385                                                                      & 17.92\%                                                 & 43.64\%                                                 & 54.55\%                                                  &  0.40   & 0.51     \\ \midrule
+6
 &
-100
-&23.33\% &
-53.33\% &
-53.33\% & 0.58 &
-0.32     \\  \midrule
-
-\multicolumn{2}{|c|}{Average}                                                                                                                                & 13.30\%                                                 & 37.79\%                                                 & 53.48\%                                                  &   0.38  &  0.24    \\ \bottomrule
+385
+&22.60\% &
+49.09\% &
+61.82\% & 0.46 &
+0.60     \\  \midrule
+7
+&
+385
+&17.66\% &
+35.58\% &
+57.14\% & 0.42 &
+0.51     \\  \midrule
+8
+&
+385
+&20.26\% &
+44.68\% &
+52.60\% & 0.42 &
+0.53    \\  \midrule
+9
+&
+385
+&19.74\% &
+41.56\% &
+56.10\% & 0.40 &
+0.52    \\  \midrule
+10
+&
+385
+&9.6\% &
+33.25\% &
+45.71\% & 0.30 &
+0.32    \\  \midrule
+\multicolumn{2}{|c|}{Average}                                                                                                                                & 15.59\%                                                 & 37.85\%                                                 & 51.57\%                                                  &   0.37  &  0.45    \\ \bottomrule
 
 \end{tabular}
 \end{table*}
