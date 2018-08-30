@@ -1023,17 +1023,17 @@ we compute the cosine relationship between query keywords and all keywords assoc
 		\toprule
 		%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
 		\begin{tabular}[c]{@{}c@{}}\# Test  \\ Case \\ \end{tabular} & \begin{tabular}[c]{@{}c@{}}\#Bugs for \\ locating \\ issues\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 1\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 5\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 10\\ \%\end{tabular} & MRR & MAP \\ \midrule
-		1                                                                               & 390                                                                      & 22.31\%                                               & 47.18\%                                            & 55.38\%                                                &   0.44  & 0.59    \\ \midrule
-		2                                                                               & 385                                                                      & 24.16\%                                               & 47.27\%                                              & 55.06\%                                             &   0.44  &   0.62  \\ \midrule
-		3                                                                               & 385                                                                      & 21.56\%                                            & 41.30\%                                            & 50.39\%                                             &   0.40  &  0.55   \\ \midrule
-		4                                                                               & 385                                                                      & \multicolumn{1}{l|}{19.48\%}                       & \multicolumn{1}{l|}{44.68\%}                       & 52.73\%                                                &  0.42   &  0.55  \\ \midrule 
-		5                                                                               & 385                                                                      & 26.23\%                                                 & 48.83\%                                                 & 55.84\%                                                  &  0.46   & 0.66     \\ \midrule
-		6
-		&
-		385
-		&23.90\% &
-		50.13\% &
-		60.52\% & 0.48 &
+		 \multirow{2}{*}{1}& VSM & 22.98& 44.91&55.35& 0.43 & 0.60 \\ 
+		& VSM + Co-Score & 22.31                                               & 47.18                                            & 55.38                                                &   0.44  & 0.59 \\ \midrule
+		
+		\multirow{2}{*}{2}                                                                               & VSM & 22.57 & 44.09 & 54.06 & 0.43 & 0.59 \\   &VSM + Co-Score                                                                     & 24.16                                               & 47.27                                              & 55.06                                             &   0.44  &   0.62  \\ \midrule
+		\multirow{2}{*}{3}                                                                               & VSM & 19.52 & 39.04 & 48.66 & 0.38 & 0.51 \\   &VSM + Co-Score                                                                       & 21.56                                            & 41.30                                            & 50.39                                             &   0.40  &  0.55   \\ \midrule
+	\multirow{2}{*}{4}                                                                               & VSM & 20.64 & 43.16 & 53.08 & 0.42 & 0.56 \\   &VSM + Co-Score                                                                      & 19.48                       & 44.68                       & 52.73                                                &  0.42   &  0.55  \\ \midrule 
+			\multirow{2}{*}{5}                                                                               & VSM & 26.32 & 49.74 & 59.47 & 0.47 & 0.65 \\   &VSM + Co-Score                                                                       & 26.23                                                 & 48.83                                                 & 55.84                                                  &  0.46   & 0.66     \\ \midrule
+			\multirow{2}{*}{6}                                                                               & VSM & 23.88 & 50.13 & 61.15 & 0.47 & 0.64 \\   &VSM + Co-Score 
+		&23.90 &
+		50.13 &
+		60.52 & 0.48 &
 		0.64     \\  \midrule
 		7
 		&
