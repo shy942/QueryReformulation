@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  29 AUG 2018 15:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  30 AUG 2018 13:58
 entering extended mode
 **./sig-alternate.tex
 (sig-alternate.tex
@@ -1183,15 +1183,25 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 944.
 
 
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1018.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1019 ...posed Techniques and Existing Technique}
-                                                   [6]
-Overfull \hbox (4.2559pt too wide) in paragraph at lines 1023--1024
+l.1071 ...posed Techniques and Existing Technique}
+                                                   [6]pdfTeX warning (ext4): de
+stination with the same identifier (name{page.}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.1071 ...posed Techniques and Existing Technique}
+                                                   [7]
+Overfull \hbox (4.2559pt too wide) in paragraph at lines 1075--1076
 \T1/aer/m/n/9 com-mit mes-sages and in the git com-mit com-mands the change
  []
 
@@ -1206,30 +1216,30 @@ Underfull \hbox (badness 1675) in paragraph at lines 55--60
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1095.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1147.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1095 \end{document}
-                      [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1095.
+l.1147 \end{document}
+                      [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1147.
  (sig-alternate.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1095.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1095.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1147.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1147.
 
 Package rerunfilecheck Info: File `sig-alternate.out' has not changed.
 (rerunfilecheck)             Checksum: E317566D6607F371D71FC4D07BD0879A;1840.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1095.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1147.
  ) 
 Here is how much of TeX's memory you used:
- 17766 strings out of 492973
- 298353 string characters out of 3126692
- 371289 words of memory out of 3000000
- 21402 multiletter control sequences out of 15000+200000
+ 17768 strings out of 492973
+ 298368 string characters out of 3126692
+ 378396 words of memory out of 3000000
+ 21403 multiletter control sequences out of 15000+200000
  589268 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,16n,61p,1352b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,16n,61p,1352b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }<C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx9.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
@@ -1255,9 +1265,9 @@ ms/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Mukta/AppData/Local
 a/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Mukta/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Mukt
 a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sig-alternate.pdf (7 pages, 406636 bytes).
+Output written on sig-alternate.pdf (8 pages, 408885 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
  200 words of extra memory for PDF output out of 10000 (max. 10000000)
 

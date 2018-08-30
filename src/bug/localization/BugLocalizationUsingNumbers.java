@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
+import LuceneBasedBL.BugLocatorLuceneBased;
 import bug.locator.provide.MasterBLScoreProvider;
 import rvsm.calculator.CosineMeasure;
 import simi.score.calculator.CosineSimilarity;
@@ -149,9 +150,13 @@ public class BugLocalizationUsingNumbers {
         return temp;
     }
     
-    public void bugLocator(BugLocalizationUsingNumbers obj, String outputFilePath)
+    public void bugLocator(BugLocalizationUsingNumbers obj, String outputFilePath, String sourceFolder, String bugReportFolder, String goldsetFile)
     {
-    	
+    	double ALPHA=0.6;
+		double BETA=0.2;
+		int TOPK_SIZE=200;
+		obj.buglocatorRESULT=new MasterBLScoreProvider(sourceFolder, bugReportFolder, goldsetFile)
+				.produceBugLocatorResultsForMyTool(ALPHA, BETA, TOPK_SIZE );
     	obj.trainMapTokenSource=obj.loadTrainMap(obj.trainMapTokenSourceAddress);
     	//MiscUtility.showResult(10, obj.trainMapTokenSource);
 		obj.testSet=obj.loadHashMap(obj.testSetAddress);
@@ -180,7 +185,7 @@ public class BugLocalizationUsingNumbers {
 				HashMap<Integer, Double> resultMap
 				//=sortedResultMyTool;
 				//=SortedBLresult;
-				=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool);
+				=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, 0.2);
 				
 				String result=queryID+",";
 				int count=0;
@@ -232,7 +237,7 @@ public class BugLocalizationUsingNumbers {
 	}
 
 
-	public HashMap<Integer, Double> CombileScoreMaker(int queryID, HashMap<Integer,Double> resultBugLocator,HashMap<Integer,Double> resultMyTool)
+	public HashMap<Integer, Double> CombileScoreMaker(int queryID, HashMap<Integer,Double> resultBugLocator,HashMap<Integer,Double> resultMyTool, double BETA)
     {
     	
     	HashMap<Integer, Double> tempCombineResult=new HashMap<>();
@@ -242,12 +247,12 @@ public class BugLocalizationUsingNumbers {
     		if(resultBugLocator.containsKey(key))
     		{
     			count++;
-    			double combineScore=resultMyTool.get(key)*0.2+resultBugLocator.get(key);
+    			double combineScore=resultMyTool.get(key)*BETA+resultBugLocator.get(key);
     			tempCombineResult.put(key, combineScore);
     		}
     		else
     		{
-    			tempCombineResult.put(key, resultMyTool.get(key)*0.2);
+    			tempCombineResult.put(key, resultMyTool.get(key)*BETA);
     		}
     	}
     	for(int key:resultBugLocator.keySet())
@@ -470,18 +475,63 @@ public class BugLocalizationUsingNumbers {
 		
 		String outputFilePath
 		//="./data/Results/Aug24BLTest"+test+".txt";
-		="./data/Results/Aug27CosineSimBasedTest"+test+".txt";
+		="./data/Results/Aug30LuceneAndMe"+test+".txt";
 		//="./data/Results/Aug24TFbasedTest"+test+".txt";
-		double ALPHA=0.6;
-		double BETA=0.2;
-		int TOPK_SIZE=200;
-		obj.buglocatorRESULT=new MasterBLScoreProvider(sourceFolder, bugReportFolder, goldsetFile)
-				.produceBugLocatorResultsForMyTool(ALPHA, BETA, TOPK_SIZE );
+		
 	
-		obj.bugLocator(obj, outputFilePath);
+		//obj.bugLocator(obj, outputFilePath, sourceFolder, bugReportFolder, goldsetFile);
+		obj.bugLocatorLuceneAndMe(obj, outputFilePath, bugReportFolder);
 		//call the bug localizer
 	}
 
-	
+	 public void bugLocatorLuceneAndMe(BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
+	    {
+		 	double ALPHA=0.5;
+		 	String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
+			obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
+					.getLuceneBasedScore(ALPHA);
+	    	obj.trainMapTokenSource=obj.loadTrainMap(obj.trainMapTokenSourceAddress);
+	    	//MiscUtility.showResult(10, obj.trainMapTokenSource);
+			obj.testSet=obj.loadHashMap(obj.testSetAddress);
+			obj.bugIdKeywordMap=obj.loadHashMap(obj.bugIDKeywordMapAddress);
+			//MiscUtility.showResult(10, obj.bugIdKeywordMap);
+			//MiscUtility.showResult(10, obj.testSet);
+			ArrayList<String> finalResult=new ArrayList<>();
+			int i=0;
+			for(int queryID:testSet.keySet())
+			{
+				
+				//System.out.println(queryID);
+					HashMap<Integer,Double> resultBugLocator=new HashMap<>();
+					if(obj.buglocatorRESULT.containsKey(queryID)){
+						System.out.println(++i);
+						//if(i>100) break;
+						resultBugLocator=obj.convertSIDtoNum(queryID,obj.buglocatorRESULT);
+					
+				
+					HashMap<Integer, Double> SortedBLresult=MiscUtility.sortByValues(resultBugLocator);
+					
+					HashMap<Integer,Double> sortedResultMyTool
+					//=obj.findBugForEachQueryCosineSimBased(queryID);
+					=obj.ResultBasedOnTF(queryID);
+					
+					HashMap<Integer, Double> resultMap
+					//=sortedResultMyTool;
+					//=SortedBLresult;
+					=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, (1-ALPHA));
+					
+					String result=queryID+",";
+					int count=0;
+					for(int key:resultMap.keySet())
+					{
+						count++;
+						if(count>10)break; 
+						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key));
+					}
+				}	
+				//ContentWriter.writeContent("./data/Results/finalResultTest2Aug16.txt", finalResult);
+			}
+			ContentWriter.writeContent(outputFilePath, finalResult);
+	    }
 	
 }
