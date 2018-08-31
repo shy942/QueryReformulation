@@ -464,7 +464,7 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		int test=1;
+		int test=10;
 		BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset"+test+".txt", "./data/FinalMap/SourceTokenMapTrainset"+test+".txt","./data/testset/test"+test+".txt","./data/Bug-ID-Keyword-ID-Mapping.txt","./data/changeset-pointer/ID-SourceFile.txt","./data/ID-Keyword.txt","./data/Sid-MatchWord2.txt");
 		String bugReportFolder = "./data/testsetForBL/test"+test;
 		//For Mac
@@ -475,7 +475,7 @@ public class BugLocalizationUsingNumbers {
 		
 		String outputFilePath
 		//="./data/Results/Aug24BLTest"+test+".txt";
-		="./data/Results/Aug30LuceneAndMe"+test+".txt";
+		="./data/Results/Aug31Lucene"+test+".txt";
 		//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 	
@@ -511,14 +511,14 @@ public class BugLocalizationUsingNumbers {
 				
 					HashMap<Integer, Double> SortedBLresult=MiscUtility.sortByValues(resultBugLocator);
 					
-					HashMap<Integer,Double> sortedResultMyTool
+					//HashMap<Integer,Double> sortedResultMyTool
 					//=obj.findBugForEachQueryCosineSimBased(queryID);
-					=obj.ResultBasedOnTF(queryID);
+					//=obj.ResultBasedOnTF(queryID);
 					
 					HashMap<Integer, Double> resultMap
 					//=sortedResultMyTool;
-					//=SortedBLresult;
-					=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, (1-ALPHA));
+					=SortedBLresult;
+					//=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, (1-ALPHA));
 					
 					String result=queryID+",";
 					int count=0;

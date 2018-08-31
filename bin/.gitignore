@@ -1,3 +1,11 @@
+/LIB/
+/BugLocator/
+/Test10FoldCrVld/
+/adjacent/
+/bug/
+/changeset/
+/code/
+/config/
 /corpus/
 /file/
 /graph/
@@ -11,4 +19,3 @@
 /text/
 /token/
 /utility/
-/bug/

@@ -27,7 +27,7 @@ public class PerformanceCalculatorPerfect {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Aug30LuceneAndMe1.txt");		
+		PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Aug31Lucene10.txt");		
 		obj.gitResultsMap=obj.getGitOutput(obj.gitPath);
 		
 		System.out.println();
