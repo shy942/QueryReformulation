@@ -1,2 +1,0 @@
-common navigator resource wrapper content label provider tests created attachment patch
- 

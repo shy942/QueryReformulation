@@ -1,0 +1,2 @@
+common navigator hook tests plugin xml patch contributed franck mangin
+ 

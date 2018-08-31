@@ -1,2 +1,0 @@
-remove component xml files build properties component xml files included regular builds stop including build properties files
- 

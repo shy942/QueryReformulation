@@ -37,7 +37,8 @@ public class DataSetsPreaparation {
 		//DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","/Users/user/Documents/Ph.D/2018/Data/ProcessedBugData/");
 		//For Windows
 		//Dont do this now
-		//new DataSetsPreaparation().DataPreparation("./data/BugCorpus/allBug.txt","./data/GitInfoNew.txt","./data/bugIDs.txt");
+		
+		//new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\Data\\BugDataNew\\").DataPreparation("./data/BugCorpus/allBug.txt","./data/GitInfoNew.txt","./data/bugIDs.txt","E:\\PhD\\Data\\BugDataNew\\");
 		DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\Data\\BugDataNew\\");
 		
 		
@@ -259,8 +260,9 @@ public class DataSetsPreaparation {
 	}
 	
 	
-	public void DataPreparation(String bugIDFile, String gitFile, String outFile)
+	public void DataPreparation(String bugIDFile, String gitFile, String outFile, String bugFolder)
 	{
+		LoadBugData();
 		ArrayList<String> bugIDlist=ContentLoader.getAllLinesList(bugIDFile);
 		
 		
@@ -294,7 +296,7 @@ public class DataSetsPreaparation {
 		
 		for(String ID:bugIDlist)
 		{
-			if(gitBugIDList.contains(ID))
+			if(gitBugIDList.contains(ID)&&this.bugContentHM.containsKey(ID))
 			{
 				finalBugIDList.add(ID);
 			}

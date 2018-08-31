@@ -1,2 +1,0 @@
-face dialog settings handle null cases replaces tabs spaces tests attached pass bugs class dialog settings similar memento dialog settings escape tab newline carriage return characters attributes characters converted spaces deserialization second corner case array strings array entries null converted strings deserialization attaching patch fix bugs
- 

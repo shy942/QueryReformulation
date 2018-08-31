@@ -1,2 +1,0 @@
-key bindings keys preference page restore binding single command keys preference page restore binding single command restore button single command scenario leaves manually restored key bindings user delta refactor java rename refactoring alt shift open prefs page refactor java rename refactoring alt shift user delta indicator stays
- 

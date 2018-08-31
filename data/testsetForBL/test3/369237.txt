@@ -1,0 +1,2 @@
+model using org emf xpath bundles inadvertently removed org rcp feature cleanup week org emf xpath org apache commons jxpath doesn effect having according paul intended supporting xpath expressions declarative model contributions didn actually supported syntax looks work incomplete discussion moving juno feature using usable current state juno difficult remove value leaving feature juno introduce later work complete
+ 

@@ -1,2 +1,0 @@
-face color registry string return null color registry string return null speced javadoc
- 

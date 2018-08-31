@@ -1,2 +1,0 @@
-common navigator viewer state non properly reset activated deactivated map objects reset associated viewer avoid having stale label information shown looking tests viewer
- 

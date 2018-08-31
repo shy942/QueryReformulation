@@ -1,2 +1,0 @@
-preferences incorrect path display linked resources list preferences dialog build identifier bidi lined resources path containing hebrew character displayed incorrect cases described excluded separate contains different cases needed different fixes reproducible steps reproduce hebrew locale mirrored open preferences general workspace linked resources dialog variable folder containing hebrew characters example variable aaa folder hebrew characters inspect display defined path variables list expected result aaa actual result aaa
- 

@@ -470,12 +470,13 @@ public class BugLocalizationUsingNumbers {
 		//For Mac
 		//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
 		//ForWindows
-		String sourceFolder = "E:\\PhD\\Data\\NotProcessedSourceMethodLevel\\";
+		String sourceFolder = "E:\\PhD\\Data\\"
+				+ "\\";
 		String goldsetFile = "./data/gitInfoNew.txt";
 		
 		String outputFilePath
 		//="./data/Results/Aug24BLTest"+test+".txt";
-		="./data/Results/Aug31Lucene"+test+".txt";
+		="./data/Results/Aug31LuceneAndMe"+test+".txt";
 		//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 	
@@ -486,7 +487,7 @@ public class BugLocalizationUsingNumbers {
 
 	 public void bugLocatorLuceneAndMe(BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
 	    {
-		 	double ALPHA=1.0;
+		 	double ALPHA=0.70;
 		 	String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
 			obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
 					.getLuceneBasedScore(ALPHA);
@@ -511,14 +512,14 @@ public class BugLocalizationUsingNumbers {
 				
 					HashMap<Integer, Double> SortedBLresult=MiscUtility.sortByValues(resultBugLocator);
 					
-					//HashMap<Integer,Double> sortedResultMyTool
+					HashMap<Integer,Double> sortedResultMyTool
 					//=obj.findBugForEachQueryCosineSimBased(queryID);
-					//=obj.ResultBasedOnTF(queryID);
+					=obj.ResultBasedOnTF(queryID);
 					
 					HashMap<Integer, Double> resultMap
 					//=sortedResultMyTool;
-					=SortedBLresult;
-					//=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, (1-ALPHA));
+					//=SortedBLresult;
+					=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, (1-ALPHA));
 					
 					String result=queryID+",";
 					int count=0;

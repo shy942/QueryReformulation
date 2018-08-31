@@ -1,0 +1,2 @@
+activity mgmt expression controlled activities aren correctly synchronized internal enabled list persisted reloaded created attachment remove expression controlled activities persistence build steps reproduce start activate initially deactivated expression controlled activity gets enabled list close correctly enabled state gets saved restart watch correctly disabled expression controlled activity wrongfully enabled list information patch excludes expression controlled activities persistence later wrongfully reloaded activity extended expression
+ 

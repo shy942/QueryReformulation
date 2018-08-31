@@ -1,2 +1,0 @@
-editor mgmt file editor mapping needs implement hash code improve clone equals
- 

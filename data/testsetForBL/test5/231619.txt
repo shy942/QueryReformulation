@@ -1,0 +1,2 @@
+properties dialog open org internal dialogs property dialog request open org internal dialogs property dialog perform custom validations prior displaying properties dialog using actions subclass org dialogs property dialog action perform validations converting commands handlers handler equivalent action property dialog handler internal package instead making public flexible property dialog public dialog public invoked custom handler action public dialog allow callers provide custom initial page custom element
+ 

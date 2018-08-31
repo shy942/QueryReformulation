@@ -1,0 +1,2 @@
+progress finished tasks progress view needs fixed initially created clone build steps reproduce launch provided plugin icon toolbar progress icon shows status bar open progress view job finish clear finished job view close progress view window view progress notice task appears running progress view finishes information debugging progress view code appears job task gets added finished jobs object finishes close view open job running job placed view associated task placed view task associated job separated appears running appears place progress view content provider elements
+ 
