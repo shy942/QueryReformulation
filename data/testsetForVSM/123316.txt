@@ -1,0 +1,2 @@
+undo place successfully undone redone redo undo history possible operation performs successful undo redo converse valid typically error condition having undone operation realizes redone having redone undone particular error path code default operation history determines case disposes operation prevent leak notified operation history example operation successfully redone undone listeners receive notification redo successful successful redo reported returned status object knows operation disposed history placed undo history
+ 

@@ -1,0 +1,2 @@
+simplify widget data accesses information widget element class provides convenience methods getting setting information widget display codebase changed use convenience methods
+ 

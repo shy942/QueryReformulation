@@ -1,0 +1,2 @@
+project dialog inconsequent selection behavior normally choosing option radio group clicking labels instead clicking buttons itself contents restored using undo text extra label clicking clicking label select corresponding option attached little patch select correct radio clicking extra label
+ 

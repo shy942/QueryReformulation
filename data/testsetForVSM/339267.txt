@@ -1,0 +1,2 @@
+tray dialog closes tray button pressed cheat sheet open cheat sheets open java development hello world application cheat sheet open follow steps cheat sheet java project press button project java project dialog open press button expected result shown tray actual result tray closed regression caused fix improve logic determines close tray
+ 

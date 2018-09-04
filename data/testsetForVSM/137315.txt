@@ -1,0 +1,2 @@
+dialogs doubleclickable area restore dialog size small responsive area restore original size dialogs typically pixels button tray dialog maybe adds intermediate composite button bar dialog restore size mouse listeners dive button bar doubleclick listeners
+ 

@@ -1,0 +1,2 @@
+common navigator pipelining patch contributed franck mangin
+ 

@@ -1,0 +1,2 @@
+workbench launcher splash screen blocks switch workspace dialog creates illusion hung application starting select workspace dialog comes splashscreen completely obscured user interpret application having hung
+ 

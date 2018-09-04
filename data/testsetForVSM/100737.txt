@@ -1,0 +1,2 @@
+workbench parts activated control activated non foreground perspective display outline view foreground perspective close outline view open logic example editor open outline view foreground editorpart outline tree control editor activation focus outline control reproduced
+ 

@@ -1,0 +1,2 @@
+workbench launcher drive letter treated case sensitive windows workspace listed twice list build steps reproduce open workspace tmp deleteme close open workspace tmp deleteme close open recent workspaces information really nuisance overall issue treated different windows incorrect leads false assumptions case workspace
+ 

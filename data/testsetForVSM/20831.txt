@@ -1,0 +1,2 @@
+multi page editor set active page doesn send page build design send set active page multi page editor invoke page method method overridden subclasses provide additional behavior page changes fact desired behaviour probably documented set active page
+ 

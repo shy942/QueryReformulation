@@ -1,0 +1,2 @@
+multi page editor site end forwarding post selection events inner editor doesn actually implement post selection events fired multi page selection provider implements interface
+ 

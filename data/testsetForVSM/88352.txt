@@ -1,0 +1,2 @@
+operation supports leaks contexts action handler susan different leak reported case open text editor close text editor default undo manager leaked undo redo actions handlers holding context
+ 

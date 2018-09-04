@@ -1,0 +1,2 @@
+javadoc documentation error java doc org application workbench advisor incorrectly states pre shutdown called event loop terminated windows closed use deregister things registered initialize software use pre shutdown deregister things registered initialize pre shutdown necessarily followed shutdown instance dirty documents open user prompted save changes option prompt cancel shutdown clearly user cancel pre shutdown deregisters things registered initialize things going work
+ 

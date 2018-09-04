@@ -1,0 +1,2 @@
+markers issues marker preferences dialog track pending issues revert text widgets spinner widgets integer input consistency reasons restore defaults preserve selection tables reduce height configure contents dialog
+ 

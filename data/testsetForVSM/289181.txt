@@ -1,0 +1,2 @@
+face initial size location window set menu bar displayed user agent mozilla windows windows gecko firefox build identifier application window menu bar initialize bounds breaks calls initial size initial location attached snippet shows application window menu bar initialize bounds runs correct closing window shows application window menu bar initialize bounds breaks early don initial size initial location trim widgets application window shell resize event lets initialize bounds break reproducible
+ 

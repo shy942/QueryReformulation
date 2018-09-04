@@ -1,0 +1,2 @@
+perspectives contributions view actions icons duplication reset perspectives created attachment duplicated icons breakpoins view debug perspective actions icons duplicated view default focused reset perspective menu option reproduce debug perspective select breakpoins view breakpoins focused window reset perspective reopen breakpoins view expected icons reset actual action icons duplicated attached important notes reproduced reproduced perspective steps view default perspective perspective reproduced build view using code plugin xml tags
+ 

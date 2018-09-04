@@ -1,0 +1,2 @@
+dialogs provide generic info pop dialog places user info pop dialog unfortunately dialogs written scratch share little common code utility class creating dialogs reduce code ensure common feel characteristics common dialogs background colour appear window list deactivating shell closes resizable remembers size
+ 

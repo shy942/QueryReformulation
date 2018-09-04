@@ -1,0 +1,2 @@
+undo promote ability quietly compute status operations introduced undoable operation interface allows operations compute execution status implementing workspace undo introduced notion quietly computing status means compute execute undo redo status prompting user useful cases practice object wants quietly monitor undo history purge valid notion introduced abstract workspace operation advantageous promote undoable operation background validators cases general operations particpate idea
+ 

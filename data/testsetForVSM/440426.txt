@@ -1,0 +1,2 @@
+local service process windows main menu trimmed window main menu trigger locale using locale service
+ 

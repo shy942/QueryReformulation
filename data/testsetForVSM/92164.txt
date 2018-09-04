@@ -1,0 +1,2 @@
+job manager idle handler idle easy detect job manager idle background jobs running place periodically force garbage collection investigate
+ 

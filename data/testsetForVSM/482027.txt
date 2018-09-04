@@ -1,0 +1,2 @@
+remove unnessary paint listener sash layout sash layout class adds paint listener parent composite listener added list listeners called paint event
+ 

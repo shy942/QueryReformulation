@@ -1,0 +1,2 @@
+tests improve platform tests readability using lambda expressions
+ 

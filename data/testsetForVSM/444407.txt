@@ -1,0 +1,2 @@
+workbench metadata uninformative messages related early startup error log invalid org startup extension triggers following error messages error log org bad extension specification com mycompany myplugin startup class implement org startup issues messages completely uninformative doesn value second message doesn offending class distinguish cases class doesn implement startup interface startup class specified messages externalized code
+ 

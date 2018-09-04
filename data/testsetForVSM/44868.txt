@@ -1,0 +1,2 @@
+workbench remove dependencies xerces remove depencies xerces workbench
+ 

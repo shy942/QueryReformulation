@@ -1,0 +1,2 @@
+field assist provide ability listen start end field assist events previous content assist functionality completion listener specified listen following events public void assist session ended content assist event event public void assist session started content assist event event equivalent listener content proposal listener listen events needs assist session ended order reset state maintains custom filtering java type results current event handle case user ends content assist selecting proposal public void proposal accepted content proposal proposal
+ 

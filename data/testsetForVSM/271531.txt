@@ -1,0 +1,2 @@
+button styleable properties org swt button following setters candidates styling properties set alignment button set grayed boolean pseudo selectors selected happens set alignment don notion constant write button alignment value comes string
+ 

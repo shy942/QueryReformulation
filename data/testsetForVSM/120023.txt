@@ -1,0 +1,2 @@
+hebrew characters added valid mnemonics control mnemonic assigner valid mnemonics file plugins org ide org views markers internal messages properties lists valid mnemonic characters currently inclusde lowecase english chars numbers special charts hebrew characters added string products article reassigned category legacy project uncategorized
+ 

@@ -1,0 +1,2 @@
+status handling workbench status dialog manager dialog closure fix workbench status dialog shell package scope method listeners mechanism added use instead shell method
+ 

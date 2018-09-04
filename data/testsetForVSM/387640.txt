@@ -1,0 +1,2 @@
+use selector restrictions tab item implementation currently allow rules stack tab item color blue tab item element doesn implement parent putting selector spy means select tab items children stack patch forthcoming
+ 

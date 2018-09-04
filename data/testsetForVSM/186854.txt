@@ -1,0 +1,2 @@
+contributions separator visible false visible defining menu contribution separators used groupmarkers visible group markers example menu label mnemonic separator rcp mail separator visible false separator command command rcp mail open icon icons gif label command separator rcp mail separator visible false separator command command rcp mail open icon icons gif label command separator rcp mail separator visible false separator menu
+ 

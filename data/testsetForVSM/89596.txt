@@ -1,0 +1,2 @@
+editor mgmt editor drop handler registered different places workbook editors action internal handler editor area helper registered care command editor area helper appears unnecessary caused
+ 

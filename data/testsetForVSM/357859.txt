@@ -1,0 +1,2 @@
+resetting saved perspective destroys detached windows detach view save perspective window reset perspective detached view gone window close perspective reopen saved perspective detached window comes
+ 

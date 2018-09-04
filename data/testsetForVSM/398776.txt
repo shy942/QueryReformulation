@@ -1,0 +1,2 @@
+regression workbench starts startup plug ins fully initialized works workbench starts startup plug ins workbench start plugins fully initialized regression cause bad things reported case
+ 

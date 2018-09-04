@@ -1,0 +1,2 @@
+dialogs title dialog file dialog class linux solaris motif title dialog confirms following operations select menu item file file advanced button link file file browse button
+ 

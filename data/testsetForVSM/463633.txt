@@ -1,0 +1,2 @@
+tar file leaks file handles small files created attachment invalid tar using example archive file manipulations tar file called tiny file file handle leaked file deleted windows tar input stream constructor throw exception case input stream closed fact reproduce windows import archive file select tiny file tar extension attached wizard reports file invalid cancel file windows file explorer fails file handle held
+ 

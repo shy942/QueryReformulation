@@ -1,0 +1,2 @@
+status handling handling jobs statuses needs polishing possible pass status adapters property progress constants impossible errors user user currently possible errors using status adapter trigger
+ 

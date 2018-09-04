@@ -1,0 +1,2 @@
+workbench memento method enumerate child nodes build identifier great method children enumerates children node public memento children final list memento result linked list memento nodes final node list nodes element child nodes final int size nodes length size return memento extract node given type int size final node node nodes item node instanceof element result enhanced memento factory element node return result array memento result size reproducible
+ 

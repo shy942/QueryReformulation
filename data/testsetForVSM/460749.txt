@@ -1,0 +1,2 @@
+open resources dialog shows multiple resources hierarchical project explorer shows mars link editor doesn work project explorer choose hierarchical projects presentation option reproduce import maven project submodule webtools jsdt project explorer activate link editor option choose projects presentation hierarchical option open file example atl shift tree unfold
+ 

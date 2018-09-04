@@ -1,0 +1,2 @@
+forms expandable composite calculate size properly flag flags used use text client control exclusively size calculated correctly leaving ugly gaps pixels size toggle problematic calculation toggle null height height size math max size tsize size title label size style used adds extra size toggle reason
+ 

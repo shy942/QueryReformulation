@@ -1,0 +1,2 @@
+compatibility tool bars duplicated main workbench window open functional execution perspective jubula file restart duplicated tool items use window window spawn workaround
+ 

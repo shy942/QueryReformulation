@@ -1,0 +1,2 @@
+toolbars items set view form toolbar items placed view form instead view form slot set center set null toolbar items
+ 

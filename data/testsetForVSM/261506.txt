@@ -1,0 +1,2 @@
+common navigator navigator service use interfaces navigator service class use interface function properly patch attached
+ 

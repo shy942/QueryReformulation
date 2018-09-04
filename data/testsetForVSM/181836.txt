@@ -1,0 +1,2 @@
+commands command contribution exception use status manager command contribution exception logs workbench log directly example throws invocation target exception catch roll execution exception gets logged catch execution exception workbench plugin log failed execute item hard use status manager
+ 

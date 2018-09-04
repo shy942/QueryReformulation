@@ -1,0 +1,2 @@
+wizards perspectives menu separators shortcuts build debug perspective open file menu separators project
+ 

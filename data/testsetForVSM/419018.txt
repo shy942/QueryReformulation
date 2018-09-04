@@ -1,0 +1,2 @@
+provide support defining font color definitions extension requirement added extra properties font font category allow defining font definitions currently process direction having widget proper style using engine require modification engine support opposite direction reviewing defined styles proper widget currently font color definitions defined org themes extension point use label description question support style sheet globalization strings
+ 

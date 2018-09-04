@@ -1,0 +1,2 @@
+double java editor ruler broken double java editor ruler works breakpoints added caused fixing fixed
+ 

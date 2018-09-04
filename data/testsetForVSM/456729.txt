@@ -1,0 +1,2 @@
+customize perspective dialog tree manager cpd package customize perspective dialog huge maintainable moved tree manager java used separated package inner classes moved parent class fix https git org
+ 

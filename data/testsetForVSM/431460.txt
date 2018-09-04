@@ -1,0 +1,2 @@
+improve model assembler error messages currently logging information model assembler provide class method warning occurred makes hard people place breakpoint code issues
+ 

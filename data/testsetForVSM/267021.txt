@@ -1,0 +1,2 @@
+data binding used locally errors org core databinding created attachment remove unused methods example description resource path location type method listener object native property listener type delegating list property null list property used locally delegating list property java org core databinding src org core databinding property list java caused fix
+ 

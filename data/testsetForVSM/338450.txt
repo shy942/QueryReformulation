@@ -1,0 +1,2 @@
+compatibility list recently opened editors persisted workbench restarts list recently opened editors file menu needs persisted restarts
+ 

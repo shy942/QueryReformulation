@@ -1,0 +1,2 @@
+support resolving hrefs workbench use cases resource href needs resolved manipulated opened shown browser task dependent plugged added methods workbench resolve unresolve takes string href returns resolved according active later takes returns original href matches base changes backward compatible abstract default implementations methods implementation default implements methods non trivial way release attached patch intro needs order embed documents inside intro pages
+ 

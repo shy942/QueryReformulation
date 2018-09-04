@@ -1,0 +1,2 @@
+field assist simple content proposal provider filters exact matches build steps reproduce trigger content assist field uses org jface fieldassist auto complete field simple content proposal provider choices foo foobar typing foo field remove list proposals leaving foobar selected user presses enter key foobar placed field instead foo information fix proposals length contents length proposals length contents length
+ 

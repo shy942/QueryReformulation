@@ -1,0 +1,2 @@
+dialogs dialogs open secondary monitor using dual monitors dual monitors equal size displayed monitors dialogs preferences open secondary monitor instead primary monitor reposition primary monitor time open secondary monitor setup primary monitor secondary right dialogs preferences search save modified resources refactor refactor rename refactoring extract interface save workspace launcher generate javadoc open resource externalize strings ones don replace open file debug clean
+ 

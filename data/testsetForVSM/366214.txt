@@ -1,0 +1,2 @@
+compatibility support abstract trim widgets code added support workbench widget code support abstract workbench trim widget class specialized composite int int method initially created clone installed started noticed work item trim component missing errors log eric indicated knew issue probably
+ 

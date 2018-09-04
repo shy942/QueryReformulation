@@ -1,0 +1,2 @@
+activity mgmt activities allow default enablement controlled product definition
+ 

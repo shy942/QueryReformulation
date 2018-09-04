@@ -1,0 +1,2 @@
+build project key binding works juno build identifier custom key binding build project set set windows work current window project browser file project selected work text editor file project pressed hotkey works reproducible steps reproduce workspace project makefile project hello world likey project type failed tried java perspective windows preferences general keys set binding build project usually set ctrl unbind build keybindings tried failed open cpp text editor text editor focus press build project hotkey happens
+ 

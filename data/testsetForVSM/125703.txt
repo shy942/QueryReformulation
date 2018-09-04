@@ -1,0 +1,2 @@
+commands handlers handlers registered java editor ctrl arrow key combinations work java editor work standard text editor importing binary plug ins build development workspace fixes assume key binding code
+ 

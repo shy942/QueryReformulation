@@ -1,0 +1,2 @@
+dialogs filtered items selection dialog immediately remove history match filtered items selection dialog immediately remove remaining history match workspace java project navigate open type array list navigate open type abstract list close editors slow search adding thread sleep beginning content provider navigate open type slowly type arx abstract list gets correctly removed arx array list removed wrongly stays
+ 

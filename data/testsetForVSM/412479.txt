@@ -1,0 +1,2 @@
+tool bar manager renderer doesn care orientation changing tool bar cache tool bar manager renderer createtoolbar tool bar model tool bar manager cache map orientation tool bar changed dynamically user drag toolbars trim bar sides tool bar manager time orientation calculated applied properly tool bar manager renderer orientation applied cached used result user dragged toolbar main trim bar left sided trim bar toolbar rendered tool bar manager takes item style constructor way modify later cache invalidation algorithm provided
+ 

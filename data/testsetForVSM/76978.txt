@@ -1,0 +1,2 @@
+error handling workbench plugin logs err methods log err updated use log logs given message platform log exception hand log string throwable instead status object hand log string status instead convenience method internal use workbench called outside workbench param message high level message describing happened public static void log string message default log log status util status status message null err println message log status allow plugin information recorded
+ 

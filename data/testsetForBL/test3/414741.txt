@@ -1,0 +1,2 @@
+toolbar control tool bar throws created attachment fix use tool bar control toolbar extension point menu contribution popups false location toolbar mytoolbar control class control control control menu contribution compatibility workbench window control contribution provides controls trim bar don understand parent instanceof trim bar parent parent parent patch
+ 

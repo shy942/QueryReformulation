@@ -1,0 +1,2 @@
+editor mgmt affected editors closed executing project close project closed close resource action method takes care dirty editors associated project closed asking user saved dialog user accepts editors saved closed dirty editors left open closed deleting project dirty non dirty editors associated project deleted closed
+ 

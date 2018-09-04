@@ -1,0 +1,2 @@
+menu view detached window applicable views git repositories view main window context menu contains views history properties git repositories view detached main window instances context menu applicable views
+ 

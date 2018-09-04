@@ -1,0 +1,2 @@
+wizards wizard dialog shell size keeps growing persist dialog size apply patch wizard currently user hits appear tray courtesy tray dialog tray figured overall dialog size persist dialog size time open dialog size dialog plus tray user hits helps closes dialog grow repro steps open apply patch wizard hit close wizard reopen apply patch wizard note size
+ 

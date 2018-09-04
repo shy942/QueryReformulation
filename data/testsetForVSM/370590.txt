@@ -1,0 +1,2 @@
+compatibility buttons inside macro explorer disabled using build juno project paste code define define int main int hover return hover main hover window open macro explorer buttons disabled window works correctly indigo
+ 

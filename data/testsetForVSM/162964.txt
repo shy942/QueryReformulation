@@ -1,0 +1,2 @@
+undo resource undo works navigator active build undo resource changes works navigator view focus feels really subtle wondering barrier people discovering using example file focus immediately given editor don undo option unless navigator likewise user happens switch outline view getting frustrated undo stops working don really right answer realize separate parts different undo stacks maybe active undo stack stack previous undo stack active don implementation details bit fuzzy feels user navigator undo work
+ 

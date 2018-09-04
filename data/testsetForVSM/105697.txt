@@ -1,0 +1,2 @@
+undo operation history event distinguish canceled event failed event operation history event includes notification sent operation complete status client distinguish operation cancelled operation non status problematic action handlers prune history non operation occurs history pruned user cancels undo action handlers tell difference particular instance reasonable observer originate undo redo decide prune history non operation attempt status returned caller
+ 

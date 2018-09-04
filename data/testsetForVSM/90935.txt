@@ -1,0 +1,2 @@
+feature details dialog resize strange open feature details dialog notice large area grey resize vertically notice feature list gets smaller large grey area remains suggest grey area eliminated completely failing resize
+ 

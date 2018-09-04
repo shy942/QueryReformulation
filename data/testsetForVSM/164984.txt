@@ -1,0 +1,2 @@
+face default tool tip shouldn abstract values accessed using getter setter declare abstract
+ 

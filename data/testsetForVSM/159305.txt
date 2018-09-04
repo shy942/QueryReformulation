@@ -1,0 +1,2 @@
+undo operation approval runs twice non linear undo using direct non linear undo undo operation undoable operation operation approval runs twice private undo method causing double prompting apps using non linear undo
+ 

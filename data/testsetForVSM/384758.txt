@@ -1,0 +1,2 @@
+contexts restrict key bindings visibility anymore plugin uses contexts org contexts extension point restrict key bindings specific view context activated deactivated programmatically using context service activate context context service deactivate context methods works key bindings applied correctly view activated using compatibility layer activating deactivating context effect key bindings applied restricted view anymore
+ 

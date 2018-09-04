@@ -1,0 +1,2 @@
+preferences preference pages content types existing content type infrastructure supports user added file associations custom encoding setting exposed end user probably preference page hacked simple content type preference page based existing file editors preference page testing easily idea requested code worthy reading http dev org viewcvs index cgi echeckout platform core home downloads html screenshot
+ 

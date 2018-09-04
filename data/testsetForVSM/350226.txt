@@ -1,0 +1,2 @@
+bad initial workbench window location start workbench window showed left corner taskbar left
+ 

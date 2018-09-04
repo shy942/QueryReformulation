@@ -1,0 +1,2 @@
+error handling workbench error handler hides multi status details info severity running app non helpful dialog title vague message assumed status simply vague app code eventually determined workbench error handler doesn handle multi status objects severity error opens message dialog uses message multi status helpful info children status nice kind details area status handler dialogs going reimplement status handler
+ 

@@ -1,0 +1,2 @@
+contributions widgets menu manager set image descriptor method needed currently assign image menu item contains submenu way override menu manager methods inconsistent
+ 

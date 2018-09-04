@@ -1,0 +1,2 @@
+undo inconsistent button labeling prompt undoing non local changes dialog yes discard undo cancel discard undo cancel
+ 

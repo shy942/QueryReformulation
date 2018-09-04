@@ -1,0 +1,2 @@
+linkage error dynamic tool bar contribution item cause workbench startup fail org mylyn tasks bundle contributes control trim pre extension point org menus menu contribution location toolbar org trim command toolbar org mylyn tasks trim container control class org mylyn internal tasks task trim widget org mylyn tasks trim control toolbar menu contribution extension loading task trim widget class fails entire workbench fails start stack trace
+ 

@@ -1,0 +1,2 @@
+key bindings registry general keys setting saved restored using emacs key settings editing standard settings set window open editor drop emacs uses end editting text default editing text editor drop action preferences general keys edit window open editor drop entry remove editor drop entry leaving alternate entry action hit apply works expected quiting restarting window open editor drop binding thought related using data option gave results case saved restored
+ 

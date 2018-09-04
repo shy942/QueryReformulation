@@ -1,0 +1,2 @@
+fix compiler warnings org jface resource caused moving face java fix compiler warnings package org jface resource caused moving java
+ 

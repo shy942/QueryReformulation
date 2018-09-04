@@ -1,0 +1,2 @@
+keybindings key sequence pin editor doesn work pin editor command assigned key sequence steps reproduce open window preferences choose general keys category list modify tab choose category window pin editor dropdown menus key sequence type key sequence example alt ctrl alt shift box box set windows bind key sequence command dismiss preferences open editor pin using key sequence assigned earlier happens tried using keys experimental preferences page didn difference key sequence wouldn execute command
+ 

@@ -1,0 +1,2 @@
+progress deferred tree content manager update listener misleading deferred tree content manager introduces update complete listener method really operating set update complete listener method multiple listeners simply replace listener time changed listeners listener list possible break clients inadvertantly added listener multiple times bitten trying implement strategy knowing particular model element fetching hoped use listener purpose adding fetch course caused timing problems recently added listener called regardless fetch completed
+ 

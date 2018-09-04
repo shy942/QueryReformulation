@@ -1,0 +1,2 @@
+invisible properties view update selection exception happened perspective properties view visible properties view work workbench selection changed view invisible probably caused fix
+ 

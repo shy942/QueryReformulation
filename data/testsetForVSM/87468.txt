@@ -1,0 +1,2 @@
+improve workbench handling exceptions current initialization code handle exceptions thrown views editors requests following exception thrown method workbench invalid state workbench parts added workbench page returned workbench reference fully initialized logged exceptions stack trace wrapper exception core exception init exception stack trace specific cause logged code path initializing exceptions open modal dialogs exceptions initialization cause error open exceptions shutdown logged interrupting user
+ 

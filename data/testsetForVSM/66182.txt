@@ -1,0 +1,2 @@
+key bindings multi stroke keyboard shortcut popup swallows keys preferences workbench keys choose emacs configuration advanced tab multi stroke keyboard shortcuts edit file press ctrl popup shows press ctrl happens multi stroke keybindings
+ 

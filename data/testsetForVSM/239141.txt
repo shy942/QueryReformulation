@@ -1,0 +1,2 @@
+mac application menu hook example needed code snippet implements equivalent application menu hook carbon allows application behave native application carbon workbench called carbon enhancer java needed cocoa file contains example carbon application menu hook carbon
+ 

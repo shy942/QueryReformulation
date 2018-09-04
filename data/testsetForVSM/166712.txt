@@ -1,0 +1,2 @@
+data binding fix broke suites code checked broke suites observable value observable value package different plug ins observable value package private results illegal access exception running suites suites right
+ 

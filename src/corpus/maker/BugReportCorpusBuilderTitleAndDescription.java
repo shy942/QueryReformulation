@@ -27,7 +27,7 @@ public class BugReportCorpusBuilderTitleAndDescription {
 	public BugReportCorpusBuilderTitleAndDescription()
 	{
 		this.bugFolder="E:\\PhD\\Data\\BugDataExtracted\\";
-		this.bugPPFolder="E:\\PhD\\Data\\BugDataNew\\";
+		this.bugPPFolder="E:\\PhD\\Data\\BugData\\";
 		this.noOfBugReports=noOfBugReports;
 	}
 	protected void createPreprocessedRepo()

@@ -1,0 +1,2 @@
+undo define consistent efficient validation strategy undoable workspace operations global undo redo story high potential unvalid undo objects sitting stack objects hold lot memory rid soon possible checking validation state resource events expensive slow operations save build alternativly workbench shedule background job nth resource delta checks workspace undo object valid
+ 

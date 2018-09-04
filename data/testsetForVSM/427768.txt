@@ -1,0 +1,2 @@
+common navigator content extension shows nested projects workaround resource supporting nested projects nice resource filters allow visualize nested projects navigator optional default similarly working sets view pitfalls example team providers compare tree noticed convenient implementation use cases
+ 

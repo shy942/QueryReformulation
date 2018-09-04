@@ -1,0 +1,2 @@
+previous editor list updated active editor changes having focus window navigation previous editor list updated current editor changes editor focus multiple editors open switch view focus stepping search results buttons search view drop frame debug view select open type type hierarchy view press ctrl switch editor background element list editor focus expected active editor
+ 

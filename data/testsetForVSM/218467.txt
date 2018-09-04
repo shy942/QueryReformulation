@@ -1,0 +1,2 @@
+undo tighten undoable operation spec abstract operation discourage prevent null labels creates composite commands null labels shorten text operation label invoked update
+ 

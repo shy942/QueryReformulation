@@ -1,0 +1,2 @@
+key bindings bindings duplicated emacs configuration certain commands duplicate binding emacs configuration necessary emacs configuration inherits bindings standard configuration ones noticed activate editor menu view menu
+ 

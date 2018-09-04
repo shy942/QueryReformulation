@@ -1,0 +1,2 @@
+workbench mirrored correctly using option build identifier workbench mirrored correctly using option bidi language pack installed reproducible steps reproduce install arabic pack open option expected result layout workbench mirrored refer description orientation cases usage option actual result layout workbench mode internal windows preference window mirrored correctly attachment
+ 

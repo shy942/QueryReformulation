@@ -1,0 +1,2 @@
+remove opaque rendered model classes opaque classes differentiate treated opaque face based renderers handled class
+ 

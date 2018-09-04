@@ -1,0 +1,2 @@
+key bindings doc key bindings fail work text editor key binding appears created doesn activate editor plugin based text editor declare commands key bindings plugin xml actions assign definition matching commands menus sub class basic text editor action contributor commands key bindings appear key bindings preference page actions appear menus work normally menu entries action label correct key binding action ctrl actually pressing key sequence declare actions plugin xml action set key sequences work suitable workaround access active editor
+ 

@@ -1,0 +1,2 @@
+renderer settting visible property false toolbar ignore renderer set visible property tool bar item false stays visible toolbar
+ 

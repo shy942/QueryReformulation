@@ -1,0 +1,2 @@
+contexts performance slow cursor navigation text fields gtk particular install build cursor navigation text field extremely slow steps open dialog alternatively open preference dialog team patch wizard text field enter text characters press hold keys expected caret entered text actual cursor visibly position releasing key plug delay notes keyboard repeat rate default works near slowness text fields text editors applications behavior quite bad caret placed reliably way reproduce example
+ 

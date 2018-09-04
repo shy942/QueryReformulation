@@ -1,0 +1,2 @@
+view editor folders color preferences don work view editor folders color preferences don work preview shows rendering tabs used workspace window changing colors doesn affect preview
+ 

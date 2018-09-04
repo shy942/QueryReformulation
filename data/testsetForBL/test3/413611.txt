@@ -1,0 +1,2 @@
+reduce compiler warnings org jface bindings caused moving face java fix compiler warnings package org jface bindings caused moving java
+ 

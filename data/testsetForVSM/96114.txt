@@ -1,0 +1,2 @@
+remove dependency plugin registry remove dependency plugin registry favour extension registry trivial migration
+ 

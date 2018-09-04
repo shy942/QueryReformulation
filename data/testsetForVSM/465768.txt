@@ -1,0 +1,2 @@
+adding working set auto select creating importing project allows select working sets project clicking select button leads dialog configure working sets choose working set chances project set set automatically checked behaviour working sets automatically selected list
+ 

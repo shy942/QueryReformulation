@@ -1,0 +1,2 @@
+starts opening workspace launcher scenario don use data command parameter switch workspace file switch workspace different location restart current behaviour starts showing workspace launcher default workspace location used workspace later changed file switch workspace default workspace location used restart build previous build works correctly errors log file
+ 

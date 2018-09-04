@@ -1,0 +1,2 @@
+update perspective switcher use inject register events currently perspective switcher registers manually events switch inject similar https git org platform platform git commit addons
+ 

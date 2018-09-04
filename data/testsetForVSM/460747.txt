@@ -1,0 +1,2 @@
+perspective switching appropriately layout shared components min max addon created attachment runs min max addon switching perspectives broken bogus code min max addon calls shell layout true true forces relayout complete shell children code question subscribe topic selected element win shell layout true true called async exec enforce layout perspective switch perspective stack renderer attached reproduce running min max addon
+ 

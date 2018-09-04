@@ -1,0 +1,2 @@
+contributions status manager creates groups time org jface action statuslinemanager currently creates entries control method code wishing contribute controls statuslinemanager action bars method workbench advisor executes control created exceptions thrown groups controls appended exist code group marker group marker group marker moved control constructor statuslinemanager patch follow
+ 

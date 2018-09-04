@@ -1,0 +1,2 @@
+undo simple example needed use undo infrastructure showing adapt existing undo text complicated scenarios simple example demonstrates undo visual domain erich suggested box editor box resize perform undo nice domain grow time demonstrate things selective undo absolute relative representation command idea modify existing support having separate undo exmaple allow user focus simply undo
+ 

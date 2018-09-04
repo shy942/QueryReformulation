@@ -1,0 +1,2 @@
+handled tool item toolbar defined command tooltip leads element type handled tool item created child toolbar leads java lang null pointer exception org workbench renderers swt handled contribution item tool tip text handled contribution item java org workbench renderers swt handled contribution item update tool item handled contribution item java org workbench renderers swt handled contribution item update handled contribution item java unless xml respective entry features tooltip
+ 

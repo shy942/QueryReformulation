@@ -1,0 +1,2 @@
+commands content assist command adapter set enabled update handler activation content assist command adapter set enabled enable disable command handlers mac reproduce open replace dialog text editor toggle regular expressions checkbox lightbulb field correctly added removed availability ctrl space open content assist proposals popup updated field lost focus reproducible windows probably field loses focus windows checkbox toggled
+ 

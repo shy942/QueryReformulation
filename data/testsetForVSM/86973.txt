@@ -1,0 +1,2 @@
+dialogs open resource dialog accept pattern matching folder path open resource dialog currently accepts patterns file plugin match patterns folder path expect pattern jdt plugin xml filters folders list folders matches sub pattern jdt org jdt org jdt tests
+ 

@@ -1,0 +1,2 @@
+dialogs list selection dialog resizable default open editor leave dirty close save resources dialog resizable dialogs resizable makes easier users diffent font sizes using long names list selection dialog default
+ 

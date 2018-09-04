@@ -1,0 +1,2 @@
+toolbars render location perspective added perspective workbench verifying steps reproduce start close perspectives restart open default perspective java perspective resulting layout toolbars unpredictable layout perspective chooser order differs correct order restarting second time renders toolbars correct location opening workbench window reproduced windows bit bit mac bit
+ 

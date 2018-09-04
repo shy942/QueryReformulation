@@ -1,0 +1,2 @@
+view mgmt view menu shown items invisible build outline view open java editor view toolbar contributions view menu contributions view menu triangle shows correctly close editor contributions gone triangle shows triangle disappears
+ 

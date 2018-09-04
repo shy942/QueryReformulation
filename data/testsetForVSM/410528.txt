@@ -1,0 +1,2 @@
+common navigator project explorer use viewer label provider build content description currently project explorer update title sets content description displayed view tree user uses context command tree root attempting adapt viewer input workbench adapter using adapter build label resulting label used content description successful content description simply set result calling string input appropriate way build content description use available label provider especially purpose workbench adapter used universal label provider directly viewer
+ 

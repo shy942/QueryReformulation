@@ -81,6 +81,7 @@ public class BugExtractorTitleAndDescription {
 					// now saving the bug report
 					ContentWriter.writeContent(outFile, xmlcontent);
 					System.out.println("Saved:" + BugID);
+					System.out.println(xmlcontent);
 
 				}
 

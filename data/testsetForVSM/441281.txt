@@ -1,0 +1,2 @@
+workbench use logger view registry instead workbench plugin log
+ 

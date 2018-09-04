@@ -1,0 +1,2 @@
+face provide possibility subclasses column visible viewer row currently decided checking width makes nebula grid fail
+ 

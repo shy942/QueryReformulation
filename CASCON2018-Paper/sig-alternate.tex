@@ -767,8 +767,8 @@ This is the final part of our proposed approach. In this part two sets of predic
 %\end{figure*}
 
 \section{Experiment and Discussion}
-\subsection {Big Data Set}
-We work with Eclipse data set. We downloaed a git based Eclipse project from git repository \cite{eclipseGit}. We work with Eclipse Platform UI project. Currently it contains 6085 number of Java source codes. These source codes are contained in our source code repository. On the other hand, currently Eclipse Platform UI project contains more than 10K number of bugs where we only work with the bugs which are fixed. We create quires from each bugs considering their title and short summary.
+%\subsection {Big Data Set}
+%We work with Eclipse data set. We downloaed a git based Eclipse project from git repository \cite{eclipseGit}. We work with Eclipse Platform UI project. Currently it contains 6085 number of Java source codes. These source codes are contained in our source code repository. On the other hand, currently Eclipse Platform UI project contains more than 10K number of bugs where we only work with the bugs which are fixed. We create quires from each bugs considering their title and short summary.
 
 \begin{table}[!t]
 %% increase table row spacing, adjust to taste
@@ -795,8 +795,12 @@ We work with Eclipse data set. We downloaed a git based Eclipse project from git
 \end{tabular}}
 \end{table}
 \subsection{Data Collection}
-We have two parts in our corpus. One is source code files downloaded as git based project and another part is bug reports collection. All bug reports are collected from \textit{Bugzilla}. In order to obtain the links between previously fixed bugs and source code files, we analyze git project commit message. We ran through all commit messages and track Bug IDs associated with examined source code files.
+We work with Eclipse data set. We downloaed a git based Eclipse project from git repository \cite{eclipseGit}. We work with Eclipse Platform UI project. Currently it contains 6085 number of Java source codes. These source codes are contained in our source code repository. On the other hand, currently Eclipse Platform UI project contains more than 10K number of bugs where we only work with the bugs which are fixed. We create quires from each bugs considering their title and short summary.
+%We have two parts in our corpus. One is source code files downloaded as git based project and another part is bug reports collection. 
+All bug reports are collected from \textit{Bugzilla}. In order to obtain the links between previously fixed bugs and source code files, we analyze git project commit message. We ran through all commit messages and track Bug IDs associated with examined source code files.
 
+\subsection{Cross Validation}
+We divide our query data into k number of sets. Typically k is 10, but we work with k =5 and k=10. Each set contains a training set and tesing set. Training data is used to create mapping between keywords extracted from bug reports and source code files. 10-fold-cross validation data is presented in table and table.
 
 \subsection{Evaluation Metrices}
 \textbf{Ton N-Rank:} It represents the number of bug, for which their associated files are returned in a ranked list. Here, \textit{N} may be 1, 5 or 10. We assume that if at least one associated file is presented in the resulted ranked list, then the given bug is located.
@@ -806,112 +810,168 @@ The reciprocal rank of a query is the multiplicative inverse of the rank of the 
 \begin{equation}
 MRR=\frac{1}{\left | Q \right |}\sum_{i=1}^{\left | Q \right |}\frac{1}{rank_{i}}
 \end{equation}
+
 \textbf{MAP(Mean Average Precision)}
 Mean average precision for a set of queries is the mean of the average precision scores for each query.
 \begin{equation}
 MAP=\frac{\sum_{i=1}^{Q}AveP_{i}}{Q}
 \end{equation}
+
+\textbf{Wilcoxon signed-rank test}
+The Wilcoxon signed-rank test is a non-parametric statistical hypothesis test used to compare two related samples, matched samples, or repeated measurements on a single sample to assess whether their population mean ranks differ.
+\begin{table*}[]
+	\centering
+	\caption{Performance of Bugloactor and proposed technique (rVSM+Simi+Co-Occerence)}
+	\label{tab:T2}
+	\begin{tabular}{@{}|c|c|c|c|c|c|c|@{}}
+		\toprule
+		%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
+		\begin{tabular}[c]{@{}c@{}}\# Test  \\ Case \\ \end{tabular} & \begin{tabular}[c]{@{}c@{}}Bug\\Localization \\ Technique\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 1\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 5\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 10\\ \%\end{tabular} & MRR & MAP \\ \midrule
+		\multirow{2}{*}{1}  &BugLocator     &  8.89& 24.55&34.32& 0.23 & 0.28 \\ 
+		& rVSM+Simi+ Co-Score                                                                                                                                               & 14.50                                               & 34.91                                            & 45.86                                                &   0.33  & 0.41    \\ \midrule
+		\multirow{2}{*}{2}  &BugLocator     &  9.9& 24.62&34.53& 0.24 & 0.29 \\ 
+		& rVSM+Simi+ Co-Score                                                                      & 12.62                                               & 39.04                                              & 49.85                                             &   0.37  &   0.42  \\ \midrule
+		\multirow{2}{*}{3}  &BugLocator     &  7.50& 21.32&30.63& 0.21 & 0.24 \\ 
+		& rVSM+Simi+ Co-Score                                                                     & 12.01                                            & 33.93                                            & 48.35                                             &   0.34  &  0.38   \\ \midrule
+	\multirow{2}{*}{4}  &BugLocator     &  8.1& 21.02&29.13& 0.20 & 0.24 \\ 
+	& rVSM+Simi+ Co-Score                                                                    & 15.02                       & 33.63                       & 48.65                                               &  0.33   &  0.42  \\ \midrule 
+	\multirow{2}{*}{5}  &BugLocator     &  9.6& 30.63&42.94& 0.29 & 0.32 \\ 
+	& rVSM+Simi+ Co-Score                                                                    & 17.71                                                 & 43.84                                                & 56.45                                                  &  0.41   & 0.50     \\ \midrule
+	\multirow{2}{*}{6}  &BugLocator     &  10.21& 31.53&43.54& 0.30 & 0.33 \\ 
+	& rVSM+Simi+ Co-Score
+		&22.22 &
+		48.65 &
+		58.86 & 0.45 &
+		0.58     \\  \midrule
+		\multirow{2}{*}{7}  &BugLocator     &  9.61& 30.33&40.84& 0.28 & 0.31 \\ 
+		& rVSM+Simi+ Co-Score
+		&18.62 &
+		47.15 &
+		59.76 & 0.44 &
+		0.53     \\  \midrule
+	\multirow{2}{*}{8}  &BugLocator     &  8.4& 26.13&39.94& 0.26 & 0.28 \\ 
+	& rVSM+Simi+ Co-Score
+		&18.92 &
+		46.55 &
+		60.36 & 0.44 &
+		0.53    \\  \midrule
+	\multirow{2}{*}{9}  &BugLocator     &  11.11& 28.83&40.24& 0.27 & 0.32 \\ 
+	& rVSM+Simi+ Co-Score
+		&19.82 &
+		42.94 &
+		56.16 & 0.40 &
+		0.52    \\  \midrule
+		\multirow{2}{*}{10}  &BugLocator     &  6.6& 20.72&27.93& 0.19 & 0.21 \\ 
+		& rVSM+Simi+ Co-Score
+		&9.91 &
+		33.33 &
+		45.65 & 0.31 &
+		0.33    \\  \midrule
+		\multirow{2}{*}{Average}       &BugLocator     &  8.99\%& 25.87\%&36.40\%& 0.25 & 0.28  \\ 
+		& rVSM+Simi+ Co-Score                                                                                                                         & 16.13\%                                                 & 40.40\%                                                 & 52.94\%                                                  &   0.38  &  0.46    \\ \bottomrule
+		
+	\end{tabular}
+\end{table*}
 \subsection{Experimental Results}
-\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-\caption{The Performance for Top 1, Top 5 and Top 10 for TF-IDF based approach}
-\label{tab:EXP1}
-\centering
-\scalebox{1.0}{%
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-\begin{tabular}{|c|l|l||l|l||l|l|}
-
-%\textbf{Month} & $\overline{\textbf{CRD}}$ \\
-
-\hline
-\textbf{Year}  &  \textbf{\#Bugs} & \textbf{Top 1} & \textbf{Top 5} & \textbf{Top 10} & \textbf{MRR}\\
-\hline
-{2006} & {1159} & 16.37\% & 56\% & 62\% & 0.55\\
-\hline
-{2011} & {377} & 44\% & 54\% & 58\% & 0.83\\
-\hline
-{2012} & {404} & 35\% & 55\% & 62\% & 0.69\\
-\hline
-{2013} & {507} &26\% & 54\% & 60\% & 0.63\\
-\hline
-{Overall}&{2447}&{30.34\%}&{54.75\%}&{60.5\%}&{0.675}\\
-\hline
-%\multirow{ 2}{*}{2} & \multirow{ 2}{*}{Editor Outline} & editor xml view outlin content\\
-%&& action elem open docum associ\\
-
-\end{tabular}}
-\end{table}
-
-To compare our proposed approach with two existing bug localization techniques, we implement both existing techniques. The results are presented in table \ref{tab:EXP1}, which is experimented for TF-IDF based bug localization approach.
-\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-\caption{The Performance for Top 1, Top 5 and Top 10 in our proposed approach}
-\label{tab:EXP3}
-\centering
-\scalebox{1.0}{%
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-\begin{tabular}{|c|l|l||l|l||l|l|}
-
-%\textbf{Month} & $\overline{\textbf{CRD}}$ \\
-
-\hline
-\textbf{\#Bugs} & \textbf{Top 1} & \textbf{Top 5} & \textbf{Top 10} & \textbf{MRR}\\
-\hline
-{100} & {23.40\%} & 51.06\% & 61.70\% & 0.62\\
-\hline
- {500} & 19.08\% & 35.26\% & 48.55\% & 0.47\\
-\hline
-{1000} & \% & \% & \% & \\
-\hline
-%\multirow{ 2}{*}{2} & \multirow{ 2}{*}{Editor Outline} & editor xml view outlin content\\
-%&& action elem open docum associ\\
-
-\end{tabular}}
-\end{table}
+%\begin{table}[!t]
+%%% increase table row spacing, adjust to taste
+%% if using array.sty, it might be a good idea to tweak the value of
+%% \extrarowheight as needed to properly center the text within the cells
+%\caption{The Performance for Top 1, Top 5 and Top 10 for TF-IDF based approach}
+%\label{tab:EXP1}
+%\centering
+%\scalebox{1.0}{%
+%%% Some packages, such as MDW tools, offer better commands for making tables
+%%% than the plain LaTeX2e tabular which is used here.
+%\begin{tabular}{|c|l|l||l|l||l|l|}
+%
+%%\textbf{Month} & $\overline{\textbf{CRD}}$ \\
+%
+%\hline
+%\textbf{Year}  &  \textbf{\#Bugs} & \textbf{Top 1} & \textbf{Top 5} & \textbf{Top 10} & \textbf{MRR}\\
+%\hline
+%{2006} & {1159} & 16.37\% & 56\% & 62\% & 0.55\\
+%\hline
+%{2011} & {377} & 44\% & 54\% & 58\% & 0.83\\
+%\hline
+%{2012} & {404} & 35\% & 55\% & 62\% & 0.69\\
+%\hline
+%{2013} & {507} &26\% & 54\% & 60\% & 0.63\\
+%\hline
+%{Overall}&{2447}&{30.34\%}&{54.75\%}&{60.5\%}&{0.675}\\
+%\hline
+%%\multirow{ 2}{*}{2} & \multirow{ 2}{*}{Editor Outline} & editor xml view outlin content\\
+%%&& action elem open docum associ\\
+%
+%\end{tabular}}
+%\end{table}
+%
+%To compare our proposed approach with two existing bug localization techniques, we implement both existing techniques. The results are presented in table \ref{tab:EXP1}, which is experimented for TF-IDF based bug localization approach.
+%\begin{table}[!t]
+%%% increase table row spacing, adjust to taste
+%% if using array.sty, it might be a good idea to tweak the value of
+%% \extrarowheight as needed to properly center the text within the cells
+%\caption{The Performance for Top 1, Top 5 and Top 10 in our proposed approach}
+%\label{tab:EXP3}
+%\centering
+%\scalebox{1.0}{%
+%%% Some packages, such as MDW tools, offer better commands for making tables
+%%% than the plain LaTeX2e tabular which is used here.
+%\begin{tabular}{|c|l|l||l|l||l|l|}
+%
+%%\textbf{Month} & $\overline{\textbf{CRD}}$ \\
+%
+%\hline
+%\textbf{\#Bugs} & \textbf{Top 1} & \textbf{Top 5} & \textbf{Top 10} & \textbf{MRR}\\
+%\hline
+%{100} & {23.40\%} & 51.06\% & 61.70\% & 0.62\\
+%\hline
+% {500} & 19.08\% & 35.26\% & 48.55\% & 0.47\\
+%\hline
+%{1000} & \% & \% & \% & \\
+%\hline
+%%\multirow{ 2}{*}{2} & \multirow{ 2}{*}{Editor Outline} & editor xml view outlin content\\
+%%&& action elem open docum associ\\
+%
+%\end{tabular}}
+%\end{table}
 
 During experiment, we evaluate our proposed approach in different ways. To create mapping between bug report keywords and source files, we consider three different options - (1) including only title or summary of a bug report in creating corpus, (2) in addition with title we also include description field of a bug report and (3) full content of a bug report could be an option. Neither option 1 nor 3 provides better result and option 2 optimized the performance. We explain this in a way that providing only title of a big report conveys very little information. On the other hand, including full content of a bug report also create too much information that contains huge noise data and also takes longer time during mapping them into source code files. Therefore, title and description of a bug report optimized those two options. However, considering title and description did not get rid of noise and therefore we discard all keywords that happen to exist in 25\% or more documents in the corpus.
 
-We also test with gradually increasing dataset. In our proposed approach we create map databases by linking keywords with change set. We believe, as long as the map is bigger, this should be resulting more accurate recommendation. 
-We divide our data set into two parts: in Part I we select a specific number of bug reports for creating map databases, and Part II we test that system with one bug report. For next iteration we add previously tested bug report into Part I and create the map databases again and then test our proposed system with the next immediate bug report. We continue this process as long as required. For example, we first create mapping databases with 100 bug report sequentially and test with 101th bug report as query.
+%In our proposed approach we create map databases by linking keywords with change set. We believe, as long as the map is bigger, this should be resulting more accurate recommendation. We divide our data set into two parts: in Part I we select a specific number of bug reports for creating map databases, and Part II we test that system with one bug report. For next iteration we add previously tested bug report into Part I and create the map databases again and then test our proposed system with the next immediate bug report. We continue this process as long as required. For example, we first create mapping databases with 100 bug report sequentially and test with 101th bug report as query.
 For checking this, we experimented with several number of fixed bug reports and their change sets, is given in Table..
-\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-\caption{The Performance 10 for different size of datasets.}
-\label{tab:size}
-\centering
-\scalebox{1.0}{%
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-\begin{tabular}{|c|l|l||l|l||l|l|}
+%\begin{table}[!t]
+%%% increase table row spacing, adjust to taste
+%% if using array.sty, it might be a good idea to tweak the value of
+%% \extrarowheight as needed to properly center the text within the cells
+%\caption{The Performance 10 for different size of datasets.}
+%\label{tab:size}
+%\centering
+%\scalebox{1.0}{%
+%%% Some packages, such as MDW tools, offer better commands for making tables
+%%% than the plain LaTeX2e tabular which is used here.
+%\begin{tabular}{|c|l|l||l|l||l|l|}
+%
+%%\textbf{Month} & $\overline{\textbf{CRD}}$ \\
+%
+%\hline
+%\textbf{\#Bugs}  & \textbf{Top 10} & \textbf{MRR}\\
+%\hline
+%{100}  & 36.67\% & \\
+%\hline
+% {200}  & 50\% & \\
+%\hline
+%{300}  & \% & \\
+%\hline
+%%\multirow{ 2}{*}{2} & \multirow{ 2}{*}{Editor Outline} & editor xml view outlin content\\
+%%&& action elem open docum associ\\
+%
+%\end{tabular}}
+%\end{table}
 
-%\textbf{Month} & $\overline{\textbf{CRD}}$ \\
-
-\hline
-\textbf{\#Bugs}  & \textbf{Top 10} & \textbf{MRR}\\
-\hline
-{100}  & 36.67\% & \\
-\hline
- {200}  & 50\% & \\
-\hline
-{300}  & \% & \\
-\hline
-%\multirow{ 2}{*}{2} & \multirow{ 2}{*}{Editor Outline} & editor xml view outlin content\\
-%&& action elem open docum associ\\
-
-\end{tabular}}
-\end{table}
-
-We also experiment with several approaches such as considering both mapping databases and cosine relationship between query and source code contents, keeping the information retrieved from mapping database we also include TF-IDF technique between query and recommended source code files. We compare their performances for corpus with several dimensions (i.e., size), and investigate their performances in order to find the best techniques.
-\subsection{Bug Localization using Mapping Database and Cosine Relationship}
-In this technique I, we compute two different scores based on keyword-source code mapping database and cosine relationship between query keyword and keyword associated with each recommended source codes. The main objective of our proposed approach is to narrow down the search spaces of information retrieval based bug localization technique. In this approach, we can reduce the number of source code files, which are investigated to locate a newly reported bug. To measure the effectiveness of our approach we calculate the number of files used during bug localization both for our proposed approach and existing bug localization techniques. On the other, we also measure the performance of performance of our proposed approach in terms of top 10 rank and MRR. The performance of our proposed approach are given below.
+We compare our proposed bug localization approach with two existing techniques - 1) BugLocaotor which is based on rVSM and Simi scores and 2) VSM which is based on vector space model. In the following two subsections we will describe the performance comparison between these two existing approaches and our proposed approaches
+\subsection{BugLocator VS Our Proposed Tool}
+We combine rVSM and simi ranks with our co-occurence rank. Here, co-occurence rank is computed based on keyword-source code mapping database. The main objective of our proposed approach is to narrow down the search spaces of information retrieval based bug localization technique. In table we, compare the performance of our proposed approach in terms of top 1, 5, 10 rank, MRR  MAP. The performance of our proposed approach are given below.
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
 %\begin{table*}[]
@@ -931,7 +991,7 @@ In this technique I, we compute two different scores based on keyword-source cod
 %\end{table*}
 
 
-\subsection{Bug Localization Technique using Mapping Database and Source Code's Cosine Relationship}
+\subsection{VSM vs Our proposed Tool}
 In this technique II, at first we retrieve source codes from keyword-source code mapping database and then for each keyword in the query, we retrieve associated source code links. Then,
 we compute the cosine relationship between query keywords and all keywords associated with each source code link. The difference between technique I and II are happened in the second stage of score calculation. For technique I, we compute the cosine similarity between query keywords and keywords associated with each recommended source code files from stage one computation. That means, we actually consider those keywords that are globally linked to a source code. On the other hand, in technique II, the cosine similarity measure is computed between query keywords and keywords extracted from each recommended source code extracted in stage one using linked databases. So, here we are considering the source code files as locally. 
 
@@ -941,58 +1001,7 @@ we compute the cosine relationship between query keywords and all keywords assoc
 
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
-\begin{table*}[]
-\centering
-\caption{Performance of proposed technique (rVSM+Simi+Co-Occerence) Ranks}
-\label{tab:T2}
-\begin{tabular}{@{}|c|c|c|c|c|c|c|@{}}
-\toprule
-%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
-\begin{tabular}[c]{@{}c@{}}\# Test  \\ Case \\ \end{tabular} & \begin{tabular}[c]{@{}c@{}}\#Bugs for \\ locating \\ issues\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 1\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 5\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 10\\ \%\end{tabular} & MRR & MAP \\ \midrule
-1                                                                               & 385                                                                      & 13.58\%                                               & 27.68\%                                            & 44.62\%                                                &   0.32  & 0.40    \\ \midrule
-2                                                                               & 385                                                                      & 11.69\%                                               & 35.58\%                                              & 49.09\%                                             &   0.34  &   0.38  \\ \midrule
-3                                                                               & 385                                                                      & 10.90\%                                            & 31.95\%                                            & 46.23\%                                             &   0.31  &  0.35   \\ \midrule
-4                                                                               & 385                                                                      & \multicolumn{1}{l|}{11.95\%}                       & \multicolumn{1}{l|}{35.58\%}                       & 47.79\%                                                &  0.33   &  0.38  \\ \midrule 
-5                                                                               & 385                                                                      & 17.92\%                                                 & 43.64\%                                                 & 54.55\%                                                  &  0.40   & 0.51     \\ \midrule
-6
-&
-385
-&22.60\% &
-49.09\% &
-61.82\% & 0.46 &
-0.60     \\  \midrule
-7
-&
-385
-&17.66\% &
-35.58\% &
-57.14\% & 0.42 &
-0.51     \\  \midrule
-8
-&
-385
-&20.26\% &
-44.68\% &
-52.60\% & 0.42 &
-0.53    \\  \midrule
-9
-&
-385
-&19.74\% &
-41.56\% &
-56.10\% & 0.40 &
-0.52    \\  \midrule
-10
-&
-385
-&9.6\% &
-33.25\% &
-45.71\% & 0.30 &
-0.32    \\  \midrule
-\multicolumn{2}{|c|}{Average}                                                                                                                                & 15.59\%                                                 & 37.85\%                                                 & 51.57\%                                                  &   0.37  &  0.45    \\ \bottomrule
 
-\end{tabular}
-\end{table*}
 
 %\subsection{Bug Localization using Mapping Database and TF-IDF Score}
 %In this technique III, we include TF-IDF score in the second stage score calculation. In stead of using cosine similarity measure, we calculate TF-IDF score between query keywords and keywords contained each recommended source codes. The reason why we introduce TF-IDF score is, we wanted to investigate the possibility of global importance of each term (i.e., TF) in addition with local importance (i.e., TF). On the other hand, TF-IDF based bug localization technique is one of most effective approach in the state pf the art bug localization techniques. 

@@ -1,0 +1,2 @@
+tooltips parts translated stack created attachment minimal example showing tooltip correctly tool item stack using built translation service prefixed strings translated correctly tooltip parts showing head stack attachment minimal app shows toolbar item stack tool item tooltip used tooltip tool item tool item shown correctly translated header shown version tested linux mac
+ 

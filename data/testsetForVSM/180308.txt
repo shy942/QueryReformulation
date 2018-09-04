@@ -1,0 +1,2 @@
+remove print toolbar tool default print tool takes space likely seldom used providing toolbar space plugins consider removing
+ 

@@ -1,0 +1,2 @@
+data binding expose conformance tests quite tests abstracted suite tests ran consumers observable implementations exposing suite allow consumers certain proper behavior lessening testing burden
+ 

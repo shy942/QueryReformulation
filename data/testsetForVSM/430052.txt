@@ -1,0 +1,2 @@
+imported rules overridden style css class alpha property value class beta property value second style css import url style css class beta property value imported styles loaded rule class beta updated instead using import copy paste content style css followed rule written second style css notice value applied class beta property import statement work copy paste instead currently allow overriding rule set imported stylesheets currently user developer import stylesheet base template application properties according needs
+ 

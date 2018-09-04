@@ -1,0 +1,2 @@
+perspectives perspectives open window regardless preference build steps reproduce close perspectives say resource preferences perspective set open perspective window open perspective debug perspective using window open perspective debug expected window perspective total windows actual window containing perspectives note perspective shows short perspective menu don use dialog opens window expected
+ 

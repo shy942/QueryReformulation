@@ -1,0 +1,2 @@
+perspectives newly created project appear project explorer build steps reproduce start fresh workspace close java perspective open java perspective web project web project appear project explorer view open java perspective appears package explorer view available project explorer view omit step appear
+ 

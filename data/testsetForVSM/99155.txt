@@ -1,0 +1,2 @@
+perspectives perspective extension standalone true visible false doesn work perspective extension define standalone true visible false view opened view created standalone view parameters respected generally trying offer users ability open view action view needs standalone view way open standalone view outside initial perspective creation option offer open view standalone overloaded view method
+ 

@@ -1,0 +1,2 @@
+view tabs close tabs left menu fix added close tabs right close tabs left incomplete menu close tabs left shown view stacks close tabs right view stacks closed parts active fix trivial
+ 

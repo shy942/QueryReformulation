@@ -1,0 +1,2 @@
+undo changes outside current editor executed pressing esc class private static class file select file execute refactor member type file choose edit undo member press esc key dismiss dialog undo executed clicked yes pressed return key
+ 

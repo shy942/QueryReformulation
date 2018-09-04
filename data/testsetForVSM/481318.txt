@@ -1,0 +1,2 @@
+update abstract plugin methods removal org core runtime compatibility org core runtime compatibility removed update javadoc logic public abstract plugin plugin descriptor descriptor startup shutdown
+ 

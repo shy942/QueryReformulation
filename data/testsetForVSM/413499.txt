@@ -1,0 +1,2 @@
+fix compiler warnings org jface commands caused moving face java fix compiler warnings package org jface commands caused moving java
+ 

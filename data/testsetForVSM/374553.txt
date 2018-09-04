@@ -1,0 +1,2 @@
+tool bar rendered correctly tool item hidden build identifier hiding tool item toolbar rendered correctly example tool items menu hide tool item menu moves left tool item bunch space menu edge expected tool item closer menu attachments reproducible steps reproduce tool items menu hide tool item closest menu tool bar refresh menu right
+ 

@@ -1,0 +1,2 @@
+key bindings launch close resource persp hit ctrl wizard list menu file wizard disabled happens launch close resource persp hit ctrl wizard list menu file disabled
+ 

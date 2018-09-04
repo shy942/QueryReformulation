@@ -1,0 +1,2 @@
+performance improvements binding manager build performance tests shows significant regression opening editors profiling time collections unmodifiable map called methods binding manager instantiating triger sequence locations binding manager case creation immutable map completely unnecessary methods private maps exposed boundaries risk maps modified creation trigger sequence arrays avoided singleton attach patch collectively saves total editor startup time elapsed time measured sampling profiler simple safe fixes recommend considering
+ 

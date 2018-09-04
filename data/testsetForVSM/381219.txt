@@ -1,0 +1,2 @@
+remove timestamp base application model startup compare timestamps saved model workbench xmi base application model legacy xmi whichever recent gets used realize git preserve time stamps makes comparison invalid masked effectively use workbench xmi file present probably retain behavior use workbench xmi result expected behavior users primary target release consider adding explicit versions application models keeping hashes contents
+ 

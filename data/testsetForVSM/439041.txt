@@ -1,0 +1,2 @@
+progress memory leak progress animation item experience memory leak app long running memory analyzer shows thousands instances accessible listener added org internal progress progress animation item toolbar accessible accessible listener accessible adapter public void accessible event result snippet called refresh task duplicate closed probably fixed reopen sorry duplicate
+ 

@@ -1,0 +1,2 @@
+regressions slow set task progressbar dialog linux worse
+ 

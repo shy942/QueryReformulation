@@ -1,0 +1,2 @@
+linked resources linked resources properties page convert button dangerous linked resources properties page dangerous convert button immediately applies changes offers way revert cancel button work apply changes user clicks button called convert ask user changes dialog text editable return key close dialog styled text set editable false
+ 

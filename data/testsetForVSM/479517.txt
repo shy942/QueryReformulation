@@ -1,0 +1,2 @@
+remove unsupported method workbench page reset hidden editors
+ 

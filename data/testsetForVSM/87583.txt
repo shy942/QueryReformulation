@@ -1,0 +1,2 @@
+workbench showing progress startup carefully restores views editors startup offers nice user experience unfortunately makes long start restore views editors causing plug ins activated probably thread performance work worth trying restore workbench context background workbench displayed fast possible end user advantage plug takes day startup stuck waiting note necessarily gives clear improvements probably numbers user experience perceiving startup faster ing nick submitted idea
+ 

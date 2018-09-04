@@ -1,0 +1,2 @@
+commands errors context error message build message log starting build org jface command undefined command error message needs information message comes external action manager active
+ 

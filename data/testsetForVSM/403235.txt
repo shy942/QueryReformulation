@@ -1,0 +1,2 @@
+command contribution item restore contributed tooltip handler changes element updater set tooltip command contribution item moment tooltip restored handler changes reset contributed tooltip label icons
+ 

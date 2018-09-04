@@ -1,0 +1,2 @@
+keybindings keyboard shortcuts don work view detached focus display view shortcuts inspect display execute don work display detached view content assist keyboard shortcut works don error log entries using context menu shows non functional shortcuts works detached debug view behaves likewise keyboard shortcut use step filters doesn work ones copy stack using versions tried expose behaviour using works
+ 

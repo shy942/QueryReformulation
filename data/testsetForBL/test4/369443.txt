@@ -1,0 +1,2 @@
+provide mechanism listen theme changes theme management doesn provide way listen theme changes best currently listen key themeid org css swt theme bundle code following instance scope node org css swt theme preference listener preference listener public void preference preference event event event key equals themeid println event value nice context theme variable updated complicated org css swt theme independent
+ 

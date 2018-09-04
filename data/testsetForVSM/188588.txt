@@ -1,0 +1,2 @@
+key bindings key bindings missing keyboard shortcut opening view app creating application based mail example declared command menu handler binding using org commands org menus org handlers org bindings declaratively command command parameter used open view opens view choose menu use keybinding shortcut appears key assist application appear menu corresponding label mail example menu file open message view similar zilla https bugs org bugs cgi opened time ago tried changing shortcut stays checked
+ 

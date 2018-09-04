@@ -1,0 +1,2 @@
+global actions regression command link preference page broken works command open preference page works opens opened page instead correct unless clicked used inside preference dialog itself
+ 

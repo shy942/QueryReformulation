@@ -1,0 +1,2 @@
+allow construction message dialog varargs currently construct message dialog following message dialog shell message dialog null dialog message message dialog string button button offer constructor varargs simplified message dialog shell message dialog null dialog message message dialog button button
+ 

@@ -1,0 +1,2 @@
+context menu available minimized shared area minimize stack views minimize shared editor area right minimized view result menu orientation restore close available right minimuzed shared area result menu
+ 

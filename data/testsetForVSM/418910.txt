@@ -1,0 +1,2 @@
+clean action org css core whitespace mickael istria issues trailing whitespace https git org platform discourages trailing whitespace http wiki org platform contribute suggest clean action whitespace org css core
+ 

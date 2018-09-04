@@ -1,0 +1,2 @@
+perspective bar drag drop support ordering perspective items possible order items perspective bar bar occasionally order ensuring perspectives remain visible
+ 

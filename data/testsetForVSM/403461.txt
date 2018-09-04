@@ -1,0 +1,2 @@
+allow toggling toolbar window basis originally reported didn quite understand point time fixed issues persisting restoring toolbar visible mode fix used pattern result visibility stored single preference value approach doesn work multi window setup
+ 

@@ -1,0 +1,2 @@
+replace reference javadoc gif files png files abstract plugin
+ 

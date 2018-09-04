@@ -1,0 +1,2 @@
+editor mgmt separate save resource dialog appears window closing scenario project files txt txt txt open window main menu window window open txt txt files window edit open txt second window edit close main menu file exit expected behaviour save resources dialog appears files list parts save current behaviour save resource save resources dialogs appear separately window file open multiple windows appear save resource dialog related windows marked save regression works correctly broken newer
+ 

@@ -1,0 +1,2 @@
+fix trailing whitespaces org ide contributors committers fighting trailing whitespaces changes plug ins suggest clean rid remove whitespace feedback sugggest start org ide lot actions source clean whitespace activate save action remove trailing whitespace changes ignored git team git ignore whitespace changes
+ 

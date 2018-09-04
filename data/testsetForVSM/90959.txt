@@ -1,0 +1,2 @@
+commands parameters duplicate commands opening views style deleted command org views view org ide used parameter define keybindings opening views style commands opening individual views necessary clutter commands list views category keys preference page plugins remove commands convert default keybindings parameterized org bindings key extensions known clients method search bugs summary polish patch support view activation keyboard shortcut
+ 

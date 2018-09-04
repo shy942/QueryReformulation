@@ -1,0 +1,2 @@
+editor mgmt open different type editor effect file open reproduce steps scripted resource editor example opens files default basic project file xml editor used scripted resource editor example totally ignores file content select xml navigator choose open default text editor happens reactivating scripted resource editor example searching existing open file consider editor types open editor file editor type different
+ 

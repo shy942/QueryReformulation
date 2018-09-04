@@ -1,0 +1,2 @@
+properties view property sheet entry format error message calling set error text using using property validation property invalid start error text formatted properly looking source property sheet entry editor composite parent calls set error text editor error message set error text message format format editor error message object edit value similar error message set text cell editor edit occured modify event
+ 

@@ -1,0 +1,2 @@
+text alignment follow text direction text widget
+ 

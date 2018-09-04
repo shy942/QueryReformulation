@@ -1,0 +1,2 @@
+markers tasks problems view consider moving tasks view currently using tasks view main issue performance problems rapidly tasks generally pretty static fair extra time spent sorting
+ 

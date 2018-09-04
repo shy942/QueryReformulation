@@ -1,0 +1,2 @@
+commands handlers inspect doesn work keybindings inspect display work
+ 

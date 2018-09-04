@@ -1,0 +1,2 @@
+features dialog info area scroll message long build identifier org workbench org internal dialogs features dialog features page info area legal copyright description feature displayed styled text containing message scrollable feature message cut long identical main dialog https bugs org bugs cgi resolved fix patch used https bugs org bugs attachment cgi action diff available applied adjusted reproducible steps reproduce open dialog select feature hopefully long description description displayed feature dialog fully visible scrollbar available
+ 

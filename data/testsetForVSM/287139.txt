@@ -1,0 +1,2 @@
+common navigator core expression determine initial activation build steps reproduce currently definition navigator content extension plugin xml allows specify boolean attribute allow default controls contributed content active default makes sence type attribute boolean core expression allow evaluate default context content depending ease control content enhance declarative configuration information
+ 

@@ -1,0 +1,2 @@
+way store state memento current allow persist state way allowed save state implementing view save state pre destroy lifecycle moment widgets disposed saving state application element persisted state possible suggestion persist state annotation contributed renderer dispose widget work bit different save state called workbench shutdown bugged
+ 

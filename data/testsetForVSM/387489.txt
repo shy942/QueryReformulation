@@ -1,0 +1,2 @@
+ole editor hides content losing focus build steps reproduce project file open file place editor editor gets focus shows file correct view editor loses focus editor loses content shows blank composite images showing follow modified colors set background calls parts hidden happens word power point case word don middle text equivalent canvas visible paint
+ 

@@ -1,0 +1,2 @@
+tests won default suite launch configs tend pick java installed installed launch bumping suites execution environment java
+ 

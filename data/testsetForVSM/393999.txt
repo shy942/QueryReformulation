@@ -1,0 +1,2 @@
+tabbed properties support changing color tab label complete missed fix delivered couple months kepler fix provision specifying different tab color specified color actually used internally paint method
+ 

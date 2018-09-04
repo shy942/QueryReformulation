@@ -1,0 +1,2 @@
+commands compat git commit dialog destroys context calling evaluation context variable creating file ecore model generator model current package explorer selection point project preselected element wizard point completely different looks current selection package explorer published appropriately
+ 

@@ -1,0 +1,2 @@
+editor mgmt editor instance leaked time editor open closed driver win framework open close editor editor instance leaked testcase demostrate testcase really simple creates simple project file opens file editor comes testcase close editor repeat times interesting editor open allocate size string array private field string array editor itself testcase xmx memory explicitly set string array null dispose method editor testcase memory leads editor instance leaked
+ 

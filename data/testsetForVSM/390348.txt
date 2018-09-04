@@ -1,0 +1,2 @@
+common navigator ability drag projects working sets project explorer missing package explorer ability drag projects working sets
+ 

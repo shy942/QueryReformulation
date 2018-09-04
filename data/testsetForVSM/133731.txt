@@ -1,0 +1,2 @@
+field assist platform define preferences content assist colors currently provides preferences content assist popup colors auto activation delay time platform text implementations typically hard coded values auto activation delay field assist support generally attempted mimic defaults used platform text reasonable long provide preferences values examples main popup color secondary popup color autoactivation delay investigated state art prefs
+ 

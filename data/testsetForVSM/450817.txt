@@ -1,0 +1,2 @@
+view mgmt view use category instead tag merging fix switch view implementation use directly category instead tag
+ 

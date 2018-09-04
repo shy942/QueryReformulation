@@ -1,0 +1,2 @@
+mac enhance org carbon plugin order modify menus build steps reproduce org carbon provides preferences menu items doesn handle menu text hide quit modify menu text corresponding product menu information code modify menu text org carbon private static final int command hide int hide menu int short hide index short ind menu item command command hide hide menu hide index err hide menu int hide action length char buffer char hide action chars buffer int str string characters allocator default buffer set menu item text string hide menu hide index str release str
+ 

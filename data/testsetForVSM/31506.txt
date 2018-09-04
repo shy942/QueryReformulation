@@ -1,0 +1,2 @@
+model workbench content provider update copy build load workbench plugin code includes fix overwriting regular resources linked resources vice versa fix entails deleting existing resource followed copy copy operation icon properly reflect linking state resource decorator icon updated usually
+ 

@@ -1,0 +1,2 @@
+import export import project work using candidate import existing projects workspace dialog allows select directory display possible projects browse button works refresh projects list appears finish button effect hopefully cancel button works properly set severity critical regression milestone
+ 

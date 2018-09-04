@@ -1,0 +1,2 @@
+key bindings chose key edit view pane nice populate modify tab based selection view tab implictly context menu view table
+ 

@@ -1,0 +1,2 @@
+performance idle constantly allocates hundreds objects second idle constantly allocates hundreds objects char int string second idle case start workspace close welcome page idle start profile memory ending allocation objects second ced later
+ 

@@ -1,0 +1,2 @@
+early startup mechanism needs use reflect compatibility available early activation mechansim allows class specified extension class present supplying plugin plugin class used access random plugin objects unless runtime compatibility code present support cases present current implementation uses plugin object changed use reflection
+ 

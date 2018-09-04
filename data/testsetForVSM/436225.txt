@@ -1,0 +1,2 @@
+view mgmt possible memory leak closing views open view style view using views extension point inheriting view retrieve memory dump instance view expect far close view retrieve heap dump view instance occupying memory dump shows references workbench page service keeps view references garbage collected reopening closing view second time pending instances expected behavior references view closing
+ 

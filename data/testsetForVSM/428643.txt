@@ -1,0 +1,2 @@
+modify menu manager event helper access static fields directly currently menu manager event helper fields accessed directly modify use following patterns menu manager event helper instance set menu manager event helper set way provide custom implementation bound session
+ 

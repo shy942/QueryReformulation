@@ -1,0 +1,2 @@
+perspective bar reseting perspective removes perspective switcher tested solaris motif linux gtk open perspective resize window reset perspective removed perspective switcher open perspective return correct perspective puts perspective switcher errors error log
+ 

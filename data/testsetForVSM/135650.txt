@@ -1,0 +1,2 @@
+trim contributed trim needs workbench window contribution control based init method workbench contribution particular workbecnh window hosted match current wizard pattern interface org workbench widget extends wizard jface component provides init workbench window method schema require workbench widget widget contributions related require abstract workbench trim widget reflect pattern current abstract trim widget
+ 

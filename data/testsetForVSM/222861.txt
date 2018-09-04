@@ -1,0 +1,2 @@
+commands parameterized command equals broken having parameterized commands initialized constructor equals order parameterizations
+ 

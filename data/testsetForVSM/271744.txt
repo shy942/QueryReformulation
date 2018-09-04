@@ -1,0 +1,2 @@
+viewers face tree viewer closing cell editors collapse created attachment modified snippet error build steps reproduce attached modified snippet running manually resize column actually expand node item start editing children notice item entire text highlighted collapse parent item reexpand previously edited item notice text selected editor open information cell editor closed cell sitting visible collapse actual implementation cell editor recieves keyboard input allowing users mess data pretty bad noticing
+ 

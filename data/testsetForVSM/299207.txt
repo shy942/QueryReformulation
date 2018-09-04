@@ -1,0 +1,2 @@
+common navigator refactor navigator content service content provider things code clear needs internal children elements largely duplicated pipelined children private method returns local set modified contributor tracking set used internal children elements necessary set contribution called linked hash set synchronization methods inconsistent obsolete unnecessary javadoc comments order methods makes hard understand refactoring attached cleans issues making code easier understand functionality fix intended possibly making synchronization consistent
+ 

@@ -1,0 +1,2 @@
+remove setting suite launch launch configuration
+ 

@@ -1,0 +1,2 @@
+key bindings bindings stop working shell activation event build linux don steps reproduce working today build various keys randomly stopped functioning earlier today trying copy paste ctrl wasn working used context menu items started working trying block text highlighting pressing backspace pressing backspace effect typing browser window switching went away window needs lose focus keys start working maybe window focus
+ 

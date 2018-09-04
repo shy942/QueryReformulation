@@ -1,0 +1,2 @@
+preference dialog created different height based content tree view reproduce open preferences expand deepest tree select preference page close reopen preferences observed preference dialog reopens taller occurring tree widget using preferred height constant
+ 

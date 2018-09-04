@@ -1,0 +1,2 @@
+common navigator project explorer ugly blinking resizing filters dialog open filters dialog project explorer resize dialog blinks awfully strange coordinates child controls probably navigator implementation project explorer assign appropriate
+ 

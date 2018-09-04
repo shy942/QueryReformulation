@@ -1,0 +1,2 @@
+dialogs open resource dialog remember position size really annoying especially working monitors open resource dialog forget position size closing open type dialog working correcly
+ 

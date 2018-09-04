@@ -1,0 +1,2 @@
+dialog scrollbar operate correctly dialog allows image left text right given image small width height dialog determined whichever greater height coordinate size image text font different platforms machines different languages require text larger text scrollable height dialog solely based height image dialog consistent platforms instead having dialog size vary based font text size
+ 

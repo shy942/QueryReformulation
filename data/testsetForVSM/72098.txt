@@ -1,0 +1,2 @@
+debug view tool bar contains duplicate entries linux default debug perspective debug view contains duplicate tool bar items tool bar exceptionally wide
+ 

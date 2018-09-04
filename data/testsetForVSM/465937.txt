@@ -1,0 +1,2 @@
+pre save called lifecycle handler using compatibility mode migration scenario trying start soft migration startup shutdown logic tried lifecycle handler product extension point works quite pre save executed closing application compatibility layer support pre save restrictions issue issue hint appreciated fix important migration scenarios soft migration necessary project size
+ 

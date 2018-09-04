@@ -1,0 +1,2 @@
+objects leaked opening closing editor objects leaked simple close open text editor scenario simple case start workspace prepare perspective navigator view open text file reset instance counter profiler open editor close editor instances leaked memento context navigation history entry value computation
+ 

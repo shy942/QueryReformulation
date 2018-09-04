@@ -1,0 +1,2 @@
+snippet snippet demonstrating center image column asked newsgroups
+ 

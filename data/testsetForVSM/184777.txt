@@ -1,0 +1,2 @@
+key bindings filter working keys preference page build open keys preference page type word open filter text area results shown don word open
+ 

@@ -1,0 +1,2 @@
+ctrl views menu testing whilst checking fix real view using didn menu defined tried ctrl getting tab item org workbench renderers swt stack renderer menu stack renderer java org workbench renderers swt stack renderer widget selected stack renderer java likely null
+ 

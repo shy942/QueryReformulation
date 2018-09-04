@@ -1,0 +1,2 @@
+undo operation removed undo redo error current default operation history implementation removes offending undo redo operation undo redo stack undo redo requested undo context cause problems integrated text refactoring scenarios refactoring undo fails editor subsequent local edits correct behavior operation stack fails context flushed way operation multiple contexts corrective steps taken maintain integrity undo redo stack context flushed
+ 

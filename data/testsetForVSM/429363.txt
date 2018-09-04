@@ -1,0 +1,2 @@
+workbench init thread completes init display sleep created attachment app sleeps forever code calls display wake thread main loop display sleep doesn wake true display read dispatch init break err println sleep display sleep err println syserr logs sleep wake thread display wake don reproduce importing attached plugin opening plugin xml launch app stays asleep org application workbench advisor open windows
+ 

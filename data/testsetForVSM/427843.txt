@@ -1,0 +1,2 @@
+linux opening form editor issue happens linux tested luna steps reproduce form editor configures header pom xml mylyn task editor boss tools central instance error log described https issues jboss org browse form heading widget painted configuring issue doesn using plug manifest editor attached patch
+ 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  31 AUG 2018 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  4 SEP 2018 15:35
 entering extended mode
 **./sig-alternate.tex
 (sig-alternate.tex
@@ -1167,41 +1167,23 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.808 \end{equation}
-                     [5 <./SD1.png>]
-Overfull \hbox (9.50508pt too wide) in paragraph at lines 845--846
- [][] 
- []
+l.810 \begin{equation}
+                       [5 <./SD1.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 822.
 
 
-Overfull \hbox (1.48601pt too wide) in paragraph at lines 913--913
-[]\secfnt Bug Lo-cal-iza-tion us-ing Map-ping Database
+Overfull \hbox (4.39705pt too wide) in paragraph at lines 974--992
+\T1/aer/m/n/9 rank. Here, co-occurence rank is com-puted based on keyword-
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 944.
+               Default added (so using `tbp') on input line 1027.
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1018.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1064 ...posed Techniques and Existing Technique}
-                                                   [6]pdfTeX warning (ext4): de
-stination with the same identifier (name{page.}) has been already used, duplica
-te ignored
-<to be read again> 
-                   \relax 
-l.1064 ...posed Techniques and Existing Technique}
-                                                   [7]
-Overfull \hbox (4.2559pt too wide) in paragraph at lines 1068--1069
+Overfull \hbox (4.2559pt too wide) in paragraph at lines 1077--1078
 \T1/aer/m/n/9 com-mit mes-sages and in the git com-mit com-mands the change
  []
 
@@ -1210,36 +1192,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 []\T1/aer/m/n/7 Eclipse plat-form ui git project.
  []
 
-
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 
+      [6]pdfTeX warning (ext4): destination with the same identifier (name{page
+.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 
+      [7]pdfTeX warning (ext4): destination with the same identifier (name{page
+.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 
+      [8]
 Underfull \hbox (badness 1675) in paragraph at lines 55--60
 []\T1/aer/m/n/7 Chu-Pan Wong, Yingfei Xiong, HongYu Zhang, Dan Hao,
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1140.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1149.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1140 \end{document}
-                      [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1140.
+l.1149 \end{document}
+                      [9
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1149.
  (sig-alternate.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1140.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1140.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1149.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1149.
 
 Package rerunfilecheck Info: File `sig-alternate.out' has not changed.
-(rerunfilecheck)             Checksum: E317566D6607F371D71FC4D07BD0879A;1840.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1140.
+(rerunfilecheck)             Checksum: 52CDBC1788F81C46755AB5B29C8D19A6;1749.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1149.
  ) 
 Here is how much of TeX's memory you used:
- 17768 strings out of 492973
- 298368 string characters out of 3126692
- 384396 words of memory out of 3000000
- 21403 multiletter control sequences out of 15000+200000
+ 17762 strings out of 492973
+ 298317 string characters out of 3126692
+ 388156 words of memory out of 3000000
+ 21400 multiletter control sequences out of 15000+200000
  589268 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,16n,61p,1352b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,17n,61p,1352b,441s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }<C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx9.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
@@ -1265,9 +1264,9 @@ ms/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Mukta/AppData/Local
 a/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Mukta/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Mukt
 a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sig-alternate.pdf (8 pages, 409960 bytes).
+Output written on sig-alternate.pdf (9 pages, 406585 bytes).
 PDF statistics:
- 288 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
+ 286 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
  200 words of extra memory for PDF output out of 10000 (max. 10000000)
 

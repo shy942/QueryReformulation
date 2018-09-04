@@ -1,0 +1,2 @@
+preferences incorrect file path display recent workspaces list preferences dialog build identifier bidi hebrew locale workspace path hebrew characters recent workspaces list preferences dialog displayed incorrect cases described excluded separate contains different cases needed different fixes reproducible steps reproduce steps reproduce hebrew locale mirrored workspace directory containing hebrew characters example hebrew characters open preferences general startup shutdown workspaces dialod expected result workspace path displayed actual result workspace path displayed
+ 

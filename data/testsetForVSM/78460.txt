@@ -1,0 +1,2 @@
+contributions view mgmt console actions leaking launch launch terminates removed console actions leaked fair bit previous launch session memory case ran program termination removed program debug view console terminate action delegate console remove terminated action delegate leaked launch reference keeping memory addition selection changed listeners don understand dispose freeing
+ 

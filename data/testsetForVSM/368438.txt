@@ -1,0 +1,2 @@
+face image hyper link set image creates object everytime called build identifier calling following method org forms widgets image hyper link public void set image image image creates disabled image grey version original image disabled image disposed treated properly using set image times triggers overload handles reproducible steps reproduce simply use image hyper link set image method times
+ 

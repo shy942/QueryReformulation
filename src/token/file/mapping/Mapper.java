@@ -159,7 +159,10 @@ public class Mapper {
 		// TODO Auto-generated method stub
 
 		long start=System.currentTimeMillis();
-		int train=10;
+		int tatoaltrain=10;
+		for(int i=1;i<=tatoaltrain;i++)
+		{
+			int train=i;
 		Mapper obj=new Mapper("./data/trainset/Train"+train+".txt");
 		obj.bugKeywordMap=obj.LoadMap("./data/trainset/Train"+train+".txt");
 		obj.CreateTokenBugMap(obj.bugKeywordMap);
@@ -170,6 +173,7 @@ public class Mapper {
 		obj.bugSourceMap=obj.LoadMap("./data/changeset-pointer/Bug-ID-SrcFile-ID-Mapping.txt");
 		obj.KeywordSourceMap=obj.CreateTokenSouceFileMap(obj.tokenBugMap,obj.bugSourceMap, "./data/FinalMap/TokenSourceMapTrainset"+train+".txt");
 		//obj.CreateSourceToTokenMap(obj.tokenSourceMap, "./data/FinalMap/SourceTokenMapTrainset"+train+".txt");
+		}
 	}
 
 	

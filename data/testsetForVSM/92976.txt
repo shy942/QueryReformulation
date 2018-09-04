@@ -1,0 +1,2 @@
+focus editor creation running file file foo txt finish editor opens editor content area focus focus appears inside editor tab
+ 

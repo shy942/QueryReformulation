@@ -1,0 +1,2 @@
+editor mgmt editor history shouldn store invalid items currently editor history removes non existant entries items probably menu shown logic probably included shouldn items removed
+ 

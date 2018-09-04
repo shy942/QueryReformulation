@@ -1,0 +1,2 @@
+preferences provide showing specified preference page way plugin open workbench preference dialog certain peference page selected enabling allow plugins refer user certain preference page example misconfiguration detected execution action enables developers write search panel text preference pages user right method select preference page page select preference node node select string path org jface preference preference dialog
+ 

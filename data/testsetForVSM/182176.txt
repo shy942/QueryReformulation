@@ -1,0 +1,2 @@
+allows apps splash update synchronously asynchronously fix prevents arbitrary async exec calls workbench initialized implementation abstract splash handler wishes update background thread possible similar case basic splash handler callers various progress monitor methods non threads spawned bundle activation currently handle message wrapping special startup runnable wrappers ability public suggest cleaning promoting basic splash handler update method takes arbitrary runnable runs thread given custom splash handlers access method safe
+ 

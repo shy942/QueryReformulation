@@ -1,0 +1,2 @@
+key bindings provide conflict information users outside logging exploring different logging scenarios log appropriate way telling user keybinding conflict user feedback mechanism open key assist dialog conflicting commands allow user select logging necessary capturing runtime conflicts user wouldn directed
+ 

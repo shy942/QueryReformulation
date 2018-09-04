@@ -1,0 +1,2 @@
+commands request window view keyboard shortcut bind window view keyboard shortcut category window view default assignment alt shift command open perspective missing severe
+ 

@@ -1,0 +1,2 @@
+workbench parts workbench site shell returns null text based editor leaked editor gets closed abstract text editor dispose following shell shell site shell shell null shell disposed shell remove shell listener activation listener bad site shell returns null previous released causes single editor kept memory workbench window gets closed likely cause
+ 

@@ -1,0 +1,2 @@
+cancel button ask popup strategy opens selected editor testing feature small issue build steps reproduce open general editors file associations preference page switch ask pop strategy opening unknown files button close page double file unknown type select editor editor selection dialog cancel button executing step closes editor selection dialog opens file selected editor expectation file open editor
+ 

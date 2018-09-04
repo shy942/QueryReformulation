@@ -1,0 +1,2 @@
+graphics replace gifs org jface png files
+ 

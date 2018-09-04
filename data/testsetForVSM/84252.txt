@@ -1,0 +1,2 @@
+activity mgmt allow preference page plugable component activity preference page hardcoded provide default page replaced products sufficient define preference page plugin activities
+ 

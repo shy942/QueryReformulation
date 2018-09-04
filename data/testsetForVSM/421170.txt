@@ -1,0 +1,2 @@
+ctrl popup saves dirty editors prompting testing right handling silently closes editor saving repro open editors dirty hit ctrl arrow dirty editors hit currently result editor closed persisted
+ 

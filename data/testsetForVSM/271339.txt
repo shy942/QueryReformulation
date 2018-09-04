@@ -1,0 +1,2 @@
+field assist text field content assist doesn work expected narrowing suggestions continued typing text field narrow list results displayed suggest list carbon works open bugzilla mylyn task editor position caret field press space observe suggested values start typing slowly notice successive character list narrowed fewer matching results start typing backspace slowly characters text field notice list expanded additional matching results characters deleted cocoa typing text field suggest list displayed causes suggest list away
+ 

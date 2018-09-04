@@ -1,0 +1,2 @@
+workbench parts restart activated visible called widgets visible use newer reproduce earlier builds added code restore editor selection restart works window restored editor selection correctly revealed scroll bar thumbs aren correct reasons cause editor restored actived using listener visible called widgets actually visible editor styled text visble returns false expected clicking editor tabs shows correct behavior related appears visible editor works activating realized editors
+ 

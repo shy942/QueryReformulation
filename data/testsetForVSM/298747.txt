@@ -1,0 +1,2 @@
+editor mgmt bidi incorrect file type direction mirrored editor selection dialog build identifier bidi hebrew locale file types editor selection dialog displayed incorrect example ndl instead ndl cases described excluded separate contains different cases needed different fixes reproducible steps reproduce hebrew locale mirrored open preferences general editors file associations assosiated editors select external programs expected result ndl actual result ndl
+ 

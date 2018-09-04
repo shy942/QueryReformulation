@@ -1,0 +1,2 @@
+layout generator handle link correctly layout generator used grid data factory grid layout factory currently handling link control incorrectly link controls wrap grid data factory incorrectly classifying non wrapping control patch forthcoming
+ 

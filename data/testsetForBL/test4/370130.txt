@@ -1,0 +1,2 @@
+compatibility view toolbar button doesn command tooltip git view toolbar buttons don tooltips works example refresh button git repositories view button contributed menu contribution location toolbar org egit repositories view command command org egit repositories view refresh style push command command doesn tooltip attribute command used case command contribution item update tool item
+ 

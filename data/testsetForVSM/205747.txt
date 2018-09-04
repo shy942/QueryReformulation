@@ -1,0 +1,2 @@
+contributions adding level menus using menu service work trying level menu items using menu service attachment txt plugin activator abstract plugin works popups doesn work level menus probably related note factory available following calls link populate contribution manager contribution manager string contributions populated managers public void contribution factory abstract contribution factory factory menu service refers
+ 

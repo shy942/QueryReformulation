@@ -1,0 +1,2 @@
+face tool tip respect display boundaries native tooltip drawn completely visible display tooltips don currently
+ 

@@ -1,0 +1,2 @@
+cleanup work renderer classes things renderer classes optimal unnecessary default constructors implemented context modification class creates unnecessary cast loops used blocks used statements
+ 

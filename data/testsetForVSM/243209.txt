@@ -1,0 +1,2 @@
+activity mgmt org internal activities identifer prevents menu contributions showing build version code identifier remove identifier listener code guarded aganist occurs menu contributions don patch attached fix
+ 

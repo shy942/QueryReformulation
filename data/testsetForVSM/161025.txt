@@ -1,0 +1,2 @@
+workbench parts selection listener possible setup editor table selection provider view registered listen selection events having view doesn selection events open view open editor public void selection listener string selection listener listener use method view doesn events opened editor time editor doesn page selection tracker second time view opened works
+ 

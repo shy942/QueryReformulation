@@ -1,0 +1,2 @@
+common navigator sorter inconsistently uses possible children instead trigger points discovered code inspection common viewer sorter converted use trigger points instead possible children fix place code used possible children needs switched use trigger points
+ 

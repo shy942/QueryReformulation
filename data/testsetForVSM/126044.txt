@@ -1,0 +1,2 @@
+contexts key binding changes break quick view key bindings changes key binding context architecture broken key binding support quick views earlier possible open quick view view menu using ctrl command org window view menu looks deprecated code org jdt internal text abstract information control working migrate code ensure deprecated code works
+ 

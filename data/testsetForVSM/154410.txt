@@ -1,0 +1,2 @@
+cell editors cell editor action handler doesn handle dynamic undo text cell editor action handler allows clients install undo redo handler used cell editor open support fact undo redo handlers update action text according operation undone redone enablement conditions undo redo action handlers dynamically cell editor action handlers monitor property events underlying undo redo actions update enablement text accordingly required task views bookmark views correct text undo redo actions marker operation undone
+ 

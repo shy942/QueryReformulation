@@ -1,0 +1,2 @@
+menu item missing icon command images created attachment reproducing example plugin source binary command menu item icon specified org menus extension command invokes provided org command images extension addition menu item explicit equal command icon shown menu steps reproduce build install attached example plugin expected result item hello world in menu hello display icon actual result menu item icon fix using attached patch
+ 

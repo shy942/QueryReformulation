@@ -1,0 +1,2 @@
+misleading error message fixed styling following typo plugin xml property application value plattform plugin com example rcp todo css default css property warning plattform plugin com example rcp todo css default css changed meaning used theme support error message misleading case
+ 

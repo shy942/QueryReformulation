@@ -1,0 +1,2 @@
+date time configuration details panel localized install language pack launch simplified chinese locale configuration date time configuration details panel localized probably use icu date time attached picture
+ 

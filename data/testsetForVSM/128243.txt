@@ -1,0 +1,2 @@
+face jface util listener list deprecation message tell difference listener list int deprecated org jface util listener list says deprecated use link org core runtime listener list instead jface listener list explicitly mention constructors classes different semantics clients convert core runtime version noticing shift identity equality capacity
+ 

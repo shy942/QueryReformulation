@@ -1,0 +1,2 @@
+contributions icon tool tips key bindings debug view tool tips icons tool bar display key bindings actions tooltip step step preferences keys experimental icon binding
+ 

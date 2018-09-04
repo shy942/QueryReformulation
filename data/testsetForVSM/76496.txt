@@ -1,0 +1,2 @@
+dialogs open resource folder sorting gets reversed build press ctrl shift open open resource dialog type plugin xlm notice typo characters type fix typo folders area shows reversed sorting
+ 

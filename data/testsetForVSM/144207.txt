@@ -1,0 +1,2 @@
+prev working anymore search view regression java file content java editor use ctrl ctrl previous toggle errors file select args invoke search occurrences file indentifier set focus search view matches use ctrl ctrl search results search view toggles highlighting editor prev toolbar buttons search view using global menu actions works verified java package pack import java util list import java util list public class implements list param args public static void main string args println args
+ 

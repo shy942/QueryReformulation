@@ -1,0 +1,2 @@
+compatibility perspectives standalone views lay incorrectly build identifier process testing conversion based app came issue perspective standalone views lay correctly views positions views switched normal non standalone views correct positions attaching screenshots patch mail demo application demonstrate issue reproducible steps reproduce perspective layout standalone views demonstrated attached patch application open perspective step observe views placed incorrect positions
+ 

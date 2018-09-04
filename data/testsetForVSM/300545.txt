@@ -1,0 +1,2 @@
+viewers column scrolling breaks cell selection scrolled table initially created clone build steps reproduce attached snippet scroll table way right column item cell table scrolls left opens cell editor cell cursor scrolled left cell cursor clicked mouse information tested win
+ 

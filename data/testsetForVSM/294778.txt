@@ -1,0 +1,2 @@
+face util replace javadoc wrongly used introduced follow org dialogs search pattern assumes org jface util util replace string replace textual replace uses regular expressions search pattern trim wildcard characters string rewritten needs manual loop replace sequences javadoc util replace tell explicitly support regular expressions contrast string replace
+ 

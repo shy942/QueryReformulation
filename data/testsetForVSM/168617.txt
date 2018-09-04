@@ -1,0 +1,2 @@
+workbench launcher painting splash screen application starts splash screen process main thread enable splash screen needs periodically paint display application starting event loop starts running startup framework handles painting splash screen startup application started
+ 

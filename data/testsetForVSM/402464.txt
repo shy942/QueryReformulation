@@ -1,0 +1,2 @@
+deprecated viewer sorter according javadoc viewer sorter used viewer comparator used instead face java suggest deprecate flag class makes easier people avoid using class
+ 

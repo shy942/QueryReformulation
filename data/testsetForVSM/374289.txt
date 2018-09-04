@@ -1,0 +1,2 @@
+updating toolbar images effect tested using https github com paulweb examples org example commands toolbar project handlers updating images handled contributionitems updating correctly
+ 

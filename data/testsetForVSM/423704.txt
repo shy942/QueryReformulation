@@ -1,0 +1,2 @@
+update classic theme use default color font definitions ready update stylesheets proper theme element definitions connect color font preference page dialog decided update classic stylesheets feedback
+ 

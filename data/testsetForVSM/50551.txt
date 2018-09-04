@@ -1,0 +1,2 @@
+preferences pref page workbench keys advanced mnemonic controls mnemonic
+ 

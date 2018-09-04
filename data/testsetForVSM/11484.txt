@@ -1,0 +1,2 @@
+contributions contributions rebuilt started investigation reading image files multiple times ended exposing bigger problems open java editors switch notice perspective gif files read time editor changes turns result calling perspective menu menu item creates images time hack cache images avoiding making menu dynamic avoiding recreating menu perspective changed incomplete fixes defect method ends called outline view update sense understand update local toolbar outline view imply update ends called twice outline view editor
+ 

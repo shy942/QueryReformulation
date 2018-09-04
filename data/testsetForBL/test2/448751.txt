@@ -1,0 +1,2 @@
+monitoring failing tests long event middle nested calls fails java lang assertion error long running event didn capture range stack traces expected org junit assert fail assert java org junit assert fail equals assert java org junit assert assert equals assert java org junit assert assert equals assert java sergey
+ 

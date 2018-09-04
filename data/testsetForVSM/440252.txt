@@ -1,0 +1,2 @@
+minor cleanup menu manager looking noticed loops non java statements suggest clean class
+ 

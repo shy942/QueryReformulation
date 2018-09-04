@@ -1,0 +1,2 @@
+activity mgmt update activities extension points use identifier support schema type identifier activities exsd activity support exsd
+ 

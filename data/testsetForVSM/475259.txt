@@ -1,0 +1,2 @@
+update org ide java simplify code org ide makes heavy usage listeners shell provider preferences property listener selection changed listener verify listener state listener input validator org jface util property listener import org jface viewers double event import org jface viewers double listener import org jface viewers selection changed listener import org jface viewers selection changed event runnable progress org core resources workspace runnable traverse listener using lambda result lighter code base
+ 

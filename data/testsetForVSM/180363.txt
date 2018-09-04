@@ -1,0 +1,2 @@
+linked resources way linked resource based variable shell mkdir tmp define path variable pointing tmp preferences workspace linked resources select project folder advanced link folder file type finish folder gets added project file link type type location tmp location link instead expected link type type location location link regression
+ 

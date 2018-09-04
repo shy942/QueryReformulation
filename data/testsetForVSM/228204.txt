@@ -1,0 +1,2 @@
+status handling workbench status dialog manager open status dialog log caused java lang null pointer exception org statushandlers workbench status dialog manager open status dialog workbench status dialog manager java org statushandlers workbench status dialog manager access workbench status dialog manager java org statushandlers workbench status dialog manager workbench status dialog manager java org swt widgets runnable lock runnable lock java org swt widgets synchronizer async messages synchronizer java sorry steps went synchronization error dialog
+ 

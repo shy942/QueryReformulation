@@ -1,0 +1,2 @@
+data binding use varargs bean properties
+ 

@@ -1,0 +1,2 @@
+metadata remove explicit dependency org equinox event fixed explicit dependency org equinox event removed breaks scenarios wants use distributed event admin implementation http www org ecf org ecf docs api org ecf remoteservice eventadmin distributed event admin html
+ 

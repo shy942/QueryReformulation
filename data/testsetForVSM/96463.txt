@@ -1,0 +1,2 @@
+workbench parts regression toolbar flashes switching editor instances switch instances logic example editor entire toolbar flickers redrawn
+ 

@@ -1,0 +1,2 @@
+properties view property sheet bootstrap received running tests property sheet bootstrap wrongly assumes view parts provide selection provider marked view reference viewrefs page view references view reference ref viewrefs workbench ref false null page visible continue important continue selection selection site selection provider selection original sel equals selection bootstrap selection original sel return org examples jobs views jobs view doesn provide selection provider
+ 

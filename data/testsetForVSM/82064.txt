@@ -1,0 +1,2 @@
+dialogs title area dialog set title image called open case image icon image display gif title area dialog dlg title area dialog shell dlg set title image icon dlg open
+ 

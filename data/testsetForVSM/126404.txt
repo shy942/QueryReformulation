@@ -1,0 +1,2 @@
+commands handlers key binding availability dependant view focus build build outline view java editor method hit ctrl shift happens method java editor hit keys order search let demo information setup workbench xml
+ 

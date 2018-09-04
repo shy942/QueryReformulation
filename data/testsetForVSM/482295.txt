@@ -1,0 +1,2 @@
+improve method internal sash renderer weight method called layout weight
+ 

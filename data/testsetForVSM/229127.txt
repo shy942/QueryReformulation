@@ -1,0 +1,2 @@
+services provide workbench location service created attachment rogue implementation instead sticking workbench workbench window service locator provide simple service tied workbench model attachment rogue implementation safe keeping complete different service pattern dangerous
+ 

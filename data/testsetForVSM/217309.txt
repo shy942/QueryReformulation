@@ -1,0 +1,2 @@
+metadata org workbench compatibility fragment bundle classpath boggus bundle classpath entry missing inside file means fragment bundle classpath true bundle classpath defined bundle class path compatibility jar fix tooling valid model org workbench bundle fragment way properly insert fragment classes host classes fix needed asap thanks
+ 

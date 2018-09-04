@@ -1,0 +1,2 @@
+metadata application fails start com ibm icu base plug build steps reproduce com ibm icu plug com ibm icu base plug update rcp feature xml bundles info use com ibm icu base instead com ibm icu information org ide application jar require bundle require bundle org ide bundle version org core runtime bundle version org core resources bundle version org update configura tor bundle version org bundle version org navigator resources bundle version org core net bundle version org update core bundle version com ibm icu bund version
+ 

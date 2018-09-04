@@ -1,0 +1,2 @@
+tests command lookup method initially created clone
+ 

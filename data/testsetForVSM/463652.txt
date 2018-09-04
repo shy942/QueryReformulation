@@ -1,0 +1,2 @@
+heap status styling creates theme switching fix creates theme switching reason reset engine set background method heap status called null reset control default code later tries use null allowed fix follow
+ 

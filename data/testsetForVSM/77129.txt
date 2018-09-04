@@ -1,0 +1,2 @@
+key bindings esc doesn close dialogs build esc currently doesn close pop anymore open type dialog steps enable emacs bindings open open type modal dialog hit esc observe dialog doesn close observe status bar indicates esc pressed
+ 

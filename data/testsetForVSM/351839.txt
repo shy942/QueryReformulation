@@ -1,0 +1,2 @@
+org emf xpath compile errors probably related version changed fixed quickly description resource path location type ecore path context factory resolved example queries case java org emf xpath src org emf xpath java
+ 

@@ -1,0 +1,2 @@
+clipboard using vnc clipboard transfer causes build steps reproduce open vnc session logged session vnc display load use right projects quickly complain memory crash information happened release tried disable clipboard transfer crashes way running vnc client windows pro vnc server ubuntu feisty linux
+ 

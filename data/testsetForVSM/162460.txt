@@ -1,0 +1,2 @@
+undo resources operation doesn allow deletion closed project fixing java note fails resources operation throws illegal argument exception deleting closed project project description assumes projects open throw exception gracefully handle closed projects
+ 

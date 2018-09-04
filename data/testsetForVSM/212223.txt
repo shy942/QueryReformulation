@@ -1,0 +1,2 @@
+data binding case delayed observable value attach patch
+ 

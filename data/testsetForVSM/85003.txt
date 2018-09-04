@@ -1,0 +1,2 @@
+workbench regression initial window position puts window screen window size close resolution open workspace initial window placed outside bounds display occurs window size close screen resolution
+ 

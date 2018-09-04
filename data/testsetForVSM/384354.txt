@@ -1,0 +1,2 @@
+compatibility editor actions registered extension point org editor actions shown twice toolbar build identifier action registered extension point org editor actions correctly shown toolbar main menu entry juno action shown twice toolbar icon behavior main menu ugly action different checked states time checked radio button reproducible
+ 

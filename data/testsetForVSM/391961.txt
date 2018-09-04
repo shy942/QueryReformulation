@@ -1,0 +1,2 @@
+label set icon work perspective trying update runtime icon perspective loaded default icon note changing label works snippet perspective model perspective perspective model service perspective application model perspective null image descriptor image descriptor image registry descriptor image key image descriptor null string image menu helper image url image descriptor model perspective set icon image model perspective set label blah
+ 

@@ -1,0 +1,2 @@
+undo redundant awkward warning message rename causes overwrite renaming resource overwrite occur warning message dialog says operation warning xxx overwritten proceed rename title dialog operation warning having message text addition title makes harder parse going
+ 

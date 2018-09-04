@@ -1,0 +1,2 @@
+model platform plugin used fragment uri org workbench model extension point similiar https bugs org bugs cgi consistent org workbench model use platform plugin prefix example used resources icons currenty plugin extension point org workbench model fragment uri fragment xmi fragment extension plugin
+ 

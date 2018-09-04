@@ -1,0 +1,2 @@
+contributions customize perspective dialog requires checks hide navigate build open navigate menu unchecked shows real menu disappear uncheck dialog
+ 

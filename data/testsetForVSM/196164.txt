@@ -1,0 +1,2 @@
+plugin broken missing dependency runtime compatibility dependency org core runtime compatibility removed org org core resources breaks application org ide depends compatibility plugin resource navigator view dependency broken https bugs org bugs cgi
+ 

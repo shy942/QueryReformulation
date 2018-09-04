@@ -1,0 +1,2 @@
+model application model menus don support tooltips resolution possible assign tooltips menu items capability available application model albeit attribute tooltip exists menus setting currently effect update menu item functions handled contribution item direct contribution item don attempt set tooltip model information menu item item updater field class menu manager renderer handle attribute events label contribution item update called tooltip changes
+ 

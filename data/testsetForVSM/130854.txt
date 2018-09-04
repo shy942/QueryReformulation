@@ -1,0 +1,2 @@
+cell editors face table viewer ignoring cell editor validator state using validator text cell editor entering invalid text cell results cell modifier modify called null value error reported value discarded table editor impl save editor value actually editor validity case invalid values calls cell editor value text cell editor returns null validator invalidated current value
+ 

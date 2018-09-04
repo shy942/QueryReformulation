@@ -1,0 +1,2 @@
+drag drop view tabs behaves unpredictably drop feedback drop behavior drag drop view tabs tab groups behaves unpredictably doesn deterministic drop target drops position work drag view tab drop target appear view tab tab groups beginning end tab group consistency immediate feedback drop target available left right original tab position dropping tab inserted drop target position view dragged tab group view order ctrl currently view left dragged tab comes
+ 

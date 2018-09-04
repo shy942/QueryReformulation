@@ -1,0 +1,2 @@
+set comparator structured viewer verifying noticed following org jface viewers structured viewer public void set comparator viewer comparator comparator sorter sorter sorter comparator refresh shouldn public void set comparator viewer comparator comparator sorter comparator sorter comparator refresh looks set viewercomparator sorter equal sorter note set severity major major fixed somewhat defeats purpose fixing
+ 

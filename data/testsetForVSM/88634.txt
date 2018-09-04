@@ -1,0 +1,2 @@
+activity mgmt activity image binding activity support extension point images really peripheral activities declaration moved activity support extension point
+ 

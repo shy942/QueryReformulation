@@ -1,0 +1,2 @@
+regression multi page editor page int fires page changed event selected page null multi page editor page int fires page changed event selected page null org multi page editor page int method changed throws page changed event selected page null method page changed page changed event selected page multipage editor pages consisting scrolled composites org forms editor form editor active page instance involked org forms editor form editor selected page return null defect open editor
+ 

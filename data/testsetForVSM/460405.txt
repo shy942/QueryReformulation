@@ -1,0 +1,2 @@
+fix compiler problems generified adaptable adapter
+ 

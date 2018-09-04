@@ -1,0 +1,2 @@
+contexts window context stays active replace dialog open open java editor open replace ctrl press ctrl editor command cut gets directly executed editor replace dialog active using ctrl ctrl weird code involved replace dialog scenario broken ctrl ctrl used scenario ctrl isn involved open java editor open replace ctrl regular expressions checked uncheck close editor press ctrl space code assist gets directly executed editor replace dialog active
+ 

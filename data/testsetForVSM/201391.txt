@@ -1,0 +1,2 @@
+notification active page multi page editor changes listener informs active page multi page editor changes
+ 

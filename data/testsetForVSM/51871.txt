@@ -1,0 +1,2 @@
+key bindings scrolling works console use page page ctrl home ctrl end console build
+ 

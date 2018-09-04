@@ -1,0 +1,2 @@
+key bindings errors warning creating invalid keybinding sequence tried map plug xml set instead unrecognized warning log file indicating invalid sequence set debug keybindings enabled options file spew complaints
+ 

@@ -1,0 +1,2 @@
+key bindings keybinding reassignments action list available editors needs key binding workbench team use ctrl purpose ctrl currently bound action needs key binding plan follows reassign display ctrl ctrl alt reassign ctrl erase assign ctrl switch editors
+ 

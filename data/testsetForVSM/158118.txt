@@ -1,0 +1,2 @@
+viewer sorter comparator class java element sorter extends viewer sorter breaking hoping used viewer sorter viewer comparator viewer sorter extends viewer comparator internally changed code use comparator comparing elements avoid use collator compability unfortunatly viewer sorter reimplements comparator replaces collator blocks accesses comparator instance viewer comparator possibility viewer sorter collator super overriding comparator required case viewer sorter null overwrite comparator collator lazy collator
+ 

@@ -1,0 +1,2 @@
+viewers tooltip support delegating styled cell label provider build steps reproduce delegating styled cell label provider support font provider color provider tooltip methods defined cell label provider delegate delegating styled cell label provider styled label provider myself nice standard api
+ 

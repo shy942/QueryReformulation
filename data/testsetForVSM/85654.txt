@@ -1,0 +1,2 @@
+presentations standalone views resized properly resize application doesn redraw left view correctly hard attach couple screenshots seeing
+ 

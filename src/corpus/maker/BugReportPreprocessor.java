@@ -37,12 +37,16 @@ public class BugReportPreprocessor {
 	}
 
 	protected ArrayList<String> splitContent(String content) {
+		System.out.println("Before split: ");
+		System.out.println(content);
 		String[] words = content.split("(?=[A-Z])");
 		//String[] words = content.split("\\s+|\\p{Punct}+|\\d+");
 		//return new ArrayList<String>(Arrays.asList(words));
 		ArrayList<String> list =new ArrayList<String>(Arrays.asList(words));
 		String content2 = MiscUtility.list2Str(list);
 		String[] words2 = content2.split("\\s+|\\p{Punct}+|\\d+");
+		System.out.println("After split: ");
+		System.out.println(new ArrayList<String>(Arrays.asList(words2)));
 		return new ArrayList<String>(Arrays.asList(words2));
 	}
 
@@ -53,12 +57,15 @@ public class BugReportPreprocessor {
 	
 	protected ArrayList<String> splitLines(String content)
 	{
+		
 		String[] contentByLine=content.split("\\r?\\n");
 		//return new ArrayList<String>(Arrays.asList(contentByLine));
 		ArrayList<String> list =new ArrayList<String>(Arrays.asList(contentByLine));
 		String content2 = MiscUtility.list2Str(list);
 		String[] words = content2.split("(?=[A-Z])");
+		
 		return new ArrayList<String>(Arrays.asList(words));
+		
 	}
 	
 	public String performNLPforAllContent() {

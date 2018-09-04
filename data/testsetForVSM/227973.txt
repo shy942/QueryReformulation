@@ -1,0 +1,2 @@
+workbench parts variables view activation using set breakpoints code debugging runtime workbench hit breakpoint debugger perspective focus requested unfortunately variables view completely variable value tried selection debug stack trace view remains completely blank workaround select view display view variables view views switch variables view displays correctly variables values note issue close reopen session
+ 

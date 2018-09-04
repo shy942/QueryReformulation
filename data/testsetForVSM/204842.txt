@@ -1,0 +1,2 @@
+contributions set global action handler ignores actions using action bars set global action handler retarget action contributed programmatically action factory prevent action generating action handler used keybindings
+ 

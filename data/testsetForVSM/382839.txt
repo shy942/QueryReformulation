@@ -1,0 +1,2 @@
+compatibility work content assist pop work content assist pop works steps start workspace assign key binding paste class package explorer invoke content assist don focus pop use key binding step moves selection pop expected moves inside editor code installs handlers org jface text contentassist content assistant install
+ 

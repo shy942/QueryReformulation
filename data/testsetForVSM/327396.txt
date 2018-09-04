@@ -1,0 +1,2 @@
+working sets updating working sets workbench restore cause loss working sets detailed description basically working set set elements invoked working set manager restore state running partial workingsets xml file written disk containing state loaded point case working sets modified workbench session working set manager save state invoked write loaded state working sets persisted lost
+ 

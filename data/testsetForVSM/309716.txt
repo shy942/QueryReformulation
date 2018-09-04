@@ -1,0 +1,2 @@
+perspectives resetting perspective removes shortcuts toolbar button created attachment screenshot version build steps start workspace java perspective default observe contributed shortcuts toolbar item dropdown reset perspective window reset perspective note shortcuts removed toolbar item attached screenshot start platform note expected shortcuts
+ 

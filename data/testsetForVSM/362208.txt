@@ -1,0 +1,2 @@
+compatibility description hidden text open properties view ctrl properties view unpin space label view resizing view recover lost space
+ 

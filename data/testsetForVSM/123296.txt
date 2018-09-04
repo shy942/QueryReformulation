@@ -1,0 +1,2 @@
+face memory leak org jface window window shell window disposed font listener removed font registry solve method close changed following lines shell null return true font listener null face resources font registry remove listener font listener font listener null shell disposed return true
+ 

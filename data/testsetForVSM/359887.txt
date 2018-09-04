@@ -1,0 +1,2 @@
+removing identifier listener corrupts changed event list calling identifier remove identifier listener identifier listener identifier changed handler corrupt event list resulting listener receiving notification event identifier identifier changed method iterating identifiers list index based loop remove identifier listener concurrently modifying list defect exists obvious register listener identifier layout helper discovered implementing capabilities work registering listener view views notified identifier changed
+ 

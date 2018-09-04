@@ -1,0 +1,2 @@
+directory dialog unusably slow trying browse file using file chooser dialog possible file chooser dialog doesn refresh using patch
+ 

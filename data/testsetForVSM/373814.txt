@@ -1,0 +1,2 @@
+missing set focus maximize minimize restore stack investigating double clicking maximize unmaximize works inconsistently based fix using buttons actions max min view loses focus
+ 

@@ -1,0 +1,2 @@
+workbench parts workbench page open editor called activate false unmaximizes current view brings workbench window window stack workbench minimized debug view uses method open editor currently selected stack frame debug view selects stack frame result certain debug events cause unexpected behavior workbench related
+ 

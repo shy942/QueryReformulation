@@ -1,0 +1,2 @@
+view work application model instead view registry allow views contributed fragments processors rewrite view dialog related classes work application model
+ 

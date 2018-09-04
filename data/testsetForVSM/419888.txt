@@ -1,0 +1,2 @@
+model extend model service model element read extensions model element method extended support model classes provided org emf ecore generated package extension point https git org
+ 

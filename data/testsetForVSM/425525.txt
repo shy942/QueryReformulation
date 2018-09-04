@@ -1,0 +1,2 @@
+view mgmt properties view populate workbench selection opened activated steps use ecore model editor example trigger ensure propeties view closed edit ecore model ecore model editor select child node ecore model editor right select properties view expected result properties view open populate data related selected node ecore model editor behaviour actual result properties view shows populated data reselect node ecore model editor related activating properties view opening previous workbench selection lost said works expected
+ 

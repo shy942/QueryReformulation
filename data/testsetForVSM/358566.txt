@@ -1,0 +1,2 @@
+compatibility view descriptor implement restorable correctly view define restorable attribute restorable return true instead false
+ 

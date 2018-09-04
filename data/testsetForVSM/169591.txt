@@ -1,0 +1,2 @@
+common navigator fails editor inputs context method common navigator considers selection context project explorer performed editor selection input provided unfortunately problematic target needs adapt input file probably sort extension project explorer plug proper support
+ 

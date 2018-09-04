@@ -1,0 +1,2 @@
+exception thrown changing perspective closing window window window window open perspective debug hover mouse java perspective tool item immediately hit alt exception occur caused org swt exception widget disposed org swt error java org swt error java org swt error java org swt widgets widget error widget java org swt widgets widget widget widget java org swt widgets composite layout composite java org workbench addons minmax min max addon min max addon java org swt widgets runnable lock runnable lock java org swt widgets synchronizer async messages synchronizer java
+ 

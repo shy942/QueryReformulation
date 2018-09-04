@@ -1,0 +1,2 @@
+undo undo support navigator navigator view support undo redo actions rename
+ 

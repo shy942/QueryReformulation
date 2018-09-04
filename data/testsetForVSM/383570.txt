@@ -1,0 +1,2 @@
+progress progress view duplicates job broken progress view renders job twice lot git refresh jobs unfortunately initially thought git turned bad fix reproduce select type java lang string choose open hierarchy
+ 

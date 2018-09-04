@@ -1,0 +1,2 @@
+compatibility debug actions global debug toolbar enabled prematurely actions global debug toolbar enabled startup disabled start disabled
+ 

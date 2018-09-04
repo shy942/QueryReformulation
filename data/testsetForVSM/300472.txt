@@ -1,0 +1,2 @@
+dialogs face provide accessor dialog messages nice access dialog messages dialog constants trough instead field access allow team provide session based translation labels furthermore improves usability current users developers single source applications use existing face labels hardcoded static fields chance intervene behavior breaking suggest provide accessor message translated string allow developers use face happy provide patch decided possible approach suggested introduce accessor dialog itself introduce message keys dialog constants
+ 

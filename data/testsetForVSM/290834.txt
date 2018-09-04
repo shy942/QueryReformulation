@@ -1,0 +1,2 @@
+face unnecessary saferunner invocation face util initialize face safe runnable runner set singleton runner implementation uses deprecated method platform simply calls safe runner deprecated mentioning developers instead basically extraneous use safe runner considering used easy avoid extraneous method brainer adjust
+ 

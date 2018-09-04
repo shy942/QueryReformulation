@@ -1,0 +1,2 @@
+common navigator label properly shown contributed label caused significant regression based editor elements named project explorer elements blank icon elements created subsequently user set cases elements given shows project explorer newer target zero length string returns null string text label provider text element text null text length return styled string text return null styled text method gets null value returns error message common navigator messages navigator content service label provider error label provider
+ 

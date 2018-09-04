@@ -1,0 +1,2 @@
+mac cocoa shell decorated title path property
+ 

@@ -1,0 +1,2 @@
+project persistent property tester build org internal ide model project persistent property tester duplicates functionality provided core resources property tester removed migrated core implementation provided functionality testing properties resource mappings worrying compatibility related
+ 

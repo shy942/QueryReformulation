@@ -1,0 +1,2 @@
+variables view comes switching editors active debug session debug view variables view outline view stacked tab group launch runtime debug mode hitting breakpoint switch editor variables view comes hides outline view case build inconvenient workaround disable view management debug view view menu
+ 

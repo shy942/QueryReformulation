@@ -1,0 +1,2 @@
+popup dialog quick outline stays opening view menu initially created clone quick outline mouse black triangle view menu editor area expected outline disappears outline stays deactivated original fixed using popup dialog working using linux potentially linux motif
+ 

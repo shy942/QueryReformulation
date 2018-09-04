@@ -1,0 +1,2 @@
+examples bridge example app styled using bridge mechanism
+ 

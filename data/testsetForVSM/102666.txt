@@ -1,0 +1,2 @@
+commands registry source provider selection context implemented according file org handlers extension point workbench provides variables expressions rely variables supported active contexts active editor active current selection created extension using selection expression active variable selection count value active noticed expression evaluated global selection changes looking code source provider implementations selection context place active expression evaluated applying fix suggested looks handler activation implemented half way tested
+ 

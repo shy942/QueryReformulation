@@ -1,0 +1,2 @@
+editor selection dialog suggestions preference page workbench file editors press associated editors selection enabled multiple selection enabled selecting internal editors external editors select entry switch internal selection press adds selected external editor hidden entry entries existing associated editors available selection default entry associated editors list marked default perspectives width hint dialog file editors pref page grow height selected pages currently fixes release released fixes
+ 

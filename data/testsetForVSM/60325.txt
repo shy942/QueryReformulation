@@ -1,0 +1,2 @@
+review abstract plugin initialize default plugin preferences plugin initialize default plugin preferences deprecated story place abstract plugin implements method offers subclasses review abstract plugin
+ 

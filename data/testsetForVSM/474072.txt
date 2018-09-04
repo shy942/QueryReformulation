@@ -1,0 +1,2 @@
+abstract plugin image descriptor plugin stopped handling bundleentry bundleresource mars executing abstract plugin image descriptor plugin com systemincloud modeler gui bundleentry fwk icons palette videofromfile png returns image descriptor platform plugin com systemincloud modeler gui bundleentry fwk icons palette videofromfile png luna method returning image descriptor bundleentry fwk icons palette videofromfile png mentioned https bugs org bugs cgi https www org forums index php thanks clarification marek
+ 

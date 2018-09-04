@@ -1,0 +1,2 @@
+leaks filtered items selection dialog compound contribution item open menu fix stream initially created clone open resource dialog leak free problems fixed filtered items selection dialog leaks menu managers compound contribution item leaks nested contribution items open menu caches images private static hashtable fix use shared resource manager workbench plugin
+ 

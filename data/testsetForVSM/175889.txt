@@ -1,0 +1,2 @@
+allow early splash bundles participate splash handler early bundle created display shell early splash content standard splash handling currently early splash bundle looses control application starts display event loop spun allow mechanism early splash bundle participate workbench starts suggest following wishing contribute abstract splash handler org splash handler extension point extension early content capable initializing itself based early content workbench abstract splash handler splash shell
+ 

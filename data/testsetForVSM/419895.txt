@@ -1,0 +1,2 @@
+workbench parts compatibility editor views context populated late compatibility editor compatibility view don actually place editor view context control called makes difficult services created context obtain editor view context
+ 

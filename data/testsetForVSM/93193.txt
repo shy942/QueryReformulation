@@ -1,0 +1,2 @@
+dialogs infinite search project import dialog using open existing project import wizard type text field toggle radio button search archive type archive search text field large directory hit tab begin search cancel cancels cancel button gets disabled focus traverses radio button kicks search result infinite search canceled
+ 

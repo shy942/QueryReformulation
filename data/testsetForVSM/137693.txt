@@ -1,0 +1,2 @@
+progress progress dialog huge hides buttons sync originally reported refreshing synchornize view using icon view toolbar using modal progress dialog height occupying screen dialog background possible impacts developer productivity
+ 

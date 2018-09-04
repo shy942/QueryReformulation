@@ -1,0 +1,2 @@
+contributions evaluation context object contributions allow eager plug loading evaluation context created object contribution set allow plugin activation true means condition ask plugins loaded honoured
+ 

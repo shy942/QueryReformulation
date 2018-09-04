@@ -1,0 +1,2 @@
+global actions open resource dialog doesn filters class files build press ctrl shift open open resource dialog type class file workspace example hello class dialog class file exists case simple hello world program default package hello java hello class directory dialog hello java
+ 

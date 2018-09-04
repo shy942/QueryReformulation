@@ -1,0 +1,2 @@
+contributions sub action bars properly handle menu listeners build investigating leak java editors java outline page custom filters action group hooks menu listener menu manager page site action bars sub menu manager implementation menu listener simply delegates parent problems menu listeners disposed action bars disposed menu shown listener given parent menu manager sub menu manager
+ 

@@ -1,0 +1,2 @@
+model memento rejects keys begin doc memento says alphanumeric string acceptable key legitimate illegitimate doc needs specific
+ 

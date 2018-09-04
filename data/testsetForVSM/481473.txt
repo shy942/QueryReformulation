@@ -1,0 +1,2 @@
+cleanup working set dialog code working set dialog reworked foreach loops warnings breaks
+ 

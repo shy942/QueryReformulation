@@ -1,0 +1,2 @@
+perspectives perspective restarting open welcome page scenario open welcome page restart close welcome page perspective resetting restarting brings perspective content closing reopening perspective helps obviously unsaved changes perspective layout lost log file reproducible
+ 

@@ -27,8 +27,8 @@ public class BugExtractor {
 	}
 	
 	public BugExtractor(String xmlFileName) {
-		this.xmlFileName = StaticData.BUGDIR + "/BugAllContent/XMLfiles/" + xmlFileName;
-		this.outDir = StaticData.BUGDIR + "/BugAllContent/ExtractedData/";
+		this.xmlFileName =  "E:\\PhD\\Data\\XMLFiles\\" + xmlFileName;
+		this.outDir = "E:\\PhD\\BugWithComment\\BugDataExtracted\\";
 	}
 
 
@@ -158,7 +158,7 @@ public class BugExtractor {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String XMLfolderPath=StaticData.BUGDIR+"/BugAllContent/XMLfiles/";
+		String XMLfolderPath="E:\\PhD\\Data\\XMLFiles\\";
 		File[] files = new File(XMLfolderPath).listFiles();
 		for (File file : files) {
 	        if (file.isDirectory()) {

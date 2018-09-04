@@ -1,0 +1,2 @@
+allow tests disable auto save job having feature default forces long jobs finishing jobs finish avoid conflicts disable certain jobs explicitly avoid build validations cause issues running tests build speed unitests using plugin customization ini really sustainable way disable plugn customization ini plugin configured tycho worse used property way ensuring job going present makes sense runs
+ 

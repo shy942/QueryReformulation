@@ -1,0 +1,2 @@
+regression coolbar shown main window resized lines code worked coolbar shown resizing window public class application action bar advisor extends action bar advisor protected void cool bar cool bar manager cool bar tool bar manager toolbar tool bar manager cool bar tool bar contribution item toolbar main toolbar action factory window
+ 

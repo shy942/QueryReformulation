@@ -1,0 +1,2 @@
+compatibility debug views opened version build don exact steps reproduce couple times view activated happened variables breakpoints debug views switch hidden stack bring view stack focus switch populated correct contents
+ 

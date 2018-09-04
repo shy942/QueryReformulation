@@ -1,0 +1,2 @@
+working sets possible shutdown sequence operations support disposed workbench plugin stop trying dispose operations plug ins gone fix dispose code workbench plugin stop workbench plugin reset noticed support registry objects managed workbench plugin disposed reset method working set manager methods don thought point difference
+ 

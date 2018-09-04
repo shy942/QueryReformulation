@@ -1,0 +1,2 @@
+property retrieval instanceof return null checking ensure widget right class instanceof matching return null
+ 

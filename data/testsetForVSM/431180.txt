@@ -1,0 +1,2 @@
+command service addon public
+ 

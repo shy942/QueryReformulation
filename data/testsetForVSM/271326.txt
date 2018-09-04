@@ -1,0 +1,2 @@
+markers incorrect file path display problems view created attachment problems view build steps reproduce bidi specific defect case upper english letters represent hebrew letters open perspective project directory subdirectory hebrew names hebrew chars src directory source cpp file hebrew cpp subdirectory edit file insert syntax error build errors inspect file pathes problems view ecpected result src src actual result src src information linux red hat
+ 

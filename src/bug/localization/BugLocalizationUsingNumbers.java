@@ -470,18 +470,18 @@ public class BugLocalizationUsingNumbers {
 		//For Mac
 		//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
 		//ForWindows
-		String sourceFolder = "E:\\PhD\\Data\\"
+		String sourceFolder = "E:\\PhD\\Data\\NotProcessedSourceMethodLevel\\"
 				+ "\\";
 		String goldsetFile = "./data/gitInfoNew.txt";
 		
 		String outputFilePath
 		//="./data/Results/Aug24BLTest"+test+".txt";
-		="./data/Results/Aug31LuceneAndMe"+test+".txt";
+		="./data/Results/Sep4BLandMe"+test+".txt";
 		//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 	
-		//obj.bugLocator(obj, outputFilePath, sourceFolder, bugReportFolder, goldsetFile);
-		obj.bugLocatorLuceneAndMe(obj, outputFilePath, bugReportFolder);
+		obj.bugLocator(obj, outputFilePath, sourceFolder, bugReportFolder, goldsetFile);
+		//obj.bugLocatorLuceneAndMe(obj, outputFilePath, bugReportFolder);
 		//call the bug localizer
 	}
 

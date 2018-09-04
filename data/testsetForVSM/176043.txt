@@ -1,0 +1,2 @@
+commands restore toolbar breking plug boundaries currently possible hide toolbars unless mac toggle contribution state accessing internal code workbench ide convert action command handler property tester define command property tester workbench menu contribution ide behaviour having access internal code
+ 

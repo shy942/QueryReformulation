@@ -1,0 +1,2 @@
+themes face colors hyperlink text returns incorrect color high contrast mode version build fonts colours appear hardcoded blue result unreadable use constants active hypperlink colour turn high contrast open unreadable
+ 

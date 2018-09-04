@@ -1,0 +1,2 @@
+global actions open perspective start fresh workspace window window close java perspective open button menu doesn work brings window
+ 

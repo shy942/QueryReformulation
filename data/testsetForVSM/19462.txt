@@ -1,0 +1,2 @@
+wizards wizard dialog reserves space progressbar wizard dialog reserves space display progressbar wizard method needs progress monitor returns false space looks strange dialog page contains elements
+ 

@@ -1,0 +1,2 @@
+cool bar ability provide custom toolbar similar way supply custom statusbar application provide implementation cool bar manager cool bar used workbench window currently advisor presentation services allow provide implementation statusbar similar mechanism toolbar
+ 

@@ -1,0 +1,2 @@
+provide editor class useful class allow style individual parts boris bokowski mentioned intended original design place implement contributed renderer
+ 

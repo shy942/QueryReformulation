@@ -1,0 +1,2 @@
+workbench window configurer defaults documented consistent javadoc workbench window configurer set functions specify default example default set progress indicator true false tell looking code shouldn code confusing example workbench preferences says default false workbench window configurer progress indicator initialized true furthermore default turned convenient easier remember applications start zero status bar shortcut bar cool bar progress
+ 

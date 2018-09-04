@@ -1,0 +1,2 @@
+contributions toggle auto build action lacks action definition toggle auto build action lacks action definition use activities hide project menu adding fixes public toggle auto build action workbench window window super workbench messages workbench build automatically window window set checked resources plugin workspace auto building set action definition org project build automatically
+ 

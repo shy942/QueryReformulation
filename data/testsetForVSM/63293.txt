@@ -1,0 +1,2 @@
+workbench deprecate workbench preference store build workbench preference store returns preference store org workbench store internal preference settings method implemented way clients use platform preference store instead propose deprecating following note deprecated returns preference store code org workbench code plug internal preferences stored clients use link platform preference store instead
+ 

@@ -1,0 +1,2 @@
+contributions single java editor leaked org workbench code introduced popup menu extender order fix leaves action delegate instances alive refer editor action code introduced life cycle platform action delegate instances created opened editor action delegate dispose called
+ 

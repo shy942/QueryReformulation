@@ -1,0 +1,2 @@
+key bindings keys preference page resort binding conflicts keys preference page select build clear filter sort binding ctrl build binding ctrl conflicting binding quick access expected binding column properly resort conflicts visible
+ 

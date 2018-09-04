@@ -1,0 +1,2 @@
+viewers styled cell label provider paint respect column alignment current version styled cell label provider paint respect current alignment current column unfortunately difficult version implemented outside org jface viewers package vital interfaces package local styled cell label provider paint overriden sub classes needed methods private styled cell label provider viewer cell
+ 

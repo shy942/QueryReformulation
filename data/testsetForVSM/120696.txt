@@ -1,0 +1,2 @@
+viewers filtered tree smarter type filter text opening dialogs filtered tree type filter text field receives focus text selected start typing right away text field loses focus gets focus type filter text manually maybe selecting text field unchanged contents receives focus
+ 

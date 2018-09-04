@@ -1,0 +1,2 @@
+face deprecate org jface util assert adopt org core runtime assert deprecate org jface util assert adopt org core runtime assert makes obvious accidentally taking assert class face instead org core runtime assert
+ 

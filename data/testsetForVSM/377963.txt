@@ -1,0 +1,2 @@
+restarting brings emacs scheme keybindings started clean workspace inner plugin project examples navigate open java editor switched emacs scheme preferences general keys moves beginning deletes popup undo switched default key scheme selects undo restart start moving moves beginning moving editor
+ 

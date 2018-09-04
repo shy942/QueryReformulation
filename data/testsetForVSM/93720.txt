@@ -1,0 +1,2 @@
+workbench regression memento converts newlines string values spaces deserialization string value containing newline characters set using xml memento string key nvalue nwith nnewlines spaces instead newlines serialization subsequent deserialization case memento release
+ 

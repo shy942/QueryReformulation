@@ -1,0 +1,2 @@
+retain window order open order windows display taskbar inconsistent intermittent repro steps open starts shows initial window open windows multiple windows open note order windows clicking different window icons grouped windows taskbar open different file window identify quit file exit message saving workbench state eclips shuts open order windows appear selecting taskbar different step repeat step times necessary intermittent
+ 

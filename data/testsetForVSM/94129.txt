@@ -1,0 +1,2 @@
+workbench performance regression caused workbench harness core startup measures time application starts running improvement late week regression appears caused workbench waits early startup participants complete combined early startup participant plugin waits seconds discussing nick plan remove second delay property avoid blocking early startup participants running tests used performance sensitive startup time
+ 
