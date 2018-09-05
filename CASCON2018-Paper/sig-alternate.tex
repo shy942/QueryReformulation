@@ -48,6 +48,7 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{booktabs}
+\usepackage{resizegather}
 %%switch case statement
 %\newcommand{\SWITCH}[1]{\STATE \textbf{switch} (#1)}
 %\newcommand{\ENDSWITCH}{\STATE \textbf{end switch}}
@@ -444,7 +445,7 @@ So the new equation of revised VSM model is as follows:
 %\end{equation*}
 
 %\begin{equation}
-\begin{multline}
+\begin{multline}\label{rVSMequation}
 	rVSMScore(q,d)=g(\#term)\times cos(q,d)
 	\\
 	\frac{1}{1+e^{-N(\#terms))}}\times \frac{1}{\sqrt{\sum_{t\epsilon q}}((logf_{tq}+1)\times log(\frac{\#docs}{n_{t}}))^{^{2}}}\times 
@@ -466,7 +467,7 @@ This \textit{rVSM} score is calculated for each query bug report \textit{q} agai
 \end{figure}
 The assumption of this ranking is similar bugs of a given bug tend to modify similar source code files. Here, we construct a 3-layer architecture as described in \cite{Jian}. In the top layer (layer 1) there is a bug \textit{B} which represents a newly reported bug. All previously fixed bug reports which have non-negative similarity with bug  \textit{B} are presented in second layer. In third layer all source code files are shown. In order to resolve each bug in second layer some files in the corpus were modified or changed, which are indicated by a link between layer 2 and layer 3. Foe all source code files in layer 3, similarity score is computed, which can be referred to as degree of similarity. The score can be defined as:
 
-\begin{equation}
+\begin{equation}\label{Simiequation}
 SimiScore=\sum_{All S_{i} that connect to F_{j}}(Similarity(B,S_{i})/n_{i})
 \end{equation} 
 Here, similarity between newly reported bug \textit{B} and previously fixed bug \textit{S\textsubscript{i}} is calculated based on cosine similarity measure and \textit{n\textsubscript{i}} is the total number of link \textit{S\textsubscript{i}} has with source code files in layer 3.
@@ -675,8 +676,12 @@ We go through all commit messages and try to find those commit message that cont
 \textbf{Keyword- Source Code Linking:}
 At this point, in one side we have pre-processed keywords associated with each bug report and on the other side we have a relationship information between bug report ID and buggy source code links. We construct a bipartite graph between keywords collected from a bug report to its buggy source code locations. Here, one or more keywords can be linked to one or more buggy source code files links and a source code file link can be linked to one or more keywords.
 
-
-
+\textbf{Calculating Co-occurence Scores}
+A query typically contains several keywords or words. For each keyword, we look for relevant source files in the keyword-source files association map. We assume these files are relevant because we created the map between the content of bug reports and their buggy source files. However, when we analysis these links for all keywords in a query, a relevant file can be found more than once. So we normalize the frequency of source files using standard TFIDF normalization technique. Then we recommend first Top-K files with their CoOccScores. The equation for computing co-occurence score is given belows:
+\begin{equation}\label{CoOccequation}
+SimiScore=\sum_{All S_{i} that connect to W_{j}}(Link(W{j},S_{i}))
+\end{equation}
+Here, the links between keyword and source file is 1 if they are connected in the association map and 0 otherwise.
 %\begin{algorithm}[!t]
 %\caption{Construction of Association Map Database Between Source Files and Code Tokens}
 %\label{mapsfandct}
@@ -709,7 +714,7 @@ At this point, in one side we have pre-processed keywords associated with each b
 
   
 
-\subsection{Localizing Buggy Source Code Files} 
+
 
 
 \begin{algorithm}[!t]
@@ -754,21 +759,30 @@ At this point, in one side we have pre-processed keywords associated with each b
 \end{algorithmic}
 \end{algorithm}
 
+\subsection{Localizing Buggy Source Code Files} 
+In this part, we combine existing two approaches with our proposed keyword-source co-occurence relations. One is with rVSM and Simi ranks which are presented in BugLocator and other one is Vector Space Model based technique. So, there are two sub parts of this section.
 
-This is the final part of our proposed approach. In this part two sets of predicted buggy source code files are resulted. At first, we search through keyword-source code links association map database using candidate query terms as search query terms. This step predicts some source code links as buggy files, but we need to apply some heuristics to rank those buggy source code files. Finally we can locate top-n source code files as relevant candidates for bug localization. Then we retrieve our second set of predicted source code files. For this, we retrieve code-tokens which are linked to our first set of top-n source code files exploiting source code-code token association map database. This retrieved code token are also linked with some other source code files locations. We apply another heuristics into these code token-source code links and select another top-n relevant source code files as predicted location for a given bug. This second set of source code files are used to locate our extended source code locations that could be relevant fo a given query.
+\textbf{Combination of rVSM, Simi Rank and Co-occurence Rank:}
+For each query, we compute the rVSM score against all source codes in the database using equation \ref{rVSMequation} and we also calculate Simi score using equation \ref{Simiequation}. Then we calculate co-occurence scores for the query using equation \ref{CoOccequation}.
+We finally combine the three ranks and for that we use a weighting factor \textit{alpha}.
+The final equation is given in equation \ref{equationBLme}.
+\begin{multline}\label{equationBLme}
+	FinalScoreApproach1=(1-\alpha )\times N(rVSMScore)+
+	\\ \alpha \times N(SimiScore) + \alpha \times N(CoOccScore)
+\end{multline}
+We work with different values of \textit{alpha}, which are pre presented in the experiment section.
+
+\textbf{Combinition of VSM and Co-occurence Rank:}
+We compute VSM score using Appache Lucene library. Then we combine that score with our CoOccScore using equation \ref{equationVSMme}.
+\begin{multline}\label{equationVSMme}
+	FinalScoreApproach2=(1-\alpha )\times N(VSMScore)+ \\
+	\alpha \times N(CoOccScore)
+\end{multline}
 
 
-%In this paper, we implement two existing bug localization technoques: (i)TF-IDF based bug localization and  (ii)  LDA topic based bug localization techniques. In the following sections we will discuss both techniques in detail.
-%\begin{figure*}
-%\centering
-%\includegraphics[scale=0.50]{SystemDiagram}
-%\caption{Proposed System Diagram}
-%\label{fig:SD}
-%\end{figure*}
 
 \section{Experiment and Discussion}
-%\subsection {Big Data Set}
-%We work with Eclipse data set. We downloaed a git based Eclipse project from git repository \cite{eclipseGit}. We work with Eclipse Platform UI project. Currently it contains 6085 number of Java source codes. These source codes are contained in our source code repository. On the other hand, currently Eclipse Platform UI project contains more than 10K number of bugs where we only work with the bugs which are fixed. We create quires from each bugs considering their title and short summary.
+.
 
 \begin{table}[!t]
 %% increase table row spacing, adjust to taste
@@ -794,6 +808,67 @@ This is the final part of our proposed approach. In this part two sets of predic
 
 \end{tabular}}
 \end{table}
+\begin{table}[]
+	\centering
+	\caption{Performance of Bugloactor and proposed technique (rVSM+Simi+Co-Occerence)}
+	\label{tab:Performance1}
+	\resizebox{3.2in}{!}{%
+	\begin{tabular}{@{}|c|c|c|c|c|c|c|@{}}
+		\toprule
+		%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
+		\begin{tabular}[c]{@{}c@{}}\# Test  \\ Case \\ \end{tabular} & \begin{tabular}[c]{@{}c@{}}Bug\\Localization \\ Technique\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 1\\ \%\end{tabular} & 
+		\begin{tabular}[c]{@{}c@{}}Top 5\\ \%\end{tabular} & 
+		\begin{tabular}[c]{@{}c@{}}Top 10\\ \%\end{tabular} &
+		\begin{tabular}[c]{@{}c@{}} MRR \end{tabular} & 
+		\begin{tabular}[c]{@{}c@{}} MAP \end{tabular} \\
+		 \midrule
+		\multirow{2}{*}{1}  &BugLocator     &  8.89& 24.55&34.32& 0.23 & 0.28 \\  
+		& rVSM+Simi+ Co-Score                                                                                                                                               & 14.50                                               & 34.91                                            & 45.86                                                &   0.33  & 0.41    \\ \midrule
+		\multirow{2}{*}{2}  &BugLocator     &  9.9& 24.62&34.53& 0.24 & 0.29 \\ 
+		& rVSM+Simi+ Co-Score                                                                      & 12.62                                               & 39.04                                              & 49.85                                             &   0.37  &   0.42  \\ \midrule
+		\multirow{2}{*}{3}  &BugLocator     &  7.50& 21.32&30.63& 0.21 & 0.24 \\ 
+		& rVSM+Simi+ Co-Score                                                                     & 12.01                                            & 33.93                                            & 48.35                                             &   0.34  &  0.38   \\ \midrule
+		\multirow{2}{*}{4}  &BugLocator     &  8.1& 21.02&29.13& 0.20 & 0.24 \\ 
+		& rVSM+Simi+ Co-Score                                                                    & 15.02                       & 33.63                       & 48.65                                               &  0.33   &  0.42  \\ \midrule 
+		\multirow{2}{*}{5}  &BugLocator     &  9.6& 30.63&42.94& 0.29 & 0.32 \\ 
+		& rVSM+Simi+ Co-Score                                                                    & 17.71                                                 & 43.84                                                & 56.45                                                  &  0.41   & 0.50     \\ \midrule
+		\multirow{2}{*}{6}  &BugLocator     &  10.21& 31.53&43.54& 0.30 & 0.33 \\ 
+		& rVSM+Simi+ Co-Score
+		&22.22 &
+		48.65 &
+		58.86 & 0.45 &
+		0.58     \\  \midrule
+		\multirow{2}{*}{7}  &BugLocator     &  9.61& 30.33&40.84& 0.28 & 0.31 \\ 
+		& rVSM+Simi+ Co-Score
+		&18.62 &
+		47.15 &
+		59.76 & 0.44 &
+		0.53     \\  \midrule
+		\multirow{2}{*}{8}  &BugLocator     &  8.4& 26.13&39.94& 0.26 & 0.28 \\ 
+		& rVSM+Simi+ Co-Score
+		&18.92 &
+		46.55 &
+		60.36 & 0.44 &
+		0.53    \\  \midrule
+		\multirow{2}{*}{9}  &BugLocator     &  11.11& 28.83&40.24& 0.27 & 0.32 \\ 
+		& rVSM+Simi+ Co-Score
+		&19.82 &
+		42.94 &
+		56.16 & 0.40 &
+		0.52    \\  \midrule
+		\multirow{2}{*}{10}  &BugLocator     &  6.6& 20.72&27.93& 0.19 & 0.21 \\ 
+		& rVSM+Simi+ Co-Score
+		&9.91 &
+		33.33 &
+		45.65 & 0.31 &
+		0.33    \\  \midrule
+		\multirow{2}{*}{Average}       &BugLocator     &  8.99\%& 25.87\%&36.40\%& 0.25 & 0.28  \\ 
+		& rVSM+Simi+ Co-Score                                                                                                                         & 16.13\%                                                 & 40.40\%                                                 & 52.94\%                                                  &   0.38  &  0.46    \\ \bottomrule
+		
+	\end{tabular}}
+\end{table}
+
+
 \subsection{Data Collection}
 We work with Eclipse data set. We downloaed a git based Eclipse project from git repository \cite{eclipseGit}. We work with Eclipse Platform UI project. Currently it contains 6085 number of Java source codes. These source codes are contained in our source code repository. On the other hand, currently Eclipse Platform UI project contains more than 10K number of bugs where we only work with the bugs which are fixed. We create quires from each bugs considering their title and short summary.
 %We have two parts in our corpus. One is source code files downloaded as git based project and another part is bug reports collection. 
@@ -801,6 +876,57 @@ All bug reports are collected from \textit{Bugzilla}. In order to obtain the lin
 
 \subsection{Cross Validation}
 We divide our query data into k number of sets. Typically k is 10, but we work with k =5 and k=10. Each set contains a training set and tesing set. Training data is used to create mapping between keywords extracted from bug reports and source code files. 10-fold-cross validation data is presented in table and table.
+
+
+
+\begin{table}[]
+	\centering
+	\caption{Performance of proposed technique (VSM+Co-Occerence) Ranks}
+	\label{tab:T3}
+	\resizebox{2.7in}{!}{%
+		\begin{tabular}{@{}|c|c|c|c|c|c|c|@{}}
+			\toprule
+			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
+			\begin{tabular}[c]{@{}c@{}}\# Test  \\ Case \\ \end{tabular} & \begin{tabular}[c]{@{}c@{}}\#Bugs for \\ locating \\ issues\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 1\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 5\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 10\\ \%\end{tabular} & MRR & MAP \\ \midrule
+			\multirow{2}{*}{1}& VSM & 23.28& 45.50&55.82& 0.43 & 0.60 \\ 
+			& VSM + Co-Score & 25.98                                               & 48.82                                            & 58.27                                                &   0.47  & 0.66 \\ \midrule
+			
+			\multirow{2}{*}{2}                                                                               & VSM & 22.81 & 45.09 & 54.91 & 0.43 & 0.60 \\   &VSM + Co-Score                                                                     & 26.53                                               & 48.81                                              & 58.89                                             &   0.47  &   0.67  \\ \midrule
+			\multirow{2}{*}{3}                                                                               & VSM & 19.95 & 39.63 & 50.27 & 0.39 & 0.52 \\   &VSM + Co-Score                                                                       & 21.22                                            & 46.42                                            & 56.76                                             &   0.44  &  0.57   \\ \midrule
+			\multirow{2}{*}{4}                                                                               & VSM & 21.22 & 42.97 & 52.52 & 0.42 & 0.57 \\   &VSM + Co-Score                                                                      & 21.75                       & 46.68                       & 58.35                                                &  0.44   &  0.59  \\ \midrule 
+			\multirow{2}{*}{5}                                                                               & VSM & 26.79 & 51.72 & 61.80 & 0.49 & 0.67 \\   &VSM + Co-Score                                                                       & 29.18                                                 & 53.31                                                 & 60.74                                                  &  0.50   & 0.72     \\ \midrule
+			\multirow{2}{*}{6}                                                                               & VSM & 23.47 & 49.33 & 60.27 & 0.46 & 0.62 \\   &VSM + Co-Score 
+			&24.93 &
+			51.72 &
+			62.07 & 0.49 &
+			0.67     \\  \midrule
+			\multirow{2}{*}{7}                                                                               & VSM & 28.45 & 52.13 & 62.77 & 0.49 & 0.70 \\   &VSM + Co-Score 
+			
+			&33.15 &
+			57.29 &
+			67.64 & 0.54 &
+			0.80     \\  \midrule
+			\multirow{2}{*}{8}                                                                               & VSM & 26.73 & 47.59 & 56.68 & 0.45 & 0.67 \\   &VSM + Co-Score 
+			&32.36 &
+			53.58 &
+			61.27 & 0.50 &
+			0.77    \\  \midrule
+			\multirow{2}{*}{9}                                                                               & VSM & 26.52 & 49.87 & 61.27 & 0.47 & 0.66 \\   &VSM + Co-Score 
+			&27.32 &
+			57.82 &
+			67.10 & 0.54 &
+			0.73    \\  \midrule
+			\multirow{2}{*}{10}                                                                               & VSM & 18.45 & 38.77 & 51.07 & 0.38 & 0.49 \\   &VSM + Co-Score
+			&20.69 &
+			47.75 &
+			58.36 & 0.44 &
+			0.57    \\  \midrule
+			\multirow{2}{*}{Average}                                                                               & VSM & 23.77\% & 50.14\% & 56.74\% & 0.44 & 0.61 \\   &VSM + Co-Score      & 26.31\%                                                 & 51.22\%                                                 & 60.19\%                                                  &   0.48  &  0.68    \\ \bottomrule
+			
+	\end{tabular}}
+\end{table}
+
+
 
 \subsection{Evaluation Metrices}
 \textbf{Ton N-Rank:} It represents the number of bug, for which their associated files are returned in a ranked list. Here, \textit{N} may be 1, 5 or 10. We assume that if at least one associated file is presented in the resulted ranked list, then the given bug is located.
@@ -819,59 +945,7 @@ MAP=\frac{\sum_{i=1}^{Q}AveP_{i}}{Q}
 
 \textbf{Wilcoxon signed-rank test}
 The Wilcoxon signed-rank test is a non-parametric statistical hypothesis test used to compare two related samples, matched samples, or repeated measurements on a single sample to assess whether their population mean ranks differ.
-\begin{table*}[]
-	\centering
-	\caption{Performance of Bugloactor and proposed technique (rVSM+Simi+Co-Occerence)}
-	\label{tab:T2}
-	\begin{tabular}{@{}|c|c|c|c|c|c|c|@{}}
-		\toprule
-		%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
-		\begin{tabular}[c]{@{}c@{}}\# Test  \\ Case \\ \end{tabular} & \begin{tabular}[c]{@{}c@{}}Bug\\Localization \\ Technique\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 1\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 5\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 10\\ \%\end{tabular} & MRR & MAP \\ \midrule
-		\multirow{2}{*}{1}  &BugLocator     &  8.89& 24.55&34.32& 0.23 & 0.28 \\ 
-		& rVSM+Simi+ Co-Score                                                                                                                                               & 14.50                                               & 34.91                                            & 45.86                                                &   0.33  & 0.41    \\ \midrule
-		\multirow{2}{*}{2}  &BugLocator     &  9.9& 24.62&34.53& 0.24 & 0.29 \\ 
-		& rVSM+Simi+ Co-Score                                                                      & 12.62                                               & 39.04                                              & 49.85                                             &   0.37  &   0.42  \\ \midrule
-		\multirow{2}{*}{3}  &BugLocator     &  7.50& 21.32&30.63& 0.21 & 0.24 \\ 
-		& rVSM+Simi+ Co-Score                                                                     & 12.01                                            & 33.93                                            & 48.35                                             &   0.34  &  0.38   \\ \midrule
-	\multirow{2}{*}{4}  &BugLocator     &  8.1& 21.02&29.13& 0.20 & 0.24 \\ 
-	& rVSM+Simi+ Co-Score                                                                    & 15.02                       & 33.63                       & 48.65                                               &  0.33   &  0.42  \\ \midrule 
-	\multirow{2}{*}{5}  &BugLocator     &  9.6& 30.63&42.94& 0.29 & 0.32 \\ 
-	& rVSM+Simi+ Co-Score                                                                    & 17.71                                                 & 43.84                                                & 56.45                                                  &  0.41   & 0.50     \\ \midrule
-	\multirow{2}{*}{6}  &BugLocator     &  10.21& 31.53&43.54& 0.30 & 0.33 \\ 
-	& rVSM+Simi+ Co-Score
-		&22.22 &
-		48.65 &
-		58.86 & 0.45 &
-		0.58     \\  \midrule
-		\multirow{2}{*}{7}  &BugLocator     &  9.61& 30.33&40.84& 0.28 & 0.31 \\ 
-		& rVSM+Simi+ Co-Score
-		&18.62 &
-		47.15 &
-		59.76 & 0.44 &
-		0.53     \\  \midrule
-	\multirow{2}{*}{8}  &BugLocator     &  8.4& 26.13&39.94& 0.26 & 0.28 \\ 
-	& rVSM+Simi+ Co-Score
-		&18.92 &
-		46.55 &
-		60.36 & 0.44 &
-		0.53    \\  \midrule
-	\multirow{2}{*}{9}  &BugLocator     &  11.11& 28.83&40.24& 0.27 & 0.32 \\ 
-	& rVSM+Simi+ Co-Score
-		&19.82 &
-		42.94 &
-		56.16 & 0.40 &
-		0.52    \\  \midrule
-		\multirow{2}{*}{10}  &BugLocator     &  6.6& 20.72&27.93& 0.19 & 0.21 \\ 
-		& rVSM+Simi+ Co-Score
-		&9.91 &
-		33.33 &
-		45.65 & 0.31 &
-		0.33    \\  \midrule
-		\multirow{2}{*}{Average}       &BugLocator     &  8.99\%& 25.87\%&36.40\%& 0.25 & 0.28  \\ 
-		& rVSM+Simi+ Co-Score                                                                                                                         & 16.13\%                                                 & 40.40\%                                                 & 52.94\%                                                  &   0.38  &  0.46    \\ \bottomrule
-		
-	\end{tabular}
-\end{table*}
+
 \subsection{Experimental Results}
 %\begin{table}[!t]
 %%% increase table row spacing, adjust to taste
@@ -971,7 +1045,10 @@ For checking this, we experimented with several number of fixed bug reports and 
 
 We compare our proposed bug localization approach with two existing techniques - 1) BugLocaotor which is based on rVSM and Simi scores and 2) VSM which is based on vector space model. In the following two subsections we will describe the performance comparison between these two existing approaches and our proposed approaches
 \subsection{BugLocator VS Our Proposed Tool}
-We combine rVSM and simi ranks with our co-occurence rank. Here, co-occurence rank is computed based on keyword-source code mapping database. The main objective of our proposed approach is to narrow down the search spaces of information retrieval based bug localization technique. In table we, compare the performance of our proposed approach in terms of top 1, 5, 10 rank, MRR  MAP. The performance of our proposed approach are given below.
+We combine rVSM and simi ranks with our co-occurence rank. Here, co-occurence rank is computed based on keyword-source code mapping database.In table~\ref{tab:Performance1} we, compare the performance of our proposed approach in terms of top 1, 5, 10 rank, MRR and MAP. We can see that our proposed approach outperforms in all cases. For example, our Top-10 performance 52.94\% has an improvement than BugLocator (36.40\%).
+
+We also compute Wilcoxon signed-rank test both for MRR and MAP. For MRR the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 8. Therefore, the result is significant at p<=0.05.
+For MAP - the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 8. Therefore, the result is significant at p<=0.05.
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
 %\begin{table*}[]
@@ -992,10 +1069,10 @@ We combine rVSM and simi ranks with our co-occurence rank. Here, co-occurence ra
 
 
 \subsection{VSM vs Our proposed Tool}
-In this technique II, at first we retrieve source codes from keyword-source code mapping database and then for each keyword in the query, we retrieve associated source code links. Then,
-we compute the cosine relationship between query keywords and all keywords associated with each source code link. The difference between technique I and II are happened in the second stage of score calculation. For technique I, we compute the cosine similarity between query keywords and keywords associated with each recommended source code files from stage one computation. That means, we actually consider those keywords that are globally linked to a source code. On the other hand, in technique II, the cosine similarity measure is computed between query keywords and keywords extracted from each recommended source code extracted in stage one using linked databases. So, here we are considering the source code files as locally. 
+We combine VSM score and co-occurence scores in order to produce ranked result. We also compare the performance of baseline VSM technique and our proposed combined approach. The comparison is presented in table \ref{tab:T3}. We compute Top-1, Top-5, Top-10 performance and MRR and MAP for both approaches. In all cases our proposed approach outperforms VSM-based bug localization approach. The Top-10 performance of our tool is 60.19\% whereas it is 56.74\% for VSM.
 
-
+We also compute Wilcoxon signed-rank test both for MRR and MAP. For MRR the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 8. Therefore, the result is significant at p<=0.05.
+For MAP - the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 8. Therefore, the result is significant at p<=0.05.
 
 
 
@@ -1024,61 +1101,54 @@ we compute the cosine relationship between query keywords and all keywords assoc
 %
 %\end{tabular}
 %\end{table*}
-\begin{table*}[]
-	\centering
-	\caption{Performance of proposed technique (VSM+Co-Occerence) Ranks}
-	\label{tab:T3}
-	\begin{tabular}{@{}|c|c|c|c|c|c|c|@{}}
-		\toprule
-		%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
-		\begin{tabular}[c]{@{}c@{}}\# Test  \\ Case \\ \end{tabular} & \begin{tabular}[c]{@{}c@{}}\#Bugs for \\ locating \\ issues\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 1\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 5\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 10\\ \%\end{tabular} & MRR & MAP \\ \midrule
-		 \multirow{2}{*}{1}& VSM & 23.28& 45.50&55.82& 0.43 & 0.60 \\ 
-		& VSM + Co-Score & 25.98                                               & 48.82                                            & 58.27                                                &   0.47  & 0.66 \\ \midrule
-		
-		\multirow{2}{*}{2}                                                                               & VSM & 22.81 & 45.09 & 54.91 & 0.43 & 0.60 \\   &VSM + Co-Score                                                                     & 26.53                                               & 48.81                                              & 58.89                                             &   0.47  &   0.67  \\ \midrule
-		\multirow{2}{*}{3}                                                                               & VSM & 19.95 & 39.63 & 50.27 & 0.39 & 0.52 \\   &VSM + Co-Score                                                                       & 21.22                                            & 46.42                                            & 56.76                                             &   0.44  &  0.57   \\ \midrule
-	\multirow{2}{*}{4}                                                                               & VSM & 21.22 & 42.97 & 52.52 & 0.42 & 0.57 \\   &VSM + Co-Score                                                                      & 21.75                       & 46.68                       & 58.35                                                &  0.44   &  0.59  \\ \midrule 
-			\multirow{2}{*}{5}                                                                               & VSM & 26.79 & 51.72 & 61.80 & 0.49 & 0.67 \\   &VSM + Co-Score                                                                       & 29.18                                                 & 53.31                                                 & 60.74                                                  &  0.50   & 0.72     \\ \midrule
-			\multirow{2}{*}{6}                                                                               & VSM & 23.47 & 49.33 & 60.27 & 0.46 & 0.62 \\   &VSM + Co-Score 
-		&24.93 &
-		51.72 &
-		62.07 & 0.49 &
-		0.67     \\  \midrule
-		\multirow{2}{*}{7}                                                                               & VSM & 28.45 & 52.13 & 62.77 & 0.49 & 0.70 \\   &VSM + Co-Score 
-	
-		&33.15 &
-		57.29 &
-		67.64 & 0.54 &
-		0.80     \\  \midrule
-	\multirow{2}{*}{8}                                                                               & VSM & 26.73 & 47.59 & 56.68 & 0.45 & 0.67 \\   &VSM + Co-Score 
-		&32.36 &
-		53.58 &
-		61.27 & 0.50 &
-		0.77    \\  \midrule
-		\multirow{2}{*}{9}                                                                               & VSM & 26.52 & 49.87 & 61.27 & 0.47 & 0.66 \\   &VSM + Co-Score 
-		&27.32 &
-		57.82 &
-		67.10 & 0.54 &
-		0.73    \\  \midrule
-		\multirow{2}{*}{10}                                                                               & VSM & 18.45 & 38.77 & 51.07 & 0.38 & 0.49 \\   &VSM + Co-Score
-		&20.69 &
-		47.75 &
-		58.36 & 0.44 &
-		0.57    \\  \midrule
-	\multirow{2}{*}{Average}                                                                               & VSM & 23.77\% & 50.14\% & 56.74\% & 0.44 & 0.61 \\   &VSM + Co-Score      & 26.31\%                                                 & 51.22\%                                                 & 60.19\%                                                  &   0.48  &  0.68    \\ \bottomrule
-		
-	\end{tabular}
-\end{table*}
 
-\subsection{Analysis on Required Number of Source Files for Proposed Techniques and Existing Technique}
-In this section, we note down the number of source code files, which are required to investigate for proposed and existing bug localization techniques. To do so, for each bug localization we count the number of source code files, which were investigated during localizing that bug. Then, we compute average of all result. In the existing literature, the similarity between the query bug report and all source code files are computed for retrieving recommended source files for localizing that bug. When the number of source files are not too many, this similarity measure technique is not an issue. But, the number of files in the source code repository increases over time and makes the computation even harder. In our corpus we have 6085 source files, if we apply TF-IDF technique on our corpus, for each query the content of the query will be compared to all source files, i.e., 6085 number of files. But in our proposed technique, we are narrowing down the search space dramatically. In the first step of our proposed approach, we are mapping query keywords into source files utilizing keyword-source files mapping database. Then for further computation we only consider those source files which are mapped by the query keywords. In Table (), we are showing the number of source file, which are compared with query keywords. 
+
+\subsection{Weighting Factor Analysis}
+For both of our proposed approaches we have used some weighting functions, which are described as follows
+
+\textbf{Weighting Function for rVSM+Simi+Co-ocuurence Ranking:}
+\begin{table}[]
+	\centering
+	\caption{Performance of (rVSM+Simi+Co-Occerence) for different weighting factors}
+	\label{tab:alphaApproach1}
+	\resizebox{3.2in}{!}{%
+		\begin{tabular}{@{}|c|c|c|c|c|c|c|@{}}
+			\toprule
+			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
+			\begin{tabular}[c]{@{}c@{}} \textit{alpha} \end{tabular} & \begin{tabular}[c]{@{}c@{}}Bug\\Localization \\ Technique\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 1\\ \%\end{tabular} & 
+			\begin{tabular}[c]{@{}c@{}}Top 5\\ \%\end{tabular} & 
+			\begin{tabular}[c]{@{}c@{}}Top 10\\ \%\end{tabular} &
+			\begin{tabular}[c]{@{}c@{}} MRR \end{tabular} & 
+			\begin{tabular}[c]{@{}c@{}} MAP \end{tabular} \\
+			\midrule
+			\multirow{2}{*}{0.2}  &BugLocator     &  8.89& 24.55&34.32& 0.23 & 0.28 \\  
+			& rVSM+Simi+ Co-Score                                                                                                                                               & 14.50                                               & 34.91                                            & 45.86                                                &   0.33  & 0.41    \\ \midrule
+			\multirow{2}{*}{0.3}  &BugLocator     &  9.9& 24.62&34.53& 0.24 & 0.29 \\ 
+			& rVSM+Simi+ Co-Score                                                                      & 12.62                                               & 39.04                                              & 49.85                                             &   0.37  &   0.42  \\ \midrule
+			
+		
+			\multirow{2}{*}{0.4}  &BugLocator     &  9.61& 30.33&40.84& 0.28 & 0.31 \\ 
+			& rVSM+Simi+ Co-Score
+			&18.62 &
+			47.15 &
+			59.76 & 0.44 &
+			0.53     \\  \midrule
+			
+			\multirow{2}{*}{Average}       &BugLocator     &  8.99\%& 25.87\%&36.40\%& 0.25 & 0.28  \\ 
+			& rVSM+Simi+ Co-Score                                                                                                                         & 16.13\%                                                 & 40.40\%                                                 & 52.94\%                                                  &   0.38  &  0.46    \\ \bottomrule
+			
+	\end{tabular}}
+\end{table}
+
+\textbf{Weighting Function for VSM+Co-ocuurence Ranking:}
+%In this section, we note down the number of source code files, which are required to investigate for proposed and existing bug localization techniques. To do so, for each bug localization we count the number of source code files, which were investigated during localizing that bug. Then, we compute average of all result. In the existing literature, the similarity between the query bug report and all source code files are computed for retrieving recommended source files for localizing that bug. When the number of source files are not too many, this similarity measure technique is not an issue. But, the number of files in the source code repository increases over time and makes the computation even harder. In our corpus we have 6085 source files, if we apply TF-IDF technique on our corpus, for each query the content of the query will be compared to all source files, i.e., 6085 number of files. But in our proposed technique, we are narrowing down the search space dramatically. In the first step of our proposed approach, we are mapping query keywords into source files utilizing keyword-source files mapping database. Then for further computation we only consider those source files which are mapped by the query keywords. In Table (), we are showing the number of source file, which are compared with query keywords. 
 
 \subsection{Method Level Computation}
 In our proposed techniques, we also implement another important consideration. Our primary intention was to retrieve relevant methods of a class as well as a whole class. But, during implementation, we found that this process is harder for validation. Our validation depends on the git commit messages and in the git commit commands the change set for a bug are provided just as a file or class level. Which method is changed contained in the change set are difficult to process in the current situation. However, even if we could not validate the method level retrieval, we introduce method level similarity measure in our proposed techniques. The idea is, after 
 
-\section{Related Work}\label{sec:relatedWork}
+\section{Threats To Validity}\label{sec:threats}
 
-\section{Threats to Validity}
+
 \section{Conclusion and Future Work}\label{summary}
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  4 SEP 2018 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  5 SEP 2018 15:22
 entering extended mode
 **./sig-alternate.tex
 (sig-alternate.tex
@@ -253,6 +253,40 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count121
 \@thisrulewidth=\dimen135
 )
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\resizegat
+her.sty"
+Package: resizegather 2016/05/16 v1.3 Resize overly large equations (HO)
+
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetke
+ys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+rr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmd
+s.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluate
+x.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))))
 ("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.
 sty"
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
@@ -278,20 +312,15 @@ Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -322,10 +351,6 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.s
 ty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-)
-("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
-.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen137
 \Hy@linkcounter=\count123
@@ -980,29 +1005,29 @@ Package textgreek Info: Loaded fontmap: {eur/*/*}{U/eur/*/*} {phv/*/*}{U/psy/*/
 ) (sig-alternate.aux)
 \openout1 = `sig-alternate.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 102.
-LaTeX Font Info:    Try loading font information for LGR+cmr on input line 102.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 103.
+LaTeX Font Info:    Try loading font information for LGR+cmr on input line 103.
 
 
 ("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cbfonts-fd\lgrcmr.
 fd"
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    ... okay on input line 103.
 
 ("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
@@ -1040,7 +1065,7 @@ G,.JBIG2,.JB2,.eps]
 Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
 (hyperref)                using 11in.
 
-Package hyperref Info: Link coloring OFF on input line 102.
+Package hyperref Info: Link coloring OFF on input line 103.
 
 ("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -1052,27 +1077,27 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count291
 )
-LaTeX Info: Redefining \ref on input line 102.
-LaTeX Info: Redefining \pageref on input line 102.
-LaTeX Info: Redefining \nameref on input line 102.
+LaTeX Info: Redefining \ref on input line 103.
+LaTeX Info: Redefining \pageref on input line 103.
+LaTeX Info: Redefining \nameref on input line 103.
  (sig-alternate.out) (sig-alternate.out)
 \@outlinefile=\write3
 \openout3 = `sig-alternate.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 224.
+LaTeX Font Info:    Try loading font information for U+msa on input line 225.
 
 ("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 224.
+LaTeX Font Info:    Try loading font information for U+msb on input line 225.
 ("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 224.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 225.
 ("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (1.26794pt too wide) in paragraph at lines 330--331
+Overfull \hbox (1.26794pt too wide) in paragraph at lines 331--332
 \T1/aer/m/n/9 H.4 [\T1/aer/bx/n/9 Information Sys-tems Ap-pli-ca-tions\T1/aer/m
 /n/9 ]: Mis-cel-la-neous;
  []
@@ -1084,23 +1109,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (7.29738pt too wide) in paragraph at lines 426--427
+Overfull \hbox (7.29738pt too wide) in paragraph at lines 427--428
 []\T1/aer/m/n/9 We have repli-cated two ex-ist-ing bug lo-cal-iza-tion ap-proac
 hes:
  []
 
 
-Overfull \hbox (7.70108pt too wide) in paragraph at lines 427--427
+Overfull \hbox (7.70108pt too wide) in paragraph at lines 428--428
 []\secfnt TF-IDF Based Bug Lo-cal-iza-tion Tech-nique: 
  []
 
-<3layers.png, id=132, 401.24907pt x 263.48438pt>
+<3layers.png, id=128, 401.24907pt x 263.48438pt>
 File: 3layers.png Graphic file (type png)
 <use 3layers.png>
-Package pdftex.def Info: 3layers.png  used on input line 463.
+Package pdftex.def Info: 3layers.png  used on input line 464.
 (pdftex.def)             Requested size: 260.80879pt x 171.2628pt.
 
-Overfull \hbox (20.80879pt too wide) in paragraph at lines 463--464
+Overfull \hbox (20.80879pt too wide) in paragraph at lines 464--465
  [][] 
  []
 
@@ -1108,9 +1133,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.471 \end{equation}
+l.472 \end{equation}
                      [2]
-Overfull \hbox (1.8708pt too wide) in paragraph at lines 500--501
+
+Package resizegather Warning: Equation line 1 is too large by 14.83253pt
+(resizegather)                in environment `equation' on input line 480.
+
+
+Overfull \hbox (1.8708pt too wide) in paragraph at lines 501--502
 \T1/aer/m/n/9 with topic-keywords of each topic ex-tracted from source
  []
 
@@ -1118,72 +1148,110 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.537 
+l.538 
        [3 <./3layers.png>]
-<Map.png, id=165, 403.5075pt x 149.96025pt>
+<Map.png, id=161, 403.5075pt x 149.96025pt>
 File: Map.png Graphic file (type png)
 <use Map.png>
-Package pdftex.def Info: Map.png  used on input line 541.
+Package pdftex.def Info: Map.png  used on input line 542.
 (pdftex.def)             Requested size: 221.92981pt x 82.47838pt.
-<SD1.png, id=166, 607.67026pt x 265.59225pt>
+<SD1.png, id=162, 607.67026pt x 265.59225pt>
 File: SD1.png Graphic file (type png)
 <use SD1.png>
-Package pdftex.def Info: SD1.png  used on input line 549.
+Package pdftex.def Info: SD1.png  used on input line 550.
 (pdftex.def)             Requested size: 455.75157pt x 199.19368pt.
 
-Overfull \hbox (4.23407pt too wide) in paragraph at lines 554--554
+Overfull \hbox (4.23407pt too wide) in paragraph at lines 555--555
 []\secfnt Part II: Bug Lo-cal-iza-tion Us-ing rVSM, and
  []
 
 
-Overfull \hbox (3.44206pt too wide) in paragraph at lines 629--629
+Overfull \hbox (3.44206pt too wide) in paragraph at lines 630--630
 []\secfnt Construction of As-so-ci-a-tion Map Database
  []
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 633.
+put line 634.
 
-Underfull \hbox (badness 1577) in paragraph at lines 655--656
+Underfull \hbox (badness 1577) in paragraph at lines 656--657
 [] $\OML/cmm/m/it/9 MAP\OT1/cmr/m/n/9 [\OML/cmm/m/it/9 KB[]\OT1/cmr/m/n/9 ]\OML
 /cmm/m/it/9 :links \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 MAP\OT1/cmr/m/n/9 [\OML/cm
 m/m/it/9 KB[]\OT1/cmr/m/n/9 ]\OML/cmm/m/it/9 :links \OT1/cmr/m/n/9 +
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.712 ...ction{Localizing Buggy Source Code Files}
-                                                   [4 <./Map.png>]
-Overfull \hbox (4.43127pt too wide) in paragraph at lines 729--730
+l.681 \begin{equation}
+                      \label{CoOccequation} [4 <./Map.png>]
+Overfull \hbox (4.43127pt too wide) in paragraph at lines 734--735
 [] $\OML/cmm/m/it/9 K[] \OMS/cmsy/m/n/9  $ \T1/aer/m/n/9 getKeywordsFromReformu
 latedQuery($\OML/cmm/m/it/9 Q[]$\T1/aer/m/n/9 ) 
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.810 \begin{equation}
-                       [5 <./SD1.png>]
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 822.
+Underfull \vbox (badness 1082) has occurred while \output is active []
 
 
-Overfull \hbox (4.39705pt too wide) in paragraph at lines 974--992
-\T1/aer/m/n/9 rank. Here, co-occurence rank is com-puted based on keyword-
+Overfull \hbox (7.68594pt too wide) in paragraph at lines 765--769
+[]\T1/aer/bx/n/9 Combination of rVSM, Simi Rank and Co-occurence
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1027.
+               Default added (so using `tbp') on input line 811.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.876 
+       [5 <./SD1.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 882.
 
 
-Overfull \hbox (4.2559pt too wide) in paragraph at lines 1077--1078
+Underfull \hbox (badness 3049) in paragraph at lines 884--884
+[]\T1/aer/bx/n/9 Table 3: []Performance of pro-posed tech-nique
+ []
+
+
+Underfull \vbox (badness 4108) has occurred while \output is active []
+
+
+Overfull \hbox (4.39705pt too wide) in paragraph at lines 1048--1049
+\T1/aer/m/n/9 rank. Here, co-occurence rank is com-puted based on keyword-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1049 
+        [6]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1110.
+
+
+Underfull \hbox (badness 7379) in paragraph at lines 1112--1112
+[]\T1/aer/bx/n/9 Table 4: []Performance of (rVSM+Simi+Co-
+ []
+
+
+Overfull \hbox (6.111pt too wide) in paragraph at lines 1109--1142
+[]\T1/aer/bx/n/9 Weighting Func-tion for rVSM+Simi+Co-ocuurence
+ []
+
+
+Overfull \hbox (3.33916pt too wide) in paragraph at lines 1143--1145
+[]\T1/aer/bx/n/9 Weighting Func-tion for VSM+Co-ocuurence Rank-
+ []
+
+
+Overfull \hbox (4.2559pt too wide) in paragraph at lines 1147--1148
 \T1/aer/m/n/9 com-mit mes-sages and in the git com-mit com-mands the change
  []
 
@@ -1192,53 +1260,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 []\T1/aer/m/n/7 Eclipse plat-form ui git project.
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.18 
-      [6]pdfTeX warning (ext4): destination with the same identifier (name{page
-.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.18 
-      [7]pdfTeX warning (ext4): destination with the same identifier (name{page
-.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.18 
-      [8]
+
 Underfull \hbox (badness 1675) in paragraph at lines 55--60
 []\T1/aer/m/n/7 Chu-Pan Wong, Yingfei Xiong, HongYu Zhang, Dan Hao,
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1149.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1219.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1149 \end{document}
-                      [9
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1149.
+l.1219 \end{document}
+                      [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1219.
  (sig-alternate.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1149.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1149.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1219.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1219.
 
 Package rerunfilecheck Info: File `sig-alternate.out' has not changed.
-(rerunfilecheck)             Checksum: 52CDBC1788F81C46755AB5B29C8D19A6;1749.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1149.
+(rerunfilecheck)             Checksum: C220AF55021F256019C01C15D4FC5D77;1635.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1219.
  ) 
 Here is how much of TeX's memory you used:
- 17762 strings out of 492973
- 298317 string characters out of 3126692
- 388156 words of memory out of 3000000
- 21400 multiletter control sequences out of 15000+200000
+ 17947 strings out of 492973
+ 303376 string characters out of 3126692
+ 398971 words of memory out of 3000000
+ 21564 multiletter control sequences out of 15000+200000
  589268 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,17n,61p,1352b,441s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,18n,61p,1353b,339s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }<C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx9.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
@@ -1264,9 +1315,9 @@ ms/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Mukta/AppData/Local
 a/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Mukta/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Mukt
 a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sig-alternate.pdf (9 pages, 406585 bytes).
+Output written on sig-alternate.pdf (7 pages, 411771 bytes).
 PDF statistics:
- 286 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 500000)
- 200 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
+ 192 words of extra memory for PDF output out of 10000 (max. 10000000)
 

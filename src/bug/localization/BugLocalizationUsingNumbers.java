@@ -464,25 +464,31 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		int test=10;
-		BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset"+test+".txt", "./data/FinalMap/SourceTokenMapTrainset"+test+".txt","./data/testset/test"+test+".txt","./data/Bug-ID-Keyword-ID-Mapping.txt","./data/changeset-pointer/ID-SourceFile.txt","./data/ID-Keyword.txt","./data/Sid-MatchWord2.txt");
-		String bugReportFolder = "./data/testsetForBL/test"+test;
-		//For Mac
-		//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
-		//ForWindows
-		String sourceFolder = "E:\\PhD\\Data\\NotProcessedSourceMethodLevel\\"
-				+ "\\";
-		String goldsetFile = "./data/gitInfoNew.txt";
-		
-		String outputFilePath
-		//="./data/Results/Aug24BLTest"+test+".txt";
-		="./data/Results/Sep4BLandMe"+test+".txt";
-		//="./data/Results/Aug24TFbasedTest"+test+".txt";
+		int total_test=10;
+		double alpha=0.2;
+		for(int i=0;i<=total_test;i++)
+		{
+			int test=i;
+			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset"+test+".txt", "./data/FinalMap/SourceTokenMapTrainset"+test+".txt","./data/testset/test"+test+".txt","./data/Bug-ID-Keyword-ID-Mapping.txt","./data/changeset-pointer/ID-SourceFile.txt","./data/ID-Keyword.txt","./data/Sid-MatchWord2.txt");
+			String bugReportFolder = "./data/testsetForBL/test"+test;
+			//For Mac
+			//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
+			//ForWindows
+			String sourceFolder = "E:\\PhD\\Data\\NotProcessedSourceMethodLevel\\";
+				
+			String goldsetFile = "./data/gitInfoNew.txt";
+			
+			String outputFilePath
+			//="./data/Results/Aug24BLTest"+test+".txt";
+			="./data/Results/Sep5BLandMe"+alpha+"-"+test+".txt";
+			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 	
-		obj.bugLocator(obj, outputFilePath, sourceFolder, bugReportFolder, goldsetFile);
-		//obj.bugLocatorLuceneAndMe(obj, outputFilePath, bugReportFolder);
-		//call the bug localizer
+			obj.bugLocator(obj, outputFilePath, sourceFolder, bugReportFolder, goldsetFile);
+			//obj.bugLocatorLuceneAndMe(obj, outputFilePath, bugReportFolder);
+			//call the bug localizer
+		
+		}
 	}
 
 	 public void bugLocatorLuceneAndMe(BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
