@@ -25,48 +25,109 @@ public class PerformanceCalculatorPerfect {
 	}
 	
 	
+	public PerformanceCalculatorPerfect() {
+		// TODO Auto-generated constructor stub
+	}
+
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep5BLandMe0.2-10.txt");		
+		
+		//new PerformanceCalculatorPerfect().getSingleResult();
+		new PerformanceCalculatorPerfect().getAvgPerformance(10, 0.4, "rVSM");
+	}
+
+	public static void getSingleResult(String baseNamePart)
+	{
+		PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep7"+baseNamePart+"andMe0.2-1.txt");		
 		obj.gitResultsMap=obj.getGitOutput(obj.gitPath);
 		
 		System.out.println();
 		obj.resultsMap=obj.getResults(obj.resultPath); 	
 		
-		//System.out.println(obj.gitResultsMap.size());
-		//System.out.println(obj.resultsMap.size());
-		showResult(obj);
-		
-		
+		System.out.println(obj.gitResultsMap.size());
+		System.out.println(obj.resultsMap.size());
+		getResultForTopK(obj);
+		MiscUtility.showResult(10, finalRankedResult);
 	}
-
 	
+	public static void getAvgPerformance(int no_of_fold, double alpha, String baseNamePart)
+	{
+		HashMap <String, HashMap<String, Double>> resultContainer=new HashMap<>();
+		
+		for(int i=1;i<=no_of_fold;i++)
+		{
+			int test=i;
+			PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep7"+baseNamePart+"andMe"+alpha+"-"+test+".txt");		
+			obj.gitResultsMap=obj.getGitOutput(obj.gitPath);
+		
+			System.out.println();
+			obj.resultsMap=obj.getResults(obj.resultPath); 
+			
+			String key=obj.resultPath;
+			HashMap<String, Double> resultHM=getResultForTopK(obj);
+			resultContainer.put(key, resultHM);
+		}
+		//Now get the averageResult
+		getAverageResult(resultContainer, no_of_fold);
+	}
 	
-	public static void showResult(PerformanceCalculatorPerfect obj)
+	public static void getAverageResult(HashMap <String, HashMap<String, Double>> resultContainer, int no_of_fold)
+	{
+		double top1=0.0;
+		double top5=0.0;
+		double top10=0.0;
+		double MRR=0.0;
+		double MAP=0.0;
+		for(String key: resultContainer.keySet())
+		{
+			HashMap<String, Double> resultHM=resultContainer.get(key);
+			top1+=resultHM.get("T1");
+			top5+=resultHM.get("T5");
+			top10+=resultHM.get("T10");
+			MRR+=resultHM.get("MRR");
+			MAP+=resultHM.get("MAP");
+		}
+		System.out.println(top1/Double.valueOf(no_of_fold));
+		System.out.println(top5/Double.valueOf(no_of_fold));
+		System.out.println(top10/Double.valueOf(no_of_fold));
+		System.out.println(MRR/Double.valueOf(no_of_fold));
+		System.out.println(MAP/Double.valueOf(no_of_fold));
+	}
+	public static HashMap<String, Double> getResultForTopK(PerformanceCalculatorPerfect obj)
 	{
 		
+		
+		HashMap<String, Double> resultHM=new HashMap<>();
 		int TOP_K=1;
 		System.out.println("Result for Top-"+TOP_K);
 		ComputePerformancePercent(TOP_K, obj);
+		resultHM.put("T1", ComputePerformancePercent(TOP_K, obj));
 		//MiscUtility.showResult(100, finalRankedResult);
 		System.out.println("MAP at "+TOP_K+" "+ComputeMAP(finalRankedResult,obj));
 		System.out.println("MRR at "+TOP_K+" "+ComputeMRR(finalRankedResult,obj, TOP_K));
-		
+		finalRankedResult.clear();
 		System.out.println("=============================================================================");
 		TOP_K=5;
 		System.out.println("Result for Top-"+TOP_K);
 		ComputePerformancePercent(TOP_K, obj);
+		resultHM.put("T5", ComputePerformancePercent(TOP_K, obj));
 		//MiscUtility.showResult(100, finalRankedResult);
 		System.out.println("MAP at "+TOP_K+" "+ComputeMAP(finalRankedResult,obj));
 		System.out.println("MRR at "+TOP_K+" "+ComputeMRR(finalRankedResult,obj, TOP_K));
-		
+		finalRankedResult.clear();
 		System.out.println("=============================================================================");
 		TOP_K=10;
 		System.out.println("Result for Top-"+TOP_K);
 		ComputePerformancePercent(TOP_K, obj);
+		resultHM.put("T10", ComputePerformancePercent(TOP_K, obj));
 		//MiscUtility.showResult(100, finalRankedResult);
 		System.out.println("MAP at "+TOP_K+" "+ComputeMAP(finalRankedResult,obj));
 		System.out.println("MRR at "+TOP_K+" "+ComputeMRR(finalRankedResult,obj, TOP_K));
+		resultHM.put("MAP", ComputeMAP(finalRankedResult,obj));
+		resultHM.put("MRR", ComputeMRR(finalRankedResult,obj, TOP_K));
+		
+		return resultHM;
 	}
 	
 	
@@ -182,7 +243,7 @@ public class PerformanceCalculatorPerfect {
 		else return false;
 	}
 	
-	private static HashMap<String, ArrayList<String>> ComputePerformancePercent(int TOP_K, PerformanceCalculatorPerfect obj) {
+	private static Double ComputePerformancePercent(int TOP_K, PerformanceCalculatorPerfect obj) {
 		// TODO Auto-generated method stub
 		
 		
@@ -207,7 +268,7 @@ public class PerformanceCalculatorPerfect {
 	    System.out.println("Total bug: "+no_of_bug_matched);
 	    System.out.println("Total found: "+total_found);
 	    System.out.println("Top "+TOP_K+" %: "+(Double.valueOf(total_found)/Double.valueOf(no_of_bug_matched))*100);
-	    return finalRankedResult;
+	    return (Double.valueOf(total_found)/Double.valueOf(no_of_bug_matched))*100;
 	    //ContentWriter.writeContent("./data/Results/test1-rankedResult.txt", finalRankedResult);
 	}
 

@@ -152,7 +152,7 @@ public class BugLocalizationUsingNumbers {
     
     public void bugLocator(BugLocalizationUsingNumbers obj, String outputFilePath, String sourceFolder, String bugReportFolder, String goldsetFile)
     {
-    	double ALPHA=0.6;
+    	double ALPHA=0.4;
 		double BETA=0.2;
 		int TOPK_SIZE=200;
 		obj.buglocatorRESULT=new MasterBLScoreProvider(sourceFolder, bugReportFolder, goldsetFile)
@@ -465,7 +465,7 @@ public class BugLocalizationUsingNumbers {
         
 		//Work on necessary inputs or maps
 		int total_test=10;
-		double alpha=0.3;
+		double alpha=0.4;
 		for(int i=1;i<=total_test;i++)
 		{
 			int test=i;
@@ -480,7 +480,7 @@ public class BugLocalizationUsingNumbers {
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			="./data/Results/Sep5BLandMe"+alpha+"-"+test+".txt";
+			="./data/Results/Sep7rVSMandMe"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 	
@@ -493,10 +493,11 @@ public class BugLocalizationUsingNumbers {
 
 	 public void bugLocatorLuceneAndMe(BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
 	    {
-		 	double ALPHA=0.70;
+		 	double ALPHA=0.40;
+		 	double BETA=1-ALPHA;
 		 	String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
 			obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
-					.getLuceneBasedScore(ALPHA);
+					.getLuceneBasedScore(BETA);
 	    	obj.trainMapTokenSource=obj.loadTrainMap(obj.trainMapTokenSourceAddress);
 	    	//MiscUtility.showResult(10, obj.trainMapTokenSource);
 			obj.testSet=obj.loadHashMap(obj.testSetAddress);
@@ -525,7 +526,7 @@ public class BugLocalizationUsingNumbers {
 					HashMap<Integer, Double> resultMap
 					//=sortedResultMyTool;
 					//=SortedBLresult;
-					=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, (1-ALPHA));
+					=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
 					
 					String result=queryID+",";
 					int count=0;
