@@ -152,7 +152,7 @@ public class BugLocalizationUsingNumbers {
     
     public void bugLocator(BugLocalizationUsingNumbers obj, String outputFilePath, String sourceFolder, String bugReportFolder, String goldsetFile)
     {
-    	double ALPHA=0.4;
+    	double ALPHA=0.8;
 		double BETA=0.2;
 		int TOPK_SIZE=200;
 		obj.buglocatorRESULT=new MasterBLScoreProvider(sourceFolder, bugReportFolder, goldsetFile)
@@ -178,14 +178,14 @@ public class BugLocalizationUsingNumbers {
 			
 				HashMap<Integer, Double> SortedBLresult=MiscUtility.sortByValues(resultBugLocator);
 				
-				HashMap<Integer,Double> sortedResultMyTool
+				//HashMap<Integer,Double> sortedResultMyTool
 				//=obj.findBugForEachQueryCosineSimBased(queryID);
-				=obj.ResultBasedOnTF(queryID);
+				//=obj.ResultBasedOnTF(queryID);
 				
 				HashMap<Integer, Double> resultMap
 				//=sortedResultMyTool;
-				//=SortedBLresult;
-				=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, 0.2);
+				=SortedBLresult;
+				//=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, 0.2);
 				
 				String result=queryID+",";
 				int count=0;
@@ -480,12 +480,12 @@ public class BugLocalizationUsingNumbers {
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			="./data/Results/Sep7rVSMandMe"+alpha+"-"+test+".txt";
+			="./data/Results/Sep12VSMAndme"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 	
-			obj.bugLocator(obj, outputFilePath, sourceFolder, bugReportFolder, goldsetFile);
-			//obj.bugLocatorLuceneAndMe(obj, outputFilePath, bugReportFolder);
+			//obj.bugLocator(obj, outputFilePath, sourceFolder, bugReportFolder, goldsetFile);
+			obj.bugLocatorLuceneAndMe(obj, outputFilePath, bugReportFolder);
 			//call the bug localizer
 		
 		}

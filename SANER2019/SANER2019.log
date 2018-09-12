@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  7 SEP 2018 14:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  12 SEP 2018 13:25
 entering extended mode
 **./SANER2019.tex
 (SANER2019.tex
@@ -616,7 +616,7 @@ Package pdftex.def Info: SD1.png  used on input line 205.
 Underfull \vbox (badness 1661) has occurred while \output is active []
 
  [4 <./Map.png>] [5 <./SD1.png>]
-Overfull \hbox (0.95615pt too wide) in paragraph at lines 418--465
+Overfull \hbox (0.94504pt too wide) in paragraph at lines 418--465
  [][] 
  []
 
@@ -670,7 +670,7 @@ s/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:
 /Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
 ><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on SANER2019.pdf (7 pages, 290144 bytes).
+Output written on SANER2019.pdf (7 pages, 290163 bytes).
 PDF statistics:
  90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
