@@ -34,22 +34,10 @@ public class PerformanceCalculatorPerfect {
 		// TODO Auto-generated method stub
 		
 		//new PerformanceCalculatorPerfect().getSingleResult("rVSM");
-		new PerformanceCalculatorPerfect().getAvgPerformance(10, 0.0, "VSMmeComment");
+		new PerformanceCalculatorPerfect().getAvgPerformance(10, 0.0, "VSM");
 	}
 
-	public static void getSingleResult(String baseNamePart)
-	{
-		PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep2"+baseNamePart+"0.0-10.txt");		
-		obj.gitResultsMap=obj.getGitOutput(obj.gitPath);
-		
-		System.out.println();
-		obj.resultsMap=obj.getResults(obj.resultPath); 	
-		
-		//System.out.println(obj.gitResultsMap.size());
-		//System.out.println(obj.resultsMap.size());
-		getResultForTopK(obj);
-		//MiscUtility.showResult(10, finalRankedResult);
-	}
+
 	
 	public static void getAvgPerformance(int no_of_fold, double alpha, String baseNamePart)
 	{
@@ -58,7 +46,8 @@ public class PerformanceCalculatorPerfect {
 		for(int i=1;i<=no_of_fold;i++)
 		{
 			int test=i;
-			PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep3"+baseNamePart+test+".txt");		
+			PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep12"+baseNamePart+alpha+"-"+test+".txt");		
+			//PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/buglocator/eclipseoutput.txt");	
 			obj.gitResultsMap=obj.getGitOutput(obj.gitPath);
 		
 			System.out.println("Test#"+i);
@@ -72,7 +61,20 @@ public class PerformanceCalculatorPerfect {
 		getAverageResult(resultContainer, no_of_fold);
 		MiscUtility.showResult(resultContainer.size(), resultContainer);
 	}
-	
+	public static void getSingleResult(String baseNamePart)
+	{
+		PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep7"+baseNamePart+"0.0-10.txt");	
+		//PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","E:\\Data&Tool\\output.txt");	
+		obj.gitResultsMap=obj.getGitOutput(obj.gitPath);
+		
+		System.out.println();
+		obj.resultsMap=obj.getResults(obj.resultPath); 	
+		
+		//System.out.println(obj.gitResultsMap.size());
+		//System.out.println(obj.resultsMap.size());
+		getResultForTopK(obj);
+		//MiscUtility.showResult(10, finalRankedResult);
+	}
 	public static void getAverageResult(HashMap <String, HashMap<String, Double>> resultContainer, int no_of_fold)
 	{
 		double top1=0.0;
@@ -132,7 +134,7 @@ public class PerformanceCalculatorPerfect {
 		double percentageT10=Double.valueOf(resultTop10.size())/Double.valueOf(obj.resultsMap.size())*100;
 		resultHM.put("T10", percentageT10);
 		//resultHM.put("T10", ComputePerformancePercent(TOP_K, obj));
-		//MiscUtility.showResult(resultTop10.size(), resultTop10);
+		MiscUtility.showResult(resultTop10.size(), resultTop10);
 		//System.out.println("=================="+finalRankedResult.size());
 		//System.out.println("MRR at "+TOP_K+" "+ComputeMRR(resultTop10,obj, TOP_K));
 		//System.out.println("MAP at "+TOP_K+" "+ComputeMAP(resultTop10,obj));
@@ -280,7 +282,7 @@ public class PerformanceCalculatorPerfect {
 			{
 				list.add(String.valueOf(count));
 			}
-			count++;
+			//count++;
 		}
 		return list;
 	}

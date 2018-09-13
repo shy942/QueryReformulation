@@ -55,9 +55,9 @@ Bug localization is one of the most challending tasks undertaken by the develope
 Existing studies mostly rely on lexical similarity between the bug reports and source code for bug localization.
 However, such similarity always does not exist, and these studies suffer from vocabulary mismatch issues.
 In this paper, we propose a bug localization technique that (1) not only uses lexical similarity between bug report and source code documents  
-but also (2) exploits the co-occurrences between keywords from the past reports and source tokens from corresponding changed code.
-Experiments using a collection of ~6000 bug reports show that our technique performs significantly higher in terms of Hit@K and MAP
-than one state-of-the-art IR-based bug localization techniques using TF-IDF and other LDA based technique.
+but also (2) exploits the co-occurrences between keywords from the past reports and source links from corresponding changed code.
+Experiments using a collection of ~6000 bug reports show that our technique can locate buggy files with a Top-10 accuracy of 62.14\% and a mean reciprocal rank@10 of 0.50 and a mean precision average@10 of 70\%, which are highly promising. 
+Comparison with state-of-the-art IR-based bug localization techniques confirms superiority of our technique. 
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -103,6 +103,29 @@ So our approach not (1) only relies on the lexical similarity measure between bi
 We also replicate two state of the art bug localization techniques in order to compare the performance of our proposed approach with these two.
 
 \section{An Example Use Case Scenario}\label{sec:usecase}
+\begin{table}[htbp]
+	\centering
+	\caption{A working example of BLuAMIR}
+	\label{tab:workingexample}
+	\resizebox{3.4in}{!}{%
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+			\hline
+			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
+			\textbf{\textit{Query}} 
+			
+			& \textbf{VSM score}  
+			& \textbf{Retrieved Files}  & 
+			\textbf{GoldSet}  &
+			\textbf{VSM score}  & 
+			\textbf{Co-Occ-Score} &
+			\textbf{ScoreAll} &
+			\textbf{Retrieved Files} &
+			\textbf{Goldset}\\
+			\hline
+		    37026 & 
+	\end{tabular}}
+	\centering
+\end{table}
 Note:
 Provide an example such as say for bug B1 source code files F1, F2, F3 are modified or changed. Now a new bug B has similar to B1 in terms of cosine similarity. Then prove that F1, F2, F3 or one or two of them are contained in the list of files which would be changed or modified for fixing that new bug B.
 Lets consider a bug having ID "" from Eclipse-UI-Platform software. From Git repository it is discoverd that so far n number of file have been modified in order to fix this bug. We also csn find the source code address of those changed files. Now, 
