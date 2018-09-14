@@ -11,7 +11,9 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{multirow}
-
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -103,16 +105,15 @@ So our approach not (1) only relies on the lexical similarity measure between bi
 We also replicate two state of the art bug localization techniques in order to compare the performance of our proposed approach with these two.
 
 \section{An Example Use Case Scenario}\label{sec:usecase}
-\begin{table}[htbp]
+\begin{table*}[t]
 	\centering
 	\caption{A working example of BLuAMIR}
 	\label{tab:workingexample}
-	\resizebox{3.4in}{!}{%
-		\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+	\resizebox{6.0in}{!}{%
+		\begin{tabular}{c|c|c||c|c|c|c|c|c}
 			\hline
 			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
-			\textbf{\textit{Query}} 
-			
+			\textbf{Query \#ID}
 			& \textbf{VSM score}  
 			& \textbf{Retrieved Files}  & 
 			\textbf{GoldSet}  &
@@ -122,10 +123,29 @@ We also replicate two state of the art bug localization techniques in order to c
 			\textbf{Retrieved Files} &
 			\textbf{Goldset}\\
 			\hline
-		    37026 & 
+		    \multirow{10}{*}{37026} & 1.00 & WorkingSetLabelProvider.java  & \checkmark &  &  & 0.85 & WorkingSetLabelProvider.java & \checkmark \\
+			\cline{2-9}
+		    & 0.80 & ImageFactory.java & \xmark & & & 0.69 & WorkingSet.java & \checkmark \\ 
+		  \cline{2-9}
+		   & 0.76 & WorkingSetMenuContributionItem.java & \xmark & & & 0.67 & IWorkingSet.java.java & \checkmark\\
+		   \cline{2-9}
+		   & 0.75 & IWorkingSet.java & \checkmark & & & 0.64 & WorkingSetTypePage.java & \xmark\\
+		  \cline{2-9}
+		   & 0.70 & ProjectImageRegistry.java & \xmark & & & 0.63 & CommandImageService.java & \xmark \\
+		   \cline{2-9}
+		   & 0.68 & IWorkingSetManagerTest.java & \xmark & & & 0.61 & WorkbenchImages.java & \checkmark\\
+		   \cline{2-9}
+		   & 0.67 & IWorkbenchPartDescriptor.java & \xmark & & & 0.60 & WorkingSetAdapterFactory.java & \checkmark \\
+		   \cline{2-9}
+		   & 0.65 & MockWorkingSetPage.java & \xmark  & & & 0.57 & EditorIconTest.java & \xmark\\
+		 \cline{2-9}
+		   & 0.65 & MissingImageDescriptor.java & \xmark  & & & 0.57 & PerspectiveDescriptor.java & \xmark \\
+		  \cline{2-9}
+		   & 0.64 & WorkingSetTypePage.java & \xmark & & & 0.56 & IAction.java & \xmark\\
+		   \hline
 	\end{tabular}}
 	\centering
-\end{table}
+\end{table*}
 Note:
 Provide an example such as say for bug B1 source code files F1, F2, F3 are modified or changed. Now a new bug B has similar to B1 in terms of cosine similarity. Then prove that F1, F2, F3 or one or two of them are contained in the list of files which would be changed or modified for fixing that new bug B.
 Lets consider a bug having ID "" from Eclipse-UI-Platform software. From Git repository it is discoverd that so far n number of file have been modified in order to fix this bug. We also csn find the source code address of those changed files. Now, 
@@ -349,7 +369,7 @@ FinalScoreApproach2=(1-\alpha )\times N(VSMScore)+ \\
 \caption{Description of Data Sets}
 \label{tab:DDSl}
 \centering
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{c|c|c}
 \hline
 \textbf{Project Name}  &  \textbf{\#Source Codes} & \textbf{\#Bug Reports}\\
 \hline
@@ -365,7 +385,7 @@ FinalScoreApproach2=(1-\alpha )\times N(VSMScore)+ \\
 \label{tab:Performance1}
 \centering
 \resizebox{3.4in}{!}{%
-\begin{tabular}{|c|c|c|c|c|c|c|}
+\begin{tabular}{c|c|c|c|c|c|c}
 	\hline
 			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
 			\begin{tabular}[c]{@{}c@{}}\# \textbf{Test}  \\ \textbf{Case} \\ \end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{Bug}\\\textbf{Localization} \\ Technique\end{tabular} &
@@ -439,7 +459,7 @@ We divide our query data into k number of sets. Typically k is 10, but we work w
 \caption{Performance of proposed technique (VSM+Co-Occerence) Ranks}
 \label{tab:T3}
 \resizebox{3.5in}{!}{%
-		\begin{tabular}{|c|c|c|c|c|c|c|}
+		\begin{tabular}{c|c|c|c|c|c|c}
 			\hline
 			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
 			
@@ -532,7 +552,7 @@ For both of our proposed approaches we have used some weighting functions, which
 \caption{Performance of (rVSM+Simi+Co-Occerence) for different weighting factors}
 \label{tab:alphaApproach1}
 \resizebox{3.4in}{!}{%
-\begin{tabular}{@{}|c|c|c|c|c|c|c|c|@{}}
+\begin{tabular}{c|c|c|c|c|c|c|c}
 			\hline
 			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
 %			\begin{tabular}[c]{@{}c@{}} \textit{alpha} \end{tabular} & \begin{tabular}[c]{@{}c@{}}Bug\\Localization \\ Technique\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 1\\ \%\end{tabular} & 
@@ -577,7 +597,7 @@ We compute performance TopK accuracy, MRR and MAP for different weighting functi
 		\caption{Performance of (VSM+Co-Occerence) for different weighting factors}
 		\label{tab:alphaApproach2}
 		\resizebox{3.4in}{!}{%
-			\begin{tabular}{@{}|c|l|c|c|c|c|c|@{}}
+			\begin{tabular}{c|l|c|c|c|c|c}
 				\hline
 				%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
 				\textbf{\textit{alpha}} 

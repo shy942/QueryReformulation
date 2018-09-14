@@ -480,7 +480,7 @@ public class BugLocalizationUsingNumbers {
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			="./data/Results/Sep12VSMAndme"+alpha+"-"+test+".txt";
+			="./data/Results/Sep14VSMAndme"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 	
@@ -535,6 +535,7 @@ public class BugLocalizationUsingNumbers {
 						count++;
 						if(count>10)break; 
 						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key));
+						//System.out.println(queryID+","+this.SourceIDMap.get(key)+","+ SortedBLresult.get(key)+","+sortedResultMyTool.get(key)*0.4);
 					}
 				}	
 				//ContentWriter.writeContent("./data/Results/finalResultTest2Aug16.txt", finalResult);

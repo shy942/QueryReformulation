@@ -34,7 +34,7 @@ public class PerformanceCalculatorPerfect {
 		// TODO Auto-generated method stub
 		
 		//new PerformanceCalculatorPerfect().getSingleResult("rVSM");
-		new PerformanceCalculatorPerfect().getAvgPerformance(10, 0.0, "VSM");
+		new PerformanceCalculatorPerfect().getAvgPerformance(10, 0.4, "VSMAndme");
 	}
 
 
