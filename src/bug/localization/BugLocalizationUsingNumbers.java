@@ -465,7 +465,7 @@ public class BugLocalizationUsingNumbers {
         
 		//Work on necessary inputs or maps
 		int total_test=10;
-		double alpha=0.4;
+		double alpha=0.0;
 		for(int i=1;i<=total_test;i++)
 		{
 			int test=i;
@@ -480,7 +480,7 @@ public class BugLocalizationUsingNumbers {
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			="./data/Results/Sep14VSMAndme"+alpha+"-"+test+".txt";
+			="./data/Results/Sep17VSMAndme"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 	
@@ -493,7 +493,7 @@ public class BugLocalizationUsingNumbers {
 
 	 public void bugLocatorLuceneAndMe(BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
 	    {
-		 	double ALPHA=0.40;
+		 	double ALPHA=0.00;
 		 	double BETA=1-ALPHA;
 		 	String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
 			obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
@@ -505,6 +505,7 @@ public class BugLocalizationUsingNumbers {
 			//MiscUtility.showResult(10, obj.bugIdKeywordMap);
 			//MiscUtility.showResult(10, obj.testSet);
 			ArrayList<String> finalResult=new ArrayList<>();
+			ArrayList<String> workingExample=new ArrayList<>();
 			int i=0;
 			for(int queryID:testSet.keySet())
 			{
@@ -519,24 +520,29 @@ public class BugLocalizationUsingNumbers {
 				
 					HashMap<Integer, Double> SortedBLresult=MiscUtility.sortByValues(resultBugLocator);
 					
-					HashMap<Integer,Double> sortedResultMyTool
+					//HashMap<Integer,Double> sortedResultMyTool
 					//=obj.findBugForEachQueryCosineSimBased(queryID);
-					=obj.ResultBasedOnTF(queryID);
+					//=obj.ResultBasedOnTF(queryID);
 					
 					HashMap<Integer, Double> resultMap
 					//=sortedResultMyTool;
-					//=SortedBLresult;
-					=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
+					=SortedBLresult;
+					//=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
 					
 					String result=queryID+",";
 					int count=0;
 					for(int key:resultMap.keySet())
 					{
 						count++;
-						if(count>10)break; 
+						if(count>100)break; 
 						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key));
-						//System.out.println(queryID+","+this.SourceIDMap.get(key)+","+ SortedBLresult.get(key)+","+sortedResultMyTool.get(key)*0.4);
+						if(queryID==37026){
+							System.out.println(queryID+","+this.SourceIDMap.get(key)+","+ SortedBLresult.get(key));
+							workingExample.add(queryID+","+this.SourceIDMap.get(key)+","+ SortedBLresult.get(key));
+						}
+						
 					}
+					if(queryID==37026)ContentWriter.writeContent("./data/Results/WorkingExampleAnalysisForVSM.txt", workingExample);
 				}	
 				//ContentWriter.writeContent("./data/Results/finalResultTest2Aug16.txt", finalResult);
 			}

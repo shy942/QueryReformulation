@@ -1,0 +1,10 @@
+37026,org.eclipse.ui.internal.dialogs.WorkingSetLabelProvider.java,0.6,0.2545454545454546
+37026,org.eclipse.ui.internal.WorkingSet.java,0.34940712909782173,0.34545454545454546
+37026,org.eclipse.ui.IWorkingSet.java,0.4486066687402939,0.21818181818181817
+37026,org.eclipse.ui.internal.dialogs.WorkingSetTypePage.java,0.38162421884820813,0.2545454545454546
+37026,org.eclipse.ui.internal.commands.CommandImageService.java,0.30563773295192503,0.3272727272727273
+37026,org.eclipse.ui.internal.WorkbenchImages.java,0.3145288172990838,0.29090909090909095
+37026,org.eclipse.ui.internal.ide.model.WorkingSetAdapterFactory.java,0.32552753476641366,0.2727272727272727
+37026,org.eclipse.ui.tests.api.EditorIconTest.java,0.298580939328605,0.2727272727272727
+37026,org.eclipse.ui.internal.registry.PerspectiveDescriptor.java,0.29814435248363236,0.2727272727272727
+37026,org.eclipse.jface.action.IAction.java,0.2352190027584834,0.3272727272727273
