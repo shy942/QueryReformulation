@@ -18,9 +18,11 @@ public class SourceCodeTermsFilteration {
 	public SourceCodeTermsFilteration()
 	{
 		
-		this.sourceCodePPFolder="./data/ExampleSourceCodeFiles";
+		//this.sourceCodePPFolder="./data/ExampleSourceCodeFiles";
+		this.sourceCodePPFolder="E:\\BugLocator\\Source\\swt-3.1\\src\\org\\eclipse\\swt\\";
 		this.frequentKeywordList=new ArrayList<String>();
-		this.sourceCodeFilteredPPFolder="./data/ExampleSourceCodeFilesFiltered";
+		//this.sourceCodeFilteredPPFolder="./data/ExampleSourceCodeFilesFiltered";
+		this.sourceCodeFilteredPPFolder="E:\\PhD\\SWT\\ProcessedSourceCorpus\\";
 		LoadFrequentTerms();
 	}
 	

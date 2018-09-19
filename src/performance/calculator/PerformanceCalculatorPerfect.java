@@ -34,7 +34,7 @@ public class PerformanceCalculatorPerfect {
 		// TODO Auto-generated method stub
 		
 		//new PerformanceCalculatorPerfect().getSingleResult("rVSM");
-		new PerformanceCalculatorPerfect().getAvgPerformance(10, 0.0, "VSMAndme");
+		new PerformanceCalculatorPerfect().getAvgPerformance(10, 0.4, "rVSMandMe");
 	}
 
 
@@ -46,7 +46,7 @@ public class PerformanceCalculatorPerfect {
 		for(int i=1;i<=no_of_fold;i++)
 		{
 			int test=i;
-			PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep17"+baseNamePart+alpha+"-"+test+".txt");		
+			PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep7"+baseNamePart+alpha+"-"+test+".txt");		
 			//PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/buglocator/eclipseoutput.txt");	
 			obj.gitResultsMap=obj.getGitOutput(obj.gitPath);
 		

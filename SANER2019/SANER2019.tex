@@ -102,7 +102,12 @@ So, in order to resolve these two issues, in our work we propose a bug localizat
 Our proposed technique exploits the association of keywords extracted from fixed bug report with their changed source code location. Here, the main idea is to capture information from a collection of bug reports and exploit them for locating relevant source code location.
 So our approach not (1) only relies on the lexical similarity measure between big reports and source code files for bug localization, and (2) but also addresses the vocabulary mismatch problem by using a keyword-source map constructed from fixed bug information.
 
-We also replicate two state of the art bug localization techniques in order to compare the performance of our proposed approach with these two.
+We also replicate two state of the art bug localization techniques in order to compare the performance of our proposed approach with these two. So, contributions of our paper include:
+\begin{itemize}
+ \item A novel bug localization technique that exploits the association relationship between bug report keywords with their buggy source codes.
+ \item Comprehensive evaluation of the technique using about 3000 bugs from Eclipse bug repository and validation against state-of-the-art.
+\end{itemize}
+
 
 \section{An Example Use Case Scenario}\label{sec:usecase}
 \begin{table*}[t]
@@ -152,6 +157,15 @@ Note that Same file is retrieved in rank 1 for both techniques. The buggy file w
 
 We try to reason why BLuAMIR can locate more buggy files than VSM. In BLuAMIR, the Co-Occ score comes from the association map, which is created from keywords extracted from previously fixed bug report into their fixed buggy files. In VSM, we compare term presented in the bug reports and source files. But we know, there exist a vocabulary missmatch problem between bug reports and source corpus. But, in computing Co-Occ rank we dont directly compare terms between bug reports and source files. So vocabulary missmatch problem is resolved here. Moreover, in the working example, this association map aids locating more buggy files than VSM technique. IF we go deeper, we can find that due to vocabulary missmatch problem, VSM small failed to retrieve buggy files where our proposed tool utilize an association map that successfully retrieve previous relationship between bug report keywords and their source buggy files. 
 
+\section{Research Question Formulation}
+Our proposed tool-BLuAMIR are designed to  answer the following research questions.
+\begin{itemize}
+	\item RQ1: How many bugs can be successfully located by BLuAMIR?
+	\item RQ2: Does our proposed approach-BLuAMIR resolve the vocabulary missmatch problem?
+	\item RQ3: How does BLuAMIR eliminate vocabulary missmatch problem?
+	\item RQ4: In BLuAMIR comparable with the state-of-the-art techniques in identifying buggy files?
+\end{itemize}
+
 \section{Existing Approaches}\label{sec:existing}
 We have replicated two existing bug localization approaches: (i) TF-IDF based bug localization approach and (ii) LDA topic based bug localization technique. In the following subsections we will briefly discuss each of them.
 \subsection{TF-IDF Based Bug Localization Technique:}
@@ -182,7 +196,7 @@ This \textit{rVSM} score is calculated for each query bug report \textit{q} agai
 \textbf{Ranking based on similar bug information}
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.65]{3layers}
+	\includegraphics[scale=0.50]{3layers}
 	\caption{Bug and its Similar Bug Relationship with Source Code Files:}
 	\label{fig:BSBR}
 \end{figure}
@@ -200,29 +214,31 @@ We combine the both scores based on source code score and similar bugs score as 
 FinalScore=(1-\alpha )\times N(rVSMScore)+\alpha \times N(SimiScore)
 \end{equation}
 
-\subsection{LDA Topic Based Bug Localization Technique:}
-The main assumption behind this technique is the textual content of the bug reports and their associated buggy source code files tend to describe some common technical aspects. So, if  we could identify the technical topics extracted from both bug reports and source codes, we could recommend the files shared technical topics with the newly reported bug reports. If a newly reported bug has similar technical topics with some previously fixed bug reports, the fixed files could be a good candidate files for newly reported bug.
+\subsection{VSM Based Bug Localization Technique:}
 
-LDA (Latent Dirichlet Allocation) is a probabilistic and fully generative topic model. It is used to extract latent (i.e., hidden) topics, which are presented in a collection of documents. It also model each document as a finite mixture over the set of topics [add link here]. In LDA, similarity between a document \textit{d} and a query \textit{q} is computed as the conditional probability of the query given that document \cite{Lukins2}.
-
-\begin{equation}
-Sim(q,d_{i})=P(q|d_{i})=\prod_{q_{k}\epsilon q}P(q_{k}|d_{i})
-\end{equation}
-
-Here \textit{q\textsubscript{k}} is the \textit{k}th word in the query {q} Thus, a document (i.e., source code file) is relevant to a query if it has a high probability of generating the words in the query.
-
-We perform the following steps in order to localize buggy files for newly reported bug using LDA based approach:
-
-\begin{itemize}
-	\item Apply topic modeling on the source code files. The output contains a certain number of topics and some associated keywords for each topic. We also get some other distribution files such as document-topic, word-topic etc.
-	\item Now work with the documents topic distribution file. Make a list of source code documents or files for each topic. So, we wiill have a list that contain all topics and their associated source code documents.
-	\item Here our query is the newly reported bug. This contains information in the bug reports such as title and short description etc. We all do inference for this query using a topic modeling tool. It will extract all topic associated with the query (i.e., newly reported bug).
-	\item Now we need to work with topic keywords. We are going to perform a comparison between newly reported bug or the given query and source code files using topic information. That means we will compare topic-keywords associated with topics inferred for the query with topic-keywords of each topic extracted from source code documents.
-	\item We will rank them based on topic-keyword similarity. So, now we know which are the top most topics, and we already have information regarding topic-document relationship, we will retrieve all source code files associated with all those top most topic as recommended buggy files.
-	%\item A detailed description of methodologies for visualizing topic evolution extracted from bug reports.
-	%\item A detailed description of methodologies for visualizing bug report extractive summaries.
-	%\item Evaluation of visualized bug report extractive summary by conducting a task-oriented user study.
-\end{itemize}
+%\subsection{LDA Topic Based Bug Localization Technique:}
+%The main assumption behind this technique is the textual content of the bug reports and their associated buggy source code files tend to describe some common technical aspects. So, if  we could identify the technical topics extracted from both bug reports and source codes, we could recommend the files shared technical topics with the newly reported bug reports. If a newly reported bug has similar technical topics with some previously fixed bug reports, the fixed files could be a good candidate files for newly reported bug.
+%
+%LDA (Latent Dirichlet Allocation) is a probabilistic and fully generative topic model. It is used to extract latent (i.e., hidden) topics, which are presented in a collection of documents. It also model each document as a finite mixture over the set of topics [add link here]. In LDA, similarity between a document \textit{d} and a query \textit{q} is computed as the conditional probability of the query given that document \cite{Lukins2}.
+%
+%\begin{equation}
+%Sim(q,d_{i})=P(q|d_{i})=\prod_{q_{k}\epsilon q}P(q_{k}|d_{i})
+%\end{equation}
+%
+%Here \textit{q\textsubscript{k}} is the \textit{k}th word in the query {q} Thus, a document (i.e., source code file) is relevant to a query if it has a high probability of generating the words in the query.
+%
+%We perform the following steps in order to localize buggy files for newly reported bug using LDA based approach:
+%
+%\begin{itemize}
+%	\item Apply topic modeling on the source code files. The output contains a certain number of topics and some associated keywords for each topic. We also get some other distribution files such as document-topic, word-topic etc.
+%	\item Now work with the documents topic distribution file. Make a list of source code documents or files for each topic. So, we wiill have a list that contain all topics and their associated source code documents.
+%	\item Here our query is the newly reported bug. This contains information in the bug reports such as title and short description etc. We all do inference for this query using a topic modeling tool. It will extract all topic associated with the query (i.e., newly reported bug).
+%	\item Now we need to work with topic keywords. We are going to perform a comparison between newly reported bug or the given query and source code files using topic information. That means we will compare topic-keywords associated with topics inferred for the query with topic-keywords of each topic extracted from source code documents.
+%	\item We will rank them based on topic-keyword similarity. So, now we know which are the top most topics, and we already have information regarding topic-document relationship, we will retrieve all source code files associated with all those top most topic as recommended buggy files.
+%	%\item A detailed description of methodologies for visualizing topic evolution extracted from bug reports.
+%	%\item A detailed description of methodologies for visualizing bug report extractive summaries.
+%	%\item Evaluation of visualized bug report extractive summary by conducting a task-oriented user study.
+%\end{itemize}
 \section{Proposed System Diagram}\label{sec:proposedsystemDiagram}
 Our proposed approach combine lexical similarity and co-occurence similarity measure.  \citet{Jian} proposed BugLocator based on two different similarity scores- one is rVSM score and the other one is Simi score. In our porposed bug localization approach, we retrieve relevant ranked files based on three different scores- 1) rVSM, 2) Simi and 3) Word Co-occurence. So,
 we have divided our approach into two different sections or parts- 1) calculate rVSM and Simi scores and co-occurence measure and 2) combine all three scores in order to localize recommended buggy source files for a given newly reported bug. As we have combined two existing scores with our proposed word co-occirence score, we will discuss the system diagram of association map database in Part I and then we represent our overall system diagram in Part II.
@@ -501,7 +517,7 @@ We divide our query data into k number of sets. Typically k is 10, but we work w
 			51.05 &
 			63.06 & 0.27 &
 			0.34    \\ \hline \hline
-			\multirow{2}{*}{Average}                                                                               & VSM & 24.98\% & 47.94\% & 58.73\% & 0.28 & 0.33 \\  \cline{2-7}   &VSM + Co-Score      & 24.62\%                                                 & 51.05\%                                                 & 64.05\%                                                  &   0.31  &  0.37    \\ 
+			\multirow{2}{*}{Average}                                                                               & VSM & 24.98\% & 47.94\% & 58.73\% & 0.28 & 0.33 \\  \cline{2-7}   &VSM + Co-Score      & 28.43\%                                                 & 53.86\%                                                 & 64.05\%                                                  &   0.31  &  0.37    \\ 
 			\hline
 	\end{tabular}}
 \centering
@@ -570,20 +586,20 @@ For both of our proposed approaches we have used some weighting functions, which
 			 \textbf{MAP}  \\
 			 \hline
 			{0.2} 
-			& 0.2 &0.6                                                                                                                                               & 16.13                                               & 40.40                                            & 52.99                                                &   0.39  & 0.40    \\ \hline
+			& 0.2 &0.6                                                                                                                                               & 16.13                                               & 40.40                                            & 52.99                                                &   0.21  & 0.25    \\ \hline
 			{0.3} 
-			& 0.2  &0.5                                                                    & 18.26                                               & 42.83                                              & 55.73                                             &   0.42  &   0.44  \\ 
+			& 0.2  &0.5                                                                    & 18.26                                               & 42.83                                              & 55.73                                             &   0.23  &   0.27  \\ 
 			\hline
 			
 			{0.4}  & 0.2
 			& 0.4
 			&20.40 &
 			45.32 &
-			57.28 & 0.44 &
-			0.47     \\  
+			57.28 & 0.25 &
+			0.29     \\  
 			\hline
 			{Average}      
-			&                                                                              &                                           & 18.26\%                                                 & 42.85\%                                                 & 55.33\%                                                  &     0.42 &  0.44    \\ 
+			&                                                                              &                                           & 18.26\%                                                 & 42.85\%                                                 & 55.33\%                                                  &     0.23 &  0.27    \\ 
 			\hline
 \end{tabular}}
 \centering
@@ -609,19 +625,19 @@ We compute performance TopK accuracy, MRR and MAP for different weighting functi
 			\textbf{MAP}  \\
 			\hline
 				{0.2} 
-				                                                                                                                                           & 26.72                                            & 51.94                                            & 62.43                                                &   0.50  & 0.58    \\ \hline
+				                                                                                                                                           & 26.72                                            & 51.94                                            & 62.43                                                &   0.30  & 0.36    \\ \hline
 				{0.3} 
-			                                                                 & 28.06                                               & 53.35                                              & 63.24                                             &   0.52  &   0.60  \\ 
+			                                                                 & 28.06                                               & 53.35                                              & 63.24                                             &   0.31  &   0.37  \\ 
 				\hline
 				{0.4} 
 			
 				&28.43 &
 				53.86 &
-				64.05 & 0.52 &
-				0.61     \\  
+				64.05 & 0.31 &
+				0.37     \\  
 				\hline
 				{Average}      
-				                                                                                                                        & 27.74\%                                                 & 53.05\%                                                 & 63.24\%                                                  &   0.51  &  0.60    \\ 
+				                                                                                                                        & 27.74\%                                                 & 53.05\%                                                 & 63.24\%                                                  &   0.31  &  0.37    \\ 
 				\hline
 		\end{tabular}}
 	\centering
