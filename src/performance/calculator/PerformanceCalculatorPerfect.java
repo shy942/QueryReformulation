@@ -106,7 +106,9 @@ public class PerformanceCalculatorPerfect {
 		
 		System.out.println("Result for Top-"+TOP_K);
 		HashMap<String, ArrayList<String>> resultTop1=ComputePerformancePercent(TOP_K, obj);
-		//MiscUtility.showResult(30, resultTop1);
+		//MiscUtility.showResult(resultTop1.size(), resultTop1);
+		int count=0;
+		for(String key:resultTop1.keySet())System.out.println(++count+" "+key+" "+resultTop1.get(key));
 		double percentageT1=Double.valueOf(resultTop1.size())/Double.valueOf(obj.resultsMap.size())*100;
 		resultHM.put("T1", percentageT1);
 	
@@ -118,6 +120,8 @@ public class PerformanceCalculatorPerfect {
 		TOP_K=5;
 		System.out.println("Result for Top-"+TOP_K);
 		HashMap<String, ArrayList<String>> resultTop5=ComputePerformancePercent(TOP_K, obj);
+		count=0;
+		for(String key:resultTop5.keySet())System.out.println(++count+" "+key+" "+resultTop5.get(key));
 		double percentageT5=Double.valueOf(resultTop5.size())/Double.valueOf(obj.resultsMap.size())*100;
 		resultHM.put("T5", percentageT5);
 		//resultHM.put("T5", ComputePerformancePercent(TOP_K, obj));
@@ -155,11 +159,13 @@ public class PerformanceCalculatorPerfect {
 		{
 			ArrayList<String> rankList=finalRankedResult.get(queryID);
 			averagePrecision+=getAvgPrecisionEachQuery(rankList);
+			//System.out.println(rankList);
+			//System.out.println(getAvgPrecisionEachQuery(rankList));
 		}
 		int totalQuery=obj.resultsMap.size();
-		//System.out.println("averagePrecision: "+averagePrecision);
+		System.out.println("averagePrecision: "+averagePrecision);
 		double MAP=averagePrecision/Double.valueOf(totalQuery);
-		//System.out.println("Total Query: "+totalQuery+" MAP: "+MAP);
+		System.out.println("Total Query: "+totalQuery+" MAP: "+MAP);
 		return MAP;
 	}
 	
@@ -187,6 +193,8 @@ public class PerformanceCalculatorPerfect {
 		{
 			ArrayList<String> rankList=finalRankedResult.get(queryID);
 			averageRecall+=get1stRecall(rankList,TOP_K);
+			//System.out.println(rankList);
+			//System.out.println(get1stRecall(rankList,TOP_K));
 		}
 		int totalQuery=obj.resultsMap.size();
 		int foundQuery=finalRankedResult.size();
@@ -201,18 +209,7 @@ public class PerformanceCalculatorPerfect {
 		int count =0;
 		int length=rankList.size();
 		
-		//System.out.println(rankList);
-	
-		for(int r=0;r<rankList.size();r++)
-		{ 
-			if(count>1)break;
-			count++;
-			recall1st=1/Double.valueOf(rankList.get(r));
-			//System.out.println("recallfirst   "+recall1st);
-			
-		}
-		
-		
+		recall1st=1/Double.valueOf(rankList.get(0));
 		
 		return recall1st;
 		

@@ -43,7 +43,7 @@ public class MethodCorpusDeveloper {
 				for (String method : methods) {
 					index++;
 					String key = javaFileURL + "#" + index;
-					System.out.println(key);
+					//System.out.println(key);
 					this.methodmap.put(key, method);
 				}
 			}
@@ -58,7 +58,7 @@ public class MethodCorpusDeveloper {
 
 	protected void saveCorpusKeys() {
 		// save the corpus keys
-		String keysFile = "/Users/user/Documents/workspace-2016/QueryReformulation/data/BugCorpus/key/keys."
+		String keysFile = ".\\data\\"
 				+ ".keys";
 		ArrayList<String> keylist = new ArrayList<>();
 		int index = 0;
@@ -68,7 +68,7 @@ public class MethodCorpusDeveloper {
 		}
 		// now save the keys
 		ContentWriter.writeContent(keysFile, keylist);
-		System.out.println("Keys saved successfully!");
+		//System.out.println("Keys saved successfully!");
 	}
 
 	protected void saveMethods(String javaFileURL) {
@@ -79,17 +79,25 @@ public class MethodCorpusDeveloper {
 		for (String key : this.methodmap.keySet()) {
 			index++;
 			String methodContent = this.methodmap.get(key);
-			String [] spilter=javaFileURL.split("/");
-			String filePart=spilter[spilter.length-1];
+			//System.out.println(javaFileURL);
+			//javaFileURL.replaceAll("\\\\", "/");
+			String [] spilter=javaFileURL.split("\\\\");
+			String filePart="";
+			//=spilter[spilter.length-1];
+			for(int f=5;f<spilter.length-1;f++)filePart+=spilter[f]+".";
+			String lastPart=spilter[spilter.length-1];
 			
-			String withoutExt=filePart.substring(0, filePart.length()-5);
-			System.out.println("na "+javaFileURL+" filePart:"+filePart+" withoutExt: "+withoutExt);
-			String outFile = this.methodFolder + "/"+withoutExt+"--"+ index + ".java";
+			filePart=filePart+index+"."+lastPart;
+		
+			String outFile = this.methodFolder + "\\"+filePart;
+			//System.out.println("outfile:        "+outFile);
+			
 			ContentWriter.writeContent(outFile, methodContent);
 			fileList.add(outFile);
 		}
-		System.out.println("Methods extracted successfully!");
+		//System.out.println("Methods extracted successfully!");
 	}
+
 
 	public ArrayList<String> returnFiles()
 	{
@@ -123,9 +131,10 @@ public class MethodCorpusDeveloper {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//String repoName="/Users/user/Documents/workspace-2016/QueryReformulation/data/processed";
-		//MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoName);
-		//developer.createMethodCorpus(developer.repoFolder);
-		//developer.saveMethods();
+		String repoName="E:\\BugLocator\\Source\\swt-3.1\\";
+		String methodFolder="E:\\PhD\\SWT\\method\\";
+		MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoName,methodFolder);
+		developer.createMethodCorpus(developer.repoFolder);
+		developer.saveMethods(methodFolder);
 	}
 }

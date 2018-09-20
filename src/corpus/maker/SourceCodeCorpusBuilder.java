@@ -18,8 +18,8 @@ public class SourceCodeCorpusBuilder {
 	
 	public SourceCodeCorpusBuilder()
 	{
-		this.sourceCodeFolder=StaticData.SOURCECODEDIR;
-		this.sourceCodePPFolder=StaticData.PREPROCESSEDSOURCECODEDIR+"/"+"ProcessedFiles";
+		this.sourceCodeFolder=new File("E:\\BugLocator\\Source\\swt-3.1\\");
+		this.sourceCodePPFolder="E:\\PhD\\SWT\\ProcessedSourceCorpus\\";
 		this.javaFilePaths=new ArrayList<String>();
 		this.javaFilePathsLastName=new ArrayList<String>();
 		this.noOfFile=0;
@@ -37,8 +37,8 @@ public class SourceCodeCorpusBuilder {
 			CommentFilterer cf=new CommentFilterer(s,fileName);
 			cf.discardClassHeaderComment();
 			
-			String repoFolder="/Users/user/Documents/workspace-2016/QueryReformulation/data/processed";
-			String methodFolder="/Users/user/Documents/workspace-2016/QueryReformulation/data/BugCorpus/method/";
+			String repoFolder="E:\\BugLocator\\Source\\swt-3.1\\";
+			String methodFolder="E:\\PhD\\SWT\\method\\";
 			MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoFolder, methodFolder);
 			//developer.createMethodCorpus(developer.repoFolder);
 			developer.extractMethods(s);
@@ -61,13 +61,19 @@ public class SourceCodeCorpusBuilder {
 				ContentWriter.writeContent(outFile, s.replace("\\", "/")+"\r\n"+preprocessed);
 				System.out.println(file_track+" Preprocessed:"+file);*/
 			}
-			String [] spilter=s.split("/");
-			String fileNameOnly=spilter[spilter.length-1];
-			System.out.println("fileNameOnly "+fileNameOnly);
-			String outFile="./data/ExampleSourceCodeFilesMethodLevel/"+fileNameOnly;
-			ContentWriter.writeContent(outFile, s.replace("\\", "/")+"\r\n"+fileList.size()+"\r\n"+preprocessed);
-			System.out.println(file_track+" Preprocessed:"+s);
+			//String [] spilter=s.split(".");
+			//String fileNameOnly=spilter[spilter.length-1];
+			//System.out.println("fileNameOnly "+fileNameOnly);
+			//String outFile=this.sourceCodePPFolder+fileNameOnly;
+			//ContentWriter.writeContent(outFile, s.replace("\\", "/")+"\r\n"+fileList.size()+"\r\n"+preprocessed);
+			//ContentWriter.writeContent(fileNameOnly, s.replace("\\", "/")+"\r\n"+fileList.size()+"\r\n"+preprocessed);
+			String [] spilter=s.split("\\\\");
+			String filePart="";
+			for(int f=5;f<spilter.length-1;f++)filePart+=spilter[f]+".";
+			filePart=filePart+spilter[spilter.length-1];
 			
+			System.out.println(file_track+" Preprocessed:"+this.sourceCodePPFolder+filePart);
+			ContentWriter.writeContent(this.sourceCodePPFolder+filePart, preprocessed);
 		}
 		System.out.println("Total no. of files: "+file_track);
 	}

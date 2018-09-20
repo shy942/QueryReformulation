@@ -25,7 +25,7 @@ public class SourceCodePreprocessor {
 	}
 
 	public void loadStopWords() {
-		this.stopwords = ContentLoader.readContent(StaticData.STOPWORDFILE);
+		this.stopwords = ContentLoader.readContent(".\\data\\stop_words.txt");
 	}
 
 	protected ArrayList<String> removeStopWords(ArrayList<String> words) {
