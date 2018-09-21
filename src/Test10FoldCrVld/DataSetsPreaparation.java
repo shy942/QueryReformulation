@@ -37,18 +37,33 @@ public class DataSetsPreaparation {
 		//DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","/Users/user/Documents/Ph.D/2018/Data/ProcessedBugData/");
 		//For Windows
 		//Dont do this now
-		
-		//new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\Data\\BugDataNew\\").DataPreparation("./data/BugCorpus/allBug.txt","./data/GitInfoNew.txt","./data/bugIDs.txt","E:\\PhD\\Data\\BugDataNew\\");
-		DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","E:PhD\\Data\\BugDataNew\\");
+		//new DataSetsPreaparation().creatAllbugs("E:\\PhD\\SWT\\BugData\\","E:PhD\\SWT\\allBug.txt");
+		new DataSetsPreaparation("E:PhD\\SWT\\bugIDs.txt","E:PhD\\SWT\\Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\SWT\\BugData\\").DataPreparation("E:PhD\\SWT\\allBug.txt",".//data//ginInfoSWT.txt","E:PhD\\SWT\\bugIDs.txt","E:PhD\\SWT\\BugData\\");
+		/*DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","E:PhD\\Data\\BugDataNew\\");
 		
 		
 		
 		
 		obj.bugContentHM=obj.LoadBugData();
 		ArrayList<String> foldList=obj.FoldPreparation(10);
-		obj.TrainAndTestSetPrep(foldList,10);
+		obj.TrainAndTestSetPrep(foldList,10);*/
 	}
       
+	private void creatAllbugs(String bugFolder, String outFile) {
+		// TODO Auto-generated method stub
+		File[] files = new File(bugFolder).listFiles();
+		ArrayList <String> list=new ArrayList<>();
+		for (File file : files) {
+			String content = ContentLoader.readContentSimple(file
+					.getAbsolutePath());
+			String fileName=file.getName().substring(0,file.getName().length()-4);
+			list.add(fileName);
+		
+		}
+		ContentWriter.writeContent(outFile, list);
+		//MiscUtility.showResult(10, this.bugContentHM);
+	}
+
 	public HashMap<String, String> LoadBugData()
 	{
 		File[] files = new File(this.bugInFolder).listFiles();

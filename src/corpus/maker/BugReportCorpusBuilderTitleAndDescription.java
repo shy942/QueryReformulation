@@ -26,8 +26,8 @@ public class BugReportCorpusBuilderTitleAndDescription {
 	
 	public BugReportCorpusBuilderTitleAndDescription()
 	{
-		this.bugFolder="E:\\PhD\\Data\\BugDataExtracted\\";
-		this.bugPPFolder="E:\\PhD\\Data\\BugData\\";
+		this.bugFolder="E:\\PhD\\SWT\\BugDataExtracted\\";
+		this.bugPPFolder="E:\\PhD\\SWT\\BugData\\";
 		this.noOfBugReports=noOfBugReports;
 	}
 	protected void createPreprocessedRepo()
@@ -57,7 +57,7 @@ public class BugReportCorpusBuilderTitleAndDescription {
 		
 		
 	    
-		String outFile=StaticData.BUGDIR+"/BugReportsTitleAndDescription/bugCorpus.txt";
+		//String outFile=StaticData.BUGDIR+"/BugReportsTitleAndDescription/bugCorpus.txt";
 		//ContentWriter.writeContent(outFile, list);
 	}
 	

@@ -36,8 +36,8 @@ public class SourceCodeCorpusBuilder {
 	    	//Remove initial copyright comment
 			CommentFilterer cf=new CommentFilterer(s,fileName);
 			cf.discardClassHeaderComment();
-			
-			String repoFolder="E:\\BugLocator\\Source\\swt-3.1\\";
+			String repoFolder="C:\\Users\\Mukta\\Workspace-2018\\eclipse.platform.swt\\";
+			//String repoFolder="E:\\BugLocator\\Source\\swt-3.1\\";
 			String methodFolder="E:\\PhD\\SWT\\method\\";
 			MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoFolder, methodFolder);
 			//developer.createMethodCorpus(developer.repoFolder);
