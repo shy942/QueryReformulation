@@ -38,8 +38,9 @@ public class BugReportCorpusBuilderTitleAndDescription {
 		noOfBugReports=files.length;
 		
 		for(File f:files){
-			if(!f.getName().equalsIgnoreCase(".DS_Store"))
+			if(!f.getName().equalsIgnoreCase(".DS_Store")&&f.length()<=1024)
 			{
+				
 			String fileName=f.getName();
 			String content=ContentLoader.readContentSimple(f.getAbsolutePath());
 			BugReportPreprocessor bpp=new BugReportPreprocessor(content);
@@ -49,7 +50,7 @@ public class BugReportCorpusBuilderTitleAndDescription {
 			String outFile=this.bugPPFolder+"/"+fileName;
 			ContentWriter.writeContent(outFile, preprocessed);
 			//allInOne+=allInOne+preprocessed+"\n";
-			System.out.println("Preprocessed:"+fileName);
+			//System.out.println("Preprocessed:"+fileName);
 			list.add(preprocessed);
 			}
 		}
@@ -79,7 +80,7 @@ public class BugReportCorpusBuilderTitleAndDescription {
 			String contentFromEachFile=ContentLoader.readContentSimple(f.getAbsolutePath());
 			//content+=contentFromEachFile+"\n";
 			list.add(contentFromEachFile);
-			System.out.println(f.getAbsolutePath());
+			//System.out.println(f.getAbsolutePath());
 		}
 		//String conetntStr=MiscUtility.list2Str(list);
 		ContentWriter.appendContent(outFile, list);

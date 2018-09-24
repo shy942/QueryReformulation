@@ -48,7 +48,8 @@ public class SourceFilePointerMaker {
 		for (int key = 1; key <= size; key++) {
 			tempList.add(key + ": " + tempFileIDMap.get(key));
 		}
-		String outputFile = "./data/changeset-pointer/ID-SourceFile.txt";
+		String outputFile = "E:\\PhD\\SWT\\changeset-pointer\\ID-SourceFile.txt";
+		//String outputFile = "./data/changeset-pointer/ID-SourceFile.txt";
 		ContentWriter.writeContent(outputFile, tempList);
 		System.out.println("Done!");
 	}

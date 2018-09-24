@@ -38,15 +38,15 @@ public class DataSetsPreaparation {
 		//For Windows
 		//Dont do this now
 		//new DataSetsPreaparation().creatAllbugs("E:\\PhD\\SWT\\BugData\\","E:PhD\\SWT\\allBug.txt");
-		//new DataSetsPreaparation("E:PhD\\SWT\\allBug.txt","E:PhD\\SWT\\Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\SWT\\BugData\\").DataPreparation("E:PhD\\SWT\\allBug.txt",".//data//gitInfoSWT.txt","E:PhD\\SWT\\bugIDs.txt","E:PhD\\SWT\\BugData\\");
+		//new DataSetsPreaparation("E:PhD\\SWT\\allBug.txt","E:PhD\\SWT\\Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\SWT\\BugData\\").DataPreparation("E:PhD\\SWT\\allBug.txt","E:PhD\\SWT\\gitInfoSWT.txt","E:PhD\\SWT\\bugIDs.txt","E:PhD\\SWT\\BugData\\");
 		DataSetsPreaparation obj=new DataSetsPreaparation("E:PhD\\SWT\\bugIDs.txt","E:PhD\\SWT\\Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\SWT\\BugData\\");
 		
 		
 		
 		
 		obj.bugContentHM=obj.LoadBugData();
-		ArrayList<String> foldList=obj.FoldPreparation(1);
-		obj.TrainAndTestSetPrep(foldList,1);
+		ArrayList<String> foldList=obj.FoldPreparation(368);
+		obj.TrainAndTestSetPrep(foldList,368);
 	}
       
 	private void creatAllbugs(String bugFolder, String outFile) {
@@ -92,6 +92,10 @@ public class DataSetsPreaparation {
 			String contentBug="";
 			for(int i=1;i<spilter.length;i++)contentBug+=spilter[i]+" ";
 			String outFile=bugOutFolder+"test"+step+"/"+bugID+".txt";
+			File directory = new File(bugOutFolder+"test"+step);
+			if(!directory.exists()){
+				directory.mkdir();
+			}
 			ContentWriter.writeContent(outFile, contentBug);
 			}
 		}
@@ -280,7 +284,13 @@ public class DataSetsPreaparation {
 		     end=i*k;
 		    
 		}
-		
+		int x=(N-k*no_of_fold)/k;
+		for(int f=1;f<=x+1;f++)
+		{
+			foldList.add(start+" "+end);
+			start=end+1;
+			end=start+k-1;
+		}
 		//For the last fold
 		end=N;
 		foldList.add(start+" "+end);

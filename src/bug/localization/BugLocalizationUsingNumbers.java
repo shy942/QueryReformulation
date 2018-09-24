@@ -60,7 +60,30 @@ public class BugLocalizationUsingNumbers {
     }
     
 	
-    public HashMap<Integer, ArrayList<Integer>> loadHashMap(String address)
+    public BugLocalizationUsingNumbers(String trainMapTokenSourceAddress, String testSetAddress, String bugIDKeywordMapAddress, String IdSourceAddress, String IDKeywordAddress) {
+		// TODO Auto-generated constructor stub
+    	this.trainMapTokenSourceAddress=trainMapTokenSourceAddress;
+    	//this.trainMapSTA=trainMapSTA;
+    	this.trainMapTokenSource= new HashMap<>();
+    	//this.trainMapST=new HashMap<>();
+    	this.testSetAddress=testSetAddress;
+    	this.IDKeywordAddress=IDKeywordAddress;
+    	this.testSet= new HashMap<>();
+    	this.bugIDKeywordMapAddress=bugIDKeywordMapAddress;
+    	this.bugIdKeywordMap=new HashMap<>();
+    	this.IdSourceAddress=IdSourceAddress;
+    	this.IdsourceMap=new HashMap<>();
+    	this.SourceIDMap=new HashMap<>();
+    	this.IdKeywordMap=new HashMap<>();
+    	this.KeywordIDMap=new HashMap<>();
+    	this.IdsourceMap=this.LoadIdSourceMap(this.IdSourceAddress);
+    	this.IdKeywordMap=this.LoadIdKeywordMap(this.IDKeywordAddress);
+    	this.buglocatorRESULT=new HashMap<>();
+    	
+	}
+
+
+	public HashMap<Integer, ArrayList<Integer>> loadHashMap(String address)
     {
     	HashMap<Integer, ArrayList<Integer>> temp=new HashMap<>();
         ArrayList<String> lines=ContentLoader.getAllLinesList(address);
@@ -464,10 +487,11 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		int total_test=10;
-		double alpha=0.0;
+		int total_test=368;
+		double alpha=0.00;
 		for(int i=1;i<=total_test;i++)
 		{
+			/*//For Eclipse
 			int test=i;
 			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset"+test+".txt", "./data/FinalMap/SourceTokenMapTrainset"+test+".txt","./data/testset/test"+test+".txt","./data/Bug-ID-Keyword-ID-Mapping.txt","./data/changeset-pointer/ID-SourceFile.txt","./data/ID-Keyword.txt","./data/Sid-MatchWord2.txt");
 			String bugReportFolder = "./data/testsetForBL/test"+test;
@@ -486,6 +510,27 @@ public class BugLocalizationUsingNumbers {
 	
 			//obj.bugLocator(obj, outputFilePath, sourceFolder, bugReportFolder, goldsetFile);
 			obj.bugLocatorLuceneAndMe(obj, outputFilePath, bugReportFolder);
+			//call the bug localizer*/
+			
+			//For SWT
+			int test=i;
+			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("E:\\PhD\\SWT\\data\\FinalMap\\TokenSourceMapTrainset"+test+".txt","E:\\PhD\\SWT\\data\\testset\\test"+test+".txt","E:\\PhD\\SWT\\Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\SWT\\changeset-pointer\\ID-SourceFile.txt","E:\\PhD\\SWT\\ID-Keyword.txt");
+			String bugReportFolder = "E:\\PhD\\SWT\\data\\testsetForBL\\test"+test;
+			//For Mac
+			//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
+			//ForWindows
+			String sourceFolder = "E:\\PhD\\SWT\\ProcessedSourceCorpus\\";
+				
+			String goldsetFile = "E:\\PhD\\SWT\\gitInfoSWT.txt";
+			
+			String outputFilePath
+			//="./data/Results/Aug24BLTest"+test+".txt";
+			="E:\\PhD\\SWT\\data\\Results\\swtSep24VSM"+alpha+"-"+test+".txt";
+			//="./data/Results/Aug24TFbasedTest"+test+".txt";
+		
+	
+			//obj.bugLocator(obj, outputFilePath, sourceFolder, bugReportFolder, goldsetFile);
+			obj.bugLocatorLuceneAndMe(obj, outputFilePath, bugReportFolder);
 			//call the bug localizer
 		
 		}
@@ -495,7 +540,10 @@ public class BugLocalizationUsingNumbers {
 	    {
 		 	double ALPHA=0.00;
 		 	double BETA=1-ALPHA;
-		 	String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
+		 	//For Eclipse
+		 	//String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
+		 	//ForSWT
+		 	String indexDir="E:\\PhD\\SWT\\data\\IndexSWT";
 			obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
 					.getLuceneBasedScore(BETA);
 	    	obj.trainMapTokenSource=obj.loadTrainMap(obj.trainMapTokenSourceAddress);
@@ -520,14 +568,14 @@ public class BugLocalizationUsingNumbers {
 				
 					HashMap<Integer, Double> SortedBLresult=MiscUtility.sortByValues(resultBugLocator);
 					
-					//HashMap<Integer,Double> sortedResultMyTool
+					HashMap<Integer,Double> sortedResultMyTool
 					//=obj.findBugForEachQueryCosineSimBased(queryID);
-					//=obj.ResultBasedOnTF(queryID);
+					=obj.ResultBasedOnTF(queryID);
 					
 					HashMap<Integer, Double> resultMap
 					//=sortedResultMyTool;
-					=SortedBLresult;
-					//=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
+					//=SortedBLresult;
+					=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
 					
 					String result=queryID+",";
 					int count=0;
@@ -542,7 +590,7 @@ public class BugLocalizationUsingNumbers {
 						}
 						
 					}
-					if(queryID==37026)ContentWriter.writeContent("./data/Results/WorkingExampleAnalysisForVSM.txt", workingExample);
+					//if(queryID==37026)ContentWriter.writeContent("./data/Results/WorkingExampleAnalysisForVSM.txt", workingExample);
 				}	
 				//ContentWriter.writeContent("./data/Results/finalResultTest2Aug16.txt", finalResult);
 			}

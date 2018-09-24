@@ -45,7 +45,7 @@ public class Mapper {
 				}
 			
 			hm.put(BugID, intKeyword);
-			System.out.println(BugID);
+			//System.out.println(BugID);
 		}
 		
 		//MiscUtility.showResult(100, bugKeywordMap);
@@ -106,23 +106,31 @@ public class Mapper {
 			
 			if(tokenSourceList.size()>0)
 			{
-				System.out.println(tokenSourceList.size());
+				//System.out.println(tokenSourceList.size());
 				String slist="";
 				for(int i=0;i<tokenSourceList.size();i++)slist+=tokenSourceList.get(i)+" ";
-				System.out.println(keyword+"\n"+ slist);
+				//System.out.println(keyword+"\n"+ slist);
 				
 			
 			tokenSourceMap.put(keyword, tokenSourceList);
 			}
 		}
-	
+		System.out.println();
+		int max=0;
+		int min=100;
+		int count200=0;
 		for(int token:tokenSourceMap.keySet())
 		{
+			int len=tokenSourceMap.get(token).size();
+			if(len<100)count200++;
+			if(len>max)max=len;
+			else if(len<min)min=len;
+			//System.out.println(tokenSourceMap.get(token).size()+" ");
 			ContentWriter.appendContent(tokenSourceFile, token+":\n"+tokenSourceMap.get(token));
 		}
 		//ContentWriter.writeContent(tokenSourceFile, List);
-		MiscUtility.showResult(10, tokenSourceMap);
-		System.out.println("Done!!!!!!!!");
+		//MiscUtility.showResult(10, tokenSourceMap);
+		System.out.println(min+" "+max+" length<100 "+count200);
 		return tokenSourceMap;
 	}
 	
@@ -159,9 +167,10 @@ public class Mapper {
 		// TODO Auto-generated method stub
 
 		long start=System.currentTimeMillis();
-		int tatoaltrain=10;
+		int tatoaltrain=368;
 		for(int i=1;i<=tatoaltrain;i++)
 		{
+			/*
 			int train=i;
 		Mapper obj=new Mapper("./data/trainset/Train"+train+".txt");
 		obj.bugKeywordMap=obj.LoadMap("./data/trainset/Train"+train+".txt");
@@ -171,8 +180,18 @@ public class Mapper {
 		
 		
 		obj.bugSourceMap=obj.LoadMap("./data/changeset-pointer/Bug-ID-SrcFile-ID-Mapping.txt");
-		obj.KeywordSourceMap=obj.CreateTokenSouceFileMap(obj.tokenBugMap,obj.bugSourceMap, "./data/FinalMap/TokenSourceMapTrainset"+train+".txt");
-		//obj.CreateSourceToTokenMap(obj.tokenSourceMap, "./data/FinalMap/SourceTokenMapTrainset"+train+".txt");
+		obj.KeywordSourceMap=obj.CreateTokenSouceFileMap(obj.tokenBugMap,obj.bugSourceMap, "./data/FinalMap/TokenSourceMapTrainset"+train+".txt");*/
+			int train=i;
+			Mapper obj=new Mapper("E:\\PhD\\SWT\\data\\trainset\\Train"+train+".txt");
+			obj.bugKeywordMap=obj.LoadMap("E:\\PhD\\SWT\\data\\trainset\\Train"+train+".txt");
+			obj.tokenBugMap=obj.CreateTokenBugMap(obj.bugKeywordMap);
+			//long end=System.currentTimeMillis();
+			//System.out.println("Time elapsed:"+(end-start)/1000+" s");
+			
+			
+			obj.bugSourceMap=obj.LoadMap("E:\\PhD\\SWT\\changeset-pointer\\Bug-ID-SrcFile-ID-Mapping.txt");
+			obj.KeywordSourceMap=obj.CreateTokenSouceFileMap(obj.tokenBugMap,obj.bugSourceMap, "E:\\PhD\\SWT\\data\\FinalMap\\TokenSourceMapTrainset"+train+".txt");
+			//obj.CreateSourceToTokenMap(obj.tokenSourceMap, "./data/FinalMap/SourceTokenMapTrainset"+train+".txt");
 		}
 	}
 

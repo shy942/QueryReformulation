@@ -37,7 +37,7 @@ public class GSMaker {
 				}
 			}
 		}
-		ContentWriter.writeContent(".//data//gitInfoSWT.txt", writeContent);
+		ContentWriter.writeContent("E:\\PhD\\SWT\\gitInfoSWT.txt", writeContent);
 	}
 	
 	public ArrayList<String> readFile(String gitfileAddress)

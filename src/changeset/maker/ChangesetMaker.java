@@ -56,7 +56,7 @@ public class ChangesetMaker {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String gitInfoFile = ".//data//ginInfoSWT.txt";
+		String gitInfoFile = "E:\\PhD\\SWT\\gitInfoSWT.txt";
 		new ChangesetMaker(gitInfoFile).makeChangeset();
 	}
 }
