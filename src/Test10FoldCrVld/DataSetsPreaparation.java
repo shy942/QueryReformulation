@@ -38,15 +38,15 @@ public class DataSetsPreaparation {
 		//For Windows
 		//Dont do this now
 		//new DataSetsPreaparation().creatAllbugs("E:\\PhD\\SWT\\BugData\\","E:PhD\\SWT\\allBug.txt");
-		new DataSetsPreaparation("E:PhD\\SWT\\bugIDs.txt","E:PhD\\SWT\\Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\SWT\\BugData\\").DataPreparation("E:PhD\\SWT\\allBug.txt",".//data//ginInfoSWT.txt","E:PhD\\SWT\\bugIDs.txt","E:PhD\\SWT\\BugData\\");
-		/*DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","E:PhD\\Data\\BugDataNew\\");
+		//new DataSetsPreaparation("E:PhD\\SWT\\allBug.txt","E:PhD\\SWT\\Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\SWT\\BugData\\").DataPreparation("E:PhD\\SWT\\allBug.txt",".//data//gitInfoSWT.txt","E:PhD\\SWT\\bugIDs.txt","E:PhD\\SWT\\BugData\\");
+		DataSetsPreaparation obj=new DataSetsPreaparation("E:PhD\\SWT\\bugIDs.txt","E:PhD\\SWT\\Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\SWT\\BugData\\");
 		
 		
 		
 		
 		obj.bugContentHM=obj.LoadBugData();
-		ArrayList<String> foldList=obj.FoldPreparation(10);
-		obj.TrainAndTestSetPrep(foldList,10);*/
+		ArrayList<String> foldList=obj.FoldPreparation(1);
+		obj.TrainAndTestSetPrep(foldList,1);
 	}
       
 	private void creatAllbugs(String bugFolder, String outFile) {
@@ -67,18 +67,18 @@ public class DataSetsPreaparation {
 	public HashMap<String, String> LoadBugData()
 	{
 		File[] files = new File(this.bugInFolder).listFiles();
-		
+		HashMap<String, String> hm=new HashMap<String, String>();
 		for (File file : files) {
 			String content = ContentLoader.readContentSimple(file
 					.getAbsolutePath());
 			String fileName=file.getName().substring(0,file.getName().length()-4);
 			if(this.bugIDlist.contains(fileName.trim()))
 					{
-						this.bugContentHM.put(fileName, content);
+						hm.put(fileName, content);
 					}
 		
 		}
-		return this.bugContentHM;
+		return hm;
 		//MiscUtility.showResult(10, this.bugContentHM);
 	}
 	
@@ -136,14 +136,14 @@ public class DataSetsPreaparation {
     		line=foldList.get(Fj-1);
     		spilter=line.split(" ");
     		trainP1end=Integer.valueOf(spilter[1]);
-    		CreateTrainSet(i, trainP1start,trainP1end,trainP2start,trainP2end,".\\data\\trainset\\");
+    		CreateTrainSet(i, trainP1start,trainP1end,trainP2start,trainP2end,"E:PhD\\SWT\\data\\trainset\\");
     		
     		//Create testing sets
     		String line2=foldList.get(Fj);
     		spilter=line2.split(" ");
     		teststart=Integer.valueOf(spilter[0]);
     		testend=Integer.valueOf(spilter[1]);
-    		CreateTestSet(i, teststart, testend, ".\\data\\testset\\");
+    		CreateTestSet(i, teststart, testend, "E:PhD\\SWT\\data\\testset\\");
     		
     		//Create training sets part-2
     		trainP2start=teststart;
@@ -152,10 +152,10 @@ public class DataSetsPreaparation {
     		
     	}
     	//Create last training set
-    	CreateTrainSet(no_of_fold, 0, 0, teststart+1, trainP2end, ".\\data\\trainset\\");
+    	CreateTrainSet(no_of_fold, 0, 0, teststart+1, trainP2end, "E:PhD\\SWT\\data\\trainset\\");
     	
     	//Create last testing set
-    	CreateTestSet(no_of_fold, 1,trainP2start-1 ,  ".\\data\\testset\\");
+    	CreateTestSet(no_of_fold, 1,trainP2start-1 ,  "E:PhD\\SWT\\data\\testset\\");
     	
     	
     }
@@ -171,8 +171,8 @@ public class DataSetsPreaparation {
     	
     	
     	//For Creating test set for Bug Locator
-    	CreateTestSetForBL(".\\data\\testsetForBL\\", testID, step);
-    	CreateTestSetForVSM(".\\data\\testsetForVSM\\",testID,step);
+    	CreateTestSetForBL("E:PhD\\SWT\\data\\testsetForBL\\", testID, step);
+    	CreateTestSetForVSM("E:PhD\\SWT\\data\\testsetForVSM\\",testID,step);
     	ArrayList<String> createdTestData=new ArrayList<>();
     	//System.out.println(bugKeywordLines);
     
@@ -292,7 +292,7 @@ public class DataSetsPreaparation {
 	
 	public void DataPreparation(String bugIDFile, String gitFile, String outFile, String bugFolder)
 	{
-		LoadBugData();
+		this.bugContentHM=LoadBugData();
 		ArrayList<String> bugIDlist=ContentLoader.getAllLinesList(bugIDFile);
 		
 		
@@ -317,7 +317,7 @@ public class DataSetsPreaparation {
 			}
 		}
 		
-		System.out.println(gitBugIDList.size());
+		System.out.println("Total bugs in Git: "+gitBugIDList.size());
 		
 		
 		//Create bugId files who are in both git and database
