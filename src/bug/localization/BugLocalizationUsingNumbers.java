@@ -265,17 +265,20 @@ public class BugLocalizationUsingNumbers {
     	
     	HashMap<Integer, Double> tempCombineResult=new HashMap<>();
     	int count = 0;
+    	MiscUtility.showResult(10, resultMyTool);
     	for(int key:resultMyTool.keySet())
     	{
     		if(resultBugLocator.containsKey(key))
     		{
     			count++;
     			double combineScore=resultMyTool.get(key)*BETA+resultBugLocator.get(key);
+    			System.out.println(key+" "+resultMyTool.get(key)*BETA+" "+resultBugLocator.get(key)+" "+combineScore);
     			tempCombineResult.put(key, combineScore);
     		}
     		else
     		{
     			tempCombineResult.put(key, resultMyTool.get(key)*BETA);
+    			System.out.println(key+" "+resultMyTool.get(key)*BETA);
     		}
     	}
     	for(int key:resultBugLocator.keySet())
@@ -284,7 +287,8 @@ public class BugLocalizationUsingNumbers {
     		if(!tempCombineResult.containsKey(key))tempCombineResult.put(key, resultBugLocator.get(key));
     	}
     	HashMap<Integer, Double> sortedCombineResult=MiscUtility.sortByValues(tempCombineResult);
-    
+        System.out.println("=========================================");
+        MiscUtility.showResult(10, sortedCombineResult);
     	return sortedCombineResult;
     }
     
@@ -487,8 +491,8 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		int total_test=368;
-		double alpha=0.00;
+		int total_test=98;
+		double alpha=0.40;
 		for(int i=1;i<=total_test;i++)
 		{
 			/*//For Eclipse
@@ -514,18 +518,19 @@ public class BugLocalizationUsingNumbers {
 			
 			//For SWT
 			int test=i;
-			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("E:\\PhD\\SWT\\data\\FinalMap\\TokenSourceMapTrainset"+test+".txt","E:\\PhD\\SWT\\data\\testset\\test"+test+".txt","E:\\PhD\\SWT\\Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\SWT\\changeset-pointer\\ID-SourceFile.txt","E:\\PhD\\SWT\\ID-Keyword.txt");
-			String bugReportFolder = "E:\\PhD\\SWT\\data\\testsetForBL\\test"+test;
+			String base="E:\\PhD\\Repo\\SWT\\";
+			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers(base+"\\data\\FinalMap\\TokenSourceMapTrainset"+test+".txt",base+"\\data\\testset\\test"+test+".txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\data\\changeset-pointer\\ID-SourceFile.txt",base+"\\data\\ID-Keyword.txt");
+			String bugReportFolder = base+"\\data\\testsetForBL\\test"+test;
 			//For Mac
 			//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
 			//ForWindows
-			String sourceFolder = "E:\\PhD\\SWT\\ProcessedSourceCorpus\\";
+			String sourceFolder = base+"\\ProcessedSourceCorpus\\";
 				
-			String goldsetFile = "E:\\PhD\\SWT\\gitInfoSWT.txt";
+			String goldsetFile = base+"\\data\\gitInfoSWT.txt";
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			="E:\\PhD\\SWT\\data\\Results\\swtSep24VSM"+alpha+"-"+test+".txt";
+			=base+"\\data\\Results\\swtSep25VSMandMe"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 	
@@ -538,12 +543,12 @@ public class BugLocalizationUsingNumbers {
 
 	 public void bugLocatorLuceneAndMe(BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
 	    {
-		 	double ALPHA=0.00;
+		 	double ALPHA=0.40;
 		 	double BETA=1-ALPHA;
 		 	//For Eclipse
 		 	//String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
 		 	//ForSWT
-		 	String indexDir="E:\\PhD\\SWT\\data\\IndexSWT";
+		 	String indexDir="E:\\PhD\\Repo\\SWT\\data\\IndexSWT";
 			obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
 					.getLuceneBasedScore(BETA);
 	    	obj.trainMapTokenSource=obj.loadTrainMap(obj.trainMapTokenSourceAddress);
@@ -582,19 +587,17 @@ public class BugLocalizationUsingNumbers {
 					for(int key:resultMap.keySet())
 					{
 						count++;
-						if(count>100)break; 
+						if(count>10)break; 
 						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key));
-						if(queryID==37026){
-							System.out.println(queryID+","+this.SourceIDMap.get(key)+","+ SortedBLresult.get(key));
-							workingExample.add(queryID+","+this.SourceIDMap.get(key)+","+ SortedBLresult.get(key));
-						}
+						
 						
 					}
-					//if(queryID==37026)ContentWriter.writeContent("./data/Results/WorkingExampleAnalysisForVSM.txt", workingExample);
+					
 				}	
-				//ContentWriter.writeContent("./data/Results/finalResultTest2Aug16.txt", finalResult);
+				
 			}
 			ContentWriter.writeContent(outputFilePath, finalResult);
+			//ContentWriter.appendContent("E:\\PhD\\Repo\\SWT\\data\\Results\\swtSep24ALLVSMandMe.txt", finalResult);
 	    }
 	
 }

@@ -33,8 +33,8 @@ public class PerformanceCalculatorPerfect {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		//new PerformanceCalculatorPerfect().getSingleResult("rVSM");
-		new PerformanceCalculatorPerfect().getAvgPerformance(368, 0.0, "VSM");
+		//new PerformanceCalculatorPerfect().getSingleResult("");
+		new PerformanceCalculatorPerfect().getAvgPerformance(98, 0.4, "VSMandMe");
 	}
 
 
@@ -49,7 +49,7 @@ public class PerformanceCalculatorPerfect {
 			//Fort Eclipse
 			//PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep12"+baseNamePart+alpha+"-"+test+".txt");	
 			//For SWT
-			PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("E:\\PhD\\SWT\\gitInfoSWT.txt","E:\\PhD\\SWT\\data\\Results/swtSep24"+baseNamePart+alpha+"-"+test+".txt");		
+			PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("E:\\PhD\\Repo\\SWT\\data\\gitInfoSWT.txt","E:\\PhD\\Repo\\SWT\\data\\Results/swtSep25"+baseNamePart+alpha+"-"+test+".txt");		
 			
 			//PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/buglocator/eclipseoutput.txt");	
 			obj.gitResultsMap=obj.getGitOutput(obj.gitPath);
@@ -67,7 +67,7 @@ public class PerformanceCalculatorPerfect {
 	}
 	public static void getSingleResult(String baseNamePart)
 	{
-		PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep7"+baseNamePart+"0.0-10.txt");	
+		PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("E:\\PhD\\Repo\\SWT\\data\\gitInfoSWT.txt","E:\\PhD\\Repo\\SWT\\data\\Results/swtSep24"+baseNamePart+"AllVSM.txt");	
 			
 		obj.gitResultsMap=obj.getGitOutput(obj.gitPath);
 		

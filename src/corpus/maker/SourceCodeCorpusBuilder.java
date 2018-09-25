@@ -19,7 +19,7 @@ public class SourceCodeCorpusBuilder {
 	public SourceCodeCorpusBuilder()
 	{
 		this.sourceCodeFolder=new File("E:\\BugLocator\\Source\\swt-3.1\\");
-		this.sourceCodePPFolder="E:\\PhD\\SWT\\ProcessedSourceCorpus\\";
+		this.sourceCodePPFolder="E:\\PhD\\Repo\\SWT\\ProcessedSourceCorpus\\";
 		this.javaFilePaths=new ArrayList<String>();
 		this.javaFilePathsLastName=new ArrayList<String>();
 		this.noOfFile=0;

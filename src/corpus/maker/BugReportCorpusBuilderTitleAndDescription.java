@@ -26,8 +26,8 @@ public class BugReportCorpusBuilderTitleAndDescription {
 	
 	public BugReportCorpusBuilderTitleAndDescription()
 	{
-		this.bugFolder="E:\\PhD\\SWT\\BugDataExtracted\\";
-		this.bugPPFolder="E:\\PhD\\SWT\\BugData\\";
+		this.bugFolder="E:\\PhD\\Repo\\SWT\\BugDataExtracted\\";
+		this.bugPPFolder="E:\\PhD\\Repo\\SWT\\BugData\\";
 		this.noOfBugReports=noOfBugReports;
 	}
 	protected void createPreprocessedRepo()
@@ -38,7 +38,7 @@ public class BugReportCorpusBuilderTitleAndDescription {
 		noOfBugReports=files.length;
 		
 		for(File f:files){
-			if(!f.getName().equalsIgnoreCase(".DS_Store")&&f.length()<=1024)
+			if(!f.getName().equalsIgnoreCase(".DS_Store"))
 			{
 				
 			String fileName=f.getName();

@@ -14,8 +14,8 @@ public class DataSetsPreaparation {
 	ArrayList<String> bugKeywordLines;
 	private String bugInFolder;
 	private HashMap<String, String> bugContentHM;
-	
-	public DataSetsPreaparation(String bugIDFile, String bugKeywordFile, String bugInFolder)
+	String base;
+	public DataSetsPreaparation(String bugIDFile, String bugKeywordFile, String bugInFolder, String base)
 	{
 		this.bugIDlist=bugIDlist;
 		this.bugKeywordLines=bugKeywordLines;
@@ -24,6 +24,7 @@ public class DataSetsPreaparation {
 		bugKeywordLines= ContentLoader.getAllLinesList(bugKeywordFile);
 		this.bugInFolder=bugInFolder;
 		this.bugContentHM=new HashMap<>();
+		this.base=base;
 	}
 	
 	public DataSetsPreaparation()
@@ -36,17 +37,19 @@ public class DataSetsPreaparation {
 		//For MAc
 		//DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","/Users/user/Documents/Ph.D/2018/Data/ProcessedBugData/");
 		//For Windows
+		String base="E:PhD\\Repo\\SWT";
 		//Dont do this now
-		//new DataSetsPreaparation().creatAllbugs("E:\\PhD\\SWT\\BugData\\","E:PhD\\SWT\\allBug.txt");
-		//new DataSetsPreaparation("E:PhD\\SWT\\allBug.txt","E:PhD\\SWT\\Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\SWT\\BugData\\").DataPreparation("E:PhD\\SWT\\allBug.txt","E:PhD\\SWT\\gitInfoSWT.txt","E:PhD\\SWT\\bugIDs.txt","E:PhD\\SWT\\BugData\\");
-		DataSetsPreaparation obj=new DataSetsPreaparation("E:PhD\\SWT\\bugIDs.txt","E:PhD\\SWT\\Bug-ID-Keyword-ID-Mapping.txt","E:\\PhD\\SWT\\BugData\\");
+		//new DataSetsPreaparation().creatAllbugs(base+"\\BugData\\",base+"\\data\\allBug.txt");
+		//new DataSetsPreaparation(base+"\\data\\allBug.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData\\",base).DataPreparation(base+"\\data\\allBug.txt",base+"\\data\\gitInfoSWT.txt",base+"\\data\\bugIDs.txt",base+"\\BugData\\");
+		
+		DataSetsPreaparation obj=new DataSetsPreaparation(base+"\\data\\bugIDs.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData\\", base);
 		
 		
 		
 		
 		obj.bugContentHM=obj.LoadBugData();
-		ArrayList<String> foldList=obj.FoldPreparation(368);
-		obj.TrainAndTestSetPrep(foldList,368);
+		ArrayList<String> foldList=obj.FoldPreparation(98);
+		obj.TrainAndTestSetPrep(foldList,98);
 	}
       
 	private void creatAllbugs(String bugFolder, String outFile) {
@@ -140,14 +143,14 @@ public class DataSetsPreaparation {
     		line=foldList.get(Fj-1);
     		spilter=line.split(" ");
     		trainP1end=Integer.valueOf(spilter[1]);
-    		CreateTrainSet(i, trainP1start,trainP1end,trainP2start,trainP2end,"E:PhD\\SWT\\data\\trainset\\");
+    		CreateTrainSet(i, trainP1start,trainP1end,trainP2start,trainP2end,this.base+"\\data\\trainset\\");
     		
     		//Create testing sets
     		String line2=foldList.get(Fj);
     		spilter=line2.split(" ");
     		teststart=Integer.valueOf(spilter[0]);
     		testend=Integer.valueOf(spilter[1]);
-    		CreateTestSet(i, teststart, testend, "E:PhD\\SWT\\data\\testset\\");
+    		CreateTestSet(i, teststart, testend, this.base+"\\data\\testset\\");
     		
     		//Create training sets part-2
     		trainP2start=teststart;
@@ -156,10 +159,10 @@ public class DataSetsPreaparation {
     		
     	}
     	//Create last training set
-    	CreateTrainSet(no_of_fold, 0, 0, teststart+1, trainP2end, "E:PhD\\SWT\\data\\trainset\\");
+    	CreateTrainSet(no_of_fold, 0, 0, teststart+1, trainP2end, this.base+"\\data\\trainset\\");
     	
     	//Create last testing set
-    	CreateTestSet(no_of_fold, 1,trainP2start-1 ,  "E:PhD\\SWT\\data\\testset\\");
+    	CreateTestSet(no_of_fold, 1,trainP2start-1 ,  this.base+"\\data\\testset\\");
     	
     	
     }
@@ -175,8 +178,8 @@ public class DataSetsPreaparation {
     	
     	
     	//For Creating test set for Bug Locator
-    	CreateTestSetForBL("E:PhD\\SWT\\data\\testsetForBL\\", testID, step);
-    	CreateTestSetForVSM("E:PhD\\SWT\\data\\testsetForVSM\\",testID,step);
+    	CreateTestSetForBL( this.base+"\\data\\testsetForBL\\", testID, step);
+    	CreateTestSetForVSM( this.base+"\\data\\testsetForVSM\\",testID,step);
     	ArrayList<String> createdTestData=new ArrayList<>();
     	//System.out.println(bugKeywordLines);
     

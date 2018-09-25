@@ -48,7 +48,7 @@ public class SourceFilePointerMaker {
 		for (int key = 1; key <= size; key++) {
 			tempList.add(key + ": " + tempFileIDMap.get(key));
 		}
-		String outputFile = "E:\\PhD\\SWT\\changeset-pointer\\ID-SourceFile.txt";
+		String outputFile = "E:\\PhD\\Repo\\SWT\\data\\changeset-pointer\\ID-SourceFile.txt";
 		//String outputFile = "./data/changeset-pointer/ID-SourceFile.txt";
 		ContentWriter.writeContent(outputFile, tempList);
 		System.out.println("Done!");
@@ -70,7 +70,7 @@ public class SourceFilePointerMaker {
 			}
 			bugSrcList.add(bugID + ":" + MiscUtility.listInt2Str(tempIDs));
 		}
-		String outputFile = "E:/PhD/SWT/changeset-pointer/Bug-ID-SrcFile-ID-Mapping.txt";
+		String outputFile = "E:/PhD/Repo/SWT/data/changeset-pointer/Bug-ID-SrcFile-ID-Mapping.txt";
 		ContentWriter.writeContent(outputFile, bugSrcList);
 		System.out.println("Done!");
 	}
@@ -78,7 +78,7 @@ public class SourceFilePointerMaker {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//String changeDir="/Users/user/Documents/Ph.D/2018/Data/changeset/";
-		String changeDir="E:\\PhD\\SWT\\changeset\\";
+		String changeDir="E:\\PhD\\Repo\\SWT\\data\\changeset\\";
 		new SourceFilePointerMaker(changeDir).developBugSrcFilePointer();
 	}
 }

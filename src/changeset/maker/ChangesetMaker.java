@@ -35,7 +35,7 @@ public class ChangesetMaker {
 					}
 					// now save the files
 					//String outputFile = "/Users/user/Documents/Ph.D/2018/Data/changeset/" + bugID + ".txt";
-					String outputFile = "E:\\PhD\\SWT\\changeset\\" + bugID + ".txt";
+					String outputFile = "E:\\PhD\\Repo\\SWT\\data\\changeset\\" + bugID + ".txt";
 					ContentWriter.writeContent(outputFile, cfiles);
 
 					i = i + cfCount + 1;
@@ -56,7 +56,7 @@ public class ChangesetMaker {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String gitInfoFile = "E:\\PhD\\SWT\\gitInfoSWT.txt";
+		String gitInfoFile = "E:\\PhD\\Repo\\SWT\\data\\gitInfoSWT.txt";
 		new ChangesetMaker(gitInfoFile).makeChangeset();
 	}
 }

@@ -57,7 +57,7 @@ public class BugReportKeywordPointerMaker {
 		for (int key = 1; key <= size; key++) {
 			tempList.add(key + ": " + tempFileIDMap.get(key));
 		}
-		String outputFile = "E:PhD\\SWT\\ID-Keyword.txt";
+		String outputFile = "E:PhD\\Repo\\SWT\\data\\ID-Keyword.txt";
 		ContentWriter.writeContent(outputFile, tempList);
 		System.out.println("Done!");
 	}
@@ -85,14 +85,14 @@ public class BugReportKeywordPointerMaker {
 			}
 			}
 		}
-		String outputFile = "E:PhD\\SWT\\Bug-ID-Keyword-ID-Mapping.txt";
+		String outputFile = "E:PhD\\Repo\\SWT\\data\\Bug-ID-Keyword-ID-Mapping.txt";
 		ContentWriter.writeContent(outputFile, bugSrcList);
 		System.out.println("Done!");  
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String bugReportDir = "E:PhD\\SWT\\BugData\\";  
-		new BugReportKeywordPointerMaker(bugReportDir,"E:PhD\\SWT\\allBug.txt").developBugKeywordPointer();
+		String bugReportDir = "E:PhD\\Repo\\SWT\\BugData\\";  
+		new BugReportKeywordPointerMaker(bugReportDir,"E:PhD\\Repo\\SWT\\data\\allBug.txt").developBugKeywordPointer();
 	}
 }

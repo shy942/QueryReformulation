@@ -167,7 +167,7 @@ public class Mapper {
 		// TODO Auto-generated method stub
 
 		long start=System.currentTimeMillis();
-		int tatoaltrain=368;
+		int tatoaltrain=98;
 		for(int i=1;i<=tatoaltrain;i++)
 		{
 			/*
@@ -182,15 +182,16 @@ public class Mapper {
 		obj.bugSourceMap=obj.LoadMap("./data/changeset-pointer/Bug-ID-SrcFile-ID-Mapping.txt");
 		obj.KeywordSourceMap=obj.CreateTokenSouceFileMap(obj.tokenBugMap,obj.bugSourceMap, "./data/FinalMap/TokenSourceMapTrainset"+train+".txt");*/
 			int train=i;
-			Mapper obj=new Mapper("E:\\PhD\\SWT\\data\\trainset\\Train"+train+".txt");
-			obj.bugKeywordMap=obj.LoadMap("E:\\PhD\\SWT\\data\\trainset\\Train"+train+".txt");
+			String base="E:\\PhD\\Repo\\SWT";
+			Mapper obj=new Mapper(base+"\\data\\trainset\\Train"+train+".txt");
+			obj.bugKeywordMap=obj.LoadMap(base+"\\data\\trainset\\Train"+train+".txt");
 			obj.tokenBugMap=obj.CreateTokenBugMap(obj.bugKeywordMap);
 			//long end=System.currentTimeMillis();
 			//System.out.println("Time elapsed:"+(end-start)/1000+" s");
 			
 			
-			obj.bugSourceMap=obj.LoadMap("E:\\PhD\\SWT\\changeset-pointer\\Bug-ID-SrcFile-ID-Mapping.txt");
-			obj.KeywordSourceMap=obj.CreateTokenSouceFileMap(obj.tokenBugMap,obj.bugSourceMap, "E:\\PhD\\SWT\\data\\FinalMap\\TokenSourceMapTrainset"+train+".txt");
+			obj.bugSourceMap=obj.LoadMap(base+"\\data\\changeset-pointer\\Bug-ID-SrcFile-ID-Mapping.txt");
+			obj.KeywordSourceMap=obj.CreateTokenSouceFileMap(obj.tokenBugMap,obj.bugSourceMap, base+"\\data\\FinalMap\\TokenSourceMapTrainset"+train+".txt");
 			//obj.CreateSourceToTokenMap(obj.tokenSourceMap, "./data/FinalMap/SourceTokenMapTrainset"+train+".txt");
 		}
 	}
