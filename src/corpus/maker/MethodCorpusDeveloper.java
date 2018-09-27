@@ -79,12 +79,12 @@ public class MethodCorpusDeveloper {
 		for (String key : this.methodmap.keySet()) {
 			index++;
 			String methodContent = this.methodmap.get(key);
-			//System.out.println(javaFileURL);
+			System.out.println(javaFileURL);
 			//javaFileURL.replaceAll("\\\\", "/");
 			String [] spilter=javaFileURL.split("\\\\");
 			String filePart="";
 			//=spilter[spilter.length-1];
-			for(int f=5;f<spilter.length-1;f++)filePart+=spilter[f]+".";
+			for(int f=9;f<spilter.length-1;f++)filePart+=spilter[f]+".";
 			String lastPart=spilter[spilter.length-1];
 			
 			filePart=filePart+index+"."+lastPart;
@@ -131,8 +131,8 @@ public class MethodCorpusDeveloper {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String repoName="E:\\BugLocator\\Source\\swt-3.1\\";
-		String methodFolder="E:\\PhD\\SWT\\method\\";
+		String repoName="E:\\PhD\\Repo\\Eclipse\\Source\\eclipse.platform.ui-master\\";
+		String methodFolder="E:\\PhD\\Repo\\Eclipse\\method\\";
 		MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoName,methodFolder);
 		developer.createMethodCorpus(developer.repoFolder);
 		developer.saveMethods(methodFolder);

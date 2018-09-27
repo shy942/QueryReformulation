@@ -1,5 +1,4 @@
 /LIB/
-/parameter/
 /BugLocator/
 /Gold/
 /Test10FoldCrVld/
@@ -11,6 +10,7 @@
 /corpus/
 /file/
 /graph/
+/parameter/
 /performance/
 /query/
 /source/

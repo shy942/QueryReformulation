@@ -298,8 +298,8 @@ public class BugLocalizationUsingNumbers {
     {
     	ArrayList<Integer> keywordList=this.bugIdKeywordMap.get(queryID);
     	//System.out.println(keywordList);
-    	HashMap<Integer,Double> tempResultMap=new HashMap();
-    	
+    	HashMap<Integer,Double> tempResultMap=new HashMap<>();
+    	HashMap<Integer, Double> tempSizeMap=new HashMap<>();
     	for(int keyword:keywordList)
     	{
     		if(this.trainMapTokenSource.containsKey(keyword))
@@ -313,6 +313,10 @@ public class BugLocalizationUsingNumbers {
     		    		double count=tempResultMap.get(source);
     		    		count+=1.0;
     		    		tempResultMap.put(source, count);
+    		    		
+    		    		
+    		    		
+    		    		
     		    	}
     		    	else
     		    	{
@@ -329,19 +333,22 @@ public class BugLocalizationUsingNumbers {
     	HashMap<Integer, Double> normalizedMap=normalizeTFandSorted(tempResultMap);
     	//Sort the result
     	HashMap<Integer,Double> sortedHashMap=MiscUtility.sortByValues(normalizedMap);
+    	
     	//System.out.println(queryID);
     	//System.out.println(normalizedAndSortedResult);
+    	
     	return sortedHashMap;
     	
+    	
     }
-    
+   
     public HashMap<Integer,Double> normalizeTFandSorted(HashMap<Integer,Double> tempResult)
     {
     	//ArrayList<Integer> keywordList=this.bugIdKeywordMap.get(queryID);
     	HashMap<Integer,Double> normalizedResult=new HashMap<>();
     	//Find maximum term frequency
     	double maxTF=0.0;
-    	double a=0.4;
+    	//double a=0.4;
     	for(int key:tempResult.keySet())
     	{
     		double tf=tempResult.get(key);
@@ -356,6 +363,8 @@ public class BugLocalizationUsingNumbers {
     
     		normalizedResult.put(key, normalizedTF);
     	}
+    	System.out.println("From normalizeTFandSorted ");
+    	MiscUtility.showResult(10, normalizedResult);
     	HashMap <Integer, Double> sortedHashMap=MiscUtility.sortByValues(normalizedResult);
     	
     	return sortedHashMap;
@@ -491,7 +500,7 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		int total_test=98;
+		int total_test=10;
 		double alpha=0.40;
 		for(int i=1;i<=total_test;i++)
 		{
@@ -518,7 +527,7 @@ public class BugLocalizationUsingNumbers {
 			
 			//For SWT
 			int test=i;
-			String base="E:\\PhD\\Repo\\SWT\\";
+			String base="E:\\PhD\\Repo\\Eclipse\\";
 			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers(base+"\\data\\FinalMap\\TokenSourceMapTrainset"+test+".txt",base+"\\data\\testset\\test"+test+".txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\data\\changeset-pointer\\ID-SourceFile.txt",base+"\\data\\ID-Keyword.txt");
 			String bugReportFolder = base+"\\data\\testsetForBL\\test"+test;
 			//For Mac
@@ -526,11 +535,11 @@ public class BugLocalizationUsingNumbers {
 			//ForWindows
 			String sourceFolder = base+"\\ProcessedSourceCorpus\\";
 				
-			String goldsetFile = base+"\\data\\gitInfoSWT.txt";
+			String goldsetFile = base+"\\data\\gitInfoEclipse.txt";
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			=base+"\\data\\Results\\swtSep25VSMandMe"+alpha+"-"+test+".txt";
+			=base+"\\data\\Results\\eclipseSep27VSMandMe"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 	
@@ -548,7 +557,7 @@ public class BugLocalizationUsingNumbers {
 		 	//For Eclipse
 		 	//String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
 		 	//ForSWT
-		 	String indexDir="E:\\PhD\\Repo\\SWT\\data\\IndexSWT";
+		 	String indexDir="E:\\PhD\\Repo\\Eclipse\\data\\IndexEclipse";
 			obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
 					.getLuceneBasedScore(BETA);
 	    	obj.trainMapTokenSource=obj.loadTrainMap(obj.trainMapTokenSourceAddress);

@@ -27,8 +27,8 @@ public class BugExtractorTitleAndDescription {
 	}
 	
 	public BugExtractorTitleAndDescription(String xmlFileName) {
-		this.xmlFileName = "E:\\PhD\\SWT\\XML\\" + xmlFileName;
-		this.outDir = "E:\\PhD\\SWT\\BugDataExtracted\\";
+		this.xmlFileName = "E:\\PhD\\Repo\\Eclipse\\BugXML\\" + xmlFileName;
+		this.outDir = "E:\\PhD\\Repo\\Eclipse\\BugDataExtracted\\";
 	}
 
 
@@ -166,7 +166,7 @@ public class BugExtractorTitleAndDescription {
 		//This is a simple change to the fine.*/
 		
 		
-		String XMLfolderPath="E:\\PhD\\SWT\\XML\\";
+		String XMLfolderPath="E:\\PhD\\Repo\\Eclipse\\bugXML\\";
 		File[] files = new File(XMLfolderPath).listFiles();
 		for (File file : files) {
 	        if (file.isDirectory()) {
