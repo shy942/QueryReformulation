@@ -125,7 +125,7 @@ public class Mapper {
 			if(len<100)count200++;
 			if(len>max)max=len;
 			else if(len<min)min=len;
-			//System.out.println(tokenSourceMap.get(token).size()+" ");
+			System.out.println(tokenSourceMap.get(token).size()+" ");
 			ContentWriter.appendContent(tokenSourceFile, token+":\n"+tokenSourceMap.get(token));
 		}
 		//ContentWriter.writeContent(tokenSourceFile, List);
@@ -167,7 +167,7 @@ public class Mapper {
 		// TODO Auto-generated method stub
 
 		long start=System.currentTimeMillis();
-		int tatoaltrain=10;
+		int tatoaltrain=20;
 		for(int i=1;i<=tatoaltrain;i++)
 		{
 			/*
@@ -182,7 +182,7 @@ public class Mapper {
 		obj.bugSourceMap=obj.LoadMap("./data/changeset-pointer/Bug-ID-SrcFile-ID-Mapping.txt");
 		obj.KeywordSourceMap=obj.CreateTokenSouceFileMap(obj.tokenBugMap,obj.bugSourceMap, "./data/FinalMap/TokenSourceMapTrainset"+train+".txt");*/
 			int train=i;
-			String base="E:\\PhD\\Repo\\Eclipse";
+			String base="E:\\PhD\\Repo\\Zxing";
 			Mapper obj=new Mapper(base+"\\data\\trainset\\Train"+train+".txt");
 			obj.bugKeywordMap=obj.LoadMap(base+"\\data\\trainset\\Train"+train+".txt");
 			obj.tokenBugMap=obj.CreateTokenBugMap(obj.bugKeywordMap);

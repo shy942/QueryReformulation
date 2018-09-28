@@ -15,11 +15,12 @@ public class SourceCodeCorpusBuilder {
 	ArrayList<String> javaFilePaths;
 	ArrayList<String> javaFilePathsLastName;
 	int noOfFile=0;
-	
-	public SourceCodeCorpusBuilder()
+	String base;
+	public SourceCodeCorpusBuilder(String base)
 	{
-		this.sourceCodeFolder=new File("E:\\PhD\\Repo\\Eclipse\\Source\\eclipse.platform.ui-master\\");
-		this.sourceCodePPFolder="E:\\PhD\\Repo\\Eclipse\\ProcessedSourceCorpus\\";
+		this.base=base;
+		this.sourceCodeFolder=new File(base+"\\Source\\ZXing-1.6\\");
+		this.sourceCodePPFolder=base+"\\ProcessedSourceCorpus\\";
 		this.javaFilePaths=new ArrayList<String>();
 		this.javaFilePathsLastName=new ArrayList<String>();
 		this.noOfFile=0;
@@ -36,9 +37,10 @@ public class SourceCodeCorpusBuilder {
 	    	//Remove initial copyright comment
 			CommentFilterer cf=new CommentFilterer(s,fileName);
 			cf.discardClassHeaderComment();
-			String repoFolder="E:\\PhD\\Repo\\Eclipse\\Source\\eclipse.platform.ui-master\\";
+			
+			String repoFolder=this.base+"\\Source\\ZXing-1.6\\";
 			//String repoFolder="E:\\BugLocator\\Source\\swt-3.1\\";
-			String methodFolder="E:\\PhD\\Repo\\Eclipse\\method\\";
+			String methodFolder=this.base+"\\method\\";
 			MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoFolder, methodFolder);
 			//developer.createMethodCorpus(developer.repoFolder);
 			developer.extractMethods(s);
@@ -58,7 +60,13 @@ public class SourceCodeCorpusBuilder {
 			
 			String [] spilter=s.split("\\\\");
 			String filePart="";
-			for(int f=9;f<spilter.length-1;f++)filePart+=spilter[f]+".";
+			if(spilter[9].equalsIgnoreCase("src")){
+				for(int f=10;f<spilter.length-1;f++)filePart+=spilter[f]+".";
+			}
+			else{
+				for(int f=9;f<spilter.length-1;f++)filePart+=spilter[f]+".";
+			}
+			
 			filePart=filePart+spilter[spilter.length-1];
 			
 			System.out.println(file_track+" Preprocessed:"+this.sourceCodePPFolder+filePart);
@@ -84,7 +92,8 @@ public class SourceCodeCorpusBuilder {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new SourceCodeCorpusBuilder().createPreprocessedRepo();
+		String base="E:\\PhD\\Repo\\Zxing";
+		new SourceCodeCorpusBuilder( base).createPreprocessedRepo();
 		//This is a simple change.
 	}
 

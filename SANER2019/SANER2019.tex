@@ -114,7 +114,7 @@ We also replicate two state of the art bug localization techniques in order to c
 	\centering
 	\caption{A working example of BLuAMIR}
 	\label{tab:workingexample}
-	\resizebox{6.0in}{!}{%
+	\resizebox{7.0in}{!}{%
 		\begin{tabular}{c|c|c|c||c|c|c|c|c}
 			\hline
 			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
@@ -251,17 +251,12 @@ At first we create association map using information contained in bug reports co
 %In this part, information are collected from bug report, version repository and source code repository. 
 In version repository, we have commit logs, where the developers commit for several changes in a software project. For example, when a bug report is fixed, the developer who fixed this bug also creates a commit log containing which type of change he had to made to resolve the bug associated with the location of the source code files where the change has made. So, if we analyze commit logs, we can retrieve source code files information which have been changed in order to fix a given bug. Here the idea is, we first extract keywords from bug report and source code links for the same bug from commit log and then construct an association map database containing this mapping information. The links between keywords and source code links can be described as: each or several keywords can be linked to one or more source code links and each source code link can be linked to one or several keywords. This way we connect keywords and source code links to form an association map database named keyword-source code links. 
 
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.55]{Map}
-	\caption{Proposed System Diagram: Mapping}
-	\label{fig:MP}
-\end{figure}
+
 
 
 \begin{figure*}
 	\centering
-	\includegraphics[scale=0.75]{SD1}
+	\includegraphics[scale=0.65]{SD3}
 	\caption{Proposed System Diagram: Bug Localization}
 	\label{fig:BL}
 \end{figure*}
@@ -385,13 +380,15 @@ FinalScoreApproach2=(1-\alpha )\times N(VSMScore)+ \\
 \caption{Description of Data Sets}
 \label{tab:DDSl}
 \centering
-\begin{tabular}{c|c|c}
+\resizebox{3.4in}{!}{%
+\begin{tabular}{c|c|c|c|c}
 \hline
-\textbf{Project Name}  &  \textbf{\#Source Codes} & \textbf{\#Bug Reports}\\
+\textbf{Project Name}  & \textbf{Description} & \textbf{Study Period}& \textbf{\#Fixed Bugs} & \textbf{\#Source Files}\\
 \hline
-{Eclipse Platform Ant} & {6085} & 11732\\
+{Eclipse Platform Ant} & An open development platform for Java & & {6085} & 11732\\
+\hline SWT (V 3.1)& An open source widget toolkit for Java & Oct 2004 - Apr 2010 & 98 & 484 \\
 \hline
-\end{tabular}
+\end{tabular}}
 \centering
 \end{table}
 

@@ -26,8 +26,9 @@ public class BugExtractorForBLRepo {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String XMLfolderPath="E:\\PhD\\Repo\\Eclipse\\bugXML\\EclipseBugRepository.xml";
-		new BugExtractorForBLRepo().extractBugReports(XMLfolderPath, "E:\\PhD\\Repo\\Eclipse\\BugDataExtracted", "E:\\PhD\\Repo\\Eclipse\\data\\gitInfoEclipse.txt");
+		String base="E:\\PhD\\Repo\\AspectJ";
+		String XMLfolderPath=base+"\\bugXML\\AspectJBugRepository.xml";
+		new BugExtractorForBLRepo().extractBugReports(XMLfolderPath, base+"\\BugDataExtracted", base+"\\data\\gitInfoAspectJ.txt");
 		
 	}
 	

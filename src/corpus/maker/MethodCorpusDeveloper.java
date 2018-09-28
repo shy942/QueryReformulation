@@ -84,7 +84,12 @@ public class MethodCorpusDeveloper {
 			String [] spilter=javaFileURL.split("\\\\");
 			String filePart="";
 			//=spilter[spilter.length-1];
-			for(int f=9;f<spilter.length-1;f++)filePart+=spilter[f]+".";
+			if(spilter[9].equalsIgnoreCase("src")){
+				for(int f=10;f<spilter.length-1;f++)filePart+=spilter[f]+".";
+			}
+			else{
+				for(int f=9;f<spilter.length-1;f++)filePart+=spilter[f]+".";
+			}
 			String lastPart=spilter[spilter.length-1];
 			
 			filePart=filePart+index+"."+lastPart;
@@ -131,8 +136,9 @@ public class MethodCorpusDeveloper {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String repoName="E:\\PhD\\Repo\\Eclipse\\Source\\eclipse.platform.ui-master\\";
-		String methodFolder="E:\\PhD\\Repo\\Eclipse\\method\\";
+		String base="E:\\PhD\\Repo\\AspectJ";
+		String repoName=base+"\\Source\\org.aspectj-REMOVING_ASM\\";
+		String methodFolder=base+"\\method\\";
 		MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoName,methodFolder);
 		developer.createMethodCorpus(developer.repoFolder);
 		developer.saveMethods(methodFolder);

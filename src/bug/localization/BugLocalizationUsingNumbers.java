@@ -500,7 +500,7 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		int total_test=10;
+		int total_test=20;
 		double alpha=0.40;
 		for(int i=1;i<=total_test;i++)
 		{
@@ -527,7 +527,7 @@ public class BugLocalizationUsingNumbers {
 			
 			//For SWT
 			int test=i;
-			String base="E:\\PhD\\Repo\\Eclipse\\";
+			String base="E:\\PhD\\Repo\\Zxing\\";
 			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers(base+"\\data\\FinalMap\\TokenSourceMapTrainset"+test+".txt",base+"\\data\\testset\\test"+test+".txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\data\\changeset-pointer\\ID-SourceFile.txt",base+"\\data\\ID-Keyword.txt");
 			String bugReportFolder = base+"\\data\\testsetForBL\\test"+test;
 			//For Mac
@@ -557,7 +557,7 @@ public class BugLocalizationUsingNumbers {
 		 	//For Eclipse
 		 	//String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
 		 	//ForSWT
-		 	String indexDir="E:\\PhD\\Repo\\Eclipse\\data\\IndexEclipse";
+		 	String indexDir="E:\\PhD\\Repo\\Zxing\\data\\IndexZxing";
 			obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
 					.getLuceneBasedScore(BETA);
 	    	obj.trainMapTokenSource=obj.loadTrainMap(obj.trainMapTokenSourceAddress);
