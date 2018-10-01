@@ -272,13 +272,13 @@ public class BugLocalizationUsingNumbers {
     		{
     			count++;
     			double combineScore=resultMyTool.get(key)*BETA+resultBugLocator.get(key);
-    			System.out.println(key+" "+resultMyTool.get(key)*BETA+" "+resultBugLocator.get(key)+" "+combineScore);
+    			//System.out.println(key+" "+resultMyTool.get(key)*BETA+" "+resultBugLocator.get(key)+" "+combineScore);
     			tempCombineResult.put(key, combineScore);
     		}
     		else
     		{
     			tempCombineResult.put(key, resultMyTool.get(key)*BETA);
-    			System.out.println(key+" "+resultMyTool.get(key)*BETA);
+    			//System.out.println(key+" "+resultMyTool.get(key)*BETA);
     		}
     	}
     	for(int key:resultBugLocator.keySet())
@@ -363,8 +363,8 @@ public class BugLocalizationUsingNumbers {
     
     		normalizedResult.put(key, normalizedTF);
     	}
-    	System.out.println("From normalizeTFandSorted ");
-    	MiscUtility.showResult(10, normalizedResult);
+    	//System.out.println("From normalizeTFandSorted ");
+    	//MiscUtility.showResult(10, normalizedResult);
     	HashMap <Integer, Double> sortedHashMap=MiscUtility.sortByValues(normalizedResult);
     	
     	return sortedHashMap;
@@ -535,11 +535,11 @@ public class BugLocalizationUsingNumbers {
 			//ForWindows
 			String sourceFolder = base+"\\ProcessedSourceCorpus\\";
 				
-			String goldsetFile = base+"\\data\\gitInfoEclipse.txt";
+			String goldsetFile = base+"\\data\\gitInfoZxing.txt";
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			=base+"\\data\\Results\\eclipseSep27VSMandMe"+alpha+"-"+test+".txt";
+			=base+"\\data\\Results\\ZxingOct1VSMAndme"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 	
@@ -552,7 +552,7 @@ public class BugLocalizationUsingNumbers {
 
 	 public void bugLocatorLuceneAndMe(BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
 	    {
-		 	double ALPHA=0.40;
+		 	double ALPHA=0.4;
 		 	double BETA=1-ALPHA;
 		 	//For Eclipse
 		 	//String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
@@ -575,7 +575,7 @@ public class BugLocalizationUsingNumbers {
 				//System.out.println(queryID);
 					HashMap<Integer,Double> resultBugLocator=new HashMap<>();
 					if(obj.buglocatorRESULT.containsKey(queryID)){
-						System.out.println(++i);
+						//System.out.println(++i);
 						//if(i>100) break;
 						resultBugLocator=obj.convertSIDtoNum(queryID,obj.buglocatorRESULT);
 					

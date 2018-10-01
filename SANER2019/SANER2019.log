@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  28 SEP 2018 12:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  1 OCT 2018 14:18
 entering extended mode
 **./SANER2019.tex
 (SANER2019.tex
@@ -590,12 +590,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 107.
 ("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 1484) in paragraph at lines 170--171
-[]\OT1/ptm/m/n/10 We have repli-cated two ex-ist-ing bug lo-cal-iza-tion ap-
- []
-
-[2]
+) [2]
 <3layers.png, id=14, 401.24907pt x 263.48438pt>
 File: 3layers.png Graphic file (type png)
 <use 3layers.png>
@@ -611,22 +606,74 @@ it/10 \OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 N\OT1/cmr/m/n/10 (
  []
 
 [3 <./3layers.png>]
-
-LaTeX Warning: Reference `fig:MP' on page 4 undefined on input line 247.
-
 <SD3.png, id=30, 778.107pt x 148.1535pt>
 File: SD3.png Graphic file (type png)
 <use SD3.png>
 Package pdftex.def Info: SD3.png  used on input line 259.
 (pdftex.def)             Requested size: 505.76355pt x 96.29863pt.
-[4] [5 <./SD3.png>]
-Overfull \hbox (0.94504pt too wide) in paragraph at lines 474--521
+ [4]
+Underfull \hbox (badness 10000) in paragraph at lines 386--386
+[]\OT1/ptm/b/n/8 Project
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--386
+[]\OT1/ptm/b/n/8 Study
+ []
+
+
+Overfull \hbox (1.77226pt too wide) in paragraph at lines 386--386
+[]\OT1/ptm/b/n/8 #Fixed
+ []
+
+
+Overfull \hbox (6.06827pt too wide) in paragraph at lines 386--387
+[]\OT1/ptm/b/n/8 #Source
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]\OT1/ptm/m/n/8 Eclipse
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+\OT1/ptm/m/n/8 Plat-form
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 389--389
+[]\OT1/ptm/m/n/8 Oct 2004 -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--390
+[]\OT1/ptm/m/n/8 A bar-code im-age
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--392
+[]\OT1/ptm/m/n/8 Aspect-oriented
+ []
+
+
+Underfull \hbox (badness 5403) in paragraph at lines 392--392
+[]\OT1/ptm/m/n/8 Jul 2002 -
+ []
+
+[5 <./SD3.png>]
+Overfull \hbox (0.94504pt too wide) in paragraph at lines 481--528
  [][] 
  []
 
 [6]
-Underfull \hbox (badness 4981) in paragraph at lines 562--605
+Underfull \hbox (badness 4981) in paragraph at lines 569--612
 []\OT1/ptm/b/n/10 Weighting Func-tion for rVSM+Simi+Co-ocuurence
+ []
+
+
+Overfull \hbox (0.95204pt too wide) in paragraph at lines 658--679
+ [][] 
  []
 
 (SANER2019.bbl
@@ -647,40 +694,36 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7] (SANER2019.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[7] (SANER2019.aux) ) 
 Here is how much of TeX's memory you used:
  5360 strings out of 492973
- 78893 string characters out of 3126692
- 171539 words of memory out of 3000000
+ 78904 string characters out of 3126692
+ 192549 words of memory out of 3000000
  9126 multiletter control sequences out of 15000+200000
  46104 words of font info for 92 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,15n,35p,1040b,296s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
-}<C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmex10.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cmextra/cmex7.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Mukta/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Mukta/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/M
-ukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
-><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr5.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr7.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Mukta/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Muk
-ta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users
-/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/
-Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-<C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a
-.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/zapfding
-/uzdr.pfb>
-Output written on SANER2019.pdf (7 pages, 311750 bytes).
+ 41i,16n,35p,1040b,298s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/en
+c/dvips/base/8r.enc}<C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/Mukta/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Mukta/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/
+Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr5.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Mukta/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Mukta/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Mu
+kta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam1
+0.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/u
+tmb8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/tim
+es/utmbi8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ur
+w/times/utmr8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/urw/times/utmri8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/urw/zapfding/uzdr.pfb>
+Output written on SANER2019.pdf (7 pages, 312138 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
