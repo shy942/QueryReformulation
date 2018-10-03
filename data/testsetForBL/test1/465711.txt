@@ -1,2 +1,0 @@
-rendering tabs hovering using dark theme makes tab unreadable tab rendering created attachment picture showing issue attaching screenshot issue org workbench renderers swt tab rendering draw unselected tab int rectangle int hardcoded set background device color patch
- 

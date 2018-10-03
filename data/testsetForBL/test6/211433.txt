@@ -1,2 +1,0 @@
-key bindings changing key binding broken ends context key binding content assist open dialog offers field assist replace dialog regex mode press chosen key binding work hovering light bulb shows correct key binding
- 

@@ -1,2 +1,0 @@
-open workspace dialog opens splash screen start dialog prompts workspace use opens splash screen rarely spot
- 

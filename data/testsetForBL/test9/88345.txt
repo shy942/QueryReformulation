@@ -1,2 +1,0 @@
-view mgmt close non closable view docked fastviewbar workspace non closable view movable drag view dock fast view right icon fastview close
- 

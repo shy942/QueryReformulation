@@ -1,2 +1,0 @@
-dark theme used memory color heap monitor incorrect created attachment background color heap monitor dark theme build locale english steps reproduce window preferences general appearance theme dark apply button general heap status option apply button description background color black white
- 

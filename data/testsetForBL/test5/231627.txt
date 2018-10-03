@@ -1,2 +1,0 @@
-commands server view tool bar icons shows welcome page build steps reproduce server view tool bar icons shows welcome pages welcome page contains servers view information
- 

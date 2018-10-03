@@ -1,2 +1,0 @@
-basic splash handler documentation needs clarification javadoc contents needs clarification default implementation assumes progress monitor returned bundle progress monitor casted composite
- 

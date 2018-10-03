@@ -1,2 +1,0 @@
-face styled string implement char sequence allow accept char sequence internally passed value styled string
- 

@@ -1,2 +1,0 @@
-workspace version warn workspace users multiple installations machines open workspaces later use worspace older lead kinds problems including data loss current workspace version application sufficiently address issue compares workspace static version changed introduced patch refines logic comparing major minor version bundle org core runtime chosen compatibility reasons furthermore shows warning workspace info workspace attached screenshots
- 

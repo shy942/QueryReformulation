@@ -1,2 +1,0 @@
-undo action properly updated failed operation multiple contexts hole doing manual undo redo scenarios scenario correct handling operation failure inside linear undo violation user approver operation fails linear undo violation possible triggering undo context gets flushed failing operation operations context history action handlers properly update operations removed operations undo context contexts actually removed history action handler won notifications means action handler gets original notification failure needs update action flush relying subsequent notifications
- 

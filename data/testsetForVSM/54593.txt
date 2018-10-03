@@ -1,2 +1,0 @@
-key bindings restore defaults keyboard shortcuts dialog restore keyboard shortcut defaults spefic dialog use dialog font reached restore defaults button workbench keys
- 

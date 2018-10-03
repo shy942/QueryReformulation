@@ -1,2 +1,0 @@
-key bindings import key bindings work workspace export key bindings file export preferences workspace import key bindings file export preferences result key bindings imported different binaries launched different paths version idem workspace different paths
- 

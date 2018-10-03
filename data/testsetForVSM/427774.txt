@@ -1,2 +1,0 @@
-open existing project action folder project navigator folders contains project file related project isn workspace open existing project context menu entry import folder existing project workspace
- 

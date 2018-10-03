@@ -1,2 +1,0 @@
-perspecitves workbench perspective gets null pointer exception active page perspective build steps reproduce creating app workbench perspective gets null pointer exception active page perspective page contains perspective workbench perspective gets null pointer exception workbench perspective information resolve issue null checks workbench perspective
- 

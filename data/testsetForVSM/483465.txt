@@ -1,2 +1,0 @@
-image descriptor image data use resources image data simplified resources statement
- 

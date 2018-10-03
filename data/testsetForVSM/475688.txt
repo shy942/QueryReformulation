@@ -1,2 +1,0 @@
-update jface java use lambdas mark interfaces functional
- 

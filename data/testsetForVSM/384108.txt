@@ -1,2 +1,0 @@
-unit view icon shows progress executing tests build identifier version juno release build upgraded juno morning used happily tests unit view minimized enjoy seeing progress tests don icon passes green appears fails red appears animation little green red squares showing progress suite gone frustrating means waste screen real estate having junit view open optimal coding small screen reproducible steps reproduce open juno unit progress
- 

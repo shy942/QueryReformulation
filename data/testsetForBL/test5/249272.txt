@@ -1,2 +1,0 @@
-status handling clipboard used created attachment fix
- 

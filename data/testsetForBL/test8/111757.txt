@@ -1,2 +1,0 @@
-fix compile errors compiler errors added errors projects pretty easy fix severity description resource path location creation time auto start header deprecated use lazy start org core commands october auto start header deprecated use lazy start org jface october auto start header deprecated use lazy start org october auto start header deprecated use lazy start org ide october auto start header deprecated use lazy start org views october auto start header deprecated use lazy start org workbench october
- 

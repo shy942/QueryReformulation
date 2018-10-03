@@ -1,2 +1,0 @@
-increase recent workspaces remembered launcher currently suggest increase use saneclipse feedback setting https github com vogellacompany com vogella saneclipse blob master com vogella saneclipse preferences src com vogella saneclipse preferences internal preference initializer addon java
- 

@@ -1,2 +1,0 @@
-commands misc dependency swing stream org workbench plug org internal commands widget method handler import java awt component import javax swing focus manager import javax swing swing utilities fix introduced explicit dependency swing platform code base careful avoid compile time link time dependencies swing way customers platform reduced class libraries set javax libraries compile time link time dependencies removed necessary replaced equivalent reflective code compile time link time dependencies
- 

@@ -1,2 +1,0 @@
-tabbed properties getters setters current tab use cases remember current active tab section later lifecycle select currently functionality
- 

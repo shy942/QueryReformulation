@@ -1,2 +1,0 @@
-commands registry start code went binding persistence leads start
- 

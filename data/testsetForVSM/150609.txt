@@ -1,2 +1,0 @@
-properties dialog file properties custom filesystem shown implementing custom filesystem came following properties modified location size receive value resource exist use resource location resource property source file property source returns null case resources stored default local filesystem resource location used instead fact happens resource info utils contains static versions property retrieval methods implemented resource property source file property source
- 

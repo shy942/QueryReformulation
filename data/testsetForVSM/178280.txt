@@ -1,2 +1,0 @@
-face abstract column layout updating column sizes working correct gtk resize event column resize control desired behaviour
- 

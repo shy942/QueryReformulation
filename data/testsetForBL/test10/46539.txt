@@ -1,2 +1,0 @@
-dialogs save resources dialog shows duplicated entries save resources dialog opened things launch configuration synchronize shoutdown shows duplicated entries instance dirty editors files foo txt bar txt triggers dialog foo txt bar txt foo txt bar txt pair duplicated entries checked saved default
- 

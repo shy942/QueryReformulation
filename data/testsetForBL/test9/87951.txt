@@ -1,2 +1,0 @@
-view mgmt view registry exposes internal category class view registry public category categories category internal provide view category similar wizard category provide shared category interface used multiple extension registries
- 

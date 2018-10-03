@@ -1,2 +1,0 @@
-view mgmt view dialog remember selection build window view java package explorer window view selected item package explorer remembering stale state work package explorer view
- 

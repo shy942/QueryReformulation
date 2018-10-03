@@ -1,2 +1,0 @@
-deprecate workbench window advisor methods custom window creation following methods effect deprecated workbench window advisor window contents shell shell window contents composite parent workbench window configurer public menu menu bar public control cool bar control composite parent public control status control composite parent public control page composite composite parent public status save state memento memento
- 

@@ -1,2 +1,0 @@
-commands update command action update command action use parameterized command generate command method instead doing work itself initialize images available command image service command contribution item week committed parameterized command changes
- 

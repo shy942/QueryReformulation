@@ -1,2 +1,0 @@
-workbench window flickers frequent view redraws recent builds unjustified flickering workbench window haven related code busy state view title save java editor counters unit view javadoc view cleared redrawn
- 

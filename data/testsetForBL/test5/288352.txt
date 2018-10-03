@@ -1,2 +1,0 @@
-contributions workbench menu service calling display sync exec disposed display attachment initially created clone copied platform rcp newsgroup stumbled unit tests tests temporary extensions extension registry service extensions removed tests extension registry fires registry changed event triggers registry listener workbench menu service display sync exec unfortunately display disposed point time likely race condition thread thread performing registry notifications solution suggest workbench menu service display disposed calling display sync exec marcel
- 

@@ -1,2 +1,0 @@
-status handling status dialog needs enhancements status dialog lacks functionality selection propagated error support provider possibility adding actions execute closing dialog launch troubleshoot wizard simple workspace synchronization status dialog ugly nice details displayed sections compiler errors warnings preference page
- 

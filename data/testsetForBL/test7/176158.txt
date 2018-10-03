@@ -1,2 +1,0 @@
-tool tip flickers using tool tip support org jface window tool tip tool tip flickers mouse moved element mouse tool tip hidden shown makes tool tip unusable mouse hovering item visibility position tooltip stable attach little plugin showing issue thanks
- 

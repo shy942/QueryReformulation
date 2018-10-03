@@ -1,2 +1,0 @@
-markers duplicate quick fix applying workbench marker resolution implementing quick fix workbench marker resolution using problems view causes quick fix appear twice tracked quick fix handler contains understanding contains return true extend contains elements members members returns true
- 

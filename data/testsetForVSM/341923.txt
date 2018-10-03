@@ -1,2 +1,0 @@
-improve checked tree selection dialog possibility choose style tree viewer currently use dialog checked tree selection dialog specify style tree viewer tree viewer style case style beginning wanted override method tree viewer possible field accessible private propose constructor parameter int style style used instantiate tree viewer
- 

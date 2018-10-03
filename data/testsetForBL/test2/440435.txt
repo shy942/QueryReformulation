@@ -1,2 +1,0 @@
-localization tool items fails locale changed runtime toolitems label
- 

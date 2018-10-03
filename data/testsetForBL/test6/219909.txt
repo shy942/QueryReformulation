@@ -1,2 +1,0 @@
-data binding unmodifiable observable value unmodifiable observable value cases
- 

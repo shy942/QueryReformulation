@@ -1,2 +1,0 @@
-styling engine parse color constants provides access specific theme colors currently used provide way used directly stylesheets
- 

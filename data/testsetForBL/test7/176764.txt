@@ -1,2 +1,0 @@
-undo resources operation handle overlapped selections project folder folder select undo fails info restore message resource description checks parent valid time restored validity needs smarter deletes collapsed
- 

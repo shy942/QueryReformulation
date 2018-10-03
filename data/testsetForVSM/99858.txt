@@ -1,2 +1,0 @@
-error deleting project overlooked investigation using project close content exception saying resource open works great
- 

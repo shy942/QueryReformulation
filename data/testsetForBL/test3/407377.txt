@@ -1,2 +1,0 @@
-trying close minimized view context menu trying close minimized view context menu happens view states open minimized created minimized created java lang class cast exception org model application basic impl stack impl incompatible org model application basic org workbench addons minmax trim stack handle event trim stack java org swt widgets event table send event event table java org swt widgets widget send event widget java org swt widgets display deferred events display java org swt widgets display read dispatch display java
- 

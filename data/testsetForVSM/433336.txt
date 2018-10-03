@@ -1,2 +1,0 @@
-use boolean primitives model assembler processors method
- 

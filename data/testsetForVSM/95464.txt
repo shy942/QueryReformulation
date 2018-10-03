@@ -1,2 +1,0 @@
-workbench commands command window action window window action missing corresponding command
- 

@@ -1,2 +1,0 @@
-status handling error dialog flickers opening strange temporary button visible repeat steps error dialog appears flickers short time text gets shifted bad closer custom operation action button appearing going away quickly
- 

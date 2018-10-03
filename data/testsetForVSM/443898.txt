@@ -1,2 +1,0 @@
-performance issue warning early startup plug runs showed certain plug ins unintentionally slow startup process suggest option report delay monitoring plug
- 

@@ -1,2 +1,0 @@
-closed react middle mouse clicks closeable defined perspective middle mouse close
- 

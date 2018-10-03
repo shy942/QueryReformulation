@@ -1,2 +1,0 @@
-key bindings key bindings outline properties views refer command org views plug included app generates following log entries org warnings parsing key bindings org commands extension point org bind undefined command plug org views command org views view org bind undefined command plug org views command org views view views plug provides outline properties views intended ready org ide dependency views plug suggest simply moving keybindings ide plug
- 

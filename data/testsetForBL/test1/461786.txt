@@ -1,2 +1,0 @@
-factory org jdt class file editor input factory returned null occurred closing editors projects following error message error occurred closing editors error log details factory org jdt class file editor input factory returned null element editor org jdt class file editor null open workspace import projects platform runtime select select context menu
- 

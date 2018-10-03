@@ -1,2 +1,0 @@
-workbench establish workspace prompted support provide workspace chooser best users switch workspaces frequently developers live single workspace workspaces infrequently turning dialog checkbox having open previously used workspace simpler open workspace switch workspace operation let user workspaces fact setting preference turn dialog
- 

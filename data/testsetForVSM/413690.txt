@@ -1,2 +1,0 @@
-fix compiler warnings package org jface wizard caused moving java fix compiler warnings package org jface wizard caused moving java
- 

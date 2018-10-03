@@ -1,2 +1,0 @@
-tabbed properties properties view doesn scroll normally select properties tab resize entire window pixels wide horizontal scroll bar appears properties view right thumb display properties view space thumb scroll right button view scroll page right circumstances scroll entire view right edge view display instead scroll fixed interval pixels appears treating scroll page clicking scroll right button eqaully appears scroll pixels note views tried correctly scrolling page case
- 

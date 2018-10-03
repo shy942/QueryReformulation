@@ -1,2 +1,0 @@
-data binding snippet combo example use case let say combo boxes male female list names selection list gets filtered based selection select male display male names guess doesn combo set radio buttons
- 

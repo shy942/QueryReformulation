@@ -1,2 +1,0 @@
-failure binding table tests keys command looks asking key mac
- 

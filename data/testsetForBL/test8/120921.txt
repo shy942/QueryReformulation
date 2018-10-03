@@ -1,2 +1,0 @@
-popup dialog keybindings lost using popup dialog verifying windows open quick outline ctrl choose resize view menu resize editor key binding ctrl working tom clarify ctrl key bindings
- 

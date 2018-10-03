@@ -1,2 +1,0 @@
-properties dialog properties dialog support showing properties multiple selection currently property dialog action disables properties action selection count useful extenders property pages extension point option having pages accessible multiple selection prevents example allowing user edit build configuration multiple resources simultaneously support added additional attribute schema page allow multi select pages set true visible enabled
- 

@@ -1,2 +1,0 @@
-fix consider logger optional created attachment proposed fix fix consider optional injection given private logger logger
- 

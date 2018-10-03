@@ -1,2 +1,0 @@
-contributing wizards toolbar displays icon text build identifier plugin xml extension point org menus menu contribution location toolbar org workbench file command command org wizard style push parameter wizard value com fabasoft apptest wizards newproject command menu contribution extension button displayed icon text works reproducible steps reproduce details
- 

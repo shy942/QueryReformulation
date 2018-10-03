@@ -1,2 +1,0 @@
-fix extension points org css swt property handler extension point actually pretty useful non engines moved org css core
- 

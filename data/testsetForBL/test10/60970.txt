@@ -1,2 +1,0 @@
-editor mgmt set active called editor focus steps import org workbench print statement workbench page activation list set active workbench time workbench switch java perspective import project open java file select hierarchy view package explorer focus notice switching package explorer view calls set active open file calling set active view behavior affecting ctrl behavior altering ordering items list using platform version build tried worked unnecessary set active calls
- 

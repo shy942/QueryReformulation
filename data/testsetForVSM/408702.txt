@@ -1,2 +1,0 @@
-missing hpux launcher section feature xml rcp contains org swt gtk hpux doesn launcher reference needs fixed
- 

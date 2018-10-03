@@ -1,2 +1,0 @@
-javadoc warning builds src plugins org platform doc isv org workbench org fieldassist content assist field java warning tag link class package control decoration
- 

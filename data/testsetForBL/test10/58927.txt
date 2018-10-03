@@ -1,2 +1,0 @@
-commands javadoc issues commands extension point file icon command undocumented
- 

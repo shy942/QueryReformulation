@@ -1,2 +1,0 @@
-multi editor signal inner editors closing events multi editor closing closed event inner editors signalled pages removed outline view reproduce open multi editor select inner editors outline view close multi editor outline page inner editor visible workaround close outline pages inner editors workbench page page inner editors editor site page content outline view content outline page view org views content outline view closed inner editors
- 

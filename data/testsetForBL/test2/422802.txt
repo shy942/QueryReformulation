@@ -1,2 +1,0 @@
-remove unnecessary statements org workbench swt looks org workbench swt contains unnecessary casts missing overrides unnecesssary entries suggest clean plug activate save actions
- 

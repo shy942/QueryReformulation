@@ -1,2 +1,0 @@
-commands handlers ctrl effect build ctrl open editor plain text java effect moment choosing switch editor window navigation menu works
- 

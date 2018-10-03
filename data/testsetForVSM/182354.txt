@@ -1,2 +1,0 @@
-dialogs element tree selection dialog usable filtered tree build steps reproduce use element tree selection dialog filtered tree doesn feasible currently element tree selection dialog doesn provide hook tree viewer creation overriding tree viewer doesn work filtered tree tree viewer registered element tree selection dialog viewer variable nice tree viewer creation decoupled initialization stuff viewer assignment creation method caller apparently idea filtered element tree selection dialog spring http www koders com java fid aspx
- 

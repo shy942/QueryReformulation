@@ -1,2 +1,0 @@
-common navigator project explorer view build open project explorer view hit available view
- 

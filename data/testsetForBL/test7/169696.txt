@@ -1,2 +1,0 @@
-preferences encoding field editor set enabled false effect calling encoding field editor set enabled false parent effect control enabled
- 

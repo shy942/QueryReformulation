@@ -1,2 +1,0 @@
-data binding attempting stale event abstract observable throws class cast exception code abstract observable firing stale events appears incomplete listeners added added type stale listener retrieved cast listener assuming code copied listener code completed attaching patch
- 

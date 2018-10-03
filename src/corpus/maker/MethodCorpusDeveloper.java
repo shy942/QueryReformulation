@@ -8,6 +8,8 @@ import utility.ContentWriter;
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ParseException;
 import com.github.javaparser.ast.CompilationUnit;
+import com.github.javaparser.ast.PackageDeclaration;
+
 import config.StaticData;
 
 public class MethodCorpusDeveloper {
@@ -17,13 +19,16 @@ public class MethodCorpusDeveloper {
 	String methodFolder;
 	HashMap<String, String> methodmap;
 	ArrayList<String> fileList=new ArrayList<>();
-
-	public MethodCorpusDeveloper(String repoFolder, String methodFolder) {
+	String base;
+	String packageName;
+	public MethodCorpusDeveloper(String repoFolder, String methodFolder, String base) {
 		//this.repoName = repoName;
 		this.repoFolder = repoFolder;
 		this.methodFolder=methodFolder;
 		//this.methodFolder = "/Users/user/Documents/workspace-2016/QueryReformulation/data/BugCorpus/method/";
 		this.methodmap = new HashMap<>();
+		this.base=base;
+		this.packageName="";
 	}
 
 	//public MethodCorpusDeveloper(String methodFolder){
@@ -35,6 +40,17 @@ public class MethodCorpusDeveloper {
 		try {
 			CompilationUnit cu = JavaParser.parse(new File(javaFileURL));
 			if (cu != null) {
+				PackageDeclaration packageDec=cu.getPackage();
+				if(packageDec!=null){
+				//System.out.println(packageDec.toString());
+				String packageName=packageDec.toString();
+				String[] spilter=packageName.split(" ");
+				String fileName=spilter[1];
+				//System.out.print(fileName);
+				spilter=fileName.split(";");
+				fileName=spilter[0];
+				//System.out.print(fileName);
+				this.packageName=fileName;
 				MethodVisitor visitor = new MethodVisitor();
 				cu.accept(visitor, null);
 				ArrayList<String> methods = visitor.methods;
@@ -47,6 +63,7 @@ public class MethodCorpusDeveloper {
 					this.methodmap.put(key, method);
 				}
 			}
+			}
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -54,11 +71,12 @@ public class MethodCorpusDeveloper {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 	}
 
 	protected void saveCorpusKeys() {
 		// save the corpus keys
-		String keysFile = ".\\data\\"
+		String keysFile = this.base+".\\data\\"
 				+ ".keys";
 		ArrayList<String> keylist = new ArrayList<>();
 		int index = 0;
@@ -79,23 +97,18 @@ public class MethodCorpusDeveloper {
 		for (String key : this.methodmap.keySet()) {
 			index++;
 			String methodContent = this.methodmap.get(key);
-			System.out.println(javaFileURL);
+			//System.out.println(javaFileURL);
 			//javaFileURL.replaceAll("\\\\", "/");
 			String [] spilter=javaFileURL.split("\\\\");
 			String filePart="";
-			//=spilter[spilter.length-1];
-			if(spilter[9].equalsIgnoreCase("src")){
-				for(int f=10;f<spilter.length-1;f++)filePart+=spilter[f]+".";
-			}
-			else{
-				for(int f=9;f<spilter.length-1;f++)filePart+=spilter[f]+".";
-			}
+		
+			
 			String lastPart=spilter[spilter.length-1];
 			
-			filePart=filePart+index+"."+lastPart;
+			filePart=this.packageName+"."+index+"."+lastPart;
 		
 			String outFile = this.methodFolder + "\\"+filePart;
-			//System.out.println("outfile:        "+outFile);
+			System.out.println("filePart:        "+filePart);
 			
 			ContentWriter.writeContent(outFile, methodContent);
 			fileList.add(outFile);
@@ -107,6 +120,10 @@ public class MethodCorpusDeveloper {
 	public ArrayList<String> returnFiles()
 	{
 		return fileList;
+	}
+	public String getPackageName()
+	{
+		return this.packageName;
 	}
 	
 	protected void createMethodCorpus(String srcDir) {
@@ -136,10 +153,10 @@ public class MethodCorpusDeveloper {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String base="E:\\PhD\\Repo\\AspectJ";
-		String repoName=base+"\\Source\\org.aspectj-REMOVING_ASM\\";
-		String methodFolder=base+"\\method\\";
-		MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoName,methodFolder);
+		String base="E:\\PhD\\Repo\\Eclipse";
+		String repoName=base+"\\Source\\EclipseV3.1\\";
+		String methodFolder=base+"\\method3\\";
+		MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoName,methodFolder,base);
 		developer.createMethodCorpus(developer.repoFolder);
 		developer.saveMethods(methodFolder);
 	}

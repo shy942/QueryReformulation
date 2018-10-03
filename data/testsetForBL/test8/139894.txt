@@ -1,2 +1,0 @@
-dialogs hovering icon wizard status message produces strange flickering effect steps reproduce open wizard class wizard provide input error message appears title area hover status icon huge tooltip status tooltip quickly appearing immediately disappearing reproduce win
- 

@@ -1,2 +1,0 @@
-extend model service provide factory capabilities model elements away exposing factory pattern obvious replacement extend model service implementing discreet methods concrete class implement generic factory capable taking class possible returning instance class stack stack model service element stack class advantage allowing element types deprecate having modify itself
- 

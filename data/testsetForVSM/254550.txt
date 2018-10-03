@@ -1,2 +1,0 @@
-save dialog running build steps reproduce launch attached application ctrl wizard select untitled text file press finish text untitled text editor ctrl save saved failed java lang null pointer exception information save dialog uses internal image descriptor key available application started image public suggestion
- 

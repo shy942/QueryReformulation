@@ -1,2 +1,0 @@
-key bindings ability map keypad events resolved possible map keypad events key bindings dialog doesn distinguish keypad events mentioned told open request
- 

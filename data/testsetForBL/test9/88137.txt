@@ -1,2 +1,0 @@
-model editor resource save editor title tool tip set null editor input null tool tip text editor title tool tip return null result thrown org mode workbench label provider text object string path title tool tip path length return title return title title tool tip editor dirty workbench closed fix modify code string path title tool tip path null path trim length return title return title path
- 

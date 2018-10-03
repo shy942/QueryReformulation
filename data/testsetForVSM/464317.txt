@@ -1,2 +1,0 @@
-open external programs browse doesn let select app open external programs browse doesn let select app editor selection dialog doesn set proper file extensions
- 

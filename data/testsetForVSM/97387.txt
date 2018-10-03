@@ -1,2 +1,0 @@
-workbench parts regression closing editor ctrl fails set focus works java resource perspective cursor lost case file opened files closed ctrl
- 

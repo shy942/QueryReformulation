@@ -1,2 +1,0 @@
-global actions close unrelated projects dangerous needs confirmation close unrelated projects dangerous operation needs confirmation dialog don nag checkbox inadvertently executed action context menu manually restore workspace state undo work cause build closed projects
- 

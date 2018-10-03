@@ -1,2 +1,0 @@
-minimized views restore active minimized view active user input automatically activated restored similarly active view minimized focus non minimized view
- 

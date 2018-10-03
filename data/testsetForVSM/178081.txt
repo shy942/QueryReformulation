@@ -1,2 +1,0 @@
-import export dir file path appear order instead order build ver steps reproduce build version steps reproduce note treat caps lock latin letters hebrew arabic letters defect relevant dir rtl defect relevant window perform following operations open file import export browse save instance import files dir path dir names dir rtl flag simple project workspace file import file browse path suggested ies txt actual result txt ies expected result ies txt information information directionality user file path names order natural order widget left alignment
- 

@@ -1,2 +1,0 @@
-preferences content type preference page type charset text field selecting content type org java lang null pointer exception java lang null pointer exception org internal dialogs content types preference page key released content types preference page java org swt widgets typed listener handle event typed listener java
- 

@@ -1,2 +1,0 @@
-editor mgmt associations editor selection dialog needs multiselect version description originally reported editor selection dialog allow multiple selections double select accept work dialog steps window preferences expand workbench select file editors button associated editors table notice list multi select notice double
- 

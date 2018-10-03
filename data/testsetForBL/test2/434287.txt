@@ -1,2 +1,0 @@
-databinding snippet validate multiple bindings snippet showing validation error
- 

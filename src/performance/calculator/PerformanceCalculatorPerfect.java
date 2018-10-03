@@ -34,7 +34,7 @@ public class PerformanceCalculatorPerfect {
 		// TODO Auto-generated method stub
 		
 		//new PerformanceCalculatorPerfect().getSingleResult("");
-		new PerformanceCalculatorPerfect().getAvgPerformance(20, 0.4, "VSMAndme");
+		new PerformanceCalculatorPerfect().getAvgPerformance(10, 0.4, "VSMAndme");
 	}
 
 
@@ -49,8 +49,8 @@ public class PerformanceCalculatorPerfect {
 			//Fort Eclipse
 			//PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep12"+baseNamePart+alpha+"-"+test+".txt");	
 			//For SWT
-			String base="E:\\PhD\\Repo\\ZXing";
-			PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfoZxing.txt",base+"\\data\\Results/ZxingOct1"+baseNamePart+alpha+"-"+test+".txt");		
+			String base="E:\\PhD\\Repo\\Eclipse";
+			PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfoEclipse.txt",base+"\\data\\Results/EclipseOct3"+baseNamePart+alpha+"-"+test+".txt");		
 			
 			//PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/buglocator/eclipseoutput.txt");	
 			obj.gitResultsMap=obj.getGitOutput(obj.gitPath);

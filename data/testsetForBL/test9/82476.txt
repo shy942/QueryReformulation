@@ -1,2 +1,0 @@
-preferences verify preference key close editors shutdown
- 

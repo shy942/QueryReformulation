@@ -1,2 +1,0 @@
-trim allow hide tool control right menu similar allow hide toolitems right mouse
- 

@@ -1,2 +1,0 @@
-update reference perspective switcher currently says https bugs org bugs cgi https bugs org bugs cgi
- 

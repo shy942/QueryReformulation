@@ -1,2 +1,0 @@
-changes multi page editor causing endless loop following method added adapter registered subclass multi page editor return delegate internal editor org workbench adapter java lang class public object adapter class adapter object result super adapter adapter result null active editor null result active editor adapter adapter return result subclasses override method end calling super adapter class adapter active editor subclasses endless loop
- 

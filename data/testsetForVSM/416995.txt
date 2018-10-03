@@ -1,2 +1,0 @@
-code review perspective string turned constant application
- 

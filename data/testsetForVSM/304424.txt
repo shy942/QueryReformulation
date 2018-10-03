@@ -1,2 +1,0 @@
-update open doc created attachment patch renamed recently introduced constant open doc open document attached patch updates class uses released today appear nightly build platform developers work using nightly builds close org ide application bundle checkout head http org swt cvs php build
- 

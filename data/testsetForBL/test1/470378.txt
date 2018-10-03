@@ -1,2 +1,0 @@
-property event startup preference page enable disable automated error reporter plugin gets enabled disabled startup vice versa startup preference page stores value value property event changing set value allow register listener update aeri preferences
- 

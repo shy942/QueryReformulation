@@ -1,2 +1,0 @@
-commands text state original state text state starts null reset null illegal argument exception
- 

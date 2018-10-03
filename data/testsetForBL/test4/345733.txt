@@ -1,2 +1,0 @@
-face tree viewer debug message clients duplicate elements created attachment fix follow added debug flag finding content providers return duplicate elements similar performed items manually added parent patch patch adds performance overhead abstract tree viewer internal flag disabled assert elements null badly formatted bad doesn tell array tree items
- 

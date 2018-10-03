@@ -1,2 +1,0 @@
-remove loading workbench splash screen splashscreen improved plug names loaded readable loading workbench text removed
- 

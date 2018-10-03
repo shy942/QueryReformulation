@@ -1,2 +1,0 @@
-contributions menus command label attribute mandatory org menus command element requires label attribute consider letting fall command attribute defined mandatory
- 

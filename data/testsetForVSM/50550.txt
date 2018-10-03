@@ -1,2 +1,0 @@
-preferences pref page workbench keys button mnemonic button mnemonic assignment command use mnemonic
- 

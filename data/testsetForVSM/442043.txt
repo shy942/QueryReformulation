@@ -1,2 +1,0 @@
-failing editor registry tycho gives indication fails
- 

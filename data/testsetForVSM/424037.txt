@@ -1,2 +1,0 @@
-support active focus stack state support active non focus state stack use org workbench org workbench color definitions classic themes
- 

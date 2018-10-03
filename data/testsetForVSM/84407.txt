@@ -1,2 +1,0 @@
-view mgmt mark title view dirty view implement saveable view indicate dirty necessary application edition view itself
- 

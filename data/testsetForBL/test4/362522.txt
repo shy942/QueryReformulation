@@ -1,2 +1,0 @@
-theme switching warn user restart required settings apply itself properly restart guarantees matches defined user notified restart needed
- 

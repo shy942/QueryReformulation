@@ -1,2 +1,0 @@
-key bindings misc workbench context support remove key filter platform swt dev known display filter exists people use circumvent cases big concern method workbench command support set key filter enabled adds removes display listener list clients adding listeners list order listeners list time inconsistency lead bugs ferocious nearly undebuggable kind eventually sweat days
- 

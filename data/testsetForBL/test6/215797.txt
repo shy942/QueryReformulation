@@ -1,2 +1,0 @@
-view mgmt workbench parts extends org views allow non restorable views use cases view showing dynamic resource present restart anymore require views restored previous state workbench restart unfortunately possible exclude given view restored set hidden adding additional boolean flag current org views defines view hidden restart reasonable regards markus
- 

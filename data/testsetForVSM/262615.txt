@@ -1,2 +1,0 @@
-commands text action handler created attachment text action handler tests validation tests
- 

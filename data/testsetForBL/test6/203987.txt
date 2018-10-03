@@ -1,2 +1,0 @@
-commands adding breakpoint stopps working adding breakpoint double vertical ruler java editor stops working way working restart works workbench windows don reproducible steps debugged remote workspace code ends calling command legacy action wrapper enabled disregarding command returns false idea field gets set value started notice time time week
- 

@@ -1,2 +1,0 @@
-common navigator linking open editors content project explorer working restart using project explorer clicking link navigator icon links editor closing reopening link automatically activate editor open specific file clicking icon reactives link
- 

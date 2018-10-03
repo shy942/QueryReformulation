@@ -1,2 +1,0 @@
-face jface use foundation elcipse plugins using foundation class library general types changes needed list kinds changes examples occur face boolean value boolean easily replaced used action use javax xml transform classes package used dialog settings save write settings copies writer platform resources writer helper effective quoting case dialog settings save document approach traverse document methods writer string split matches easily replaced used string converter
- 

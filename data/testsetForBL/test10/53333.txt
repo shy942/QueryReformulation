@@ -1,2 +1,0 @@
-workbench way selection events fired way selection events sent based responding selection changes optimizations code path significant benefit recreate start hello world example write console selection event launch example activate action set start clicking notice views multiple selection events processed single clicks extending selection editor notice tons events
- 

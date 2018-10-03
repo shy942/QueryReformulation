@@ -1,2 +1,0 @@
-trim allow hide toolbars right menu great usability enhancement allow user close toolbars directly right mouse looked tool bar renderer eric advice implemented
- 

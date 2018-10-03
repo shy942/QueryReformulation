@@ -1,2 +1,0 @@
-key bindings prompts twice simple project text file select file navigator hit key confirm prompt prompts second time key dispatched twice
- 

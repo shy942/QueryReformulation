@@ -1,2 +1,0 @@
-key bindings keys behaving expected content assist pop activated open java file invoke content assist code content assist pop activated user press key expected option content assist pop gets selected similar behavior expected key selects option available content assist pop window works broken
- 

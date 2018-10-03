@@ -1,2 +1,0 @@
-deprecate presentation discussion affected needs deprecation entire package org presentations extension point org presentation factories org workbench preference constants org workbench window configurer presentation factory org workbench window configurer set presentation factory
- 

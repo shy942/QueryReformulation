@@ -1,2 +1,0 @@
-commands request display topic going attach patch command ify opening topics command takes parameter href topic default handler uses workbench display resource string href parameter parameter given default handler calls workbench display instead simply open note looks opened user assistance plugins patched org org workbench opened
- 

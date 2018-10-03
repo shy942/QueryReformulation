@@ -1,2 +1,0 @@
-status manager severity
- 

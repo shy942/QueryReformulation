@@ -1,2 +1,0 @@
-global actions text selection navigation location holds document leak search documents referenced text selection navigation locations stored navigation history documents belonging connected text buffers anymore
- 

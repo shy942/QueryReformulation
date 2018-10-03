@@ -1,2 +1,0 @@
-maximizing restoring views results missing titles build identifier maximize button tab area restore view titles package explorer outline view don redrawn reproducible steps reproduce maximize button view restore button notice tab title don redrawn
- 

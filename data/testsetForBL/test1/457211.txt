@@ -1,2 +1,0 @@
-face cleanup tool bar manager similar code tool bar manager cleaned fix follows
- 

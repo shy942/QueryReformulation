@@ -1,2 +1,0 @@
-post selection event sent twice gets activated post selection changed event sent twice gets activated selection listener package explorer site workbench window selection service post selection listener selection listener public void selection changed workbench selection selection object selection util single element selection string java element labels text label java element labels println start target workbench select element package explore activate view activate package explorer events sent
- 

@@ -1,2 +1,0 @@
-view mgmt outline view loses toolbars restart restart resource java perspective open focus java perspective switching resource perspective result views outline case redrawing open resource perspective open java perspective restart select resource perspective toolbars missing
- 

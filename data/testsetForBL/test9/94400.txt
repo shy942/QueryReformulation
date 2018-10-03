@@ -1,2 +1,0 @@
-undo successful undo operation disposed framework redone verifying slight hole dispose strategy clear happens successful undo operation redo stack redone conservatism added support integration existing frameworks refactoring produce undo redo behavior fly guarantee successful undo means successful redo available outside synchronized block boolean redo stack operation redo synchronized undo redo history key undo list remove operation redo stack redo limit operation redo list operation
- 

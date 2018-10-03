@@ -1,2 +1,0 @@
-editor mgmt focus lost closing dirty editor editor selection dialog open file dirty ctrl shift select file close selected editors pick yes editor closed focus granted workbench window modal dialog focus granted modal dialog quite clear
- 

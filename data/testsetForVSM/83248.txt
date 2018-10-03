@@ -1,2 +1,0 @@
-warnings javadoc generation compilelogs platform doc isv javadoc txt lot warnings javadoc generation platform plugins attach patches rid
- 

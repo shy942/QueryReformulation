@@ -1,2 +1,0 @@
-compatibility perspective switcher respect open perspective window setting created attachment patch perspective switcher use workbench perspective perspective switcher doesn respect user open perspective window setting don difference behaviour using window open perspective perspective switcher steps repeat set preferences general perspectives open perspective window use perspective switcher open perspective perspective open current window patch simply use workbench perspective attached includes tiny null close perspective avoid experienced trying close perspective
- 

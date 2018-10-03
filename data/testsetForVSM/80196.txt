@@ -1,2 +1,0 @@
-heap status heap status indicator enhacements heap status heap status plugin enhanced compare current used memory maximum heap size current used memory reaches user defined percentage maximum heap size indicator turn red user defined colour users visual indicator workspace possibly memory save exit soon possible max memory undefined needs optional prototype couldn lives patch nice total length bar indicate max memory current max colour types regions appropriate
- 

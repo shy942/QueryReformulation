@@ -1,2 +1,0 @@
-editor mgmt default editor unknown extensions suggest configuration setting general file associations set editor used unknown file types currently default editor opened suggest editor unknown file types default editor editor list editors
- 

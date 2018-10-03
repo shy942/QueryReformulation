@@ -1,2 +1,0 @@
-fix alignment dialog preference dialog text combo doesn align page title page area
- 

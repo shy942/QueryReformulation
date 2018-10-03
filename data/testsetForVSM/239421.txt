@@ -1,2 +1,0 @@
-editor mgmt multi editor support propagate events nikolay botev trying implement split editor functionality using idea file save works invokes save command twice file save work making editor mark editor tab dirty
- 

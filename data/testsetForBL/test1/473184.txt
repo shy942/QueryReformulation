@@ -1,2 +1,0 @@
-allow user disable drag drop toolbars tool components originally came provide way applications disable toolbar drag drop functionality way tag application level
- 

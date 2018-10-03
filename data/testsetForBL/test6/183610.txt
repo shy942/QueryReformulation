@@ -1,2 +1,0 @@
-snippets customize tool tip support displaying browser widget
- 

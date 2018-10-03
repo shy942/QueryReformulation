@@ -1,2 +1,0 @@
-tabbed properties aren user friendly colors tabbed properties depend theme aren user friendly https issues jboss org browse tabbed property list class uses tab gradient dark themes
- 

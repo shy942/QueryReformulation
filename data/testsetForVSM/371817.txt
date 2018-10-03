@@ -1,2 +1,0 @@
-compatibility close stops working twice today gotten state ctrl shift doesn second time using git installed file close disabled workbench window workaround restart
- 

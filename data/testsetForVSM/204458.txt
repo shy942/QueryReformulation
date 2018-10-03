@@ -1,2 +1,0 @@
-commands allow menu toolbars execution events keybindings currently execution events executing actions action framework actions action definition set action delegates definition attribute action contributions nice selecting menu tool item equivalent events
- 

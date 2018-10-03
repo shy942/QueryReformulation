@@ -1,2 +1,0 @@
-workbench launcher workspace launcher dialog grows width long paths cases default width workspace launcher provides decent space display path workspace case path exceptionally long shouldn workspace launcher remain constant width maximum width expand currently expands width path selected workspace displayed steps reproduce select workspace path long workspace launcher start workspace restart notice width workspace launcher dialog
- 

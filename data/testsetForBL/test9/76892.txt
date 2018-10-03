@@ -1,2 +1,0 @@
-editor mgmt brings editor list editor area hidden app hidden editor area hasn replaced binding using default key configuration pressed editors list popup aligned left app pop editor area
- 

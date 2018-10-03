@@ -1,2 +1,0 @@
-data binding effect class computed value executes runnable computing result implement effect class data binding lot compute value compute dependencies observable return value instead execute runnable usage observable string observable string observable boolean preference label user effect effect effect activate string preference user set text
- 

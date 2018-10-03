@@ -1,2 +1,0 @@
-contributions fix command contribution item generated menus meaningful config element string
- 

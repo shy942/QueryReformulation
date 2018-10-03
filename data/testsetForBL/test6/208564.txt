@@ -1,2 +1,0 @@
-preferences preference transfer allow wildcards keys implement preference transfer compiler settings specify compiler keys compiler settings long keys start prefix preference transfer extension point support suggested extension point org preference transfer transfer java compiler settings org jdt compiler mapping scope instance entry node org jdt core key org jdt core compiler match node mapping transfer extension
- 

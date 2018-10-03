@@ -1,2 +1,0 @@
-common navigator navigator content provider appears creates hard reference named using appears attribute navigator content extension point dependency referenced content provider workspace soft dependency runtime expect referenced component present attribute ignored dev time surely warning error
- 

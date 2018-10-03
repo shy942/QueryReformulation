@@ -1,2 +1,0 @@
-compatibility editor toolbars rendered running win classic theme classic style used buttons toolbars render incorrectly toolbars unaffected changing themes cases rendering visually different toolbars cases issue buttons rendered overly large dimensions setting win theme classic using editors tools project faces config editor tools project web page editor plug manifest editor examples logic diagram editor
- 

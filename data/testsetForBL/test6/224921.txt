@@ -1,2 +1,0 @@
-incorrect display history file menu mirrored mode build steps reproduce dir rtl command options open files observe recently opened files appear file submenu non mirrored mode mode display file file path aligned left mirrored mode mode display non mirrored mode file file path aligned acceptable expected result following options acceptable option file path file alignment right option file file path alignment right option file file path alignment left
- 

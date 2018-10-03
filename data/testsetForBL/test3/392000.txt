@@ -1,2 +1,0 @@
-tycho scm url platform git created attachment platform patch tycho generate source reference headers property needs added pom tycho scm url repo included branches
- 

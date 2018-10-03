@@ -1,2 +1,0 @@
-workbench contexts dialog shell retained memory enabled submissions using optimize time open close debug launch configurations dialog shell leaked enabled submission leaked shell referenced active shell enabled submissions remain enabled submissions context map workbench context support close launch configuration remove enabled submissions called submissions added window type shell shell registered dispose listener added submissions removed shell disposed
- 

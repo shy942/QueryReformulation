@@ -1,2 +1,0 @@
-attribute condition impl prevents correct matching elements attribute condition impl prevents correct matching elements instance selector elements match second actually match current code case considered word match correctly rejected matching stops instead going occurrence matches
- 

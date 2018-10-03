@@ -1,2 +1,0 @@
-perspective bar perspectives names default perspective switcher recently noticed perspective switcher shows perspective names default suggest save space toolbar nicer compare intelli hides toolbar completely default
- 

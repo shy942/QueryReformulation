@@ -1,2 +1,0 @@
-workbench preference constants app workbench advisor initialize workbench configurer method platform preference store set value workbench preference constants false stops progress bar showing splash screen startup progress bar shown splash screen startup
- 

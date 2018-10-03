@@ -1,2 +1,0 @@
-compatibility page listener page opened sent early page listener attached workbench action builder doesn appear notified events http git org platform platform git tree bundles org ide src org internal ide workbench action builder java bbce
- 

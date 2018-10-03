@@ -1,2 +1,0 @@
-workbench launcher preferences workspace path comma workspace opened comma path docs clients surname firstname closed opened workspace open correctly instead creates folder docs clients surname creates workspace noticed recent workspaces kept configuration settings org ide prefs list comma separated reccommend making delimiter character usable filenames paths pipe character enclosing paths quote marks
- 

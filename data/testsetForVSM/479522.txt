@@ -1,2 +1,0 @@
-remove unused fast view methods workbench window
- 

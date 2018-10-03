@@ -1,2 +1,0 @@
-contributions improve javadoc action bars update action bars javadoc action bars update action bars accurate says clients remove items menu tool bar status managers method propagated changes workbench method called global action menu retargeted using action bars set global action handler
- 

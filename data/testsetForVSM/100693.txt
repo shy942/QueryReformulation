@@ -1,2 +1,0 @@
-import export junit tests wizard projects import page threw tests org internal wizards datatransfer wizard projects import page using simple hello world project tests project detected correctly file imports errors doesn occur tests cover directories zips tars minor changes wizard projects import page accomodate tests couple things public added couple getters shouldn risk internal method shouldn worries
- 

@@ -1,2 +1,0 @@
-common navigator missing customize view dialog open filters dialog button note appears
- 

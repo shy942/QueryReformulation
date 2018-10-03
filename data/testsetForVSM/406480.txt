@@ -1,2 +1,0 @@
-clean suites simple things improve suites unfavourite suite launch configs currently running console output use err tests print exceptions encountered don fail
- 

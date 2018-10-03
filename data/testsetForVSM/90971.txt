@@ -1,2 +1,0 @@
-key bindings assist popup correctly sized non default dialog font dialog font bigger font used comic sans win columns key assist ctrl shift popup correctly sized widest entries end ellipsis
- 

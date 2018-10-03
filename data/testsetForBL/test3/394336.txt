@@ -1,2 +1,0 @@
-file close menu item disabled current editor activated using stpes reproduce project import files open file using default editor open file menu notice close menu action disabled reproduce right away repeat steps
- 

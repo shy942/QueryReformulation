@@ -1,2 +1,0 @@
-element tree selection dialog unnecessarily hinders using styled label providers constructor element tree selection dialog accespt label provider instances prevents clients using styled label provider suggest constructor accept base label provider enable styled label providers
- 

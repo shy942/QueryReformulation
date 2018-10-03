@@ -1,2 +1,0 @@
-remove redundant type arguments highter org jface
- 

@@ -1,2 +1,0 @@
-workbench page perspective stack gets called lot opening closing views cycle open view close view workbench page perspective stack gets called times method turn calls model service elements takes time search model value returned perspective stack execution cache hold result method
- 

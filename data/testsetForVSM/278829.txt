@@ -1,2 +1,0 @@
-doc mark installation page container noimplement introduce extension point org installation pages pages contributed installation page pages appear installation details dialog launched interface used page communicate container defined installation page container interface marked tooling tags suggested interface marked noimplement intention extension point clients implement contribute installation page clients provide alternate implementations containing dialog interface marked noimplement
- 

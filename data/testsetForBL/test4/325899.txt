@@ -1,2 +1,0 @@
-preferences accessibility preferences dialog menu button needs tooltip build org internal dialogs filtered preference dialog method container tool bar composite composite filtered preference dialog class popup menu action needs tool tip text text tool bar manager use tooltip text tool item showing image needed accessibility screen readers tool bar manager class provides based tooltip text
- 

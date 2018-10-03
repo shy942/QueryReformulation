@@ -1,2 +1,0 @@
-undo clarification threading issues convention used respect callback notifications non components operations history currently operation history notifies clients changes operation history occur clients work updating action handler enablement clients refactoring flush operation history background thread general operations framework forcing clients use thread dispatching callbacks thread telling clients called non thread explicitly use sync exec async exec protocol accessing operations history callback
- 

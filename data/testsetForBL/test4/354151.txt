@@ -1,2 +1,0 @@
-compatibility property listeners references notified property changes junit framework comparison failure null expected org user null junit framework assert assert equals assert java junit framework assert assert equals assert java org tests api workbenchpart arbitrary property view properties arbitrary property java junit framework comparison failure null expected org user null junit framework assert assert equals assert java junit framework assert assert equals assert java org tests api workbenchpart arbitrary property editor properties arbitrary property java
- 

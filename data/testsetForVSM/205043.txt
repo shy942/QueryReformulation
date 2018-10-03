@@ -1,2 +1,0 @@
-commands dynamically loading plugin causes command framework error command framework correctly handle dynamic plugin awareness dynamic plugin contains command framework references dumps information correctly read
- 

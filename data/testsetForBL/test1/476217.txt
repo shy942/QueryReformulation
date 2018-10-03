@@ -1,2 +1,0 @@
-update org images projects use java render mojo gallery mojo org images renderer uses java features pom xml projects class path adapted
- 

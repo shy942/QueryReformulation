@@ -1,2 +1,0 @@
-remove dependence core runtime compatibility plugin contains reference plugin descriptor
- 

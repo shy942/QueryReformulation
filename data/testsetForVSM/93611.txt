@@ -1,2 +1,0 @@
-viewers refactor table layout behave standard layout table layout doesn follow expected protocol layout lays ignores subsequent changes size setting table size followed size result different layout setting size followed size layouts purely function current size affected previous sizes widget given nonzero size initialize column widths layout behaves deferred column initializer layout causing problems view error view views workarounds nice extra code necessary
- 

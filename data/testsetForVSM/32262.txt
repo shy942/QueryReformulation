@@ -1,2 +1,0 @@
-markers image description marker resolution java editor shows quickfixes contributed marker resulutions label proposal image description hover widow current selection shown marker resolution extension lets contributors define image description
- 

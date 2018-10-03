@@ -1,2 +1,0 @@
-contributions customize perspective action breaks editor pinning action using enabled editor pinning reuse editor pinned editor using action toolbar disabled editor pinning opened customized perspective dialog enabling disabling editor pinning pin editor action reappear
- 

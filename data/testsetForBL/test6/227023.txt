@@ -1,2 +1,0 @@
-tabbed properties section header fixed font size accessibility section header font size fixed customizable preferences
- 

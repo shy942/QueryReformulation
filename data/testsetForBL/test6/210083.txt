@@ -1,2 +1,0 @@
-view dialog creates view parts node expansion build steps reproduce open view dialog expand nodes watch previously unopened views created information view label provider tries paint unopened views dimmed colour treeview dialog view currently open uses workbench page view query opened views workbench contains views activated user clicking views tab views opened background view method behaviour view way open view actually view controls
- 

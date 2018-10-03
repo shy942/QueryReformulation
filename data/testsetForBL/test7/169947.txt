@@ -1,2 +1,0 @@
-editor mgmt dialog closing workbench window dirty editor opened window work place allow users save dialog closing editor editor edits data user decided closing workbench window honor setting user set setting save dialog checkbox appear
- 

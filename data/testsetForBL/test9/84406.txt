@@ -1,2 +1,0 @@
-view mgmt editor mgmt saveable fully implemented recall saveable mechanism fully enabled obscure reasons compatilibity needed reactivated
- 

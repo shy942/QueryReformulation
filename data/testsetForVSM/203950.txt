@@ -1,2 +1,0 @@
-viewers tree viewer view filter handle expand correctly build steps reproduce encountered situation tree viewer displays children displayed disappears occurs view filter filtering children viewer knows viewer filter children children likely filter non list filter information said maybe log posting newsgroup http dev org newslists news tools emf msg html
- 

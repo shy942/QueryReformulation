@@ -1,2 +1,0 @@
-used private method face resources private static void initialize default colors introduced used suggest remove
- 

@@ -1,2 +1,0 @@
-copy keybinding brings key binding selection popup open select text ctrl copy result keybindings popup opens button entry copy don actions editors views version build
- 

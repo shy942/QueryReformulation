@@ -1,2 +1,0 @@
-field assist provide access closing proposal popup field assist needs hooks customizable example way manually close open popup times easier user ask implement custom behaviour way intercept keystrokes events directed field way control focus
- 

@@ -1,2 +1,0 @@
-status handling addition status adapter binary compatible class subclassed clients addition fields org statushandlers status adapter org statushandlers status adapter binary compatible specification class explicitely say class subclassed clients
- 

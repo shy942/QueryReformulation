@@ -1,2 +1,0 @@
-workbench window configurer set title effect shell created workbench window configurer set title called window shell created called pre window open
- 

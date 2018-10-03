@@ -1,2 +1,0 @@
-field assist simplifying auto completion scenario recently discussion nebula developer mailinglist auto complete widgets auto complete actually lives face fieldassist package serves quite general purpose simpler auto complete text fields combos desirable especially proposals strings possibly static live time widget
- 

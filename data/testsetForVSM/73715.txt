@@ -1,2 +1,0 @@
-workbench regression workbench menus disappeared closing perspective menu items workbench close perspective perspective bar right mouse perspective tab select close menu items workbench disappeared leaves workbench state useable attaching tutorial tutorial code configurer set perspective bar true running used work
- 

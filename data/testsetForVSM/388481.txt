@@ -1,2 +1,0 @@
-support styling tool bar tool items
- 

@@ -1,2 +1,0 @@
-avoid unnecessary redraws property font handler avoid unnecessary redraws property font handler workaround adds lot unnecessary redraws
- 

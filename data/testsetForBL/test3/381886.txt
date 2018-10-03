@@ -1,2 +1,0 @@
-debugger keybindings frequently require pressing twice using debug perspective keybindings don work press key twice work stack frame key work debugging painful
- 

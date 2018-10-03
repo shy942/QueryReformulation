@@ -1,2 +1,0 @@
-themes nullpointer exception rendering engine preferences org internal workbench swt rendering engine styling preferences handler preferences protected set preferences preferences prefs null prefs hash set preferences platform admin admin workbench activator default platform admin state state admin state false application platform admin returns null admin state false throws
- 

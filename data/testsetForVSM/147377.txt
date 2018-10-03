@@ -1,2 +1,0 @@
-field assist open proposal popup close valid proposals left finished implementing ensures content proposal popup opens valid proposals shown beep sounded user trying explicitly open popup key binding currently popup automatically close user opened popup types content causes proposal list filter clear popup close autoactivation case current platform text content assist close popup case popup explicitly invoked
- 

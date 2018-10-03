@@ -1,2 +1,0 @@
-key bindings alt enter open breakpoint properties alt enter key combo opening breakpoint properties java breakpoints action invoked active breakpoint appears action getting selection notifications
- 

@@ -1,2 +1,0 @@
-javadoc errors version org workbench created attachment platform doc isv javadoc txt builds probably long time javadoc errors org workbench looking platform options txt major problems sourcepath contains org workbench src makes sense bundle packages listed end file org workbench subpackages org workbench require bundle import package entries missing classpath list causes package exist symbol messages generate javadoc org bundles sourcepath packages list finalized platform options txt group preliminary finalized use risk org http wiki org index php things doc gory details
- 

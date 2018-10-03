@@ -1,2 +1,0 @@
-editor mgmt provide action open editor input build order partially address split editor feature request decided open action file menu close editor tab open editor input active editor split editor scenario user drag resulting editor tab edge editor area editor editor workbook
- 

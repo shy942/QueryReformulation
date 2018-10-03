@@ -1,2 +1,0 @@
-contributions toolbar contributions editors displayed simultaneously using switching editors toolbar buttons editor added ones editor removed result workbench parts making toolbar rows tall creating undesirable flashing effect easily reproduce switching editors lot different items toolbar needs rows toolbar
- 

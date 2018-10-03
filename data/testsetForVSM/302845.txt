@@ -1,2 +1,0 @@
-editor mgmt changing sort order switch editor makes lose selection build identifier really switch editor select sort order clicking column heading selection lost reproducible steps reproduce open couple files editor open switch editor ctrl shift default select editors ctrl clicking column heading sort order table selection lost
- 

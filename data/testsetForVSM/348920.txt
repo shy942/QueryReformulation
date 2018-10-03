@@ -1,2 +1,0 @@
-compatibility contribution visibility leak workbench windows open java editor workbench window workbench windows contributions refactor menu tool bar contributions breadcrumbs feature
- 

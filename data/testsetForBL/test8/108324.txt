@@ -1,2 +1,0 @@
-multi page selection provider implement post selection provider current multi page selection provider doesn implement post selection provider means editor parts multi page editor forward post selection selection service listening service trying remove internal selection management makes difficult text editors use post selection update text selection cursor key movement
- 

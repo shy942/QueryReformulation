@@ -1,2 +1,0 @@
-remove dependency update manager created attachment patch org ide bundle dependency update manager code builds contents configuration details dialog gathers list features plug ins installed attached patch removes dependency replaces previous information list installable units profile bundles knows
- 

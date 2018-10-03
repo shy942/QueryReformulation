@@ -1,2 +1,0 @@
-button improperly disabled event loop monitor preference page reproduce open event loop monitor preference page enable event loop monitoring thread long event threshold button gets disabled stack interval error message disappears apply buttons disabled
- 

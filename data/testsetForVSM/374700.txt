@@ -1,2 +1,0 @@
-splash screen build misaligned build shows random places splash screen depending running caused font differences platforms results range build properly aligned build clipped
- 

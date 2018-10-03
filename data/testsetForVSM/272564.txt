@@ -1,2 +1,0 @@
-properties view mechanism views opt interactions property view generalize fix providing mechanism extension point view declare shouldn used property source
- 

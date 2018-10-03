@@ -1,2 +1,0 @@
-global toolbar global toolbar wont anymore perspective customize perspective discovered debug buttons stopped appearing remove debug buttons customize perspective buttons visible enabled open customize perspective related pressing ctrl numpad forward slash use danish keyboard layout expected toggle commenting instead turns folding press ctrl shift shift forward slash toggle commenting tell debug information provide
- 

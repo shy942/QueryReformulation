@@ -1,2 +1,0 @@
-action fails silently installed dependencies import plugin org import plugin org import plugin org webapp import plugin org tomcat stated plugin xml won work explanation won reproduce downloading burnett org tutorial rcp according instructions http dev org viewcvs index cgi echeckout org tutorials rcp html tutorial html mentioned entries plugin xml debug plug ins deselect select org tutorials rcp required plug ins indication won work tutorial difficult needed dependencies debug source code
- 

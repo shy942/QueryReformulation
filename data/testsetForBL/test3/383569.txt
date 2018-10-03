@@ -1,2 +1,0 @@
-contributions perspectives reset perspective reset toolbar menu contributions customize toolbar adding removing buttons window customize perspective buttons respectively appear disappear toolbar perform reset perspective expected toolbar reset defaults actual toolbar reset buttons remain changed open window customize perspective checkboxes state changed reset default reflected toolbar note restarting eclispe toolbar reset defaults
- 

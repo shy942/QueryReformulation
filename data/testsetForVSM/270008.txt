@@ -1,2 +1,0 @@
-common navigator ability extend bindings inherits bindings tag requirement extend common navigator instance including bindings plus ability additional bindings follow https bugs org bugs cgi inherited bindings possible additional
- 

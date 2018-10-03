@@ -1,2 +1,0 @@
-command service sites command service workbench window site page site multi editor page site
- 

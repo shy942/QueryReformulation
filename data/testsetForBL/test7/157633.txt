@@ -1,2 +1,0 @@
-workbench operation stress tests takes long time workbench operation stress tests takes seconds making quite long suites
- 

@@ -1,2 +1,0 @@
-editor mgmt resolution policy editors needs revamped accomodate content types currently content type based editor binding priority traditional filename bindings investigated
- 

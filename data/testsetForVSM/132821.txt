@@ -1,2 +1,0 @@
-dialogs stored dialog location size invalid changing font started use face dialog support manages location size reset size font changes makes dialog ugly forces user manually adjust reset size easy task
- 

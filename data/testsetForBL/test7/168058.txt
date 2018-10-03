@@ -1,2 +1,0 @@
-commands work patches tests place half formed patches design musings
- 

@@ -1,2 +1,0 @@
-refactor custom properties currently custom properties contributed style tab folder property names refactored reflect contributed standard selector list initial proposed format tab renderer swt tabrender unselected tabs color swt unselected tabs color
- 

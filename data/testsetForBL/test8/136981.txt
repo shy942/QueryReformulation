@@ -1,2 +1,0 @@
-trim failing trim gives multiple error dialogs piece contributed trim failing creation produce error dialog subsequent wire bad trim failure detected
- 

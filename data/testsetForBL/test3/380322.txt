@@ -1,2 +1,0 @@
-scheme ignored selecting best shortcut display switch emacs scheme edit replace shows word emacs best sequence ignores scheme sorting bindings sort scheme pick best values
- 

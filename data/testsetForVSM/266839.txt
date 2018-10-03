@@ -1,2 +1,0 @@
-global actions provide command initially created clone interface workbench command constants link actions action factory command specified best action factory additional method string command returns command used generated actions null command added javadocs action factory constants replace command used action factory references constants command missing org window view menu constants declare org jdt internal actions workbench command ids rest missing don quite understand org navigate used org navigate quick menu key binding defined
- 

@@ -1,2 +1,0 @@
-navigator deleting linked resource asks read files linked resource called foo links foo directory read files navigator resource perspective resource asks confirm says link deleted link target changed say gives dialog read file foo warning file read really contradicts said touching target resource using
- 

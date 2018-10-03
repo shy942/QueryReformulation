@@ -1,2 +1,0 @@
-working sets small improvements working sets build dirk aded working set editable checks descriptor defines attribute page class added open working set wizard necessary wrote working set configuration dialog package explorer tweaking existing compilacated requirements different fixed abstract working set manager updater install wasn necessary
- 

@@ -1,2 +1,0 @@
-field assist left right arrow keys work open proposals list worked replace dialog enable regex type field invoke content assist pressing left right arrow key closes proposals popup list closed caret moved proposals recalculated caret position
- 

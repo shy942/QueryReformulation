@@ -1,2 +1,0 @@
-key bindings accelerators don work page changed multi page editor accelerators don work page changed editor multi page following example editor subclass multi page editor pages different scopes key bindings key binding service set scopes register action called page activated accelerators don work accelerators updated win key binding service update accelerators called editor view activated happens editor panes panes different scopes key bindings
- 

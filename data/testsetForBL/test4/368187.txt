@@ -1,2 +1,0 @@
-services pre cleanup decide services provide services seeded grown organically needed result perspective mixed bag services gotten complex impacts development runtime performance use container related changes things immediately mind headless app model location common application code currently org workbench swt simplify services tests service say mixed inter dependencies example service needs presentation engine calls directly things javadocs
- 

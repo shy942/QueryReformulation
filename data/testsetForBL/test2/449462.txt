@@ -1,2 +1,0 @@
-realm method display realm class used realm method display realm class used instead deprecated observables class
- 

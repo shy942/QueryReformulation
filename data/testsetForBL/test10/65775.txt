@@ -1,2 +1,0 @@
-key bindings interactions word emacs mode flaky thanks adding flaky works restart works awhile doesn work brings file menu haven figured pattern
- 

@@ -1,2 +1,0 @@
-commands handlers retarget action handlers aren registered properly build ctrl shift performs global search references method works editor select method outline view search result hit ctrl shift happens action continues work select context menu key binding issue key assist shows key binding available context
- 

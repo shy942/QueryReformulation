@@ -1,2 +1,0 @@
-generify text editor related examples text editor generified warnings build patch follow
- 

@@ -1,2 +1,0 @@
-eliminate reliance stack trace filters responsiveness monitoring proposed solution https git org demonstrates responsiveness monitoring work relying stack trace filters eliminating filters completely eliminates overhead imposed responsiveness monitoring scenarios involving real delays
- 

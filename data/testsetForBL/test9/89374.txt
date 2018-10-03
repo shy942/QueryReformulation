@@ -1,2 +1,0 @@
-workbench parts visible sent editor restored tom says quering workbench page java visible returns false activating java listener receive activated event java visible event editor visible visible event matter editor lazily materialized
- 

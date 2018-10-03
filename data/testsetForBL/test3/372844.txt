@@ -1,2 +1,0 @@
-failures broken java lang null pointer exception org workbench renderers swt tool bar manager renderer widget tool bar manager renderer java org menu tests tool item action set added file tool item java java lang null pointer exception org workbench renderers swt tool bar manager renderer widget tool bar manager renderer java org menu tests tool item action set added toolbar tool item java
- 

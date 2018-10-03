@@ -1,2 +1,0 @@
-factory converter lamda expressions currently needs subclass converter implement convert method bit cumbersome java use lamda method reference conversion method propose converter object object function object object conversion
- 

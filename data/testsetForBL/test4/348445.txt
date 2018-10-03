@@ -1,2 +1,0 @@
-remove view menu string build method org workbench renderers swt stack renderer menu button tab folder menu following code set tool tip text view menu string view menu depends string dependent code rewritten
- 

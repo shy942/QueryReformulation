@@ -1,2 +1,0 @@
-commands provide commands copying build config info clipboard commands incredibly useful verifying reporting bugs probably shouldn default keybindings
- 

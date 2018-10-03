@@ -1,2 +1,0 @@
-workbench parts appears unnecessary code resource cleanup editor loading code noticed possible editor creation code observation likely following resource cleanup unnecessary code easy verify code inspection bit debugging package org internal class editor reference method helper code lines editor initialized null initialized null initialized dispose catch runtime exception workbench plugin log initialized initialized null second code executed looks intention clean dispose editor exception editor code initialized reconciled thanks
- 

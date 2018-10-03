@@ -1,2 +1,0 @@
-properties view properties view initialized current selection switching views properties view updated switch views selections feed properties view package explorer navigator steps select file package explorer select project navigator open properties view shows properties project package explorer tab navigate using ctrl properties view shows content expected update active selection
- 

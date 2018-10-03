@@ -1,2 +1,0 @@
-face open org jface layout abstract column layout build steps reproduce subclass abstract column layout package scope information request open org jface layout abstract column layout currently abstract methods package scope layout useful column based widget users table tree nebula grid advantage pixel based weight based column layout data objects using table viewer layout recently switched nebula grid table viewer lost layout support abstract column layout public easy version grid table widget
- 

@@ -1,2 +1,0 @@
-string method memento created attachment string patch implementation string memento returns content acceptable added appropriate patch
- 

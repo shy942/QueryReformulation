@@ -262,18 +262,28 @@ public class BugLocalizationUsingNumbers {
 
 	public HashMap<Integer, Double> CombileScoreMaker(int queryID, HashMap<Integer,Double> resultBugLocator,HashMap<Integer,Double> resultMyTool, double BETA)
     {
-    	
+    	//first key from VSM
+		int firstkey=0;
+		for(int key:resultBugLocator.keySet())
+		{
+			firstkey=key;
+			System.out.println("First result: "+firstkey+" "+resultBugLocator.get(key)/0.6);
+			break;
+		}
     	HashMap<Integer, Double> tempCombineResult=new HashMap<>();
     	int count = 0;
-    	MiscUtility.showResult(10, resultMyTool);
+    	//MiscUtility.showResult(10, resultMyTool);
     	for(int key:resultMyTool.keySet())
     	{
     		if(resultBugLocator.containsKey(key))
     		{
     			count++;
     			double combineScore=resultMyTool.get(key)*BETA+resultBugLocator.get(key);
-    			//System.out.println(key+" "+resultMyTool.get(key)*BETA+" "+resultBugLocator.get(key)+" "+combineScore);
-    			tempCombineResult.put(key, combineScore);
+    			System.out.println(key+" "+resultMyTool.get(key)*BETA+" "+resultBugLocator.get(key)+" "+combineScore);
+    			if(key==firstkey) 
+    				{tempCombineResult.put(key, resultBugLocator.get(key)/0.6);}
+    			else
+    				tempCombineResult.put(key, combineScore);
     		}
     		else
     		{
@@ -500,11 +510,13 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		int total_test=20;
-		double alpha=0.40;
+		int total_test=10;
+		double alpha=0.4;
 		for(int i=1;i<=total_test;i++)
 		{
-			/*//For Eclipse
+			/*
+			
+			//For Eclipse
 			int test=i;
 			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers("./data/FinalMap/TokenSourceMapTrainset"+test+".txt", "./data/FinalMap/SourceTokenMapTrainset"+test+".txt","./data/testset/test"+test+".txt","./data/Bug-ID-Keyword-ID-Mapping.txt","./data/changeset-pointer/ID-SourceFile.txt","./data/ID-Keyword.txt","./data/Sid-MatchWord2.txt");
 			String bugReportFolder = "./data/testsetForBL/test"+test;
@@ -517,29 +529,29 @@ public class BugLocalizationUsingNumbers {
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			="./data/Results/Sep17VSMAndme"+alpha+"-"+test+".txt";
+			="./data/Results/Oct2VSMAndme"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 	
 			//obj.bugLocator(obj, outputFilePath, sourceFolder, bugReportFolder, goldsetFile);
-			obj.bugLocatorLuceneAndMe(obj, outputFilePath, bugReportFolder);
-			//call the bug localizer*/
+			obj.bugLocatorLuceneAndMe(obj, outputFilePath, bugReportFolder);*/
+			//call the bug localizer
 			
-			//For SWT
+			//For SWT/Zxing/AspectJ/Eclipse
 			int test=i;
-			String base="E:\\PhD\\Repo\\Zxing\\";
+			String base="E:\\PhD\\Repo\\Eclipse\\";
 			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers(base+"\\data\\FinalMap\\TokenSourceMapTrainset"+test+".txt",base+"\\data\\testset\\test"+test+".txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\data\\changeset-pointer\\ID-SourceFile.txt",base+"\\data\\ID-Keyword.txt");
 			String bugReportFolder = base+"\\data\\testsetForBL\\test"+test;
 			//For Mac
 			//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
 			//ForWindows
-			String sourceFolder = base+"\\ProcessedSourceCorpus\\";
+			String sourceFolder = base+"\\ProcessedSourceCorpus3\\";
 				
-			String goldsetFile = base+"\\data\\gitInfoZxing.txt";
+			String goldsetFile = base+"\\data\\gitInfoEclipse.txt";
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			=base+"\\data\\Results\\ZxingOct1VSMAndme"+alpha+"-"+test+".txt";
+			=base+"\\data\\Results\\EclipseOct3VSMAndme"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 	
@@ -557,7 +569,7 @@ public class BugLocalizationUsingNumbers {
 		 	//For Eclipse
 		 	//String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
 		 	//ForSWT
-		 	String indexDir="E:\\PhD\\Repo\\Zxing\\data\\IndexZxing";
+		 	String indexDir="E:\\PhD\\Repo\\Eclipse\\data\\IndexEclipse";
 			obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
 					.getLuceneBasedScore(BETA);
 	    	obj.trainMapTokenSource=obj.loadTrainMap(obj.trainMapTokenSourceAddress);
@@ -572,7 +584,7 @@ public class BugLocalizationUsingNumbers {
 			for(int queryID:testSet.keySet())
 			{
 				
-				//System.out.println(queryID);
+				
 					HashMap<Integer,Double> resultBugLocator=new HashMap<>();
 					if(obj.buglocatorRESULT.containsKey(queryID)){
 						//System.out.println(++i);
@@ -581,6 +593,9 @@ public class BugLocalizationUsingNumbers {
 					
 				
 					HashMap<Integer, Double> SortedBLresult=MiscUtility.sortByValues(resultBugLocator);
+					
+					System.out.println();
+					MiscUtility.showResult(10,SortedBLresult );
 					
 					HashMap<Integer,Double> sortedResultMyTool
 					//=obj.findBugForEachQueryCosineSimBased(queryID);

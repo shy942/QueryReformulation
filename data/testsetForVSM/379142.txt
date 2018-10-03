@@ -1,2 +1,0 @@
-compatilibility regression editor contributed actions disabled closing editor switching type created attachment simple plugin action editor contributes single action toolbar version build closing editor contributes simple actions toolbar window switches editor type causes actions disabled steps repeat open action editors close editors window switch editor note contributed action disabled regression haven tested
- 

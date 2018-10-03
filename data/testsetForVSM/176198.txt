@@ -1,2 +1,0 @@
-field assist control decoration provide mouse events opening separate feature request alex bernstein nice way detect user clicks mouse decoration area reserved decoration left right edge
- 

@@ -1,2 +1,0 @@
-contributions dialogs customize perspective dialog disabled unavailable tree item labels visible build identifier platform version build disabled unavailable tree item labels tool bar visibility menu visibility tabs customize perspective dialog visible given color scheme uses gray background input components instead common default white reproducible steps reproduce set windows classic theme gray red green blue window background color start open window customize perspective dialog observe disabled unavailable tree items tool bar visibility tab
- 

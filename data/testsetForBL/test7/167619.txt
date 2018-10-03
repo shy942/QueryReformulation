@@ -1,2 +1,0 @@
-undo undo resources available project deletion deleting project contents dialog undo project gone undo project unexpected undoing deletion results project completely weird state java project classpath file adding markus track deleting package explorer affected
- 

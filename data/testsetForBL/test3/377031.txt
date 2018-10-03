@@ -1,2 +1,0 @@
-broken workbench xmi file makes workspace unusable working state workbench xmi file duplicate guess exception shutdown killed instance save progress rate turned having workbench xmi file renders workspace unusable start resource handler construct resource resource set impl resource uri true catch exception resource resource set impl resource uri false work assumes assume root element resource application application app application application resource contents
- 

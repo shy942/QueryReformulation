@@ -1,2 +1,0 @@
-common navigator improve tracing suite tests common navigator utility classes basically stolen moved lower level area looks org harness place use identical versions copy uses finally tracing needs improved information concisely
- 

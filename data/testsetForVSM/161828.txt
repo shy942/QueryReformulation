@@ -1,2 +1,0 @@
-undo second undo folder copy merge restores snapshot project folder file file file file subfolder file file file file folder existing project project folder file file file file file file subfolder file file file file operation correctly replaces content file file file file project folder content file file file file subfolder undo files return original location project content files project reverted content redo undo files returned original location project content files project content project files
- 

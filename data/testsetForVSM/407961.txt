@@ -1,2 +1,0 @@
-comparator log shows special require touches bundles tonight comparator log say org osgi service event package info class present baseline platform bundles org workbench platform bundles org workbench swt platform bundles org workbench renderers swt platform bundles org workbench actually caused bad luck modified bundle present current stray class distribution touch bundles suggest doing changes planned days suggest familiar manual touch
- 

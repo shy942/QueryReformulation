@@ -1,2 +1,0 @@
-face abstract resource manager returns ref count instead created resource attempt abstract resource manager subclass ref count object instead resource bound desired descriptor ref count private class unusable clients addressed address intention method description
- 

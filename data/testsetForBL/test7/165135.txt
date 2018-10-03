@@ -1,2 +1,0 @@
-open resource derived resources open resource dialog broken derived resources option worked properly option turned resources derived folders shown important feature build systems copy resources build folder modified edit sources resources explicitly marked derived displayed dialog reproduce project folders mark folder derived properties file xxx copy xxx open resource enter xxx files displayed
- 

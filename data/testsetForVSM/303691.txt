@@ -1,2 +1,0 @@
-common navigator resource drop adapter assistant won accept drop target viewer input build identifier implementation ignoring passed target object falls viewer input null common drop adapter impl calls drop adapter current target returns null bails immediately makes impossible drag drop files sub folders project root input navigator project tried hacky workarounds way hack common drop adapter final class override current target handle special null case reproducible
- 

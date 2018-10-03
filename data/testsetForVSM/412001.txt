@@ -1,2 +1,0 @@
-key bindings ctrl browser widget dialog wrongly forwarded workbench window broken works probably similar reason open text editor open dialog button link page browser widget press ctrl keystroke wrongly processed workbench window replace dialog opened workbench window dialog reproduced persisted javadoc hover
- 

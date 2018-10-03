@@ -1,2 +1,0 @@
-preferences mistake javadoc preference page build steps reproduce open source code org jface preference preference page javadoc preference page states subclasses implement control framework method supply page main control subclasses implement contents framework method supply page main control information control inherited dialog page implements buttons decoration method calls abstract contents people use preference page controls
- 

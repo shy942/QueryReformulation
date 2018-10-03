@@ -1,2 +1,0 @@
-workbench launcher workench window advisor post window restore invoked non thread build steps reproduce application override post window restore workbench window advisor platform workbench active workbench window information changes related workbench window advisor post window restore invoked method invoked thread invoked non thread application active workbench calling platform workbench active workbench window returns null display current returns null debugger method invoked non thread paul webster wrote open platform changes startup sequence
- 

@@ -1,2 +1,0 @@
-model base workbench content provider class javadoc incomplete class javadoc base workbench content provider plugins org workbench org model base workbench content provider java leaves hanging ends phrase subclassed following
- 

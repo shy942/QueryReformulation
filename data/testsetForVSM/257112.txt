@@ -1,2 +1,0 @@
-data binding split org core databinding smaller plugins clients using observables data binding plugin running constrained environments dependencies converter validator code big decimal available example smaller plug org core databinding observables exported org core databinding backwards compatibility
- 

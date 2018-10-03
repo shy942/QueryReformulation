@@ -1,2 +1,0 @@
-leaked refcount warnings log build startup build following warnings printed log let details needed org workbench page leaked refcount view org jdt junit result view org workbench page leaked refcount view org team sync views synchronize view org workbench page leaked refcount view org views resource navigator org workbench page leaked refcount view org team ccvs repositories view
- 

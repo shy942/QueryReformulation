@@ -1,2 +1,0 @@
-consider adopting support classes drag drop following classes copied used clients generally useful considered promoted workbench level org jdt internal dnd delegating drag adapter org jdt internal dnd local selection transfer org jdt internal dnd transfer drag source listener org jdt internal dnd transfer drop target listener
- 

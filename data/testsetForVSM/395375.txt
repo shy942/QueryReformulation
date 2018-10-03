@@ -1,2 +1,0 @@
-event broker support subscribing event handler multiple topics event broker implementation doesn allow event handler subscribed multiple topics entirely true handler registered event broker lose previous registrations
- 

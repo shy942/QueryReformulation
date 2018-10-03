@@ -1,2 +1,0 @@
-copy composite resource mapping build core resources composite resource mapping class core class copy plugin deleted consistency copy
- 

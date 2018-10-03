@@ -1,2 +1,0 @@
-viewers error debugging log debugging illegal argument exception clicked traceback lines breakpoint hit dialog informing error occurred log details log debuuger opens files stps breakpoints source using eclipe build build build cxia
- 

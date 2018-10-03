@@ -1,2 +1,0 @@
-perspectives current perspective shown open perspective menu tool item build open java perspective window open persective menu includes java perspective item bullet indicating current perspective likewise open perspective item shortcut bar switch resource perspective shown open perspective menu tool item effect showing bullet current perspective current perspective included probably regression removing recently used perspectives list current perspective included
- 

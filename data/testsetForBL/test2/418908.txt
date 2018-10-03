@@ -1,2 +1,0 @@
-editor mgmt editor drop list custom icons editor drop list ctrl shows default editor icon scenario plugin extends org editors defines default icon icon gif code editor control method icon icon gif using set title image method instance plugin open file custom editor open editor drop list ctrl compare icon editor icon drop list expected behaviour places icon gif icon presented current behaviour icon editor correct icon gif drop list default icon presented icon gif occurs
- 

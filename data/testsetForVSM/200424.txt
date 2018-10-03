@@ -1,2 +1,0 @@
-undo undo operation deletes file file build steps reproduce open workspace file type text save close reopen file leave open editor focus file menu file type text file save leave file open tab file press ctrl second file tab disappears notification package explorer file file exists information second file clicking package explorer pane selecting edit redo menu doing quite unnerving file spent lot time creating suddenly vanish redo option appear text editor focus
- 

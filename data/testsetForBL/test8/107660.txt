@@ -1,2 +1,0 @@
-themes busy cursor font editing doesn away busy cursor introduced opening font dialog address slowness unfortunately slow opening font editing dialog meant busy cursor set dialog opened remained closed giving impression app busy slowness addressed presumably possibly apple busy cursor removed
- 

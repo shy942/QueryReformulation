@@ -1,2 +1,0 @@
-open persistent start fresh workspace type java project close java editor select file open text editor close text editor double file opens java editor used remember editor used
- 

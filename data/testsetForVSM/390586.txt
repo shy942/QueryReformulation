@@ -1,2 +1,0 @@
-performance sub action bars disposed generic history view used dispose toolbars page container page rec changed following commit http git org platform platform team git commit bundles org team src org team internal history generic history view java breaks specified described history page cause performance degradation lead errors https bugs org bugs cgi javadoc history page page history view link sub action bars disposed link history page dispose gets called interested clients supply code dispose code method subclass finally page shown sub action bars activated
- 

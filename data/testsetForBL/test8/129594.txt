@@ -1,2 +1,0 @@
-commands read context legacy extension points context identifier needs read legacy action based extension points
- 

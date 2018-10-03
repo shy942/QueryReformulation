@@ -1,2 +1,0 @@
-perspectives assertion failed exception customize perspective dialog looks similar issue reported fixed details corresponding https bugs org bugs cgi issue resurfaced newer version looks fix provided missing org internal dialogs customize perspective dialog java code current code private void set selection viewer viewer final object selected viewer set selection structured selection selected true code fix private void set selection viewer viewer final object selected selected null viewer set selection structured selection selected true
- 

@@ -1,2 +1,0 @@
-properties view toolbar icons missing created attachment screenshot result https git org properties view toolbar icons anymore fix trivial patch
- 

@@ -1,2 +1,0 @@
-duplicate mention plugin source feature exclusion list features org rcp pom xml macosx plugins specified twice exclusion list source feature generation step assume intention specify macosx macosx plugins instead specifying macosx plugin twice
- 

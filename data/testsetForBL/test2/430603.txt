@@ -1,2 +1,0 @@
-cleanup view label provider replace non javadoc override use enhanced loop remove generics warning messages
- 

@@ -1,2 +1,0 @@
-field assist light bulb image looks ugly white background org workbench trying patch noticed light bulb looks fat ugly assume copied platform text image image uses color transparency decoration composite color shine adapt composite background composite set background mode
- 

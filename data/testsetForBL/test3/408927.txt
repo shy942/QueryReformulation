@@ -1,2 +1,0 @@
-debug view global toolbar vanishes restart global debug toolbar debug view shown start time global debug toolbar vanishes restart reenable drop menu start string drop menu incorrect debug toobar version build release appeared later installed plugin devs told toolbar provided platform
- 

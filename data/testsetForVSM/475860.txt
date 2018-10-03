@@ -1,2 +1,0 @@
-mark functional interfaces face functional interface
- 

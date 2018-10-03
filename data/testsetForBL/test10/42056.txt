@@ -1,2 +1,0 @@
-dialogs path variable dialog lable alignment location labels aligned corresponding text fields
- 

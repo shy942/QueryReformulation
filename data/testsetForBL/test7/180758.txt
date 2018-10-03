@@ -1,2 +1,0 @@
-deleting project contents asks read files noticed project read files prompt files select contents files actually deleted error dialog presented user files actually deleted don remember seeing earlier
- 

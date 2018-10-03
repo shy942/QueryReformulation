@@ -1,2 +1,0 @@
-message shown perspectives closed specific build window close perspectives content area shows perspectives closed select perspective window open perspective menu message comes generic workbench making assumptions menu structure dubious benefit close perspectives consider removing command replacing close perspectives current close perspective disabled perspective
- 

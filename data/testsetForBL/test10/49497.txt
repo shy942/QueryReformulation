@@ -1,2 +1,0 @@
-face dependency org core runtime enlarges standalone face applications org jface refers progress monitor places standalone face program depend org core runtime runtime jar turn depends org osgi osgi jar dependency core runtime makes standalone face programs larger
- 

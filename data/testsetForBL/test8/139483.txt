@@ -1,2 +1,0 @@
-idle helper job idle helper job periodically collecting garbage job showing progress view
- 

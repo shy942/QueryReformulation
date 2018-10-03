@@ -1,2 +1,0 @@
-wizards referenced projects box project wizard uses sort referenced projects box project wizard sorts project names binary order example comes instead use default collator current locale project references property page resource navigator
- 

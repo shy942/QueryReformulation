@@ -1,2 +1,0 @@
-global actions provide aware actions org ide rename resource action use rename refactoring instead resources operation
- 

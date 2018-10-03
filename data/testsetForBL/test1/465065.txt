@@ -1,2 +1,0 @@
-tool bar properly styled dark theme previous fix style dark removed tool bar styling looks strange going upload patch shortly
- 

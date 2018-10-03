@@ -1,2 +1,0 @@
-data binding deprecate outdated beans observables pojo observables advice prefer usage bean properties instead beans observables suggest deprecate class methods
- 

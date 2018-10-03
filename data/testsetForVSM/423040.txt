@@ -1,2 +1,0 @@
-active selection aggregator set null parts closed
- 

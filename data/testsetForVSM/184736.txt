@@ -1,2 +1,0 @@
-commands open basic editor giving failure based handler clash failing paul aware says code defect
- 

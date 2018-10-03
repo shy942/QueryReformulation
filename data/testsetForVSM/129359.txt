@@ -1,2 +1,0 @@
-metadata plugins externalize strings plugin cleanup plugin cleanup externalize strings plugin plugins clean organize manifests adds removes require plugins adds extra packages internal true adds plugin icons source externalize strings returns plugins non nls setting set error source clean use correct declaring class static members fields use blocks statements remove unused imports remove unused private members remove unnecessary casts remove unnecessary tags
- 

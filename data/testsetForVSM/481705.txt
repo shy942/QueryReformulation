@@ -1,2 +1,0 @@
-avoid pattern compile constant patterns places relatively expensive string manipulation replaced efficient equivalents string matches string replace replace string string argument constant efficiently expressed compiling pattern constant reusing case replace replace arguments single character literals replace char char used attach gerrit review changes
- 

@@ -1,2 +1,0 @@
-key bindings active key configuration extension point doesn work workbench currently sets active key configuration default extension point basically states defined wins doesn play applications define configuration ensure set default startup point having extension point place workbench contributes non api workaround set default key configuration workbench advisor startup use following mutable command manager platform workbench command support command manager set active key configuration org jabber commands key configuration
- 

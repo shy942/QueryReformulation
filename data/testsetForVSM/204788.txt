@@ -1,2 +1,0 @@
-contributions second context menu created menu manager build steps reproduce menu manager menu items set menu context menu control observe right clicking produces menu dispose menu repeat step alternatively install different control menu doesn appear information using linux debugger tells menu created handle called java code appears screen maybe native code use different menu manager second menu works
- 

@@ -1,2 +1,0 @@
-error handling display multiple messages status separate lines currently status passed error dialog contains miltiple msg fact ignored msg added org swt widgets list single results dialog rendered https issuetracker springsource com secure attachment sts png fact https issuetracker springsource com secure attachment sts multiline png ignore size dialogs resized manually
- 

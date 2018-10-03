@@ -1,2 +1,0 @@
-editor mgmt workbench page open editors editor input set keyboard focus org ide editor mgmt workbench page open editors editor input set keyboard focus steps reproduce dev workspace modify org internal ide handlers open resource handler use start target workspace target workspace project file close editor target workspace use ctrl shift open opened editor active keyboard focus package explorer
- 

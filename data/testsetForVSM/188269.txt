@@ -1,2 +1,0 @@
-dialogs conflicting mnemonics caused abstract encoding field editor initially created clone general spelling conflict restore default default encoding caused using encoding field editor hard codes string using mnemonic string provided protected method default button text method encoding field editor marked subclassed resolve conflict
- 

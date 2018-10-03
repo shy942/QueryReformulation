@@ -1,2 +1,0 @@
-graphics switch org plug use png files instead gifs open work use images provided org images
- 

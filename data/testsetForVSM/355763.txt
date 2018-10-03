@@ -1,2 +1,0 @@
-provide tag prohibits stack collapse currently cleanup addon removes stack contents anymore views additional informations makes sense application fakes perspective shared editor area making sense collapse stack added allow view stack dureable fixed view stack restored restart things support allow stacks collapse gone compat layer support durable
- 

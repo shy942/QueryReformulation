@@ -1,2 +1,0 @@
-installation details dialog remembering size noticed investigating installation details remembering size code intends overrides dialog bounds settings shell size set configure shell causes remembered bounds ignored resize event received fix provide default size dialog settings stored
- 

@@ -1,2 +1,0 @@
-workbench parts request editor purpose set methods editor workbench ensure clients correctly property changes supposed editor set input property property expected clients editors failing events causes sorts unpleasant effects changing behavior subtly breaking property fired editor internally consistent state requests following java doc editor set input correctly current behavior set input clients accomodate behavior replacement set input notify behaves set input originally intended deprecate editor set input
- 

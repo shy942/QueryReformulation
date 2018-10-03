@@ -1,2 +1,0 @@
-perspectives export import perspectives anymore starting workspace looses custom saved perspectives plus changes saved existing perspectives
- 

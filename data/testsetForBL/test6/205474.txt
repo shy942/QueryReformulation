@@ -1,2 +1,0 @@
-themes default font loaded specify different theme created attachment patch fix based build steps reproduce application enables preference pages theme extension set theme current theme app open preference pages note banner area preference page proper font windows sans serif bold default defined face resources tahoma bold theme override font font default definition face resources attaching patch
- 

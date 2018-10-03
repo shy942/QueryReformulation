@@ -1,2 +1,0 @@
-workbench page view stack eager activate views method eager activate views method states returns view parts stacked given actually causes parts created stack calling view true performance issue unnecessary creation current behavior mislead callers believing method returns set tabs stack method tab associated view
- 

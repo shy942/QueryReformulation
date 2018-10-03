@@ -1,2 +1,0 @@
-key bindings font reset leaks font
- 

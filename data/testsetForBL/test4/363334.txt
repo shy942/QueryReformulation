@@ -1,2 +1,0 @@
-bot launcher doesn work created attachment stacktrace using bot launcher command stopped working moving indigo juno following error java lang linkage error loader constraint violation loader instance org osgi internal baseadaptor default class loader previously initiated loading different type org testing testable object version build bot version
- 

@@ -1,2 +1,0 @@
-editor mgmt editor registry default editor fails editor exists implement editor registry default editor guesses content type tries editor based content type editor registered guessed content type null returned content types registered editors causes problems https bugs org bugs cgi correct regard documented behavior method implementation considered possible content type returned editor descriptor content type registered editor
- 

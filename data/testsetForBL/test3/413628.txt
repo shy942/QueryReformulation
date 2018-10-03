@@ -1,2 +1,0 @@
-fix compiler warnings org jface fieldassist caused moving face java fix compiler warnings package org jface fieldassist caused moving java
- 

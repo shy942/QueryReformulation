@@ -1,2 +1,0 @@
-editor mgmt split editor allow nesting sash stack stack allowing sash inside stack allow implement split editors allowing stack inside stack way implement multi editors reusing existing ones
- 

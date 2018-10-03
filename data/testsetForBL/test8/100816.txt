@@ -1,2 +1,0 @@
-editor mgmt default attribute ignored content type bindings following editor extension plug editor editor icon icons obj buildfile gif class org internal editor editor contributor class org internal editor editor action contributor org internal editor editor content type binding content type org jdt core java source editor start open java file opens file editor instead using java editor marked default editor java file association page observe java editor marked default editor
- 

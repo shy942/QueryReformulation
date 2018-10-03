@@ -1,2 +1,0 @@
-features tab installation details dialog display sort direction created attachment features sort column indicators patch build installation details plug ins tab column headers times sorting indicator pointing similar problems view features tab column headers entries sorted properly sort arrow drawn
- 

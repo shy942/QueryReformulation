@@ -1,2 +1,0 @@
-keyboard shortcut dialog closes workbench option save steps reproduce issue open java editor press view inplace outline press surpisingly closed keyboard shortcut java editor triggers jump modification workbench closed press inplace outline view open class org internal workbench exit handler internally called really intended behavior best regards tobias melcher
- 

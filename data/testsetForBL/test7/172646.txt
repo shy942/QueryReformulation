@@ -1,2 +1,0 @@
-viewers activate editors using specialized event used editor activation provide feature
- 

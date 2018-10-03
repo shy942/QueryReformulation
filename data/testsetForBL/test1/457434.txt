@@ -1,2 +1,0 @@
-use service view dialog https bugs org bugs cgi
- 

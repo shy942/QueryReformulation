@@ -1,2 +1,0 @@
-actions enhance menu manager subclassable custom menu widget custom menu widget associated custom menu item meet requirements project working needed modifications base menu manager class order subclass menu manager work custom menu widget attach patch file changes changes revolve assuming widget menu widget menu widget subclassed
- 

@@ -1,2 +1,0 @@
-navigator default selecting folders shouldn expand navigator view folders multiple selected items double selected folders selected folders expanded presume item tree selection item gets expanded double clicked item contained default selection item
- 

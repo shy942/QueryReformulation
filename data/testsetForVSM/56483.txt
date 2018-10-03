@@ -1,2 +1,0 @@
-themes perspective bar manager accesses face resources font registry directly oppsed current theme workbench color font retrieval current theme additionally tries obtain font declared registry font needed definition added org plugin xml value reused view message font intended small font originally
- 

@@ -1,2 +1,0 @@
-contributions support icon menu support icon attribute menu tag extension point org popup menus way menu groups support icons
- 

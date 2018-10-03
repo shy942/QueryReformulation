@@ -1,2 +1,0 @@
-editor mgmt prompt save dirty editors open outside active perspective scenario open file editor modify editor editor shared area stack switch perspective editor present visible stacks exit close window multiple windows open expected behaviour prompts save dirty editor current behaviour exits closes window prompt changes file lost occurs newer
- 

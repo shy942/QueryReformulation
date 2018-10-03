@@ -1,2 +1,0 @@
-detached view redundant activation changes switching perspective detached views using code april probably reproducable using recent build enable following debug logging options org debug listeners listeners workbench page listener perspectives containing detached views switch notice activate event fired detached view perspective perspective switch performance activation quite slow
- 

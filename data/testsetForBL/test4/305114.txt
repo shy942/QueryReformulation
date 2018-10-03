@@ -1,2 +1,0 @@
-common navigator resource selection util deprecated public replacement public class org views navigator resource selection util deprecated hint use common navigator framework classes instead counterpart internal
- 

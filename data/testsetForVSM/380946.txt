@@ -1,2 +1,0 @@
-commands compatibility context registered legacy handlers basically command service context command delegates command manager instance looks context registered provided command handler set command handlers instance handlers legacy handler service doesn actually associate record context ids handlers don context
- 

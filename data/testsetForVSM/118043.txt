@@ -1,2 +1,0 @@
-commands parameters element command parameter legal child element command issues following warning extension valid according schema doc warning element command parameter legal child element command reporing platform command xsd correct
- 

@@ -1,2 +1,0 @@
-workbench status manager flexible applications workbench needs opened allow customization status manager following requirements hardwired controls progress bar supply implementation finer control positioning status contributions hardwired group markers satisfy existing status manager easily subclassed references instance package private status control applications ability define implementation status manager consumed workbench window
- 

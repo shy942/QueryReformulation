@@ -1,2 +1,0 @@
-viewers column viewer tool tip support shows blank tooltips text image provided build steps reproduce tree viewer cell label provider use model long elements cell label provider override use native tool tip return false cell label provider element model return null tooltip text tooltip image lease element return non null tooltip text tooltip image mouse hovers second element tooltip correctly shown mouse hovers element small blank tooltip shown tool tip column viewer tool tip support return false tooltip text image null
- 

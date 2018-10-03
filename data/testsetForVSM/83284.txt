@@ -1,2 +1,0 @@
-global actions missing build button start workspace close welcome view uncheck window preferences general build automatically observe build button missing toolbar used
- 

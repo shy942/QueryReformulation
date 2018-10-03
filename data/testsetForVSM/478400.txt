@@ -1,2 +1,0 @@
-constraints fragments allow validation currently model define constraints manditory values purposes nice define constraints ecore checking fragments merged providing validation tools adding constraints effects trigger validation
- 

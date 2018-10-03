@@ -1,2 +1,0 @@
-error handling status handling fatal error appears twice reported job reports fatal error memory exception reported twice window prompting user close workbench appears investigated reported directly progress manager internal listener method second report picked log status manager status manager log listener
- 

@@ -1,2 +1,0 @@
-viewers tree viewer row use iteration instead recursion lists implementation issues patch released patch wanted place methods row row complicated particular methods use recursion iteration work visible item lowest leaf exact implementation viewer cell implements equals implement hash code way consistent equals implementation objects equals return hash code important right practice implement equals hash code recommend using source generate hash code equals select fields rewrite generated methods use item instead row
- 

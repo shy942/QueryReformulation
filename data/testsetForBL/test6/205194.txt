@@ -1,2 +1,0 @@
-error handling status handling status adapter needs action explanation constants created attachment patch adding described elements build steps reproduce current direction status handling additional predefined properties required status adapter suggested action explanation time stamp added default status adapter created information
- 

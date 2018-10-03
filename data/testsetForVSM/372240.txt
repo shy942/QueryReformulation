@@ -1,2 +1,0 @@
-compatibility ctrl closes non active editor prepare program files deep breakpoint second file close opened editors open file main method start debugging session debug view stack frame file ctrl editor second file closed instead currently active editor file
- 

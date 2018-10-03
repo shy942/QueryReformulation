@@ -1,2 +1,0 @@
-common navigator working set filter action group updated changes user agent mozilla windows windows gecko firefox build identifier extending common navigator creates working sets start workbench hit issue select working set dialog selects created working set debugged working set filter action group set working set org internal navigator resources actions working set action provider initialized working set based value current working set set workbench xml opening working set action provider set working set working set filter action group work reproducible
- 

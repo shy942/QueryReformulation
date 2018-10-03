@@ -1,2 +1,0 @@
-dialogs open resource dialog honor window working sets somewhat defeats purpose having window working set responsible opening files honor
- 

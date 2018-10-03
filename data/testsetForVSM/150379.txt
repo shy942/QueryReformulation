@@ -1,2 +1,0 @@
-warning multi page editor page int editor additional controls provide selections outside multpage editor parts pages replace multi page selection provider implementation works logs warning message changing pages multi page editor page int simple fix remove warning works
- 

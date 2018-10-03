@@ -1,2 +1,0 @@
-undo redo marker actions updated file gets adding changing removing marker undo redo actions updated undo task redo task executing undo redo feedback log entry undo redo menu text remains enabled
- 

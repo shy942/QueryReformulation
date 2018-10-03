@@ -1,2 +1,0 @@
-final kepler final steps core ready declare kepler remove internal manifest ensure bundle version incremented minor ensure packages package html file packages documentation ensure packages ready noreference described wiki missing javadoc leaking internals
- 

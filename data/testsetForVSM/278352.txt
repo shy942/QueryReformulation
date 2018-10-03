@@ -1,2 +1,0 @@
-quick access quick access right numeric pad enter working build steps reproduce open quick access using ctrl type active selection using right numeric pad enter happens normal enter activates selection information
- 

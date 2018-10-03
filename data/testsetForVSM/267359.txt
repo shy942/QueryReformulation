@@ -1,2 +1,0 @@
-commands platform hangs shutdown action handler dispose method throws exception steps reproduce write simple plugin button toolbar action handler associated action handler dispose method throw runtime exception null pointer exception start plugin quit expected behavior quits process terminated actual behavior process hangs indefinitely killed proper handling exceptions dispose shutdown sequence aborts destroying resources behavior clearly documented dispose method javadoc seeking drove crazy
- 

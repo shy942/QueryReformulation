@@ -1,2 +1,0 @@
-perspectives workbench window perspective bar showing build head browser example browser advisor window controls method deleted set perspective bar false default workbench window default contents tries mouse listener perspective bar control fixed workbench window perspective shortcut perspective bar showing initially perspective bar exists control properly handled cases
- 

@@ -1,2 +1,0 @@
-undo workspace undo util attempt open project build simple project shutdown project directory disk restart project navigator view project deleted deletion attempt reopen project project opened project description missing deletion attempt reopen closed project
- 

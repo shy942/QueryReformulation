@@ -1,2 +1,0 @@
-wizards empy source folder package class wizard window preferences general keys marked umbound command binding wizard class key java class interface source folder package field shortcut
- 

@@ -1,2 +1,0 @@
-action set accelerator int deprecated method instead use assign accelerator keycode action way assign accelerator keycode regards eric
- 

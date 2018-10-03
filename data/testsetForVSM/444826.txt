@@ -1,2 +1,0 @@
-face list editor select item remove list editor select item remove pressed currently doesn set selection user manually select item remove
- 

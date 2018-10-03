@@ -1,2 +1,0 @@
-workbench parts regression close editor sensitive actions enabled editor opened activated build single mode general prefs page close editors navigator select file editor opens file close disabled suspect action receiving brought event close editor action active editor actions expect
- 

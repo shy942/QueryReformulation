@@ -1,2 +1,0 @@
-graphics use png files org ide org ide
- 

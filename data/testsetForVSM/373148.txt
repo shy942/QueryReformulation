@@ -1,2 +1,0 @@
-compatibility executions fail exceptions thrown moment handler proxy swallows exceptions means client using handler execution succeeded actually hasn minimally rethrow execution exception handler execute execution event method implementation throws
- 

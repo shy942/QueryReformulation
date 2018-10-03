@@ -1,2 +1,0 @@
-compatibility workbench window control contributions dispose method called workbench window created closed instantiated workbench window control contribution instances getting disposed cause leak
- 

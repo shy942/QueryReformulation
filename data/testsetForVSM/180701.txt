@@ -1,2 +1,0 @@
-face popup dialog creating image descriptors time opened caching image descriptors popup dialog recreating time likely issue generate garbage images looked using bundles overridden locales currently symmetric issue looked way face resources fixed
- 

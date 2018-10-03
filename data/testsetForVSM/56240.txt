@@ -1,2 +1,0 @@
-emacs key binding work java editor build linux gtk zip keys work ctrl ctrl cut paste work plain text editor
- 

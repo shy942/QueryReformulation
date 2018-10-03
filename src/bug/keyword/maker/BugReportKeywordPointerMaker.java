@@ -17,12 +17,14 @@ public class BugReportKeywordPointerMaker {
 	HashMap<String, Integer> keywordIDMap;
 	HashMap<Integer, String> bugIDKeywordMap;
     ArrayList<String> bugIDsList;
-	public BugReportKeywordPointerMaker(String bugReportDir, String bugIDsAddress) {
+    String base;
+	public BugReportKeywordPointerMaker(String bugReportDir, String bugIDsAddress, String base) {
 		this.bugReportDir = bugReportDir;
 		this.bugIDsAddress=bugIDsAddress;
 		this.bugIDsAddress=ContentLoader.readContentSimple(this.bugIDsAddress);
 		this.keywordIDMap = new HashMap<>();
 		this.bugIDKeywordMap = new HashMap<>();
+		this.base=base;
 	}
 
 	protected HashMap<String, Integer> developKeywordPointer() {
@@ -57,7 +59,7 @@ public class BugReportKeywordPointerMaker {
 		for (int key = 1; key <= size; key++) {
 			tempList.add(key + ": " + tempFileIDMap.get(key));
 		}
-		String outputFile = "E:PhD\\Repo\\Zxing\\data\\ID-Keyword.txt";
+		String outputFile = this.base+"\\data\\ID-Keyword.txt";
 		ContentWriter.writeContent(outputFile, tempList);
 		System.out.println("Done!");
 	}
@@ -85,14 +87,15 @@ public class BugReportKeywordPointerMaker {
 			}
 			}
 		}
-		String outputFile = "E:PhD\\Repo\\Zxing\\data\\Bug-ID-Keyword-ID-Mapping.txt";
+		String outputFile = this.base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt";
 		ContentWriter.writeContent(outputFile, bugSrcList);
 		System.out.println("Done!");  
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String bugReportDir = "E:PhD\\Repo\\Zxing\\BugData\\";  
-		new BugReportKeywordPointerMaker(bugReportDir,"E:PhD\\Repo\\Zxing\\data\\allBug.txt").developBugKeywordPointer();
+		String base="E:PhD\\Repo\\Eclipse";
+		String bugReportDir = base+"\\BugData\\";  
+		new BugReportKeywordPointerMaker(bugReportDir,base+"\\data\\allBug.txt",base).developBugKeywordPointer();
 	}
 }

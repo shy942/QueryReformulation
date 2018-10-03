@@ -1,2 +1,0 @@
-regression layout moved progress indicator left progress indicator moved right stream left obscuring status
- 

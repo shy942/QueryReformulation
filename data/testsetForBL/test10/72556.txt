@@ -1,2 +1,0 @@
-key bindings interactions mnemonics work workbench parts active mnemonics elements workbench function conflict active mnemonics shell menubar lots examples products reproduce tiling plugin xml editors showing extensions page editors appears editor work correctly
- 

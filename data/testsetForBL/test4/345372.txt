@@ -1,2 +1,0 @@
-key bindings key used key bindings command build identifier open preference pages keys page impossible specify keybinding special keys backspace tab specified popup menu reproducible
- 

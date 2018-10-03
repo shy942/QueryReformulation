@@ -1,2 +1,0 @@
-dialogs javadoc icon message dialog message area assumes parent composite using grid layout icon message dialog message area assigns grid data objects layout data children parent composite mandates parent layout grid layout unspecified javadoc affects callers icon message dialog message area example error dialog dialog area message dialog dialog area progress dialog dialog area
- 

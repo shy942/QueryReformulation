@@ -1,2 +1,0 @@
-org menus appears broken created attachment example plugin demonstrates plugin uses org menus extension point contrinute additional actions debug view places allows context menu java stack frame instances works work attached small standalone example demonstrates
- 

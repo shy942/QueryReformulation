@@ -1,2 +1,0 @@
-virtual tree viewer content outline page org views contentoutline content outline page private field tree viewer tree viewer initialized control method use virtual tree viewer subclassing requires additonal flag constructor consequence double code implementation possible solutions provide protected set tree viewer method extract initialization flags protected method protected int flags return
- 

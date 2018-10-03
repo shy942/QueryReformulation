@@ -1,2 +1,0 @@
-drag drop lot objects created looking implementers following drag listener drag control current control following classes dragdrop target time drag called unnecessary possible update information time reduce garbage created drag perspective switcher implementation following classes fast view bar sash container stack perspective helper trim drop target lazily initialized case uses created
- 

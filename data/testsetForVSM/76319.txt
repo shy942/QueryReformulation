@@ -1,2 +1,0 @@
-perspectives poor error reporting perspective build open perspective missing example result workbench advisor initial perspective corresponding perspective extension cryptic error dialog stating error recreating perspective details perspective plus recreating perspective creating time
- 

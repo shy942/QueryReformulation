@@ -1,2 +1,0 @@
-colors fonts preference page reset broken colors fonts preference page reset broken open colors fonts preference page restore defaults reopen preferences select java editor text font edit choose different font reset edit default choose different font bugs tree item label says overrides default text font shouldn override edit default button disabled java editor text font decoupled parent font parent child font doesn tree confusingly preview shows default font
- 

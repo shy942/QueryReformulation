@@ -1,2 +1,0 @@
-services support service locator creation support allow parented service locators created declarative services supported allow service locator used reuable component using dependency injection allow instantiator supply services
- 

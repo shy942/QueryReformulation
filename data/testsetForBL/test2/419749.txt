@@ -1,2 +1,0 @@
-workbench workbench remove deprecated package admin inside org workbench bundle calls deprecated org osgi service packageadmin package admin newly implemented bundles shouldn use deprecated team idea provide gerrit patch
- 

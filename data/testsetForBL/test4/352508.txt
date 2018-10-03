@@ -1,2 +1,0 @@
-compatibility closing active perspective set window active perspective close current perspective perspective gets activated perspective list perspective switcher instead using perspective activation order pick perspective activate
- 

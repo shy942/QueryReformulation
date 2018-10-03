@@ -1,2 +1,0 @@
-progress workbench site progress service keeps showing job canceled started workspace project open java file choose context menu team annotation confirm using quick diff provider end history view shows cursor reproduce close history view closed perspectives choose revisions hide revision information ruler context menu
- 

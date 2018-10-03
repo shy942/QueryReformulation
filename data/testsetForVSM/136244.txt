@@ -1,2 +1,0 @@
-dialogs popup dialog overriding default colors simpler popup dialog protected methods allow dictate controls dialog foreground background color set simple override colors method apply colors private order use apply foreground color override contents ensure subclasses colors set default colors instead method apply colors protected protected methods specify foreground background color assuming info colors
- 

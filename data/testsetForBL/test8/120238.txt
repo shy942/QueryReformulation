@@ -1,2 +1,0 @@
-dialogs required field indicators used plan item calls support required field indicators text fields completion proposal support support implemented question using required field indicators org jface fieldassist provides decorated field allowing applications specify image appears positions field optional hover used condition represented decoration use required field indicators question style colored fields decorated fields
- 

@@ -1,2 +1,0 @@
-commands select handler vulnerable method execute executes display focus control dies null focus control
- 

@@ -1,2 +1,0 @@
-compatibility handler selection function compute uses time switching views handler selection function compute org internal handlers legacy handler service takes time opening closing views calls method cycle open view close view
- 

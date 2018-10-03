@@ -1,2 +1,0 @@
-dialogs title description layed properly title image null created attachment image showing happens image returns null build steps reproduce wizard page image returns null wizard page description aren shown title page incorrectly displayed information dialog page image states returns dialog page image null pretty used work properly pre
- 

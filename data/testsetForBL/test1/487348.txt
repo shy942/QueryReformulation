@@ -1,2 +1,0 @@
-update stack tab closable state changes currently closable state modified close button tab changed accordingly provide eventhandler stack renderer react events events placeholder event close button
- 

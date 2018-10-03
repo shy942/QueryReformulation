@@ -1,2 +1,0 @@
-field assist content proposal adapter needs proposal popup focus method implement method content proposal adapter proposal popup focus org jface text contentassist content assistant proposal popup focus method return boolean content assistant proposal popup focus
- 

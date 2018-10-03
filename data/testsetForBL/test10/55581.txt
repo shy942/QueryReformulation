@@ -1,2 +1,0 @@
-key bindings pressing ctrl closes editor list pressing ctrl opens list open editors easily switching build list appearing pressing ctrl closes used traverse list editors
- 

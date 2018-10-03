@@ -1,2 +1,0 @@
-import export project import wizard unusably slow wanted workspace import projects development workspace contains plug ins set root importer point plug ins letting wizard scan disk minutes gave manually possible source root directory expected contains metadata directory tons data case fully scanned
- 

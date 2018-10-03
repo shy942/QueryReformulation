@@ -1,2 +1,0 @@
-compatibility workbench windows don default title workbench windows normally default title set product workbench window configure shell shell code appears lost windows blank title unless set workbench window advisor steps repeat plug project select mail example mail example app window blank title
- 

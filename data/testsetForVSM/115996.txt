@@ -1,2 +1,0 @@
-commands document available services workbench javadoc workbench enumerate services available adapter hints clients currently javadoc deprecated deprecated use code adapter context service class code instead org contexts context service workbench context support context support explicit clients rely workbench adapter context service class return non null service instance
- 

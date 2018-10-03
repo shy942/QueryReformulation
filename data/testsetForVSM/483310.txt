@@ -1,2 +1,0 @@
-remove unnecessary manual activation event admin injection event org tests
- 

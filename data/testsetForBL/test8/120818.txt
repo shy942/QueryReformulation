@@ -1,2 +1,0 @@
-workbench manifest cleanup plug ins extensions extension points plugin xml files unnecessary removed plug ins org core commands org jface org jface text
- 

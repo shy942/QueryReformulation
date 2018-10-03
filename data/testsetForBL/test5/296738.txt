@@ -1,2 +1,0 @@
-contributions missing label toolbar menu contribution user agent mozilla compatible windows build identifier org menus extension point way specify label toolbar open customize perspective dialog toolbar contains label unless action set reproducible steps reproduce plugin use hello world command template
- 

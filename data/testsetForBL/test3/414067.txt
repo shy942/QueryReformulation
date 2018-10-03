@@ -1,2 +1,0 @@
-viewers generics custom hashtable org jface viewers custom hashtable class face viewer support java generics
- 

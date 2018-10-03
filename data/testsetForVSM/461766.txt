@@ -1,2 +1,0 @@
-cleanup adapter class org workbench doing cleanup ide observed org workbench needs love warnings definitely object adapter class adapter class org internal util util org workbench classes cleanup unnecessary cast warnings coming generified version platform adapter manager adapter
- 

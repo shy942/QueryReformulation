@@ -1,2 +1,0 @@
-commands slow close dialogs context authority source changed triggering multiple menu updates noticed slow closing dialogs taking second took kit profile shows context authority source changed int leading calls menu manager update similar issue reported fixed aspect remains
- 

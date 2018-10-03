@@ -1,2 +1,0 @@
-mark org jface dialogs image message area deletion javadoc says deprecated class necessary
- 

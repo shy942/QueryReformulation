@@ -1,2 +1,0 @@
-workbench don prompt save close editor input opened open editor dirty window editor close duplicate dirty editor nicely told resource opened clicking save resource dialog lose changes option general editors preference page prompt save close opened generic save dialog preference broken
- 

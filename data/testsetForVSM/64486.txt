@@ -1,2 +1,0 @@
-global actions services actions taking shell changed workbench site build reusable actions provided workbench shell constructor forces action bound single shell problematic detached views multiple different shells lifetime view deprecated constructors favour takes workbench site ensure workbench site shell returns appropriate shell view detached details
- 

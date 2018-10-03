@@ -1,2 +1,0 @@
-support color constants gradients support color constants added specifying colors translated color background color currently using constant possible gradient definitions patch upcoming
- 

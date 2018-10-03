@@ -1,2 +1,0 @@
-avoid calling dispose method view registry remove method
- 

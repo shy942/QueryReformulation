@@ -1,2 +1,0 @@
-contributions use model service instead menu factory impl cool bar trim manager
- 

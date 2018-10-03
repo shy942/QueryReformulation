@@ -1,2 +1,0 @@
-key bindings error messages log build launch existing workspace log fills entries error defining key binding key sequence effect org jdt debug org jdt debug commands tion breakpoint double fun launch runtime workbench error messages appear log console alarmed
- 

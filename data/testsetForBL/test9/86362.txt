@@ -1,2 +1,0 @@
-properties view access adapter factory plugin loaded added propertysheet support application working refactored support separate plugin suddenly property sheet stopped working error messages log view manage property sheet page view closer inspection debugging lead conclude lies overzealously lazy loading adapter factory avoids loading plugin bundle cost retrieving adapters lazy loading adapter factory proxy force plugin loaded behavior intentional preferably declarative way forcing plugin loaded
- 

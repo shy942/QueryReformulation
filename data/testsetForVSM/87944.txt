@@ -1,2 +1,0 @@
-workbench manifest platform filter carbon fragment carbon fragment manifest manifest version bundle carbon fragment fragment bundle symbolic org carbon singleton true bundle version bundle class path carbon jar bundle vendor plugin provider fragment host org bundle version bundle localization plugin export package org carbon auto start true platform filter osgi carbon
- 

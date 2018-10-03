@@ -1,2 +1,0 @@
-bidi display file path including bidi data workspace location preferences created attachment path bidi data build steps reproduce folder named path folder named folder path folder named folder folder named folder double exe file launch browse button select folder created workspace button double exe file window preferences workspace item general list tick box workspace path window title apply button title bar window description display structured text file path including bidi data
- 

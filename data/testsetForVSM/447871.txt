@@ -1,2 +1,0 @@
-reponsiveness monitoring preference page easier understand average user user perspective names telling long event confusing helping suggest rename long event warning threshold warning threshold long event error threshold error threshold deadlock reporting threshold deadlock threshold
- 

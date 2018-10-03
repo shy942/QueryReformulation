@@ -1,2 +1,0 @@
-face tool tip fails accept mouse event ganymede org jface window tool tip created hyperlink content clicking hyperlink works ganymede build defect build defect reproduce build launched self hosted org swt org jface reproduce note org swt exhibit steps reproduce launch attached application installed open view view tool tip mouse fails view hover tree tooltip display target mouse hyperlink tooltip mouse observe running dialog pops indicating hyperlink worked dialog pop indicating hyperlink receive expected mouse events
- 

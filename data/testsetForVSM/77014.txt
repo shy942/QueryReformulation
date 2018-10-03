@@ -1,2 +1,0 @@
-commands request provide close view command binding key sequence close editor view key sequence close non editor view close active view editor view non editor view
- 

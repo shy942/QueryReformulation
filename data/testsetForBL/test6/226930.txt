@@ -1,2 +1,0 @@
-debug tests nightly builds debug tests download use nightly build view mangement tests hanging
- 

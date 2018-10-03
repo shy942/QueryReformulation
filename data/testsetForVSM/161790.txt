@@ -1,2 +1,0 @@
-undo copy resources operation invalidate source resources gone copy resources operation considers itself valid undo valid resource descriptions resources overwritten copy resources target exist resources source exist lose data undoing copy copies restore overwritten copy invalid source resources
- 

@@ -1,2 +1,0 @@
-common navigator work setup causes refreshing resources ignore continue tests setup
- 

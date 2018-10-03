@@ -1,2 +1,0 @@
-data binding deprecate binding methods observables far properties superseed factory methods example observables observables possible deprecate factories people start right approach best regards lars
- 

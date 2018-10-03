@@ -1,2 +1,0 @@
-type information service locator service backwards compatible type information service locator service
- 

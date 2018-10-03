@@ -1,2 +1,0 @@
-modernize examples propertysheet readmetool initial goal away nested jar update
- 

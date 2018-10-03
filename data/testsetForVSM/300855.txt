@@ -1,2 +1,0 @@
-allow path variables location path variable location edit variable edit variable dialog opens error saying provide file folder path variable value guess variable place
- 

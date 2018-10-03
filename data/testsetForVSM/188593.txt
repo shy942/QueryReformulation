@@ -1,2 +1,0 @@
-key bindings conflicts emacs keybindings scheme locale command start switch keybindings scheme emacs work keys pref page sort binding conflicts command content assist entries binding alt conflicting bindings commands hit
- 

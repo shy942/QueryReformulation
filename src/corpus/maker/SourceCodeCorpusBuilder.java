@@ -19,8 +19,8 @@ public class SourceCodeCorpusBuilder {
 	public SourceCodeCorpusBuilder(String base)
 	{
 		this.base=base;
-		this.sourceCodeFolder=new File(base+"\\Source\\ZXing-1.6\\");
-		this.sourceCodePPFolder=base+"\\ProcessedSourceCorpus\\";
+		this.sourceCodeFolder=new File(base+"\\Source\\org.aspectj\\");
+		this.sourceCodePPFolder=base+"\\ProcessedSourceCorpus2\\";
 		this.javaFilePaths=new ArrayList<String>();
 		this.javaFilePathsLastName=new ArrayList<String>();
 		this.noOfFile=0;
@@ -38,13 +38,14 @@ public class SourceCodeCorpusBuilder {
 			CommentFilterer cf=new CommentFilterer(s,fileName);
 			cf.discardClassHeaderComment();
 			
-			String repoFolder=this.base+"\\Source\\ZXing-1.6\\";
+			String repoFolder=this.base+"\\Source\\org.aspectj\\";
 			//String repoFolder="E:\\BugLocator\\Source\\swt-3.1\\";
-			String methodFolder=this.base+"\\method\\";
-			MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoFolder, methodFolder);
+			String methodFolder=this.base+"\\method2\\";
+			MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoFolder, methodFolder,this.base);
 			//developer.createMethodCorpus(developer.repoFolder);
 			developer.extractMethods(s);
 			developer.saveMethods(s);
+			String packageName=developer.getPackageName();
 			ArrayList<String> fileList=developer.returnFiles();
 			//String content=ContentLoader.readContentSimple("./data/processed/"+fileName);
 			String preprocessed="";
@@ -60,16 +61,12 @@ public class SourceCodeCorpusBuilder {
 			
 			String [] spilter=s.split("\\\\");
 			String filePart="";
-			if(spilter[9].equalsIgnoreCase("src")){
-				for(int f=10;f<spilter.length-1;f++)filePart+=spilter[f]+".";
-			}
-			else{
-				for(int f=9;f<spilter.length-1;f++)filePart+=spilter[f]+".";
-			}
 			
-			filePart=filePart+spilter[spilter.length-1];
+				
 			
-			System.out.println(file_track+" Preprocessed:"+this.sourceCodePPFolder+filePart);
+			filePart=packageName+"."+spilter[spilter.length-1];
+			System.out.println(filePart);
+			//System.out.println(file_track+" Preprocessed:"+this.sourceCodePPFolder+filePart);
 			ContentWriter.writeContent(this.sourceCodePPFolder+filePart, preprocessed);
 		}
 		System.out.println("Total no. of files: "+file_track);
@@ -92,7 +89,7 @@ public class SourceCodeCorpusBuilder {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String base="E:\\PhD\\Repo\\Zxing";
+		String base="E:\\PhD\\Repo\\AspectJ\\";
 		new SourceCodeCorpusBuilder( base).createPreprocessedRepo();
 		//This is a simple change.
 	}

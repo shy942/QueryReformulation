@@ -1,2 +1,0 @@
-key bindings binding equals gives value org jface bindings binding equals return type binding type expression gives false instead true values return type binding type
- 

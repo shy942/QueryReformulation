@@ -1,2 +1,0 @@
-event selecting menu workbench build identifier jubula team currently compatibility testing applications plugins compatibility layer noticed problems accessing menus workbench toolbar items framework event anymore correctly synchronize application use global filters display filter events menus remote controlling using event items menu shown menu workbench menus toolbar items sub menus events fired propagated results detect menu opened successfully correctly workbench toolbar item menus use events missing reproducible
- 

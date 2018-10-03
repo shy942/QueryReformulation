@@ -1,2 +1,0 @@
-selecting configs brutally slow build selecting launch configs launch configuration dialog brutally slow
- 

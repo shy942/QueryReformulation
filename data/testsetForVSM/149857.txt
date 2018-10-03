@@ -1,2 +1,0 @@
-progress calling canceled job causes progress view entry stick https bugs org bugs cgi noted canceled progress monitor job cause job entry readded progress view occurs way remove job view
- 

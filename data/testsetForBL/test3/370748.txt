@@ -1,2 +1,0 @@
-compatibility instruction stepping mode work using cpp juno win hello world project build project debug project stop main debug view tree thread process step instruction button happens button pressed button enabled disassembly view opens step steps instructions disassembly view
- 

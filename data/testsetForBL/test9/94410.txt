@@ -1,2 +1,0 @@
-undo time triggered progress dialog needs busy cursor refactoring text scenarios don notice complete quickly report progress quickly dialog pops org operations examples repository undoable operations lot work reporting progress perceived delay seeing progress important operations report progress
- 

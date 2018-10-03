@@ -1,2 +1,0 @@
-dialogs window title safe runnable displays english non english language window title safe runnable displays resourced correctly error dialog displays english error non english language plugins org jface src org jface util safe runnable java safe runnable handle exception throwable message dialog open error null face resources string error message specify error instead error
- 

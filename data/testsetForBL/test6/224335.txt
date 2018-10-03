@@ -1,2 +1,0 @@
-multi page editor dispose calling super dispose
- 

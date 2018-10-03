@@ -1,2 +1,0 @@
-welcome screen maximized workspace start start workspace shows welcome screen close save workspace restart workspace note welcome tab visible maximized
- 

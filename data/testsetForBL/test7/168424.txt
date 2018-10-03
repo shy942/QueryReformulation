@@ -1,2 +1,0 @@
-working sets roll element adapter class provide element adapter resource working set
- 

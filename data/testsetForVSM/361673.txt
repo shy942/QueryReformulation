@@ -1,2 +1,0 @@
-compatibility closing multiple editors causes lot churn close multiple editors using ctrl shift workbench window title keeps getting updated active editor keeps changing close active editor prevent activation updates
- 

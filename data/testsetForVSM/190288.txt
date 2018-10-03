@@ -1,2 +1,0 @@
-allow sorting secondary column plug details dialog nice sort second column dialog event elements equal based primary column
- 

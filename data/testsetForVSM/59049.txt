@@ -1,2 +1,0 @@
-contexts workbench context support doesn register dialog shells reports regarding keybinding context activation maybe caused error workbench context support window type shell dialog shells registered clients shell currently platform workbench context support register shell shell workbench context support workaround enable correct context understand necessary workbench context support automatically register parented shells dialogs
- 

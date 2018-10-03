@@ -1,2 +1,0 @@
-mac filtered items selection dialog use attribute build steps reproduce open dialog box extends filtered items selection dialog open resource open type text box used define search pattern doesn platform search field information screen shots
- 

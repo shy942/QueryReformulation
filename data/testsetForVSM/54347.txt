@@ -1,2 +1,0 @@
-dialogs provide yes dialog debug define dialog prompts user answer yes interested code generic shipped face component dialog org debug project type dialog dialog supports passing preference store preference key dialog persist selection cases clients don preference store user response alternatively supports passing string buffer dialog store prompt status
- 

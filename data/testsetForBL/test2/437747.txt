@@ -1,2 +1,0 @@
-view menu work opening menu closing reopening closed direct contribution item sets widget member null handle widget dispose reopened widget gets recreated pressing view menu direct contribution item notified menu widget member null menu manager calls handle calls update contribution manager marked dirty update method recreates menu results menu closing immediately happens simple controls view menu direct menu item menu upload app demonstrates workaround restart application close
- 

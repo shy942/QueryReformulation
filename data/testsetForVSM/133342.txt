@@ -1,2 +1,0 @@
-commands handlers global keybindings don work open type search important keybindings don work build menu items enabled shortcut open type ctrl hift open type hierarchy search ctrl organize imports package explorer
- 

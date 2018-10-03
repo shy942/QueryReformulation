@@ -1,2 +1,0 @@
-databinding computed value provide factory method stefan suggested helper method easily computed value
- 

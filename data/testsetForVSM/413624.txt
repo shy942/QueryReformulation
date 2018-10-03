@@ -1,2 +1,0 @@
-fix compiler warnings org jface dialogs caused moving face java fix compiler warnings package org jface dialogs caused moving java
- 

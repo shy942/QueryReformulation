@@ -1,2 +1,0 @@
-workbench workbench extend internal service provider build head component framework internals workbench left extending service provider internal needs removed note doug discussing making workbench extend adaptable provide command handler services
- 

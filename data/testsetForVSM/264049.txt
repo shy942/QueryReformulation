@@ -1,2 +1,0 @@
-common navigator stop using deprecated preferences store
- 

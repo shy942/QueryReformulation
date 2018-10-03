@@ -1,2 +1,0 @@
-javadoc abstract plugin stop method talks shutdown stop build steps reproduce javadoc abstract plugin stop information javadoc activator extends abstract plugin stop method talks shutdown stop unclear
- 

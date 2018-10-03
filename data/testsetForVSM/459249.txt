@@ -1,2 +1,0 @@
-modernize examples multipageeditor things list spot basically details commit message
- 

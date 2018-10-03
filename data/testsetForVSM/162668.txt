@@ -1,2 +1,0 @@
-field assist javadoc warnings builds src plugins org platform doc isv org jface src org jface fieldassist control decoration java warning param argument decoration parameter
- 

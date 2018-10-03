@@ -1,2 +1,0 @@
-navigator saveables service shutdown created attachment stack trace seeing attached recently closing target workspace hit target java lang null pointer exception org internal navigator navigator saveables service active saveables navigator saveables service java org navigator common navigator active saveables common navigator java org internal saveable helper needs save saveable helper java
- 

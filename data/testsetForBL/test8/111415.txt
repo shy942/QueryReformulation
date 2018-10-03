@@ -1,2 +1,0 @@
-key bindings interactions keys stop working closing preference page language portuguese english build level version case base summary keybinding list permanently disappears steps recreate installation press ctrl shift bring keybinding list press ctrl shift bring preferences dialog left upper right corner preferences dialog close step important press ctrl shift bring keybinding list error keybinding list appear expected result keybinding list appear
- 

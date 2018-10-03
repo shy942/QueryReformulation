@@ -1,2 +1,0 @@
-workbench launcher undesired order dir path selecting threw workspace launcher build steps reproduce note treat caps lock latin letters letters hebrew arabic prerequisite use previous workspaces characters file switch workspace select workspace suggeasted actual result dir path presented workspace text box expected result information
- 

@@ -1,2 +1,0 @@
-shell overriden workbench starts product installation manager perspective stand view view set focus set using public void set focus platform workbench set site shell ref view set focus called page set perspective perspective workbench window setup public void setup page set perspective perspective workbench set shell workbench context ids later product shell overriden workbench set shell workbench context ids workbench window setup regression adoption
- 

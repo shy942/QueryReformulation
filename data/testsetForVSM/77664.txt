@@ -1,2 +1,0 @@
-decorators decorator manager reschedule method current support reschedules potential job twice originally reschedule inside restriction adding john
- 

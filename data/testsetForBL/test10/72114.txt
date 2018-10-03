@@ -1,2 +1,0 @@
-view mgmt views implement saveable consulted dirty state closed view implements saveable consulted state closed view user chance veto event supported close events including workbench shutdown
- 

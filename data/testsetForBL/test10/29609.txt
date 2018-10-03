@@ -1,2 +1,0 @@
-viewers default implementation structured content provider clone class places resonable jface provide default implementation called maybe object array content provider everybody copying write let people use class content provider implements structured content provider public object elements object input element return object input element public void input changed viewer viewer object input object input public void dispose
- 

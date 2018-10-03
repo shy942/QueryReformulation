@@ -1,2 +1,0 @@
-editor mgmt tabs editor list doesn group visible non visible tabs follow according editor list implementation failed restore behavior list alphabetic order group bold entries non visible tabs alphabetic order group non bold entries visible tabs alphabetic order restore behavior
- 

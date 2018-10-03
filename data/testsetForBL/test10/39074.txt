@@ -1,2 +1,0 @@
-cell editors canna input mode fires bogus event text control steps simple file named foo usr open propertysheet example editor file select department group edit object propertysheet shift enter canno input mode type nihongo press press propertysheet receives bogus widget default selected event bogus focus lost event case entered canna text lost affects displays popup celleditor interested events mentioned affects multiple clients
- 

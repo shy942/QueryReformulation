@@ -1,2 +1,0 @@
-bidi extend org jface util bidi utils apply bidi processing cover combo box widget bidi utils introduced moment cover text widget public static void apply bidi processing text field string handling type similar text widget handling added combo box bidi utils cover combo box public static void apply bidi processing combo field string handling type
- 

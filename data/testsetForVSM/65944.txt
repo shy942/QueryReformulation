@@ -1,2 +1,0 @@
-clean selected projects use selection default usability perspective select project select project clean menu expect option clean selected projects selected default
- 

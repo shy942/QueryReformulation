@@ -1,2 +1,0 @@
-undo operation throws assertion failure undo limit set unfortunately existing clients text undo manager allowed set failing possible assertion failure occurrs limit smaller code handle negative numbers operation history allow
- 

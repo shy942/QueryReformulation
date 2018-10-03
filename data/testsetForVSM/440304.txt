@@ -1,2 +1,0 @@
-progress user job causes busy cursor shown minimum
- 

@@ -1,2 +1,0 @@
-menu helper icon provision non file based imagedescriptors created attachment patch menu helper build editor adds actions toolbar actions actually wrapped instances swing action objects custom image descriptor wraps swing icon image image descriptor actually menu helper icon specifically handles file image descriptor image descriptor result actions treated icon action text shown instead enhance menu helper icon use adapter manager framework provide opportunity non file image descriptors provide
- 

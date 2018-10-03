@@ -1,2 +1,0 @@
-ctrl disappears switching emacs using code master fix start using clean workspace switch emacs keybindings preferences general keys note ctrl editor brings pop keybindings expected swtich default keybindings ctrl tie command adding restart scenario steps end scenario outcome
- 

@@ -1,2 +1,0 @@
-perspectives view mgmt adding multiple instances view page layout isn currently possible multiple instances view perspective page layout perspective multiple instances view default layout
- 

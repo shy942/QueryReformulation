@@ -1,2 +1,0 @@
-missing save restore capabilities workbench state currently exists official save restore workbench state page basis programmatically discussed platform rcp news group article closing reopening workbench page runtime typical use case kind controllability login based save workbench state login attempts taken restore state successful logins allow save workbench state user specifically note don speak named primary logins startup final logouts shut described behaviour mean login changes runtime act constructed workbench
- 

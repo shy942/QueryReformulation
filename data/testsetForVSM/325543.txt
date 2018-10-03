@@ -1,2 +1,0 @@
-endof option location menu contributions behaves incorrectly created attachment screenshot build command navigate menu using endof option jdt debug plugin xml extension point org menus menu contribution location menu navigate endof open ext command command org jdt debug command open clipboard command shows incorrect location attached screenshot expect present position screenshot works correctly
- 
