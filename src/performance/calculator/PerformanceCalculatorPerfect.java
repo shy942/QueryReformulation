@@ -34,7 +34,7 @@ public class PerformanceCalculatorPerfect {
 		// TODO Auto-generated method stub
 		
 		//new PerformanceCalculatorPerfect().getSingleResult("");
-		new PerformanceCalculatorPerfect().getAvgPerformance(10, 0.4, "VSMAndme");
+		new PerformanceCalculatorPerfect().getAvgPerformance(98, 0.4, "VSM");
 	}
 
 
@@ -49,8 +49,8 @@ public class PerformanceCalculatorPerfect {
 			//Fort Eclipse
 			//PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep12"+baseNamePart+alpha+"-"+test+".txt");	
 			//For SWT
-			String base="E:\\PhD\\Repo\\Eclipse";
-			PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfoEclipse.txt",base+"\\data\\Results/EclipseOct3"+baseNamePart+alpha+"-"+test+".txt");		
+			String base="E:\\PhD\\Repo\\SWT";
+			PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfoSWT.txt",base+"\\data\\Results/swt500Oct5"+baseNamePart+alpha+"-"+test+".txt");		
 			
 			//PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/buglocator/eclipseoutput.txt");	
 			obj.gitResultsMap=obj.getGitOutput(obj.gitPath);
@@ -147,7 +147,7 @@ public class PerformanceCalculatorPerfect {
 		
 		//finalRankedResult.clear();
 		System.out.println("=============================================================================");
-		TOP_K=10;
+		TOP_K=100;
 		System.out.println("Result for Top-"+TOP_K);
 		HashMap<String, ArrayList<String>> resultTop10=ComputePerformancePercent(TOP_K, obj);
 		double percentageT10=Double.valueOf(resultTop10.size())/Double.valueOf(obj.resultsMap.size())*100;

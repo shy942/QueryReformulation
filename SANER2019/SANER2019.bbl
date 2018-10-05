@@ -1,13 +1,9 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[ecl()]{eclipseGit}
-Eclipse platform ui git project.
-\newblock https://git.eclipse.org/c/platform/eclipse.platform.ui.git/.
 
 \bibitem[Lukins et~al.(2008)Lukins, Kraft, and Etzkorn]{Lukins}
 S.K. Lukins, N.A. Kraft, and L.H. Etzkorn.
@@ -15,12 +11,6 @@ S.K. Lukins, N.A. Kraft, and L.H. Etzkorn.
   {D}irichlet {A}llocation.
 \newblock In \emph{Reverse Engineering, 2008. WCRE '08. 15th Working Conference
   on}, pages 155--164, Oct 2008.
-
-\bibitem[Lukins et~al.(2010)Lukins, Kraft, and Etzkorn]{Lukins2}
-Stacy~K. Lukins, Nicholas~A. Kraft, and Letha~H. Etzkorn.
-\newblock Bug localization using latent dirichlet allocation.
-\newblock \emph{Inf. Softw. Technol.}, 52\penalty0 (9):\penalty0 972--990,
-  September 2010.
 
 \bibitem[Moreno et~al.(2014)Moreno, Treadway, Marcus, and Shen]{Moreno}
 L.~Moreno, J.J. Treadway, A.~Marcus, and Wuwei Shen.
