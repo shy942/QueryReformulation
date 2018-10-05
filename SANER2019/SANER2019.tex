@@ -214,7 +214,7 @@ This \textit{rVSM} score is calculated for each query bug report \textit{q} agai
 \textbf{Ranking based on similar bug information}
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.50]{3layers}
+	\includegraphics[scale=0.65]{3layers}
 	\caption{Bug and its Similar Bug Relationship with Source Code Files:}
 	\label{fig:BSBR}
 \end{figure}
@@ -606,7 +606,7 @@ We compare the performance of BLuAMIR with BugLocator for the the same dataset f
 	\centering
 	\caption{Performance Comparison between BugLocator and BLuAMIR}
 	\label{tab:performance3}
-	\resizebox{3.5in}{!}{%
+	\resizebox{3.6in}{!}{%
 		\begin{tabular}{c|c|c|c|c|c|c}
 			\hline
 			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
@@ -728,10 +728,6 @@ For our approach2 we also compute performance TopK accuracy, MRR and MAP for dif
 	\label{fig:PerformanceTopK2}
 	\end{figure}
 
-
-\textbf{Impact of varying the value of alpha on BLuAMIR in terms of MAP and MRR}
-We also evaluate the impact of co-occurence score
-on bug localization performance, with different $\aleph$ values in terms of MAP and MRR for SWT and Zxing. At the beginning, the bug localization performance increases when the $\alpha$ value increases. However, after a certain point, further increase of the b value will decrease the performance. For example, Figure \ref{fig:MRR} and \ref{fig:MAP} show the bug localization performance (measured in terms of MRR and MAP) for the SWT and Zxing projects. When the $\aleph$ value increases from 0.1 to 0.4, both MRR and MAP values increases. Increasing $\alpha$ value further from 0.4 to 0.7 however leads to lower performance. Note that we obtain the best bug localization performance when $\alpha$ is between 0.3 and 0.4.
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.80]{MRR-SWT-Zxing}
@@ -745,14 +741,28 @@ on bug localization performance, with different $\aleph$ values in terms of MAP 
 	\caption{The impact of $\alpha$ on bug localization performance (MAP)}
 	\label{fig:MAP}
 \end{figure}
+\textbf{Impact of varying the value of alpha on BLuAMIR in terms of MAP and MRR}
+We also evaluate the impact of co-occurence score
+on bug localization performance, with different $\aleph$ values in terms of MAP and MRR for SWT and Zxing. At the beginning, the bug localization performance increases when the $\alpha$ value increases. However, after a certain point, further increase of the b value will decrease the performance. For example, Figure \ref{fig:MRR} and \ref{fig:MAP} show the bug localization performance (measured in terms of MRR and MAP) for the SWT and Zxing projects. When the $\aleph$ value increases from 0.1 to 0.4, both MRR and MAP values increases. Increasing $\alpha$ value further from 0.4 to 0.7 however leads to lower performance. Note that we obtain the best bug localization performance when $\alpha$ is between 0.3 and 0.4.
+
 \subsection{\textbf{Answering Research Questions}}
 \textbf{Answering RQ1:} To answer our \textit{RQ1}, we can go to Table \ref{tab:Performance2}, 64.05\% bugs are successfully located in Top-10 for Eclipse dataset. Our proposed tool BLuAMIR also outperforms on Zxing dataset for Top-10 retrieval, which is 75.00\%. However, on the subject system SWT, the Top-10 result of BLuAMIR is comparable, which is 80.61\%.
 
 \textbf{Answering RQ2:}
+We combine co-occurence rank with rVSM and Simi scores in Approach1 and VSM score in Approach2. We apply both of these approaches on Eclipse dataset. The results are provided in Table \ref{tab:Performance1} and Table \ref{tab:Performance2}. Here, we can see that both cases BLuAMIR outperforms in terms of Top-1, Top-5, Top-10, MRR and MAP. As co-occurence score is based on the association map between keywords and source files, thus no direct matching of vocabulary is required. Adding co-occurence score increases the performance in both cases also indicate that the association map is helping in locating buggy files. Therefore, vocabulary miss-match problem is resolved here. 
 
 \textbf{Answering RQ3:}
+We investigate how vocabulary miss-match problem is eliminated in BLuAMIR. We perform a query wise ranking comparison for Approach2 on Eclipse, which is given in Figure. 
+
+Include rank improvement here
 
 \textbf{Answering RQ4:}
+We compare the performance of BLuAMIR with state-of-the-art bug localization technique, BugLocator proposed by \citet{Jian} on two dataset i.e., SWT and Zxing. These results can be found in Table \ref{tab:performance3}. For SWT, we can see our tool BLuAMIR performs better for Top-1, Top-5, MRR and MAP. However, for Top-10 BLuAmir is comparable with Buglocator. On the other hand, for Zxing our tool BLuAMIR outperforms for top-5, top-10 and MAP. So we can say that our proposed tool BLuAMIR outperforms most cases and comparable for a few cases with state-of-the-art bug localization technique.
+\section{Related Work}
+BugLocator
+BLuIR
+BugCenter
+Amalgum
 \section{Threats To Validity}\label{sec:threats}
 
 
