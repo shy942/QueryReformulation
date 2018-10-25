@@ -1,9 +1,67 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abreu et~al.(2009)Abreu, Zoeteweij, Golsteijn, and van Gemund]{Abreu}
+R.~Abreu, P.~Zoeteweij, R.~Golsteijn, and A.~J.~C. van Gemund.
+\newblock A {P}ractical {E}valuation of {S}pectrum-based {F}ault
+  {L}ocalization.
+\newblock \emph{J. Syst. Softw.}, 82\penalty0 (11):\penalty0 1780--1792,
+  November 2009.
+
+\bibitem[Bachmann and Bernstein()]{Bachmann}
+A.~Bachmann and A.~Bernstein.
+\newblock Software {P}rocess {D}ata {Q}uality and {C}haracteristics: {A}
+  {H}istorical {V}iew on {O}pen and {C}losed {S}ource {P}rojects.
+\newblock In \emph{Proc. IWPSE}, IWPSE-Evol '09, pages 119--128.
+
+\bibitem[Fang et~al.()Fang, Tao, and Zhai]{Fang}
+H.~Fang, T.~Tao, and C.~Zhai.
+\newblock A {F}ormal {S}tudy of {I}nformation {R}etrieval {H}euristics.
+\newblock In \emph{Proceedings of the 27th Annual International ACM SIGIR
+  Conference on Research and Development in Information Retrieval}, SIGIR '04,
+  pages 49--56.
+
+\bibitem[Feldman and van Gemund(2006)]{Feldman}
+A.~Feldman and A.~van Gemund.
+\newblock A {T}wo-step {H}ierarchical {A}lgorithm for {M}odel-based
+  {D}iagnosis.
+\newblock In \emph{Proceedings of the 21st National Conference on Artificial
+  Intelligence - Volume 1}, AAAI'06, pages 827--833, 2006.
+
+\bibitem[Haiduc et~al.(2012)Haiduc, Bavota, Oliveto, Marcus, and
+  Lucia]{SHaiduc}
+S.~Haiduc, G.~Bavota, R.~Oliveto, A.~Marcus, and A.~De Lucia.
+\newblock Evaluating the {S}pecificity of {T}ext {R}etrieval {Q}ueries to
+  {S}upport {S}oftware {E}ngineering {T}asks.
+\newblock In \emph{Proc. ICSE}, pages 1273--1276, 2012.
+
+\bibitem[Hofmann()]{Hofmann}
+Thomas Hofmann.
+\newblock Probabilistic {L}atent {S}emantic {I}ndexing.
+\newblock \emph{SIGIR Forum}, 51\penalty0 (2):\penalty0 211--218.
+
+\bibitem[Hovemeyer and Pugh()]{FindBug}
+D.~Hovemeyer and W.~Pugh.
+\newblock Finding {B}ugs is {E}asy.
+\newblock \emph{SIGPLAN Not.}, 39\penalty0 (12):\penalty0 92--106.
+
+\bibitem[Jones and Harrold(2005)]{Jones}
+J.~A. Jones and M.~J. Harrold.
+\newblock Empirical {E}valuation of the {T}arantula {A}utomatic
+  {F}ault-localization {T}echnique.
+\newblock In \emph{Proceedings of the 20th IEEE/ACM International Conference on
+  Automated Software Engineering}, ASE '05, pages 273--282, 2005.
+
+\bibitem[Lucia et~al.(2010)Lucia, Lo, Jiang, and Budi]{Lucia}
+Lucia, D.~Lo, Lingxiao Jiang, and A.~Budi.
+\newblock {C}omprehensive {E}valuation of {A}ssociation measures for {F}ault
+  {L}ocalization.
+\newblock In \emph{2010 IEEE International Conference on Software Maintenance},
+  pages 1--10, 2010.
 
 \bibitem[Lukins et~al.(2008)Lukins, Kraft, and Etzkorn]{Lukins}
 S.K. Lukins, N.A. Kraft, and L.H. Etzkorn.
@@ -12,6 +70,19 @@ S.K. Lukins, N.A. Kraft, and L.H. Etzkorn.
 \newblock In \emph{Reverse Engineering, 2008. WCRE '08. 15th Working Conference
   on}, pages 155--164, Oct 2008.
 
+\bibitem[Lukins et~al.(2010)Lukins, Kraft, and Etzkorn]{Lukins2}
+Stacy~K. Lukins, Nicholas~A. Kraft, and Letha~H. Etzkorn.
+\newblock Bug localization using latent dirichlet allocation.
+\newblock \emph{Inf. Softw. Technol.}, 52\penalty0 (9):\penalty0 972--990,
+  September 2010.
+
+\bibitem[Mayer and Stumptner()]{Mayer}
+W.~Mayer and M.~Stumptner.
+\newblock Model-based {D}ebugging -- {S}tate of the {A}rt {A}nd {F}uture
+  {C}hallenges.
+\newblock \emph{Electron. Notes Theor. Comput. Sci.}, 174\penalty0
+  (4):\penalty0 61--82.
+
 \bibitem[Moreno et~al.(2014)Moreno, Treadway, Marcus, and Shen]{Moreno}
 L.~Moreno, J.J. Treadway, A.~Marcus, and Wuwei Shen.
 \newblock {O}n the {U}se of {S}tack {T}races to {I}mprove {T}ext
@@ -19,13 +90,32 @@ L.~Moreno, J.J. Treadway, A.~Marcus, and Wuwei Shen.
 \newblock In \emph{Software Maintenance and Evolution (ICSME), 2014 IEEE
   International Conference on}, pages 151--160, Sept 2014.
 
-\bibitem[Nguyen et~al.(2011)Nguyen, Nguyen, Al-Kofahi, Nguyen, and Nguyen]{Anh}
-Anh~Tuan Nguyen, Tung~Thanh Nguyen, J.~Al-Kofahi, Hung~Viet Nguyen, and T.N.
-  Nguyen.
-\newblock {A} {T}opic-{B}ased {A}pproach for {N}arrowing the {S}earch {S}pace
-  of {B}uggy {F}iles from a {B}ug {R}eport.
-\newblock In \emph{Automated Software Engineering (ASE), 2011 26th IEEE/ACM
-  International Conference on}, pages 263--272, Nov 2011.
+\bibitem[Ponte and Croft()]{Ponte}
+Jay~M. Ponte and W.~Bruce Croft.
+\newblock A {L}anguage {M}odeling {A}pproach to {I}nformation {R}etrieval.
+\newblock In \emph{Proceedings of the 21st Annual International ACM SIGIR
+  Conference on Research and Development in Information Retrieval}, SIGIR '98,
+  pages 275--281.
+
+\bibitem[Rao and Kak()]{Rao}
+Shivani Rao and Avinash Kak.
+\newblock Retrieval from {S}oftware {L}ibraries for {B}ug {L}ocalization: {A}
+  {C}omparative {S}tudy of {G}eneric and {C}omposite {T}ext {M}odels.
+\newblock In \emph{Proceedings of the 8th Working Conference on Mining Software
+  Repositories}, MSR '11, pages 43--52.
+
+\bibitem[Robertson et~al.()Robertson, Walker, and Beaulieu]{Robertson}
+S.~E. Robertson, S.~Walker, and M.~Beaulieu.
+\newblock Experimentation {A}s a {W}ay of {L}ife: {O}kapi at {T}rec.
+\newblock \emph{Inf. Process. Manage.}, 36\penalty0 (1):\penalty0 95--108.
+
+\bibitem[Saha et~al.(2011)Saha, Nanda, Dhoolia, Nandivada, Sinha, and
+  Chandra]{SahaFault}
+D.~Saha, M.~G. Nanda, P.~Dhoolia, V.~K. Nandivada, V.~Sinha, and S.~Chandra.
+\newblock {F}ault {L}ocalization for {D}ata-centric {P}rograms.
+\newblock In \emph{Proceedings of the 19th ACM SIGSOFT Symposium and the 13th
+  European Conference on Foundations of Software Engineering}, ESEC/FSE '11,
+  pages 157--167, 2011.
 
 \bibitem[Saha et~al.(2013)Saha, Lease, Khurshid, and Perry]{Saha}
 R.K. Saha, M.~Lease, S.~Khurshid, and D.E. Perry.
@@ -34,6 +124,11 @@ R.K. Saha, M.~Lease, S.~Khurshid, and D.E. Perry.
 \newblock In \emph{Automated Software Engineering (ASE), 2013 IEEE/ACM 28th
   International Conference on}, pages 345--355, Nov 2013.
 
+\bibitem[Salton and Buckley()]{Salton}
+G.~Salton and C.~Buckley.
+\newblock Term-weighting {A}pproaches in {A}utomatic {T}ext {R}etrieval.
+\newblock \emph{Inf. Process. Manage.}, 24\penalty0 (5):\penalty0 513--523.
+
 \bibitem[Sisman and Kak(2013)]{Sisman}
 B.~Sisman and A.C. Kak.
 \newblock Assisting {C}ode {S}earch with z{A}utomatic {Q}uery {R}eformulation
@@ -41,12 +136,36 @@ B.~Sisman and A.C. Kak.
 \newblock In \emph{Mining Software Repositories (MSR), 2013 10th IEEE Working
   Conference on}, pages 309--318, May 2013.
 
-\bibitem[Wong et~al.(2014)Wong, Xiong, Zhang, Hao, Zhang, and Mei]{Chu}
-Chu-Pan Wong, Yingfei Xiong, HongYu Zhang, Dan Hao, Lu~Zhang, and Hong Mei.
-\newblock {B}oosting {B}ug-{R}eport-{O}riented {F}ault {L}ocalization with
-  {S}egmentation and {S}tack-{T}race {A}nalysis.
-\newblock In \emph{Software Maintenance and Evolution (ICSME), 2014 IEEE
-  International Conference on}, pages 181--190, Sept 2014.
+\bibitem[Tang et~al.(2009)Tang, Tan, and Cheng]{Tang}
+H.~Tang, S.~Tan, and X.~Cheng.
+\newblock A {S}urvey on {S}entiment {D}etection of {R}eviews.
+\newblock \emph{Expert Systems with Applications}, 36\penalty0 (7), 2009.
+
+\bibitem[Wang and Lo(2014)]{Wang}
+Shaowei Wang and David Lo.
+\newblock Version {H}istory, {S}imilar {R}eport, and {S}tructure: {P}utting
+  {T}hem {T}ogether for {I}mproved {B}ug {L}ocalization.
+\newblock In \emph{Proceedings of the 22Nd International Conference on Program
+  Comprehension}, ICPC 2014, pages 53--63, 2014.
+
+\bibitem[Wang and Lo(2016)]{Wang2}
+Shaowei Wang and David Lo.
+\newblock Amalgam+: Composing {R}ich {I}nformation {S}ources for {A}ccurate
+  {B}ug {L}ocalization.
+\newblock \emph{Journal of Software: Evolution and Process}, 28:\penalty0
+  921--942, 2016.
+
+\bibitem[Zeller and Hildebrandt()]{Zeller:2002}
+A.~Zeller and R.~Hildebrandt.
+\newblock Simplifying and {I}solating {F}ailure-{I}nducing {I}nput.
+\newblock \emph{IEEE Trans. Softw. Eng.}, 28\penalty0 (2):\penalty0 183--200.
+
+\bibitem[Zhang et~al.(2005)Zhang, He, Gupta, and Gupta]{Zhang:2005}
+X.~Zhang, H.~He, N.~Gupta, and R.~Gupta.
+\newblock Experimental {E}valuation of {U}sing {D}ynamic {S}lices for {F}ault
+  {L}ocation.
+\newblock In \emph{Proceedings of the Sixth International Symposium on
+  Automated Analysis-driven Debugging}, AADEBUG'05, pages 33--42, 2005.
 
 \bibitem[Zhou et~al.(2012)Zhou, Zhang, and Lo]{Jian}
 Jian Zhou, Hongyu Zhang, and D.~Lo.

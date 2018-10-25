@@ -510,8 +510,8 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		int total_test=98;
-		double alpha=0.4;
+		int total_test=10;
+		double alpha=0.0;
 		for(int i=1;i<=total_test;i++)
 		{
 			/*
@@ -539,7 +539,7 @@ public class BugLocalizationUsingNumbers {
 			
 			//For SWT/Zxing/AspectJ/Eclipse
 			int test=i;
-			String base="E:\\PhD\\Repo\\SWT\\";
+			String base="E:\\PhD\\EclipseAll\\";
 			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers(base+"\\data\\FinalMap\\TokenSourceMapTrainset"+test+".txt",base+"\\data\\testset\\test"+test+".txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\data\\changeset-pointer\\ID-SourceFile.txt",base+"\\data\\ID-Keyword.txt");
 			String bugReportFolder = base+"\\data\\testsetForBL\\test"+test;
 			//For Mac
@@ -547,16 +547,16 @@ public class BugLocalizationUsingNumbers {
 			//ForWindows
 			String sourceFolder = base+"\\ProcessedSourceCorpus\\";
 				
-			String goldsetFile = base+"\\data\\gitInfoSWT.txt";
+			String goldsetFile = base+"\\data\\gitInfoNew.txt";
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			=base+"\\data\\Results\\swt500Oct5VSM"+alpha+"-"+test+".txt";
+			=base+"\\data\\Results\\eclipseAllOct19rVSM1000"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 	
-			//obj.bugLocator(obj, outputFilePath, sourceFolder, bugReportFolder, goldsetFile);
-			obj.bugLocatorLuceneAndMe(obj, outputFilePath, bugReportFolder);
+			obj.bugLocator(obj, outputFilePath, sourceFolder, bugReportFolder, goldsetFile);
+			//obj.bugLocatorLuceneAndMe(obj, outputFilePath, bugReportFolder);
 			//call the bug localizer
 		
 		}
@@ -564,12 +564,12 @@ public class BugLocalizationUsingNumbers {
 
 	 public void bugLocatorLuceneAndMe(BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
 	    {
-		 	double ALPHA=0.4;
+		 	double ALPHA=0.0;
 		 	double BETA=1-ALPHA;
 		 	//For Eclipse
 		 	//String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
 		 	//ForSWT
-		 	String indexDir="E:\\PhD\\Repo\\SWT\\data\\IndexSWT";
+		 	String indexDir="E:\\PhD\\EclipseAll\\data\\IndexEclipse";
 			obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
 					.getLuceneBasedScore(BETA);
 	    	obj.trainMapTokenSource=obj.loadTrainMap(obj.trainMapTokenSourceAddress);
@@ -611,7 +611,7 @@ public class BugLocalizationUsingNumbers {
 					for(int key:resultMap.keySet())
 					{
 						count++;
-						if(count>500)break; 
+						if(count>1000)break; 
 						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key));
 						
 						

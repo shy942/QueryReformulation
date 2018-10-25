@@ -18,17 +18,17 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Improved Bug Localization using Association Map and Information Retrieval (BLuAMIR)\\
+\title{Improved Bug Localization using Association Mapping and Information Retrieval\\
 %{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
 %/should not be used}
 %\thanks{Identify applicable funding agency here. If none, delete this.}
 }
 
-\author{\IEEEauthorblockN{Shamima Yeasmin~~~Mohammad Masudur Rahman~~~Chanchal K. Roy~~~ Kevin A. Schneider}
-\IEEEauthorblockA{\textit{Department of Computer Science} \\
-\textit{ University of Saskatchewan}\\
-Saskatoon, Canada \\
-shy942@mail.usask.ca, \{masud.rahman, chanchal.roy, kevin.schneider\}@usask.ca}
+%\author{\IEEEauthorblockN{Shamima Yeasmin~~~Mohammad Masudur Rahman~~~Chanchal K. Roy~~~ Kevin A. Schneider}
+%\IEEEauthorblockA{\textit{Department of Computer Science} \\
+%\textit{ University of Saskatchewan}\\
+%Saskatoon, Canada \\
+%shy942@mail.usask.ca, \{masud.rahman, chanchal.roy, kevin.schneider\}@usask.ca}
 %\and
 %\IEEEauthorblockN{Mohammad Masudur Rahman}
 %\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
@@ -48,182 +48,391 @@ shy942@mail.usask.ca, \{masud.rahman, chanchal.roy, kevin.schneider\}@usask.ca}
 %City, Country \\
 %email address}
 
-}
+%}
 
 \maketitle
 
 \begin{abstract}
 Bug localization is one of the most challending tasks undertaken by the developers during software maintenance.
-Existing studies mostly rely on lexical similarity between the bug reports and source code for bug localization.
-However, such similarity always does not exist, and these studies suffer from vocabulary mismatch issues.
-In this paper, we propose a bug localization technique that (1) not only uses lexical similarity between bug report and source code documents  
-but also (2) exploits the co-occurrences between keywords from the past reports and source links from corresponding changed code.
-Experiments using a collection of ~6000 bug reports show that our technique can locate buggy files with a Top-10 accuracy of 64.05\% and a mean reciprocal rank@10 of 0.31 and a mean precision average@10 of 37\%, which are highly promising. 
-Comparison with state-of-the-art IR-based bug localization techniques confirms superiority of our technique. 
+Most of the existing studies rely on lexical similarity between the bug reports and source code for bug localization.
+Unfortunately, such similarity always does not exist, and these studies suffer from vocabulary mismatch issues.
+In this paper, we propose a bug localization technique that (1) not only uses lexical similarity between a given bug report and source code documents  
+but also (2) exploits the association between keywords from the past reports and source files from corresponding changed code.
+Experiments using a collection of ~3973 bug reports show that our technique can locate buggy files with a Top-10 accuracy of 64.05\% and a mean reciprocal rank@10 of 0.37 and a mean precision average@10 of 39\%, which are highly promising. 
+Comparison with the state-of-the-art techniques
+and their variants report that our technique can improve 12\% in
+MAP@10 and 12.6\% in Top-5 accuracy over the state-of-the-art.
 \end{abstract}
 
 \begin{IEEEkeywords}
-bug localization, bug report, source codes, association map
+bug localization, bug report, source code, information retrieval, keyword-source code association
 \end{IEEEkeywords}
 
 \section{Introduction}
-Bug localization is the process of locating the source codes that need to be changed in order to fix a given bug. 
-Locating buggy files is time-consuming and costly if it is done by manual effort, especially for the large software system when the number of bug of that system becomes large. Therefore, effecting methods for locating bugs automatically from bug reports are highly desirable. 
-In automatic bug localization technique, it takes a subject system as an input and produces a list of entities such as classes, methods etc. against a search query. For example, information retrieval based techniques rank the list of entities by predicted relevance and return a ranked list of entities or source codes which may contain the bug. 
-The bug localization techniques are also affected by the fact of designing effective query. If a query contains inadequate information, then the retrieval results will not be relevant at all. One other thing that the performance of existing bug localization approach did not reach to an accepted level and so far those studies showed good results for a small set of bugs. Therefore,
+Bug localization is the process of locating the source code that needs to be changed in order to fix a given bug. 
+Locating buggy files is time-consuming and costly in terms of efforts \cite{Wang}. This is even more challenging especially for the large software systems. Thus, effective methods for locating bugs automatically from bug reports are highly desirable. 
+Traditional bug localization techniques accept a bug report and a subject system as inputs and produce a list of entities (e.g., classes, methods) for the bug report. Information retrieval based techniques localize software bugs by considering relevance between bug report and source code in terms of their lexical similarity. %and return a ranked list of source code entities which may contain the bug. 
+Hence, these techniques are likely to be affected by the quality and content of a submitted query. If a query contains inadequate information, then the retrieved results might not be relevant at all. Thus, simply relying on lexical similarity might not be helpful. 
 %However, static bug localization technique has an advantage over dynamic technique, as it does not require any working subject system rather it can apply on any stage of a system. 
-in this paper, we apply a bug localization technique on large dataset that exploits an association link established from bug report repository to source code base through commit logs. 
+In this work, we additionally consider an association between bug reports and their corresponding changed source documents extracted from commit logs for the bug localization.
 
-In existing studies, information retrieval techniques  \cite{Jian} \cite{Saha} \cite{Moreno} \cite{Anh} \cite{Lukins} are applied to automatically search for relevant files based on bug reports.
-In one case of Text Retrieval (TR) based approaches, \citet{Jian} propose BugLocator using revised Vector Space Model (rVSM), which requires the information extracted from bug reports and source codes. One of the issue association with TR-based technique is treating source codes as flat text that lacks structure. But exploiting source code structure can be a useful way to improve bug localization accuracy.
-Due to the fuzzy nature of information retrieval, textually matching bug reports against source
-files may have to concede noise (less relevant but accidentally matched words). However, large files are more
-likely to contain noise as usually only a small part
-of a large file is relevant to the bug report. So, by treating
-files as single units or favoring large files, the techniques are more
-likely to be affected by the noise in large files. So, \citet{Saha} present BLUiR, which retrieve structural information from code constructs.
-However, bug reports often contain stack-trace information, which may provide direct clues for possible faulty files. Most existing approaches directly treat the bug descriptions as plain texts and do not explicitly consider stack-trace information. Here, \citet{Moreno} combine both stack trace similarity and textual similarity to retrieve potential code elements. 
-To deal with two issues associated with source code structure and stack trace information, 
-\citet{Chu}  proposed  a technique that use segmentation i.e., divides each source code file into segments and use stack-trace analysis, which significantly improve the performance of BugLocator.
-
-LDA topic-based approaches \cite{Anh} \cite{Lukins} assume that the textual contents of a bug report and it's corresponding buggy source files share some technical aspects of the system.
-Therefore, they develop topic model that represents those technical aspects as topic. 
-However, existing bug localization approaches applied on small-scale data for evaluation so far.
-Besides the problem of small-scale evaluations, the performance of the existing bug localization methods can be further improved too. For example, using Latent Dirichlet Allocation (LDA), only buggy files for 22\% of Eclipse 3.1 bug reports are ranked in the top 10 [25]. 
-But, now it is an important research question to know how effective these approaches are for locating bugs in large-scale (i.e., big data).
-In the field of query processing
-\citet{Sisman}  proposed a method that examines the files retrieved for the initial query supplied by a user and then selects from these files only those additional terms that are in close proximity to the terms in the initial query. Their \cite{Sisman} experimental evaluation on two large software projects using more than 4,000 queries showed that the proposed approach leads to significant improvements for bug localization and outperforms the well-known QR methods
-in the literature.
-There are two common issues associated with existing studies. First, 
-most of the bug localization techniques exploit lexical similarity measure for retrieving relevant files from the code base. So, it is expected that the search query constricted from new bug report should contain keywords similar to code constructs in code base. This issue demands developers or users  previous expertise on the given project, which can not be guaranteed in real world. 
-Second, closely related to the first issue there is another well known problem called vocabulary mismatch. In order to convey the same concept on both search query (i.e., new bug report) and source code files the developers tend to use different vocabularies. This issue questions the applicability of exploiting lexical similarity measure.
-
-So, in order to resolve these two issues, in our work we propose a bug localization approach that combines lexical similaority with word co-occurrence measue. 
-Our proposed technique exploits the association of keywords extracted from fixed bug report with their changed source code location. Here, the main idea is to capture information from a collection of bug reports and exploit them for locating relevant source code location.
-So our approach not (1) only relies on the lexical similarity measure between big reports and source code files for bug localization, and (2) but also addresses the vocabulary mismatch problem by using a keyword-source map constructed from fixed bug information. Moreover, we named our proposed tool as BLuAMIR (Bug Localization using Association Map and Information Retrieval).
-
-We compare the performance of our proposed tool with a state of the art bug localization techniques . So, contributions of our paper include:
-\begin{itemize}
- \item A novel bug localization technique that exploits the association relationship between bug report keywords with their buggy source files.
- \item Comprehensive evaluation of the technique using about 3000 bugs from Eclipse bug repository and validation against state-of-the-art.
-\end{itemize}
+\citet{Jian} first propose BugLocator based on revised Vector Space Model (rVSM) that uses the lexical similarity between bug report texts and source code. \citet{Saha} capture the structures of both bug reports and source documents, and then apply structured information retrieval for bug localization. \citet{Moreno} consider structural similarity between stack traces in the bug report and the project document structures for bug localization. However, all of these studies share one common limitation.
+%In existing studies, information retrieval techniques  \cite{Jian} \cite{Saha} \cite{Moreno} \cite{Anh} \cite{Lukins} are applied to automatically search for relevant buggy files based on a given bug report. 
+%In case of Text Retrieval (TR) based approaches, \citet{Jian} propose BugLocator based on revised Vector Space Model (rVSM), which requires the information extracted from both the bug reports and the source codes.
+%Due to the fuzzy nature of information retrieval, textually matching bug reports against source
+%files may have to concede noise (i.e., less relevant but accidentally matched words). Therefore, by treating
+%files as single units or favoring large files, this technique \cite{Jian} is more
+%likely to be affected by the noise in large files.
+%One of the issue associated with TR-based technique is treating source codes as flat text. 
+%Here, exploiting the structure of source code can be an useful way to improve bug localization accuracy.
+%So, \citet{Saha} present BLUiR, which retrieve structural information from code constructs.
+%However, bug reports often contain stack-trace information, which may provide direct clues for possible faulty files. Most existing approaches directly treat the bug descriptions as plain texts and do not explicitly consider stack-trace information. Here, \citet{Moreno} combine both stack trace similarity and textual similarity to retrieve potential code elements. 
+%To deal with two issues associated with source code structure and stack trace information, 
+%\citet{Chu}  proposed  a technique that use segmentation i.e., divides each source code file into segments and use stack-trace analysis, which significantly improve the performance of BugLocator.
+%LDA topic-based approaches \cite{Anh} \cite{Lukins} assume that the textual contents of a bug report and it's corresponding buggy source files share some technical aspects of the system.
+%Therefore, they develop topic model that represents those technical aspects as topic. 
+%However, existing bug localization approaches applied on small-scale data for evaluation so far.
+%Besides the problem of small-scale evaluations, the performance of the existing bug localization methods can be further improved too. For example, using Latent Dirichlet Allocation (LDA), only buggy files for 22\% of Eclipse 3.1 bug reports are ranked in the top 10 [25]. 
+%But, now it is an important research question to know how effective these approaches are for locating bugs in large-scale (i.e., big data).
+%In the field of query processing
+%\citet{Sisman}  proposed a method that examines the files retrieved for the initial query supplied by a user and then selects from these files only those additional terms that are in close proximity to the terms in the initial query. Their \cite{Sisman} experimental evaluation on two large software projects using more than 4,000 queries showed that the proposed approach leads to significant improvements for bug localization and outperforms the well-known QR methods
+%in the literature.
+First, most of the IR-based bug localization techniques simply rely on only lexical similarity for retrieving relevant documents from the codebase. Hence, the search queries constructed from a given bug report should contain keywords similar to code terms. Unfortunately, bug reports could be of low quality and could miss the appropriate keywords. This also warrants for domain expertise on a given project, which can always not be guaranteed. 
+%Second, when treating files as single units, they are affected by the noise of the large files. This issue also reduces the performance of the applicability of exploiting lexical similarity measure.
 
 
-\section{An Example Use Case Scenario}\label{sec:usecase}
+In this paper, we propose a bug localization approach namely BLUAMIR that not only considers lexical similarity but also captures implicit association between keywords and the source code. 
+We consider the implicit association between keywords extracted from previously fixed bug reports and their corresponding changed code. The idea is to capture the  relationship without direct vocabulary match.  
+Thus, our proposed approach addresses the vocabulary mismatch problem using a keyword-source association constructed from fixed bug information. 
+Our proposed technique also overcomes the issue of locating large files. Construction of association mapping between large source documents and an query does not require any direct vocabulary matching. Thus, our approach is not affected by the noise from large source documents and can rank the documents better than the approaches based on lexical similarity only.
+%The vocabulary between keywords extracted from a previously fixed bug report and its corresponding source code can not be matched, but can be linked in an association mapping. Thus, by exploiting this kind of relationship can aid locating future bug even if there exist no matched keywords between keywords from that bug and recommended source code.
+%We compare the performance of our proposed tool with a state of the art bug localization techniques \cite{Jian}.
+
+We evaluate our technique in several different dimensions using
+three widely used performance metrics and 3973 bug reports (i.e.,
+queries) from three open source subject systems. 
+First, we evaluate in terms of the performance metrics, contrast with two replicated baseline, Vector Space Model(VSM) and BugLocator \cite{Jian}.
+BLuAMIR localizes bugs with in average 9\% higher accuracy (i.e.,
+Hit@10), 12\% higher precision (i.e., MAP@10) and 11\%
+higher result ranks (i.e., MRR@10) than the replicated baseline VSM (Section \ref{RQ1answer}).
+BLuAMIR also localizes bugs with in avaerage 57\% higher accuracy (i.e., Hit@10), 81\% higher precision(i.e., MAP@10) and 94\% higher resul ranks(i.e., MRR@10) than replicated BugLocator \cite{Jian} (section \ref{RQ1answer})
+Second, we compare our technique with a state of the art approach \cite{Jian}
+and our technique can improve 12\% in MAP@10
+and 12.6\% in Top-5 accuracy over the state-of-the-art (Section \ref{RQ4answer}).
+
+
+
+
 \begin{table*}[t]
 	\centering
 	\caption{A working example of BLuAMIR}
 	\label{tab:workingexample}
-	\resizebox{7.0in}{!}{%
+	\resizebox{7.1in}{!}{%
 		\begin{tabular}{c|c|c|c||c|c|c|c|c}
 			\hline
 			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
-			\textbf{Query \#ID}
-			& \textbf{VSM score}  
-			& \textbf{Retrieved Files (VSM Approach)}  & 
-			\textbf{GoldSet}  &
-			\textbf{VSM score}  & 
-			\textbf{Co-Occ-Score} &
-			\textbf{ScoreAll} &
-			\textbf{Retrieved Files (BLuAMIR)} &
-			\textbf{Goldset}\\
+			\textbf{Rank}
+			& \textbf{Retrieved Files (VSM Approach)} 
+			&  \textbf{Score\_{VSM}}  & 
+			\textbf{Ground Truth}  &
+				\textbf{Retrieved Files (BLuAMIR)} &
+			\textbf{Score\_{VSM}}  & 
+			\textbf{Score\_{Assoc}} &
+			\textbf{Score\_{Total}} &
+		
+			\textbf{Ground Truth}\\
 			\hline
-		    \multirow{10}{*}{\#37026} & 1.00 & WorkingSetLabelProvider.java  & \checkmark &0.60  & 0.25  & 0.85 & WorkingSetLabelProvider.java & \checkmark \\
-			\cline{2-9}
-		    & 0.80 & ImageFactory.java & \xmark & 0.35 & 0.35 & 0.70 & WorkingSet.java & \checkmark \\ 
-		  \cline{2-9}
-		   & 0.76 & WorkingSetMenuContributionItem.java & \xmark &0.45 &0.22 & 0.67 & IWorkingSet.java & \checkmark\\
-		   \cline{2-9}
-		   & 0.75 & IWorkingSet.java & \checkmark &0.38 & 0.25 & 0.63 & WorkingSetTypePage.java & \xmark\\
-		  \cline{2-9}
-		   & 0.70 & ProjectImageRegistry.java & \xmark &0.30 &0.33 & 0.63 & CommandImageService.java & \xmark \\
-		   \cline{2-9}
-		   & 0.68 & IWorkingSetManagerTest.java & \xmark &0.31 & 0.29 & 0.60 & WorkbenchImages.java & \checkmark\\
-		   \cline{2-9}
-		   & 0.67 & IWorkbenchPartDescriptor.java & \xmark & 0.33 & 0.27 & 0.60 & WorkingSetAdapterFactory.java & \checkmark \\
-		   \cline{2-9}
-		   & 0.65 & MockWorkingSetPage.java & \xmark  & 0.30 & 0.27 & 0.57 & EditorIconTest.java & \xmark\\
-		 \cline{2-9}
-		   & 0.65 & MissingImageDescriptor.java & \xmark  &0.30 &0.27 & 0.57 & PerspectiveDescriptor.java & \xmark \\
-		  \cline{2-9}
-		   & 0.64 & WorkingSetTypePage.java & \xmark & 0.24 & 0.33 & 0.57 & IAction.java & \xmark\\
-		   \hline
+			\hline
+			1 &  WorkingSetLabelProvider.java  &1.00  & \checkmark &WorkingSetLabelProvider.java & 0.60  & 0.25  & 0.85 & \checkmark \\
+			\hline
+			2 & ImageFactory.java  & 0.80  & \xmark & WorkingSet.java & 0.35 & 0.35 & 0.70 &  \checkmark \\ 
+			\hline
+			3 & WorkingSetMenuContributionItem.java &  0.76  & \xmark &IWorkingSet.java &0.45 &0.22 & 0.67 &  \checkmark\\
+			\hline
+			4 &  IWorkingSet.java &  0.75 & \checkmark & WorkingSetTypePage.java &0.38 & 0.25 & 0.63 &  \xmark\\
+			\hline
+			5 & ProjectImageRegistry.java  & 0.70  & \xmark & CommandImageService.java &0.30 &0.33 & 0.63 &  \xmark \\
+			\hline
+%			& 0.68 & IWorkingSetManagerTest.java & \xmark &0.31 & 0.29 & 0.60 & WorkbenchImages.java & \checkmark\\
+%			\cline{2-9}
+%			& 0.67 & IWorkbenchPartDescriptor.java & \xmark & 0.33 & 0.27 & 0.60 & WorkingSetAdapterFactory.java & \checkmark \\
+%			\cline{2-9}
+%			& 0.65 & MockWorkingSetPage.java & \xmark  & 0.30 & 0.27 & 0.57 & EditorIconTest.java & \xmark\\
+%			\cline{2-9}
+%			& 0.65 & MissingImageDescriptor.java & \xmark  &0.30 &0.27 & 0.57 & PerspectiveDescriptor.java & \xmark \\
+%			\cline{2-9}
+%			& 0.64 & WorkingSetTypePage.java & \xmark & 0.24 & 0.33 & 0.57 & IAction.java & \xmark\\
+		
 	\end{tabular}}
 	\centering
 \end{table*}
-Consider a new bug (ID 37026) is submitted to the Eclipse-UI-Platform bug repository system. The title of this bug is \textit{[Working Sets] IWorkingSet.getImage should be getImageDescriptor}. We preprocess this title as well as the description of this new bug froming a query. Now we apply both VSM and our proposed techniques on this query in order to locate possible buggy files. The recommended results are presented in Table \ref{tab:workingexample}. 
-From version repository, we have found that so far 14 number of files have been modified in order to fix this bug. From Table \ref{tab:workingexample}, we can see that our proposed tool BLuAMIR correctly identifies 5 buggy files where VSM approach locates only 2 buggy files. The ranking of BLuAMIR is 1,2,3,6,7 where the rank from VSM is 1 and 4. Note that BLuAMIR retrieves total 5 buggy files including the 2 located by VSM technique. However, VSM and Co-Occ scores are also provided for each recommended buggy file. 
-Note that Same file is retrieved in rank 1 for both techniques. The buggy file which is retrieved in rank 4 by VSM, retrieved as rank 3 by BLuAMIR. The other 3 buggy files recommended by BLuAMIR having rank of 12, 27 and 24  in the VSM approach retrieval.
+\begin{table}[htbp]
+	\caption{A Bug Report (\#37026, eclipse.UI.platform)}
+	\label{tab:BugInfo}
+	%\centering
+	\begin{center}
+		\begin{tabular}{ p{1.5cm} | p{6cm}}
+			\hline
+			\textbf{Field}  & \textbf{Content} \\
+			\hline
+			\hline
+			Title & [Working Sets] IWorkingSet.getImage should be  getImageDescriptor
+			\\
+			\hline
+			Description &  build 20030422 \\ &
+			IWorkingSet.getImage returns an ImageDescriptor and should therefore be named 
+			getImageDescriptor.
+			This is new API in 2.1. Should consider deprecating getImage and creating 
+			getImageDescriptor.\\
+			\hline
+		\end{tabular}
+	\end{center}
+	%\centering
+\end{table}
 
-We try to reason why BLuAMIR can locate more buggy files than VSM. In BLuAMIR, the Co-Occ score comes from the association map, which is created from keywords extracted from previously fixed bug report into their fixed buggy files. In VSM, we compare term presented in the bug reports and source files. But we know, there exist a vocabulary missmatch problem between bug reports and source corpus. But, in computing Co-Occ rank we dont directly compare terms between bug reports and source files. So vocabulary missmatch problem is resolved here. Moreover, in the working example, this association map aids locating more buggy files than VSM technique. IF we go deeper, we can find that due to vocabulary missmatch problem, VSM failed to retrieve buggy files where our proposed tool utilize an association map that successfully retrieve previous relationship between bug report keywords and their source buggy files. 
 
-\section{Research Question Formulation}
-Our proposed tool-BLuAMIR are designed to  answer the following research questions.
+So, contributions of our paper include:
 \begin{itemize}
-	\item RQ1: How many bugs can be successfully located by BLuAMIR?
-	\item RQ2: Does our proposed approach-BLuAMIR resolve the vocabulary missmatch problem?
-	\item RQ3: How does BLuAMIR eliminate vocabulary missmatch problem?
-	\item RQ4: In BLuAMIR comparable with the state-of-the-art techniques in identifying buggy files?
+	\item A novel bug localization technique that not only considers lexical similarity but also exploits the association relationship between bug report keywords and their corresponding buggy source code.
+	\item Comprehensive evaluation of the technique using total of 3973 bugs from Eclipse, SWT and Zxing bug repository and validation against state-of-the-art bug localization technique \cite{Jian}.
 \end{itemize}
 
-\section{Existing Approaches}\label{sec:existing}
-As in our proposed tool, we combine lexical similarity with word co-occurence score, here we discuss TF-IDF based bug localization approach.
-\subsection{Lexical Similarity Based Bug Localization Technique:}
-In this technique, each source code file is ranked based on source code file scores. Source code file contains words those can be also occurred in the bug reports. This is considered as a hint to locate buggy files. 
-%If a new bug is similar to a given previously located bug, then there is a possibility that the source code files located for the past bug can provide useful information in finding buggy files for that new bug.
-For locating a new bug we compute similarity scores for all source code files for a given project. However, we need to focus on some concepts which are required to understand our proposed system. They are described as follows:
+The rest of the paper is organized as follows. Section \ref{sec:motivatingexample} discusses a motivating example of our proposed approach, and Section \ref{sec:proposedmethod} presents proposed bug localization method for BLuAMIR, and Section \ref{sec:expANDdiss} focuses on the conducted experiments and experimental results, and Section \ref{sec:threats} identifies the possible threats to validity, and Section \ref{relatedwork}
+discusses the existing studies related to our research, and finally,  
+Section \ref{sec:conclusionANDfuture} concludes the paper with future plan.
+\section{Motivating Example}\label{sec:motivatingexample}
+Let us consider a bug report (ID 37026) on the Eclipse-UI-Platform. Table \ref{tab:BugInfo} shows the title and description of the encountered bug report. We preprocess the title as well as the description of this bug report, and construct a query. Now we apply both Vector Space Model (VSM) and our approach on this query, and then locate possible buggy files. 
+%The retrieved ranked results are presented in Table \ref{tab:workingexample}. 
+%From the commit log, it is found that gold set contains 14 number of source code for this bug. 
+In Table \ref{tab:workingexample}, we can see that our proposed tool BLuAMIR correctly identifies 3 buggy files where VSM approach locates only 2 buggy files in Top-5. The ranking from basic VSM is 1 and 4 where the rank from BLuAMIR is 1,2,3. However, VSM and association scores are also provided for each recommended buggy file. 
+Note that Same file is retrieved in rank 1 for both techniques. 
+The buggy file,  
+IWorkingSet.java was in the fourth position by VSM, but BLUAMIR returned it at the second position which is promising.
 
-\textbf{Ranking based on Classical Vector Space Mode:}
-The basic idea of a VSM (Vector Space Model) or TF-IDF model is that the weight of a term in a document is increasing with its occurrence frequency in this specific document and decreasing with its occurrence frequency in other documents \cite{Jian}.
-In our proposed approach we have used both classical Vector Space Model (VSM) and revised Vector Space Model (rVSM) proposed by \citet{Jian} in order to index and rank source code files. 
-In classic VSM, \textit{tf} and \textit{idf} are defined as follows:
-\begin{equation}
-tf(t,d)=\frac{f_{td}}{\#terms}, idf(t)=log\frac{\#doc}{n_{t}}
-\end{equation}
-Here \textit{tf} is the term frequency of each unique term \textit{t} in a document \textit{d} and \textit{f\textsubscript{td}} is the number of times term \textit{t} appears in document \textit{d}.
-So the equation of classical VSM model is as follows
-\begin{multline}\label{VSMequation}
-VSMScore(q,d)= cos(q,d) =
-\\
-\frac{1}{\sqrt{\sum_{t\epsilon q}}((\frac{f_{tq}}{\#terms})\times log(\frac{\#docs}{n_{t}}))^{^{2}}}\times 
-\\
-\frac{1}{\sqrt{\sum_{t\epsilon d}((\frac{f_{td}}{\#terms})\times log(\frac{\#docs}{n_{t}}))^{2}}}\times
-\\
-\sum_{t\epsilon q\bigcap d}(\frac{f_{tq}}{\#terms})\times (\frac{f_{td}}{\#terms})\times log(\frac{\#docs}{n_{t}})^{2}
-\end{multline}
-This \textit{VSM} score is calculated for each query bug report \textit{q} against every document \textit{d} in the corpus. However, in the above equation \textit{\#terms} refers to the total number of terms in a corpus, \textit{n\textsubscript{t}} is the number of documents where term \textit{t} occurs.
+We also investigate why BLuAMIR can locate more buggy files than VSM.  
+VSM score is based on overlap of terms found both in the bug reports and source files. On the contrary, association score dont directly compare terms between bug reports and source files. So vocabulary mismatch problem is resolved here. Moreover, in the working example, this association map aids locating more buggy files than VSM technique. IF we go deeper, we can find that due to vocabulary missmatch problem, VSM failed to retrieve buggy files. Our proposed approach makes use of an association map that successfully captures previous relationship between bug report keywords and their source buggy files. 
+In BLuAMIR, we collect keywords from a current bug report (i.e., query) and then retrieve their associated source files from the constructed association map. 
+This association map is created from keywords extracted from previously fixed bug report and their fixed buggy codebase. So, the idea is, if a current bug shares same keywords (i.e., concepts) with a previous fixed bug, there is possibility they might share some codebase. This is how our proposed approach overcome vocabulary missmatch problem.
 
-\textbf{Ranking based on Revised Vector Space Mode:}
-The main difference between classic VSM and revised VSM is that in case of revised version logarithm variant is used in computing term frequency. The equation for calculating term frequency is:
-\begin{equation}
-tf(t,d)=log(f_{td})+1
-\end{equation}
-So the new equation of revised VSM model is as follows:
-\begin{multline}\label{rVSMequation}
-rVSMScore(q,d)=g(\#term)\times cos(q,d)
-\\
-\frac{1}{1+e^{-N(\#terms))}}\times \frac{1}{\sqrt{\sum_{t\epsilon q}}((logf_{tq}+1)\times log(\frac{\#docs}{n_{t}}))^{^{2}}}\times 
-\\
-\frac{1}{\sqrt{\sum_{t\epsilon d}((log {f_{td}+1})\times log(\frac{\#docs}{n_{t}}))^{2}}}\times
-\\
-\sum_{t\epsilon q\bigcap d}(logf_{tq}+1)\times (logf_{td}+1)\times log(\frac{\#docs}{n_{t}})^{2}
-\end{multline}
-%\end{equation}
-This \textit{rVSM} score is calculated for each query bug report \textit{q} against every document \textit{d} in the corpus. However, in the above equation \textit{\#terms} refers to the total number of terms in a corpus, \textit{n\textsubscript{t}} is the number of documents where term \textit{t} occurs.
+\begin{figure*}
+	\centering
+	\includegraphics[scale=0.38]{SD5-Gray}
+	\caption{Proposed Schematic Diagram: (a)Construction of association map between bug report keywords and source documents and (b) Bug Localization Using VSM and association score}
+	\label{fig:systemDiagram}
+\end{figure*}
+\section{BLUAMIR: Proposed Method for Bug Localization} \label{sec:proposedmethod} 
+Figure \ref{fig:systemDiagram} shows the schematic diagram of our proposed approach.
+%Our proposed approach combine lexical similarity and co-occurence similarity measure.  \citet{Jian} proposed BugLocator based on two different similarity scores- one is rVSM score and the other one is Simi score. 
+First, we (a) create an association mapping where the inherent association between past bug reports and their changed documents are leveraged.
+%In BLuAMIR, we follow two different approach for computing source code ranks.
+Then we (b) retrieve relevant ranked source code files based on two different scores - VSM and association.  
+%However, we have divided our approach into two different sections or parts- 1) calculate rVSM and Simi scores or VSM score and co-occurence measure and 2) combine all three or two scores in order to localize recommended buggy source files for a given newly reported bug. 
+%As we have combined two existing scores with our proposed word co-occirence score, 
+We discuss different parts of our proposed approach, BLuAMIR in the following sections.
 
-\textbf{Ranking based on similar bug information}
+\subsection{Association Mapping Database Construction}\label{sec:MapConstruction}
+We construct an association mapping database - between keywords extracted from previously fixed bug reports and source code links. 
+%The system diagram for Part I is given in Fig. \ref{fig:systemDiagram}(a).
+This mapping construction involves two steps.
+First we create association map using information contained in bug reports and commit logs. We collect title and description of each bug report. We extract keywords from each bug report after standard natural language preprocessing (i.e., punctuation removal, stop word removal). 
+%In this part, information are collected from bug report, version repository and source code repository. 
+From version repository, 
+%we have commit logs, where the developers commit for several changes in a software project. For example, when a bug report is fixed, the developer who fixed this bug also creates a commit log containing which type of change he had to made to resolve the bug associated with the location of the source code files where the change has made. So, if we analyze commit logs, 
+we retrieve source code files which have been changed in order to fix a given bug. %Here the idea is, we first extract keywords from bug report and corresponding buggy source code files information for the same bug report from commit log. Then
+It should be noted each commit establishes a direct relationship between its changed documents and the corresponding bug report. 
+Thus, the keywords from this bug report enjoy an implicit relationships with the changed source documents. 
+We construct an association map database by leveraging this connected relationship. Mapping each keyword can be linked to one or more source code files according to commit logs. Similarly, each source code file can be linked to one or more keywords. 
+Algorithm 1 shows pseudo-code for the construction of our mapping database. 
+We divide this into three steps step as follows.  
+%This way we connect keywords and source code files to form an association map database named keyword-source code links. 
+
+%This section can be further divided into several parts: keyword extraction from bug reports, source code information extraction from commit logs, keyword- source code linking. We also create an algorithm for creating association map database between bug report keywords into their buggy source files, which is given in Algorithm \ref{algo:map}. However, several steps of map database construction are discussed in the followings:
+
+\begin{algorithm}[!t]
+	\caption{Construction of Association Mapping Database}
+	\label{algo:map}
+	\begin{algorithmic}[1]
+		\Procedure{BUG REPORTS }{$BRC$}
+		
+		\Comment{$BRC$: a collection of bug reports}
+		\State $MAP_{KS} \gets$ \{\}
+		\Comment{an empty association map}
+		%\Comment{creating adjacency map database from the bug reports collection}
+		%\State $MAP_{adj} \gets$ createAdjacencyDatabase($BRC$)
+		%\Comment{creating a map that links keywords into their bug ids}
+		\State $MAP_{bk} \gets$ createBugIDtoKeywordMap()
+		
+		\Comment{Create Map between BugID and Keywords}
+		
+		\State $MAP_{kb} \gets$ createKeywordtoBugIDMap()
+		
+		\Comment{Create Map between Keywords and BugID}
+		
+		\State $MAP_{bs} \gets$ createBugIDtoSourceMap()
+		
+		\Comment{Create Map between BugID and codebase}
+		
+		\Comment{Linking keywords into change source code}
+		%\LineComment{preprocess the collected keywords}
+		%\For{Keyword $K_i \in$ $K$}
+		\State $KB \gets$ collectKeywords($MAP_{kb}$)
+		
+		
+		
+		\For{keywords $KB_{_i}$ $\in$ $KB$}
+		\State $BUG_{id} \gets$ retrieveBugIds ($KB_{_i}$)
+		\For{each bug id $BUG_{id_j} \in BUG_{id}$}
+		\State $SF_{link} \gets$ getLinkedSourceFiles($MAP_{bs}$, $BUG_{id}$)
+		
+		\Comment{Retrieve associated source from $MAP_{bs}}$
+		%\State $MAO_{BUG_{id}} \gets$ linkSourceCodeFiles$Adj_{T_i}, Adj_{K_j}$) 
+		\State $MAP[KB_i].link \gets MAP[KB_{i}].link + SF_{link}$
+		
+		\Comment{maps all source code files to its keywords}
+		\EndFor
+		\EndFor
+		
+		
+		\State $MAP_{KS} \gets$ $MAP[KB]$ 
+		
+		\Comment{collecting all keyword-source code links}
+		%\LineComment{put them into map}
+		%\State $MAP \gets$ mapping()
+		\State \textbf{return} $MAP_{KS}$
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+
+
+
+\textbf{Keyword Extraction from Bug Reports:} We collect title and description from each fixed bug report from a collection of previously fixed bug reports.. We perform standard natural language pre-processing on the corpus such as stop word removal, splitting and stemming. Stop words contain very little semantic for a sentence. Stemming extracts the root of each of the word. We use this stop word list\footnote{{1}https://www.ranks.nl/stopwords} during stop word removal and Porter Stemming stemmer\footnote{{2}http://tartarus.org/martin/PorterStemmer/} for stemming. First we create a mapping relationship between bug IDs and keywords contained in those bug reports, as described in Algorithm \ref{algo:map} line 3. Second we also construct another connected relationship between keywords and bug IDs, presented in
+line 4 of Algorithm \ref{algo:map}.
+
+%{\footnotesize \textsuperscript{1}http://tartarus.org/martin/PorterStemmer/}
+
+
+\textbf{Source Code Link Extraction from Commit Logs:}
+We go through all commit messages and identify those commits that contain keywords related to bug fix such as fix, fixed and so on.
+In  GitHub, we  note  that any commit that either solves a software bug or implements a feature request generally mentions the corresponding Issue ID
+in the very title of the commit.
+We identify such commits from the commit history of each of the selected projects using suitable regular expressions, and select them for our experiments
+\cite{Bachmann}. Then, we collect the changeset (i.e., list of changed files)
+for each of those commit operations, and develop solution set (i.e.,
+goldset) for the corresponding change tasks. Thus, for experiments, we collect not only the actual change requests from the reputed subject systems but also their solutions which were applied in practice by the developers \cite{SHaiduc}. We use several
+utility commands such as git, clone and log on GitHub for collecting those information. This step is done line 5 of Algotrithm \ref{algo:map}. 
+%Each of these commit messages presents other information such as the ID of bug report for which it was created and the links of the corresponding changed source code files. 
+%We then construct a linking relationship between each fixed bug report ID into their changed source code files, which is mentioned in line 4 of Algorithm \ref{algo:map}.
+
+\textbf{Keyword-Source Code Linking:}
+At this point, we have pre-processed keywords from each bug report. We also have a implied relationship between bug ID and buggy source code links. We construct the bipartite graph (i.e., discussed bellows) between keywords collected from a bug report and buggy source document links. Here, one or more keywords can be linked to a single buggy source code files links. A source code file can be linked to one or more keywords, which is constructed from lines 6-15 in Algorithm \ref{algo:map}.
+
+
+\begin{table}[htbp]
+	\caption{A Bug Report (\#322401, eclipse.UI.platform)}
+	\label{tab:BugInfo2}
+	%\centering
+	\begin{center}
+		\begin{tabular}{ p{1.5cm} | p{6cm}}
+			\hline
+			\textbf{Field}  & \textbf{Content} \\
+			\hline
+			\hline Title &
+		[LinkedResources] Linked Resources properties page should have a Remove button
+			\\ \hline
+		   Description &  I20100810-0800
+		   
+		   Project properties $>$ Resource $>$ Linked Resources:
+		   Especially for invalid locations, a Remove button would be handy to remove one or multiple links. \\
+			\hline
+		\end{tabular}
+	\end{center}
+	%\centering
+\end{table}
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.65]{3layers}
-	\caption{Bug and its Similar Bug Relationship with Source Code Files:}
-	\label{fig:BSBR}
+	\includegraphics[scale=0.53]{BGraph2}
+	\caption{Bipartite Graph Constructed for Bug \#46669. Here, S1 represents \textit{org.eclipse.ui.internal.ide.IDEWorkbenchMessages.java} and S2 represents \textit{org.eclipse.ui.internal.ide.dialogs.LinkedResourceEditor.java}}
+	\label{fig:BipartiteGraph}
 \end{figure}
-The assumption of this ranking is similar bugs of a given bug tend to modify similar source code files. Here, we construct a 3-layer architecture as described in \cite{Jian}. In the top layer (layer 1) there is a bug \textit{B} which represents a newly reported bug. All previously fixed bug reports which have non-negative similarity with bug  \textit{B} are presented in second layer. In third layer all source code files are shown. In order to resolve each bug in second layer some files in the corpus were modified or changed, which are indicated by a link between layer 2 and layer 3. Foe all source code files in layer 3, similarity score is computed, which can be referred to as degree of similarity. The score can be defined as:
 
-\begin{equation}\label{Simiequation}
-SimiScore=\sum_{All S_{i} that connect to F_{j}}(Similarity(B,S_{i})/n_{i})
-\end{equation} 
-Here, similarity between newly reported bug \textit{B} and previously fixed bug \textit{S\textsubscript{i}} is calculated based on cosine similarity measure and \textit{n\textsubscript{i}} is the total number of link \textit{S\textsubscript{i}} has with source code files in layer 3.
+\textbf{A Bipartite Graph Example:}
+
+In mathematics, a bipartite graph is a graph in which the vertices can be put into two separate groups so that the only edges are between those two groups, and there are no edges between vertices within the same group. 
+Here, two groups correspond to keywords and codebase. Hence, nether two keywords nor two source files can be connected. There is only valid link is established between a keyword and its corresponding source. 
+We construct a bipartite graph for a bug report (ID 322401) on the Eclipse-UI-Platform. Table \ref{tab:BugInfo2} shows the title and description of the encountered bug report. The bipartite graph is presented in Figure \ref{fig:BipartiteGraph}. Note, that ten unique keywords are extracted from the bug report (i.e., from title and description) and are connected through edges with their corresponding change codes (i.e., $S1$ and $S2$ ). 
+\subsection{Bug Localization Using VSM and Association Scores}
+
+The system diagram for this part has illustrated in Figure \ref{fig:systemDiagram}(b), which 
+%In BLuAMIR, we perform bug localization in two different ways - Approach I 
+is based on the combination of VSM and association scores (i.e., Figure \ref{fig:systemDiagram}(b)).
+%(b)) and Approach II is based on rVSM, Simi and association scores (i.e., Figure \ref{fig:systemDiagram} (c)). 
+We have constructed an association map databases from keywords collected from bug report into its corresponding source code information in Section \ref{sec:MapConstruction}.
+For the candidate keyword tokens for the initial query, we exploit association map database (i.e., keyword-source code links) and retrieve the relevant source code files. We use some heuristic functions in order to combine two ranks and recommend buggy relevant source files. 
+%However, for simplicity we represent the former approach (i.e., Approach I) in our proposed schematic diagram in Fig. \ref{fig:systemDiagram}(b).
+%In this approach, we calculate VSM and Co-occurence ranks in order to recommend buggy source codes for a given newly reported bug. 
+%On the other hand,
+%in our second approach, we work with three different ranks i.e., rVSM, Simi and Co-occurence. We replicate an existing technique proposed by \citet{Jian} for computing rVSM and Similarity scores. Basically, both VSM and rVSM are TF-IDF based score, which is measured between query and source code files.
+%On the other hand, Simi score refers to that fact that if a bug is similar to another bug, then they both tend to relate to same sources. However, we describe both scores in Section \ref{Sec:Localize}.
+
+
+%\section{Existing Approaches}\label{sec:existing}
+%As in our proposed tool, we combine lexical similarity with word co-occurence score, here we discuss TF-IDF based bug localization approach.
+%\subsection{Lexical Similarity Based Bug Localization Technique:}
+%In this technique, each source code file is ranked based on source code file scores. Source code file contains words those can be also occurred in the bug reports. This is considered as a hint to locate buggy files. 
+%%If a new bug is similar to a given previously located bug, then there is a possibility that the source code files located for the past bug can provide useful information in finding buggy files for that new bug.
+%For locating a new bug we compute similarity scores for all source code files for a given project. However, we need to focus on some concepts which are required to understand our proposed system. They are described as follows:
+
+%\textbf{Ranking based on Classical Vector Space Mode:}
+%The basic idea of a VSM (Vector Space Model) or TF-IDF model is that the weight of a term in a document is increasing with its occurrence frequency in this specific document and decreasing with its occurrence frequency in other documents \cite{Jian}.
+%In our proposed approach we have used both classical Vector Space Model (VSM) and revised Vector Space Model (rVSM) proposed by \citet{Jian} in order to index and rank source code files. 
+%In classic VSM, \textit{tf} and \textit{idf} are defined as follows:
+%\begin{equation}
+%tf(t,d)=\frac{f_{td}}{\#terms}, idf(t)=log\frac{\#doc}{n_{t}}
+%\end{equation}
+%Here \textit{tf} is the term frequency of each unique term \textit{t} in a document \textit{d} and \textit{f\textsubscript{td}} is the number of times term \textit{t} appears in document \textit{d}.
+%So the equation of classical VSM model is as follows
+%\begin{multline}\label{VSMequation}
+%VSMScore(q,d)= cos(q,d) =
+%\\
+%\frac{1}{\sqrt{\sum_{t\epsilon q}}((\frac{f_{tq}}{\#terms})\times log(\frac{\#docs}{n_{t}}))^{^{2}}}\times 
+%\\
+%\frac{1}{\sqrt{\sum_{t\epsilon d}((\frac{f_{td}}{\#terms})\times log(\frac{\#docs}{n_{t}}))^{2}}}\times
+%\\
+%\sum_{t\epsilon q\bigcap d}(\frac{f_{tq}}{\#terms})\times (\frac{f_{td}}{\#terms})\times log(\frac{\#docs}{n_{t}})^{2}
+%\end{multline}
+%This \textit{VSM} score is calculated for each query bug report \textit{q} against every document \textit{d} in the corpus. However, in the above equation \textit{\#terms} refers to the total number of terms in a corpus, \textit{n\textsubscript{t}} is the number of documents where term \textit{t} occurs.
+
+%\textbf{Ranking based on Revised Vector Space Mode:}
+%The main difference between classic VSM and revised VSM is that in case of revised version logarithm variant is used in computing term frequency. The equation for calculating term frequency is:
+%\begin{equation}
+%tf(t,d)=log(f_{td})+1
+%\end{equation}
+%So the new equation of revised VSM model is as follows:
+%\begin{multline}\label{rVSMequation}
+%rVSMScore(q,d)=g(\#term)\times cos(q,d)
+%\\
+%\frac{1}{1+e^{-N(\#terms))}}\times \frac{1}{\sqrt{\sum_{t\epsilon q}}((logf_{tq}+1)\times log(\frac{\#docs}{n_{t}}))^{^{2}}}\times 
+%\\
+%\frac{1}{\sqrt{\sum_{t\epsilon d}((log {f_{td}+1})\times log(\frac{\#docs}{n_{t}}))^{2}}}\times
+%\\
+%\sum_{t\epsilon q\bigcap d}(logf_{tq}+1)\times (logf_{td}+1)\times log(\frac{\#docs}{n_{t}})^{2}
+%\end{multline}
+%%\end{equation}
+%This \textit{rVSM} score is calculated for each query bug report \textit{q} against every document \textit{d} in the corpus. However, in the above equation \textit{\#terms} refers to the total number of terms in a corpus, \textit{n\textsubscript{t}} is the number of documents where term \textit{t} occurs.
+%
+%\textbf{Ranking based on similar bug information}
+%\begin{figure}
+%	\centering
+%	\includegraphics[scale=0.65]{3layers}
+%	\caption{Bug and its Similar Bug Relationship with Source Code Files:}
+%	\label{fig:BSBR}
+%\end{figure}
+%The assumption of this ranking is similar bugs of a given bug tend to modify similar source code files. Here, we construct a 3-layer architecture as described in \cite{Jian}. In the top layer (layer 1) there is a bug \textit{B} which represents a newly reported bug. All previously fixed bug reports which have non-negative similarity with bug  \textit{B} are presented in second layer. In third layer all source code files are shown. In order to resolve each bug in second layer some files in the corpus were modified or changed, which are indicated by a link between layer 2 and layer 3. Foe all source code files in layer 3, similarity score is computed, which can be referred to as degree of similarity. The score can be defined as:
+%
+%\begin{equation}\label{Simiequation}
+%SimiScore=\sum_{All S_{i} that connect to F_{j}}(Similarity(B,S_{i})/n_{i})
+%\end{equation} 
+%Here, similarity between newly reported bug \textit{B} and previously fixed bug \textit{S\textsubscript{i}} is calculated based on cosine similarity measure and \textit{n\textsubscript{i}} is the total number of link \textit{S\textsubscript{i}} has with source code files in layer 3.
 
 %%\subsection
 %\textbf{Combining Both Ranks:}
@@ -257,126 +466,74 @@ Here, similarity between newly reported bug \textit{B} and previously fixed bug 
 %	%\item A detailed description of methodologies for visualizing bug report extractive summaries.
 %	%\item Evaluation of visualized bug report extractive summary by conducting a task-oriented user study.
 %\end{itemize}
-\section{Proposed System Diagram}\label{sec:proposedsystemDiagram}
-Our proposed approach combine lexical similarity and co-occurence similarity measure.  \citet{Jian} proposed BugLocator based on two different similarity scores- one is rVSM score and the other one is Simi score. 
-In BLuAMIR, we follow two different approach for computing source code ranks. We retrieve relevant ranked source files based on 1) three different scores- i) rVSM, ii) Simi and iii) Word Co-occurence and 2) two different scores - i) VSM and ii) Word Co-occurence.  So,
-we have divided our approach into two different sections or parts- 1) calculate rVSM and Simi scores or VSM score and co-occurence measure and 2) combine all three or two scores in order to localize recommended buggy source files for a given newly reported bug. As we have combined two existing scores with our proposed word co-occirence score, we will discuss the system diagram of association map database in Part I and then we represent rest of our system diagram in Part II.
 
-\subsection{Part I: Mapping Bug Source Code Links}
-In Part I, we construct an association map database - between keywords extracted from previously fixed bug reports collection and source code links. The system diagram for Part I is given in Fig. \ref{fig:systemDiagram}(a).
 
-This mapping construction involves two steps.
-At first we create association map using information contained in bug reports collection and commit logs. We collect information from title and description fields of each bug report. There are also developers comment section in a bug report, which is highly informative. But large documents also tend to reduce performance by taking too long to process. So, we reluctant to include developers comments of each bug report. However, we extract keywords from each bug report after preprocessing them such as stop word removal. 
-%In this part, information are collected from bug report, version repository and source code repository. 
-In version repository, we have commit logs, where the developers commit for several changes in a software project. For example, when a bug report is fixed, the developer who fixed this bug also creates a commit log containing which type of change he had to made to resolve the bug associated with the location of the source code files where the change has made. So, if we analyze commit logs, we can retrieve source code files information which have been changed in order to fix a given bug. Here the idea is, we first extract keywords from bug report and source code links for the same bug from commit log and then construct an association map database containing this mapping information. The links between keywords and source code links can be described as: each or several keywords can be linked to one or more source code links and each source code link can be linked to one or several keywords. This way we connect keywords and source code links to form an association map database named keyword-source code links. 
+%\section{Part I: Association Map Database Construction}\label{sec:MapConstruction}
+%%Our proposed approach consists of two parts - (i) constructing association map databases and (ii) retrieve relevant buggy source code files. 
+%
+%%\subsection{Part I: Construction of Association Map Database Between Bug Reports and Source Files}
+%In this part, we construct an association map databases - between keywords and corresponding source code links extracted from bug reports and commit messages respectively. This section can be further divided into several parts: keyword extraction from bug reports, source code information extraction from commit logs, keyword- source code linking. We also create an algorithm for creating association map database between bug report keywords into their buggy source files, which is given in Algorithm \ref{algo:map}. However, several steps of map database construction are discussed in the followings:
 
 
 
 
-\begin{figure*}
-	\centering
-	\includegraphics[scale=0.65]{SD3}
-	\caption{Proposed System Diagram: (a) Mapping Bug Source Code Links and  (b) Bug Localization Using VSM, and Co-occurence Ranks}
-	\label{fig:systemDiagram}
-\end{figure*}
 
-\subsection{Part II: Bug Localization Using either rVSM and Simi or VSM, and Co-occurence Ranks}
+%\section{Part II: Localizing Buggy Source Code Files} \label{Sec:Localize}
+%In this part, we combine existing two lexical similarity based bug localization approaches with our proposed keyword-source co-occurence relation. One is with VSM score and other one is with rVSM and Simi ranks which are proposed in BugLocator \cite{Jian}. So, there are two sub parts of this section.
+%\subsection{Approach I: Combinition of VSM and Co-occurence Rank:}
+For locating a new bug we compute similarity scores for all source code files for a given project. However, we need to focus on some concepts which are required to understand our proposed system. They are described as follows:
 
-The system diagram for this part has illustrated in Fig. \ref{fig:systemDiagram}(b). In BLuAMIR, we calculate similarity score in two ways - one is based on rVSM, Simi and Co-occurence scores and other one is the combination of VSM and Co-occurence scores. However, for simplicity we represent the later approach in our proposed schematic diagram in Fig. \ref{fig:systemDiagram}(b).
-In the first approach, we have three different ranks i.e., rVSM, Simi and Co-occurence. We utlize an existing technique proposed by \citet{Jian} for computing rVSM and Similarity scores. Basically, rVSM is a TF-IDF based score, which is measured between query and source code files.
-On the other hand, Simi score refers to that fact that if a bug is similar to another bug, then they both tend to relate to same sources. However, we describe both scores in Section \ref{sec:existing}.
-We have constructed an association map databases from keywords collected from bug report to its source code location information in Section \ref{sec:proposedsystemDiagram}.
-For the candidate keyword tokens for the initial query, we exploit association map database (i.e., keyword-source code links) and retrieve the relevant source code files. We use some heuristic functions in order to combine three ranks and recommend buggy relevant source files. 
+\textbf{Vector Space Model:}
+The vector space model (VSM) is a classical method for constructing vector representations for documents \cite{Salton}. 
+It encodes a document collection by a term-by-document matrix. It represents one type of text unit (documents) by its association with the other type of text unit (terms). Here, the association is calculated by explicit evidence based on term occurrences in the documents.
+The similarity between documents is computed by the cosine or inner product between corresponding vectors.
 
+\textbf{VSM Score Calculation:}
+Source code file contains words those can be also occurred in the bug reports. This is considered as a hint to locate buggy files. 
+%If a new bug is similar to a given previously located bug, then there is a possibility that the source code files located for the past bug can provide useful information in finding buggy files for that new bug.
+The basic idea of a VSM (Vector Space Model) is that the similarity between documents is computed by the cosine or inner product between terms collected from a query and a source document.
+The weight of a term in a document increases with its occurrence frequency in this specific document and decreases with its occurrence frequency in other documents.
+%In our proposed approach we have used both classical Vector Space Model (VSM)  and revised Vector Space Model (rVSM) proposed by \citet{Jian} in order to index and rank source code files. 
+In classic VSM, {$tf$} (i.e., term frequency) and {$idf$} (i.e., inverse document frequency) are defined as follows:
+\begin{equation}
+tf(t,d)=\frac{f_{td}}{\#terms}, idf(t)=log\frac{\#doc}{n_{t}}
+\end{equation}
+Here $tf$ is the term frequency of each unique term {$t$} in a document {$d$} and {$f\textsubscript{td}$} is the number of times term {$t$} appears in document {$d$}.
+So the equation of classical VSM model is as follows
+\begin{multline}\label{VSMequation}
+VSMScore(q,d)= cos(q,d) =
+\\
+\frac{1}{\sqrt{\sum_{t\epsilon q}}((\frac{f_{tq}}{\#terms})\times log(\frac{\#docs}{n_{t}}))^{^{2}}}\times 
+\\
+\frac{1}{\sqrt{\sum_{t\epsilon d}((\frac{f_{td}}{\#terms})\times log(\frac{\#docs}{n_{t}}))^{2}}}\times
+\\
+\sum_{t\epsilon q\bigcap d}(\frac{f_{tq}}{\#terms})\times (\frac{f_{td}}{\#terms})\times log(\frac{\#docs}{n_{t}})^{2}
+\end{multline}
+This \textit{VSM} score is calculated for each query bug report {$q$} against every document {$d$} in the corpus. However, in the above equation {$\#terms$} refers to the total number of terms in a corpus, {$n\textsubscript{t}$} is the number of documents where term {$t$} occurs.
 
-\section{Proposed Approach}\label{sec:proposedApproach}
-Our proposed approach consists of two parts - (i) constructing association map databases and (ii) retrieve relevant buggy source code files. 
-
-\subsection{Construction of Association Map Database Between Bug Reports and Source Files}
-In this part, we construct an association map databases - between keywords and source code links extracted from bug reports and commit messages respectively. This section can be further divided into several parts: keyword extraction from bug reports, source code link extraction from commit logs, keyword- source code linking. They are discussed in the followings:
-
-\begin{algorithm}[!t]
-	\caption{Construction of Association Map Database Between Bug Reports and Source Files}
-	\label{map}
-	\begin{algorithmic}[1]
-		\Procedure{BUG REPORTS }{$BRC$}\Comment{$BRC$: a collection of bug reports}
-		\State $MAP_{KS} \gets$ \{\}\Comment{an association map}
-		\Comment{creating adjacency map database from the bug reports collection}
-		\State $MAP_{adj} \gets$ createAdjacencyDatabase($BRC$)
-		\Comment{creating a map that links keywords into their bug ids}
-		\State $MAP_{kb} \gets$ createKeywordsToBugMaps($MAP_{adj}$)
-		\Comment{collecting unique keywords from keywords to bug map}
-		
-		%\LineComment{preprocess the collected keywords}
-		%\For{Keyword $K_i \in$ $K$}
-		\State $KB \gets$ collectKeywords($MAP_{kb}$)
-		
-		\Comment{Linking keywords from a bug report into its change set files}
-		\For{keywords $KB_{_i}$ $\in$ $KB$}
-		\State $BUG_{id} \gets$ retrieveBugIds ($K_i$)
-		\For{each bug id $BUG_{id_j} \in BUG_{id}$}
-		\State $SF_{links} \gets$ getLinkedSourceFiles($BUG_{id}$)
-		\Comment{maps all source code files to its keywords}
-		%\State $MAO_{BUG_{id}} \gets$ linkSourceCodeFiles$Adj_{T_i}, Adj_{K_j}$) 
-		\State $MAP[KB_i].links \gets MAP[KB_{i}].links + SF_{links}$
-		\EndFor
-		\EndFor
-		
-		\Comment{collecting all keyword-source files links}
-		\State $MAP_{KS} \gets$ $MAP[KB]$ 
-		%\LineComment{put them into map}
-		%\State $MAP \gets$ mapping()
-		\State \textbf{return} $MAP_{KS}$
-		\EndProcedure
-	\end{algorithmic}
-\end{algorithm}
-
-
-
-\textbf{Keyword Extraction from Bug Reports:} We collect title, description and developers comments from each fixed bug report in a collection of bug reports. We perform standard natural language pre-processing on the corpus such as stop word removal, splitting and stemming. The purpose of removing stop words is that they contain very little semantic for a sentence. The process of stemming step extracts the root of each of the word. We use this stop word list [link] during stop word removal and Porter Stemming stemmer \footnote{{1}http://tartarus.org/martin/PorterStemmer/} for stemming. 
-
-%{\footnotesize \textsuperscript{1}http://tartarus.org/martin/PorterStemmer/}
-
-
-\textbf{Source Code Link Extraction from Commit Logs:}
-We go through all commit messages and try to find those commit message that contain keywords related to bug fix such as fix, fixed and so on. Each of these commit messages presents other information such as the ID of bug report for which it was created and the links of the changed source code files. We then construct a linking relationship against each fixed bug report ID into their changed source code files.
-
-\textbf{Keyword- Source Code Linking:}
-At this point, in one side we have pre-processed keywords associated with each bug report and on the other side we have a relationship information between bug report ID and buggy source code links. We construct a bipartite graph between keywords collected from a bug report to its buggy source code locations. Here, one or more keywords can be linked to one or more buggy source code files links and a source code file can be linked to one or more keywords.
-
-\textbf{Calculating Co-occurence Scores}
-A query typically contains several keywords or words. For each keyword, we look for relevant source files in the keyword-source files association map. We assume these files are relevant because we created the map between the content of bug reports and their buggy source files. When we analysis these links for all keywords in a query, a relevant file can be found from the association relationship more than once. So, them we normalize the frequency of source files using standard TFIDF normalization technique. Then we recommend first Top-K files with their CoOccScores. The equation for computing co-occurence score is given belows:
+\textbf{Association Scores Calculation}
+A query typically contains several keywords or words. For each keyword, we look for relevant source files in the keyword-source files association map. We assume these files are relevant because we created the map between the content of bug reports and their buggy source files for previously fixed bug reports. When we analysis these links for all keywords in a query, a relevant file can be found from the association relationship more than once. Therefore, we then normalize the frequency of source files using standard TFIDF normalization technique. Finally we recommend first Top-K files with their association. The equation for computing association score is given belows:
 \begin{equation}\label{CoOccequation}
-CoOccScore=\sum_{All S_{i} that connect to W_{j}}(Link(W{j},S_{i}))
+AssociationScore=\sum_{All S_{i} that connect to W_{j}}(Link(W{j},S_{i}))
 \end{equation}
 Here, the link $Link(W{j},S_{i})$ between keyword and source file is 1 if they are connected in the association map and 0 otherwise.
 
 
-\subsection{Localizing Buggy Source Code Files} 
-In this part, we combine existing two lexical similarity based bug localization approaches with our proposed keyword-source co-occurence relations. One is with rVSM and Simi ranks which are presented in BugLocator and other one is Vector Space Model based technique. So, there are two sub parts of this section.
-
-\textbf{Combination of rVSM, Simi Rank and Co-occurence Rank:}
-
-For each query, we compute the rVSM score against all source codes in the database using equation \ref{rVSMequation} and we also calculate Simi score using equation \ref{Simiequation}. Then we calculate co-occurence scores for the query using equation \ref{CoOccequation}.
-We finally combine the three ranks and for that we use three weighting factor {$\alpha$}, $\beta$ and $\gamma$.
-The final equation is given in equation \ref{equationBLme}.
-\begin{multline}\label{equationBLme}
-FinalScoreApproach1=\gamma \times N(rVSMScore)+
-\\ \beta \times N(SimiScore) + \alpha \times N(CoOccScore)
-\end{multline}
-We work with different values of $\alpha$, which are presented in the experiment section. We use value of 0.2 for $\beta$, varying $\alpha$ from 0.1 to 0.5 and thus, $\gamma$ from 0.7 to 0.3. So that they end up into 1.
-
-\textbf{Combinition of VSM and Co-occurence Rank:}
-
-We compute VSM score using Appache Lucene library. Then we combine that score with our CoOccScore using equation \ref{equationVSMme}.
+\textbf{Final Score Calculation}
+We compute VSM score using Appache Lucene library. Then we combine that score with our association using equation \ref{equationVSMme}.
 \begin{multline}\label{equationVSMme}
-FinalScoreApproach2=(1-\alpha )\times N(VSMScore)+ \\
-\alpha \times N(CoOccScore)
+FinalScore=(1-\alpha )\times N(VSMScore)+ \\
+\alpha \times N(AssociationScore)
 \end{multline}
-Here, the weighting factor $\alpha$ varies from 0.1 to 0.5, for which we discuss results in the experiment section.
+Here, the weighting factor $\alpha$ varies from 0.1 to 0.5, for which we discuss results in the experiment section \ref{RQ2Answer}.
 
-\section{Experiment and Discussion}
-In this section, at first we discuss detail of our data set, then we describe the evaluation metrics and finally we present our experimental results.
+
+
+
+
+\section{Experiment and Discussion} \label{sec:expANDdiss}
+In this section, at first we discuss detail of our data set, then we describe the evaluation metrics, research questions and finally we present our experimental results.
+
 
 
 
@@ -417,7 +574,7 @@ to evaluate BugLocator. This dataset contains 118 bug reports in total from two 
 			\hline
 			\textbf{Project Name}  & \textbf{Description} & \textbf{Study Period}& \textbf{\#Fixed Bugs} & \textbf{\#Source Files}\\
 			\hline
-			{Eclipse Platform Ant} & Popular IDE for Java & & {3000} & 11732\\ \hline
+			{Eclipse Platform Ant} & Popular IDE for Java & Nov 2001 - April 2010 & {3855} & 11732\\ \hline
 			SWT (V 3.1)& An open source widget toolkit for Java & Oct 2004 - Apr 2010 & 98 & 484 \\ \hline
 			Zxing & A barcode image processing library for Android Application & Mar 2010 - Sep 2010 & 20 & 391 \\
 			\hline
@@ -451,77 +608,21 @@ where $k$ is a rank in the returned ranked files, $M$ is the number of ranked fi
 P(k)=\frac{\#buggy \, Files}{k}
 \end{equation}
 
-\textbf{Wilcoxon signed-rank test}
-The Wilcoxon signed-rank test is a non-parametric statistical hypothesis test used to compare two related samples, matched samples, or repeated measurements on a single sample to assess whether their population mean ranks differ. We perform this test with the help of \footnote{https://www.socscistatistics.com/tests/signedranks/Default.aspx}.
-
-\textbf{Cross Validation}
-We divide our query data into k number of sets. Typically k is 10, but we work with k =5 and k=10. Each set contains a training set and tesing set. Training data is used to create mapping between keywords extracted from bug reports and source code files. 10-fold-cross validation data is presented in table \ref{tab:Performance1} and table \ref{tab:Performance2}.
-\begin{table}[htbp]
-\caption{Performance of Bugloactor and proposed technique (rVSM+Simi+Co-Occerence)}
-\label{tab:Performance1}
-\centering
-\resizebox{3.4in}{!}{%
-\begin{tabular}{c|c|c|c|c|c|c}
-	\hline
-			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
-			\begin{tabular}[c]{@{}c@{}}\# \textbf{Test}  \\ \textbf{Case} \\ \end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{Methodology} \\ \end{tabular} &
-			%\textbf{alpha} &
-			%\textbf{beta}&
-			%\textbf{gamma}& 
-			\begin{tabular}[c]{@{}c@{}}\textbf{Top 1}\\ \%\end{tabular} & 
-			\begin{tabular}[c]{@{}c@{}}\textbf{Top 5}\\ \%\end{tabular} & 
-			\begin{tabular}[c]{@{}c@{}}\textbf{Top 10}\\ \%\end{tabular} &
-			
-			\begin{tabular}[c]{@{}c@{}} \textbf{MRR} \end{tabular} & 
-			\begin{tabular}[c]{@{}c@{}} \textbf{MAP} \end{tabular} \\ \hline \hline
-			\multirow{2}{*}{1}  &BugLocator     &  8.88& 24.56&34.32& 0.16 & 0.15 \\  \cline{2-7}
-			& rVSM+Simi+ Co-Score                                                                                                                                               & 16.27                                               & 39.35                                            & 49.41                                                &   0.26  & 0.25    \\ \hline
-			\multirow{2}{*}{2}  &BugLocator     &  9.9& 24.62&34.53& 0.17 & 0.16 \\ \cline{2-7}
-			& rVSM+Simi+ Co-Score                                                                      & 18.32                                               & 41.44                                              & 53.45                                             &   0.28  &   0.27  \\ \hline
-			\multirow{2}{*}{3}  &BugLocator     &  7.50& 21.32&30.63& 0.14 & 0.13 \\ \cline{2-7}
-			& rVSM+Simi+ Co-Score                                                                     & 18.62                                            & 42.34                                            & 52.25                                             &   0.28  &  0.27   \\  \hline
-			\multirow{2}{*}{4}  &BugLocator     &  8.1& 21.02&29.13& 0.14 & 0.13 \\  \cline{2-7}
-			& rVSM+Simi+ Co-Score                                                                    & 14.71                       & 42.04                       & 54.35                                               &  0.26   &  0.25  \\  \hline
-			\multirow{2}{*}{5}  &BugLocator     &  9.6& 30.63&42.94& 0.18 & 0.18 \\  \cline{2-7}
-			& rVSM+Simi+ Co-Score                                                                    & 22.22                                                 & 42.34                                                & 57.66                                                  &  0.31   & 0.30     \\ \hline
-			\multirow{2}{*}{6}  &BugLocator     &  10.21& 31.53&43.54& 0.19 & 0.19 \\  \cline{2-7}
-			& rVSM+Simi+ Co-Score
-			&25.53 &
-			52.25 &
-			60.66 & 0.36 &
-			0.34     \\  \hline
-			\multirow{2}{*}{7}  &BugLocator     &  9.61& 30.33&40.84& 0.18 & 0.17 \\ \cline{2-7}
-			& rVSM+Simi+ Co-Score
-			&25.22 &
-			52.25 &
-			64.56 & 0.36 &
-			0.34     \\  \hline
-			\multirow{2}{*}{8}  &BugLocator     &  8.4& 26.13&39.94& 0.19 & 0.16 \\ \cline{2-7}
-			& rVSM+Simi+ Co-Score
-			&24.92 &
-			51.95 &
-			62.46 & 0.36 &
-			0.34    \\  \hline
-			\multirow{2}{*}{9}  &BugLocator     &  11.11& 28.83&40.24& 0.19 & 0.18 \\  \cline{2-7}
-			& rVSM+Simi+ Co-Score
-			&21.92 &
-			48.65 &
-			62.46 & 0.33 &
-			0.32    \\  \hline
-			\multirow{2}{*}{10}  &BugLocator     &  6.6& 20.72&27.93& 0.12 & 0.12 \\  \cline{2-7}
-			& rVSM+Simi+ Co-Score
-			&16.21 &
-			40.54 &
-			55.55 & 0.27 &
-			0.26    \\  \hline \hline
-			\multirow{2}{*}{Average}       &BugLocator     &  8.99\%& 25.87\%&36.40\%& 0.16 & 0.16  \\ \cline{2-7}
-			& rVSM+Simi+ Co-Score                                                                                                                         & 20.39\%                                                 & 45.32\%                                                 & 57.28\%                                                  &   0.31  &  0.29    \\ 
-			\hline
-\end{tabular}}
-\centering
-\end{table}
+%\textbf{Wilcoxon signed-rank test}
+%The Wilcoxon signed-rank test is a non-parametric statistical hypothesis test used to compare two related samples, matched samples, or repeated measurements on a single sample to assess whether their population mean ranks differ. We perform this test with the help of \footnote{https://www.socscistatistics.com/tests/signedranks/Default.aspx}.
+%
+%\textbf{Cross Validation}
+%We divide our query data into k number of sets. Typically k is 10, but we work with k =5 and k=10. Each set contains a training set and tesing set. Training data is used to create mapping between keywords extracted from bug reports and source code files. 10-fold-cross validation data is presented in table \ref{tab:Performance1} and table \ref{tab:Performance2}.
 
 
+\subsection{Research Questions}
+Our proposed tool-BLuAMIR are designed to  answer the following research questions.
+\begin{itemize}
+	\item RQ1: How many bugs can be successfully located by BLuAMIR?
+	\item RQ2: Does our proposed approach-BLuAMIR resolve the vocabulary missmatch problem and how?
+	\item RQ3: Does our proposed approach-BLuAMIR eliminate large files problem and how?
+	\item RQ4: In BLuAMIR comparable with the state-of-the-art techniques in identifying buggy files?
+\end{itemize}
 
 
 
@@ -531,13 +632,70 @@ We divide our query data into k number of sets. Typically k is 10, but we work w
 \subsection{Experimental Results}
 During experiment, we evaluate our proposed approach in different ways. To create mapping between bug report keywords and source files, we consider three different options - (1) including only title or summary of a bug report in creating corpus, (2) in addition with title we also include description field of a bug report and (3) full content of a bug report could be an option. Neither option 1 nor 3 provides better result and option 2 optimized the performance. We explain this in a way that providing only title of a big report conveys very little information. On the other hand, including full content of a bug report also create too much information that contains huge noise data and also takes longer time during mapping them into source code files. Therefore, title and description of a bug report optimized those two options. However, considering title and description did not get rid of noise and therefore we discard all keywords that happen to exist in 25\% or more documents in the corpus.
 
-However, we divide our experimental result into two parts. We implemented BLuAMIR by two different approaches. In   part I we work with Eclipse dataset, where we compare the performance of BLuAMIR with BugLocator \cite{Jian} and VSM based bug localization techniques. On the other hand, in part II we experiment with SWT and Zxing dataset as in \cite{Jian}. We also answer our research questions throughout the two parts.
+%However, we divide our experimental result into two parts based on experimented dataset. 
+%We implemented BLuAMIR by two different approaches. 
+We work on Eclipse dataset, where we compare the performance of BLuAMIR with replicated BugLocator \cite{Jian} and VSM based bug localization techniques. The detail of this comparison is presented in the following subsection.
+%For that, we replicate BugLocator proposed by \citet{Jian}.
+On the other hand, we also experiment with SWT and Zxing dataset as in \cite{Jian}. Here we collect the results reported in \cite{Jian} and then compare the performance with BLuAMIR. We also answer our research questions in the following subsections.
+
+\subsection{Comparison Between Replicated BugLocator and BLuAMIR}
+%\subsection{Bug Localization using rVSM, Simi and Association Scores:}
+First, we replicate an existing technique (i.e., BugLocator) proposed by \citet{Jian}. 
+\citet{Jian} uses
+revised Vector Space Model (rVSM) and Simi scores in order to index and rank source code files.
+Second, we combine our proposed association score with these two scores ranks (i.e., rVSM, Simi). Finally, we perform comparison between replicated BugLocator with this combined scores in terms of Top-1, Top-5, Top-10, MRR and MAP. Ranking based on rVSM and Simi and our combined approach are depicted as follows.
+%If a new bug is similar to a given previously located bug, then there is a possibility that the source code files located for the past bug can provide useful information in finding buggy files for that new bug.
+%On the other hand, Simi score refers to that fact that if a bug is similar to another bug, then they both tend to relate to same sources. However, we describe both scores in Section \ref{Sec:Localize}
+
+\textbf{Ranking based on Revised Vector Space Mode:}
+The main difference between classic VSM and revised VSM is that in case of revised version logarithm variant is used in computing term frequency. The equation \cite{Jian} for calculating term frequency is:
+\begin{equation}
+tf(t,d)=log(f_{td})+1
+\end{equation}
+So the new equation of revised VSM model is as follows:
+\begin{multline}\label{rVSMequation}
+rVSMScore(q,d)=g(\#term)\times cos(q,d)
+\\
+\frac{1}{1+e^{-N(\#terms))}}\times \frac{1}{\sqrt{\sum_{t\epsilon q}}((logf_{tq}+1)\times log(\frac{\#docs}{n_{t}}))^{^{2}}}\times 
+\\
+\frac{1}{\sqrt{\sum_{t\epsilon d}((log {f_{td}+1})\times log(\frac{\#docs}{n_{t}}))^{2}}}\times
+\\
+\sum_{t\epsilon q\bigcap d}(logf_{tq}+1)\times (logf_{td}+1)\times log(\frac{\#docs}{n_{t}})^{2}
+\end{multline}
+%\end{equation}
+This \textit{rVSM} score is calculated for each query bug report {$q$} against every document {$d$} in the corpus. However, in the above equation {$\#terms$} refers to the total number of terms in a corpus, {$n\textsubscript{t}$} is the number of documents where term {$t$} occurs.
+
+\textbf{Ranking based on similar bug information}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.48]{3layers-Gray}
+	\caption{Bug and its Similar Bug Relationship with Source Code Files:}
+	\label{fig:BSBR}
+\end{figure}
+The assumption is if a new bug is similar to a given previously located bug, then there is a possibility that the source code files located for the past bug can provide useful information in finding buggy files for that new bug.. Here, we construct a 3-layer architecture as described in \cite{Jian}. In the top layer (layer 1) there is a bug \textit{B} which represents a newly reported bug. All previously fixed bug reports which have non-negative similarity with bug  \textit{B} are presented in second layer. In third layer all source code files are shown. In order to resolve each bug in second layer some files in the corpus were modified or changed, which are indicated by a link between layer 2 and layer 3. Foe all source code files in layer 3, similarity score is computed, which can be referred to as degree of similarity. The score can be defined as:
+
+\begin{equation}\label{Simiequation}
+SimiScore=\sum_{All S_{i} that connect to F_{j}}(Similarity(B,S_{i})/n_{i})
+\end{equation} 
+Here, similarity between newly reported bug {$B$} and previously fixed bug {$S\textsubscript{i}$} is calculated based on cosine similarity measure and {$n\textsubscript{i}$} is the total number of link {$S\textsubscript{i}$} has with source code files in layer 3.
+
+\textbf{Final Score Calculation}
+For each query, we compute the rVSM score against all source codes in the database using equation \ref{rVSMequation} and we also calculate Simi score using equation \ref{Simiequation}. Then we calculate association scores for the query using equation \ref{CoOccequation}.
+We finally combine the three ranks and for that we use three weighting factor {$\alpha$}, $\beta$ and $\gamma$.
+The final equation is given in equation \ref{equationBLme}.
+\begin{multline}\label{equationBLme}
+CombinedScore=\gamma \times N(rVSMScore)+
+\\ \beta \times N(SimiScore) + \alpha \times N(AssociationScore)
+\end{multline}
+We work with different values of $\alpha$, which are presented in the experiment section \ref{RQ2Answer}. We use value of 0.2 for $\beta$, varying $\alpha$ from 0.1 to 0.5 and thus, $\gamma$ from 0.7 to 0.3. So that they end up into 1.
+
+\subsection{Answering RQ1} \label{RQ1answer}
+To answer RQ1, we compare the performance of our proposed bug localization approach with two existing techniques - 1) BugLocaotor \cite{Jian} which is based on rVSM and Simi scores and 2) VSM which is based on vector space model. 
 
 
-We compare our proposed bug localization approach with two existing techniques - 1) BugLocaotor \cite{Jian} which is based on rVSM and Simi scores and 2) VSM which is based on vector space model. In the following two subsections we will describe the performance comparison between these two existing approaches and our proposed approaches
 \begin{table}[htbp]
 	\centering
-	\caption{Performance of proposed technique (VSM+Co-Occerence) Ranks}
+	\caption{Performance of proposed technique (VSM+Association) Ranks}
 	\label{tab:Performance2}
 	\resizebox{3.5in}{!}{%
 		\begin{tabular}{c|c|c|c|c|c|c}
@@ -551,57 +709,121 @@ We compare our proposed bug localization approach with two existing techniques -
 			\textbf{MRR@10} 
 			& \textbf{MAP@10} \\ \hline \hline
 			\multirow{2}{*}{1}& VSM & 23.67& 46.59&56.97& 0.33 & 0.32 \\ \cline{2-7}
-			& VSM + Co-Score & 28.40                                               & 51.77                                            & 60.06                                                &   0.38  & 0.36 \\ \hline
-			\multirow{2}{*}{2}                                                                               & VSM & 24.62 & 48.05 & 57.96 & 0.34 & 0.34 \\  \cline{2-7}  &VSM + Co-Score                                                                     & 27.63                                               & 53.15                                              & 61.26                                             &   0.38  &   0.37  \\ \hline
-			\multirow{2}{*}{3}                                                                               & VSM & 20.78 & 40.96 & 51.20 & 0.30 & 0.29 \\  \cline{2-7}   &VSM + Co-Score                                                                       & 23.12                                            & 46.85                                            & 59.76                                             &   0.34  &  0.32   \\ \hline
-			\multirow{2}{*}{4}                                                                               & VSM & 22.52 & 42.94 & 53.75 & 0.32 & 0.31 \\   \cline{2-7} &VSM + Co-Score                                                                      & 23.42                       & 49.25                       & 61.56                                                &  0.35   &  0.33  \\  \hline
-			\multirow{2}{*}{5}                                                                               & VSM & 27.33 & 52.25 & 63.36 & 0.38 & 0.35 \\   \cline{2-7} &VSM + Co-Score                                                                       & 29.73                                                 & 53.15                                                 & 62.16                                                  &  0.39   & 0.36     \\  \hline
-			\multirow{2}{*}{6}                                                                               & VSM & 25.00 & 50.60 & 60.84 & 0.36 & 0.34 \\  \cline{2-7}  &VSM + Co-Score 
+			& VSM + Association & 28.40                                               & 51.77                                            & 60.06                                                &   0.38  & 0.36 \\ \hline
+			\multirow{2}{*}{2}                                                                               & VSM & 24.62 & 48.05 & 57.96 & 0.34 & 0.34 \\  \cline{2-7}  &VSM + Association                                                                    & 27.63                                               & 53.15                                              & 61.26                                             &   0.38  &   0.37  \\ \hline
+			\multirow{2}{*}{3}                                                                               & VSM & 20.78 & 40.96 & 51.20 & 0.30 & 0.29 \\  \cline{2-7}   &VSM + Association                                                                      & 23.12                                            & 46.85                                            & 59.76                                             &   0.34  &  0.32   \\ \hline
+			\multirow{2}{*}{4}                                                                               & VSM & 22.52 & 42.94 & 53.75 & 0.32 & 0.31 \\   \cline{2-7} &VSM + Association                                                                    & 23.42                       & 49.25                       & 61.56                                                &  0.35   &  0.33  \\  \hline
+			\multirow{2}{*}{5}                                                                               & VSM & 27.33 & 52.25 & 63.36 & 0.38 & 0.35 \\   \cline{2-7} &VSM + Association                                                                   & 29.73                                                 & 53.15                                                 & 62.16                                                  &  0.39   & 0.36     \\  \hline
+			\multirow{2}{*}{6}                                                                               & VSM & 25.00 & 50.60 & 60.84 & 0.36 & 0.34 \\  \cline{2-7}  &VSM + Association
 			&26.13 &
 			51.65 &
 			62.76 & 0.37 &
 			0.35     \\  \hline 
-			\multirow{2}{*}{7}                                                                               & VSM & 29.82 & 54.52 & 66.27 & 0.40 & 0.38 \\  \cline{2-7}  &VSM + Co-Score 
+			\multirow{2}{*}{7}                                                                               & VSM & 29.82 & 54.52 & 66.27 & 0.40 & 0.38 \\  \cline{2-7}  &VSM + Association
 			
 			&35.43 &
 			60.96 &
 			72.07 & 0.46 &
 			0.44     \\  \hline
-			\multirow{2}{*}{8}                                                                               & VSM & 27.79 & 51.36 & 60.73 & 0.38 & 0.36 \\  \cline{2-7}  &VSM + Co-Score 
+			\multirow{2}{*}{8}                                                                               & VSM & 27.79 & 51.36 & 60.73 & 0.38 & 0.36 \\  \cline{2-7}  &VSM + Association
 			&36.64 &
 			58.86 &
 			67.87 & 0.46 &
 			0.43    \\  \hline
-			\multirow{2}{*}{9}                                                                               & VSM & 29.13 & 52.55 & 64.86 & 0.39 & 0.36 \\  \cline{2-7}   &VSM + Co-Score 
+			\multirow{2}{*}{9}                                                                               & VSM & 29.13 & 52.55 & 64.86 & 0.39 & 0.36 \\  \cline{2-7}   &VSM + Association
 			&29.13 &
 			61.86 &
 			69.97 & 0.42 &
 			0.40    \\  \hline
-			\multirow{2}{*}{10}                                                                               & VSM & 19.03 & 39.58 & 51.34 & 0.28 & 0.26 \\  \cline{2-7}  &VSM + Co-Score
+			\multirow{2}{*}{10}                                                                               & VSM & 19.03 & 39.58 & 51.34 & 0.28 & 0.26 \\  \cline{2-7}  &VSM + Association
 			&24.62 &
 			51.05 &
 			63.06 & 0.36 &
 			0.34    \\ \hline \hline
-			\multirow{2}{*}{Average}                                                                               & VSM & 24.98\% & 47.94\% & 58.73\% & 0.35 & 0.33 \\  \cline{2-7}   &VSM + Co-Score      & 28.43\%                                                 & 53.86\%                                                 & 64.05\%                                                  &   0.39  &  0.37    \\ 
+			\multirow{2}{*}{Average}                                                                               & VSM & 24.98\% & 47.94\% & 58.73\% & 0.35 & 0.33 \\  \cline{2-7}   &VSM + Association     & 28.43\%                                                 & 53.86\%                                                 & 64.05\%                                                  &   0.39  &  0.37    \\ 
 			\hline
 	\end{tabular}}
 	\centering
 \end{table}
-
-\textbf{BugLocator VS Our Proposed Tool:}
-We combine rVSM and simi ranks with our co-occurence rank. Here, co-occurence rank is computed based on keyword-source code mapping database.In table~\ref{tab:Performance1} we, compare the performance of our proposed approach in terms of top 1, 5, 10 rank, MRR and MAP. We can see that our proposed approach outperforms in all cases. For example, our Top-10 performance 52.94\% has an improvement than BugLocator (36.40\%).
-
-We also compute Wilcoxon signed-rank test both for MRR and MAP. For MRR the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 8. Therefore, the result is significant at p<=0.05.
-For MAP - the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 8. Therefore, the result is significant at p<=0.05.
-
-
 \textbf{VSM vs Our proposed Tool}
-We combine VSM score and co-occurence scores in order to produce ranked result. We also compare the performance of baseline VSM technique and our proposed combined approach. The comparison is presented in table \ref{tab:Performance2}. We compute Top-1, Top-5, Top-10 performance and MRR and MAP for both approaches. In all cases our proposed approach outperforms VSM-based bug localization approach. The Top-10 performance of our tool is 64.05\% whereas it is 58.73\% for VSM.
+We combine VSM score and association scores in order to produce ranked result. We also compare the performance of baseline VSM technique and our proposed combined approach. The comparison is presented in table \ref{tab:Performance2}. We compute Top-1, Top-5, Top-10 performance and MRR and MAP for both approaches. In all cases our proposed approach outperforms VSM-based bug localization approach. The Top-10 performance of our tool is 64.05\% whereas it is 58.73\% for VSM.
+So. to answer our \textit{RQ1}, we can go to Table \ref{tab:Performance2}, 64.05\% bugs are successfully located in Top-10 for Eclipse dataset for Approach I of BLuAMIR. 
 
 We also compute Wilcoxon signed-rank test both for MRR and MAP. For MRR the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 8. Therefore, the result is significant at p<=0.05.
 For MAP - the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 8. Therefore, the result is significant at p<=0.05.
-\subsection{Comparison with State-of-art Technique}
-We compare the performance of BLuAMIR with BugLocator for the the same dataset for SWT and Zxing presented in Table \ref{tab:performance3}. Here, the results from buglocator is directly copied from their paper \cite{Jian}. We also collect the same bug reports and the same source code repository for both of them. So the results can be compared. For SWT, we can see our tool BLuAMIR performs better for Top-1, Top-5, MRR and MAP. However, for Top-10 BLuAmir is comparable with Buglocator. On the other hand, for Zxing our tool BLuAMIR outperforms for top-5, top-10 and MAP. 
+
+
+\begin{table}[htbp]
+	\caption{Performance of Bugloactor and proposed technique (rVSM+Simi+Association)}
+	\label{tab:Performance1}
+	\centering
+	\resizebox{3.4in}{!}{%
+		\begin{tabular}{c|c|c|c|c|c|c}
+			\hline
+			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
+			\begin{tabular}[c]{@{}c@{}}\# \textbf{Test}  \\ \textbf{Case} \\ \end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{Methodology} \\ \end{tabular} &
+			%\textbf{alpha} &
+			%\textbf{beta}&
+			%\textbf{gamma}& 
+			\begin{tabular}[c]{@{}c@{}}\textbf{Top 1}\\ \%\end{tabular} & 
+			\begin{tabular}[c]{@{}c@{}}\textbf{Top 5}\\ \%\end{tabular} & 
+			\begin{tabular}[c]{@{}c@{}}\textbf{Top 10}\\ \%\end{tabular} &
+			
+			\begin{tabular}[c]{@{}c@{}} \textbf{MRR} \end{tabular} & 
+			\begin{tabular}[c]{@{}c@{}} \textbf{MAP} \end{tabular} \\ \hline \hline
+			\multirow{2}{*}{1}  &Replicated BugLocator     &  8.88& 24.56&34.32& 0.16 & 0.15 \\  \cline{2-7}
+			& rVSM+Simi+ Association                                                                                                                                           & 16.27                                               & 39.35                                            & 49.41                                                &   0.26  & 0.25    \\ \hline
+			\multirow{2}{*}{2}  &Replicated BugLocator     &  9.9& 24.62&34.53& 0.17 & 0.16 \\ \cline{2-7}
+			& rVSM+Simi+ Association                                                                 & 18.32                                               & 41.44                                              & 53.45                                             &   0.28  &   0.27  \\ \hline
+			\multirow{2}{*}{3}  &Replicated BugLocator     &  7.50& 21.32&30.63& 0.14 & 0.13 \\ \cline{2-7}
+			& rVSM+Simi+ Association                                                                   & 18.62                                            & 42.34                                            & 52.25                                             &   0.28  &  0.27   \\  \hline
+			\multirow{2}{*}{4}  &Replicated BugLocator     &  8.1& 21.02&29.13& 0.14 & 0.13 \\  \cline{2-7}
+			& rVSM+Simi+ Association                                                                   & 14.71                       & 42.04                       & 54.35                                               &  0.26   &  0.25  \\  \hline
+			\multirow{2}{*}{5}  &Replicated BugLocator     &  9.6& 30.63&42.94& 0.18 & 0.18 \\  \cline{2-7}
+			& rVSM+Simi+ Association                                                                 & 22.22                                                 & 42.34                                                & 57.66                                                  &  0.31   & 0.30     \\ \hline
+			\multirow{2}{*}{6}  &Replicated BugLocator     &  10.21& 31.53&43.54& 0.19 & 0.19 \\  \cline{2-7}
+			& rVSM+Simi+ Association
+			&25.53 &
+			52.25 &
+			60.66 & 0.36 &
+			0.34     \\  \hline
+			\multirow{2}{*}{7}  &Replicated BugLocator     &  9.61& 30.33&40.84& 0.18 & 0.17 \\ \cline{2-7}
+			& rVSM+Simi+ Association
+			&25.22 &
+			52.25 &
+			64.56 & 0.36 &
+			0.34     \\  \hline
+			\multirow{2}{*}{8}  &Replicated BugLocator     &  8.4& 26.13&39.94& 0.19 & 0.16 \\ \cline{2-7}
+			& rVSM+Simi+ Association
+			&24.92 &
+			51.95 &
+			62.46 & 0.36 &
+			0.34    \\  \hline
+			\multirow{2}{*}{9}  &Replicated BugLocator     &  11.11& 28.83&40.24& 0.19 & 0.18 \\  \cline{2-7}
+			& rVSM+Simi+ Association
+			&21.92 &
+			48.65 &
+			62.46 & 0.33 &
+			0.32    \\  \hline
+			\multirow{2}{*}{10}  &Replicated BugLocator     &  6.6& 20.72&27.93& 0.12 & 0.12 \\  \cline{2-7}
+			& rVSM+Simi+ Association
+			&16.21 &
+			40.54 &
+			55.55 & 0.27 &
+			0.26    \\  \hline \hline
+			\multirow{2}{*}{Average}       &Replicated BugLocator     &  8.99\%& 25.87\%&36.40\%& 0.16 & 0.16  \\ \cline{2-7}
+			& rVSM+Simi+ Association                                                                                                                       & 20.39\%                                                 & 45.32\%                                                 & 57.28\%                                                  &   0.31  &  0.29    \\ 
+			\hline
+	\end{tabular}}
+	\centering
+\end{table}
+\textbf{Replicated BugLocator VS Our Proposed Tool:}
+We combine rVSM and simi ranks with our association rank. Here, association rank is computed based on keyword-source code mapping database.In table~\ref{tab:Performance1} we, compare the performance of our proposed approach in terms of top 1, 5, 10 rank, MRR and MAP. We can see that our proposed approach outperforms in all cases. For example, our Top-10 performance 52.94\% has an improvement than BugLocator (36.40\%). This also answers our RQ1.
+
+We also compute Wilcoxon signed-rank test both for MRR and MAP. For MRR the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 8. Therefore, the result is significant at p<=0.05.
+For MAP - the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 8. Therefore, the result is significant at p<=0.05.
+\subsection{Answering RQ4}\label{RQ4answer}
+To answer RQ4, we compare the performance of BLuAMIR with BugLocator for the the same dataset for SWT and Zxing presented in Table \ref{tab:performance3}. Here, the results from buglocator is directly copied from their paper \cite{Jian}. We also collect the same bug reports and the same source code repository for both of them. So the results can be compared. For SWT, we can see our tool BLuAMIR performs better for Top-1, Top-5, MRR and MAP. However, for Top-10 BLuAmir is comparable with Buglocator. On the other hand, for Zxing our tool BLuAMIR outperforms for top-5, top-10 and MAP. So we can say that our proposed tool BLuAMIR outperforms most cases and comparable for a few cases with state-of-the-art bug localization technique.
 \begin{table}[htbp]
 	\centering
 	\caption{Performance Comparison between BugLocator and BLuAMIR}
@@ -628,19 +850,60 @@ We compare the performance of BLuAMIR with BugLocator for the the same dataset f
 	\centering
 \end{table}
 
-\textbf{The Ranking Comparison Between Buglocator and BLuAMIR for SWT dataset}
-We also perform a query wise comparison for SWT, which is presented in Fig (link).
+%\textbf{The Ranking Comparison Between Buglocator and BLuAMIR for SWT dataset}
+%We also perform a query wise comparison for SWT, which is presented in Fig (link).
 
-\subsection{Weighting Factor Analysis}
-For both of our proposed approaches we have used some weighting functions, which are described as follows:
+\subsection{Answering RQ2}\label{RQ2Answer}
+To answer RQ2, we investigate several weighting functions for both of our proposed approaches, which are described as follows:
 
-\textbf{Weighting Function for rVSM+Simi+Co-ocuurence Ranking:}
-We compute performance TopK accuracy, MRR and MAP for different weighting function such as  $\aleph$ is 0.2, 0.3, 0.4, $\beta$ is 0.2 nad $\gamma$ is 0.6, 0.5, 0.4 respectively. The results are presented in Table \ref{tab:alphaApproach2}. 
- Here, it shows, $\alpha$ produces better performance. That means if we increase the co-occurence scores with higher weighting function, the better performance is resulted. This also prove our co-occurence rank is effective in producing better results. We also represent the impact of $\alpha$ for Top-1, Top-5 and Top-10 retrieval on Eclipse dataset for approach 1 (rVSM+Simi+Co-ocuurence Ranking) in figure \ref{fig:PerformanceTopK}.
+\textbf{Weighting Function for VSM+Co-ocuurence Ranking (Approach I):}
+For our Approach I, we also compute performance TopK accuracy, MRR and MAP for different weighting function such as  \textit{ALPHA} is 0.2, 0.3, 0.4. The results are presented in Table \ref{tab:alphaApproach1}. Here, it shows, more $\alpha$ produces better performance. That means if we increase the association scores with higher weighting function, the better performance is resulted in this proposed approach. 
+Adding association score increases the performance in this case also indicate that the association mapping is helping in locating buggy files. Therefore, vocabulary miss-match problem is resolved here (i.e., answering RQ2). 
+We also illustrate the impact of $\alpha$ for Top-1, Top-5 and Top-10 retrieval on Eclipse dataset for approach I. (VSM+Co-ocuurence Ranking) in Figure \ref{fig:PerformanceTopK2}.
+\begin{table}[htbp]
+	\centering
+	\caption{Performance of (VSM+Association) for different weighting factors}
+	\label{tab:alphaApproach1}
+	\resizebox{3.4in}{!}{%
+		\begin{tabular}{c|l|c|c|c|c|c}
+			\hline
+			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
+			{$\alpha$} 
+			
+			& \textbf{Top 1} \% 
+			& \textbf{Top 5} \% & 
+			\textbf{Top 10} \% &
+			\textbf{MRR}  & 
+			\textbf{MAP}  \\
+			\hline
+			{0.2} 
+			& 26.72                                            & 51.94                                            & 62.43                                                &   0.37  & 0.36    \\ \hline
+			{0.3} 
+			& 28.06                                               & 53.35                                              & 63.24                                             &   0.39  &   0.37  \\ 
+			\hline
+			{0.4} 
+			
+			&28.43 &
+			53.86 &
+			64.05 & 0.39 &
+			0.37     \\  
+			\hline
+			{Average}      
+			& 27.74\%                                                 & 53.05\%                                                 & 63.24\%                                                  &   0.38  &  0.37    \\ 
+			\hline
+	\end{tabular}}
+	\centering
+\end{table}
+
+\textbf{Weighting Function for rVSM+Simi+Association Ranking (Approach II):}
+We compute performance TopK accuracy, MRR and MAP for different weighting function such as  $\alpha$ is 0.2, 0.3, 0.4, $\beta$ is 0.2 nad $\gamma$ is 0.6, 0.5, 0.4 respectively. The results are presented in Table \ref{tab:alphaApproach2}. 
+ Here, it shows, $\alpha$ produces better performance. That means if we increase the association scores with higher weighting function, the better performance is resulted. This also prove our association rank is effective in producing better results.
+ Adding association score increases the performance also indicate that the association map is helping in locating buggy files. Therefore, vocabulary miss-match problem is resolved here (i.e., answering RQ2). 
+ We also represent the impact of $\alpha$ for Top-1, Top-5 and Top-10 retrieval on Eclipse dataset for approach 1 (rVSM+Simi+Association Ranking) in figure \ref{fig:PerformanceTopK}.
 \begin{table}[htbp]
 \centering
-\caption{Performance of (rVSM+Simi+Co-Occerence) for different weighting factors}
-\label{tab:alphaApproach1}
+\caption{Performance of (rVSM+Simi+Association) for different weighting factors}
+\label{tab:alphaApproach2}
 \resizebox{3.4in}{!}{%
 \begin{tabular}{c|c|c|c|c|c|c|c}
 			\hline
@@ -685,42 +948,7 @@ We compute performance TopK accuracy, MRR and MAP for different weighting functi
 	\label{fig:PerformanceTopK}
 \end{figure}
 
-\textbf{Weighting Function for VSM+Co-ocuurence Ranking:}
-For our approach2 we also compute performance TopK accuracy, MRR and MAP for different weighting function such as  \textit{ALPHA} is 0.2, 0.3, 0.4. The results are presented in Table \ref{tab:alphaApproach2}. Here, it shows, more $\alpha$ produces better performance. That means if we increase the co-occurence scores with higher weighting function, the better performance is resulted in this proposed approach.   We also illustrate the impact of $\alpha$ for Top-1, Top-5 and Top-10 retrieval on Eclipse dataset for approach 2 (VSM+Co-ocuurence Ranking) in Figure \ref{fig:PerformanceTopK2}.
-\begin{table}[htbp]
-	\centering
-		\caption{Performance of (VSM+Co-Occerence) for different weighting factors}
-		\label{tab:alphaApproach2}
-		\resizebox{3.4in}{!}{%
-			\begin{tabular}{c|l|c|c|c|c|c}
-				\hline
-				%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
-				{$\alpha$} 
-		
-			& \textbf{Top 1} \% 
-			& \textbf{Top 5} \% & 
-			\textbf{Top 10} \% &
-			\textbf{MRR}  & 
-			\textbf{MAP}  \\
-			\hline
-				{0.2} 
-				                                                                                                                                           & 26.72                                            & 51.94                                            & 62.43                                                &   0.37  & 0.36    \\ \hline
-				{0.3} 
-			                                                                 & 28.06                                               & 53.35                                              & 63.24                                             &   0.39  &   0.37  \\ 
-				\hline
-				{0.4} 
-			
-				&28.43 &
-				53.86 &
-				64.05 & 0.39 &
-				0.37     \\  
-				\hline
-				{Average}      
-				                                                                                                                        & 27.74\%                                                 & 53.05\%                                                 & 63.24\%                                                  &   0.38  &  0.37    \\ 
-				\hline
-		\end{tabular}}
-	\centering
-\end{table}
+
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.80]{Performance-vsm+co}
@@ -741,34 +969,71 @@ For our approach2 we also compute performance TopK accuracy, MRR and MAP for dif
 	\caption{The impact of $\alpha$ on bug localization performance (MAP)}
 	\label{fig:MAP}
 \end{figure}
-\textbf{Impact of varying the value of alpha on BLuAMIR in terms of MAP and MRR}
-We also evaluate the impact of co-occurence score
-on bug localization performance, with different $\aleph$ values in terms of MAP and MRR for SWT and Zxing. At the beginning, the bug localization performance increases when the $\alpha$ value increases. However, after a certain point, further increase of the b value will decrease the performance. For example, Figure \ref{fig:MRR} and \ref{fig:MAP} show the bug localization performance (measured in terms of MRR and MAP) for the SWT and Zxing projects. When the $\aleph$ value increases from 0.1 to 0.4, both MRR and MAP values increases. Increasing $\alpha$ value further from 0.4 to 0.7 however leads to lower performance. Note that we obtain the best bug localization performance when $\alpha$ is between 0.3 and 0.4.
+%\subsection{Impact of varying the value of alpha on BLuAMIR in terms of MAP and MRR}
 
-\subsection{\textbf{Answering Research Questions}}
-\textbf{Answering RQ1:} To answer our \textit{RQ1}, we can go to Table \ref{tab:Performance2}, 64.05\% bugs are successfully located in Top-10 for Eclipse dataset. Our proposed tool BLuAMIR also outperforms on Zxing dataset for Top-10 retrieval, which is 75.00\%. However, on the subject system SWT, the Top-10 result of BLuAMIR is comparable, which is 80.61\%.
+We also evaluate the impact of association score
+on bug localization performance, with different $\alpha$ values in terms of MAP and MRR for SWT and Zxing. At the beginning, the bug localization performance increases when the $\alpha$ value increases. However, after a certain point, further increase of the b value will decrease the performance. For example, Figure \ref{fig:MRR} and \ref{fig:MAP} show the bug localization performance (measured in terms of MRR and MAP) for the SWT and Zxing projects. When the $\alpha$ value increases from 0.1 to 0.4, both MRR and MAP values increases. Increasing $\alpha$ value further from 0.4 to 0.7 however leads to lower performance. Note that we obtain the best bug localization performance when $\alpha$ is between 0.3 and 0.4. As association score is based on the association map between keywords and source files, thus no direct matching of vocabulary is required. Therefore, the results obtained from the impact of $\alpha$ on bug localization performance (i.e., MAP and MRR) also suggest the vocabulary missmatch problem is resolved here.
 
-\textbf{Answering RQ2:}
-We combine co-occurence rank with rVSM and Simi scores in Approach1 and VSM score in Approach2. We apply both of these approaches on Eclipse dataset. The results are provided in Table \ref{tab:Performance1} and Table \ref{tab:Performance2}. Here, we can see that both cases BLuAMIR outperforms in terms of Top-1, Top-5, Top-10, MRR and MAP. As co-occurence score is based on the association map between keywords and source files, thus no direct matching of vocabulary is required. Adding co-occurence score increases the performance in both cases also indicate that the association map is helping in locating buggy files. Therefore, vocabulary miss-match problem is resolved here. 
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.45]{RankImprovement}
+	\caption{Quey wise comparison between VSM and BLuAMIR for 30 Eclipse Query}
+	\label{fig:RankImprovement}
+\end{figure}
+
+
+
+%We combine co-occurence rank with VSM score in Approach1 and rVSM and Simi scores in Approach2. We apply both of these approaches on Eclipse dataset. We also replicate baseline techniques for those results, which are provided in Table \ref{tab:Performance1} and Table \ref{tab:Performance2}. Here, we can see that both cases BLuAMIR outperforms in terms of Top-1, Top-5, Top-10, MRR and MAP. 
+
 
 \textbf{Answering RQ3:}
-We investigate how vocabulary miss-match problem is eliminated in BLuAMIR. We perform a query wise ranking comparison for Approach2 on Eclipse, which is given in Figure. 
+We investigate how large files problem is eliminated in BLuAMIR. We perform a query wise ranking comparison for Approach1 for 30 query from Eclipse system, which is given in Figure \ref{fig:RankImprovement}. Here, X-axis represents query number and Y-axis represents the difference of best rank retried by VSM annd our proposed BLuAMIR. Among 25 query, 10 cases BLuAMIR performs better than VSM, 6 cases VSM retrieves better ranked results than BLuAMIR and 9 cases they both do the same raking retrieval. As most cases BLuMIR provides better ranked results, we closely investigate the ranked results for several bugs. 
 
-Include rank improvement here
+\textbf{case \#1} Consider bug \# 138283. The title of this bug is \textit{[KeyBindings] Action set with accelerator causes conflict}. We have found 1 source code file (i.e., org.eclipse.ui.internal.WorkbenchPage.java) in rank \#4 from the obtained results collected from BLuAMIR. No gold set files are resulted from VSM technique in Top-10. However, this source code file is obtained as rank \# 20 in the ranked results collected by applying VSM approach. So, we go deeper into ranking score level. The VSM score for this file is 0.4935, which is pretty low than other files. Because of the length of this file is too large (i.e., contains more than 14K words) making the VSM score too low. On the other hand, in BLuAMIR, this file has Co-Occ score 0f 1.00, which make total score of 0.69, put this on rank \#4. From this case study, it is clear that association mapping between fixed bug report keywords into their corresponding source files can overcome the noise associated with large files. Even if the query and recommended buggy files do not share same keyword but previously shared same concept can aid locating that query. 
 
-\textbf{Answering RQ4:}
-We compare the performance of BLuAMIR with state-of-the-art bug localization technique, BugLocator proposed by \citet{Jian} on two dataset i.e., SWT and Zxing. These results can be found in Table \ref{tab:performance3}. For SWT, we can see our tool BLuAMIR performs better for Top-1, Top-5, MRR and MAP. However, for Top-10 BLuAmir is comparable with Buglocator. On the other hand, for Zxing our tool BLuAMIR outperforms for top-5, top-10 and MAP. So we can say that our proposed tool BLuAMIR outperforms most cases and comparable for a few cases with state-of-the-art bug localization technique.
-\section{Related Work}
-BugLocator
-BLuIR
-BugCenter
-Amalgum
+%***Find some queries having vocabulary miss-match problem
+
+%\textbf{Answering RQ4:}
+%We compare the performance of BLuAMIR with state-of-the-art bug localization technique, BugLocator proposed by \citet{Jian} on two dataset i.e., SWT and Zxing. These results can be found in Table \ref{tab:performance3}. For SWT, we can see our tool BLuAMIR performs better for Top-1, Top-5, MRR and MAP. However, for Top-10 BLuAmir is comparable with Buglocator. On the other hand, for Zxing our tool BLuAMIR outperforms for top-5, top-10 and MAP. So we can say that our proposed tool BLuAMIR outperforms most cases and comparable for a few cases with state-of-the-art bug localization technique.
+
 \section{Threats To Validity}\label{sec:threats}
+This section discusses the validity and generalizability of our findings. In particular, we discuss Construct Validity, Internal Validity, and External Validity.
+
+\textbf{Internal Validity:} We used three artifacts of a software repository: bug Reports, source codes and version logs, which are generally well understood. Our evaluation uses three dataset - two of them collected from the same benchmark dataset of bug reports and source code shared by \citet{Jian}, and other is collected from an open source project. Bug reports provide crucial information for developers to fix the bugs. A “bad” bug report could cause a delay in bug fixing. Our proposed approach also relies on the quality of bug reports. If a bug report does not provide enough information, or provides misleading information, the performance of BLuAMIR is adversely affected.
+
+\textbf{External Validity:} 
+The nature of the data in open source projects may be different from those in projects developed by well-managed software organizations. We need to evaluate if our solution can be directly applied to commercial projects. We leave this as a future work. Then we will perform statistical tests to show that the improvement of our approach is statistically significant.
+
+\textbf{Construct Validity}
+In our experiment, we use three evaluation metrics, i.e., Top N rank, MAP and
+MRR, and one statistical test, i.e., Wilcoxon signed-rank test. These metrics have been widely used before to evaluate previous approaches \cite{Jian, Saha} and are well- known IR metrics. Thus, we argue that our research has strong construct validity.
+
+\textbf{Reliability:}
+In our experiment section, we performed numerous experiments using various combinations of weighting functions to find the optimum parameters and the best accuracy of bug localization. The optimized $\alpha$, $\beta$, and $\gamma$ values are based on our experiments and are only for our proposed tool BLuAMIR. To automatically optimize control parameters for target projects, in the future we will expand our proposed approach using machine learning methods or generic algorithms.
+
+\section{Related Work}\label{relatedwork}
+There are many bug localization approaches proposed so far. They can be broadly categorized into two types - dynamic and static techniques. Generally, dynamic approaches can localize a bug much more precisely than static approaches. These techniques usually contrast the program spectra information (such as execution statistics) between passed and failed executions to compute the fault suspiciousness of individual program elements (such as statements, branches, and predicates), and rank these program elements by their fault suspiciousness. Developers may then locate faults by examining a list of program elements sorted by their suspiciousness. Some of the well known dynamic approaches are spectrum-based fault localization, e.g., \cite{Abreu,Jones,Lucia,SahaFault}, model-based fault localization, e.g., \cite{Feldman,Mayer}, dynamic slicing \cite{Zhang:2005}, delta debugging \cite{Zeller:2002}. 
+
+Static approaches, on the other hand, do not require any program test cases or execution traces. In most cases, they need only program source code and bug reports. They are also computationally efficient. The static approaches usually can be categorized into two groups: program analysis based approaches and IR-based approaches. FindBugs is a program analysis based approach that locates a bug based on some predefined bug patterns \cite{FindBug}. Therefore, FindBug does not even need a bug report. However, it often detects too many false positives and misses many real bugs \cite{Tang}. IR-based approaches use information retrieval techniques (such as, TFIDF, LSA, LDA, etc.) to calculate the similarity between a bug report and a source code file. There are three traditionally-dominant IR paradigms TF.IDF \cite{Salton}, the “probabilistic approach” known as BM25 \cite{Robertson}, or more recent language modeling \cite{Ponte}. Another empirical study \cite{Fang} show that all three approaches perform comparably when well-tuned. However, \citet{Rao} investigates many standard information retrieval techniques for bug localization and find that simpler techniques, e.g., TFIDF and SUM, perform the best. 
+
+In contrast with shallow “bag-of-words” models, latent semantic indexing (LSI) induces latent concepts. While a probabilistic variant of LSI has been devised \cite{Hofmann}, its probability model was found to be deficient.
+%On the other hand, \citet{Lukins} created a Latent Dirichlet Allocation (LDA) model from the source code which provided word-topic modeling and topic-document distribution.
+\citet{Lukins2} use Latent Dirichlet Allocation (LDA), which is a well-known topic modeling approach, to localize bug \cite{Lukins2}.
+However, LSI is rarely used in practice today due to errors in induced concepts introducing more harm than good \cite{Hofmann} and LDA is not be able to predict the appropriate topic because it followed a generative topic model in a probabilistic way \cite{Lukins}.
+
+\citet{Sisman} propose a history-aware IR-based bug localization solution to achieve a better
+result. \citet{Jian} propose BugLocator, which leverages similarities among bug reports and uses refined vector space model to perform bug localization. \citet{Saha} build BLUiR that consider the structure of bug reports and source code files and employ structured retrieval to achieve a better result. \citet{Moreno} uses a text retrieval based technique and stack trace analysis to perform bug localization. To locate buggy files, they combines the textual similarity between a bug report and a code unit and the structural similarity between the stack trace and the code unit. Different from the existing IR-based bug localization approaches, \citet{Wang} propose AmaLgam, a new method for locating relevant buggy files that put together version history, similar report, and structure, to achieve better performance. Later \cite{Wang2} also propose AmaLgam+, which is a method for locating relevant buggy files that puts together fives sources of information i.e., version history, similar reports, structure, stack traces, and reporter information.
+In our proposed technique BLuAMIR, we use version history, similar report and association relationship.
 
 
-\section{Conclusion and Future Work}\label{summary}
 
 
+
+
+\section{Conclusion and Future Work} \label{sec:conclusionANDfuture}
+During software evolution of a system, a large number of bug reports are submitted. For a large software project, developers must may need to examine a large number of source code files in order to locate the buggy files responsible for a bug, which is a tedious and expensive work. In this paper, we propose BLuAMIR, a new method for locating relevant buggy files that combines historical data, similar report, and keyword-source association map to achieve a higher accuracy. We perform a large-scale experiments on four projects, namely Eclipse, SWT and ZXing to localize more than 3,000 bugs. Our experiment of those dataset show that our technique can locate buggy files with a Top-10 accuracy of 64.05\% and a mean reciprocal rank@10 of 0.31 and a mean precision average@10 of 37\%, which are highly promising. We also compare our technique with state-of-the-art IR-based bug localization technique i.e., BugLocator. This also confirms superiority of our technique.
+
+In the future, we will explore if several other bug related information such as bug report structure, source code structure, stack traces, reporter information can be integrated into our approach in order to improve bug localization performance. We would also like to reduce the threats to external validity further by applying our approach on more bug reports collected from other software systems.
 
 \bibliographystyle{plainnat}
 \scriptsize
