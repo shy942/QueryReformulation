@@ -155,7 +155,7 @@ public class MethodCorpusDeveloper {
 		// TODO Auto-generated method stub
 		String base="E:\\PhD\\Repo\\Eclipse";
 		String repoName=base+"\\Source\\EclipseV3.1\\";
-		String methodFolder=base+"\\method3\\";
+		String methodFolder=base+"\\methodOct31\\";
 		MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoName,methodFolder,base);
 		developer.createMethodCorpus(developer.repoFolder);
 		developer.saveMethods(methodFolder);

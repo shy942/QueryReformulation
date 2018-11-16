@@ -26,8 +26,8 @@ public class BugReportCorpusBuilderTitleAndDescription {
 	
 	public BugReportCorpusBuilderTitleAndDescription()
 	{
-		this.bugFolder="E:\\PhD\\EclipseAll\\BugDataExtracted\\";
-		this.bugPPFolder="E:\\PhD\\EclipseAll\\BugData\\";
+		this.bugFolder="E:\\PhD\\Repo\\Eclipse\\BugDataExtracted\\";
+		this.bugPPFolder="E:\\PhD\\Repo\\Eclipse\\BugData1KB\\";
 		this.noOfBugReports=noOfBugReports;
 	}
 	protected void createPreprocessedRepo()
@@ -36,30 +36,26 @@ public class BugReportCorpusBuilderTitleAndDescription {
 		//String allInOne="";
 		ArrayList <String> list=new ArrayList<String>();
 		noOfBugReports=files.length;
-		
+		ArrayList<String> listofFiles=new ArrayList<>();
 		for(File f:files){
 			if(!f.getName().equalsIgnoreCase(".DS_Store"))
 			{
-				
-			String fileName=f.getName();
-			String content=ContentLoader.readContentSimple(f.getAbsolutePath());
-			BugReportPreprocessor bpp=new BugReportPreprocessor(content);
-			String preprocessed=bpp.performNLPforAllContent();
-			//preprocessed=preprocessed.replace(",", " ");
-			preprocessed=fileName+": "+preprocessed.trim()+"\n";
-			String outFile=this.bugPPFolder+"/"+fileName;
-			ContentWriter.writeContent(outFile, preprocessed);
-			//allInOne+=allInOne+preprocessed+"\n";
-			//System.out.println("Preprocessed:"+fileName);
-			list.add(preprocessed);
+				if(f.length()<2024){
+					System.out.println(f.getName()+" "+f.length());
+					String fileName=f.getName();
+					String content=ContentLoader.readContentSimple(f.getAbsolutePath());
+					BugReportPreprocessor bpp=new BugReportPreprocessor(content);
+					String preprocessed=bpp.performNLPforAllContent();
+					
+					preprocessed=preprocessed.trim()+"\n";
+					String outFile=this.bugPPFolder+"/"+fileName;
+					ContentWriter.writeContent(outFile, preprocessed);
+					if(!listofFiles.contains(outFile))listofFiles.add(outFile);
+					list.add(preprocessed);
+					}
 			}
 		}
-		//String outFile=StaticData.PROCESSEDBUGREPORTS+"/new/AllinOne/"+"input"+year+".txt";
-		
-		
-	    
-		//String outFile=StaticData.BUGDIR+"/BugReportsTitleAndDescription/bugCorpus.txt";
-		//ContentWriter.writeContent(outFile, list);
+		ContentWriter.writeContent("E:\\PhD\\Repo\\Eclipse\\data\\SourceFileNames.txt", listofFiles);
 	}
 	
 

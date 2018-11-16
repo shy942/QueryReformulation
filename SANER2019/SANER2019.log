@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  24 OCT 2018 16:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  31 OCT 2018 13:59
 entering extended mode
 **./SANER2019.tex
 (SANER2019.tex
@@ -592,147 +592,144 @@ Underfull \hbox (badness 1448) in paragraph at lines 179--181
 []\OT1/ptm/m/n/8 [Working Sets] IWork-ingSet.getImage should be
  []
 
-
-Underfull \vbox (badness 1024) has occurred while \output is active []
-
- [1{C:/Users/Mukta/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+[1{C:/Users/Mukta/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
 <SD5-Gray.png, id=9, 1352.05125pt x 251.94125pt>
 File: SD5-Gray.png Graphic file (type png)
 <use SD5-Gray.png>
-Package pdftex.def Info: SD5-Gray.png  used on input line 219.
+Package pdftex.def Info: SD5-Gray.png  used on input line 221.
 (pdftex.def)             Requested size: 513.78482pt x 95.73866pt.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 258.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 260.
 
 
 ("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 258.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 260.
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
 [] $\OML/cmm/m/it/10 SF[] \OMS/cmsy/m/n/10  $ \OT1/ptm/m/n/10 getLinkedSourceFi
 les($\OML/cmm/m/it/10 MAP[]$\OT1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 289--290
+Underfull \hbox (badness 2318) in paragraph at lines 291--292
 [] $\OML/cmm/m/it/10 MAP\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 KB[]\OT1/cmr/m/n/10 ]
 \OML/cmm/m/it/10 :link \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 MAP\OT1/cmr/m/n/10 [
 \OML/cmm/m/it/10 KB[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :link \OT1/cmr/m/n/10 +
  []
 
 [2]
-<BGraph2.png, id=17, 464.937pt x 398.08725pt>
+<BGraph2.png, id=19, 464.937pt x 398.08725pt>
 File: BGraph2.png Graphic file (type png)
 <use BGraph2.png>
-Package pdftex.def Info: BGraph2.png  used on input line 353.
+Package pdftex.def Info: BGraph2.png  used on input line 355.
 (pdftex.def)             Requested size: 246.41542pt x 210.98523pt.
  [3 <./SD5-Gray.png>] [4 <./BGraph2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 575--575
+Underfull \hbox (badness 10000) in paragraph at lines 577--577
 []\OT1/ptm/b/n/8 Project
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 575--575
+Underfull \hbox (badness 10000) in paragraph at lines 577--577
 []\OT1/ptm/b/n/8 Study
  []
 
 
-Overfull \hbox (1.77226pt too wide) in paragraph at lines 575--575
+Overfull \hbox (1.77226pt too wide) in paragraph at lines 577--577
 []\OT1/ptm/b/n/8 #Fixed
  []
 
 
-Overfull \hbox (6.06827pt too wide) in paragraph at lines 575--576
+Overfull \hbox (6.06827pt too wide) in paragraph at lines 577--578
 []\OT1/ptm/b/n/8 #Source
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
+Underfull \hbox (badness 10000) in paragraph at lines 579--579
 []\OT1/ptm/m/n/8 Eclipse
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
+Underfull \hbox (badness 10000) in paragraph at lines 579--579
 \OT1/ptm/m/n/8 Plat-form
  []
 
 
-Underfull \hbox (badness 2334) in paragraph at lines 578--578
+Underfull \hbox (badness 2334) in paragraph at lines 580--580
 []\OT1/ptm/m/n/8 Oct 2004 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 579--579
+Underfull \hbox (badness 10000) in paragraph at lines 581--581
 []\OT1/ptm/m/n/8 A bar-code im-age
  []
 
 [5]
-<3layers-Gray.png, id=39, 534.99875pt x 351.3125pt>
+<3layers-Gray.png, id=40, 534.99875pt x 351.3125pt>
 File: 3layers-Gray.png Graphic file (type png)
 <use 3layers-Gray.png>
-Package pdftex.def Info: 3layers-Gray.png  used on input line 671.
+Package pdftex.def Info: 3layers-Gray.png  used on input line 673.
 (pdftex.def)             Requested size: 256.79648pt x 168.62807pt.
 
-Overfull \hbox (4.79648pt too wide) in paragraph at lines 671--672
- [][] 
- []
-
-
-Overfull \hbox (0.94531pt too wide) in paragraph at lines 700--747
+Overfull \hbox (4.79648pt too wide) in paragraph at lines 673--674
  [][] 
  []
 
 [6 <./3layers-Gray.png>]
-Overfull \hbox (8.1923pt too wide) in paragraph at lines 831--851
+Overfull \hbox (0.94531pt too wide) in paragraph at lines 702--749
  [][] 
  []
 
-<Performance-rvsm+simi+co.png, id=44, 289.68225pt x 174.05025pt>
+
+Overfull \hbox (8.1923pt too wide) in paragraph at lines 833--853
+ [][] 
+ []
+
+[7]
+<Performance-rvsm+simi+co.png, id=49, 289.68225pt x 174.05025pt>
 File: Performance-rvsm+simi+co.png Graphic file (type png)
 <use Performance-rvsm+simi+co.png>
-Package pdftex.def Info: Performance-rvsm+simi+co.png  used on input line 946.
+Package pdftex.def Info: Performance-rvsm+simi+co.png  used on input line 948.
 (pdftex.def)             Requested size: 231.74611pt x 139.24037pt.
-[7]
-<Performance-vsm+co.png, id=49, 289.68225pt x 174.05025pt>
+<Performance-vsm+co.png, id=50, 289.68225pt x 174.05025pt>
 File: Performance-vsm+co.png Graphic file (type png)
 <use Performance-vsm+co.png>
-Package pdftex.def Info: Performance-vsm+co.png  used on input line 954.
+Package pdftex.def Info: Performance-vsm+co.png  used on input line 956.
 (pdftex.def)             Requested size: 231.74611pt x 139.24037pt.
-<MRR-SWT-Zxing.png, id=50, 289.68225pt x 174.05025pt>
+<MRR-SWT-Zxing.png, id=51, 289.68225pt x 174.05025pt>
 File: MRR-SWT-Zxing.png Graphic file (type png)
 <use MRR-SWT-Zxing.png>
-Package pdftex.def Info: MRR-SWT-Zxing.png  used on input line 961.
+Package pdftex.def Info: MRR-SWT-Zxing.png  used on input line 963.
 (pdftex.def)             Requested size: 231.74611pt x 139.24037pt.
-<MAP-SWT-Zxing.png, id=51, 289.68225pt x 174.05025pt>
+<MAP-SWT-Zxing.png, id=52, 289.68225pt x 174.05025pt>
 File: MAP-SWT-Zxing.png Graphic file (type png)
 <use MAP-SWT-Zxing.png>
-Package pdftex.def Info: MAP-SWT-Zxing.png  used on input line 968.
+Package pdftex.def Info: MAP-SWT-Zxing.png  used on input line 970.
 (pdftex.def)             Requested size: 231.74611pt x 139.24037pt.
  [8 <./Performance-rvsm+simi+co.png> <./Performance-vsm+co.png> <./MRR-SWT-Zxin
-g.png> <./MAP-SWT-Zxing.png>]
-<RankImprovement.png, id=55, 544.434pt x 285.4665pt>
+g.png>]
+<RankImprovement.png, id=56, 544.434pt x 285.4665pt>
 File: RankImprovement.png Graphic file (type png)
 <use RankImprovement.png>
-Package pdftex.def Info: RankImprovement.png  used on input line 979.
+Package pdftex.def Info: RankImprovement.png  used on input line 1038.
 (pdftex.def)             Requested size: 244.99303pt x 128.45872pt.
 
-Underfull \hbox (badness 2486) in paragraph at lines 992--993
+Underfull \hbox (badness 2486) in paragraph at lines 1043--1044
 []\OT1/ptm/b/n/10 case #1 \OT1/ptm/m/n/10 Con-sider bug # 138283. The ti-tle of
  this
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 992--993
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1044
 \OT1/ptm/m/n/10 bug is \OT1/ptm/m/it/10 [Key-Bind-ings] Ac-tion set with ac-cel
 -er-a-tor
  []
 
-[9 <./RankImprovement.png>] (SANER2019.bbl [10])
+[9 <./MAP-SWT-Zxing.png> <./RankImprovement.png>] (SANER2019.bbl [10])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -748,10 +745,10 @@ Before submitting the final camera ready copy, remember to:
 
 ] (SANER2019.aux) ) 
 Here is how much of TeX's memory you used:
- 5456 strings out of 492973
- 80640 string characters out of 3126692
- 194436 words of memory out of 3000000
- 9216 multiletter control sequences out of 15000+200000
+ 5457 strings out of 492973
+ 80649 string characters out of 3126692
+ 186462 words of memory out of 3000000
+ 9217 multiletter control sequences out of 15000+200000
  46651 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,16n,35p,1247b,298s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -762,23 +759,24 @@ dvips/base/8r.enc}<C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Mukta/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Us
 ers/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
-7.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmmi8.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr10.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Mukta/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Mukta/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Mukt
-a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C
-:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/sym
-bols/msam10.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/u
-rw/times/utmb8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/urw/times/utmbi8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/urw/times/utmr8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/urw/times/utmri8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on SANER2019.pdf (11 pages, 466194 bytes).
+6.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmmi7.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Mukta/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Mukta/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Mukta
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
+:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy7.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/symbols/msam10.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/urw/times/utmb8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Mukta/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb><C:/Users/Mukta/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on SANER2019.pdf (11 pages, 478787 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
+ 123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

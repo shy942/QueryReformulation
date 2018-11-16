@@ -22,18 +22,24 @@ public class SourceFilePointerMaker {
 	}
 
 	protected HashMap<String, Integer> developSourceFilePointer() {
+		
 		File[] files = new File(this.changeDir).listFiles();
 		int index = 0;
 		HashMap<Integer,String> tempFileMap=new HashMap<>();
 		for (File f : files) {
 			ArrayList<String> srcFiles = ContentLoader.getAllLinesOptList(f
 					.getAbsolutePath());
+			int count=0;
+			
 			for (String srcFile : srcFiles) {
+				
+				
 				if (!fileIDMap.containsKey(srcFile)) {
 					fileIDMap.put(srcFile, ++index);
 					tempFileMap.put(index, srcFile);
 				}
 			}
+			
 		}
 
 		// saving the map
@@ -42,6 +48,12 @@ public class SourceFilePointerMaker {
 		return fileIDMap;
 	}
 
+	protected boolean IsFileExist(String file, ArrayList<String> list)
+	{
+		if(list.contains(file)) return true;
+		else return false;
+	}
+	
 	protected void saveIDSourceMap(HashMap<Integer,String> tempFileIDMap) {
 		ArrayList<String> tempList = new ArrayList<>();
 		int size = tempFileIDMap.size();

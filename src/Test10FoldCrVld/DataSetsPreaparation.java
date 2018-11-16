@@ -39,10 +39,10 @@ public class DataSetsPreaparation {
 		//For Windows
 		String base="E:PhD\\Repo\\Eclipse";
 		//Dont do this now
-		//new DataSetsPreaparation().creatAllbugs(base+"\\BugData\\",base+"\\data\\allBug.txt");
-		//new DataSetsPreaparation(base+"\\data\\allBug.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData\\",base).DataPreparation(base+"\\data\\allBug.txt",base+"\\data\\gitInfoEclipse.txt",base+"\\data\\bugIDs.txt",base+"\\BugData\\");
+		//new DataSetsPreaparation().creatAllbugs(base+"\\BugData1KB\\",base+"\\data\\allBug.txt");
+		//new DataSetsPreaparation(base+"\\data\\allBug.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData1KB\\",base).DataPreparation(base+"\\data\\allBug.txt",base+"\\data\\gitInfoEclipse.txt",base+"\\data\\bugIDs.txt",base+"\\BugData1KB\\");
 		
-		DataSetsPreaparation obj=new DataSetsPreaparation(base+"\\data\\bugIDs.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData\\", base);
+		DataSetsPreaparation obj=new DataSetsPreaparation(base+"\\data\\bugIDs.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData1KB\\", base);
 		
 		
 		

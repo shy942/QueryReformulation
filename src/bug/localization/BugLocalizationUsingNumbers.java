@@ -511,7 +511,7 @@ public class BugLocalizationUsingNumbers {
         
 		//Work on necessary inputs or maps
 		int total_test=10;
-		double alpha=0.0;
+		double alpha=0.4;
 		for(int i=1;i<=total_test;i++)
 		{
 			/*
@@ -539,19 +539,19 @@ public class BugLocalizationUsingNumbers {
 			
 			//For SWT/Zxing/AspectJ/Eclipse
 			int test=i;
-			String base="E:\\PhD\\EclipseAll\\";
+			String base="E:\\PhD\\Repo\\Eclipse\\";
 			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers(base+"\\data\\FinalMap\\TokenSourceMapTrainset"+test+".txt",base+"\\data\\testset\\test"+test+".txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\data\\changeset-pointer\\ID-SourceFile.txt",base+"\\data\\ID-Keyword.txt");
 			String bugReportFolder = base+"\\data\\testsetForBL\\test"+test;
 			//For Mac
 			//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
 			//ForWindows
-			String sourceFolder = base+"\\ProcessedSourceCorpus\\";
+			String sourceFolder = base+"\\ProcessedSourceCorpusOct31\\";
 				
-			String goldsetFile = base+"\\data\\gitInfoNew.txt";
+			String goldsetFile = base+"\\data\\gitInfoEclipse.txt";
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			=base+"\\data\\Results\\eclipseAllOct19rVSM1000"+alpha+"-"+test+".txt";
+			=base+"\\data\\Results\\Oct31VSMandMe"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 	
@@ -564,12 +564,12 @@ public class BugLocalizationUsingNumbers {
 
 	 public void bugLocatorLuceneAndMe(BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
 	    {
-		 	double ALPHA=0.0;
+		 	double ALPHA=0.4;
 		 	double BETA=1-ALPHA;
 		 	//For Eclipse
 		 	//String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
 		 	//ForSWT
-		 	String indexDir="E:\\PhD\\EclipseAll\\data\\IndexEclipse";
+		 	String indexDir="E:\\PhD\\Repo\\Eclipse\\data\\IndexEclipse";
 			obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
 					.getLuceneBasedScore(BETA);
 	    	obj.trainMapTokenSource=obj.loadTrainMap(obj.trainMapTokenSourceAddress);
@@ -597,21 +597,21 @@ public class BugLocalizationUsingNumbers {
 					System.out.println();
 					MiscUtility.showResult(10,SortedBLresult );
 					
-					//HashMap<Integer,Double> sortedResultMyTool
+					HashMap<Integer,Double> sortedResultMyTool
 					//=obj.findBugForEachQueryCosineSimBased(queryID);
-					//=obj.ResultBasedOnTF(queryID);
+					=obj.ResultBasedOnTF(queryID);
 					
 					HashMap<Integer, Double> resultMap
 					//=sortedResultMyTool;
-					=SortedBLresult;
-					//=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
+					//=SortedBLresult;
+					=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
 					
 					String result=queryID+",";
 					int count=0;
 					for(int key:resultMap.keySet())
 					{
 						count++;
-						if(count>1000)break; 
+						if(count>10)break; 
 						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key));
 						
 						

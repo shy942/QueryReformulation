@@ -14,6 +14,7 @@ public class ChangesetMaker {
 	}
 
 	protected void makeChangeset() {
+		ArrayList<String> fileList=ContentLoader.readContent("E:\\PhD\\Repo\\Eclipse\\data\\SourceFileNames.txt");
 		ArrayList<String> lines = ContentLoader
 				.getAllLinesOptList(this.gitInfoFile);
 		
@@ -26,17 +27,21 @@ public class ChangesetMaker {
 				int cfCount = Integer.parseInt(parts[1].trim());
 				if (cfCount > 0) {
 					ArrayList<String> cfiles = new ArrayList<>();
+					ArrayList<String> tempList=new ArrayList<>();
 					for (int j = i + 1; j <= i + cfCount; j++) {
 						String fileURL = lines.get(j);
-						{
-							
-							cfiles.add(fileURL);
+						cfiles.add(fileURL);
+						if(IsFileExist(fileURL, fileList)){
+							tempList.add(fileURL);
 						}
 					}
+					if(tempList.size()==cfiles.size())
+					{
 					// now save the files
 					//String outputFile = "/Users/user/Documents/Ph.D/2018/Data/changeset/" + bugID + ".txt";
 					String outputFile = "E:\\PhD\\Repo\\Eclipse\\data\\changeset\\" + bugID + ".txt";
 					ContentWriter.writeContent(outputFile, cfiles);
+					}
 
 					i = i + cfCount + 1;
 					System.out.println("Done:" + bugID);
@@ -50,7 +55,11 @@ public class ChangesetMaker {
 	}
 
 	
-	
+	protected boolean IsFileExist(String file, ArrayList<String> list)
+	{
+		if(list.contains(file)) return true;
+		else return false;
+	}
 
 	
 	

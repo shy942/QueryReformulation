@@ -95,7 +95,7 @@ public class BugReportKeywordPointerMaker {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String base="E:PhD\\Repo\\Eclipse";
-		String bugReportDir = base+"\\BugData\\";  
+		String bugReportDir = base+"\\BugData1KB\\";  
 		new BugReportKeywordPointerMaker(bugReportDir,base+"\\data\\allBug.txt",base).developBugKeywordPointer();
 	}
 }
