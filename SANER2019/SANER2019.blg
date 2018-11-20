@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: SANER2019.aux
 The style file: plainnat.bst
 Database file #1: test.bib
-Repeated entry---line 375 of file test.bib
+Repeated entry---line 386 of file test.bib
  : @book{Salton
  :             ,
 I'm skipping whatever remains of this entry
@@ -13,6 +13,8 @@ Warning--empty year in Hofmann
 Warning--empty year in Hofmann
 Warning--empty year in FindBug
 Warning--empty year in FindBug
+Warning--empty year in MarcusLSI
+Warning--empty year in MarcusLSI
 Warning--empty year in Mayer
 Warning--empty year in Mayer
 Warning--empty year in Ponte
