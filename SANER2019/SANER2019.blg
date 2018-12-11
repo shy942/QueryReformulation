@@ -1,7 +1,12 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: SANER2019.aux
 The style file: plainnat.bst
 Database file #1: test.bib
-Repeated entry---line 386 of file test.bib
+You're missing a field name---line 25 of file test.bib
+ : 
+ : ,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 413 of file test.bib
  : @book{Salton
  :             ,
 I'm skipping whatever remains of this entry
@@ -27,4 +32,4 @@ Warning--empty year in Salton
 Warning--empty year in Salton
 Warning--empty year in Zeller:2002
 Warning--empty year in Zeller:2002
-(There was 1 error message)
+(There were 2 error messages)

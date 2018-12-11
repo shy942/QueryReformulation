@@ -12,6 +12,7 @@
 \usepackage{algpseudocode}
 \usepackage{multirow}
 \usepackage{pifont}
+\usepackage{subcaption}
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
@@ -77,6 +78,7 @@ Hence, these techniques are likely to be affected by the quality and content of 
 In this work, we additionally consider an association between bug reports and their corresponding changed source documents extracted from commit logs for the bug localization.
 
 \citet{Jian} first propose BugLocator based on revised Vector Space Model (rVSM) that uses the lexical similarity between bug report texts and source code documents. \citet{Saha} capture the structures of both bug reports and source documents, and then apply structured information retrieval for bug localization. \citet{Moreno} consider structural similarity between stack traces in the bug report and the project document structures for bug localization. However, all of these studies share one common limitation.
+
 %In existing studies, information retrieval techniques  \cite{Jian} \cite{Saha} \cite{Moreno} \cite{Anh} \cite{Lukins} are applied to automatically search for relevant buggy files based on a given bug report. 
 %In case of Text Retrieval (TR) based approaches, \citet{Jian} propose BugLocator based on revised Vector Space Model (rVSM), which requires the information extracted from both the bug reports and the source codes.
 %Due to the fuzzy nature of information retrieval, textually matching bug reports against source
@@ -98,8 +100,12 @@ In this work, we additionally consider an association between bug reports and th
 %\citet{Sisman}  proposed a method that examines the files retrieved for the initial query supplied by a user and then selects from these files only those additional terms that are in close proximity to the terms in the initial query. Their \cite{Sisman} experimental evaluation on two large software projects using more than 4,000 queries showed that the proposed approach leads to significant improvements for bug localization and outperforms the well-known QR methods
 %in the literature.
 Most of these IR-based bug localization techniques simply rely on only lexical similarity for retrieving relevant documents from the codebase. Hence, the search queries constructed from a given bug report should contain keywords similar to the code terms. Unfortunately, bug reports could be of low quality and could miss the appropriate keywords. Besides, an appropriate query also warrants for domain expertise on the project from a developer, which can always not be guaranteed. 
-%Second, when treating files as single units, they are affected by the noise of the large files. This issue also reduces the performance of the applicability of exploiting lexical similarity measure.
 
+To solve the problem with lexical similarity, \citet{Maletic, MarcusMaletic} extract semantic meaning of the documentation and source code by utilizing Latent Semantic Analysis (LSA). They use this information to identify traceability links based on similarity measures. To automatically recover traceability links from system documentation to program source code, \citet{MarcusLSI} proposed a method using Latent Semantic Indexing (LSI), and their experiments suggest that this technique is promising than VSM, and other probabilistic IR methods.
+%Second, when treating files as single units, they are affected by the noise of the large files. This issue also reduces the performance of the applicability of exploiting lexical similarity measure.
+LSI requires the use of a dimensionality reduction parameter that must be tuned for each document collection \cite{Kontostathis}.
+However, the results returned by LSI can be difficult to interpret, as
+they are expressed using a numeric spatial representation.
 
 In this paper, we propose a bug localization approach namely BLuAMIR that not only considers lexical similarity between keywords and the source code but also captures implicit association between them from the past bug fixing history. 
 In particular, we consider the implicit association between keywords extracted from previously fixed bug reports and their corresponding changed code. The idea is to capture their relationship without a direct vocabulary match.  
@@ -111,11 +117,12 @@ Our proposed technique also overcomes the issue with large files. Lexical simila
 We evaluate our technique in three different dimensions using
 three widely used performance metrics and 3973 bug reports (i.e.,
 queries) from three open source subject systems. 
-First, we evaluate in terms of the performance metrics, and contrast with two replicated baseline, Vector Space Model(VSM) and BugLocator \cite{Jian}.
-BLuAMIR localizes bugs with in average 9\% higher accuracy (i.e.,
+First, we evaluate in terms of the performance metrics, and contrast with three replicated baseline, Latent Semantic Indexing (LSI) \cite{MarcusLSI}, Vector Space Model(VSM) and BugLocator \cite{Jian}.
+BLuAMIR localizes bugs with in average 36.98\% higher accuracy (i.e., Hit@10), 63\% higher precision (i.e., MAP@10), and 63.81\% higher result ranks (i.e., MRR@10) than replicated baseline LSI (Section \ref{RQ4answer}).
+BLuAMIR also localizes bugs with in average 9\% higher accuracy (i.e.,
 Hit@10), 12\% higher precision (i.e., MAP@10) and 11\%
 higher result ranks (i.e., MRR@10) than the replicated baseline VSM (Section \ref{RQ1answer}).
-BLuAMIR also localizes bugs with in avaerage 57\% higher accuracy (i.e., Hit@10), 81\% higher precision(i.e., MAP@10) and 94\% higher resul ranks(i.e., MRR@10) than replicated BugLocator \cite{Jian} (section \ref{RQ1answer})
+BLuAMIR localizes bugs with in avaerage 57\% higher accuracy (i.e., Hit@10), 81\% higher precision(i.e., MAP@10) and 94\% higher resul ranks(i.e., MRR@10) than replicated BugLocator \cite{Jian} (section \ref{RQ1answer}).
 Second, we compare our technique with a state of the art approach \cite{Jian}
 and our technique can improve 12\% in MAP@10
 and 12.6\% in Top-5 accuracy over the state-of-the-art (Section \ref{RQ4answer}).
@@ -196,7 +203,7 @@ Thus, this paper makes the following contributions:
 	\item A novel bug localization technique that not only considers lexical similarity but also exploits the association relationship between bug report keywords and their corresponding buggy source code.
 	\item Comprehensive evaluation of the technique using total of 3973 bugs from Eclipse, SWT and Zxing bug repository and validation against 
 	%state-of-the-art bug localization technique \cite{Jian}.
-	two existing approaches including the state-of-the-art \cite{Jian} and LSI-based bug localization technique \cite{MarcusLSI}.
+	two state-of-the-art approaches including BugLocator \cite{Jian} and LSI \cite{MarcusLSI}.
 \end{itemize}
 
 The rest of the paper is organized as follows. Section \ref{sec:motivatingexample} discusses a motivating example of our proposed approach, and Section \ref{sec:proposedmethod} presents proposed bug localization method for BLuAMIR, and Section \ref{sec:expANDdiss} focuses on the conducted experiments and experimental results, and Section \ref{sec:threats} identifies the possible threats to validity, and Section \ref{relatedwork}
@@ -212,14 +219,14 @@ The buggy file,
 IWorkingSet.java was in the fourth position by VSM, but BLUAMIR returned it at the second position which is promising.
 
 We also investigate why BLuAMIR can locate more buggy files than VSM.  
-VSM score is based on overlap of terms found both in the bug reports and source files. On the contrary, association score dont directly compare terms between bug reports and source files. So vocabulary mismatch problem is resolved here. Moreover, in the working example, this association map aids locating more buggy files than VSM technique. IF we go deeper, we can find that due to vocabulary missmatch problem, VSM failed to retrieve buggy files. Our proposed approach makes use of an association map that successfully captures previous relationship between bug report keywords and their source buggy files. 
+VSM score is based on overlap of terms found both in the bug reports and source files. On the contrary, association score do not directly compare terms between bug reports and source files. So vocabulary mismatch problem is resolved here. Moreover, in the working example, this association map aids locating more buggy files than VSM technique. IF we go deeper, we can find that due to vocabulary missmatch problem, VSM failed to retrieve some buggy files. Our proposed approach makes use of an association map that successfully captures previous relationship between bug report keywords and their source buggy files. 
 In BLuAMIR, we collect keywords from a current bug report (i.e., query) and then retrieve their associated source files from the constructed association map. 
 This association map is created from keywords extracted from previously fixed bug report and their fixed buggy codebase. So, the idea is, if a current bug shares same keywords (i.e., concepts) with a previous fixed bug, there is possibility they might share some codebase. This is how our proposed approach overcome vocabulary missmatch problem.
 
 \begin{figure*}
 	\centering
-	\includegraphics[scale=0.38]{SD5-Gray}
-	\caption{Proposed Schematic Diagram: (a)Construction of association map between bug report keywords and source documents and (b) Bug Localization Using VSM and association score}
+	\includegraphics[scale=0.60]{SD6-Gray}
+	\caption{Proposed Schematic Diagram: (a) Construction of association map between bug report keywords and source documents and (b) Bug Localization Using VSM and association score}
 	\label{fig:systemDiagram}
 \end{figure*}
 \section{BLUAMIR: Proposed Method for Bug Localization} \label{sec:proposedmethod} 
@@ -244,8 +251,8 @@ we retrieve source code files which have been changed in order to fix a given bu
 It should be noted each commit establishes a direct relationship between its changed documents and the corresponding bug report. 
 Thus, the keywords from this bug report enjoy an implicit relationships with the changed source documents. 
 We construct an association map database by leveraging this connected relationship. Mapping each keyword can be linked to one or more source code files according to commit logs. Similarly, each source code file can be linked to one or more keywords. 
-Algorithm 1 shows pseudo-code for the construction of our mapping database. 
-We divide this into three steps step as follows.  
+Algorithm \ref{algo:map} shows pseudo-code for the construction of our mapping database. 
+We divide this into three steps as follows.  
 %This way we connect keywords and source code files to form an association map database named keyword-source code links. 
 
 %This section can be further divided into several parts: keyword extraction from bug reports, source code information extraction from commit logs, keyword- source code linking. We also create an algorithm for creating association map database between bug report keywords into their buggy source files, which is given in Algorithm \ref{algo:map}. However, several steps of map database construction are discussed in the followings:
@@ -254,23 +261,25 @@ We divide this into three steps step as follows.
 	\caption{Construction of Association Mapping Database}
 	\label{algo:map}
 	\begin{algorithmic}[1]
-		\Procedure{BUG REPORTS }{$BRC$}
+		\Procedure{MapConstruction}{$BRC$, $CommitLogs$}
 		
 		\Comment{$BRC$: a collection of bug reports}
+		
+		\Comment{$CommitLogs$: a collection of commit messages}
 		\State $MAP_{KS} \gets$ \{\}
 		\Comment{an empty association map}
 		%\Comment{creating adjacency map database from the bug reports collection}
 		%\State $MAP_{adj} \gets$ createAdjacencyDatabase($BRC$)
 		%\Comment{creating a map that links keywords into their bug ids}
-		\State $MAP_{bk} \gets$ createBugIDtoKeywordMap()
+		\State $MAP_{bk} \gets$ createBugIDtoKeywordMap($BRC$)
 		
 		\Comment{Create Map between BugID and Keywords}
 		
-		\State $MAP_{kb} \gets$ createKeywordtoBugIDMap()
+		\State $MAP_{kb} \gets$ createKeywordtoBugIDMap($MAP_{bk}$)
 		
 		\Comment{Create Map between Keywords and BugID}
 		
-		\State $MAP_{bs} \gets$ createBugIDtoSourceMap()
+		\State $MAP_{bs} \gets$ createBugIDtoSourceMap($CommitLogs$)
 		
 		\Comment{Create Map between BugID and codebase}
 		
@@ -353,15 +362,21 @@ At this point, we have pre-processed keywords from each bug report. We also have
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.53]{BGraph2}
-	\caption{Bipartite Graph Constructed for Bug \#46669. Here, S1 represents \textit{org.eclipse.ui.internal.ide.IDEWorkbenchMessages.java} and S2 represents \textit{org.eclipse.ui.internal.ide.dialogs.LinkedResourceEditor.java}}
+	\caption{A Bipartite Graph Constructed for Bug \#46669. 
+		%Here, S1 represents %\textit{org.eclipse.ui.internal.ide.IDEWorkbenchMessages.java} and S2 represents %\textit{org.eclipse.ui.internal.ide.dialogs.LinkedResourceEditor.java}
+	}
 	\label{fig:BipartiteGraph}
 \end{figure}
 
 \textbf{A Bipartite Graph Example:}
 
 In mathematics, a bipartite graph is a graph in which the vertices can be put into two separate groups so that the only edges are between those two groups, and there are no edges between vertices within the same group. 
-Here, two groups correspond to keywords and codebase. Hence, nether two keywords nor two source files can be connected. There is only valid link is established between a keyword and its corresponding source. 
-We construct a bipartite graph for a bug report (ID 322401) on the Eclipse UI Platform. Table \ref{tab:BugInfo2} shows the \textit{title} and \textit{description} of the bug report. The bipartite graph is presented in Figure \ref{fig:BipartiteGraph}. Note, that ten unique keywords are extracted from the bug report (i.e., from title and description) and are connected through edges with their corresponding change codes (i.e., $S1$ and $S2$ ). 
+In our work, two groups correspond to keywords and codebase. Hence, nether two keywords nor two source files can be connected. There exist only one type of valid link, which can be established between a keyword and its corresponding sources. 
+We construct a bipartite graph for a bug report (ID 322401) on the Eclipse UI Platform. Table \ref{tab:BugInfo2} shows the \textit{title} and \textit{description} of the bug report. The bipartite graph is presented in Figure \ref{fig:BipartiteGraph}. Note, that ten unique keywords are extracted from the bug report (i.e., from title and description) and are connected through edges with their corresponding change codes (i.e., $S1$ represents 
+%org.eclipse.ui.internal.ide.
+\textit{IDEWorkbenchMessages.java} and $S2$ represents 
+%org.eclipse.ui.internal.ide.dialogs.
+\textit{LinkedResourceEditor.java}). 
 \subsection{Bug Localization Using VSM and Association Scores}
 
 The system diagram for this part has illustrated in Figure \ref{fig:systemDiagram}(b), which 
@@ -369,7 +384,73 @@ The system diagram for this part has illustrated in Figure \ref{fig:systemDiagra
 is based on the combination of VSM and association scores (i.e., Figure \ref{fig:systemDiagram}(b)).
 %(b)) and Approach II is based on rVSM, Simi and association scores (i.e., Figure \ref{fig:systemDiagram} (c)). 
 We have constructed an association map databases from keywords collected from bug report into its corresponding source code information in Section \ref{sec:MapConstruction}.
-For the candidate keyword tokens for the initial query, we exploit association map database (i.e., keyword-source code links) and retrieve the relevant source code files. We use some heuristic functions in order to combine two ranks and recommend buggy relevant source files. 
+For the candidate keyword tokens for the initial query, we exploit association map database (i.e., keyword-source code links) and retrieve the relevant source code files. We use some heuristic functions in order to combine two ranks and recommend buggy relevant source files. Algorithm \ref{algo:localization} shows pseudo-code for our bug localization approach.
+
+
+\begin{algorithm}[!t]
+	\caption{Bug Localization using Association Mapping Database and Information Retrieval}
+	\label{algo:localization}
+	\begin{algorithmic}[1]
+		\Procedure{BugLocalization}{$Q$, $SCrepo$, $MAP_{KS}$}
+		
+		\Comment{$Q$: a bug report query}
+		
+		\Comment{$SCrepo$: a source code repository}
+	
+		\Comment{$Map_{KS}$: association map created from Algorithm \ref{algo:map}}
+		
+		%\Comment{creating adjacency map database from the bug reports collection}
+		%\State $MAP_{adj} \gets$ createAdjacencyDatabase($BRC$)
+		%\Comment{creating a map that links keywords into their bug ids}
+		\State $RankedR \gets$ \{\}
+		\Comment{List of recommended buggy files}
+		
+		\State $Index \gets$ createIndex($SCrepo$)
+		
+		\Comment{Create Index from source code corpus}
+		
+		\State $Score_{Assoc} \gets$ calculateAssociationScore($Q$,$MAP_{bk}$)
+		
+		\Comment{Calculate Association score}
+		
+		\State $Score_{VSM} \gets$ calculateVSMscore($Q$,$Index$)
+		
+		\Comment{Calculate VSM score}
+		
+		%\Comment{Linking keywords into change source code}
+		%\LineComment{preprocess the collected keywords}
+		%\For{Keyword $K_i \in$ $K$}
+		\State $SC_{Assoc} \gets$ collectSCodeWithAssocScore($Score_{Assoc}$)
+		
+		\Comment{Collect Source Codes for which association score is computed}
+		
+		\For{SourceCode $SC_{_i}$ $\in$ $SC_{Assoc}$}
+		\State $Rank_{Assoc_{i}} \gets$ retrieveAssocScore ($Score_{Assoc}$)
+		
+		\Comment{retrieve association score for each source file}
+		
+		\State $Rank_{VSM_{i}} \gets$ retrieveVSMScore ($Score_{VSM}$)
+		
+		\Comment{retrieve VSM score for the same source file}
+		
+		\State $CombineS[SC_{i}]\gets Rank_{Assoc_{i}} + Rank_{VSM_{i}}$
+		
+		\Comment{Combine both scores utilizing a heuristic metric}
+	
+		\EndFor
+	
+		
+		
+		\State $RankedR \gets$ retrieveTopRSF ($CombineS[SC_{i}]$)
+		
+		\Comment{Sort combine score and retrieve top ranked buggy files}
+		%\LineComment{put them into map}
+		%\State $MAP \gets$ mapping()
+		\State \textbf{return} $RankedR$
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+
 %However, for simplicity we represent the former approach (i.e., Approach I) in our proposed schematic diagram in Fig. \ref{fig:systemDiagram}(b).
 %In this approach, we calculate VSM and Co-occurence ranks in order to recommend buggy source codes for a given newly reported bug. 
 %On the other hand,
@@ -485,6 +566,13 @@ For the candidate keyword tokens for the initial query, we exploit association m
 %\subsection{Approach I: Combinition of VSM and Co-occurence Rank:}
 For locating a new bug we compute similarity scores for all source code files for a given project. However, we need to focus on some concepts which are required to understand our proposed system. They are described as follows:
 
+\textbf{Association Scores Calculation}
+A query typically contains several keywords or words. For each keyword, we look for relevant source files in the keyword-source files association map. We assume these files are relevant because we created the map between the content of bug reports and their buggy source files for previously fixed bug reports. When we analysis these links for all keywords in a query, a relevant file can be found from the association relationship more than once. Therefore, we then normalize the frequency of source files using standard TFIDF normalization technique. Finally we recommend first Top-K files with their association. The equation for computing association score is given belows:
+\begin{equation}\label{CoOccequation}
+AssociationScore=\sum_{All S_{i} that connect to W_{j}}(Link(W{j},S_{i}))
+\end{equation}
+Here, the link $Link(W{j},S_{i})$ between keyword and source file is 1 if they are connected in the association map and 0 otherwise. This step is done in line 4 of Algorithm \ref{algo:localization}.
+
 \textbf{Vector Space Model:}
 The vector space model (VSM) is a classical method for constructing vector representations for documents \cite{Salton}. 
 It encodes a document collection by a term-by-document matrix. It represents one type of text unit (documents) by its association with the other type of text unit (terms). Here, the association is calculated by explicit evidence based on term occurrences in the documents.
@@ -511,14 +599,9 @@ VSMScore(q,d)= cos(q,d) =
 \\
 \sum_{t\epsilon q\bigcap d}(\frac{f_{tq}}{\#terms})\times (\frac{f_{td}}{\#terms})\times log(\frac{\#docs}{n_{t}})^{2}
 \end{multline}
-This \textit{VSM} score is calculated for each query bug report {$q$} against every document {$d$} in the corpus. However, in the above equation {$\#terms$} refers to the total number of terms in a corpus, {$n\textsubscript{t}$} is the number of documents where term {$t$} occurs.
+This \textit{VSM} score is calculated for each query bug report {$q$} against every document {$d$} in the corpus. However, in the above equation {$\#terms$} refers to the total number of terms in a corpus, {$n\textsubscript{t}$} is the number of documents where term {$t$} occurs. This score is calculated in line 5 of Algorithm \ref{algo:localization},
 
-\textbf{Association Scores Calculation}
-A query typically contains several keywords or words. For each keyword, we look for relevant source files in the keyword-source files association map. We assume these files are relevant because we created the map between the content of bug reports and their buggy source files for previously fixed bug reports. When we analysis these links for all keywords in a query, a relevant file can be found from the association relationship more than once. Therefore, we then normalize the frequency of source files using standard TFIDF normalization technique. Finally we recommend first Top-K files with their association. The equation for computing association score is given belows:
-\begin{equation}\label{CoOccequation}
-AssociationScore=\sum_{All S_{i} that connect to W_{j}}(Link(W{j},S_{i}))
-\end{equation}
-Here, the link $Link(W{j},S_{i})$ between keyword and source file is 1 if they are connected in the association map and 0 otherwise.
+
 
 
 \textbf{Final Score Calculation}
@@ -527,7 +610,9 @@ We compute VSM score using Appache Lucene library. Then we combine that score wi
 FinalScore=(1-\alpha )\times N(VSMScore)+ \\
 \alpha \times N(AssociationScore)
 \end{multline}
-Here, the weighting factor $\alpha$ varies from 0.1 to 0.5, for which we discuss results in the experiment section \ref{RQ2Answer}.
+Here, the weighting factor $\alpha$ varies from 0.1 to 0.5, for which we discuss results in the experiment section \ref{RQ2Answer}. 
+
+We combine both scores using equation \ref{equationVSMme} in Algorithm \ref{algo:localization} line 7-11. Finally, top ranked recommended buggy files are retrieved, which is done line 12 of Algorithm \ref{algo:localization}.
 
 
 
@@ -564,9 +649,9 @@ We work with Eclipse data set which is a popular IDE for Java. We downloaed a gi
 %These source codes are contained in our source code repository. 
 On the other hand, currently Eclipse Platform UI project contains more than 10K number of bugs where we only work with the bugs which are fixed. We create quires from each bugs considering their title and short summary.
 %We have two parts in our corpus. One is source code files downloaded as git based project and another part is bug reports collection. 
-All bug reports are collected from \footnote{https://bugs.eclipse.org/}. In order to obtain the links between previously fixed bugs and source code files, we analyze git project commit message. We ran through all commit messages and track Bug IDs associated with examined source code files. 
+All bug reports are collected from\footnote{https://bugs.eclipse.org/}. In order to obtain the links between previously fixed bugs and source code files, we analyze git project commit message. We ran through all commit messages and track Bug IDs associated with examined source code files. 
 In order to evaluate our proposed tool we have also used two more dataset that \citet{Jian} used
-to evaluate BugLocator. This dataset contains 118 bug reports in total from two popular open source projects– SWT, and ZXing along with the information of fixed files for those bugs. The detail of our dataset is presented in \ref{tab:DDSl}. SWT is a component of Eclipse \footnote{http://www.eclipse.org/swt/}. Zxing is an android based project maintained by google \footnote{http://code.google.com/p/zxing/}.
+to evaluate BugLocator. This dataset contains 118 bug reports in total from two popular open source projects– SWT, and ZXing along with the information of fixed files for those bugs. The detail of our dataset is presented in \ref{tab:DDSl}. SWT is a component of Eclipse\footnote{http://www.eclipse.org/swt/}. Zxing is an android based project maintained by google\footnote{http://code.google.com/p/zxing/}.
 \begin{table}[htbp]
 	\caption{Description of Data Sets}
 	\label{tab:DDSl}
@@ -585,8 +670,6 @@ to evaluate BugLocator. This dataset contains 118 bug reports in total from two 
 	\end{center}
 	%\centering
 \end{table}
-
-
 \subsection{Evaluation Metrices}
 To measure the effectiveness of the proposed bug localization approach, we use the following metrics:
 
@@ -666,6 +749,41 @@ rVSMScore(q,d)=g(\#term)\times cos(q,d)
 \end{multline}
 %\end{equation}
 This \textit{rVSM} score is calculated for each query bug report {$q$} against every document {$d$} in the corpus. However, in the above equation {$\#terms$} refers to the total number of terms in a corpus, {$n\textsubscript{t}$} is the number of documents where term {$t$} occurs.
+\begin{figure*}
+	\begin{subfigure}[b]{0.33\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{VSM+AssoTop-1}
+		%\caption {Performance Comparison between VSM and VSM+Association for Top-1 Retrieval}
+		%\label{fig:VSM+AssoTop-1}...
+	\end{subfigure}
+	\begin{subfigure} [b]{0.33\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{VSM+AssoTop-5}
+		%\caption {Performance Comparison between VSM and VSM+Association for Top-5 Retrieval}
+		%\label{fig:VSM+AssoTop-5}
+	\end{subfigure}
+	\begin{subfigure} [b]{0.33\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{VSM+AssoTop-10}
+		%\caption {Performance Comparison between VSM and VSM+Association for Top-10 Retrieval}
+		%\label{fig:VSM+AssoTop-10}
+	\end{subfigure}
+	
+	\caption {Performance Comparison between VSM and VSM+Association for Top-1, Top-5 and Top-10 Retrieval}
+	\label{fig:VSM+AssoTopK}
+\end{figure*}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.70]{VSM+AssoTop-MRR}
+	\caption {MRR Comparison between VSM and VSM+Association}
+	\label{fig:VSM+AssoTop-MRR}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.70]{VSM+AssoTop-MAP}
+	\caption {MAP Comparison between VSM and VSM+Association}
+	\label{fig:VSM+AssoTop-MAP}
+\end{figure}
 
 \textbf{Ranking based on similar bug information}
 \begin{figure}
@@ -681,6 +799,8 @@ SimiScore=\sum_{All S_{i} that connect to F_{j}}(Similarity(B,S_{i})/n_{i})
 \end{equation} 
 Here, similarity between newly reported bug {$B$} and previously fixed bug {$S\textsubscript{i}$} is calculated based on cosine similarity measure and {$n\textsubscript{i}$} is the total number of link {$S\textsubscript{i}$} has with source code files in layer 3.
 
+
+
 \textbf{Final Score Calculation}
 For each query, we compute the rVSM score against all source codes in the database using equation \ref{rVSMequation} and we also calculate Simi score using equation \ref{Simiequation}. Then we calculate association scores for the query using equation \ref{CoOccequation}.
 We finally combine the three ranks and for that we use three weighting factor {$\alpha$}, $\beta$ and $\gamma$.
@@ -690,11 +810,52 @@ CombinedScore=\gamma \times N(rVSMScore)+
 \\ \beta \times N(SimiScore) + \alpha \times N(AssociationScore)
 \end{multline}
 We work with different values of $\alpha$, which are presented in the experiment section \ref{RQ2Answer}. We use value of 0.2 for $\beta$, varying $\alpha$ from 0.1 to 0.5 and thus, $\gamma$ from 0.7 to 0.3. So that they end up into 1.
-
 \subsection{Answering RQ1} \label{RQ1answer}
-To answer RQ1, we compare the performance of our proposed bug localization approach with two existing techniques - 1) BugLocaotor \cite{Jian} which is based on rVSM and Simi scores and 2) VSM which is based on vector space model. 
+To answer RQ1, we compare the performance of our proposed bug localization approach with two existing techniques - 1) VSM which is based on vector space model and 2) replicated BugLocaotor \cite{Jian} which is based on rVSM and Simi scores. 
 
 
+
+\begin{figure*}
+	\begin{subfigure}[b]{0.33\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{RBL+rSAssoTop-1}
+		%\caption {Performance Comparison between VSM and VSM+Association for Top-1 Retrieval}
+		%\label{fig:VSM+AssoTop-1}...
+	\end{subfigure}
+	\begin{subfigure} [b]{0.33\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{RBL+rSAssoTop-5}
+		%\caption {Performance Comparison between VSM and VSM+Association for Top-5 Retrieval}
+		%\label{fig:VSM+AssoTop-5}
+	\end{subfigure}
+	\begin{subfigure} [b]{0.33\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{RBL+rSAssoTop-10}
+		%\caption {Performance Comparison between VSM and VSM+Association for Top-10 Retrieval}
+		%\label{fig:VSM+AssoTop-10}
+	\end{subfigure}
+	
+	\caption {Performance Comparison between Replicated BugLocator and rVSM+Simi+Association for Top-1, Top-5 and Top-10 Retrieval}
+	\label{fig:RepBL+AssoTopK}
+\end{figure*}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.70]{RBL+rSAssoTop-MRR}
+	\caption {MRR Comparison between Replicated BugLocator and rVSM+Simi+Association}
+	\label{fig:RepBL+AssoTop-MRR}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.70]{RBL+rSAssoTop-MAP}
+	\caption {MAP Comparison between Replicated BugLocator and rVSM+Simi+Association}
+	\label{fig:RepBL+AssoTop-MAP}
+\end{figure}
+
+
+
+\textbf{VSM vs Our proposed Tool}
+We combine VSM score and association scores in order to produce ranked result. We also compare the performance of baseline VSM technique and our proposed combined approach. The comparison is presented in table \ref{tab:Performance2}. We compute Top-1, Top-5, Top-10 performance (presented in Fig \ref{fig:VSM+AssoTopK}) and MRR and MAP (shown in Fig \ref{fig:VSM+AssoTop-MRR} and Fig \ref{fig:VSM+AssoTop-MAP} respectively) for both approaches. In all cases our proposed approach outperforms VSM-based bug localization approach. The Top-10 performance of our tool is 64.05\% whereas it is 58.73\% for VSM.
+So. to answer our \textit{RQ1}, we can go to Table \ref{tab:Performance2}, 64.05\% bugs are successfully located in Top-10 for Eclipse dataset for Approach I of BLuAMIR. 
 \begin{table}[htbp]
 	\centering
 	\caption{Performance of proposed technique (VSM+Association) Ranks}
@@ -704,56 +865,56 @@ To answer RQ1, we compare the performance of our proposed bug localization appro
 			\hline
 			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
 			
-			\begin{tabular}[c]{@{}c@{}}\# \textbf{Test}  \\ \textbf{Case} \\ \end{tabular} & 
+			\begin{tabular}[c]{@{}c@{}} \textbf{\#Bugs} \\ \end{tabular} & 
 			\begin{tabular}[c]{@{}c@{}}\#\textbf{Methodology} \\  \end{tabular} 
 			& 
 			\begin{tabular}[c]{@{}c@{}}\textbf{Top 1}\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{Top 5}\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{Top 10}\\ \%\end{tabular} & 
 			\textbf{MRR@10} 
 			& \textbf{MAP@10} \\ \hline \hline
-			\multirow{2}{*}{1}& VSM & 23.67& 46.59&56.97& 0.33 & 0.32 \\ \cline{2-7}
-			& VSM + Association & 28.40                                               & 51.77                                            & 60.06                                                &   0.38  & 0.36 \\ \hline
-			\multirow{2}{*}{2}                                                                               & VSM & 24.62 & 48.05 & 57.96 & 0.34 & 0.34 \\  \cline{2-7}  &VSM + Association                                                                    & 27.63                                               & 53.15                                              & 61.26                                             &   0.38  &   0.37  \\ \hline
-			\multirow{2}{*}{3}                                                                               & VSM & 20.78 & 40.96 & 51.20 & 0.30 & 0.29 \\  \cline{2-7}   &VSM + Association                                                                      & 23.12                                            & 46.85                                            & 59.76                                             &   0.34  &  0.32   \\ \hline
-			\multirow{2}{*}{4}                                                                               & VSM & 22.52 & 42.94 & 53.75 & 0.32 & 0.31 \\   \cline{2-7} &VSM + Association                                                                    & 23.42                       & 49.25                       & 61.56                                                &  0.35   &  0.33  \\  \hline
-			\multirow{2}{*}{5}                                                                               & VSM & 27.33 & 52.25 & 63.36 & 0.38 & 0.35 \\   \cline{2-7} &VSM + Association                                                                   & 29.73                                                 & 53.15                                                 & 62.16                                                  &  0.39   & 0.36     \\  \hline
-			\multirow{2}{*}{6}                                                                               & VSM & 25.00 & 50.60 & 60.84 & 0.36 & 0.34 \\  \cline{2-7}  &VSM + Association
-			&26.13 &
-			51.65 &
-			62.76 & 0.37 &
-			0.35     \\  \hline 
-			\multirow{2}{*}{7}                                                                               & VSM & 29.82 & 54.52 & 66.27 & 0.40 & 0.38 \\  \cline{2-7}  &VSM + Association
-			
-			&35.43 &
-			60.96 &
-			72.07 & 0.46 &
-			0.44     \\  \hline
-			\multirow{2}{*}{8}                                                                               & VSM & 27.79 & 51.36 & 60.73 & 0.38 & 0.36 \\  \cline{2-7}  &VSM + Association
-			&36.64 &
-			58.86 &
-			67.87 & 0.46 &
-			0.43    \\  \hline
-			\multirow{2}{*}{9}                                                                               & VSM & 29.13 & 52.55 & 64.86 & 0.39 & 0.36 \\  \cline{2-7}   &VSM + Association
-			&29.13 &
-			61.86 &
-			69.97 & 0.42 &
-			0.40    \\  \hline
-			\multirow{2}{*}{10}                                                                               & VSM & 19.03 & 39.58 & 51.34 & 0.28 & 0.26 \\  \cline{2-7}  &VSM + Association
-			&24.62 &
-			51.05 &
-			63.06 & 0.36 &
-			0.34    \\ \hline \hline
-			\multirow{2}{*}{Average}                                                                               & VSM & 24.98\% & 47.94\% & 58.73\% & 0.35 & 0.33 \\  \cline{2-7}   &VSM + Association     & 28.43\%                                                 & 53.86\%                                                 & 64.05\%                                                  &   0.39  &  0.37    \\ 
+			%			\multirow{2}{*}{1}& VSM & 23.67& 46.59&56.97& 0.33 & 0.32 \\ \cline{2-7}
+			%			& VSM + Association & 28.40                                               & 51.77                                            & 60.06                                                &   0.38  & 0.36 \\ \hline
+			%			\multirow{2}{*}{2}                                                                               & VSM & 24.62 & 48.05 & 57.96 & 0.34 & 0.34 \\  \cline{2-7}  &VSM + Association                                                                    & 27.63                                               & 53.15                                              & 61.26                                             &   0.38  &   0.37  \\ \hline
+			%			\multirow{2}{*}{3}                                                                               & VSM & 20.78 & 40.96 & 51.20 & 0.30 & 0.29 \\  \cline{2-7}   &VSM + Association                                                                      & 23.12                                            & 46.85                                            & 59.76                                             &   0.34  &  0.32   \\ \hline
+			%			\multirow{2}{*}{4}                                                                               & VSM & 22.52 & 42.94 & 53.75 & 0.32 & 0.31 \\   \cline{2-7} &VSM + Association                                                                    & 23.42                       & 49.25                       & 61.56                                                &  0.35   &  0.33  \\  \hline
+			%			\multirow{2}{*}{5}                                                                               & VSM & 27.33 & 52.25 & 63.36 & 0.38 & 0.35 \\   \cline{2-7} &VSM + Association                                                                   & 29.73                                                 & 53.15                                                 & 62.16                                                  &  0.39   & 0.36     \\  \hline
+			%			\multirow{2}{*}{6}                                                                               & VSM & 25.00 & 50.60 & 60.84 & 0.36 & 0.34 \\  \cline{2-7}  &VSM + Association
+			%			&26.13 &
+			%			51.65 &
+			%			62.76 & 0.37 &
+			%			0.35     \\  \hline 
+			%			\multirow{2}{*}{7}                                                                               & VSM & 29.82 & 54.52 & 66.27 & 0.40 & 0.38 \\  \cline{2-7}  &VSM + Association
+			%			
+			%			&35.43 &
+			%			60.96 &
+			%			72.07 & 0.46 &
+			%			0.44     \\  \hline
+			%			\multirow{2}{*}{8}                                                                               & VSM & 27.79 & 51.36 & 60.73 & 0.38 & 0.36 \\  \cline{2-7}  &VSM + Association
+			%			&36.64 &
+			%			58.86 &
+			%			67.87 & 0.46 &
+			%			0.43    \\  \hline
+			%			\multirow{2}{*}{9}                                                                               & VSM & 29.13 & 52.55 & 64.86 & 0.39 & 0.36 \\  \cline{2-7}   &VSM + Association
+			%			&29.13 &
+			%			61.86 &
+			%			69.97 & 0.42 &
+			%			0.40    \\  \hline
+			%			\multirow{2}{*}{10}                                                                               & VSM & 19.03 & 39.58 & 51.34 & 0.28 & 0.26 \\  \cline{2-7}  &VSM + Association
+			%			&24.62 &
+			%			51.05 &
+			%			63.06 & 0.36 &
+			%			0.34    \\ \hline \hline
+			\multirow{2}{*}{3855}                                                                               & VSM & 24.98\% & 47.94\% & 58.73\% & 0.35 & 0.33 \\  \cline{2-7}   &VSM + Association     & 28.43\%                                                 & 53.86\%                                                 & 64.05\%                                                  &   0.39  &  0.37    \\ 
 			\hline
 	\end{tabular}}
 	\centering
 \end{table}
-\textbf{VSM vs Our proposed Tool}
-We combine VSM score and association scores in order to produce ranked result. We also compare the performance of baseline VSM technique and our proposed combined approach. The comparison is presented in table \ref{tab:Performance2}. We compute Top-1, Top-5, Top-10 performance and MRR and MAP for both approaches. In all cases our proposed approach outperforms VSM-based bug localization approach. The Top-10 performance of our tool is 64.05\% whereas it is 58.73\% for VSM.
-So. to answer our \textit{RQ1}, we can go to Table \ref{tab:Performance2}, 64.05\% bugs are successfully located in Top-10 for Eclipse dataset for Approach I of BLuAMIR. 
 
 We also compute Wilcoxon signed-rank test both for MRR and MAP. For MRR the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 8. Therefore, the result is significant at p<=0.05.
 For MAP - the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 8. Therefore, the result is significant at p<=0.05.
 
+
+\textbf{Replicated BugLocator VS Our Proposed Tool:}
+We combine rVSM and simi ranks with our association rank. Here, association rank is computed based on keyword-source code mapping database. We compare the performance of our proposed approach in terms of top 1, 5, 10 rank (depicted in Fig \ref{fig:RepBL+AssoTopK}) and MRR and MAP (shown in Fig \ref{fig:RepBL+AssoTop-MRR} and Fig \ref{fig:RepBL+AssoTop-MAP} respectively). We can see that our proposed approach outperforms in all cases. For example, our Top-10 performance 52.94\% has an improvement than BugLocator (36.40\%). This also answers our RQ1.
 
 \begin{table}[htbp]
 	\caption{Performance of Bugloactor and proposed technique (rVSM+Simi+Association)}
@@ -763,7 +924,7 @@ For MAP - the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is si
 		\begin{tabular}{c|c|c|c|c|c|c}
 			\hline
 			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
-			\begin{tabular}[c]{@{}c@{}}\# \textbf{Test}  \\ \textbf{Case} \\ \end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{Methodology} \\ \end{tabular} &
+			\begin{tabular}[c]{@{}c@{}}\#\textbf{Bugs}  \\ \end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{Methodology} \\ \end{tabular} &
 			%\textbf{alpha} &
 			%\textbf{beta}&
 			%\textbf{gamma}& 
@@ -773,54 +934,57 @@ For MAP - the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is si
 			
 			\begin{tabular}[c]{@{}c@{}} \textbf{MRR} \end{tabular} & 
 			\begin{tabular}[c]{@{}c@{}} \textbf{MAP} \end{tabular} \\ \hline \hline
-			\multirow{2}{*}{1}  &Replicated BugLocator     &  8.88& 24.56&34.32& 0.16 & 0.15 \\  \cline{2-7}
-			& rVSM+Simi+ Association                                                                                                                                           & 16.27                                               & 39.35                                            & 49.41                                                &   0.26  & 0.25    \\ \hline
-			\multirow{2}{*}{2}  &Replicated BugLocator     &  9.9& 24.62&34.53& 0.17 & 0.16 \\ \cline{2-7}
-			& rVSM+Simi+ Association                                                                 & 18.32                                               & 41.44                                              & 53.45                                             &   0.28  &   0.27  \\ \hline
-			\multirow{2}{*}{3}  &Replicated BugLocator     &  7.50& 21.32&30.63& 0.14 & 0.13 \\ \cline{2-7}
-			& rVSM+Simi+ Association                                                                   & 18.62                                            & 42.34                                            & 52.25                                             &   0.28  &  0.27   \\  \hline
-			\multirow{2}{*}{4}  &Replicated BugLocator     &  8.1& 21.02&29.13& 0.14 & 0.13 \\  \cline{2-7}
-			& rVSM+Simi+ Association                                                                   & 14.71                       & 42.04                       & 54.35                                               &  0.26   &  0.25  \\  \hline
-			\multirow{2}{*}{5}  &Replicated BugLocator     &  9.6& 30.63&42.94& 0.18 & 0.18 \\  \cline{2-7}
-			& rVSM+Simi+ Association                                                                 & 22.22                                                 & 42.34                                                & 57.66                                                  &  0.31   & 0.30     \\ \hline
-			\multirow{2}{*}{6}  &Replicated BugLocator     &  10.21& 31.53&43.54& 0.19 & 0.19 \\  \cline{2-7}
-			& rVSM+Simi+ Association
-			&25.53 &
-			52.25 &
-			60.66 & 0.36 &
-			0.34     \\  \hline
-			\multirow{2}{*}{7}  &Replicated BugLocator     &  9.61& 30.33&40.84& 0.18 & 0.17 \\ \cline{2-7}
-			& rVSM+Simi+ Association
-			&25.22 &
-			52.25 &
-			64.56 & 0.36 &
-			0.34     \\  \hline
-			\multirow{2}{*}{8}  &Replicated BugLocator     &  8.4& 26.13&39.94& 0.19 & 0.16 \\ \cline{2-7}
-			& rVSM+Simi+ Association
-			&24.92 &
-			51.95 &
-			62.46 & 0.36 &
-			0.34    \\  \hline
-			\multirow{2}{*}{9}  &Replicated BugLocator     &  11.11& 28.83&40.24& 0.19 & 0.18 \\  \cline{2-7}
-			& rVSM+Simi+ Association
-			&21.92 &
-			48.65 &
-			62.46 & 0.33 &
-			0.32    \\  \hline
-			\multirow{2}{*}{10}  &Replicated BugLocator     &  6.6& 20.72&27.93& 0.12 & 0.12 \\  \cline{2-7}
-			& rVSM+Simi+ Association
-			&16.21 &
-			40.54 &
-			55.55 & 0.27 &
-			0.26    \\  \hline \hline
-			\multirow{2}{*}{Average}       &Replicated BugLocator     &  8.99\%& 25.87\%&36.40\%& 0.16 & 0.16  \\ \cline{2-7}
+			%\multirow{2}{*}{1}  &Replicated BugLocator     &  8.88& 24.56&34.32& 0.16 & 0.15 \\  \cline{2-7}
+			%& rVSM+Simi+ Association                                                                                                                                           & 16.27                                               & 39.35                                            & 49.41                                                &   0.26  & 0.25    \\ \hline
+			%\multirow{2}{*}{2}  &Replicated BugLocator     &  9.9& 24.62&34.53& 0.17 & 0.16 \\ \cline{2-7}
+			%& rVSM+Simi+ Association                                                                 & 18.32                                               & 41.44                                              & 53.45                                             &   0.28  &   0.27  \\ \hline
+			%\multirow{2}{*}{3}  &Replicated BugLocator     &  7.50& 21.32&30.63& 0.14 & 0.13 \\ \cline{2-7}
+			%& rVSM+Simi+ Association                                                                   & 18.62                                            & 42.34                                            & 52.25                                             &   0.28  &  0.27   \\  \hline
+			%\multirow{2}{*}{4}  &Replicated BugLocator     &  8.1& 21.02&29.13& 0.14 & 0.13 \\  \cline{2-7}
+			%& rVSM+Simi+ Association                                                                   & 14.71                       & 42.04                       & 54.35                                               &  0.26   &  0.25  \\  \hline
+			%\multirow{2}{*}{5}  &Replicated BugLocator     &  9.6& 30.63&42.94& 0.18 & 0.18 \\  \cline{2-7}
+			%& rVSM+Simi+ Association                                                                 & 22.22                                                 & 42.34                                                & 57.66                                                  &  0.31   & 0.30     \\ \hline
+			%\multirow{2}{*}{6}  &Replicated BugLocator     &  10.21& 31.53&43.54& 0.19 & 0.19 \\  \cline{2-7}
+			%& rVSM+Simi+ Association
+			%&25.53 &
+			%52.25 &
+			%60.66 & 0.36 &
+			%0.34     \\  \hline
+			%\multirow{2}{*}{7}  &Replicated BugLocator     &  9.61& 30.33&40.84& 0.18 & 0.17 \\ \cline{2-7}
+			%& rVSM+Simi+ Association
+			%&25.22 &
+			%52.25 &
+			%64.56 & 0.36 &
+			%0.34     \\  \hline
+			%\multirow{2}{*}{8}  &Replicated BugLocator     &  8.4& 26.13&39.94& 0.19 & 0.16 \\ \cline{2-7}
+			%& rVSM+Simi+ Association
+			%&24.92 &
+			%51.95 &
+			%62.46 & 0.36 &
+			%0.34    \\  \hline
+			%\multirow{2}{*}{9}  &Replicated BugLocator     &  11.11& 28.83&40.24& 0.19 & 0.18 \\  \cline{2-7}
+			%& rVSM+Simi+ Association
+			%&21.92 &
+			%48.65 &
+			%62.46 & 0.33 &
+			%0.32    \\  \hline
+			%\multirow{2}{*}{10}  &Replicated BugLocator     &  6.6& 20.72&27.93& 0.12 & 0.12 \\  \cline{2-7}
+			%& rVSM+Simi+ Association
+			%&16.21 &
+			%40.54 &
+			%55.55 & 0.27 &
+			%0.26    \\  \hline \hline
+			\multirow{2}{*}{3855}       &Replicated BugLocator     &  8.99\%& 25.87\%&36.40\%& 0.16 & 0.16  \\ \cline{2-7}
 			& rVSM+Simi+ Association                                                                                                                       & 20.39\%                                                 & 45.32\%                                                 & 57.28\%                                                  &   0.31  &  0.29    \\ 
 			\hline
 	\end{tabular}}
 	\centering
 \end{table}
-\textbf{Replicated BugLocator VS Our Proposed Tool:}
-We combine rVSM and simi ranks with our association rank. Here, association rank is computed based on keyword-source code mapping database.In table~\ref{tab:Performance1} we, compare the performance of our proposed approach in terms of top 1, 5, 10 rank, MRR and MAP. We can see that our proposed approach outperforms in all cases. For example, our Top-10 performance 52.94\% has an improvement than BugLocator (36.40\%). This also answers our RQ1.
+
+
+
+
+
 
 We also compute Wilcoxon signed-rank test both for MRR and MAP. For MRR the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 8. Therefore, the result is significant at p<=0.05.
 For MAP - the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 8. Therefore, the result is significant at p<=0.05.
@@ -842,12 +1006,18 @@ To answer RQ4, we compare the performance of BLuAMIR with BugLocator for the the
 			\textbf{MRR@10} 
 			& \textbf{MAP@10} \\ \hline \hline
 			
-			\multirow{2}{*}{SWT}                                                                               & BugLocator & 39.80 & 67.35 & 81.63 & 0.53 & 0.45 \\  \cline{2-7}  &BLuAMIR                                                                     & 44.90                                               & 73.45                                              & 80.61                                             &   0.57  &   0.54  \\ \hline
-			\multirow{2}{*}{Zxing}                                                                               & BugLocator & 40.00 & 60.00 & 70.00 & 0.50 & 0.44 \\  \cline{2-7}   &BLuAMIR                                                                  & 30.00                                            & 70.00                                           & 75.00                                             &   0.48  &  0.46   \\ \hline
+			\multirow{3}{*}{SWT}                                       
+			 & LSI & 13.26 & 30.61 & 53.06 & 0.15 & 0.14 \\  \cline{2-7} 
+			                                 
+			       & BugLocator & 39.80 & 67.35 & 81.63 & 0.53 & 0.45 \\  \cline{2-7}  &BLuAMIR                                                                     & 44.90                                               & 73.45                                              & 80.61                                             &   0.57  &   0.54  \\ \hline
+			\multirow{3}{*}{Zxing}                  
+			
+			
+			 & LSI & 15.00 & 35.00 & 45.00 & 0.23 & 0.23 \\  \cline{2-7}                                               & BugLocator & 40.00 & 60.00 & 70.00 & 0.50 & 0.44 \\  \cline{2-7}   &BLuAMIR                                                                  & 30.00                                            & 70.00                                           & 75.00                                             &   0.48  &  0.46   \\ \hline
 			
 			
 			
-			\hline
+			
 	\end{tabular}}
 	\centering
 \end{table}

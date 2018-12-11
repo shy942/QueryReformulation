@@ -539,7 +539,8 @@ public class BugLocalizationUsingNumbers {
 			
 			//For SWT/Zxing/AspectJ/Eclipse
 			int test=i;
-			String base="E:\\PhD\\Repo\\Eclipse\\";
+			//String base="E:\\PhD\\Repo\\Eclipse\\"; 
+			String base="E:\\PhD\\LSI\\Repo\\Zxing\\";
 			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers(base+"\\data\\FinalMap\\TokenSourceMapTrainset"+test+".txt",base+"\\data\\testset\\test"+test+".txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\data\\changeset-pointer\\ID-SourceFile.txt",base+"\\data\\ID-Keyword.txt");
 			String bugReportFolder = base+"\\data\\testsetForBL\\test"+test;
 			//For Mac
