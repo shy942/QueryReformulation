@@ -12,11 +12,13 @@ import utility.MiscUtility;
 public class SourceFilePointerMaker {
 
 	String changeDir;
+	String corpus;
 	HashMap<String, Integer> fileIDMap;
 	HashMap<Integer, String> bugIDFileMap;
 
-	public SourceFilePointerMaker(String changeDir) {
+	public SourceFilePointerMaker(String changeDir, String corpus) {
 		this.changeDir = changeDir;
+		this.corpus=corpus;
 		this.fileIDMap = new HashMap<>();
 		this.bugIDFileMap = new HashMap<>();
 	}
@@ -60,13 +62,13 @@ public class SourceFilePointerMaker {
 		for (int key = 1; key <= size; key++) {
 			tempList.add(key + ": " + tempFileIDMap.get(key));
 		}
-		String outputFile = "E:\\PhD\\Repo\\Eclipse\\data\\changeset-pointer\\ID-SourceFile.txt";
+		String outputFile = "E:\\PhD\\Repo\\"+this.corpus+"\\data\\changeset-pointer\\ID-SourceFile.txt";
 		//String outputFile = "./data/changeset-pointer/ID-SourceFile.txt";
 		ContentWriter.writeContent(outputFile, tempList);
 		System.out.println("Done!");
 	}
 
-	protected void developBugSrcFilePointer() {
+	protected void developBugSrcFilePointer(String corpus) {
 		HashMap<String, Integer> fileIDMap = developSourceFilePointer();
 		File[] files = new File(this.changeDir).listFiles();
 		ArrayList<String> bugSrcList = new ArrayList<>();
@@ -82,7 +84,7 @@ public class SourceFilePointerMaker {
 			}
 			bugSrcList.add(bugID + ":" + MiscUtility.listInt2Str(tempIDs));
 		}
-		String outputFile = "E:/PhD/Repo/Eclipse/data/changeset-pointer/Bug-ID-SrcFile-ID-Mapping.txt";
+		String outputFile = "E:/PhD/Repo/"+corpus+"/data/changeset-pointer/Bug-ID-SrcFile-ID-Mapping.txt";
 		ContentWriter.writeContent(outputFile, bugSrcList);
 		System.out.println("Done!");
 	}
@@ -90,7 +92,8 @@ public class SourceFilePointerMaker {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//String changeDir="/Users/user/Documents/Ph.D/2018/Data/changeset/";
-		String changeDir="E:\\PhD\\Repo\\Eclipse\\data\\changeset\\";
-		new SourceFilePointerMaker(changeDir).developBugSrcFilePointer();
+	    String corpus="SWT";
+		String changeDir="E:\\PhD\\Repo\\"+corpus+"\\data\\changeset\\";
+		new SourceFilePointerMaker(changeDir,corpus).developBugSrcFilePointer(corpus);
 	}
 }

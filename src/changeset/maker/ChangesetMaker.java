@@ -13,8 +13,8 @@ public class ChangesetMaker {
 		this.gitInfoFile = gitInfoFile;
 	}
 
-	protected void makeChangeset() {
-		ArrayList<String> fileList=ContentLoader.readContent("E:\\PhD\\Repo\\Eclipse\\data\\SourceFileNames.txt");
+	protected void makeChangeset(String corpus) {
+		//ArrayList<String> fileList=ContentLoader.readContent("E:\\PhD\\Repo\\Eclipse\\data\\SourceFileNames.txt");
 		ArrayList<String> lines = ContentLoader
 				.getAllLinesOptList(this.gitInfoFile);
 		
@@ -31,15 +31,16 @@ public class ChangesetMaker {
 					for (int j = i + 1; j <= i + cfCount; j++) {
 						String fileURL = lines.get(j);
 						cfiles.add(fileURL);
-						if(IsFileExist(fileURL, fileList)){
-							tempList.add(fileURL);
-						}
+						//if(IsFileExist(fileURL, fileList)){
+							//tempList.add(fileURL);
+						//}
 					}
-					if(tempList.size()==cfiles.size())
+					//if(tempList.size()==cfiles.size())
 					{
 					// now save the files
 					//String outputFile = "/Users/user/Documents/Ph.D/2018/Data/changeset/" + bugID + ".txt";
-					String outputFile = "E:\\PhD\\Repo\\Eclipse\\data\\changeset\\" + bugID + ".txt";
+					    System.out.println(cfiles);
+					String outputFile = "E:\\PhD\\Repo\\"+corpus+"\\data\\changeset\\" + bugID + ".txt";
 					ContentWriter.writeContent(outputFile, cfiles);
 					}
 
@@ -65,7 +66,8 @@ public class ChangesetMaker {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String gitInfoFile = "E:\\PhD\\Repo\\Eclipse\\data\\gitInfoEclipse.txt";
-		new ChangesetMaker(gitInfoFile).makeChangeset();
+	    String corpus="SWT";
+		String gitInfoFile = "E:\\PhD\\Repo\\"+corpus+"\\data\\gitInfo"+corpus+"All.txt";
+		new ChangesetMaker(gitInfoFile).makeChangeset(corpus);
 	}
 }

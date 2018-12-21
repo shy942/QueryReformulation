@@ -510,7 +510,7 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		int total_test=10;
+		int total_test=88;
 		double alpha=0.4;
 		for(int i=1;i<=total_test;i++)
 		{
@@ -539,40 +539,43 @@ public class BugLocalizationUsingNumbers {
 			
 			//For SWT/Zxing/AspectJ/Eclipse
 			int test=i;
-			//String base="E:\\PhD\\Repo\\Eclipse\\"; 
-			String base="E:\\PhD\\LSI\\Repo\\Zxing\\";
+			String corpus="SWT";
+			String base="E:\\PhD\\Repo\\"+corpus+"\\"; 
+			//String base="E:\\PhD\\LSI\\Repo\\Zxing\\";
 			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers(base+"\\data\\FinalMap\\TokenSourceMapTrainset"+test+".txt",base+"\\data\\testset\\test"+test+".txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\data\\changeset-pointer\\ID-SourceFile.txt",base+"\\data\\ID-Keyword.txt");
 			String bugReportFolder = base+"\\data\\testsetForBL\\test"+test;
 			//For Mac
 			//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
 			//ForWindows
-			String sourceFolder = base+"\\ProcessedSourceCorpusOct31\\";
+			String sourceFolder = base+"\\methodDec21\\";
 				
-			String goldsetFile = base+"\\data\\gitInfoEclipse.txt";
+			//String goldsetFile = base+"\\data\\"+corpus+"All.txt";
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			=base+"\\data\\Results\\Oct31VSMandMe"+alpha+"-"+test+".txt";
+			=base+"\\data\\Results\\Dec21VSMandMe"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
-	
-			obj.bugLocator(obj, outputFilePath, sourceFolder, bugReportFolder, goldsetFile);
-			//obj.bugLocatorLuceneAndMe(obj, outputFilePath, bugReportFolder);
+			System.out.println(bugReportFolder);
+			//obj.bugLocator(obj, outputFilePath, sourceFolder, bugReportFolder, goldsetFile);
+			obj.bugLocatorLuceneAndMe(corpus,obj, outputFilePath, bugReportFolder);
 			//call the bug localizer
 		
 		}
 	}
 
-	 public void bugLocatorLuceneAndMe(BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
+	 public void bugLocatorLuceneAndMe(String corpus,BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
 	    {
 		 	double ALPHA=0.4;
 		 	double BETA=1-ALPHA;
+		 	
 		 	//For Eclipse
 		 	//String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
 		 	//ForSWT
-		 	String indexDir="E:\\PhD\\Repo\\Eclipse\\data\\IndexEclipse";
+		 	String indexDir="E:\\PhD\\Repo\\"+corpus+"\\data\\Index"+corpus;
 			obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
 					.getLuceneBasedScore(BETA);
+			//System.out.println(obj.buglocatorRESULT+"                99999999999999999999999999999999999999999999999999999999999");
 	    	obj.trainMapTokenSource=obj.loadTrainMap(obj.trainMapTokenSourceAddress);
 	    	//MiscUtility.showResult(10, obj.trainMapTokenSource);
 			obj.testSet=obj.loadHashMap(obj.testSetAddress);
@@ -595,8 +598,8 @@ public class BugLocalizationUsingNumbers {
 				
 					HashMap<Integer, Double> SortedBLresult=MiscUtility.sortByValues(resultBugLocator);
 					
-					System.out.println();
-					MiscUtility.showResult(10,SortedBLresult );
+					//System.out.println();
+					//MiscUtility.showResult(10,SortedBLresult );
 					
 					HashMap<Integer,Double> sortedResultMyTool
 					//=obj.findBugForEachQueryCosineSimBased(queryID);
@@ -611,18 +614,63 @@ public class BugLocalizationUsingNumbers {
 					int count=0;
 					for(int key:resultMap.keySet())
 					{
-						count++;
-						if(count>10)break; 
-						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key));
-						
+					    {
+					    count++;
+						if(count>500)break; 
+						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+SortedBLresult.get(key));
+					    }
 						
 					}
 					
 				}	
 				
 			}
-			ContentWriter.writeContent(outputFilePath, finalResult);
+			ArrayList<String> processedResult=ProcessFinalResult(finalResult);
+			ContentWriter.writeContent(outputFilePath, processedResult);
 			//ContentWriter.appendContent("E:\\PhD\\Repo\\SWT\\data\\Results\\swtSep24ALLVSMandMe.txt", finalResult);
 	    }
+	 
+	     public ArrayList<String> ProcessFinalResult(ArrayList<String> finalResult)
+	     {
+	         ArrayList<String> processedResult=new ArrayList<>();
+	         int count=0;
+	         ArrayList<String> tempResult=new ArrayList<>();
+	         for(String line:finalResult)
+	         {
+	             if(count>10) break;
+	             System.out.println(line);
+	             String[] spilter=line.split(",");
+	             String bugID=spilter[0];
+	             String sourceID=spilter[1];
+	             String processedSid=ProcessSourceID(sourceID);
+	             String score=spilter[2];
+	             if(tempResult.contains(processedSid)){
+	                 //Do nothing
+	             }else{
+	                 count++;
+	                 tempResult.add(processedSid);
+	                 processedResult.add(bugID+","+processedSid+","+score);
+	             }
+	         }
+	         
+	         return processedResult;
+	     }
 	
+	     public String ProcessSourceID(String Sid)
+	     {
+	         System.out.println("Sid               "+Sid);
+	         String processedSid="";
+	         String[] spilter2=Sid.split("\\.");
+	         int len=spilter2.length;
+	         System.out.println("Sid               "+Sid+"         "+len);
+	         String lastPart=spilter2[len-2]+"."+spilter2[len-1];
+	         String firstPart="";
+	         for(int i=0;i<len-3;i++)
+	         {
+	             firstPart=firstPart+"."+spilter2[i];
+	         }
+	         processedSid=lastPart;
+	         System.out.println(processedSid);
+	         return processedSid;
+	     }
 }

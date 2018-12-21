@@ -12,6 +12,7 @@ import config.StaticData;
 public class BugReportCorpusBuilderTitleAndDescription {
 
 	int year;
+	String corpus;
 	String bugFolder;
 	String bugPPFolder;
 	int noOfBugReports;
@@ -24,14 +25,17 @@ public class BugReportCorpusBuilderTitleAndDescription {
 		this.noOfBugReports=noOfBugReports;
 	}
 	
-	public BugReportCorpusBuilderTitleAndDescription()
+	public BugReportCorpusBuilderTitleAndDescription(String corpus)
 	{
-		this.bugFolder="E:\\PhD\\Repo\\Eclipse\\BugDataExtracted\\";
-		this.bugPPFolder="E:\\PhD\\Repo\\Eclipse\\BugData1KB\\";
+	    this.corpus=corpus;
+		this.bugFolder="E:\\PhD\\Repo\\"+this.corpus+"\\BugDataExtracted\\";
+		this.bugPPFolder="E:\\PhD\\Repo\\"+this.corpus+"\\BugData3071\\";
 		this.noOfBugReports=noOfBugReports;
 	}
 	protected void createPreprocessedRepo()
 	{
+	    ArrayList<String> bugIDs=ContentLoader.getAllLinesList("E:\\PhD\\Repo\\"+this.corpus+"\\data\\bugIDs.txt");
+	    System.out.println(bugIDs);
 		File[] files=new File(bugFolder).listFiles();
 		//String allInOne="";
 		ArrayList <String> list=new ArrayList<String>();
@@ -40,7 +44,11 @@ public class BugReportCorpusBuilderTitleAndDescription {
 		for(File f:files){
 			if(!f.getName().equalsIgnoreCase(".DS_Store"))
 			{
-				if(f.length()<2024){
+			    //System.out.println(f.getName());
+			    String f_id=f.getName().substring(0,f.getName().length()-4);
+			    //System.out.println(f_id);
+				if(bugIDs.contains(f_id))
+			    {
 					System.out.println(f.getName()+" "+f.length());
 					String fileName=f.getName();
 					String content=ContentLoader.readContentSimple(f.getAbsolutePath());
@@ -48,14 +56,14 @@ public class BugReportCorpusBuilderTitleAndDescription {
 					String preprocessed=bpp.performNLPforAllContent();
 					
 					preprocessed=preprocessed.trim()+"\n";
-					String outFile=this.bugPPFolder+"/"+fileName;
+					String outFile=this.bugPPFolder+fileName;
 					ContentWriter.writeContent(outFile, preprocessed);
 					if(!listofFiles.contains(outFile))listofFiles.add(outFile);
 					list.add(preprocessed);
 					}
 			}
 		}
-		ContentWriter.writeContent("E:\\PhD\\Repo\\Eclipse\\data\\SourceFileNames.txt", listofFiles);
+		//ContentWriter.writeContent("E:\\PhD\\Repo\\Eclipse\\data\\SourceFileNames.txt", listofFiles);
 	}
 	
 
@@ -92,7 +100,8 @@ public class BugReportCorpusBuilderTitleAndDescription {
 		// TODO Auto-generated method stub
 		//IndividualYearProcessing();
 		//PutAll2gether();
-		new BugReportCorpusBuilderTitleAndDescription().createPreprocessedRepo();
+	    String corpus="Eclipse";
+		new BugReportCorpusBuilderTitleAndDescription(corpus).createPreprocessedRepo();
 	}
 
 }

@@ -662,7 +662,11 @@ to evaluate BugLocator. This dataset contains 118 bug reports in total from two 
 			\textbf{Project Name}  & \textbf{Description} & \textbf{Study Period}& \textbf{\#Fixed Bugs} & \textbf{\#Source Files}\\
 			\hline
 			{Eclipse Platform Ant} & Popular IDE for Java & Nov 2001 - April 2010 & {3855} & 11732\\ \hline
-			SWT (V 3.1)& An open source widget toolkit for Java & Oct 2004 - Apr 2010 & 98 & 484 \\ \hline
+		 \hline
+				
+			{Eclipse (v3.1)} & An open development platform for Java & Oct 2004 - Mar 2011 & {3071} & 11831\\ \hline
+			SWT (V 3.1)& An open source widget toolkit for Java & Oct 2004 - Apr 2010 & 98 &  484\\ \hline
+			AspectJ& Aspect-oriented extension to Java & July 2002 - Oct 2006 & 244 & 3519 \\ \hline
 			Zxing & A barcode image processing library for Android Application & Mar 2010 - Sep 2010 & 20 & 391 \\
 			\hline
 			
@@ -732,7 +736,7 @@ Second, we combine our proposed association score with these two scores ranks (i
 %If a new bug is similar to a given previously located bug, then there is a possibility that the source code files located for the past bug can provide useful information in finding buggy files for that new bug.
 %On the other hand, Simi score refers to that fact that if a bug is similar to another bug, then they both tend to relate to same sources. However, we describe both scores in Section \ref{Sec:Localize}
 
-\textbf{Ranking based on Revised Vector Space Mode:}
+\textbf{Ranking based on Revised Vector Space Model:}
 The main difference between classic VSM and revised VSM is that in case of revised version logarithm variant is used in computing term frequency. The equation \cite{Jian} for calculating term frequency is:
 \begin{equation}
 tf(t,d)=log(f_{td})+1
@@ -903,7 +907,7 @@ So. to answer our \textit{RQ1}, we can go to Table \ref{tab:Performance2}, 64.05
 			%			51.05 &
 			%			63.06 & 0.36 &
 			%			0.34    \\ \hline \hline
-			\multirow{2}{*}{3855}                                                                               & VSM & 24.98\% & 47.94\% & 58.73\% & 0.35 & 0.33 \\  \cline{2-7}   &VSM + Association     & 28.43\%                                                 & 53.86\%                                                 & 64.05\%                                                  &   0.39  &  0.37    \\ 
+			\multirow{2}{*}{3855}                                                                               & Basic VSM & 24.98\% & 47.94\% & 58.73\% & 0.35 & 0.33 \\  \cline{2-7}   &VSM + Association     & 28.43\%                                                 & 53.86\%                                                 & 64.05\%                                                  &   0.39  &  0.37    \\ 
 			\hline
 	\end{tabular}}
 	\centering
@@ -989,12 +993,14 @@ We combine rVSM and simi ranks with our association rank. Here, association rank
 We also compute Wilcoxon signed-rank test both for MRR and MAP. For MRR the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 8. Therefore, the result is significant at p<=0.05.
 For MAP - the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 8. Therefore, the result is significant at p<=0.05.
 \subsection{Answering RQ4}\label{RQ4answer}
-To answer RQ4, we compare the performance of BLuAMIR with BugLocator for the the same dataset for SWT and Zxing presented in Table \ref{tab:performance3}. Here, the results from buglocator is directly copied from their paper \cite{Jian}. We also collect the same bug reports and the same source code repository for both of them. So the results can be compared. For SWT, we can see our tool BLuAMIR performs better for Top-1, Top-5, MRR and MAP. However, for Top-10 BLuAmir is comparable with Buglocator. On the other hand, for Zxing our tool BLuAMIR outperforms for top-5, top-10 and MAP. So we can say that our proposed tool BLuAMIR outperforms most cases and comparable for a few cases with state-of-the-art bug localization technique.
+To answer RQ4, we compare the performance of BLuAMIR with two state-of-the-art techniques - LSI \cite{MarcusLSI} and BugLocator \cite{Jian} for the the same dataset (i.e., SWT and Zxing depicted in Table \ref{tab:performance3}). We replicated the LSI technique for bug localization, which is proposed by \citet{MarcusLSI} for traceability links. For Buglocator \cite{Jian}, we copied the results directly from their paper. We also collect the same bug reports and the same source code repository for both of them. So the results can be compared. 
+Our tool BLuAMIR outperforms LSI \cite{MarcusLSI} for both SWT and Zxing dataset in all five performance metrics.
+For SWT, we can see our tool BLuAMIR performs better for Top-1, Top-5, MRR and MAP. However, for Top-10 BLuAmir is comparable with Buglocator. On the other hand, for Zxing our tool BLuAMIR outperforms for top-5, top-10 and MAP. So we can say that our proposed tool BLuAMIR outperforms most cases and comparable for a few cases with state-of-the-art bug localization technique.
 \begin{table}[htbp]
 	\centering
-	\caption{Performance Comparison between BugLocator and BLuAMIR}
+	\caption{Performance Comparison between LSI, BugLocator and BLuAMIR}
 	\label{tab:performance3}
-	\resizebox{3.6in}{!}{%
+	\resizebox{3.5in}{!}{%
 		\begin{tabular}{c|c|c|c|c|c|c}
 			\hline
 			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
@@ -1005,15 +1011,29 @@ To answer RQ4, we compare the performance of BLuAMIR with BugLocator for the the
 			\begin{tabular}[c]{@{}c@{}}\textbf{Top 1}\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{Top 5}\\ \%\end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{Top 10}\\ \%\end{tabular} & 
 			\textbf{MRR@10} 
 			& \textbf{MAP@10} \\ \hline \hline
+			\multirow{4}{*}{Eclipse}                                       
+			& LSI &  &  &  &  &  \\  \cline{2-7} 
 			
-			\multirow{3}{*}{SWT}                                       
+			& BugLocator & 24.36 & 46.15 & 55.90 & 0.35 & 0.26 \\  \cline{2-7} 
+			& BLUiR & 30.96  & 53.20 & 62.86  & 0.42 & 0.32 \\  \cline{2-7}
+			 &BLuAMIR                                                                     & 22.57                                               & 51.86                                              & 61.37                                            &   0.35  &   0.34  \\ \hline \hline
+			\multirow{4}{*}{AspectJ}                                       
+			& LSI &  &  &  &  &  \\  \cline{2-7} 
+			
+			& BugLocator & 22.73 & 40.91 & 55.59 & 0.33 & 0.17 \\  \cline{2-7} 
+			& BLUiR & 32.17 & 51.05 & 60.49 & 0.43 & 0.25 \\  \cline{2-7}
+			 &BLuAMIR                                                                     & 27.87                                               & 52.46                                              & 63.52                                             &   0.38  &   0.36  \\ \hline \hline
+			\multirow{4}{*}{SWT}                                       
 			 & LSI & 13.26 & 30.61 & 53.06 & 0.15 & 0.14 \\  \cline{2-7} 
 			                                 
-			       & BugLocator & 39.80 & 67.35 & 81.63 & 0.53 & 0.45 \\  \cline{2-7}  &BLuAMIR                                                                     & 44.90                                               & 73.45                                              & 80.61                                             &   0.57  &   0.54  \\ \hline
-			\multirow{3}{*}{Zxing}                  
+			       & BugLocator & 31.63 & 65.31 & 77.55 & 0.47 & 0.40 \\  \cline{2-7} 
+			       & BLUiR & 55.10 & 76.53 & 87.76 & 0.65  & 0.56 \\  \cline{2-7} &BLuAMIR                                                                     & 44.90                                               & 73.45                                              & 80.61                                             &   0.57  &   0.54  \\ \hline \hline
+			\multirow{4}{*}{Zxing}                  
 			
 			
-			 & LSI & 15.00 & 35.00 & 45.00 & 0.23 & 0.23 \\  \cline{2-7}                                               & BugLocator & 40.00 & 60.00 & 70.00 & 0.50 & 0.44 \\  \cline{2-7}   &BLuAMIR                                                                  & 30.00                                            & 70.00                                           & 75.00                                             &   0.48  &  0.46   \\ \hline
+			 & LSI & 15.00& 35.00 & 45.00 & 0.23 & 0.23 \\  \cline{2-7}                                               & BugLocator & 40.00 & 55.00 & 70.00 & 0.48 & 0.41 \\  \cline{2-7}  
+			 & BLUiR & 40.00 & 65.00 & 70.00 & 0.49  & 0.38 \\  \cline{2-7}
+			  &BLuAMIR                                                                  & 30.00                                            & 70.00                                           & 75.00                                             &   0.48  &  0.46   \\ \hline
 			
 			
 			
@@ -1026,12 +1046,12 @@ To answer RQ4, we compare the performance of BLuAMIR with BugLocator for the the
 %We also perform a query wise comparison for SWT, which is presented in Fig (link).
 
 \subsection{Answering RQ2}\label{RQ2Answer}
-To answer RQ2, we investigate several weighting functions for both of our proposed approaches, which are described as follows:
+To answer RQ2, we investigate several weighting functions for our proposed approach, which are described as follows:
 
 \textbf{Weighting Function for VSM+Association Ranking:}
-For our Approach I, we also compute performance TopK accuracy, MRR and MAP for different weighting function such as  \textit{ALPHA} is 0.2, 0.3, 0.4. The results are presented in Table \ref{tab:alphaApproach1}. Here, it shows, more $\alpha$ produces better performance. That means if we increase the association scores with higher weighting function, the better performance is resulted in this proposed approach. 
+We compute performance TopK accuracy, MRR and MAP for different weighting function such as $\alpha$ is 0.2, 0.3, 0.4. The results are presented in Table \ref{tab:alphaApproach1}. Here, it shows, more $\alpha$ produces better performance. That means if we increase the association scores with higher weighting function, the better performance is resulted in this proposed approach. 
 Adding association score increases the performance in this case also indicate that the association mapping is helping in locating buggy files. Therefore, vocabulary miss-match problem is resolved here (i.e., answering RQ2). 
-We also illustrate the impact of $\alpha$ for Top-1, Top-5 and Top-10 retrieval on Eclipse dataset for approach I. (VSM+Co-ocuurence Ranking) in Figure \ref{fig:PerformanceTopK2}.
+We also illustrate the impact of $\alpha$ for Top-1, Top-5 and Top-10 retrieval on Eclipse dataset for approach I. (VSM+Co-ocuurence Ranking) in Figure \ref{fig:PerformanceTopK}.
 \begin{table}[htbp]
 	\centering
 	\caption{Performance of (VSM+Association) for different weighting factors}
@@ -1067,66 +1087,66 @@ We also illustrate the impact of $\alpha$ for Top-1, Top-5 and Top-10 retrieval 
 	\centering
 \end{table}
 
-\textbf{Weighting Function for rVSM+Simi+Association Ranking:}
-We compute performance TopK accuracy, MRR and MAP for different weighting function such as  $\alpha$ is 0.2, 0.3, 0.4, $\beta$ is 0.2 nad $\gamma$ is 0.6, 0.5, 0.4 respectively. The results are presented in Table \ref{tab:alphaApproach2}. 
- Here, it shows, $\alpha$ produces better performance. That means if we increase the association scores with higher weighting function, the better performance is resulted. This also prove our association rank is effective in producing better results.
- Adding association score increases the performance also indicate that the association map is helping in locating buggy files. Therefore, vocabulary miss-match problem is resolved here (i.e., answering RQ2). 
- We also represent the impact of $\alpha$ for Top-1, Top-5 and Top-10 retrieval on Eclipse dataset for approach 1 (rVSM+Simi+Association Ranking) in figure \ref{fig:PerformanceTopK}.
-\begin{table}[htbp]
-\centering
-\caption{Performance of (rVSM+Simi+Association) for different weighting factors}
-\label{tab:alphaApproach2}
-\resizebox{3.4in}{!}{%
-\begin{tabular}{c|c|c|c|c|c|c|c}
-			\hline
-			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
-%			\begin{tabular}[c]{@{}c@{}} \textit{alpha} \end{tabular} & \begin{tabular}[c]{@{}c@{}}Bug\\Localization \\ Technique\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 1\\ \%\end{tabular} & 
-%			\begin{tabular}[c]{@{}c@{}}Top 5\\ \%\end{tabular} & 
-%			\begin{tabular}[c]{@{}c@{}}Top 10\\ \%\end{tabular} &
-%			\begin{tabular}[c]{@{}c@{}} MRR \end{tabular} & 
-%			\begin{tabular}[c]{@{}c@{}} MAP \end{tabular} \\
-				{$\alpha$} 
-				 & {$\beta$}
-				 	 & $\gamma$
-				  & \textbf{Top 1} \% 
-				  & \textbf{Top 5} \% & 
-			\textbf{Top 10} \% &
-			 \textbf{MRR}  & 
-			 \textbf{MAP}  \\
-			 \hline
-			{0.2} 
-			& 0.2 &0.6                                                                                                                                               & 16.13                                               & 40.40                                            & 52.99                                                &   0.26  & 0.25    \\ \hline
-			{0.3} 
-			& 0.2  &0.5                                                                    & 18.26                                               & 42.83                                              & 55.73                                             &   0.29  &   0.27  \\ 
-			\hline
-			
-			{0.4}  & 0.2
-			& 0.4
-			&20.40 &
-			45.32 &
-			57.28 & 0.31 &
-			0.29     \\  
-			\hline
-			{Average}      
-			&                                                                              &                                           & 18.26\%                                                 & 42.85\%                                                 & 55.33\%                                                  &     0.29 &  0.27    \\ 
-			\hline
-\end{tabular}}
-\centering
-\end{table}
+%\textbf{Weighting Function for rVSM+Simi+Association Ranking:}
+%We compute performance TopK accuracy, MRR and MAP for different weighting function such as  $\alpha$ is 0.2, 0.3, 0.4, $\beta$ is 0.2 nad $\gamma$ is 0.6, 0.5, 0.4 respectively. The results are presented in Table \ref{tab:alphaApproach2}. 
+ %Here, it shows, $\alpha$ produces better performance. That means if we increase the association scores with higher weighting function, the better performance is resulted. This also prove our association rank is effective in producing better results.
+ %Adding association score increases the performance also indicate that the association map is helping in locating buggy files. Therefore, vocabulary miss-match problem is resolved here (i.e., answering RQ2). 
+ %We also represent the impact of $\alpha$ for Top-1, Top-5 and Top-10 retrieval on Eclipse dataset for approach 1 (rVSM+Simi+Association Ranking) in figure \ref{fig:PerformanceTopK}.
+%\begin{table}[htbp]
+%\centering
+%\caption{Performance of (rVSM+Simi+Association) for different weighting factors}
+%\label{tab:alphaApproach2}
+%\resizebox{3.4in}{!}{%
+%\begin{tabular}{c|c|c|c|c|c|c|c}
+%			\hline
+%			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
+%%			\begin{tabular}[c]{@{}c@{}} \textit{alpha} \end{tabular} & \begin{tabular}[c]{@{}c@{}}Bug\\Localization \\ Technique\end{tabular} & \begin{tabular}[c]{@{}c@{}}Top 1\\ \%\end{tabular} & 
+%%			\begin{tabular}[c]{@{}c@{}}Top 5\\ \%\end{tabular} & 
+%%			\begin{tabular}[c]{@{}c@{}}Top 10\\ \%\end{tabular} &
+%%			\begin{tabular}[c]{@{}c@{}} MRR \end{tabular} & 
+%%			\begin{tabular}[c]{@{}c@{}} MAP \end{tabular} \\
+%				{$\alpha$} 
+%				 & {$\beta$}
+%				 	 & $\gamma$
+%				  & \textbf{Top 1} \% 
+%				  & \textbf{Top 5} \% & 
+%			\textbf{Top 10} \% &
+%			 \textbf{MRR}  & 
+%			 \textbf{MAP}  \\
+%			 \hline
+%			{0.2} 
+%			& 0.2 &0.6                                                                                                                                               & 16.13                                               & 40.40                                            & 52.99                                                &   0.26  & 0.25    \\ \hline
+%			{0.3} 
+%			& 0.2  &0.5                                                                    & 18.26                                               & 42.83                                              & 55.73                                             &   0.29  &   0.27  \\ 
+%			\hline
+%			
+%			{0.4}  & 0.2
+%			& 0.4
+%			&20.40 &
+%			45.32 &
+%			57.28 & 0.31 &
+%			0.29     \\  
+%			\hline
+%			{Average}      
+%			&                                                                              &                                           & 18.26\%                                                 & 42.85\%                                                 & 55.33\%                                                  &     0.29 &  0.27    \\ 
+%			\hline
+%\end{tabular}}
+%\centering
+%\end{table}
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.80]{Performance-rvsm+simi+co}
-	\caption{The impact of $\alpha$ on bug localization performance (Top-1, Top-5, Top-10)} for proposed approach1.
+	\caption{The impact of $\alpha$ on bug localization performance (Top-1, Top-5, Top-10)}.
 	\label{fig:PerformanceTopK}
 \end{figure}
 
 
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.80]{Performance-vsm+co}
-	\caption{The impact of $\alpha$ on bug localization performance (Top-1, Top-5, Top-10)} for proposed approach2.
-	\label{fig:PerformanceTopK2}
-	\end{figure}
+%\begin{figure}
+%	\centering
+%	\includegraphics[scale=0.80]{Performance-vsm+co}
+%	\caption{The impact of $\alpha$ on bug localization performance (Top-1, Top-5, Top-10)} for proposed approach2.
+%	\label{fig:PerformanceTopK2}
+%	\end{figure}
 
 \begin{figure}
 	\centering

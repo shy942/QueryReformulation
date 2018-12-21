@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import utility.ContentWriter;
+import utility.MiscUtility;
+
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ParseException;
 import com.github.javaparser.ast.CompilationUnit;
@@ -21,6 +23,7 @@ public class MethodCorpusDeveloper {
 	ArrayList<String> fileList=new ArrayList<>();
 	String base;
 	String packageName;
+	ArrayList<String> listNoOfMethod;
 	public MethodCorpusDeveloper(String repoFolder, String methodFolder, String base) {
 		//this.repoName = repoName;
 		this.repoFolder = repoFolder;
@@ -29,6 +32,7 @@ public class MethodCorpusDeveloper {
 		this.methodmap = new HashMap<>();
 		this.base=base;
 		this.packageName="";
+		this.listNoOfMethod=new ArrayList<>();
 	}
 
 	//public MethodCorpusDeveloper(String methodFolder){
@@ -39,6 +43,8 @@ public class MethodCorpusDeveloper {
 		// extracting methods from the class
 		try {
 			CompilationUnit cu = JavaParser.parse(new File(javaFileURL));
+			
+			
 			if (cu != null) {
 				PackageDeclaration packageDec=cu.getPackage();
 				if(packageDec!=null){
@@ -62,7 +68,9 @@ public class MethodCorpusDeveloper {
 					//System.out.println(key);
 					this.methodmap.put(key, method);
 				}
+				
 			}
+				
 			}
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
@@ -94,25 +102,32 @@ public class MethodCorpusDeveloper {
 		saveCorpusKeys();
 		// now save the extracted methods
 		int index = 0;
+		int no_of_method=0;
+		String [] spilter=javaFileURL.split("\\\\");
+        String filePart="";
+    
+        
+        String lastPart=spilter[spilter.length-1];
 		for (String key : this.methodmap.keySet()) {
 			index++;
 			String methodContent = this.methodmap.get(key);
 			//System.out.println(javaFileURL);
 			//javaFileURL.replaceAll("\\\\", "/");
-			String [] spilter=javaFileURL.split("\\\\");
-			String filePart="";
-		
 			
-			String lastPart=spilter[spilter.length-1];
 			
 			filePart=this.packageName+"."+index+"."+lastPart;
 		
 			String outFile = this.methodFolder + "\\"+filePart;
 			System.out.println("filePart:        "+filePart);
-			
-			ContentWriter.writeContent(outFile, methodContent);
+			SourceCodePreprocessor scbpp=new SourceCodePreprocessor(methodContent);
+            
+            String preprocessed=scbpp.performNLP();
+            System.out.println(preprocessed);
+			ContentWriter.writeContent(outFile, preprocessed);
 			fileList.add(outFile);
 		}
+		no_of_method=index;
+        this.listNoOfMethod.add(this.packageName+"."+lastPart+","+no_of_method);
 		//System.out.println("Methods extracted successfully!");
 	}
 
@@ -124,6 +139,11 @@ public class MethodCorpusDeveloper {
 	public String getPackageName()
 	{
 		return this.packageName;
+	}
+	
+	public void writeContent()
+	{
+	    ContentWriter.writeContent(this.base+".\\data\\"+"listNoOfMethod.txt", this.listNoOfMethod);
 	}
 	
 	protected void createMethodCorpus(String srcDir) {
@@ -153,11 +173,12 @@ public class MethodCorpusDeveloper {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String base="E:\\PhD\\Repo\\Eclipse";
-		String repoName=base+"\\Source\\EclipseV3.1\\";
-		String methodFolder=base+"\\methodOct31\\";
+		String base="E:\\PhD\\Repo\\SWT";
+		String repoName=base+"\\Source\\swt-3.659BLA\\";
+		String methodFolder=base+"\\methodDec21\\";
 		MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoName,methodFolder,base);
 		developer.createMethodCorpus(developer.repoFolder);
 		developer.saveMethods(methodFolder);
+		developer.writeContent();
 	}
 }
