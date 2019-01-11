@@ -14,12 +14,14 @@ public class ChangesetMaker {
 	}
 
 	protected void makeChangeset(String corpus) {
-		//ArrayList<String> fileList=ContentLoader.readContent("E:\\PhD\\Repo\\Eclipse\\data\\SourceFileNames.txt");
+		ArrayList<String> BugList=ContentLoader.readContent("E:\\PhD\\Repo\\"+corpus+"\\data\\allBug.txt");
+		System.out.println(BugList);
 		ArrayList<String> lines = ContentLoader
 				.getAllLinesOptList(this.gitInfoFile);
-		
+		String newGitContent="";
+		ArrayList<String> listBugNotIncluded=new ArrayList<>();
 		for (int i = 0; i < lines.size();) {
-			System.out.println(lines.get(i));
+			//System.out.println(lines.get(i));
 			String currentLine = lines.get(i);
 			if (currentLine.matches("\\d+\\s+\\d+")) {
 				String[] parts = currentLine.split("\\s+");
@@ -31,21 +33,34 @@ public class ChangesetMaker {
 					for (int j = i + 1; j <= i + cfCount; j++) {
 						String fileURL = lines.get(j);
 						cfiles.add(fileURL);
-						//if(IsFileExist(fileURL, fileList)){
-							//tempList.add(fileURL);
-						//}
+						
 					}
-					//if(tempList.size()==cfiles.size())
+					
 					{
-					// now save the files
-					//String outputFile = "/Users/user/Documents/Ph.D/2018/Data/changeset/" + bugID + ".txt";
-					    System.out.println(cfiles);
-					String outputFile = "E:\\PhD\\Repo\\"+corpus+"\\data\\changeset\\" + bugID + ".txt";
-					ContentWriter.writeContent(outputFile, cfiles);
+					   if(IsBugExist(String.valueOf(bugID), BugList))
+					    //&&cfiles.size()<=5)
+					    {
+					       
+					        String outputFile = "E:\\PhD\\Repo\\"+corpus+"\\data\\changeset\\" + bugID + ".txt";
+					        ContentWriter.writeContent(outputFile, cfiles);
+					        //System.out.println(cfiles);
+					        newGitContent=newGitContent+currentLine+"\n";
+					        for(String l:cfiles)
+					        {
+					            newGitContent=newGitContent+l+"\n";
+					            System.out.println(l);
+					         
+					        }
+					        
+					    }
+					    else{
+					        listBugNotIncluded.add(String.valueOf(bugID));
+					    }
+					    //if(cfiles.size()>5)System.out.println(bugID);
 					}
 
 					i = i + cfCount + 1;
-					System.out.println("Done:" + bugID);
+					//System.out.println("Done:" + bugID);
 				} else {
 					i++;
 				}
@@ -53,12 +68,15 @@ public class ChangesetMaker {
 				break;
 			}
 		}
+		//System.out.println(newGitContent);
+		ContentWriter.writeContent("E:\\PhD\\Repo\\"+corpus+"\\data\\gitInfoAll"+corpus+".txt", newGitContent);
+		ContentWriter.writeContent("E:\\PhD\\Repo\\"+corpus+"\\data\\bugIdsNotCluded.txt", listBugNotIncluded);
 	}
 
 	
-	protected boolean IsFileExist(String file, ArrayList<String> list)
+	protected boolean IsBugExist(String bugID, ArrayList<String> list)
 	{
-		if(list.contains(file)) return true;
+		if(list.contains(bugID)) return true;
 		else return false;
 	}
 
@@ -66,8 +84,8 @@ public class ChangesetMaker {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	    String corpus="SWT";
-		String gitInfoFile = "E:\\PhD\\Repo\\"+corpus+"\\data\\gitInfo"+corpus+"All.txt";
+	    String corpus="Eclipse";
+		String gitInfoFile = "E:\\PhD\\Repo\\"+corpus+"\\data\\gitInfo"+corpus+".txt";
 		new ChangesetMaker(gitInfoFile).makeChangeset(corpus);
 	}
 }

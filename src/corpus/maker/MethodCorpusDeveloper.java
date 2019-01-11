@@ -127,7 +127,7 @@ public class MethodCorpusDeveloper {
 			fileList.add(outFile);
 		}
 		no_of_method=index;
-        this.listNoOfMethod.add(this.packageName+"."+lastPart+","+no_of_method);
+        this.listNoOfMethod.add(this.packageName+"."+lastPart+","+(no_of_method));
 		//System.out.println("Methods extracted successfully!");
 	}
 
@@ -173,9 +173,9 @@ public class MethodCorpusDeveloper {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String base="E:\\PhD\\Repo\\SWT";
-		String repoName=base+"\\Source\\swt-3.659BLA\\";
-		String methodFolder=base+"\\methodDec21\\";
+		String base="E:\\PhD\\Repo\\Eclipse";
+		String repoName=base+"\\Source\\eclipse-3.1FromBLIA\\";
+		String methodFolder=base+"\\methodDec25\\";
 		MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoName,methodFolder,base);
 		developer.createMethodCorpus(developer.repoFolder);
 		developer.saveMethods(methodFolder);

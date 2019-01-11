@@ -267,7 +267,7 @@ public class BugLocalizationUsingNumbers {
 		for(int key:resultBugLocator.keySet())
 		{
 			firstkey=key;
-			System.out.println("First result: "+firstkey+" "+resultBugLocator.get(key)/0.6);
+			//System.out.println("First result: "+firstkey+" "+resultBugLocator.get(key)/0.6);
 			break;
 		}
     	HashMap<Integer, Double> tempCombineResult=new HashMap<>();
@@ -279,10 +279,10 @@ public class BugLocalizationUsingNumbers {
     		{
     			count++;
     			double combineScore=resultMyTool.get(key)*BETA+resultBugLocator.get(key);
-    			System.out.println(key+" "+resultMyTool.get(key)*BETA+" "+resultBugLocator.get(key)+" "+combineScore);
-    			if(key==firstkey) 
-    				{tempCombineResult.put(key, resultBugLocator.get(key)/0.6);}
-    			else
+    			//System.out.println(key+" "+resultMyTool.get(key)*BETA+" "+resultBugLocator.get(key)+" "+combineScore);
+    			//if(key==firstkey) 
+    				//{tempCombineResult.put(key, resultBugLocator.get(key)/0.6);}
+    			//else
     				tempCombineResult.put(key, combineScore);
     		}
     		else
@@ -291,14 +291,15 @@ public class BugLocalizationUsingNumbers {
     			//System.out.println(key+" "+resultMyTool.get(key)*BETA);
     		}
     	}
+    	
     	for(int key:resultBugLocator.keySet())
     	{
     		count++;
-    		if(!tempCombineResult.containsKey(key))tempCombineResult.put(key, resultBugLocator.get(key));
+    		if(!tempCombineResult.containsKey(key))tempCombineResult.put(key, resultBugLocator.get(key)/0.6);
     	}
     	HashMap<Integer, Double> sortedCombineResult=MiscUtility.sortByValues(tempCombineResult);
-        System.out.println("=========================================");
-        MiscUtility.showResult(10, sortedCombineResult);
+        //System.out.println("=========================================");
+        //MiscUtility.showResult(10, sortedCombineResult);
     	return sortedCombineResult;
     }
     
@@ -440,7 +441,7 @@ public class BugLocalizationUsingNumbers {
     			if(!content.equals("")) cosineSimScore= CosineMeasure.getCosineSimilarity(keywordList, contentListInt);
     			if(cosineSimScore>maxCosineSim && cosineSimScore>0.0)
     			{
-    				System.out.println(queryList+"\n"+contentList+"\n"+cosineSimScore);
+    				//System.out.println(queryList+"\n"+contentList+"\n"+cosineSimScore);
     				maxCosineSim=cosineSimScore;
     			}
     	
@@ -510,7 +511,7 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		int total_test=88;
+		int total_test=3071;
 		double alpha=0.4;
 		for(int i=1;i<=total_test;i++)
 		{
@@ -539,7 +540,7 @@ public class BugLocalizationUsingNumbers {
 			
 			//For SWT/Zxing/AspectJ/Eclipse
 			int test=i;
-			String corpus="SWT";
+			String corpus="Eclipse";
 			String base="E:\\PhD\\Repo\\"+corpus+"\\"; 
 			//String base="E:\\PhD\\LSI\\Repo\\Zxing\\";
 			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers(base+"\\data\\FinalMap\\TokenSourceMapTrainset"+test+".txt",base+"\\data\\testset\\test"+test+".txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\data\\changeset-pointer\\ID-SourceFile.txt",base+"\\data\\ID-Keyword.txt");
@@ -547,13 +548,13 @@ public class BugLocalizationUsingNumbers {
 			//For Mac
 			//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
 			//ForWindows
-			String sourceFolder = base+"\\methodDec21\\";
+			String sourceFolder = base+"\\ProcessedSourceCorpusDec17\\";
 				
 			//String goldsetFile = base+"\\data\\"+corpus+"All.txt";
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			=base+"\\data\\Results\\Dec21VSMandMe"+alpha+"-"+test+".txt";
+			=base+"\\data\\Results\\Jan10VSMandMe"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 			System.out.println(bugReportFolder);
@@ -575,7 +576,7 @@ public class BugLocalizationUsingNumbers {
 		 	String indexDir="E:\\PhD\\Repo\\"+corpus+"\\data\\Index"+corpus;
 			obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
 					.getLuceneBasedScore(BETA);
-			//System.out.println(obj.buglocatorRESULT+"                99999999999999999999999999999999999999999999999999999999999");
+			System.out.println(obj.buglocatorRESULT+"                99999999999999999999999999999999999999999999999999999999999");
 	    	obj.trainMapTokenSource=obj.loadTrainMap(obj.trainMapTokenSourceAddress);
 	    	//MiscUtility.showResult(10, obj.trainMapTokenSource);
 			obj.testSet=obj.loadHashMap(obj.testSetAddress);
@@ -591,14 +592,13 @@ public class BugLocalizationUsingNumbers {
 				
 					HashMap<Integer,Double> resultBugLocator=new HashMap<>();
 					if(obj.buglocatorRESULT.containsKey(queryID)){
-						//System.out.println(++i);
-						//if(i>100) break;
+						System.out.println(++i);
+						//if(i>1) break;
 						resultBugLocator=obj.convertSIDtoNum(queryID,obj.buglocatorRESULT);
 					
 				
 					HashMap<Integer, Double> SortedBLresult=MiscUtility.sortByValues(resultBugLocator);
 					
-					//System.out.println();
 					//MiscUtility.showResult(10,SortedBLresult );
 					
 					HashMap<Integer,Double> sortedResultMyTool
@@ -609,15 +609,15 @@ public class BugLocalizationUsingNumbers {
 					//=sortedResultMyTool;
 					//=SortedBLresult;
 					=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
-					
+				
 					String result=queryID+",";
 					int count=0;
 					for(int key:resultMap.keySet())
 					{
 					    {
 					    count++;
-						if(count>500)break; 
-						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+SortedBLresult.get(key));
+						if(count>10)break; 
+						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+sortedResultMyTool.get(key)+","+SortedBLresult.get(key));
 					    }
 						
 					}
@@ -625,31 +625,179 @@ public class BugLocalizationUsingNumbers {
 				}	
 				
 			}
-			ArrayList<String> processedResult=ProcessFinalResult(finalResult);
-			ContentWriter.writeContent(outputFilePath, processedResult);
+			
+			ContentWriter.writeContent(outputFilePath, finalResult);
 			//ContentWriter.appendContent("E:\\PhD\\Repo\\SWT\\data\\Results\\swtSep24ALLVSMandMe.txt", finalResult);
 	    }
+	 public void bugLocatorLuceneAndMeTech2(String corpus,BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
+     {
+         double ALPHA=0.4;
+         double BETA=1-ALPHA;
+         
+         //For Eclipse
+         //String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
+         //ForSWT
+         String indexDir="E:\\PhD\\Repo\\"+corpus+"\\data\\Index"+corpus;
+         obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
+                 .getLuceneBasedScore(BETA);
+         System.out.println(obj.buglocatorRESULT+"                99999999999999999999999999999999999999999999999999999999999");
+         obj.trainMapTokenSource=obj.loadTrainMap(obj.trainMapTokenSourceAddress);
+         //MiscUtility.showResult(10, obj.trainMapTokenSource);
+         obj.testSet=obj.loadHashMap(obj.testSetAddress);
+         obj.bugIdKeywordMap=obj.loadHashMap(obj.bugIDKeywordMapAddress);
+         //MiscUtility.showResult(10, obj.bugIdKeywordMap);
+         //MiscUtility.showResult(10, obj.testSet);
+         ArrayList<String> finalResult=new ArrayList<>();
+         ArrayList<String> workingExample=new ArrayList<>();
+         int i=0;
+         for(int queryID:testSet.keySet())
+         {
+             
+             
+                 HashMap<Integer,Double> resultBugLocator=new HashMap<>();
+                 if(obj.buglocatorRESULT.containsKey(queryID))
+                 {
+                     System.out.println(++i);
+                    
+                     
+                 
+             
+                 //HashMap<Integer, Double> SortedBLresult=MiscUtility.sortByValues(obj.buglocatorRESULT);
+                 HashMap<String,Double> processedResultBL=ProcessResultBL(obj.buglocatorRESULT.get(queryID));
+                 //System.out.println(processedResultBL.size());
+                 //MiscUtility.showResult(10,SortedBLresult );
+                 
+                 HashMap<Integer,Double> sortedResultMyTool
+                 //=obj.findBugForEachQueryCosineSimBased(queryID);
+                 =obj.ResultBasedOnTF(queryID);
+                 HashMap<String,Double> processedResultMytool=ProcessResultMyTool(sortedResultMyTool);
+                 //System.out.println(processedResultMytool);
+                 //HashMap<Integer, Double> resultMap
+                 //=sortedResultMyTool;
+                 //=SortedBLresult;
+                 //=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
+                 HashMap<String, Double> combineResult=ComibineResultByMethod(processedResultBL, processedResultMytool, ALPHA);
+                 String result=queryID+",";
+                 int count=0;
+                 for(String key:combineResult.keySet())
+                 {
+                     {
+                     count++;
+                    if(count>10)break; 
+                    finalResult.add(queryID+","+key+","+combineResult.get(key));
+                     }
+                     
+                 }
+                 
+             }   
+             
+         }
+         //ArrayList<String> processedResult=ProcessFinalResult(finalResult);
+        ContentWriter.writeContent(outputFilePath, finalResult);
+         //ContentWriter.appendContent("E:\\PhD\\Repo\\SWT\\data\\Results\\swtSep24ALLVSMandMe.txt", finalResult);
+     }
 	 
-	     public ArrayList<String> ProcessFinalResult(ArrayList<String> finalResult)
+	 
+	 
+	 public HashMap<String, Double> ComibineResultByMethod(HashMap<String,Double> processedResultBL, HashMap<String,Double> processedResultMytool, double ALPHA)
+	 {
+	     
+	     //System.out.println(processedResultBL);
+	     HashMap<String, Double> tempResult=new HashMap<>();
+	     HashMap<String,Double> sortedBL=MiscUtility.sortByValues(processedResultBL);
+	     HashMap<String,Double> sortedMyTool=MiscUtility.sortByValues(processedResultMytool);
+	    
+	     System.out.println(sortedMyTool);
+	     //first key from VSM
+	     String firstkey="";
+	     for(String key:sortedBL.keySet())
 	     {
-	         ArrayList<String> processedResult=new ArrayList<>();
+	          firstkey=key;
+	          System.out.println(sortedBL);
+	          System.out.println("First result: "+firstkey+" "+sortedBL.get(key)/0.6);
+	          break;
+	      }
+	     int count=0;
+	     for(String key:sortedMyTool.keySet())
+	     {
+	         if(sortedBL.containsKey(key))
+	            {
+	                count++;
+	                double combineScore=sortedMyTool.get(key)*ALPHA+sortedBL.get(key);
+	                System.out.println(key+" "+sortedMyTool.get(key)*ALPHA+" "+sortedBL.get(key)+" "+combineScore);
+	                if(key==firstkey){
+	                    tempResult.put(key, sortedBL.get(key)/0.6);
+	                }
+	                else{
+	                tempResult.put(key, combineScore);
+	                }
+	            }
+	            else
+	            {
+	                tempResult.put(key, sortedMyTool.get(key)*ALPHA);
+	                System.out.println(key+" "+sortedMyTool.get(key)*ALPHA);
+	            }
+	     }
+	     for(String key:sortedBL.keySet())
+	     {
+	          count++;
+	          if(!tempResult.containsKey(key)){
+	              if(key==firstkey){
+                      tempResult.put(key, sortedBL.get(key)/0.6);
+                  }
+	              else{
+	                  tempResult.put(key, sortedBL.get(key));
+	              }
+	          }
+	     }
+	     
+	     HashMap<String,Double> sortedFinalResult=MiscUtility.sortByValues(tempResult);
+	     System.out.println(sortedFinalResult);
+	     return sortedFinalResult;
+	 }
+	 public HashMap<String,Double> ProcessResultBL(HashMap<String,Double> map)
+     {
+	     HashMap<String,Double> processedResulthm=new HashMap();
+         int count=0;
+         ArrayList<String> tempResult=new ArrayList<>();
+         
+         //System.out.println(this.SourceIDMap);
+         //System.out.println("=========           ===================           ===============");
+         for(String key:map.keySet())
+         {
+            
+             //System.out.println(key+",,,,,,,,,"+map.get(key));
+             //System.out.println("");
+             
+             String processedSid=ProcessSourceID(key);
+             if(tempResult.contains(processedSid)){
+                 //Do nothing
+             }else{
+                 count++;
+                 tempResult.add(processedSid);
+                 processedResulthm.put(processedSid,map.get(key));
+             }
+         }
+         
+         return  processedResulthm;
+     }
+	 
+	     public HashMap<String, Double> ProcessResultMyTool(HashMap<Integer,Double> resultMyTool)
+	     {
+	         HashMap<String, Double> processedResult=new HashMap<>();
 	         int count=0;
 	         ArrayList<String> tempResult=new ArrayList<>();
-	         for(String line:finalResult)
+	         for(int key:resultMyTool.keySet())
 	         {
-	             if(count>10) break;
-	             System.out.println(line);
-	             String[] spilter=line.split(",");
-	             String bugID=spilter[0];
-	             String sourceID=spilter[1];
-	             String processedSid=ProcessSourceID(sourceID);
-	             String score=spilter[2];
-	             if(tempResult.contains(processedSid)){
+	             String sourceID=this.SourceIDMap.get(key);
+	             //String processedSid=ProcessSourceID(sourceID);
+	             double score=resultMyTool.get(key);
+	             if(tempResult.contains(sourceID)){
 	                 //Do nothing
 	             }else{
 	                 count++;
-	                 tempResult.add(processedSid);
-	                 processedResult.add(bugID+","+processedSid+","+score);
+	                 tempResult.add(sourceID);
+	                 processedResult.put(sourceID,score);
 	             }
 	         }
 	         
@@ -658,11 +806,11 @@ public class BugLocalizationUsingNumbers {
 	
 	     public String ProcessSourceID(String Sid)
 	     {
-	         System.out.println("Sid               "+Sid);
+	        // System.out.println("Sid               "+Sid);
 	         String processedSid="";
 	         String[] spilter2=Sid.split("\\.");
 	         int len=spilter2.length;
-	         System.out.println("Sid               "+Sid+"         "+len);
+	         //System.out.println("Sid               "+Sid+"         "+len);
 	         String lastPart=spilter2[len-2]+"."+spilter2[len-1];
 	         String firstPart="";
 	         for(int i=0;i<len-3;i++)
@@ -670,7 +818,7 @@ public class BugLocalizationUsingNumbers {
 	             firstPart=firstPart+"."+spilter2[i];
 	         }
 	         processedSid=lastPart;
-	         System.out.println(processedSid);
+	        // System.out.println(processedSid);
 	         return processedSid;
 	     }
 }

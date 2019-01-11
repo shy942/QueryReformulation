@@ -92,7 +92,7 @@ public class SourceFilePointerMaker {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//String changeDir="/Users/user/Documents/Ph.D/2018/Data/changeset/";
-	    String corpus="SWT";
+	    String corpus="Eclipse";
 		String changeDir="E:\\PhD\\Repo\\"+corpus+"\\data\\changeset\\";
 		new SourceFilePointerMaker(changeDir,corpus).developBugSrcFilePointer(corpus);
 	}

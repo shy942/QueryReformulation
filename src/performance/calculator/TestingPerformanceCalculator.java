@@ -111,10 +111,10 @@ public class TestingPerformanceCalculator {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		TestingPerformanceCalculator obj= new TestingPerformanceCalculator("./data/gitInfoNew.txt", "data/Results/FinalResultSidTest1.txt");
+		TestingPerformanceCalculator obj= new TestingPerformanceCalculator("E:/PhD/Repo/SWT/data/gitInfoSWT.txt", "E:/BugLocator/output/SWT75output.txt");
 		//Read Gold set
 		obj.goldStMap=obj.LoadGoldSet();
-		//MiscUtility.showResult(10, obj.goldStMap);
+		MiscUtility.showResult(10, obj.goldStMap);
 		//Resd output file/ test result file
 		obj.finalResult=obj.LoadTestingResult();
 		//MiscUtility.showResult(20, obj.finalResult);

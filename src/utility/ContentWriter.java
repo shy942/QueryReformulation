@@ -3,6 +3,7 @@ package utility;
 import java.io.File;
 import java.io.FileWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class ContentWriter {
 	public static boolean writeContent(String outFile, ArrayList<String> items) {
@@ -111,5 +112,30 @@ public class ContentWriter {
 			exc.printStackTrace();
 		}
 	}
+
+   
+
+    public static boolean writeContent(String outFile, HashMap<String, HashMap<String, Double>> resultContainer) {
+        // TODO Auto-generated method stub
+        //System.out.println(resultContainer);
+        boolean written = false;
+        try {
+            FileWriter fwriter = new FileWriter(new File(outFile), true);
+            for (String key:resultContainer.keySet()) {
+                fwriter.write(key+ "\n");
+                HashMap<String, Double> queryContent=resultContainer.get(key);
+                for(String key2:queryContent.keySet())
+                {
+                    fwriter.write(key2+","+queryContent.get(key2)+"\n");
+                }
+            }
+            fwriter.close();
+            written = true;
+
+        } catch (Exception exc) {
+            exc.printStackTrace();
+        }
+        return written;
+    }
 
 }

@@ -313,10 +313,10 @@ public class BLPerformanceCalc {
 
 		//String resultFile = "./Data/Results/eclipseoutput.txt"; 
 		String resultFile
-		= "./data/Results/Aug24TFbasedTest6.txt";
+		= "E:/BugLocator/output/EclipseoutputJan07.txt";
 		//= "./data/Results/Aug24TFbasedTest2.txt";
 		//= "./data/Results/Aug24BLTest7.txt";
-		String goldFile = "./data/gitInfoNew.txt";
+		String goldFile = "E:/PhD/Repo/Eclipse/data/gitInfoEclipse.txt";
 		BLPerformanceCalc bcalc = new BLPerformanceCalc(resultFile, TOPK,
 				goldFile);
 

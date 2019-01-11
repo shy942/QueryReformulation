@@ -29,7 +29,7 @@ public class BugReportCorpusBuilderTitleAndDescription {
 	{
 	    this.corpus=corpus;
 		this.bugFolder="E:\\PhD\\Repo\\"+this.corpus+"\\BugDataExtracted\\";
-		this.bugPPFolder="E:\\PhD\\Repo\\"+this.corpus+"\\BugData3071\\";
+		this.bugPPFolder="E:\\PhD\\Repo\\"+this.corpus+"\\BugData1KB\\";
 		this.noOfBugReports=noOfBugReports;
 	}
 	protected void createPreprocessedRepo()
@@ -50,17 +50,23 @@ public class BugReportCorpusBuilderTitleAndDescription {
 				if(bugIDs.contains(f_id))
 			    {
 					System.out.println(f.getName()+" "+f.length());
-					String fileName=f.getName();
-					String content=ContentLoader.readContentSimple(f.getAbsolutePath());
-					BugReportPreprocessor bpp=new BugReportPreprocessor(content);
-					String preprocessed=bpp.performNLPforAllContent();
+					if(f.length()<=1024){
+					    String fileName=f.getName();
+					    String content=ContentLoader.readContentSimple(f.getAbsolutePath());
+					    BugReportPreprocessor bpp=new BugReportPreprocessor(content);
+					    String preprocessed=bpp.performNLPforAllContent();
 					
-					preprocessed=preprocessed.trim()+"\n";
-					String outFile=this.bugPPFolder+fileName;
-					ContentWriter.writeContent(outFile, preprocessed);
-					if(!listofFiles.contains(outFile))listofFiles.add(outFile);
-					list.add(preprocessed);
+					    preprocessed=preprocessed.trim()+"\n";
+					    String outFile=this.bugPPFolder+fileName;
+					    ContentWriter.writeContent(outFile, preprocessed);
+					    if(!listofFiles.contains(outFile))listofFiles.add(outFile);
+					    list.add(preprocessed);
 					}
+					else
+					{
+					    System.out.println(f.getName());
+					}
+			    }
 			}
 		}
 		//ContentWriter.writeContent("E:\\PhD\\Repo\\Eclipse\\data\\SourceFileNames.txt", listofFiles);
@@ -100,7 +106,7 @@ public class BugReportCorpusBuilderTitleAndDescription {
 		// TODO Auto-generated method stub
 		//IndividualYearProcessing();
 		//PutAll2gether();
-	    String corpus="Eclipse";
+	    String corpus="AspectJ";
 		new BugReportCorpusBuilderTitleAndDescription(corpus).createPreprocessedRepo();
 	}
 

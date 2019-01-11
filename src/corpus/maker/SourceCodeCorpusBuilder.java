@@ -38,9 +38,9 @@ public class SourceCodeCorpusBuilder {
 			CommentFilterer cf=new CommentFilterer(s,fileName);
 			cf.discardClassHeaderComment();
 			
-			String repoFolder=this.base+"\\Source\\swt-3.659BLA\\";
+			String repoFolder=this.base+"\\Source\\eclipse-3.1FromBLIA\\";
 			//String repoFolder="E:\\BugLocator\\Source\\swt-3.1\\";
-			String methodFolder=this.base+"\\methodDec18\\";
+			String methodFolder=this.base+"\\methodDec25\\";
 			MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoFolder, methodFolder,this.base);
 			//developer.createMethodCorpus(developer.repoFolder);
 			developer.extractMethods(s);
@@ -92,7 +92,7 @@ public class SourceCodeCorpusBuilder {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String base="E:\\PhD\\Repo\\SWT\\";
+		String base="E:\\PhD\\Repo\\Eclipse\\";
 		new SourceCodeCorpusBuilder( base).createPreprocessedRepo();
 		//This is a simple change.
 	}
