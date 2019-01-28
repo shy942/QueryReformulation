@@ -494,6 +494,7 @@ public class BugLocalizationUsingNumbers {
     	ArrayList<String> content=ContentLoader.getAllLinesList(inFile);
     	for(String line:content)
     	{
+    	    System.out.println(line);
     		String[] spilter=line.split(":");
     		int value=Integer.valueOf(spilter[0]);
     		String Sid=spilter[1].trim();
@@ -512,7 +513,7 @@ public class BugLocalizationUsingNumbers {
         
 		//Work on necessary inputs or maps
 		int total_test=3071;
-		double alpha=0.4;
+		double alpha=0.0;
 		for(int i=1;i<=total_test;i++)
 		{
 			/*
@@ -548,13 +549,13 @@ public class BugLocalizationUsingNumbers {
 			//For Mac
 			//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
 			//ForWindows
-			String sourceFolder = base+"\\ProcessedSourceCorpusDec17\\";
+			String sourceFolder = base+"\\ProcessedSourceCorpus\\";
 				
 			//String goldsetFile = base+"\\data\\"+corpus+"All.txt";
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			=base+"\\data\\Results\\Jan10VSMandMe"+alpha+"-"+test+".txt";
+			=base+"\\data\\Results\\Jan22"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 			System.out.println(bugReportFolder);
@@ -567,7 +568,7 @@ public class BugLocalizationUsingNumbers {
 
 	 public void bugLocatorLuceneAndMe(String corpus,BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
 	    {
-		 	double ALPHA=0.4;
+		 	double ALPHA=0.0;
 		 	double BETA=1-ALPHA;
 		 	
 		 	//For Eclipse
@@ -601,14 +602,14 @@ public class BugLocalizationUsingNumbers {
 					
 					//MiscUtility.showResult(10,SortedBLresult );
 					
-					HashMap<Integer,Double> sortedResultMyTool
+					//HashMap<Integer,Double> sortedResultMyTool
 					//=obj.findBugForEachQueryCosineSimBased(queryID);
-					=obj.ResultBasedOnTF(queryID);
+					//=obj.ResultBasedOnTF(queryID);
 					
 					HashMap<Integer, Double> resultMap
 					//=sortedResultMyTool;
-					//=SortedBLresult;
-					=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
+					=SortedBLresult;
+					//=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
 				
 					String result=queryID+",";
 					int count=0;
@@ -617,13 +618,14 @@ public class BugLocalizationUsingNumbers {
 					    {
 					    count++;
 						if(count>10)break; 
-						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+sortedResultMyTool.get(key)+","+SortedBLresult.get(key));
+						//finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+sortedResultMyTool.get(key)+","+SortedBLresult.get(key));
+						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+SortedBLresult.get(key));
 					    }
 						
 					}
 					
 				}	
-				
+					//ContentWriter.writeContent(outputFilePath+queryID, finalResult);
 			}
 			
 			ContentWriter.writeContent(outputFilePath, finalResult);

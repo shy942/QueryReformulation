@@ -25,13 +25,13 @@ public class RankComparison {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String basePart="E:\\PhD\\EclipseAll";
+		String basePart="E:\\PhD\\Repo\\Eclipse";
 		RankComparison obj=new RankComparison();
-		for(int i=1;i<=10;i++)
+		for(int i=1;i<=3071;i++)
 		{
 		
-			HashMap<String, Long> baselineMap=obj.LoadRankMap(basePart+"\\data\\"+"bestRankVSM1000"+i+".txt");
-			HashMap<String, Long> BLuAMIRmap=obj.LoadRankMap(basePart+"\\data\\"+"bestRankVSMAndme1000"+i+".txt");
+			HashMap<String, Long> baselineMap=obj.LoadRankMap(basePart+"\\data\\"+"bestRank"+i+".txt");
+			HashMap<String, Long> BLuAMIRmap=obj.LoadRankMap(basePart+"\\data\\"+"bestRankVSMandMe"+i+".txt");
 			//System.out.println(baselineMap.size());
 			//System.out.println(BLuAMIRmap.size());
 			obj.RanKComp(obj,baselineMap, BLuAMIRmap);

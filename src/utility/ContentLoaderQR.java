@@ -13,6 +13,7 @@ public class ContentLoaderQR {
 
 	public static ArrayList<String> readContent(String inFile) {
 		// save the content
+	    Boolean empty = true;
 		ArrayList<String> lines = new ArrayList<String>();
 		try {
 			BufferedReader breader = new BufferedReader(new FileReader(inFile));
@@ -20,6 +21,7 @@ public class ContentLoaderQR {
 				String line = breader.readLine().trim();
 				if (!line.isEmpty()) {
 					lines.add(line);
+					empty=false;
 				}
 			}
 			breader.close(); 
@@ -28,7 +30,11 @@ public class ContentLoaderQR {
 			exc.printStackTrace();
 
 		}
-		return lines;
+		if(empty==false)return lines;
+		else {
+		    lines.add("123456,00");
+		    return lines;
+		}
 	}
 
 	public static ArrayList<String> getAllLinesOptList(String fileName) {

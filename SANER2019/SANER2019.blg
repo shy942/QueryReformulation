@@ -6,10 +6,6 @@ You're missing a field name---line 25 of file test.bib
  : ,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 413 of file test.bib
- : @book{Salton
- :             ,
-I'm skipping whatever remains of this entry
 Warning--empty year in Bachmann
 Warning--empty year in Bachmann
 Warning--empty year in Fang
@@ -18,6 +14,8 @@ Warning--empty year in Hofmann
 Warning--empty year in Hofmann
 Warning--empty year in FindBug
 Warning--empty year in FindBug
+Warning--empty year in LukinsBL
+Warning--empty year in LukinsBL
 Warning--empty year in MarcusLSI
 Warning--empty year in MarcusLSI
 Warning--empty year in Mayer
@@ -32,4 +30,4 @@ Warning--empty year in Salton
 Warning--empty year in Salton
 Warning--empty year in Zeller:2002
 Warning--empty year in Zeller:2002
-(There were 2 error messages)
+(There was 1 error message)

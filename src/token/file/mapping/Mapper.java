@@ -167,7 +167,7 @@ public class Mapper {
 		// TODO Auto-generated method stub
 
 		long start=System.currentTimeMillis();
-		int tatoaltrain=3071;
+		int tatoaltrain=10;
 		for(int i=1;i<=tatoaltrain;i++)
 		{
 			/*

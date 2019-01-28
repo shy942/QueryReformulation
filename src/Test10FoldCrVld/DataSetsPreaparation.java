@@ -43,7 +43,7 @@ public class DataSetsPreaparation {
 		//new DataSetsPreaparation().creatAllbugs(base+"\\BugData3071\\",base+"\\data\\allBug.txt");
 		//new DataSetsPreaparation(base+"\\data\\allBug.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData1KB\\",base).DataPreparation(base+"\\data\\allBug.txt",base+"\\data\\gitInfoEclipse.txt",base+"\\data\\bugIDs.txt",base+"\\BugData1KB\\");
 		
-		DataSetsPreaparation obj=new DataSetsPreaparation(base+"\\data\\bugIDs.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData\\", base);
+		DataSetsPreaparation obj=new DataSetsPreaparation(base+"\\data\\bugIDs.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData3071\\", base);
 		
 		
 		

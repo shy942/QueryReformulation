@@ -49,6 +49,81 @@ public class BugReportPreprocessor {
 		//System.out.println(new ArrayList<String>(Arrays.asList(words2)));
 		return new ArrayList<String>(Arrays.asList(words2));
 	}
+	
+	protected ArrayList<String> splitContentRecursive(String content) {
+	    ArrayList<String> outputList=new ArrayList<>();
+        //System.out.println("Before split: ");
+        //System.out.println(content);
+        String[] wordsWithoutSpace = content.split(" ");
+        for(int i=0;i<wordsWithoutSpace.length;i++)
+        {
+            String wordprocessed="";
+            String word=wordsWithoutSpace[i];
+            String[] wordsRemovePunc = word.split("\\s+|\\p{Punct}+|\\d+");
+            for(int j=0;j<wordsRemovePunc.length;j++)
+            {
+                String eachword=wordsRemovePunc[j];
+                System.out.println(eachword);
+              
+                if(checkForAllUppercase(eachword)==true)
+                {
+                    //wordprocessed=wordprocessed+" "+eachword.toLowerCase().trim();
+                    if(eachword.length()>1)outputList.add(eachword.toLowerCase().trim());
+                }
+                else{
+                     String[] wordprocessed2ndStage=eachword.split("(?=[A-Z])");
+                     String check="";
+                     for(int k=0;k<wordprocessed2ndStage.length;k++)
+                     {
+                         String eachword2ndStage=wordprocessed2ndStage[k];
+                         if(checkForAllUppercase(eachword2ndStage)==true)
+                         {
+                             //wordprocessed=eachword2ndStage.toLowerCase();
+                             check=check+eachword2ndStage.toLowerCase();
+                         }
+                         else
+                         {
+                             if(check.length()>0){
+                                 wordprocessed = wordprocessed+" "+check;
+                                 if(wordprocessed.length()>1)outputList.add(wordprocessed.trim());
+                                 check="";
+                             }
+                             
+                                 wordprocessed= eachword2ndStage.toLowerCase();
+                             
+                                 if(wordprocessed.length()>1)outputList.add(wordprocessed.trim());
+                             
+                         }
+                     }
+                }
+                System.out.println(wordprocessed);
+            }
+        }
+       return outputList;
+        //return new ArrayList<String>(Arrays.asList(content));
+    }
+
+	protected Boolean checkForAllUppercase(String word)
+	{
+	    String allCapitalWord="";
+	    //String[] words = word.split("\\s+|\\p{Punct}+|\\d+");
+	    int len=0;
+	    //for(int j=0;j<words.length;j++)
+	    {
+	        //String eachword=words[j];
+	        char[] charArray=word.toCharArray();
+	      
+	        for(int i=0;i<charArray.length;i++)
+	        {
+	            char ch=charArray[i];
+	            if(Character.isUpperCase(ch))len++;
+	        }
+	        //if(len==word.length()-1) return true;
+	    }
+	    if(len==word.length()) return true;
+	    else
+	    return false;
+	}
 
 	protected String performStemming(String word) {
 		return stemmer.stripAffixes(word);
@@ -70,7 +145,7 @@ public class BugReportPreprocessor {
 	
 	public String performNLPforAllContent() {
 		// performing NLP operations
-		ArrayList<String> str=splitContent(this.content);
+		ArrayList<String> str=splitContentRecursive(this.content);
 		ArrayList<String> processed = new ArrayList<String>();
 		//for (String indLine : lineOfContent) 
 		//{
@@ -96,7 +171,7 @@ public class BugReportPreprocessor {
 					}
 				}*/
 				
-				if (word.length() >= 3) {
+				if (word.length() > 2) {
 					word=word.toLowerCase(Locale.ENGLISH);
 					word=word.trim();
 					word=word.replaceAll("“", "");
@@ -111,6 +186,7 @@ public class BugReportPreprocessor {
 			}
 		//if(found>0)stemmed.add("\n");
 		//}
+		System.out.println(processed);
 		return MiscUtility.list2Str(processed);
 
 	}

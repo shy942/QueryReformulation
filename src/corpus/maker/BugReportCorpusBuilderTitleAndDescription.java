@@ -29,7 +29,7 @@ public class BugReportCorpusBuilderTitleAndDescription {
 	{
 	    this.corpus=corpus;
 		this.bugFolder="E:\\PhD\\Repo\\"+this.corpus+"\\BugDataExtracted\\";
-		this.bugPPFolder="E:\\PhD\\Repo\\"+this.corpus+"\\BugData1KB\\";
+		this.bugPPFolder="E:\\PhD\\Repo\\"+this.corpus+"\\BugData3071\\";
 		this.noOfBugReports=noOfBugReports;
 	}
 	protected void createPreprocessedRepo()
@@ -50,7 +50,8 @@ public class BugReportCorpusBuilderTitleAndDescription {
 				if(bugIDs.contains(f_id))
 			    {
 					System.out.println(f.getName()+" "+f.length());
-					if(f.length()<=1024){
+					//if(f.length()<=1024)
+					{
 					    String fileName=f.getName();
 					    String content=ContentLoader.readContentSimple(f.getAbsolutePath());
 					    BugReportPreprocessor bpp=new BugReportPreprocessor(content);
@@ -62,7 +63,7 @@ public class BugReportCorpusBuilderTitleAndDescription {
 					    if(!listofFiles.contains(outFile))listofFiles.add(outFile);
 					    list.add(preprocessed);
 					}
-					else
+					//else
 					{
 					    System.out.println(f.getName());
 					}
@@ -106,7 +107,7 @@ public class BugReportCorpusBuilderTitleAndDescription {
 		// TODO Auto-generated method stub
 		//IndividualYearProcessing();
 		//PutAll2gether();
-	    String corpus="AspectJ";
+	    String corpus="Eclipse";
 		new BugReportCorpusBuilderTitleAndDescription(corpus).createPreprocessedRepo();
 	}
 

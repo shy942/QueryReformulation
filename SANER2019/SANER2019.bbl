@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -17,6 +17,13 @@ A.~Bachmann and A.~Bernstein.
 \newblock Software {P}rocess {D}ata {Q}uality and {C}haracteristics: {A}
   {H}istorical {V}iew on {O}pen and {C}losed {S}ource {P}rojects.
 \newblock In \emph{Proc. IWPSE}, IWPSE-Evol '09, pages 119--128.
+
+\bibitem[Deerwester et~al.(1990)Deerwester, Dumais, Furnas, Landauer, and
+  Harshman]{LSIindexing}
+S.~Deerwester, S.~T. Dumais, G.~W. Furnas, T.~K. Landauer, and R.~Harshman.
+\newblock Indexing by {L}atent {S}emantic {A}nalysis.
+\newblock \emph{Journal of the American Society for Information Science},
+  41\penalty0 (6):\penalty0 391--407, 1990.
 
 \bibitem[Fang et~al.()Fang, Tao, and Zhai]{Fang}
 H.~Fang, T.~Tao, and C.~Zhai.
@@ -69,6 +76,11 @@ Lucia, D.~Lo, Lingxiao Jiang, and A.~Budi.
 \newblock In \emph{2010 IEEE International Conference on Software Maintenance},
   pages 1--10, 2010.
 
+\bibitem[Lukins et~al.()Lukins, Kraft, and Etzkorn]{LukinsBL}
+S.~K. Lukins, N.~A. Kraft, and L.~H. Etzkorn.
+\newblock Bug {L}ocalization {U}sing {L}atent {D}irichlet {A}llocation.
+\newblock \emph{Inf. Softw. Technol.}, 52\penalty0 (9):\penalty0 972--990.
+
 \bibitem[Lukins et~al.(2008)Lukins, Kraft, and Etzkorn]{Lukins}
 S.K. Lukins, N.A. Kraft, and L.H. Etzkorn.
 \newblock {S}ource {C}ode {R}etrieval for {B}ug {L}ocalization {U}sing {L}atent
@@ -116,6 +128,14 @@ L.~Moreno, J.J. Treadway, A.~Marcus, and Wuwei Shen.
 \newblock In \emph{Software Maintenance and Evolution (ICSME), 2014 IEEE
   International Conference on}, pages 151--160, Sept 2014.
 
+\bibitem[Nguyen et~al.(2011)Nguyen, Nguyen, Al-Kofahi, Nguyen, and
+  Nguyen]{Nguyen}
+A.~T. Nguyen, T.~T. Nguyen, J.~Al-Kofahi, H.~V. Nguyen, and T.~N. Nguyen.
+\newblock A {T}opic-based {A}pproach for {N}arrowing the {S}earch {S}pace of
+  {B}uggy {F}iles from a {B}ug {R}eport.
+\newblock In \emph{2011 26th IEEE/ACM International Conference on Automated
+  Software Engineering (ASE 2011)}, pages 263--272, Nov 2011.
+
 \bibitem[Ponte and Croft()]{Ponte}
 Jay~M. Ponte and W.~Bruce Croft.
 \newblock A {L}anguage {M}odeling {A}pproach to {I}nformation {R}etrieval.
@@ -154,6 +174,11 @@ R.K. Saha, M.~Lease, S.~Khurshid, and D.E. Perry.
 G.~Salton and C.~Buckley.
 \newblock Term-weighting {A}pproaches in {A}utomatic {T}ext {R}etrieval.
 \newblock \emph{Inf. Process. Manage.}, 24\penalty0 (5):\penalty0 513--523.
+
+\bibitem[Salton and McGill(1986)]{SaltonMIR}
+G.~Salton and M.~J. McGill.
+\newblock \emph{Introduction to {M}odern {I}nformation {R}etrieval}.
+\newblock McGraw-Hill, Inc., 1986.
 
 \bibitem[Sisman and Kak(2013)]{Sisman}
 B.~Sisman and A.C. Kak.
