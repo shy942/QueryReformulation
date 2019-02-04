@@ -751,14 +751,14 @@ In order to obtain the links between previously fixed bugs and source code files
 \subsection{Evaluation Metrices}
 To measure the effectiveness of the proposed bug localization approach, we use the following metrics:
 
-\textbf{Ton N-Rank (Hit@N):} It represents the number of bug, for which their associated files are returned in a ranked list. Here, \textit{N} may be 1, 5 or 10. We assume that if at least one associated file is presented in the resulted ranked list, then the given bug is located. The higher the metric value, the better the bug localization performance
+\textbf{Ton N-Rank (Hit@N):} It represents the number of bug, for which their associated files are returned in a ranked list. Here, \textit{N} may be 1, 5 or 10. We assume that if at least one associated file is presented in the resulted ranked list, then the given bug is located. The higher the metric value, the better the bug localization performance.
 
 \textbf{MRR (Mean Reciprocal Rank)}
 The reciprocal rank of a query is the multiplicative inverse of the rank of the first correct answer. So mean reciprocal rank is the average of the reciprocal ranks of results of a set of queries $Q$
 \begin{equation}
 MRR=\frac{1}{\left | Q \right |}\sum_{i=1}^{\left | Q \right |}\frac{1}{rank_{i}}
 \end{equation}
-where $ranki$ is the position of the first buggy file in the returned ranked files for the first query in $Q$.
+where $rank_i$ is the position of the first buggy file in the returned ranked files for the first query in $Q$.
 
 \textbf{MAP (Mean Average Precision)}
 Mean Average Precision is the most commonly used IR metric to evaluate ranking approaches. It considers the ranks of all buggy files into consideration. So, MAP emphasizes all of the buggy files instead of only the first one.
@@ -766,7 +766,7 @@ MAP for a set of queries is the mean of the average precision scores for each qu
 \begin{equation}
 AP=\sum_{k=1}^{M}\frac{P(k)\times pos(k)}{number \, of \, positive \, instances}
 \end{equation}
-where $k$ is a rank in the returned ranked files, $M$ is the number of ranked files and $pos(k)$ indicates whether the kth file is a buggy file or not. $P(k)$ is the precision at a given top $k$ files and is computed as follows:
+where $k$ is a rank in the returned ranked files, $M$ is the number of ranked files and $pos(k)$ indicates whether the $k_{th}$ file is a buggy file or not. $P(k)$ is the precision at a given top $k$ files and is computed as follows:
 \begin{equation}
 P(k)=\frac{\#buggy \, Files}{k}
 \end{equation}
@@ -785,7 +785,7 @@ Our proposed tool-BLuAMIR are designed to  answer the following research questio
 	\item RQ1: (a) How does our proposed approach-BLuAMIR perform in Bug Localization? (b) How does our proposed association score affect its performance?
 	\item RQ2: Does our proposed approach-BLuAMIR resolve the vocabulary missmatch problem and how?
 	\item RQ3: Does our proposed approach-BLuAMIR eliminate large files problem and how?
-	\item RQ4: In BLuAMIR comparable with the state-of-the-art techniques in identifying buggy files?
+	\item RQ4: Is BLuAMIR comparable with the state-of-the-art techniques in identifying buggy files?
 \end{itemize}
 
 
@@ -829,21 +829,21 @@ Second, we compare the performance of BLuAMIR with three state of the arts techn
 %%\end{equation}
 %This \textit{rVSM} score is calculated for each query bug report {$q$} against every document {$d$} in the corpus. However, in the above equation {$\#terms$} refers to the total number of terms in a corpus, {$n\textsubscript{t}$} is the number of documents where term {$t$} occurs.
 \begin{figure*}
-	\begin{subfigure}[b]{2.26in}
+	\begin{subfigure}
 		\centering
-		\includegraphics[width=\textwidth]{VSM+AssoTop-1}
+		\includegraphics[width=.33\textwidth]{VSM+AssoTop-1}
 		%\caption {Performance Comparison between VSM and VSM+Association for Top-1 Retrieval}
 		%\label{fig:VSM+AssoTop-1}...
 	\end{subfigure}
-	\begin{subfigure} [b]{2.26in}
+	\begin{subfigure} 
 		\centering
-		\includegraphics[width=\textwidth]{VSM+AssoTop-5}
+		\includegraphics[width=.33\textwidth]{VSM+AssoTop-5}
 		%\caption {Performance Comparison between VSM and VSM+Association for Top-5 Retrieval}
 		%\label{fig:VSM+AssoTop-5}
 	\end{subfigure}
-	\begin{subfigure} [b]{2.26in}
+	\begin{subfigure} 
 		\centering
-		\includegraphics[width=\textwidth]{VSM+AssoTop-10}
+		\includegraphics[width=.33\textwidth]{VSM+AssoTop-10}
 		%\caption {Performance Comparison between VSM and VSM+Association for Top-10 Retrieval}
 		%\label{fig:VSM+AssoTop-10}
 	\end{subfigure}
@@ -929,6 +929,8 @@ Second, we compare the performance of BLuAMIR with three state of the arts techn
 %	\caption {MAP Comparison between Replicated BugLocator and rVSM+Simi+Association}
 %	\label{fig:RepBL+AssoTop-MAP}
 %\end{figure}
+\subsection{Answering RQ1} \label{RQ1answer}
+To answer RQ1, we compare the performance of our proposed bug localization approach with two re-implemented existing techniques - 1) classic VSM which is based on vector space model and 2) replicated LSI \cite{MarcusLSI} which is based on latent semantic indexing.
 \begin{table}[htbp]
 	\centering
 	\caption{Performance comparison of replicated basic VSM and proposed technique (BLuAMIR)}
@@ -981,12 +983,11 @@ Second, we compare the performance of BLuAMIR with three state of the arts techn
 	\end{tabular}}
 	\centering
 \end{table}
-\subsection{Answering RQ1} \label{RQ1answer}
-To answer RQ1, we compare the performance of our proposed bug localization approach with two re-implemented existing techniques - 1) classic VSM which is based on vector space model and 2) replicated LSI \cite{MarcusLSI} which is based on latent semantic indexing. 
+ 
 
 \textbf{VSM vs BLuAMIR}
 In our proposed approach, we combine VSM score and association scores in order to produce a ranked result. We compare the performance of baseline VSM technique and our proposed combined approach on Eclipse dataset (i.e., 3071 bug reports). This performance comparison can assist us to investigate whether adding association score with VSM score can improve the bug localization performance or not. The comparison is presented in table \ref{tab:Performance2}. We also use a 10-fold cross validation i.e., divide all 3071 bug reports into-10 fold and perform train on total 9 folds and test on the rest fold. For 10-fold validated Eclipse codebase, we compute Top-1, Top-5, Top-10 performance (presented in Fig \ref{fig:VSM+AssoTopK}) and MRR and MAP (shown in Fig \ref{fig:VSM+AssoTop-MRR} and Fig \ref{fig:VSM+AssoTop-MAP} respectively) for both approaches. In all cases our proposed approach outperforms VSM-based bug localization approach. The Top-10 performance of our tool is 63.30\% whereas it is 58.26\% for VSM.
-So. to answer our \textit{RQ1}, we can go to Table \ref{tab:Performance2}, 63.30\% bugs are successfully located in Top-10 for Eclipse dataset by BLuAMIR. 
+So. to answer our \textit{RQ1(a)}, we can go to Table \ref{tab:Performance2}, 63.30\% bugs are successfully located in Top-10 for Eclipse dataset by BLuAMIR. This result also suggest that association score improves the retrieval performance of BLuAMIR (\textit{RQ1(b)}). 
 
 
 We also compute Wilcoxon signed-rank test both for MRR and MAP. For MRR the {Z}-value is -2.8031. The {p}-value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 5. Therefore, the result is significant at p<=0.05.
@@ -999,19 +1000,7 @@ Latent Semantic Indexing(LSI) is a VSM based method for indexing and representin
 At first we created a term-by-document matrix for corpus. Our corpus contains both the source code base and query bug reports. Then, we apply a Singular Value Decomposition (SVD) to construct a subspace (i.e., LSI subspace) \cite{SaltonMIR}. 
 Then, we compute similarity between documents by the cosine or inner product between the corresponding vectors collected from LSI subspace matrix. Typically, two documents are considered similar if their corresponding vectors in the VSM spcae point in the same direction.
 Note that we preprocess both source code and bug reports by spiliting each word, remove stop words etc. Then, we create the term-by-document matrix. However, finally we retrieve the rankled list of source codes for bug reports based on cosine similarity. We compare between replicated LSI and BLuAMIR for three datasets AspectJ, SWT and ZXing, which are depicted in Table \ref{tab:Performance1} 
-\begin{figure}
- 	\centering
- 	\includegraphics[scale=0.55]{comapre-mrr}
- 	\caption {MRR Comparison between replicated basic LSI and BLuAMIR for AspectJ, SWT and ZXing dataset}
- 	\label{box:LSI+AssoMRR}
- \end{figure}
- \begin{figure}
- 	\centering
- 	\includegraphics[scale=0.55]{compare-map-lsi-proposed}
- 	\caption {MAP Comparison between replicated basic LSI and BLuAMIR for AspectJ, SWT and ZXing dataset}
- 	\label{box:LSI+Asso-MAP}
- \end{figure}
-We compare the performance of our proposed approach in terms of top 1, 5, 10 rank (depicted in Table \ref{tab:Performance2}) and MRR and MAP (shown in Box plot \ref{box:LSI+AssoMRR} and \ref{box:LSI+Asso-MAP} respectively). We can see that our proposed approach outperforms in all case. This also answers our RQ1.
+
 
 \begin{table}[htbp]
 	\caption{Performance of replicated LSI and BLuAMIR for AspectJ, SWT and ZXing dataset}
@@ -1085,8 +1074,20 @@ We compare the performance of our proposed approach in terms of top 1, 5, 10 ran
 \end{table}
 
 
-
-
+We compare the performance of our proposed approach in terms of top 1, 5, 10 rank (depicted in Table \ref{tab:Performance2}) and MRR and MAP (shown in Box plot Fig \ref{box:LSI+AssoMRR} and Fig \ref{box:LSI+Asso-MAP} respectively). We can see that our proposed approach outperforms in all case. So, BLuAMIR successfully retrieve 66.39\%, 82.29\%, and 85.00\% bugs for AspectJ, SWT and ZXing datasets respectively in Top-10. These results provide the answer of our \textit{RQ1(a)}. The box plots in Fig \ref{box:LSI+AssoMRR} and Fig \ref{box:LSI+Asso-MAP} also demonstrate that BLuAMIR performs better than the baseline in each of the measures with higher medians.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.55]{comapre-mrr}
+	\caption {MRR Comparison between replicated basic LSI and BLuAMIR for AspectJ, SWT and ZXing dataset}
+	\label{box:LSI+AssoMRR}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.55]{compare-map-lsi-proposed}
+	\caption {MAP Comparison between replicated basic LSI and BLuAMIR for AspectJ, SWT and ZXing dataset}
+	\label{box:LSI+Asso-MAP}
+\end{figure}
+   
 
 
 %We also compute Wilcoxon signed-rank test both for MRR and MAP. For MRR the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 5. Therefore, the result is significant at p<=0.05.
@@ -1097,8 +1098,8 @@ To answer RQ4, we compare the performance of BLuAMIR with three state-of-the-art
 %We replicated the LSI technique for bug localization, which is proposed by \citet{MarcusLSI} for traceability links.
 \citet{Nguyen} used two dataset as subject system (i.e., Eclipse and AspectJ) to evaluate BugScout. 
 \citet{Saha} interpreted the recall at top-1, top-5, and top-10 of BugScout \cite{Nguyen} results from a Figure presented in their paper \cite{Nguyen}. However, we could compare the performance of BLuAMIR with BugScout for Eclipse and AspectJ dataset for top-1, top-5 and top-10. Therefore, due to data unavailability, we could not compare that performance for MRR@10 and MAP@10 between BugScout and BLuAMIR.
-For Buglocator \cite{Jian}, we copied the results directly from their paper. We also collect the same bug reports and the same source code repository for both of them. So the results can be compared. 
-Our tool BLuAMIR outperforms LSI \cite{MarcusLSI} for both SWT and Zxing dataset in all five performance metrics.
+For Buglocator \cite{Jian} and BLUiR \cite{Saha}, we copied the results directly from their paper. We also collect the same bug reports and the same source code repository for both of them. So the results can be compared. 
+Our tool BLuAMIR outperforms BugScout \cite{Nguyen} for Eclipse, AspectJ, SWT and Zxing dataset in three performance metrics (i.e., Top-1, Top-5, and Top-10). 
 For SWT, we can see our tool BLuAMIR performs better for Top-1, Top-5, MRR and MAP. However, for Top-10 BLuAmir is comparable with Buglocator. On the other hand, for Zxing our tool BLuAMIR outperforms for top-5, top-10 and MAP. So we can say that our proposed tool BLuAMIR outperforms most cases and comparable for a few cases with state-of-the-art bug localization technique.
 \begin{table}[htbp]
 	\centering
