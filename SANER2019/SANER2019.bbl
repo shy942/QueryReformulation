@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -17,6 +17,12 @@ A.~Bachmann and A.~Bernstein.
 \newblock Software {P}rocess {D}ata {Q}uality and {C}haracteristics: {A}
   {H}istorical {V}iew on {O}pen and {C}losed {S}ource {P}rojects.
 \newblock In \emph{Proc. IWPSE}, IWPSE-Evol '09, pages 119--128.
+
+\bibitem[Bachmann and Bernstein(2009)]{bugid}
+A.~Bachmann and A.~Bernstein.
+\newblock Software process data quality and characteristics: A historical view
+  on open and closed source projects.
+\newblock In \emph{Proc. IWPSE}, pages 119--128, 2009.
 
 \bibitem[Deerwester et~al.(1990)Deerwester, Dumais, Furnas, Landauer, and
   Harshman]{LSIindexing}
