@@ -1,9 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.26)  31 JAN 2019 15:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  1 FEB 2019 14:35
 entering extended mode
 **./SANER2019.tex
 (SANER2019.tex
-LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 77 language(s) loaded.
+LaTeX2e <2018-04-01> patch level 5
 (IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
@@ -11,15 +10,13 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmpdimenA=\dimen102
 \@IEEEtrantmpdimenB=\dimen103
 \@IEEEtrantmpdimenC=\dimen104
-\@IEEEtrantmpcountA=\count79
-\@IEEEtrantmpcountB=\count80
-\@IEEEtrantmpcountC=\count81
+\@IEEEtrantmpcountA=\count80
+\@IEEEtrantmpcountB=\count81
+\@IEEEtrantmpcountC=\count82
 \@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
 
-
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1pt
-m.fd"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -91,68 +88,68 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \IEEEiednormlabelsep=\dimen118
 \IEEEiedmathlabelsep=\dimen119
 \IEEEiedtopsep=\skip41
-\c@section=\count82
-\c@subsection=\count83
-\c@subsubsection=\count84
-\c@paragraph=\count85
-\c@IEEEsubequation=\count86
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@IEEEsubequation=\count87
 \abovecaptionskip=\skip42
 \belowcaptionskip=\skip43
-\c@figure=\count87
-\c@table=\count88
-\@IEEEeqnnumcols=\count89
-\@IEEEeqncolcnt=\count90
-\@IEEEsubeqnnumrollback=\count91
+\c@figure=\count88
+\c@table=\count89
+\@IEEEeqnnumcols=\count90
+\@IEEEeqncolcnt=\count91
+\@IEEEsubeqnnumrollback=\count92
 \@IEEEquantizeheightA=\dimen120
 \@IEEEquantizeheightB=\dimen121
 \@IEEEquantizeheightC=\dimen122
 \@IEEEquantizeprevdepth=\dimen123
-\@IEEEquantizemultiple=\count92
+\@IEEEquantizemultiple=\count93
 \@IEEEquantizeboxA=\box26
 \@IEEEtmpitemindent=\dimen124
 \IEEEPARstartletwidth=\dimen125
-\c@IEEEbiography=\count93
+\c@IEEEbiography=\count94
 \@IEEEtranrubishbin=\box27
 )
 ** ATTENTION: Overriding command lockouts (line 2).
-(C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cite\cite.sty"
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsm
-ath.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
+y"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amst
-ext.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.st
+y"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsg
-en.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen126
 ))
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsb
-sy.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen127
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amso
-pn.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count94
+\inf@bad=\count95
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count95
-\leftroot@=\count96
+\uproot@=\count96
+\leftroot@=\count97
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count97
-\DOTSCASE@=\count98
+\classnum@=\count98
+\DOTSCASE@=\count99
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -161,15 +158,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen128
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count99
-\c@MaxMatrixCols=\count100
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
 \dotsspace@=\muskip10
-\c@parentequation=\count101
-\dspbrk@lvl=\count102
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
 \tag@help=\toks16
-\row@=\count103
-\column@=\count104
-\maxfields@=\count105
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
 \andhelp@=\toks17
 \eqnshift@=\dimen129
 \alignsep@=\dimen130
@@ -184,69 +181,68 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ams
-symb.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.s
+ty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ams
-fonts.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.
+sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algorit
-hmicx.sty
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algor
+ithmicx.sty"
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.
-sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count106
-\c@ALG@rem=\count107
-\c@ALG@nested=\count108
+\c@ALG@line=\count107
+\c@ALG@rem=\count108
+\c@ALG@nested=\count109
 \ALG@tlm=\skip47
 \ALG@thistlm=\skip48
-\c@ALG@Lnr=\count109
-\c@ALG@blocknr=\count110
-\c@ALG@storecount=\count111
-\c@ALG@tmpcounter=\count112
+\c@ALG@Lnr=\count110
+\c@ALG@blocknr=\count111
+\c@ALG@storecount=\count112
+\c@ALG@tmpcounter=\count113
 \ALG@tmplength=\skip49
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\gra
-phicx.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\key
-val.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
+y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks20
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\gra
-phics.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\tri
-g.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg
-\graphics.cfg"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
+ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def
-\pdftex.def"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
+x.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
 )
-(C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\mdwtools\syntax.sty
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mdwtools\syntax.st
+y"
 Package: syntax 1996/05/17 1.07 Syntax typesetting (MDW)
 \grammarparsep=\skip50
 \grammarindent=\dimen137
@@ -259,8 +255,7 @@ Package: syntax 1996/05/17 1.07 Syntax typesetting (MDW)
 \sdcirclediam=\dimen139
 \sdindent=\dimen140
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcom
-p.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty"
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -274,11 +269,84 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
-
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.
-def"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-)
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
+))
 LaTeX Info: Redefining \oldstylenums on input line 334.
 Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
 Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
@@ -342,12 +410,12 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-)
-(C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+) ("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.st
+y"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg
-\color.cfg"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color
+.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -361,9 +429,8 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-
 
 Package natbib Warning: The `cite' package should not be used
 (natbib)                with natbib. Use option `sort' instead.
@@ -372,54 +439,51 @@ Package natbib Warning: The `cite' package should not be used
 \bibsep=\skip57
 LaTeX Info: Redefining \cite on input line 694.
 LaTeX Info: Redefining \citenum on input line 708.
-\c@NAT@ctr=\count113
+\c@NAT@ctr=\count114
 )
-(C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm
-.sty
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorit
+hm.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.
-sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count114
+\c@float@type=\count115
 \float@exts=\toks21
 \float@box=\box30
 \@float@everytoks=\toks22
 \@floatcapt=\box31
 )
 \@float@every@algorithm=\toks23
-\c@algorithm=\count115
+\c@algorithm=\count116
 )
-(C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algpseu
-docode.sty
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algps
+eudocode.sty"
 Package: algpseudocode 
 
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\mul
-tirow.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.
+sty"
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip58
-\multirow@cntb=\count116
+\multirow@cntb=\count117
 \multirow@dima=\skip59
 \bigstrutjot=\dimen141
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\pifon
-t.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
-
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\upzd.
-fd"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\upsy.
-fd"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
 File: upsy.fd 2001/06/04 font definitions for U/psy.
-)) ("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+))
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfigure\subfigur
+e.sty"
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip60
 \subfigcapskip=\skip61
@@ -427,31 +491,33 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigbottomskip=\skip62
 \subfigcapmargin=\dimen143
 \subfiglabelskip=\skip63
-\c@subfigure=\count117
-\c@lofdepth=\count118
-\c@subtable=\count119
-\c@lotdepth=\count120
+\c@subfigure=\count118
+\c@lofdepth=\count119
+\c@subtable=\count120
+\c@lotdepth=\count121
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfigure\subfigur
+e.cfg")
 \subfig@top=\skip64
 \subfig@bottom=\skip65
 )
-(C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3.sty
-Package: expl3 2017/11/14 L3 programming layer (loader) 
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty
+"
+Package: expl3 2018-06-14 L3 programming layer (loader) 
 
-(C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3-code.
-tex
-Package: expl3 2017/11/14 L3 programming layer (code)
-\c_max_int=\count121
-\l_tmpa_int=\count122
-\l_tmpb_int=\count123
-\g_tmpa_int=\count124
-\g_tmpb_int=\count125
-\g__intarray_font_int=\count126
-\g__prg_map_int=\count127
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3-cod
+e.tex"
+Package: expl3 2018-06-14 L3 programming layer (code)
+\c_max_int=\count122
+\l_tmpa_int=\count123
+\l_tmpb_int=\count124
+\g_tmpa_int=\count125
+\g_tmpb_int=\count126
+\g__kernel_prg_map_int=\count127
 \c_log_iow=\count128
 \l_iow_line_count_int=\count129
 \l__iow_line_target_int=\count130
@@ -476,31 +542,32 @@ Package: expl3 2017/11/14 L3 programming layer (code)
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
 \l_keys_choice_int=\count133
-\c__fp_leading_shift_int=\count134
-\c__fp_middle_shift_int=\count135
-\c__fp_trailing_shift_int=\count136
-\c__fp_big_leading_shift_int=\count137
-\c__fp_big_middle_shift_int=\count138
-\c__fp_big_trailing_shift_int=\count139
-\c__fp_Bigg_leading_shift_int=\count140
-\c__fp_Bigg_middle_shift_int=\count141
-\c__fp_Bigg_trailing_shift_int=\count142
-\c__fp_rand_size_int=\count143
-\c__fp_rand_four_int=\count144
-\c__fp_rand_eight_int=\count145
-\l__sort_length_int=\count146
-\l__sort_min_int=\count147
-\l__sort_top_int=\count148
-\l__sort_max_int=\count149
-\l__sort_true_max_int=\count150
-\l__sort_block_int=\count151
-\l__sort_begin_int=\count152
-\l__sort_end_int=\count153
-\l__sort_A_int=\count154
-\l__sort_B_int=\count155
-\l__sort_C_int=\count156
-\l__tl_build_start_index_int=\count157
-\l__tl_build_index_int=\count158
+\l__intarray_loop_int=\count134
+\c__intarray_sp_dim=\dimen150
+\g__intarray_font_int=\count135
+\c__fp_leading_shift_int=\count136
+\c__fp_middle_shift_int=\count137
+\c__fp_trailing_shift_int=\count138
+\c__fp_big_leading_shift_int=\count139
+\c__fp_big_middle_shift_int=\count140
+\c__fp_big_trailing_shift_int=\count141
+\c__fp_Bigg_leading_shift_int=\count142
+\c__fp_Bigg_middle_shift_int=\count143
+\c__fp_Bigg_trailing_shift_int=\count144
+\c__kernel_randint_max_int=\count145
+\g__fp_array_int=\count146
+\l__fp_array_loop_int=\count147
+\l__sort_length_int=\count148
+\l__sort_min_int=\count149
+\l__sort_top_int=\count150
+\l__sort_max_int=\count151
+\l__sort_true_max_int=\count152
+\l__sort_block_int=\count153
+\l__sort_begin_int=\count154
+\l__sort_end_int=\count155
+\l__sort_A_int=\count156
+\l__sort_B_int=\count157
+\l__sort_C_int=\count158
 \l__tl_analysis_normal_int=\count159
 \l__tl_analysis_index_int=\count160
 \l__tl_analysis_nesting_int=\count161
@@ -545,29 +612,29 @@ Package: expl3 2017/11/14 L3 programming layer (code)
 \l__regex_min_submatch_int=\count266
 \l__regex_submatch_int=\count267
 \l__regex_zeroth_submatch_int=\count268
-\g__debug_trace_regex_int=\count269
+\g__regex_trace_regex_int=\count269
 \c_empty_box=\box32
 \l_tmpa_box=\box33
 \l_tmpb_box=\box34
 \g_tmpa_box=\box35
 \g_tmpb_box=\box36
-\l__box_top_dim=\dimen150
-\l__box_bottom_dim=\dimen151
-\l__box_left_dim=\dimen152
-\l__box_right_dim=\dimen153
-\l__box_top_new_dim=\dimen154
-\l__box_bottom_new_dim=\dimen155
-\l__box_left_new_dim=\dimen156
-\l__box_right_new_dim=\dimen157
+\l__box_top_dim=\dimen151
+\l__box_bottom_dim=\dimen152
+\l__box_left_dim=\dimen153
+\l__box_right_dim=\dimen154
+\l__box_top_new_dim=\dimen155
+\l__box_bottom_new_dim=\dimen156
+\l__box_left_new_dim=\dimen157
+\l__box_right_new_dim=\dimen158
 \l__box_internal_box=\box37
 \l__coffin_internal_box=\box38
-\l__coffin_internal_dim=\dimen158
-\l__coffin_offset_x_dim=\dimen159
-\l__coffin_offset_y_dim=\dimen160
-\l__coffin_x_dim=\dimen161
-\l__coffin_y_dim=\dimen162
-\l__coffin_x_prime_dim=\dimen163
-\l__coffin_y_prime_dim=\dimen164
+\l__coffin_internal_dim=\dimen159
+\l__coffin_offset_x_dim=\dimen160
+\l__coffin_offset_y_dim=\dimen161
+\l__coffin_x_dim=\dimen162
+\l__coffin_y_dim=\dimen163
+\l__coffin_x_prime_dim=\dimen164
+\l__coffin_y_prime_dim=\dimen165
 \c_empty_coffin=\box39
 \l__coffin_aligned_coffin=\box40
 \l__coffin_aligned_internal_coffin=\box41
@@ -576,22 +643,24 @@ Package: expl3 2017/11/14 L3 programming layer (code)
 \l__coffin_display_coffin=\box44
 \l__coffin_display_coord_coffin=\box45
 \l__coffin_display_pole_coffin=\box46
-\l__coffin_display_offset_dim=\dimen165
-\l__coffin_display_x_dim=\dimen166
-\l__coffin_display_y_dim=\dimen167
-\l__coffin_bounding_shift_dim=\dimen168
-\l__coffin_left_corner_dim=\dimen169
-\l__coffin_right_corner_dim=\dimen170
-\l__coffin_bottom_corner_dim=\dimen171
-\l__coffin_top_corner_dim=\dimen172
-\l__coffin_scaled_total_height_dim=\dimen173
-\l__coffin_scaled_width_dim=\dimen174
+\l__coffin_display_offset_dim=\dimen166
+\l__coffin_display_x_dim=\dimen167
+\l__coffin_display_y_dim=\dimen168
+\g__file_internal_ior=\read1
+\l__coffin_bounding_shift_dim=\dimen169
+\l__coffin_left_corner_dim=\dimen170
+\l__coffin_right_corner_dim=\dimen171
+\l__coffin_bottom_corner_dim=\dimen172
+\l__coffin_top_corner_dim=\dimen173
+\l__coffin_scaled_total_height_dim=\dimen174
+\l__coffin_scaled_width_dim=\dimen175
+\l__seq_internal_a_int=\count270
+\l__seq_internal_b_int=\count271
 )
-(C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3pdfmode.d
-ef
-File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count270
-\l__driver_tmp_box=\box47
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode
+.def"
+File: l3pdfmode.def 2018-06-14 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count272
 )) (SANER2019.aux)
 \openout1 = `SANER2019.aux'.
 
@@ -610,62 +679,62 @@ LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 34.
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.
-fd"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 34.
 
 -- Lines per column: 56 (exact).
 
-(C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count271
-\scratchdimen=\dimen175
-\scratchbox=\box48
-\nofMPsegments=\count272
-\nofMParguments=\count273
+\scratchcounter=\count273
+\scratchdimen=\dimen176
+\scratchbox=\box47
+\nofMPsegments=\count274
+\nofMParguments=\count275
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count274
-\MPscratchDim=\dimen176
-\MPnumerator=\count275
-\makeMPintoPDFobject=\count276
+\MPscratchCnt=\count276
+\MPscratchDim=\dimen177
+\MPnumerator=\count277
+\makeMPintoPDFobject=\count278
 \everyMPtoPDFconversion=\toks25
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\eps
-topdf-base.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
+base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\i
-nfwarerr.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+rr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grf
-ext.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
+y"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\k
-vdefinekeys.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefin
+ekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\l
-txcmds.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvo
-ptions.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\k
-vsetkeys.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetke
+ys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\e
-texcmds.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmd
+s.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\i
-fluatex.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluate
+x.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -674,13 +743,13 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\p
-dftexcmds.sty"
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexc
+mds.sty"
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\i
-fpdf.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+ty"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -705,110 +774,96 @@ LaTeX Warning: No \author given.
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 174.
-
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ums
-a.fd"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 174.
-
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ums
-b.fd"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 1448) in paragraph at lines 188--190
-[]\OT1/ptm/m/n/8 [Working Sets] IWork-ingSet.getImage should be
- []
-
-[1{C:/Users/MasudRahman/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+) [1{C:/Users/Mukta/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
 <SD6-Gray.png, id=10, 814.84425pt x 146.34676pt>
 File: SD6-Gray.png Graphic file (type png)
 <use SD6-Gray.png>
-Package pdftex.def Info: SD6-Gray.png  used on input line 260.
+Package pdftex.def Info: SD6-Gray.png  used on input line 273.
 (pdftex.def)             Requested size: 488.91032pt x 87.80872pt.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 301.
+ [2]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 314.
 
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omspt
-m.fd"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 301.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 314.
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 [] $\OML/cmm/m/it/10 SF[] \OMS/cmsy/m/n/10  $ \OT1/ptm/m/n/10 getLinkedSourceFi
 les($\OML/cmm/m/it/10 MAP[]$\OT1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 332--333
+Underfull \hbox (badness 2318) in paragraph at lines 345--346
 [] $\OML/cmm/m/it/10 MAP\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 KB[]\OT1/cmr/m/n/10 ]
 \OML/cmm/m/it/10 :link \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 MAP\OT1/cmr/m/n/10 [
 \OML/cmm/m/it/10 KB[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :link \OT1/cmr/m/n/10 +
  []
 
-[2]
 <BGraph2.png, id=19, 464.937pt x 398.08725pt>
 File: BGraph2.png Graphic file (type png)
 <use BGraph2.png>
-Package pdftex.def Info: BGraph2.png  used on input line 396.
+Package pdftex.def Info: BGraph2.png  used on input line 409.
 (pdftex.def)             Requested size: 246.41542pt x 210.98523pt.
- [3 <./SD6-Gray.png>]
-Overfull \hbox (4.22746pt too wide) in paragraph at lines 455--456
+[3 <./SD6-Gray.png>]
+Overfull \hbox (4.22746pt too wide) in paragraph at lines 468--469
 [] $\OML/cmm/m/it/10 SC[] \OMS/cmsy/m/n/10  $ \OT1/ptm/m/n/10 collectSCodeWithA
 ssocScore($\OML/cmm/m/it/10 Score[]$\OT1/ptm/m/n/10 ) 
  []
 
 [4 <./BGraph2.png>]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-
-Underfull \hbox (badness 10000) in paragraph at lines 703--703
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []\OT1/ptm/b/n/8 Project
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--703
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 []\OT1/ptm/b/n/8 Study
  []
 
 
-Overfull \hbox (1.77226pt too wide) in paragraph at lines 703--703
+Overfull \hbox (1.77226pt too wide) in paragraph at lines 716--716
 []\OT1/ptm/b/n/8 #Fixed
  []
 
 
-Overfull \hbox (6.06827pt too wide) in paragraph at lines 703--704
+Overfull \hbox (6.06827pt too wide) in paragraph at lines 716--717
 []\OT1/ptm/b/n/8 #Source
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 708--708
+Underfull \hbox (badness 10000) in paragraph at lines 721--721
 []\OT1/ptm/m/n/8 Eclipse
  []
 
 
-Underfull \hbox (badness 2334) in paragraph at lines 708--708
+Underfull \hbox (badness 2334) in paragraph at lines 721--721
 []\OT1/ptm/m/n/8 Oct 2004 -
  []
 
 
-Underfull \hbox (badness 2334) in paragraph at lines 709--709
+Underfull \hbox (badness 2334) in paragraph at lines 722--722
 []\OT1/ptm/m/n/8 Oct 2004 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 710--710
+Underfull \hbox (badness 10000) in paragraph at lines 723--723
 []\OT1/ptm/m/n/8 Aspect-oriented
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 711--711
+Underfull \hbox (badness 10000) in paragraph at lines 724--724
 []\OT1/ptm/m/n/8 A bar-code im-age
  []
 
@@ -816,53 +871,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 711--711
 <VSM+AssoTop-1.png, id=40, 289.68225pt x 174.05025pt>
 File: VSM+AssoTop-1.png Graphic file (type png)
 <use VSM+AssoTop-1.png>
-Package pdftex.def Info: VSM+AssoTop-1.png  used on input line 801.
+Package pdftex.def Info: VSM+AssoTop-1.png  used on input line 814.
 (pdftex.def)             Requested size: 516.0pt x 310.0873pt.
 <VSM+AssoTop-5.png, id=41, 289.08pt x 174.05025pt>
 File: VSM+AssoTop-5.png Graphic file (type png)
 <use VSM+AssoTop-5.png>
-Package pdftex.def Info: VSM+AssoTop-5.png  used on input line 807.
+Package pdftex.def Info: VSM+AssoTop-5.png  used on input line 820.
 (pdftex.def)             Requested size: 516.0pt x 310.69281pt.
 <VSM+AssoTop-10.png, id=42, 289.08pt x 173.448pt>
 File: VSM+AssoTop-10.png Graphic file (type png)
 <use VSM+AssoTop-10.png>
-Package pdftex.def Info: VSM+AssoTop-10.png  used on input line 813.
+Package pdftex.def Info: VSM+AssoTop-10.png  used on input line 826.
 (pdftex.def)             Requested size: 516.0pt x 309.61777pt.
 
-Overfull \hbox (27.57985pt too wide) in paragraph at lines 799--817
+Overfull \hbox (27.57985pt too wide) in paragraph at lines 812--830
 [][] []
  []
 
 
-Overfull \hbox (27.57985pt too wide) in paragraph at lines 799--817
+Overfull \hbox (27.57985pt too wide) in paragraph at lines 812--830
 [] []
  []
 
 
-Overfull \hbox (27.57985pt too wide) in paragraph at lines 799--817
+Overfull \hbox (27.57985pt too wide) in paragraph at lines 812--830
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 799--817
+Underfull \hbox (badness 10000) in paragraph at lines 812--830
 
  []
 
 
-LaTeX Warning: Float too large for page by 336.98961pt on input line 820.
+LaTeX Warning: Float too large for page by 336.98961pt on input line 833.
 
 <VSM+AssoTop-MRR.png, id=43, 289.08pt x 173.448pt>
 File: VSM+AssoTop-MRR.png Graphic file (type png)
 <use VSM+AssoTop-MRR.png>
-Package pdftex.def Info: VSM+AssoTop-MRR.png  used on input line 823.
+Package pdftex.def Info: VSM+AssoTop-MRR.png  used on input line 836.
 (pdftex.def)             Requested size: 202.35461pt x 121.41277pt.
 <VSM+AssoTop-MAP.png, id=44, 289.08pt x 173.448pt>
 File: VSM+AssoTop-MAP.png Graphic file (type png)
 <use VSM+AssoTop-MAP.png>
-Package pdftex.def Info: VSM+AssoTop-MAP.png  used on input line 829.
+Package pdftex.def Info: VSM+AssoTop-MAP.png  used on input line 842.
 (pdftex.def)             Requested size: 202.35461pt x 121.41277pt.
 
-Overfull \hbox (0.95189pt too wide) in paragraph at lines 903--950
+Overfull \hbox (0.95189pt too wide) in paragraph at lines 916--963
  [][] 
  []
 
@@ -870,15 +925,15 @@ Overfull \hbox (0.95189pt too wide) in paragraph at lines 903--950
 <comapre-mrr.png, id=52, 437.38406pt x 246.1697pt>
 File: comapre-mrr.png Graphic file (type png)
 <use comapre-mrr.png>
-Package pdftex.def Info: comapre-mrr.png  used on input line 971.
+Package pdftex.def Info: comapre-mrr.png  used on input line 984.
 (pdftex.def)             Requested size: 240.56197pt x 135.39374pt.
 <compare-map-lsi-proposed.png, id=53, 433.62pt x 243.15843pt>
 File: compare-map-lsi-proposed.png Graphic file (type png)
 <use compare-map-lsi-proposed.png>
-Package pdftex.def Info: compare-map-lsi-proposed.png  used on input line 977.
+Package pdftex.def Info: compare-map-lsi-proposed.png  used on input line 990.
 (pdftex.def)             Requested size: 238.49173pt x 133.73755pt.
 
-Overfull \hbox (0.95204pt too wide) in paragraph at lines 1074--1115
+Overfull \hbox (0.95204pt too wide) in paragraph at lines 1087--1128
  [][] 
  []
 
@@ -887,65 +942,42 @@ re-map-lsi-proposed.png>]
 <Performance-rvsm+simi+co.png, id=59, 289.68225pt x 174.05025pt>
 File: Performance-rvsm+simi+co.png Graphic file (type png)
 <use Performance-rvsm+simi+co.png>
-Package pdftex.def Info: Performance-rvsm+simi+co.png  used on input line 1210.
+Package pdftex.def Info: Performance-rvsm+simi+co.png  used on input line 1223.
 
 (pdftex.def)             Requested size: 231.74611pt x 139.24037pt.
 <MRR-SWT-Zxing.png, id=60, 289.68225pt x 174.05025pt>
 File: MRR-SWT-Zxing.png Graphic file (type png)
 <use MRR-SWT-Zxing.png>
-Package pdftex.def Info: MRR-SWT-Zxing.png  used on input line 1225.
+Package pdftex.def Info: MRR-SWT-Zxing.png  used on input line 1238.
 (pdftex.def)             Requested size: 231.74611pt x 139.24037pt.
 <MAP-SWT-Zxing.png, id=61, 289.68225pt x 174.05025pt>
 File: MAP-SWT-Zxing.png Graphic file (type png)
 <use MAP-SWT-Zxing.png>
-Package pdftex.def Info: MAP-SWT-Zxing.png  used on input line 1232.
+Package pdftex.def Info: MAP-SWT-Zxing.png  used on input line 1245.
 (pdftex.def)             Requested size: 231.74611pt x 139.24037pt.
  [9 <./Performance-rvsm+simi+co.png> <./MRR-SWT-Zxing.png> <./MAP-SWT-Zxing.png
 >]
 <RankImprovement.png, id=65, 544.434pt x 285.4665pt>
 File: RankImprovement.png Graphic file (type png)
 <use RankImprovement.png>
-Package pdftex.def Info: RankImprovement.png  used on input line 1322.
+Package pdftex.def Info: RankImprovement.png  used on input line 1335.
 (pdftex.def)             Requested size: 244.99303pt x 128.45872pt.
 
-Underfull \hbox (badness 2486) in paragraph at lines 1327--1328
+Underfull \hbox (badness 2486) in paragraph at lines 1340--1341
 []\OT1/ptm/b/n/10 case #1 \OT1/ptm/m/n/10 Con-sider bug # 138283. The ti-tle of
  this
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1327--1328
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1341
 \OT1/ptm/m/n/10 bug is \OT1/ptm/m/it/10 [Key-Bind-ings] Ac-tion set with ac-cel
 -er-a-tor
  []
 
-
+[10 <./RankImprovement.png>] (SANER2019.bbl [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
- [10 <./RankImprovement.png>]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-
-Underfull \vbox (badness 1540) has occurred while \output is active []
-
-
-(SANER2019.bbl [11])
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -957,42 +989,38 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[12
-
-] (SANER2019.aux) ) 
+[12] (SANER2019.aux) ) 
 Here is how much of TeX's memory you used:
- 13484 strings out of 493290
- 244272 string characters out of 3126379
- 296697 words of memory out of 3000000
- 16902 multiletter control sequences out of 15000+200000
- 572147 words of font info for 100 fonts, out of 3000000 for 9000
+ 14485 strings out of 492973
+ 253731 string characters out of 3126692
+ 311128 words of memory out of 3000000
+ 18219 multiletter control sequences out of 15000+200000
+ 574213 words of font info for 102 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,16n,35p,10340b,300s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/MasudRahman/AppData/Local/Programs/MiKTeX 2.9/font
-s/enc/dvips/base/8r.enc}<C:/Users/MasudRahman/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/MasudRahman/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/Mas
-udRahman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb><C:/Users/MasudRahman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmmi5.pfb><C:/Users/MasudRahman/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/MasudRahman/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/MasudRahm
-an/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-C:/Users/MasudRahman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb><C:/Users/MasudRahman/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr5.pfb><C:/Users/MasudRahman/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/MasudRahman/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
-/MasudRahman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-msy7.pfb><C:/Users/MasudRahman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/symbols/msam10.pfb><C:/Users/MasudRahman/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/MasudRahman/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/MasudRahman/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Masud
-Rahman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb><C:/
-Users/MasudRahman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/zapfding/uz
-dr.pfb>
-Output written on SANER2019.pdf (12 pages, 515415 bytes).
+ 41i,16n,61p,1247b,300s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/e
+nc/dvips/base/8r.enc}<C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmex10.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/Mukta/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Mukta
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:
+/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mmi6.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmmi7.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Mukta/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Mukta/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Mu
+kta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy7.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/symbols/msam10.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/Mukta/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Mukta/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb><C:/Users/Mukta/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on SANER2019.pdf (12 pages, 516152 bytes).
 PDF statistics:
  132 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

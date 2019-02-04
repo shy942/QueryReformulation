@@ -512,7 +512,7 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		int total_test=3071;
+		int total_test=96;
 		double alpha=0.0;
 		for(int i=1;i<=total_test;i++)
 		{
@@ -541,7 +541,7 @@ public class BugLocalizationUsingNumbers {
 			
 			//For SWT/Zxing/AspectJ/Eclipse
 			int test=i;
-			String corpus="Eclipse";
+			String corpus="SWT";
 			String base="E:\\PhD\\Repo\\"+corpus+"\\"; 
 			//String base="E:\\PhD\\LSI\\Repo\\Zxing\\";
 			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers(base+"\\data\\FinalMap\\TokenSourceMapTrainset"+test+".txt",base+"\\data\\testset\\test"+test+".txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\data\\changeset-pointer\\ID-SourceFile.txt",base+"\\data\\ID-Keyword.txt");
@@ -555,7 +555,7 @@ public class BugLocalizationUsingNumbers {
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			=base+"\\data\\Results\\Jan22"+alpha+"-"+test+".txt";
+			=base+"\\data\\Results\\Feb03VSMandMe"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 			System.out.println(bugReportFolder);
@@ -602,14 +602,14 @@ public class BugLocalizationUsingNumbers {
 					
 					//MiscUtility.showResult(10,SortedBLresult );
 					
-					//HashMap<Integer,Double> sortedResultMyTool
+					HashMap<Integer,Double> sortedResultMyTool
 					//=obj.findBugForEachQueryCosineSimBased(queryID);
-					//=obj.ResultBasedOnTF(queryID);
+					=obj.ResultBasedOnTF(queryID);
 					
 					HashMap<Integer, Double> resultMap
 					//=sortedResultMyTool;
-					=SortedBLresult;
-					//=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
+					//=SortedBLresult;
+					=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
 				
 					String result=queryID+",";
 					int count=0;

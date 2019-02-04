@@ -151,15 +151,15 @@ Other related studies \cite{LukinsBL,Nguyen} adopt Latent Dirichlet Allocation (
 			\textbf{Ground Truth}\\
 			\hline
 			\hline
-			1 &  WorkingSetLabelProvider.java  &1.00  & \checkmark &WorkingSetLabelProvider.java & 0.60  & 0.25  & 0.85 & \checkmark \\
+			1 &  ToggleMemoryMonitorsAction.java  & 0.87  & \xmark &RenderingViewPane.java & 0.43  & 0.36  & 0.79 & \checkmark \\
 			\hline
-			2 & ImageFactory.java  & 0.80  & \xmark & WorkingSet.java & 0.35 & 0.35 & 0.70 &  \checkmark \\ 
+			2 & NewMemoryViewAction.java  & 0.80  & \checkmark & AddMemoryBlockAction.java & 0.39 & 0.39 & 0.78 &  \xmark \\ 
 			\hline
-			3 & WorkingSetMenuContributionItem.java &  0.76  & \xmark &IWorkingSet.java &0.45 &0.22 & 0.67 &  \checkmark\\
+			3 & AddMemoryRenderingContextAction.java &  0.75  & \xmark &ToggleMemoryMonitorsAction.java &0.52 &0.24 & 0.76 &  \xmark\\
 			\hline
-			4 &  IWorkingSet.java &  0.75 & \checkmark & WorkingSetTypePage.java &0.38 & 0.25 & 0.63 &  \xmark\\
+			4 &  RemoveRenderingContextAction.java &  0.75 & \xmark & MemoryView.java &0.43 & 0.31 & 0.74 &  \checkmark\\
 			\hline
-			5 & ProjectImageRegistry.java  & 0.70  & \xmark & CommandImageService.java &0.30 &0.33 & 0.63 &  \xmark \\
+			5 & RemoveMemoryRenderingAction.java  & 0.73  & \xmark & RemoveMemoryRenderingAction.java &0.44 &0.29 & 0.73 &  \xmark \\
 			\hline
 			%			& 0.68 & IWorkingSetManagerTest.java & \xmark &0.31 & 0.29 & 0.60 & WorkbenchImages.java & \checkmark\\
 			%			\cline{2-9}
@@ -175,7 +175,7 @@ Other related studies \cite{LukinsBL,Nguyen} adopt Latent Dirichlet Allocation (
 	\centering
 \end{table*}
 \begin{table}[!tb]
-	\caption{A Bug Report (\#37026, eclipse.UI.platform)}
+	\caption{A Bug Report (\#102943, eclipse.UI.platform)}
 	\label{tab:BugInfo}
 	\vspace{-.4cm}
 	%\centering
@@ -185,14 +185,27 @@ Other related studies \cite{LukinsBL,Nguyen} adopt Latent Dirichlet Allocation (
 			\textbf{Field}  & \textbf{Content} \\
 			\hline
 			\hline
-			Title & [Working Sets] IWorkingSet.getImage should be  getImageDescriptor
+			Title & [Memory View] F1 help for Memory View does not work correctly
 			\\
 			\hline
 			Description &  
-			IWorkingSet.getImage returns an ImageDescriptor and should therefore be named 
-			getImageDescriptor.
-			This is new API in 2.1. Should consider deprecating getImage and creating 
-			getImageDescriptor.\\
+		To see the F1 Help for this view, you have to be monitoring memory and you have
+		to hit F1.
+		
+		Here's a scenario:
+		- launch debug session.
+		- hit F1 for any other view and the dynamic help view opens.
+		- click around to other views and the dynamic help view fills with help about
+		that view.
+		- click to the Memory view and this doesn't happen - the dynamic help will
+		contain the last help viewed, I think (which is just deceiving).
+		- to get the Memory view help, you have to monitor memory and then click inside
+		the view and then hit F1.
+		
+		I think that even after monitoring memory and hitting F1, the behaviour is still
+		a little wrong - if you click away from the view and then click back to it, you
+		still have to actually hit F1 to see the help. This is not the case for any
+		other view that I've played with.\\
 			\hline
 		\end{tabular}
 	\end{center}

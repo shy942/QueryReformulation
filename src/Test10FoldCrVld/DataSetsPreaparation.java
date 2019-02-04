@@ -37,20 +37,20 @@ public class DataSetsPreaparation {
 		//For MAc
 		//DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","/Users/user/Documents/Ph.D/2018/Data/ProcessedBugData/");
 		//For Windows
-	    String corpus="Eclipse";
+	    String corpus="SWT";
 		String base="E:PhD\\Repo\\"+corpus;
 		//Dont do this now
 		//new DataSetsPreaparation().creatAllbugs(base+"\\BugData3071\\",base+"\\data\\allBug.txt");
 		//new DataSetsPreaparation(base+"\\data\\allBug.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData1KB\\",base).DataPreparation(base+"\\data\\allBug.txt",base+"\\data\\gitInfoEclipse.txt",base+"\\data\\bugIDs.txt",base+"\\BugData1KB\\");
 		
-		DataSetsPreaparation obj=new DataSetsPreaparation(base+"\\data\\bugIDs.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData3071\\", base);
+		DataSetsPreaparation obj=new DataSetsPreaparation(base+"\\data\\bugIDs.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData\\", base);
 		
 		
 		
 		
 		obj.bugContentHM=obj.LoadBugData();
-		ArrayList<String> foldList=obj.FoldPreparation(3071);
-		obj.TrainAndTestSetPrep(foldList,3071);
+		ArrayList<String> foldList=obj.FoldPreparation(96);
+		obj.TrainAndTestSetPrep(foldList,96);
 	}
       
 	private void creatAllbugs(String bugFolder, String outFile) {

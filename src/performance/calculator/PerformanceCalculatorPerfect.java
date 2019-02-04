@@ -40,7 +40,7 @@ public class PerformanceCalculatorPerfect {
 		// TODO Auto-generated method stub
 		
 		//new PerformanceCalculatorPerfect().getSingleResult("");
-		new PerformanceCalculatorPerfect().getAvgPerformance(98, 0.4, "VSMandMe");
+		new PerformanceCalculatorPerfect().getAvgPerformance(96, 0.2, "VSMandMe");
 		//new PerformanceCalculatorPerfect().getAvgPerformance(1, 0, "VSMandMe");
 	}
 
@@ -62,7 +62,7 @@ public class PerformanceCalculatorPerfect {
 			corpus="SWT";
 			
 			 base="E:\\PhD\\Repo\\"+corpus; 
-			 obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfoAll"+corpus+".txt",base+"\\data\\Results/"+"/Jan17"+baseNamePart+alpha+"-"+test+".txt");		
+			 obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfoAll"+corpus+".txt",base+"\\data\\Results/"+"/Feb03"+baseNamePart+alpha+"-"+test+".txt");		
 			 //obj=new PerformanceCalculatorPerfect(base+"\\gitInfo"+corpus+"SingleFile.txt","E:\\PhD\\LSI\\Repo\\"+corpus+"\\data\\Results\\"+test+".txt");     
 			//PerformanceCalculatorPerfect 
 			//obj=new PerformanceCalculatorPerfect("E:/PhD/Repo/"+corpus+"/data/gitInfo1KB"+corpus+".txt","E:/BugLocator/output/"+corpus+"outputJan04-9.txt");	
