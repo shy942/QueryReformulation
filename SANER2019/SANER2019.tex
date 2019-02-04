@@ -3,7 +3,7 @@
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
-\usepackage{algorithmicx}
+%\usepackage{algorithmicx}
 \usepackage{graphicx}
 \usepackage{syntax}
 \usepackage{textcomp}
@@ -19,6 +19,22 @@
 \newcommand{\xmark}{\ding{55}}%
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+
+%switch case statement
+\newcommand{\SWITCH}[1]{\STATE \textbf{switch} (#1)}
+\newcommand{\ENDSWITCH}{\STATE \textbf{end switch}}
+\newcommand{\CASE}[1]{\STATE \textbf{case} #1\textbf{:} \begin{ALC@g}}
+	\newcommand{\ENDCASE}{\end{ALC@g}}
+\newcommand{\CASELINE}[1]{\STATE \textbf{case} #1\textbf{:} }
+\newcommand{\DEFAULT}{\STATE \textbf{default:} \begin{ALC@g}}
+	\newcommand{\ENDDEFAULT}{\end{ALC@g}}
+\newcommand{\DEFAULTLINE}[1]{\STATE \textbf{default:} }
+%switch case statement
+\let\footnotesize\scriptsize
+
+\algnewcommand{\LineComment}[1]{\State \(\triangleright\) #1}
+\algdef{SE}[DOWHILE]{Do}{doWhile}{\algorithmicdo}[1]{\algorithmicwhile\ #1}%
 
 
 \usepackage{expl3}
@@ -190,9 +206,7 @@ Other related studies \cite{LukinsBL,Nguyen} adopt Latent Dirichlet Allocation (
 			\hline
 			Description &  
 		To see the F1 Help for this view, you have to be monitoring memory and you have
-		to hit F1.
-		
-		Here's a scenario:
+		to hit F1. Here's a scenario:
 		- launch debug session.
 		- hit F1 for any other view and the dynamic help view opens.
 		- click around to other views and the dynamic help view fills with help about
@@ -201,7 +215,6 @@ Other related studies \cite{LukinsBL,Nguyen} adopt Latent Dirichlet Allocation (
 		contain the last help viewed, I think (which is just deceiving).
 		- to get the Memory view help, you have to monitor memory and then click inside
 		the view and then hit F1.
-		
 		I think that even after monitoring memory and hitting F1, the behaviour is still
 		a little wrong - if you click away from the view and then click back to it, you
 		still have to actually hit F1 to see the help. This is not the case for any
@@ -213,8 +226,8 @@ Other related studies \cite{LukinsBL,Nguyen} adopt Latent Dirichlet Allocation (
 \end{table}
 
 
-In this paper, we propose a bug localization approach namely BLuAMIR that not only considers \emph{lexical similarity} between a bug report (the query) and the source code but also captures \emph{implicit association} between them from the bug fixing history. First, we determine the lexical similarity between each source document and the query using revised Vector Space Model (rVSM) \cite{Jian}.
-Second, we construct association maps between keywords of previously fixed bug reports and their corresponding changed documents using a bipartite graph. Third, we prioritize such source documents that are associated with the query keywords in these maps. Then, we rank the source documents based on their \emph{lexical} and \emph{association scores}.
+In this paper, we propose a bug localization approach namely BLuAMIR that not only considers \emph{lexical similarity} between a bug report (the query) and the source code but also captures \emph{implicit association} between them from the bug fixing history. First, we determine the lexical similarity between each source document and the query using Vector Space Model (VSM) \cite{Jian}.
+Second, we construct association maps between keywords of previously fixed bug reports and their corresponding changed documents using a bipartite graph. Third, we prioritize such source documents that are associated with the keywords (from query at hand) in these maps. Then, we rank the source documents based on their \emph{lexical} and \emph{association scores}.
 Thus, our approach caters for the vocabulary mismatch between a bug report (the query) and the source code with implicit association. 
 That is, unlike traditional IR-based approaches \cite{Jian,Saha}, it could return the buggy documents even if the query does not lexically match with the source code documents. Our approach also does not require the dimensionality reduction since we use a finite graph rather than a large sparse term-document matrix \cite{MarcusLSI,MarcusMaletic}.
 
@@ -245,10 +258,10 @@ Third, in terms of query-wise improvement, BLuAMIR improves result ranks of 41\%
 
 Thus, this paper makes the following contributions:
 \begin{itemize}
-	\item A novel technique that not only considers the lexical similarity between a bug report and the source code but also exploits the implicit associations between them for bug localization.
-	\item Comprehensive evaluation of the technique using three widely used performance metrics and a total of 3,431 bug reports from four systems --Eclipse, SWT, AspectJ and ZXing.
-	\item Comparison with not only two baselines \cite{vector-space-model,MarcusLSI} but also three state-of-the-art approaches -- BugScout \cite{Nguyen}, BugLocator \cite{Jian} and BLUiR \cite{Saha}.
-	\item Experimental meta data and our used dataset for either replication or third party reuse.
+	\item A novel technique that not only considers the lexical similarity between a bug report and the source code but also exploits their implicit associations through bug-fixing history for bug localization.
+	\item Comprehensive evaluation of the technique using three widely used performance metrics and a total of 3,431 bug reports from four subject systems --Eclipse, SWT, AspectJ and ZXing.
+	\item Comparison with not only two baselines \cite{vector-space-model,MarcusLSI} but also three state-of-the-art approaches -- BugScout \cite{Nguyen}, BugLocator \cite{Jian} and BLUiR \cite{Saha} with statistical tests.
+	\item Experimental meta data and our used dataset for  replication and third party reuse.
 \end{itemize}
 
 The rest of the paper is organized as follows. Section \ref{sec:motivatingexample} discusses a motivating example of our proposed approach, and Section \ref{sec:proposedmethod} presents proposed bug localization method for BLuAMIR, and Section \ref{sec:expANDdiss} focuses on the conducted experiments and experimental results, and Section \ref{sec:threats} identifies the possible threats to validity, and Section \ref{relatedwork}
@@ -274,28 +287,37 @@ This association map is created from keywords extracted from previously fixed bu
 	\caption{Proposed Schematic Diagram: (a) Construction of association map between bug report keywords and source documents and (b) Bug Localization Using VSM and association score}
 	\label{fig:systemDiagram}
 \end{figure*}
-\section{BLUAMIR: Proposed Method for Bug Localization} \label{sec:proposedmethod} 
+\section{BLuAMIR: Proposed Approach for Bug Localization} \label{sec:proposedmethod} 
 Figure \ref{fig:systemDiagram} shows the schematic diagram of our proposed approach.
 %Our proposed approach combine lexical similarity and co-occurence similarity measure.  \citet{Jian} proposed BugLocator based on two different similarity scores- one is rVSM score and the other one is Simi score. 
-First, we (a) create an association mapping where the inherent association between past bug reports and their changed documents are leveraged.
+First, we (a) construct an association map between the bug reports and their corresponding changed source documents with the help of bug-fixing history.
+%where the inherent association between past bug reports and their changed documents are leveraged.
 %In BLuAMIR, we follow two different approach for computing source code ranks.
-Then we (b) retrieve relevant ranked source code files based on two different scores - VSM and association.  
+Then we (b) retrieve buggy source code documents for a given query (bug report) by leveraging not only their lexical similarity but also their implicit associations derived from the association map above.   
+%based on two different scores - VSM and association.  
 %However, we have divided our approach into two different sections or parts- 1) calculate rVSM and Simi scores or VSM score and co-occurence measure and 2) combine all three or two scores in order to localize recommended buggy source files for a given newly reported bug. 
 %As we have combined two existing scores with our proposed word co-occirence score, 
-We discuss different parts of our proposed approach, BLuAMIR in the following sections.
+We discuss different parts of our proposed approach -- BLuAMIR -- in the following sections.
 
-\subsection{Association Mapping Database Construction}\label{sec:MapConstruction}
-We construct an association mapping database - between keywords extracted from previously fixed bug reports and source code links. 
-%The system diagram for Part I is given in Fig. \ref{fig:systemDiagram}(a).
-This mapping construction involves two steps.
-First we create association map using information contained in bug reports and commit logs. We collect title and description of each bug report. We extract keywords from each bug report after standard natural language preprocessing (i.e., punctuation removal, stop word removal). 
-%In this part, information are collected from bug report, version repository and source code repository. 
-From version repository, 
-%we have commit logs, where the developers commit for several changes in a software project. For example, when a bug report is fixed, the developer who fixed this bug also creates a commit log containing which type of change he had to made to resolve the bug associated with the location of the source code files where the change has made. So, if we analyze commit logs, 
-we retrieve source code files which have been changed in order to fix a given bug. %Here the idea is, we first extract keywords from bug report and corresponding buggy source code files information for the same bug report from commit log. Then
-It should be noted each commit establishes a direct relationship between its changed documents and the corresponding bug report. 
-Thus, the keywords from this bug report enjoy an implicit relationships with the changed source documents. 
-We construct an association map database by leveraging this connected relationship. Mapping each keyword can be linked to one or more source code files according to commit logs. Similarly, each source code file can be linked to one or more keywords. 
+\subsection{Construction of Association Map}\label{sec:MapConstruction}
+We construct an association map between keywords from previously fixed bug reports and their corresponding changed source documents.
+The map construction involves three steps.
+We not only show different steps of our map construction in Fig. \ref{fig:systemDiagram}-(a) but also provide the relevant pseudo-code in  Algorithm \ref{algo:map}. We discuss each of these steps as follows:
+
+%refer to both figure and algorithm in the texts. 
+
+
+First, we collect \emph{title} and \emph{description} of each bug report extracted from a subject system.  
+Then we perform standard natural language preprocessing, and remove punctuation marks, stop words and small words from them. Finally, we select a list of remaining keywords from each bug report. 
+Second, we consult with version control history of each system, and identify the bug-fixing commits using appropriate regular expressions \cite{bugid,Wang2}. We then retrieve the source documents 
+that were changed in order to fix each reported bug (i.e., bug report).
+%which have been changed in order to fix a given bug. %Here the idea is, we first extract keywords from bug report and corresponding buggy source code files information for the same bug report from commit log. Then
+It should be noted each bug-fixing commit establishes an inherent relationship between its changed documents and the target bug report. 
+Thus, the keywords from this bug report enjoy an implicit relationships with the changed source code documents. 
+Third, we leverage such implicit relationships and construct an association map by explicitly connecting keywords from each bug report and the corresponding changed source documents.
+%bug report keywords and the changed source documents.
+%database by leveraging this connected relationship. 
+Mapping each keyword can be linked to one or more source code files according to commit logs. Similarly, each source code file can be linked to one or more keywords. 
 Algorithm \ref{algo:map} shows pseudo-code for the construction of our mapping database. 
 We divide this into three steps as follows.  
 %This way we connect keywords and source code files to form an association map database named keyword-source code links. 
@@ -303,14 +325,14 @@ We divide this into three steps as follows.
 %This section can be further divided into several parts: keyword extraction from bug reports, source code information extraction from commit logs, keyword- source code linking. We also create an algorithm for creating association map database between bug report keywords into their buggy source files, which is given in Algorithm \ref{algo:map}. However, several steps of map database construction are discussed in the followings:
 
 \begin{algorithm}[!t]
-	\caption{Construction of Association Mapping Database}
+	\caption{Construction of Association Map}
 	\label{algo:map}
 	\begin{algorithmic}[1]
 		\Procedure{MapConstruction}{$BRC$, $CommitLogs$}
 		
-		\Comment{$BRC$: a collection of bug reports}
+		\LineComment{$BRC$: a collection of bug reports}
 		
-		\Comment{$CommitLogs$: a collection of commit messages}
+		\LineComment{$CommitLogs$: a collection of commit messages}
 		\State $MAP_{KS} \gets$ \{\}
 		\Comment{an empty association map}
 		%\Comment{creating adjacency map database from the bug reports collection}
@@ -413,9 +435,7 @@ At this point, we have pre-processed keywords from each bug report. We also have
 	\label{fig:BipartiteGraph}
 \end{figure}
 
-\textbf{A Bipartite Graph Example:}
-
-In mathematics, a bipartite graph is a graph in which the vertices can be put into two separate groups so that the only edges are between those two groups, and there are no edges between vertices within the same group. 
+\textbf{A Bipartite Graph Example:} In mathematics, a bipartite graph is a graph in which the vertices can be put into two separate groups so that the only edges are between those two groups, and there are no edges between vertices within the same group. 
 In our work, two groups correspond to keywords and codebase. Hence, nether two keywords nor two source files can be connected. There exist only one type of valid link, which can be established between a keyword and its corresponding sources. 
 We construct a bipartite graph for a bug report (ID 322401) on the Eclipse UI Platform. Table \ref{tab:BugInfo2} shows the \textit{title} and \textit{description} of the bug report. The bipartite graph is presented in Figure \ref{fig:BipartiteGraph}. Note, that ten unique keywords are extracted from the bug report (i.e., from title and description) and are connected through edges with their corresponding change codes (i.e., $S1$ represents 
 %org.eclipse.ui.internal.ide.
