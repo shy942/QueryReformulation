@@ -307,19 +307,20 @@ We not only show different steps of our map construction in Fig. \ref{fig:system
 %refer to both figure and algorithm in the texts. 
 
 
-First, we collect \emph{title} and \emph{description} of each bug report extracted from a subject system.  
-Then we perform standard natural language preprocessing, and remove punctuation marks, stop words and small words from them. Finally, we select a list of remaining keywords from each bug report. 
-Second, we consult with version control history of each system, and identify the bug-fixing commits using appropriate regular expressions \cite{bugid,Wang2}. We then retrieve the source documents 
-that were changed in order to fix each reported bug (i.e., bug report).
+\textbf{Keyword Extraction from Bug Reports:} First, we collect \emph{title} and \emph{description} of each bug report extracted from a subject system.  
+Then we perform standard natural language preprocessing, and remove punctuation marks, stop words and small words from them. Stop words contain very little semantic for a sentence. Stemming extracts the root of each of the word. We use this stop word list\footnote{{1}https://www.ranks.nl/stopwords} during stop word removal and Porter Stemming stemmer\footnote{{2}http://tartarus.org/martin/PorterStemmer/} for stemming. Finally, we select a list of remaining keywords from each bug report. 
+So, we create a mapping relationship between bug IDs and keywords contained in those bug reports, as described in Algorithm \ref{algo:map} line 5. We also construct another connected relationship between keywords and bug IDs, presented in
+line 6 of Algorithm \ref{algo:map}.
+
+% We then retrieve the source documents that were changed in order to fix each reported bug (i.e., bug report).
 %which have been changed in order to fix a given bug. %Here the idea is, we first extract keywords from bug report and corresponding buggy source code files information for the same bug report from commit log. Then
-It should be noted each bug-fixing commit establishes an inherent relationship between its changed documents and the target bug report. 
-Thus, the keywords from this bug report enjoy an implicit relationships with the changed source code documents. 
-Third, we leverage such implicit relationships and construct an association map by explicitly connecting keywords from each bug report and the corresponding changed source documents.
+
+
 %bug report keywords and the changed source documents.
 %database by leveraging this connected relationship. 
-Mapping each keyword can be linked to one or more source code files according to commit logs. Similarly, each source code file can be linked to one or more keywords. 
-Algorithm \ref{algo:map} shows pseudo-code for the construction of our mapping database. 
-We divide this into three steps as follows.  
+%Mapping each keyword can be linked to one or more source code files according to commit logs. Similarly, each source code file can be linked to one or more keywords. 
+%Algorithm \ref{algo:map} shows pseudo-code for the construction of our mapping database. 
+%We divide this into three steps as follows.  
 %This way we connect keywords and source code files to form an association map database named keyword-source code links. 
 
 %This section can be further divided into several parts: keyword extraction from bug reports, source code information extraction from commit logs, keyword- source code linking. We also create an algorithm for creating association map database between bug report keywords into their buggy source files, which is given in Algorithm \ref{algo:map}. However, several steps of map database construction are discussed in the followings:
@@ -383,13 +384,14 @@ We divide this into three steps as follows.
 
 
 
-\textbf{Keyword Extraction from Bug Reports:} We collect title and description from each fixed bug report from a collection of previously fixed bug reports.. We perform standard natural language pre-processing on the corpus such as stop word removal, splitting and stemming. Stop words contain very little semantic for a sentence. Stemming extracts the root of each of the word. We use this stop word list\footnote{{1}https://www.ranks.nl/stopwords} during stop word removal and Porter Stemming stemmer\footnote{{2}http://tartarus.org/martin/PorterStemmer/} for stemming. First we create a mapping relationship between bug IDs and keywords contained in those bug reports, as described in Algorithm \ref{algo:map} line 3. Second we also construct another connected relationship between keywords and bug IDs, presented in
-line 4 of Algorithm \ref{algo:map}.
+% We collect title and description from each fixed bug report from a collection of previously fixed bug reports.. We perform standard natural language pre-processing on the corpus such as stop word removal, splitting and stemming. Stop words contain very little semantic for a sentence. Stemming extracts the root of each of the word. We use this stop word list\footnote{{1}https://www.ranks.nl/stopwords} during stop word removal and Porter Stemming stemmer\footnote{{2}http://tartarus.org/martin/PorterStemmer/} for stemming. First we create a mapping relationship between bug IDs and keywords contained in those bug reports, as described in Algorithm \ref{algo:map} line 3. Second we also construct another connected relationship between keywords and bug IDs, presented in
+%line 4 of Algorithm \ref{algo:map}.
 
 %{\footnotesize \textsuperscript{1}http://tartarus.org/martin/PorterStemmer/}
 
 
 \textbf{Source Code Link Extraction from Commit Logs:}
+Second, we consult with version control history of each system, and identify the bug-fixing commits using appropriate regular expressions \cite{bugid,Wang2}.
 We go through all commit messages and identify those commits that contain keywords related to bug fix such as fix, fixed and so on.
 In  GitHub, we  note  that any commit that either solves a software bug or implements a feature request generally mentions the corresponding Issue ID
 in the very title of the commit.
@@ -397,14 +399,19 @@ We identify such commits from the commit history of each of the selected project
 \cite{Bachmann}. Then, we collect the changeset (i.e., list of changed files)
 for each of those commit operations, and develop solution set (i.e.,
 goldset) for the corresponding change tasks. Thus, for experiments, we collect not only the actual change requests from the reputed subject systems but also their solutions which were applied in practice by the developers \cite{SHaiduc}. We use several
-utility commands such as git, clone and log on GitHub for collecting those information. This step is done line 5 of Algotrithm \ref{algo:map}. 
+utility commands such as git, clone and log on GitHub for collecting those information. This step is done line 7 of Algotrithm \ref{algo:map}. 
 %Each of these commit messages presents other information such as the ID of bug report for which it was created and the links of the corresponding changed source code files. 
 %We then construct a linking relationship between each fixed bug report ID into their changed source code files, which is mentioned in line 4 of Algorithm \ref{algo:map}.
 
 \textbf{Keyword-Source Code Linking:}
-At this point, we have pre-processed keywords from each bug report. We also have a implied relationship between bug ID and buggy source code links. We construct the bipartite graph (i.e., discussed bellows) between keywords collected from a bug report and buggy source document links. Here, one or more keywords can be linked to a single buggy source code files links. A source code file can be linked to one or more keywords, which is constructed from lines 6-15 in Algorithm \ref{algo:map}.
+At this point, we have pre-processed keywords from each bug report. We also have a implied relationship between bug ID and buggy source code links.
+It should be noted each bug-fixing commit establishes an inherent relationship between its changed documents and the target bug report. 
+Thus, the keywords from this bug report enjoy an implicit relationships with the changed source code documents.
+Third, we leverage such implicit relationships and construct the bipartite graph (i.e., discussed bellows) by explicitly connecting keywords from each bug report and the corresponding changed source documents.
+%We construct the bipartite graph (i.e., discussed bellows) between keywords collected from a bug report and buggy source document links.
+Here, one or more keywords can be linked to a single buggy source code files links. A source code file can be linked to one or more keywords, which is constructed from lines 8-15 in Algorithm \ref{algo:map}.
 
-
+\textbf{A Bipartite Graph Example:} In mathematics, a bipartite graph is a graph in which the vertices can be put into two separate groups so that the only edges are between those two groups, and there are no edges between vertices within the same group. 
 \begin{table}[htbp]
 	\caption{A Bug Report (\#322401, eclipse.UI.platform)}
 	\label{tab:BugInfo2}
@@ -435,7 +442,7 @@ At this point, we have pre-processed keywords from each bug report. We also have
 	\label{fig:BipartiteGraph}
 \end{figure}
 
-\textbf{A Bipartite Graph Example:} In mathematics, a bipartite graph is a graph in which the vertices can be put into two separate groups so that the only edges are between those two groups, and there are no edges between vertices within the same group. 
+
 In our work, two groups correspond to keywords and codebase. Hence, nether two keywords nor two source files can be connected. There exist only one type of valid link, which can be established between a keyword and its corresponding sources. 
 We construct a bipartite graph for a bug report (ID 322401) on the Eclipse UI Platform. Table \ref{tab:BugInfo2} shows the \textit{title} and \textit{description} of the bug report. The bipartite graph is presented in Figure \ref{fig:BipartiteGraph}. Note, that ten unique keywords are extracted from the bug report (i.e., from title and description) and are connected through edges with their corresponding change codes (i.e., $S1$ represents 
 %org.eclipse.ui.internal.ide.

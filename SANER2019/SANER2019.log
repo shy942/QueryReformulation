@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  4 FEB 2019 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  4 FEB 2019 22:52
 entering extended mode
 **./SANER2019.tex
 (SANER2019.tex
@@ -795,94 +795,90 @@ Overfull \hbox (9.40695pt too wide) in paragraph at lines 286--287
  []
 
 [2]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 336.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 337.
 
 
 ("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 336.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 337.
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--364
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 [] $\OML/cmm/m/it/10 SF[] \OMS/cmsy/m/n/10  $ \OT1/ptm/m/n/10 getLinkedSourceFi
 les($\OML/cmm/m/it/10 MAP[]$\OT1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 367--368
+Underfull \hbox (badness 2318) in paragraph at lines 368--369
 [] $\OML/cmm/m/it/10 MAP\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 KB[]\OT1/cmr/m/n/10 ]
 \OML/cmm/m/it/10 :link \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 MAP\OT1/cmr/m/n/10 [
 \OML/cmm/m/it/10 KB[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :link \OT1/cmr/m/n/10 +
  []
 
-[3 <./SD-Feb04.png>]
-<BGraph2.png, id=26, 464.937pt x 398.08725pt>
+<BGraph2.png, id=19, 464.937pt x 398.08725pt>
 File: BGraph2.png Graphic file (type png)
 <use BGraph2.png>
-Package pdftex.def Info: BGraph2.png  used on input line 431.
+Package pdftex.def Info: BGraph2.png  used on input line 438.
 (pdftex.def)             Requested size: 246.41542pt x 210.98523pt.
-
-Overfull \hbox (4.22746pt too wide) in paragraph at lines 488--489
+[3 <./SD-Feb04.png>]
+Overfull \hbox (4.22746pt too wide) in paragraph at lines 495--496
 [] $\OML/cmm/m/it/10 SC[] \OMS/cmsy/m/n/10  $ \OT1/ptm/m/n/10 collectSCodeWithA
 ssocScore($\OML/cmm/m/it/10 Score[]$\OT1/ptm/m/n/10 ) 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4 <./BGraph2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 736--736
+[4 <./BGraph2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []\OT1/ptm/b/n/7 Project
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 736--736
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []\OT1/ptm/b/n/7 #Fixed
  []
 
 
-Overfull \hbox (2.64226pt too wide) in paragraph at lines 736--737
+Overfull \hbox (2.64226pt too wide) in paragraph at lines 743--744
 []\OT1/ptm/b/n/7 #Source
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 748--748
 []\OT1/ptm/m/n/7 Eclipse
  []
 
 
-Underfull \hbox (badness 5924) in paragraph at lines 741--741
+Underfull \hbox (badness 5924) in paragraph at lines 748--748
 []\OT1/ptm/m/n/7 An open de-vel-op-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
+Underfull \hbox (badness 10000) in paragraph at lines 748--748
 []\OT1/ptm/m/n/7 Oct 2004 -
  []
 
 
-Underfull \hbox (badness 4899) in paragraph at lines 742--742
+Underfull \hbox (badness 4899) in paragraph at lines 749--749
 []\OT1/ptm/m/n/7 SWT (V
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 743--743
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
 []\OT1/ptm/m/n/7 Aspect-oriented
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 743--743
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
 []\OT1/ptm/m/n/7 July 2002 -
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 744--744
+Underfull \hbox (badness 1521) in paragraph at lines 751--751
 []\OT1/ptm/m/n/7 A bar-code im-age pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 744--744
+Underfull \hbox (badness 10000) in paragraph at lines 751--751
 []\OT1/ptm/m/n/7 Mar 2010 -
  []
 
@@ -890,40 +886,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 744--744
 <VSM+AssoTop-1.png, id=38, 289.68225pt x 174.05025pt>
 File: VSM+AssoTop-1.png Graphic file (type png)
 <use VSM+AssoTop-1.png>
-Package pdftex.def Info: VSM+AssoTop-1.png  used on input line 834.
+Package pdftex.def Info: VSM+AssoTop-1.png  used on input line 841.
 (pdftex.def)             Requested size: 170.28094pt x 102.31161pt.
 <VSM+AssoTop-5.png, id=39, 289.08pt x 174.05025pt>
 File: VSM+AssoTop-5.png Graphic file (type png)
 <use VSM+AssoTop-5.png>
-Package pdftex.def Info: VSM+AssoTop-5.png  used on input line 840.
+Package pdftex.def Info: VSM+AssoTop-5.png  used on input line 847.
 (pdftex.def)             Requested size: 170.28094pt x 102.52142pt.
 <VSM+AssoTop-10.png, id=40, 289.08pt x 173.448pt>
 File: VSM+AssoTop-10.png Graphic file (type png)
 <use VSM+AssoTop-10.png>
-Package pdftex.def Info: VSM+AssoTop-10.png  used on input line 846.
+Package pdftex.def Info: VSM+AssoTop-10.png  used on input line 853.
 (pdftex.def)             Requested size: 170.28094pt x 102.16669pt.
 
-Overfull \hbox (4.04266pt too wide) in paragraph at lines 833--850
+Overfull \hbox (4.04266pt too wide) in paragraph at lines 840--857
 [][][]  [][]  [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 833--850
+Underfull \hbox (badness 10000) in paragraph at lines 840--857
 
  []
 
 <VSM+AssoTop-MRR.png, id=41, 289.08pt x 173.448pt>
 File: VSM+AssoTop-MRR.png Graphic file (type png)
 <use VSM+AssoTop-MRR.png>
-Package pdftex.def Info: VSM+AssoTop-MRR.png  used on input line 856.
+Package pdftex.def Info: VSM+AssoTop-MRR.png  used on input line 863.
 (pdftex.def)             Requested size: 202.35461pt x 121.41277pt.
 <VSM+AssoTop-MAP.png, id=42, 289.08pt x 173.448pt>
 File: VSM+AssoTop-MAP.png Graphic file (type png)
 <use VSM+AssoTop-MAP.png>
-Package pdftex.def Info: VSM+AssoTop-MAP.png  used on input line 862.
+Package pdftex.def Info: VSM+AssoTop-MAP.png  used on input line 869.
 (pdftex.def)             Requested size: 202.35461pt x 121.41277pt.
 
-Overfull \hbox (0.94643pt too wide) in paragraph at lines 938--985
+Overfull \hbox (0.94643pt too wide) in paragraph at lines 945--992
  [][] 
  []
 
@@ -931,60 +927,58 @@ Overfull \hbox (0.94643pt too wide) in paragraph at lines 938--985
 <comapre-mrr.png, id=46, 437.38406pt x 246.1697pt>
 File: comapre-mrr.png Graphic file (type png)
 <use comapre-mrr.png>
-Package pdftex.def Info: comapre-mrr.png  used on input line 1080.
+Package pdftex.def Info: comapre-mrr.png  used on input line 1087.
 (pdftex.def)             Requested size: 240.56197pt x 135.39374pt.
 <compare-map-lsi-proposed.png, id=47, 433.62pt x 243.15843pt>
 File: compare-map-lsi-proposed.png Graphic file (type png)
 <use compare-map-lsi-proposed.png>
-Package pdftex.def Info: compare-map-lsi-proposed.png  used on input line 1086.
+Package pdftex.def Info: compare-map-lsi-proposed.png  used on input line 1093.
 
 (pdftex.def)             Requested size: 238.49173pt x 133.73755pt.
- [7 <./VSM+AssoTop-1.png> <./VSM+AssoTop-5.png> <./VSM+AssoTop-10.png> <./VSM+A
-ssoTop-MRR.png> <./VSM+AssoTop-MAP.png>]
-Overfull \hbox (0.94757pt too wide) in paragraph at lines 1108--1149
+
+Overfull \hbox (0.94757pt too wide) in paragraph at lines 1115--1156
  [][] 
  []
 
+[7 <./VSM+AssoTop-1.png> <./VSM+AssoTop-5.png> <./VSM+AssoTop-10.png> <./VSM+As
+soTop-MRR.png> <./VSM+AssoTop-MAP.png>]
 <Performance-rvsm+simi+co.png, id=52, 289.68225pt x 174.05025pt>
 File: Performance-rvsm+simi+co.png Graphic file (type png)
 <use Performance-rvsm+simi+co.png>
-Package pdftex.def Info: Performance-rvsm+simi+co.png  used on input line 1244.
+Package pdftex.def Info: Performance-rvsm+simi+co.png  used on input line 1251.
 
 (pdftex.def)             Requested size: 231.74611pt x 139.24037pt.
 <MRR-SWT-Zxing.png, id=53, 289.68225pt x 174.05025pt>
 File: MRR-SWT-Zxing.png Graphic file (type png)
 <use MRR-SWT-Zxing.png>
-Package pdftex.def Info: MRR-SWT-Zxing.png  used on input line 1259.
+Package pdftex.def Info: MRR-SWT-Zxing.png  used on input line 1266.
 (pdftex.def)             Requested size: 231.74611pt x 139.24037pt.
 <MAP-SWT-Zxing.png, id=54, 289.68225pt x 174.05025pt>
 File: MAP-SWT-Zxing.png Graphic file (type png)
 <use MAP-SWT-Zxing.png>
-Package pdftex.def Info: MAP-SWT-Zxing.png  used on input line 1266.
+Package pdftex.def Info: MAP-SWT-Zxing.png  used on input line 1273.
 (pdftex.def)             Requested size: 231.74611pt x 139.24037pt.
-[8 <./comapre-mrr.png> <./compare-map-lsi-proposed.png>]
+ [8 <./comapre-mrr.png> <./compare-map-lsi-proposed.png> <./Performance-rvsm+si
+mi+co.png>]
 <RankImprovement.png, id=60, 544.434pt x 285.4665pt>
 File: RankImprovement.png Graphic file (type png)
 <use RankImprovement.png>
-Package pdftex.def Info: RankImprovement.png  used on input line 1356.
+Package pdftex.def Info: RankImprovement.png  used on input line 1363.
 (pdftex.def)             Requested size: 244.99303pt x 128.45872pt.
 
-Underfull \hbox (badness 2486) in paragraph at lines 1361--1362
+Underfull \hbox (badness 2486) in paragraph at lines 1368--1369
 []\OT1/ptm/b/n/10 case #1 \OT1/ptm/m/n/10 Con-sider bug # 138283. The ti-tle of
  this
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1361--1362
+Underfull \hbox (badness 10000) in paragraph at lines 1368--1369
 \OT1/ptm/m/n/10 bug is \OT1/ptm/m/it/10 [Key-Bind-ings] Ac-tion set with ac-cel
 -er-a-tor
  []
 
-[9 <./Performance-rvsm+simi+co.png> <./MRR-SWT-Zxing.png> <./MAP-SWT-Zxing.png>
- <./RankImprovement.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10]
-(SANER2019.bbl)
+[9 <./MRR-SWT-Zxing.png> <./MAP-SWT-Zxing.png> <./RankImprovement.png>]
+[10] (SANER2019.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1000,7 +994,7 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  14492 strings out of 492973
  253832 string characters out of 3126692
- 303391 words of memory out of 3000000
+ 309391 words of memory out of 3000000
  18233 multiletter control sequences out of 15000+200000
  570606 words of font info for 89 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1025,7 +1019,7 @@ es/utmbi8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ur
 w/times/utmr8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/urw/times/utmri8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/urw/zapfding/uzdr.pfb>
-Output written on SANER2019.pdf (11 pages, 517328 bytes).
+Output written on SANER2019.pdf (11 pages, 516905 bytes).
 PDF statistics:
  121 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
