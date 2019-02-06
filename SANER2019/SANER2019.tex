@@ -178,7 +178,7 @@ Other related studies \cite{LukinsBL,Nguyen} adopt Latent Dirichlet Allocation (
 			\hline
 			3 & WorkingSetMenuContributionItem.java &  0.76  & \xmark &IWorkingSet.java &0.45 &0.22 & 0.67 &  \checkmark\\
 			\hline
-			4 &  IWorkingSet.java &  0.75 & \xmark & WorkingSetTypePage.java &0.38 & 0.25 & 0.63 &  \xmark\\
+			4 &  IWorkingSet.java &  0.75 & \checkmark & WorkingSetTypePage.java &0.38 & 0.25 & 0.63 &  \xmark\\
 			\hline
 			5 & ProjectImageRegistry.java  & 0.70  & \xmark & CommandImageService.java &0.30 &0.33 & 0.63 &  \xmark \\
 			\hline
@@ -227,7 +227,7 @@ Other related studies \cite{LukinsBL,Nguyen} adopt Latent Dirichlet Allocation (
 \end{table}
 
 
-In this paper, we propose a bug localization approach namely BLuAMIR that not only considers \emph{lexical similarity} between a bug report (the query) and the source code but also captures \emph{implicit association} between them from the bug fixing history. First, we determine the lexical similarity between each source document and the query using Vector Space Model (VSM) \cite{Jian}.
+In this paper, we propose a bug localization approach namely BLuAMIR that not only considers \emph{lexical similarity} between a bug report (the query) and the source code but also captures \emph{implicit association} between them from the bug fixing history. First, we determine the lexical similarity between each source document and the query using Vector Space Model (VSM).
 Second, we construct association maps between keywords of previously fixed bug reports and their corresponding changed documents using a bipartite graph. Third, we prioritize such source documents that are associated with the keywords (from query at hand) in these maps. Then, we rank the source documents based on their \emph{lexical} and \emph{association scores}.
 Thus, our approach caters for the vocabulary mismatch between a bug report (the query) and the source code with implicit association. 
 That is, unlike traditional IR-based approaches \cite{Jian,Saha}, it could return the buggy documents even if the query does not lexically match with the source code documents. Our approach also does not require the dimensionality reduction since we use a finite graph rather than a large sparse term-document matrix \cite{MarcusLSI,MarcusMaletic}.
@@ -994,8 +994,8 @@ To answer RQ1, we compare the performance of our proposed bug localization appro
  
 
 \textbf{VSM vs BLuAMIR}
-In our proposed approach, we combine VSM score and association scores in order to produce a ranked result. We compare the performance of baseline VSM technique and our proposed combined approach on Eclipse dataset (i.e., 3071 bug reports). This performance comparison can assist us to investigate whether adding association score with VSM score can improve the bug localization performance or not. The comparison is presented in table \ref{tab:Performance2}. We also use a 10-fold cross validation i.e., divide all 3071 bug reports into-10 fold and perform train on total 9 folds and test on the rest fold. For 10-fold validated Eclipse codebase, we compute Top-1, Top-5, Top-10 performance (presented in Fig \ref{fig:VSM+AssoTopK}) and MRR and MAP (shown in Fig \ref{fig:VSM+AssoTop-MRR} and Fig \ref{fig:VSM+AssoTop-MAP} respectively) for both approaches. In all cases our proposed approach outperforms VSM-based bug localization approach. The Top-10 performance of our tool is 63.30\% whereas it is 58.26\% for VSM.
-So. to answer our \textit{RQ1(a)}, we can go to Table \ref{tab:Performance2}, 63.30\% bugs are successfully located in Top-10 for Eclipse dataset by BLuAMIR. This result also suggest that association score improves the retrieval performance of BLuAMIR (\textit{RQ1(b)}). 
+In our proposed approach, we combine VSM score and association scores in order to produce a ranked result. We compare the performance of baseline VSM technique and our proposed combined approach on Eclipse dataset (i.e., 3071 bug reports). This performance comparison can assist us to investigate whether adding association score with VSM score can improve the bug localization performance or not. The comparison is presented in table \ref{tab:Performance2}. We also use a 10-fold cross validation i.e., divide all 3071 bug reports into-10 fold and perform train on total 9 folds and test on the rest fold. For 10-fold validated Eclipse codebase, we compute Hit@1, Hit@5, Hit@10 performance (presented in Fig \ref{fig:VSM+AssoTopK}) and MRR and MAP (shown in Fig \ref{fig:VSM+AssoTop-MRR} and Fig \ref{fig:VSM+AssoTop-MAP} respectively) for both approaches. In all cases our proposed approach outperforms VSM-based bug localization approach. The Hit@10 performance of our tool is 63.30\% whereas it is 58.26\% for VSM.
+So. to answer our \textit{RQ1(a)}, we can go to Table \ref{tab:Performance2}, 63.30\% bugs are successfully located in Hit@10 for Eclipse dataset by BLuAMIR. This result also suggest that association score improves the retrieval performance of BLuAMIR (\textit{RQ1(b)}). 
 
 
 We also compute Wilcoxon signed-rank test both for MRR and MAP. For MRR the {Z}-value is -2.8031. The {p}-value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 5. Therefore, the result is significant at p<=0.05.
@@ -1007,7 +1007,7 @@ Latent Semantic Indexing(LSI) is a VSM based method for indexing and representin
 
 At first we created a term-by-document matrix for corpus. Our corpus contains both the source code base and query bug reports. Then, we apply a Singular Value Decomposition (SVD) to construct a subspace (i.e., LSI subspace) \cite{SaltonMIR}. 
 Then, we compute similarity between documents by the cosine or inner product between the corresponding vectors collected from LSI subspace matrix. Typically, two documents are considered similar if their corresponding vectors in the VSM spcae point in the same direction.
-Note that we preprocess both source code and bug reports by spiliting each word, remove stop words etc. Then, we create the term-by-document matrix. However, finally we retrieve the rankled list of source codes for bug reports based on cosine similarity. We compare between replicated LSI and BLuAMIR for three datasets AspectJ, SWT and ZXing, which are depicted in Table \ref{tab:Performance1} 
+Note that we preprocess both source code and bug reports by spiliting each word, remove stop words etc. Then, we create the term-by-document matrix. However, finally we retrieve the rankled list of source codes for bug reports based on cosine similarity. We compare between replicated LSI and BLuAMIR for three datasets AspectJ, SWT and ZXing, which are depicted in Table \ref{tab:Performance1}.
 
 
 \begin{table}[htbp]
@@ -1082,7 +1082,7 @@ Note that we preprocess both source code and bug reports by spiliting each word,
 \end{table}
 
 
-We compare the performance of our proposed approach in terms of top 1, 5, 10 rank (depicted in Table \ref{tab:Performance2}) and MRR and MAP (shown in Box plot Fig \ref{box:LSI+AssoMRR} and Fig \ref{box:LSI+Asso-MAP} respectively). We can see that our proposed approach outperforms in all case. So, BLuAMIR successfully retrieve 66.39\%, 82.29\%, and 85.00\% bugs for AspectJ, SWT and ZXing datasets respectively in Top-10. These results provide the answer of our \textit{RQ1(a)}. The box plots in Fig \ref{box:LSI+AssoMRR} and Fig \ref{box:LSI+Asso-MAP} also demonstrate that BLuAMIR performs better than the baseline in each of the measures with higher medians.
+We compare the performance of our proposed approach in terms of Hit@k rank (depicted in Table \ref{tab:Performance2}) and MRR and MAP (shown in Box plot Fig \ref{box:LSI+AssoMRR} and Fig \ref{box:LSI+Asso-MAP} respectively). We can see that our proposed approach outperforms in all case. So, BLuAMIR successfully retrieve 66.39\%, 82.29\%, and 85.00\% bugs for AspectJ, SWT and ZXing datasets respectively in Hit@10. These results provide the answer of our \textit{RQ1(a)}. The box plots in Fig \ref{box:LSI+AssoMRR} and Fig \ref{box:LSI+Asso-MAP} also demonstrate that BLuAMIR performs better than the baseline in each of the measures with higher medians.
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.55]{comapre-mrr}
@@ -1101,17 +1101,10 @@ We compare the performance of our proposed approach in terms of top 1, 5, 10 ran
 %We also compute Wilcoxon signed-rank test both for MRR and MAP. For MRR the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 5. Therefore, the result is significant at p<=0.05.
 %For MAP - the {Z} -value is -2.8031. The {p} -value is 0.00512. The result is significant at p<=0.05. The W-value is 0. The critical value of W for N = 10 at p<=0.05 is 5. Therefore, the result is significant at p<=0.05.
 
-\subsection{Answering RQ4}\label{RQ4answer}
-To answer RQ4, we compare the performance of BLuAMIR with three state-of-the-art techniques - BugScout \cite{Nguyen}, BugLocator \cite{Jian} and BLUiR \cite{Saha} for the the same four dataset (i.e., Eclipse, AspectJ, and Zxing depicted in Table \ref{tab:performance3}). 
-%We replicated the LSI technique for bug localization, which is proposed by \citet{MarcusLSI} for traceability links.
-\citet{Nguyen} used two dataset as subject system (i.e., Eclipse and AspectJ) to evaluate BugScout. 
-\citet{Saha} interpreted the recall at top-1, top-5, and top-10 of BugScout \cite{Nguyen} results from a Figure presented in their paper \cite{Nguyen}. However, we could compare the performance of BLuAMIR with BugScout for Eclipse and AspectJ dataset for top-1, top-5 and top-10. Therefore, due to data unavailability, we could not compare that performance for MRR@10 and MAP@10 between BugScout and BLuAMIR.
-For Buglocator \cite{Jian} and BLUiR \cite{Saha}, we copied the results directly from their paper. We also collect the same bug reports and the same source code repository for both of them. So the results can be compared. 
-Our tool BLuAMIR outperforms BugScout \cite{Nguyen} for Eclipse, AspectJ, SWT and Zxing dataset in three performance metrics (i.e., Top-1, Top-5, and Top-10). 
-For SWT, we can see our tool BLuAMIR performs better for Top-1, Top-5, MRR and MAP. However, for Top-10 BLuAmir is comparable with Buglocator. On the other hand, for Zxing our tool BLuAMIR outperforms for top-5, top-10 and MAP. So we can say that our proposed tool BLuAMIR outperforms most cases and comparable for a few cases with state-of-the-art bug localization technique.
+
 \begin{table}[htbp]
 	\centering
-	\caption{Performance Comparison between LSI, BugLocator and BLuAMIR}
+	\caption{Performance Comparison between BugScout, BugLocator, BLUiR BLuAMIR}
 	\label{tab:performance3}
 	\resizebox{3.5in}{!}{%
 		\begin{tabular}{c|c|c|c|c|c|c}
@@ -1155,23 +1148,67 @@ For SWT, we can see our tool BLuAMIR performs better for Top-1, Top-5, MRR and M
 	\end{tabular}}
 	\centering
 \end{table}
-
+\subsection{Answering RQ4}\label{RQ4answer}
+To answer RQ4, we compare the performance of BLuAMIR with three state-of-the-art techniques - BugScout \cite{Nguyen}, BugLocator \cite{Jian} and BLUiR \cite{Saha} for the the same four dataset (i.e., Eclipse, AspectJ, and Zxing depicted in Table \ref{tab:performance3}). 
+%We replicated the LSI technique for bug localization, which is proposed by \citet{MarcusLSI} for traceability links.
+\citet{Nguyen} used two dataset as subject system (i.e., Eclipse and AspectJ) to evaluate BugScout. 
+\citet{Saha} interpreted the recall at Hit@1, Hit@5, and Hit@10 of BugScout \cite{Nguyen} results from a Figure presented in their paper \cite{Nguyen}. However, we could compare the performance of BLuAMIR with BugScout for Eclipse and AspectJ dataset for Hit@k. Therefore, due to data unavailability, we could not compare that performance for MRR@10 and MAP@10 between BugScout and BLuAMIR.
+For Buglocator \cite{Jian} and BLUiR \cite{Saha}, we copied the results directly from their paper. We also collect the same bug reports and the same source code repository for both of them. So the results can be compared. 
+Our tool BLuAMIR outperforms both BugScout \cite{Nguyen} and BugLocator \cite{Jian} consistently for Eclipse, AspectJ, SWT and Zxing dataset in three performance metrics (i.e., Hit@1, Hit@5 and Hit@10). 
+Moreover, BLuAMIR can localize bugs with 27\% higher reciprocal ranks (i.e., MRR) and 32\% higher precision (i.e., MAP) than BugLocator \cite{Jian}.  
+For AspectJ and SWT dataset, we can see our tool BLuAMIR outperforms BLUiR \cite{Saha} for Hit@1, Hit@5, Hit@10 and MRR@10. However, though BLuAMIR shows higher precision (i.e., MAP) than BLUiR \cite{Saha} for Zxing dataset, this also shows comparable precision with BLUiR \cite{Saha} for AspectJ.
+For Eclipse dataset BLuAMIR produce better results than BLUiR \cite{Saha} for Hit@5 and Hit@10 retrieval, but BLUiR \cite{Saha} shows better performance than BLuAMIR for Hit@1, MRR and MAP. On the other hand, for SWT dataset BLuAMIR shows comparable performance for Hit@5 and does not outperform for Hit@1, Hit@10, MRR and MAP. 
+So, we investigate the SWT dataset with several weighting function and the results are demonstrated in Table \ref{tab:SWTalpha}. We can see, if we lower the value of weighting function, which produces better result. Among these four weighting, when $alpha$=$0.2$, BLuAMIR shows better Hi@1, Hit@5 retrieval, higher Reciprocal Rate (i.e.,MRR@10) and higher Precision (ie.e, MAP@10). It is noted that higher accuracy for Hit@10 is found for $alpha$=$0.3$, which is comparable with BLUiR\cite{Saha}. However, right now, we can not say for which reason, BLuAMIR produces bad results for some cases, but we plan to keep this as our future study.    
+\begin{table}[htbp]
+	\centering
+	\caption{Performance of BLuAMIR on SWT dataset for different weighting values}
+	\label{tab:SWTalpha}
+	\resizebox{3.4in}{!}{%
+		\begin{tabular}{c|l|c|c|c|c}
+			\hline
+			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
+			{$\alpha$} 
+			
+			& \textbf{Top 1} \% 
+			& \textbf{Top 5} \% & 
+			\textbf{Top 10} \% &
+			\textbf{MRR}  & 
+			\textbf{MAP}  \\
+			\hline
+			{0.1} 
+			& 43.75                                            & 73.96                                            & 83.33                                                &   0.57  & 0.50    \\ \hline
+			{0.2} 
+			& 48.96                                               & 75.00                                              & 83.33                                             &   0.60  &   0.51  \\ 
+			\hline
+			{0.3} 
+			
+			&47.92 &
+			72.92 &
+			85.42 & 0.59 &
+			0.51     \\  
+			\hline
+			{0.4}      
+			& 45.93                                                 & 75.00                                                 & 82.29                                                  &   0.58  &  0.50    \\ 
+			\hline
+	\end{tabular}}
+	\centering
+\end{table}
+However, we can say that our proposed tool BLuAMIR outperforms most cases and comparable for a few cases with state-of-the-art bug localization technique.
 %\textbf{The Ranking Comparison Between Buglocator and BLuAMIR for SWT dataset}
 %We also perform a query wise comparison for SWT, which is presented in Fig (link).
 
 \subsection{Answering RQ2}\label{RQ2Answer}
 To answer RQ2, we investigate several weighting functions for our proposed approach, which are described as follows:
 
-\textbf{Weighting Function for VSM+Association Ranking:}
-We compute performance TopK accuracy, MRR and MAP for different weighting function such as $\alpha$ is 0.2, 0.3, 0.4. The results are presented in Table \ref{tab:alphaApproach1}. Here, it shows, more $\alpha$ produces better performance. That means if we increase the association scores with higher weighting function, the better performance is resulted in this proposed approach. 
-Adding association score increases the performance in this case also indicate that the association mapping is helping in locating buggy files. Therefore, vocabulary miss-match problem is resolved here (i.e., answering RQ2). 
-We also illustrate the impact of $\alpha$ for Top-1, Top-5 and Top-10 retrieval on Eclipse dataset for approach I. (VSM+Co-ocuurence Ranking) in Figure \ref{fig:PerformanceTopK}.
+\textbf{Weighting Function Comparison on Eclipse Dataset:}
+We compute performance Hit@k accuracy, MRR@10 and MAP@10 for different weighting function such as $\alpha$ is 0.2, 0.3, 0.4. The results are presented in Table \ref{tab:alphaApproach1}. Here, it shows, more $\alpha$ produces better performance. That means if we increase the association scores with higher weighting function, the better performance is resulted in this proposed approach. 
+Adding association score increases the performance in this case also indicate that the association mapping is helping in locating buggy files. 
 \begin{table}[htbp]
 	\centering
-	\caption{Performance of (VSM+Association) for different weighting factors}
+	\caption{Performance of BLuAMIR on Eclipse dataset for different weighting values}
 	\label{tab:alphaApproach1}
 	\resizebox{3.4in}{!}{%
-		\begin{tabular}{c|l|c|c|c|c|c}
+		\begin{tabular}{c|l|c|c|c|c}
 			\hline
 			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
 			{$\alpha$} 
@@ -1200,7 +1237,8 @@ We also illustrate the impact of $\alpha$ for Top-1, Top-5 and Top-10 retrieval 
 	\end{tabular}}
 	\centering
 \end{table}
-
+%Therefore, vocabulary miss-match problem is resolved here (i.e., answering RQ2). 
+However, we also illustrate the impact of weighting function $\alpha$ for Hit@1, Hit@5 and Hit@10 retrieval by BLuAMIR on Eclipse dataset in Figure \ref{fig:PerformanceTopK}.
 %\textbf{Weighting Function for rVSM+Simi+Association Ranking:}
 %We compute performance TopK accuracy, MRR and MAP for different weighting function such as  $\alpha$ is 0.2, 0.3, 0.4, $\beta$ is 0.2 nad $\gamma$ is 0.6, 0.5, 0.4 respectively. The results are presented in Table \ref{tab:alphaApproach2}. 
  %Here, it shows, $\alpha$ produces better performance. That means if we increase the association scores with higher weighting function, the better performance is resulted. This also prove our association rank is effective in producing better results.
@@ -1277,8 +1315,8 @@ We also illustrate the impact of $\alpha$ for Top-1, Top-5 and Top-10 retrieval 
 \end{figure}
 %\subsection{Impact of varying the value of alpha on BLuAMIR in terms of MAP and MRR}
 
-We also evaluate the impact of association score
-on bug localization performance, with different $\alpha$ values in terms of MAP and MRR for SWT and Zxing. At the beginning, the bug localization performance increases when the $\alpha$ value increases. However, after a certain point, further increase of the b value will decrease the performance. For example, Figure \ref{fig:MRR} and \ref{fig:MAP} show the bug localization performance (measured in terms of MRR and MAP) for the SWT and Zxing projects. When the $\alpha$ value increases from 0.1 to 0.4, both MRR and MAP values increases. Increasing $\alpha$ value further from 0.4 to 0.7 however leads to lower performance. Note that we obtain the best bug localization performance when $\alpha$ is between 0.3 and 0.4. As association score is based on the association map between keywords and source files, thus no direct matching of vocabulary is required. Therefore, the results obtained from the impact of $\alpha$ on bug localization performance (i.e., MAP and MRR) also suggest the vocabulary missmatch problem is resolved here.
+We evaluate the impact of association score
+on bug localization performance, with different $\alpha$ values in terms of MAP@10 and MRR@10 for SWT and Zxing datasets. At the beginning, the bug localization performance increases when the $\alpha$ value increases. However, after a certain point, further increase of the $alpha$ value will decrease the performance. For example, Figure \ref{fig:MRR} and \ref{fig:MAP} show the bug localization performance (measured in terms of MRR@10 and MAP@10) for the SWT and Zxing projects. When the $\alpha$ value increases from 0.1 to 0.4, both MRR and MAP values increases consistently. Increasing $\alpha$ value further from 0.4 to 0.7 however leads to lower performance. Note that we obtain the best bug localization performance when $\alpha$ is between 0.3 and 0.4. As association score is based on the association map between keywords and their associated source files, thus no direct matching of vocabulary is required. Therefore, the results obtained from the impact of $\alpha$ on bug localization performance (i.e., Hit@k, MRR@10 and MAP@10) also suggest that in the case of vocabulary missmatch issue, our association score can assist to improve the retrieval performance. This also answers RQ2.
 
 
 
@@ -1359,14 +1397,18 @@ BLuAMIR improves 41.05\% with having a mean of 13 and worsen 19.37\% with a mean
 
 Therefore, it is proven that BLuAMIR is showing improvement over baseline VSM and hence, we select a collection of Eclipse queries for a depth analysis.
 Second, we perform a query wise ranking comparison for BLuAMIR on 30 queries from Eclipse system, which is given in Figure \ref{fig:RankImprovement}. Here, X-axis represents query number and Y-axis represents the difference of best rank retried by VSM annd our proposed BLuAMIR. Among 25 query, 10 cases BLuAMIR performs better than VSM, 6 cases VSM retrieves better ranked results than BLuAMIR and 9 cases they both do the same raking retrieval. As most cases BLuMIR provides better ranked results, we closely investigate the ranked results for several bugs. 
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.45]{RankImprovement}
-	\caption{Quey wise comparison between baseline VSM and BLuAMIR for 30 Eclipse Query}
-	\label{fig:RankImprovement}
-\end{figure}
+%\begin{figure}
+%	\centering
+%	\includegraphics[scale=0.45]{RankImprovement}
+%	\caption{Quey wise comparison between baseline VSM and BLuAMIR for 30 Eclipse Query}
+%	\label{fig:RankImprovement}
+%\end{figure}
 
-\textbf{case \#1} Consider bug \# 138283. The title of this bug is \textit{[KeyBindings] Action set with accelerator causes conflict}. We have found 1 source code file (i.e., org.eclipse.ui.internal.WorkbenchPage.java) in rank \#4 from the obtained results collected from BLuAMIR. No gold set files are resulted from VSM technique in Top-10. However, this source code file is obtained as rank \# 20 in the ranked results collected by applying VSM approach. So, we go deeper into ranking score level. The VSM score for this file is 0.4935, which is pretty low than other files. Because of the length of this file is too large (i.e., contains more than 14K words) making the VSM score too low. On the other hand, in BLuAMIR, this file has association score 0f 1.00, which make total score of 0.69, put this on rank \#4. From this case study, it is clear that association mapping between fixed bug report keywords into their corresponding source files can overcome the noise associated with large files. Even if the query and recommended buggy files do not share same keyword but previously shared same concept can aid locating that query. 
+\textbf{case \#1} Consider bug \#95561. The title of this bug is \textit{[Perspectives] Workbench flashes when synchronizing}. We have found 1 source code file (i.e., org.eclipse.ui.internal.WorkbenchPage.java) in rank \#2 from the obtained results collected from BLuAMIR. No gold set files are resulted from VSM technique in Top-10. 
+However, this source code file is obtained as rank \#20 in the ranked results collected by applying VSM approach. 
+So, we go deeper into ranking score level. The VSM score for this file is 0.45, which is lower than other smaller files. 
+Because of the length of this file is too large (i.e., contains more than 14K words) making the VSM score too low. On the other hand, in BLuAMIR, this file has association score 0f 0.95, which make total score of 0.65 (i.e., 0.95*0.40+0.45*0.60), put this on rank \#2. From this case study, it is clear that association mapping between fixed bug report keywords into their corresponding source files can overcome the noise associated with large files. Even if the query and recommended buggy files do not share same keyword but previously shared same concept can aid locating that query. 
+We also noted that the ground truth associated with bug \#95561 contains three large files (i.e., Workbench.java, WorkbenchPage.java, and WorkbenchWindow.java), and all of them are too large (i.e., having sizes 26 KB, 41 KB and 32KB) to retrieve by any VSM-based technique. So, this kind of problem can be successfully eliminated by our proposed association score.
 
 %***Find some queries having vocabulary miss-match problem
 
@@ -1376,17 +1418,16 @@ Second, we perform a query wise ranking comparison for BLuAMIR on 30 queries fro
 \section{Threats To Validity}\label{sec:threats}
 This section discusses the validity and generalizability of our findings. In particular, we discuss Construct Validity, Internal Validity, and External Validity.
 
-\textbf{Internal Validity:} We used three artifacts of a software repository: bug Reports, source codes and version logs, which are generally well understood. Our evaluation uses three dataset - two of them collected from the same benchmark dataset of bug reports and source code shared by \citet{Jian}, and other is collected from an open source project. Bug reports provide crucial information for developers to fix the bugs. A “bad” bug report could cause a delay in bug fixing. Our proposed approach also relies on the quality of bug reports. If a bug report does not provide enough information, or provides misleading information, the performance of BLuAMIR is adversely affected.
+\textbf{Internal Validity:} We used three artifacts of a software repository: bug Reports, source codes and version logs, which are generally well understood. Our evaluation uses four dataset - all of them collected from the same benchmark dataset of bug reports and source code shared by \citet{Jian}. Bug reports provide crucial information for developers to fix the bugs. A “bad” bug report could cause a delay in bug fixing. Our proposed approach also relies on the quality of bug reports. If a bug report does not provide enough information, or provides misleading information, the performance of BLuAMIR is adversely affected.
 
 \textbf{External Validity:} 
 The nature of the data in open source projects may be different from those in projects developed by well-managed software organizations. We need to evaluate if our solution can be directly applied to commercial projects. We leave this as a future work. Then we will perform statistical tests to show that the improvement of our approach is statistically significant.
 
 \textbf{Construct Validity}
-In our experiment, we use three evaluation metrics, i.e., Top N rank, MAP and
-MRR, and one statistical test, i.e., Wilcoxon signed-rank test. These metrics have been widely used before to evaluate previous approaches \cite{Jian, Saha} and are well- known IR metrics. Thus, we argue that our research has strong construct validity.
+In our experiment, we use three evaluation metrics, i.e., Hit@k rank, MAP and MRR, and one statistical test, i.e., Wilcoxon signed-rank test. These metrics have been widely used before to evaluate previous approaches \cite{Jian, Saha} and are well- known IR metrics. Thus, we argue that our research has strong construct validity.
 
 \textbf{Reliability:}
-In our experiment section, we performed numerous experiments using various combinations of weighting functions to find the optimum parameters and the best accuracy of bug localization. The optimized $\alpha$, $\beta$, and $\gamma$ values are based on our experiments and are only for our proposed tool BLuAMIR. To automatically optimize control parameters for target projects, in the future we will expand our proposed approach using machine learning methods or generic algorithms.
+In our experiment section, we performed numerous experiments using various combinations of weighting functions to find the optimum parameters and the best accuracy of bug localization. The optimized $\alpha$ values are based on our experiments and are only for our proposed tool BLuAMIR. To automatically optimize control parameters for target projects, in the future we will expand our proposed approach using machine learning methods or generic algorithms.
 
 \section{Related Work}\label{relatedwork}
 There are many bug localization approaches proposed so far. They can be broadly categorized into two types - dynamic and static techniques. Generally, dynamic approaches can localize a bug much more precisely than static approaches. These techniques usually contrast the program spectra information (such as execution statistics) between passed and failed executions to compute the fault suspiciousness of individual program elements (such as statements, branches, and predicates), and rank these program elements by their fault suspiciousness. Developers may then locate faults by examining a list of program elements sorted by their suspiciousness. Some of the well known dynamic approaches are spectrum-based fault localization, e.g., \cite{Abreu,Jones,Lucia,SahaFault}, model-based fault localization, e.g., \cite{Feldman,Mayer}, dynamic slicing \cite{Zhang:2005}, delta debugging \cite{Zeller:2002}. 
@@ -1400,7 +1441,7 @@ However, LSI is rarely used in practice today due to errors in induced concepts 
 
 \citet{Sisman} propose a history-aware IR-based bug localization solution to achieve a better
 result. \citet{Jian} propose BugLocator, which leverages similarities among bug reports and uses refined vector space model to perform bug localization. \citet{Saha} build BLUiR that consider the structure of bug reports and source code files and employ structured retrieval to achieve a better result. \citet{Moreno} uses a text retrieval based technique and stack trace analysis to perform bug localization. To locate buggy files, they combines the textual similarity between a bug report and a code unit and the structural similarity between the stack trace and the code unit. Different from the existing IR-based bug localization approaches, \citet{Wang} propose AmaLgam, a new method for locating relevant buggy files that put together version history, similar report, and structure, to achieve better performance. Later \cite{Wang2} also propose AmaLgam+, which is a method for locating relevant buggy files that puts together fives sources of information i.e., version history, similar reports, structure, stack traces, and reporter information.
-In our proposed technique BLuAMIR, we use version history, similar report and association relationship.
+In our proposed technique BLuAMIR, we use three sources of information i.e., bug reports, source codes and version history.
 
 
 
@@ -1408,9 +1449,9 @@ In our proposed technique BLuAMIR, we use version history, similar report and as
 
 
 \section{Conclusion and Future Work} \label{sec:conclusionANDfuture}
-During software evolution of a system, a large number of bug reports are submitted. For a large software project, developers must may need to examine a large number of source code files in order to locate the buggy files responsible for a bug, which is a tedious and expensive work. In this paper, we propose BLuAMIR, a new method for locating relevant buggy files that combines historical data, similar report, and keyword-source association map to achieve a higher accuracy. We perform a large-scale experiments on four projects, namely Eclipse, SWT and ZXing to localize more than 3,000 bugs. Our experiment of those dataset show that our technique can locate buggy files with a Top-10 accuracy of 64.05\% and a mean reciprocal rank@10 of 0.31 and a mean precision average@10 of 37\%, which are highly promising. We also compare our technique with state-of-the-art IR-based bug localization technique i.e., BugLocator. This also confirms superiority of our technique.
+During software evolution of a system, a large number of bug reports are submitted. For a large software project, developers must may need to examine a large number of source code files in order to locate the buggy files responsible for a bug, which is a tedious and expensive work. In this paper, we propose BLuAMIR, a new bug localization technique not only based on lexical similarity but also an implicit association map between bug report keywords with their associated source codes. We perform a large-scale experiments on four projects, namely Eclipse, SWT, AspectJ and ZXing to localize more than 3,000 bugs. Our experiment of those dataset show that on average our technique can locate buggy files with a Top-10 accuracy of 74.06\% and a mean reciprocal rank@10 of 0.52 and a mean precision average@10 of 41\%, which are highly promising. We also compare our technique with three state-of-the-art IR-based bug localization techniques i.e., BugScout\cite{Nguyen}, BugLocator\cite{Jian} and BLUiR\cite{Saha}.  This also confirms superiority of our technique. Our technique can localize bugs with 6\%--54\% higher accuracy (i.e., Hit@5), 4\%--32\% higher precision (i.e., MAP) and 8\%--27\% higher reciprocal ranks (i.e., MRR) than these state-of-the-art approaches. This also confirms superiority of our proposed bug localization approach. 
 
-In the future, we will explore if several other bug related information such as bug report structure, source code structure, stack traces, reporter information can be integrated into our approach in order to improve bug localization performance. We would also like to reduce the threats to external validity further by applying our approach on more bug reports collected from other software systems.
+In the future, we will explore if several other bug related information such as bug report structure, source code structure, stack traces, reporter information, similar bug information can be integrated into our approach in order to improve bug localization performance. We would also like to reduce the threats to external validity further by applying our approach on more bug reports collected from other software systems.
 
 \bibliographystyle{plainnat}
 \scriptsize
