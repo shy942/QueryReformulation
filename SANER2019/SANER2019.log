@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.26)  6 FEB 2019 16:56
+=======
+<<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  5 FEB 2019 21:24
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.26)  6 FEB 2019 16:33
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
+>>>>>>> 4c5efdb2d7ce775a93f370004d95279ab21f87a2
 entering extended mode
 **./SANER2019.tex
 (SANER2019.tex
@@ -17,9 +25,7 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
 
-
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1pt
-m.fd"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -115,35 +121,39 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtranrubishbin=\box27
 )
 ** ATTENTION: Overriding command lockouts (line 2).
+<<<<<<< HEAD
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cite\cite.sty"
+=======
 (C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsm
-ath.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
+y"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amst
-ext.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.st
+y"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsg
-en.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen126
 ))
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsb
-sy.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen127
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amso
-pn.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count94
@@ -184,49 +194,53 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ams
-symb.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.s
+ty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ams
-fonts.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.
+sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\gra
-phicx.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\key
-val.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
+y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks20
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\gra
-phics.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\tri
-g.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg
-\graphics.cfg"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
+ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def
-\pdftex.def"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
+x.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
 )
+<<<<<<< HEAD
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mdwtools\syntax.st
+y"
+=======
 (C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\mdwtools\syntax.sty
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 Package: syntax 1996/05/17 1.07 Syntax typesetting (MDW)
 \grammarparsep=\skip47
 \grammarindent=\dimen137
@@ -239,8 +253,7 @@ Package: syntax 1996/05/17 1.07 Syntax typesetting (MDW)
 \sdcirclediam=\dimen139
 \sdindent=\dimen140
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcom
-p.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty"
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -254,11 +267,88 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
-
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.
-def"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+<<<<<<< HEAD
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
+))
+=======
 )
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 LaTeX Info: Redefining \oldstylenums on input line 334.
 Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
 Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
@@ -322,12 +412,17 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+<<<<<<< HEAD
+) ("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.st
+y"
+=======
 )
 (C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg
-\color.cfg"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color
+.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -341,9 +436,12 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
+<<<<<<< HEAD
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+=======
 (C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-
 
 Package natbib Warning: The `cite' package should not be used
 (natbib)                with natbib. Use option `sort' instead.
@@ -354,13 +452,17 @@ LaTeX Info: Redefining \cite on input line 694.
 LaTeX Info: Redefining \citenum on input line 708.
 \c@NAT@ctr=\count106
 )
+<<<<<<< HEAD
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorit
+hm.sty"
+=======
 (C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm
 .sty
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.
-sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count107
 \float@exts=\toks21
@@ -368,19 +470,27 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks22
 \@floatcapt=\box31
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.
-sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks23
 \c@algorithm=\count108
 )
+<<<<<<< HEAD
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algps
+eudocode.sty"
+Package: algpseudocode 
+
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algor
+ithmicx.sty"
+=======
 (C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algpseu
 docode.sty
 Package: algpseudocode 
 
 (C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algorit
 hmicx.sty
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
@@ -397,14 +507,22 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
+<<<<<<< HEAD
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.
+sty"
+=======
 ("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\mul
 tirow.sty"
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip58
 \multirow@cntb=\count116
 \multirow@dima=\skip59
 \bigstrutjot=\dimen141
 )
+<<<<<<< HEAD
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
+=======
 (C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\threeparttable\three
 parttable.sty
 Package: threeparttable 2003/06/13  v 3.0
@@ -412,19 +530,21 @@ Package: threeparttable 2003/06/13  v 3.0
 )
 ("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\pifon
 t.sty"
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
-
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\upzd.
-fd"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\upsy.
-fd"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
+<<<<<<< HEAD
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfigure\subfigur
+e.sty"
+=======
 ("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.
 sty"
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
@@ -434,6 +554,7 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \extratabsurround=\skip60
 \backup@length=\skip61
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip62
 \subfigcapskip=\skip63
@@ -449,6 +570,27 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
+<<<<<<< HEAD
+
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfigure\subfigur
+e.cfg")
+\subfig@top=\skip64
+\subfig@bottom=\skip65
+)
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty
+"
+Package: expl3 2018-06-14 L3 programming layer (loader) 
+
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3-cod
+e.tex"
+Package: expl3 2018-06-14 L3 programming layer (code)
+\c_max_int=\count122
+\l_tmpa_int=\count123
+\l_tmpb_int=\count124
+\g_tmpa_int=\count125
+\g_tmpb_int=\count126
+\g__kernel_prg_map_int=\count127
+=======
 ("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
 \subfig@top=\skip66
 \subfig@bottom=\skip67
@@ -466,6 +608,7 @@ Package: expl3 2017/11/14 L3 programming layer (code)
 \g_tmpb_int=\count125
 \g__intarray_font_int=\count126
 \g__prg_map_int=\count127
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 \c_log_iow=\count128
 \l_iow_line_count_int=\count129
 \l__iow_line_target_int=\count130
@@ -601,11 +744,18 @@ Package: expl3 2017/11/14 L3 programming layer (code)
 \l__coffin_scaled_total_height_dim=\dimen175
 \l__coffin_scaled_width_dim=\dimen176
 )
+<<<<<<< HEAD
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode
+.def"
+File: l3pdfmode.def 2018-06-14 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count272
+=======
 (C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3pdfmode.d
 ef
 File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count270
 \l__driver_tmp_box=\box48
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 )) (SANER2019.aux)
 \openout1 = `SANER2019.aux'.
 
@@ -624,15 +774,19 @@ LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 55.
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.
-fd"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 55.
 
 -- Lines per column: 56 (exact).
 
+<<<<<<< HEAD
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+ii"
+=======
 (C:\Users\MasudRahman\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count271
 \scratchdimen=\dimen177
@@ -646,40 +800,40 @@ LaTeX Font Info:    ... okay on input line 55.
 \makeMPintoPDFobject=\count276
 \everyMPtoPDFconversion=\toks26
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\eps
-topdf-base.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
+base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\i
-nfwarerr.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+rr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grf
-ext.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
+y"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\k
-vdefinekeys.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefin
+ekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\l
-txcmds.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvo
-ptions.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\k
-vsetkeys.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetke
+ys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\e
-texcmds.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmd
+s.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\i
-fluatex.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluate
+x.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -688,13 +842,19 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
+<<<<<<< HEAD
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexc
+mds.sty"
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+=======
 ("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\p
 dftexcmds.sty"
 Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 )
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\i
-fpdf.sty"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+ty"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -718,6 +878,14 @@ LaTeX Warning: No \author given.
 
 LaTeX Warning: No \author given.
 
+<<<<<<< HEAD
+LaTeX Font Info:    Try loading font information for U+msa on input line 193.
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 193.
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+=======
 LaTeX Font Info:    Try loading font information for U+msa on input line 195.
 
 ("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ums
@@ -728,6 +896,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 195.
 
 ("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ums
 b.fd"
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 195.
@@ -744,6 +913,10 @@ Overfull \hbox (4.31369pt too wide) in paragraph at lines 195--195
 []|\OT1/pcr/m/n/7 AbstractDecoratedTextEditor.java| 
  []
 
+<<<<<<< HEAD
+[1{C:/Users/Mukta/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+=======
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 
 Overfull \hbox (2.4599pt too wide) in paragraph at lines 195--195
 []|\OT1/pcr/m/n/7 SearchableEnvironmentRequestor.java| 
@@ -803,8 +976,7 @@ Package pdftex.def Info: SD6Trans.png  used on input line 291.
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 350.
 
 
-("C:\Users\MasudRahman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omspt
-m.fd"
+("C:\Users\Mukta\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
@@ -948,7 +1120,26 @@ Package pdftex.def Info: compare-map-lsi-proposed.png  used on input line 1098.
 
 (pdftex.def)             Requested size: 238.49173pt x 133.73755pt.
 
+<<<<<<< HEAD
 Overfull \hbox (0.95464pt too wide) in paragraph at lines 1113--1154
+=======
+<<<<<<< HEAD
+Overfull \hbox (0.94757pt too wide) in paragraph at lines 1103--1144
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./VSM+AssoTop-1.png> <./VSM+AssoTop-5.png> <./VSM+AssoTop-10.png> <./VSM+A
+ssoTop-MRR.png> <./VSM+AssoTop-MAP.png> <./comapre-mrr.png>]
+<Performance-rvsm+simi+co.png, id=55, 289.68225pt x 174.05025pt>
+File: Performance-rvsm+simi+co.png Graphic file (type png)
+<use Performance-rvsm+simi+co.png>
+Package pdftex.def Info: Performance-rvsm+simi+co.png  used on input line 1284.
+=======
+Overfull \hbox (0.95464pt too wide) in paragraph at lines 1137--1178
+>>>>>>> 4c5efdb2d7ce775a93f370004d95279ab21f87a2
  [][] 
  []
 
@@ -957,49 +1148,114 @@ soTop-MRR.png> <./VSM+AssoTop-MAP.png>]
 <Performance-rvsm+simi+co.png, id=56, 289.68225pt x 174.05025pt>
 File: Performance-rvsm+simi+co.png Graphic file (type png)
 <use Performance-rvsm+simi+co.png>
+<<<<<<< HEAD
 Package pdftex.def Info: Performance-rvsm+simi+co.png  used on input line 1294.
+=======
+Package pdftex.def Info: Performance-rvsm+simi+co.png  used on input line 1318.
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
+>>>>>>> 4c5efdb2d7ce775a93f370004d95279ab21f87a2
 
 (pdftex.def)             Requested size: 231.74611pt x 139.24037pt.
  [8 <./comapre-mrr.png> <./compare-map-lsi-proposed.png>]
 <MRR-SWT-Zxing.png, id=62, 289.68225pt x 174.05025pt>
 File: MRR-SWT-Zxing.png Graphic file (type png)
 <use MRR-SWT-Zxing.png>
+<<<<<<< HEAD
 Package pdftex.def Info: MRR-SWT-Zxing.png  used on input line 1309.
+=======
+<<<<<<< HEAD
+Package pdftex.def Info: MRR-SWT-Zxing.png  used on input line 1299.
+=======
+Package pdftex.def Info: MRR-SWT-Zxing.png  used on input line 1333.
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
+>>>>>>> 4c5efdb2d7ce775a93f370004d95279ab21f87a2
 (pdftex.def)             Requested size: 231.74611pt x 139.24037pt.
 <MAP-SWT-Zxing.png, id=63, 289.68225pt x 174.05025pt>
 File: MAP-SWT-Zxing.png Graphic file (type png)
 <use MAP-SWT-Zxing.png>
+<<<<<<< HEAD
 Package pdftex.def Info: MAP-SWT-Zxing.png  used on input line 1316.
+=======
+<<<<<<< HEAD
+Package pdftex.def Info: MAP-SWT-Zxing.png  used on input line 1306.
+=======
+Package pdftex.def Info: MAP-SWT-Zxing.png  used on input line 1340.
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
+>>>>>>> 4c5efdb2d7ce775a93f370004d95279ab21f87a2
 (pdftex.def)             Requested size: 231.74611pt x 139.24037pt.
 
 
 LaTeX Warning: Reference `fig:RankImprovement' on page 9 undefined on input lin
+<<<<<<< HEAD
 e 1403.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1411--1416
+=======
+<<<<<<< HEAD
+e 1393.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1401--1406
+=======
+e 1427.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1435--1440
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
+>>>>>>> 4c5efdb2d7ce775a93f370004d95279ab21f87a2
 []\OT1/ptm/b/n/10 case #1 \OT1/ptm/m/n/10 Con-sider bug #95561. The ti-tle of
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 1411--1416
+=======
+<<<<<<< HEAD
+Underfull \hbox (badness 10000) in paragraph at lines 1401--1406
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 1435--1440
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
+>>>>>>> 4c5efdb2d7ce775a93f370004d95279ab21f87a2
 \OT1/ptm/m/n/10 this bug is \OT1/ptm/m/it/10 [Per-spec-tives] Work-bench flashe
 s when
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 1596) in paragraph at lines 1411--1416
+=======
+<<<<<<< HEAD
+Underfull \hbox (badness 1596) in paragraph at lines 1401--1406
+=======
+Underfull \hbox (badness 1596) in paragraph at lines 1435--1440
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
+>>>>>>> 4c5efdb2d7ce775a93f370004d95279ab21f87a2
 \OT1/ptm/m/it/10 syn-chro-niz-ing\OT1/ptm/m/n/10 . We have found 1 source code 
 file (i.e.,
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 1939) in paragraph at lines 1411--1416
+=======
+<<<<<<< HEAD
+Underfull \hbox (badness 1939) in paragraph at lines 1401--1406
+=======
+Underfull \hbox (badness 1939) in paragraph at lines 1435--1440
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
+>>>>>>> 4c5efdb2d7ce775a93f370004d95279ab21f87a2
 \OT1/ptm/m/n/10 map-ping be-tween fixed bug re-port key-words into their
  []
 
 [9 <./Performance-rvsm+simi+co.png> <./MRR-SWT-Zxing.png> <./MAP-SWT-Zxing.png>
 ]
+<<<<<<< HEAD
+Underfull \vbox (badness 5316) has occurred while \output is active []
+
+ [10]
+(SANER2019.bbl
+=======
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no œ in font ptmr7t!
@@ -1019,6 +1275,7 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no  in font ptmr7t!
  [10] (SANER2019.bbl
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11])
@@ -1041,6 +1298,40 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
+ 14494 strings out of 492973
+ 253791 string characters out of 3126692
+ 308391 words of memory out of 3000000
+ 18233 multiletter control sequences out of 15000+200000
+ 571533 words of font info for 92 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,16n,61p,1373b,298s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
+}<C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmbx5.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmbx7.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Mukta/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/Mukta/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/M
+ukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmmi7.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Mukta/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Mukta/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Use
+rs/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/
+msam7.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/tim
+es/utmb8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
+/times/utmbi8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/urw/times/utmr8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/urw/times/utmri8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/urw/zapfding/uzdr.pfb>
+Output written on SANER2019.pdf (12 pages, 505402 bytes).
+PDF statistics:
+ 131 PDF objects out of 1000 (max. 8388607)
+=======
  13641 strings out of 493290
  246594 string characters out of 3126379
  294913 words of memory out of 3000000
@@ -1077,6 +1368,7 @@ ing/uzdr.pfb>
 Output written on SANER2019.pdf (12 pages, 575177 bytes).
 PDF statistics:
  139 PDF objects out of 1000 (max. 8388607)
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

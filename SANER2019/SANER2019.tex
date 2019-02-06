@@ -1408,11 +1408,11 @@ Second, we perform a query wise ranking comparison for BLuAMIR on 30 queries fro
 %	\label{fig:RankImprovement}
 %\end{figure}
 
-\textbf{case \#1} Consider bug \#95561. The title of this bug is \textit{[Perspectives] Workbench flashes when synchronizing}. We have found 1 source code file (i.e., org.eclipse.ui.internal.WorkbenchPage.java) in rank \#2 from the obtained results collected from BLuAMIR. No gold set files are resulted from VSM technique in Top-10. 
-However, this source code file is obtained as rank \#20 in the ranked results collected by applying VSM approach. 
+\textbf{case \#1} Consider bug \#95561. The title of this bug is \textit{[Perspectives] Workbench flashes when synchronizing}. We have found 1 source code file (i.e., org.eclipse.ui.internal.WorkbenchPage.java) in rank \#2 from the obtained results collected from BLuAMIR. No gold set files are resulted from VSM technique in Hit@10. 
+However, this source code file is obtained as rank \#30, \#26, and \#4 in the ranked results collected by applying BugLocator\cite{Jian}, basic VSM, and BLUiR\cite{Saha} respectively. 
 So, we go deeper into ranking score level. The VSM score for this file is 0.45, which is lower than other smaller files. 
 Because of the length of this file is too large (i.e., contains more than 14K words) making the VSM score too low. On the other hand, in BLuAMIR, this file has association score 0f 0.95, which make total score of 0.65 (i.e., 0.95*0.40+0.45*0.60), put this on rank \#2. From this case study, it is clear that association mapping between fixed bug report keywords into their corresponding source files can overcome the noise associated with large files. Even if the query and recommended buggy files do not share same keyword but previously shared same concept can aid locating that query. 
-We also noted that the ground truth associated with bug \#95561 contains three large files (i.e., Workbench.java, WorkbenchPage.java, and WorkbenchWindow.java), and all of them are too large (i.e., having sizes 26 KB, 41 KB and 32KB) to retrieve by any VSM-based technique. So, this kind of problem can be successfully eliminated by our proposed association score.
+We also noted that the ground truth associated with bug \#95561 contains three large files (i.e., Workbench.java, WorkbenchPage.java, and WorkbenchWindow.java), and all of them are too large (i.e., having sizes 26 KB, 41 KB and 32KB) to retrieve by any VSM-based technique. Note of them are retrieved by VSM technique in Hit@10. Therefore, this kind of large files problem can be successfully eliminated by our proposed association score.
 
 %***Find some queries having vocabulary miss-match problem
 

@@ -25,16 +25,17 @@ public class RankComparison {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String basePart="E:\\PhD\\Repo\\Eclipse";
+		String basePart="E:\\PhD\\Repo\\SWT";
 		RankComparison obj=new RankComparison();
-		for(int i=1;i<=3071;i++)
+		for(int i=1;i<=98;i++)
 		{
 		
 			HashMap<String, Long> baselineMap=obj.LoadRankMap(basePart+"\\data\\"+"bestRank"+i+".txt");
-			HashMap<String, Long> BLuAMIRmap=obj.LoadRankMap(basePart+"\\data\\"+"bestRankVSMandMe"+i+".txt");
-			//System.out.println(baselineMap.size());
-			//System.out.println(BLuAMIRmap.size());
+			HashMap<String, Long> BLuAMIRmap=obj.LoadRankMap(basePart+"\\data\\"+"bestRankBugLocator"+i+".txt");
+			System.out.println(baselineMap.size());
+			System.out.println(BLuAMIRmap.size());
 			obj.RanKComp(obj,baselineMap, BLuAMIRmap);
+			System.out.println(baselineMap+"   "+BLuAMIRmap);
 		}
 		System.out.println("Total: "+obj.totalBug+" Improvement: "+obj.totalImprovement+" Worsen: "+obj.totalWorsen+" Preserve: "+obj.totalPreserve);
 		System.out.println("Improvement Mean: "+FindMean(obj.improveList)+" min: "+FindMin(obj.improveList)+" max: "+FindMax(obj.improveList));

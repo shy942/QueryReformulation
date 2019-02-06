@@ -1,3 +1,27 @@
+<<<<<<< HEAD
+/LIB/
+/parameter/
+/BugLocator/
+/Gold/
+/Test10FoldCrVld/
+/adjacent/
+/bug/
+/changeset/
+/code/
+/config/
+/corpus/
+/file/
+/graph/
+/performance/
+/query/
+/source/
+/stemmer/
+/stopwords/
+/term/
+/text/
+/token/
+/utility/
+=======
 /BugLocator
 /Gold
 /LIB
@@ -21,3 +45,4 @@
 /text
 /token
 /utility
+>>>>>>> 7e1728cc5df34cb9cea68b99e485cc9083921498
