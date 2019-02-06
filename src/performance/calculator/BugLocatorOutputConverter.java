@@ -17,9 +17,9 @@ public class BugLocatorOutputConverter {
     
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        String corpus="Eclipse";
+        String corpus="SWT";
         String base="E:\\PhD\\Repo\\"+corpus; 
-        BugLocatorOutputConverter obj=new BugLocatorOutputConverter("E:/BugLocator/output/EclipseoutputJan04.txt",base+"\\data\\gitInfo"+corpus+".txt");
+        BugLocatorOutputConverter obj=new BugLocatorOutputConverter("E:/BugLocator/output/SWToutput.txt",base+"\\data\\gitInfo"+corpus+".txt");
         obj.gitResultsMap=obj.getGitOutput(obj.gitresultPath);
         HashMap<String, ArrayList<String>> resultRankedHM= obj.ConverterHelper();
         System.out.println(ComputeTopK(1,resultRankedHM));
@@ -27,6 +27,15 @@ public class BugLocatorOutputConverter {
         System.out.println(ComputeTopK(10,resultRankedHM));
         ComputeMAP(resultRankedHM, obj);
         ComputeMRR(resultRankedHM);
+        System.out.println(resultRankedHM);
+        int i=0;
+        for(String key:resultRankedHM.keySet())
+        {
+            ArrayList<String> result=resultRankedHM.get(key); 
+            String rank=key+":"+result.get(0);
+            ContentWriter.writeContent(base+"\\data\\"+"bestRankBugLocator"+(++i)+".txt", rank);
+            
+        }
     }
 
    

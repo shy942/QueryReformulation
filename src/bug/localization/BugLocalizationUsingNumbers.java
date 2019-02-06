@@ -574,7 +574,7 @@ public class BugLocalizationUsingNumbers {
 		 	//For Eclipse
 		 	//String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
 		 	//ForSWT
-		 	String indexDir="E:\\PhD\\"+corpus+"\\data\\Index"+corpus;
+		 	String indexDir="E:\\PhD\\Repo\\"+corpus+"\\data\\Index"+corpus;
 			obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
 					.getLuceneBasedScore(BETA);
 			System.out.println(obj.buglocatorRESULT+"                99999999999999999999999999999999999999999999999999999999999");
