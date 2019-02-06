@@ -288,8 +288,8 @@ by exploiting the \emph{implicit association} between the query and the buggy do
 
 \begin{figure*}
 	\centering
-	\includegraphics[scale=0.60]{SD-Feb04}
-	\vspace{-1cm}
+	\includegraphics[width=5in]{SD6Trans}
+	\vspace{-.2cm}
 	\caption{Schematic diagram of BLuAMIR: (a) Construction of association map between keywords and source documents,  and (b) Bug Localization using VSM and implicit association}
 	\label{fig:systemDiagram}
 		\vspace{-.2cm}
@@ -445,7 +445,7 @@ Here, one or more keywords could be linked to single buggy source document. Conv
 			\hline
 		\end{tabular}
 	}
-  \vspace{-.5cm}
+  \vspace{-.2cm}
 	%\end{center}
 	%\centering
 \end{table}
@@ -459,7 +459,7 @@ Here, one or more keywords could be linked to single buggy source document. Conv
 In our study, these two sets correspond to keywords and source code documents. 
 Thus, no connection between any two keywords or any two source documents is allowed.
 %Hence, nether two keywords nor two source files can be connected. There exist only one type of valid link, which can be established between a keyword and its corresponding sources. 
-We construct an example bipartite graph for a bug report (ID 322401) from Eclipse UI Platform. Table \ref{tab:BugInfo2} shows the \textit{title} and \textit{description} of the bug report. According to the bug-fix history, these two classes - \texttt{\textbf{S1}:IDEWorkbenchMessages.java} and \texttt{\textbf{S2}: LinkedResourceEditor.java}-- constitute the ground truth for the bug report. Fig. \ref{fig:BipartiteGraph} shows the bipartite graph for the bug report along with its ground truth. We see that ten unique keywords and two source documents represent the two set of nodes and each node is connected to all the nodes from another set. In our approach, we enrich such a graph with nodes and connections generated from each of the bug reports of a subject system.     
+We construct an example bipartite graph for a bug report (ID 322401) from Eclipse UI Platform. Table \ref{tab:BugInfo2} shows the \textit{title} and \textit{description} of the bug report. According to the bug-fix history, these two documents - \texttt{\textbf{S1}:IDEWorkbenchMessages.java} and \texttt{\textbf{S2}: LinkedResourceEditor.java}-- constitute the ground truth for the bug report. Fig. \ref{fig:BipartiteGraph} shows the bipartite graph for the bug report along with its ground truth. We see that ten unique keywords and two source documents represent the two set of nodes and each node is connected to all the nodes from another set. In our approach, we iteratively update such a bipartite graph with new nodes and connections generated from each of the bug reports of a subject system.     
 
 
 %The bipartite graph is presented in . Note, that ten unique keywords are extracted from the bug report (i.e., from title and description) and are connected through edges with their corresponding change codes (i.e., $S1$ represents 
@@ -470,65 +470,64 @@ We construct an example bipartite graph for a bug report (ID 322401) from Eclips
 \subsection{Bug Localization using VSM and Implicit Association}\label{sec:vsm-assoc-sore}
 Fig. \ref{fig:systemDiagram}-(b) shows the schematic diagram
 and Algorithm \ref{algo:localization} presents the pseudo-code
-of our bug localization approach.
-We have constructed an association map that connects the keywords from a bug report to its corresponding changed source documents (Section \ref{sec:MapConstruction}). For a given bug report (the query), we return a list of source documents that are not only lexically similar but also strongly associated with the query. Thus, we calculate two scores for each source document and then suggest the Top-K documents as follows:
-
+of our bug localization component.
+We have constructed an association map that connects the keywords from a bug report to its corresponding changed source documents (Section \ref{sec:MapConstruction}). We leverage this association map, and return a list of source code documents that are not only lexically similar but also strongly associated with a given query (bug report at hand) through bug-fixing history. We thus calculate two scores for each candidate source document and then suggest the Top-K documents as follows:
 
 %For the candidate keyword tokens for the initial query, we exploit association map database (i.e., keyword-source code links) and retrieve the relevant source code files. We use some heuristic functions in order to combine two ranks and recommend buggy relevant source files. 
 %for our bug localization approach.
 
 
 \begin{algorithm}[!t]
-	\caption{Bug Localization using Association Mapping Database and Information Retrieval}
+	\caption{Proposed Bug Localization Approach}
 	\label{algo:localization}
 	\begin{algorithmic}[1]
 		\Procedure{BugLocalization}{$Q$, $SCrepo$, $MAP_{KS}$}
 		
-		\Comment{$Q$: a bug report query}
+		\LineComment{$Q$: a given query (bug report)}
+		\LineComment{$SCrepo$: a source code repository}
+		\LineComment{$MAP_{KS}$: keyword-source document  map}
 		
-		\Comment{$SCrepo$: a source code repository}
-	
-		\Comment{$Map_{KS}$: association map created from Algorithm \ref{algo:map}}
 		
-		%\Comment{creating adjacency map database from the bug reports collection}
-		%\State $MAP_{adj} \gets$ createAdjacencyDatabase($BRC$)
-		%\Comment{creating a map that links keywords into their bug ids}
-		\State $RankedR \gets$ \{\}
-		\Comment{List of recommended buggy files}
+		\State $RL \gets$ \{\}
+		\Comment{list of buggy source documents}
 		
-		\State $Index \gets$ createIndex($SCrepo$)
-		
-		\Comment{Create Index from source code corpus}
-		
-		\State $Score_{Assoc} \gets$ calculateAssociationScore($Q$,$MAP_{bk}$)
-		
-		\Comment{Calculate Association score}
-		
-		\State $Score_{VSM} \gets$ calculateVSMscore($Q$,$Index$)
-		
-		\Comment{Calculate VSM score}
+		\LineComment{Create an index of source documents}
+		\State $Index \gets$ createLuceneIndex($SCrepo$)
+		\LineComment{Collect lexically similar documents}
+		\State $VSM\gets$ getLexSimDocuments($Q$, $Index$)
+		\LineComment{Collecting associated documents}
+		\State $Assoc\gets$ getAssociatedDocuments($Q$, $MAP_{bk}$)
 		
 		%\Comment{Linking keywords into change source code}
 		%\LineComment{preprocess the collected keywords}
 		%\For{Keyword $K_i \in$ $K$}
-		\State $SC_{Assoc} \gets$ collectSCodeWithAssocScore($Score_{Assoc}$)
+		%\State $SC_{Assoc} \gets$ %collectSCodeWithAssocScore($Score_{Assoc}$)
+		\LineComment{Combine both candidate document lists}
+		\State $C\gets$\{$VSM.docs$ $\cup$ $Assoc.docs$\} 
 		
-		\Comment{Collect Source Codes for which association score is computed}
+		\For{SourceDocument $d\in C$}
+		\LineComment{Combine both scores}
+		\State $C[d].score\gets VSM[d].score$+$Assoc[d].score$
+		 
 		
-		\For{SourceCode $SC_{_i}$ $\in$ $SC_{Assoc}$}
-		\State $Rank_{Assoc_{i}} \gets$ retrieveAssocScore ($Score_{Assoc}$)
+		%\State $Rank_{Assoc_{i}} \gets$ retrieveAssocScore ($Score_{Assoc}$)
 		
-		\Comment{retrieve association score for each source file}
+		%\Comment{retrieve association score for each source file}
 		
-		\State $Rank_{VSM_{i}} \gets$ retrieveVSMScore ($Score_{VSM}$)
+		%\State $Rank_{VSM_{i}} \gets$ retrieveVSMScore ($Score_{VSM}$)
 		
-		\Comment{retrieve VSM score for the same source file}
+		%\Comment{retrieve VSM score for the same source file}
 		
-		\State $CombineS[SC_{i}]\gets Rank_{Assoc_{i}} + Rank_{VSM_{i}}$
+		%\State $CombineS[SC_{i}]\gets Rank_{Assoc_{i}} + %Rank_{VSM_{i}}$
 		
-		\Comment{Combine both scores utilizing a heuristic metric}
-	
+		%\Comment{Combine both scores utilizing a heuristic metric}
+		
 		\EndFor
+	
+	
+		
+		
+		
 	
 		
 		
@@ -659,51 +658,62 @@ We have constructed an association map that connects the keywords from a bug rep
 
 
 
-\textbf{Vector Space Model:}
-The vector space model (VSM) is a classical method for constructing vector representations for documents \cite{Salton}. 
-It encodes a document collection by a term-by-document matrix. It represents one type of text unit (documents) by its association with the other type of text unit (terms). Here, the association is calculated by explicit evidence based on term occurrences in the documents.
-The similarity between documents is computed by the cosine or inner product between corresponding vectors.
-
-\textbf{VSM Score Calculation:}
-Source code file contains words those can be also occurred in the bug reports. This is considered as a hint to locate buggy files. 
-%If a new bug is similar to a given previously located bug, then there is a possibility that the source code files located for the past bug can provide useful information in finding buggy files for that new bug.
-The basic idea of a VSM (Vector Space Model) is that the similarity between documents is computed by the cosine or inner product between terms collected from a query and a source document.
-The weight of a term in a document increases with its occurrence frequency in this specific document and decreases with its occurrence frequency in other documents.
+\textbf{Lexical Similarity Score:}
+Source code documents often share a major overlap in vocabulary with a submitted bug report. Many of the existing studies \cite{Jian,Saha,Saha2,Wang2} consider such vocabulary overlap (i.e., lexical similarity) as a mean to localize the buggy source documents. These studies generally use Vector Space Model (VSM) for calculating the vocabulary overlap. VSM is a classical approach for constructing vector representation of any text document (e.g., bug report, source document) \cite{vector-space-model}. First, it encodes a document collection using a term-by-document matrix where each row represents a term and each column represents a document. Second, each matrix cell is defined as the frequency of a term (i.e., term frequency) within a specific document. 
+Thus, lexical similarity between a given query (bug report) and a candidate source document is computed as the cosine or inner product between their corresponding vectors from the matrix.
+Since term frequency (TF)-based vector representation might be biased toward large documents, several studies \cite{Jian,Saha} represent their vectors using TF-IDF. TF-IDF assigns higher weights to such terms that are frequent within a document but not not frequent across the document collection \cite{Salton}.       
+%The weight of a term in a document increases with its occurrence frequency in this specific document and decreases with its occurrence frequency in other documents.
 %In our proposed approach we have used both classical Vector Space Model (VSM)  and revised Vector Space Model (rVSM) proposed by \citet{Jian} in order to index and rank source code files. 
-In classic VSM, {$tf$} (i.e., term frequency) and {$idf$} (i.e., inverse document frequency) are defined as follows:
-\begin{equation}
-tf(t,d)=\frac{f_{td}}{\#terms}, idf(t)=log\frac{\#doc}{n_{t}}
-\end{equation}
-Here $tf$ is the term frequency of each unique term {$t$} in a document {$d$} and {$f\textsubscript{td}$} is the number of times term {$t$} appears in document {$d$}.
-So the equation of classical VSM model is as follows
-\begin{multline}\label{VSMequation}
-VSMScore(q,d)= cos(q,d) =
+TF-IDF stands for term frequency times inverse document frequency.
+In classic VSM, term frequency $tf(t,d)$ and inverse document frequency $idf (t)$ are defined as follows:
+\begin{equation*}
+tf(t,d)=\frac{f_{td}}{\#terms},~~idf(t)=log\frac{\#doc}{n_{t}}
+\end{equation*}
+Here $f_{td}$ refers to the frequency of each unique term {$t$} in a document {$d$}, $n_t$ denotes the document frequency of term $t$ and $\#doc$ is the total number of documents in the collection.   
+%and {$f\textsubscript{td}$} is the number of times term {$t$} appears in document {$d$}.
+Thus, the lexical similarity between a given query $Q$ (bug report) and a candidate source document $d$ is calculated as follows:
+\begin{multline*}\label{VSMequation}
+lexicalSimScore(Q,d)= cosine(Q,d) =
 \\
-\frac{1}{\sqrt{\sum_{t\epsilon q}}((\frac{f_{tq}}{\#terms})\times log(\frac{\#docs}{n_{t}}))^{^{2}}}\times 
+\sum_{t\epsilon Q\bigcap d}(\frac{f_{tQ}}{\#terms})\times (\frac{f_{td}}{\#terms})\times log(\frac{\#docs}{n_{t}})^{2} \times
 \\
-\frac{1}{\sqrt{\sum_{t\epsilon d}((\frac{f_{td}}{\#terms})\times log(\frac{\#docs}{n_{t}}))^{2}}}\times
+\frac{1}{\sqrt{\sum_{t\epsilon Q}((\frac{f_{tQ}}{\#terms})\times log(\frac{\#docs}{n_{t}}))^{^{2}}}}\times 
 \\
-\sum_{t\epsilon q\bigcap d}(\frac{f_{tq}}{\#terms})\times (\frac{f_{td}}{\#terms})\times log(\frac{\#docs}{n_{t}})^{2}
-\end{multline}
-This \textit{VSM} score is calculated for each query bug report {$q$} against every document {$d$} in the corpus. However, in the above equation {$\#terms$} refers to the total number of terms in a corpus, {$n\textsubscript{t}$} is the number of documents where term {$t$} occurs. This score is calculated in line 5 of Algorithm \ref{algo:localization},
+\frac{1}{\sqrt{\sum_{t\epsilon d}((\frac{f_{td}}{\#terms})\times log(\frac{\#docs}{n_{t}}))^{2}}}
+\end{multline*}
+Here, {$\#terms$} refers to the total number of terms 
+in a document collection. $lexicalSimScore$ takes a value between 0 and 1 where 0 means means total dissimilarity and 1 means strong lexical similarity between the query $Q$ and the candidate source code document $d$. We use Apache Lucene for calculating the lexical similarity.
 
-\textbf{Association Scores Calculation}
-A query typically contains several keywords or words. For each keyword, we look for relevant source files in the keyword-source files association map. We assume these files are relevant because we created the map between the content of bug reports and their buggy source files for previously fixed bug reports. When we analysis these links for all keywords in a query, a relevant file can be found from the association relationship more than once. Therefore, we then normalize the frequency of source files using standard TFIDF normalization technique. Finally we recommend first Top-K files with their association. The equation for computing association score is given belows:
-\begin{equation}\label{CoOccequation}
-AssociationScore=\sum_{All S_{i} that connect to W_{j}}(Link(W{j},S_{i}))
-\end{equation}
-Here, the link $Link(W{j},S_{i})$ between keyword and source file is 1 if they are connected in the association map and 0 otherwise. This step is done in line 4 of Algorithm \ref{algo:localization}.
+\textbf{Implicit Association Score:} We analyse the implicit associations between a given query (bug report) and each candidate source document using our association map (i.e., bipartite graph) (Section \ref{sec:MapConstruction}). In this map, while each keyword could be linked to multiple candidate documents, each document could also be linked to multiple keywords. 
+We perform standard natural language processing on a given query, and extract a list of query keywords.
+We then identify such source documents in the map that are linked to each of these keywords. Since these links were established based on the bug-fixing history, they represent an \emph{implicit relevance} between the keywords and the documents. It should be noted that such relevance does not warrant for lexical similarity.
+%We assume these files are relevant because we created the map between the content of bug reports and their buggy source files for previously fixed bug reports. 
+We analyse such links for all the keywords ($q\in Q$) of a query, and determine how frequently each candidate source document $d$ has associated with these keywords as follows: 
+\begin{equation*}\label{CoOccequation}
+associationScore(Q,d)=\sum_{q\in Q}\#Link(q,d)
+\end{equation*}
+Here $\#Link(q,d)$ returns the frequency of association between the keyword $q$ and the source document $d$ across the bug-fixing history of a subject system. That is, $associationScore$ assigns a score to each candidate document by capturing their historical co-occurrences with the query keywords across the bug-fixing history.
 
 
-\textbf{Final Score Calculation}
-We compute VSM score using Appache Lucene library. Then we combine that score with our association using equation \ref{equationVSMme}.
-\begin{multline}\label{equationVSMme}
-FinalScore=(1-\alpha )\times N(VSMScore)+ \\
-\alpha \times N(AssociationScore)
-\end{multline}
-Here, the weighting factor $\alpha$ varies from 0.2 to 0.4, for which we discuss results in the experiment section \ref{RQ2Answer}. 
 
-We combine both scores using equation \ref{equationVSMme} in Algorithm \ref{algo:localization} line 7-11. Finally, top ranked recommended buggy files are retrieved, which is done line 12 of Algorithm \ref{algo:localization}.
+%Here, the link $Link(W{j},S_{i})$ between keyword and source file is 1 if they are connected in the association map and 0 otherwise. This step is done in line 4 of Algorithm \ref{algo:localization}.
+
+
+\textbf{Final Score Calculation:} The above two sections deliver two different scores (\emph{lexical similarity}, \emph{implicit association}) for each of the candidate source code documents. Since these scores could be of different ranges, we normalize both of them, combine them, and then calculate the final score (Lines 7--12, Algorithm \ref{algo:localization}) as follows:
+\begin{multline*}\label{equationVSMme}
+FinalScore=(1-\alpha )\times Norm(lexicalSimScore)+ \\
+\alpha \times Norm(associationScore)
+\end{multline*}
+Here, the weighting factor $\alpha$ varies from 0.2 to 0.4, and
+the detailed justification is provided during experiment and discussions (Section \ref{RQ2Answer}). 
+
+Once the final score is calculated for each of the candidate source documents from the corpus, we return the Top-K results as the buggy documents for the given query $Q$.
+
+%which we discuss results in the experiment section \ref{RQ2Answer}.
+%a relevant file can be found from the association relationship more than once. Therefore, we then normalize the frequency of source files using standard TFIDF normalization technique. 
+%Finally we recommend first Top-K files with their association. The equation for computing association score is given below:
+%We compute VSM score using Appache Lucene library. Then we combine that score with our association using equation \ref{equationVSMme}.
+%We combine both scores using equation \ref{equationVSMme} in Algorithm \ref{algo:localization} line 7-11. Finally, top ranked recommended buggy files are retrieved, which is done line 12 of Algorithm \ref{algo:localization}.
 
 
 

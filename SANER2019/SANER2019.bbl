@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -179,6 +179,13 @@ R.K. Saha, M.~Lease, S.~Khurshid, and D.E. Perry.
   {R}etrieval.
 \newblock In \emph{Automated Software Engineering (ASE), 2013 IEEE/ACM 28th
   International Conference on}, pages 345--355, Nov 2013.
+
+\bibitem[Saha et~al.(2014)Saha, Lawall, Khurshid, and Perry]{Saha2}
+R.K. Saha, J.~Lawall, S.~Khurshid, and D.E. Perry.
+\newblock On the {E}ffectiveness of {I}nformation {R}etrieval {B}ased {B}ug
+  {L}ocalization for {C} {P}rograms.
+\newblock In \emph{Software Maintenance and Evolution (ICSME), 2014 IEEE
+  International Conference on}, pages 161--170, Sept 2014.
 
 \bibitem[Salton and Buckley()]{Salton}
 G.~Salton and C.~Buckley.
