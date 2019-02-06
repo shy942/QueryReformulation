@@ -15,6 +15,7 @@
 \usepackage{threeparttable}
 \usepackage{pifont}
 %\usepackage{subcaption}
+\usepackage{array}
 \usepackage{subfigure}
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
@@ -36,6 +37,9 @@
 
 \algnewcommand{\LineComment}[1]{\State \(\triangleright\) #1}
 \algdef{SE}[DOWHILE]{Do}{doWhile}{\algorithmicdo}[1]{\algorithmicwhile\ #1}%
+
+%\newcolumntype{L}{>{\arraybackslash}p{5cm}}
+%\newcolumntype{M}[1]{>{\begin{varwidth}[t]{#1}}l<{\end{varwidth}}}
 
 
 \usepackage{expl3}
@@ -154,75 +158,68 @@ Other related studies \cite{LukinsBL,Nguyen} adopt Latent Dirichlet Allocation (
 	\vspace{-.2cm}
 	\resizebox{7.1in}{!}{%
 		\begin{threeparttable}
-		\begin{tabular}{c|l|c|c||l|c|c|c|c}
+		\begin{tabular}{p{2in}|c|c||p{1.8in}|c|c|c|c}
 			\hline
 			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
-			& \multicolumn{3}{c||}{\textbf{VSM (Lexical Similarity Only)}} &
+			\multicolumn{3}{c||}{\textbf{VSM (Lexical Similarity Only)}} &
 			\multicolumn{5}{c}{\textbf{BLuAMIR (Lexical Similarity + Implicit Association)}}\\
 			\hline
-			\textbf{Rank}
-			& \textbf{Retrieved Documents } 
-			&  \textbf{$\mathbf{Score_{VSM}}$}  & 
+			
+			\textbf{Retrieved Documents } & 
+			\textbf{$\mathbf{S_{VSM}}$}  & 
 			\textbf{GT}  &
 			\textbf{Retrieved Documents } &
-			\textbf{$\mathbf{Score_{VSM}}$}  & 
-			\textbf{$\mathbf{Score_{Assoc}}$} &
-			\textbf{$\mathbf{Score_{Total}}$} &
+			\textbf{$\mathbf{S_{VSM}}$}  & 
+			\textbf{$\mathbf{S_{Assoc}}$} &
+			\textbf{$\mathbf{S_{Total}}$} &
 			
 			\textbf{GT}\\
 			\hline
 			\hline
-			1 &  WorkingSetLabelProvider.java  & 1.00  & \checkmark &WorkingSetLabelProvider.java & 0.60  & 0.25  & 0.85 & \checkmark \\
+			  \texttt{ClasspathLocation.java} & 1.00  & \xmark & \texttt{\textbf{CompletionEngine.java}} & \textbf{0.40}  & \textbf{1.00}  & \textbf{0.80} & \textbf{\checkmark} \\
 			\hline
-			2 & ImageFactory.java  & 0.80  & \xmark & WorkingSet.java & 0.35 & 0.35 & 0.70 &  \checkmark \\ 
+			 \texttt{JavaCore.java}  & 0.74 & \xmark & \texttt{AbstractDecoratedTextEditor.java} & 0.41 & 0.73 & 0.70 &  \xmark \\ 
 			\hline
-			3 & WorkingSetMenuContributionItem.java &  0.76  & \xmark &IWorkingSet.java &0.45 &0.22 & 0.67 &  \checkmark\\
+			 \texttt{SearchableEnvironmentRequestor.java} &  0.73  & \xmark & \texttt{AntEditor.java} & 0.41 & 0.73 & 0.70 &  \xmark\\
 			\hline
-			4 &  IWorkingSet.java &  0.75 & \checkmark & WorkingSetTypePage.java &0.38 & 0.25 & 0.63 &  \xmark\\
+			  \texttt{Compiler.java} &  0.71 & \xmark & \texttt{JavaCore.java} & 0.45 & 0.64 & 0.70 &  \xmark\\
 			\hline
-			5 & ProjectImageRegistry.java  & 0.70  & \xmark & CommandImageService.java &0.30 &0.33 & 0.63 &  \xmark \\
+			 \texttt{AccessRuleSet.java}  & 0.70  & \xmark & \texttt{Engine.java} & 0.42 & 0.70 & 0.70 &  \xmark \\
 			\hline
-			%			& 0.68 & IWorkingSetManagerTest.java & \xmark &0.31 & 0.29 & 0.60 & WorkbenchImages.java & \checkmark\\
-			%			\cline{2-9}
-			%			& 0.67 & IWorkbenchPartDescriptor.java & \xmark & 0.33 & 0.27 & 0.60 & WorkingSetAdapterFactory.java & \checkmark \\
-			%			\cline{2-9}
-			%			& 0.65 & MockWorkingSetPage.java & \xmark  & 0.30 & 0.27 & 0.57 & EditorIconTest.java & \xmark\\
-			%			\cline{2-9}
-			%			& 0.65 & MissingImageDescriptor.java & \xmark  &0.30 &0.27 & 0.57 & PerspectiveDescriptor.java & \xmark \\
-			%			\cline{2-9}
-			%			& 0.64 & WorkingSetTypePage.java & \xmark & 0.24 & 0.33 & 0.57 & IAction.java & \xmark\\
-			
 	\end{tabular}
 		\centering
 		\textbf{GT} = \textbf{G}round \textbf{T}ruth
-    
     \end{threeparttable}
+    
 
 }
-
+\vspace{-.5cm}
 \end{table*}
 \begin{table}[!tb]
-	\caption{A Bug Report (\#37026, eclipse.UI.platform)}
+	\caption{An Example Bug Report (\#95167, eclipse.jdt.core)}
 	\label{tab:BugInfo}
-	\vspace{-.4cm}
+	\vspace{-.2cm}
 	%\centering
-	\begin{center}
-		\begin{tabular}{ p{1.5cm} | p{6cm}}
+	%\begin{center}
+		\resizebox{3.45in}{!}{%
+		\begin{tabular}{l | p{4.8cm}}
 			\hline
 			\textbf{Field}  & \textbf{Content} \\
 			\hline
 			\hline
-			Title & [Working Sets] IWorkingSet.getImage should be getImageDescriptor
+			Title &  [content assist] Spurious "Access restriction" error during code assist
 			\\
 			\hline
 			Description &  
-		IWorkingSet.getImage returns an ImageDescriptor and should therefore be named 
-		getImageDescriptor.
-		This is new API in 2.1. Should consider deprecating getImage and creating 
-		getImageDescriptor.\\
+			(1) OSGi, Runtime, SWT, JFace, UI, Text loaded from head, (2) open type on \texttt{AbstractTextEditor}, (3) at start of createPartContro method, type: PartSite \texttt{<Ctrl+Space>}, and (4) it has no effect in the editor, but the status line flashes in red: Access restriction: The type \texttt{SerializableCompatibility} is not accessible due to restriction on required project \texttt{org.eclipse.swt}. The type name doesn't seem to matter.  ``abcd" has the same effect. 
+			I notice that org.eclipse.ui.workbench.texteditor's classpath has an access rule
+			forbidding **/internal/** refs.
+			\\
 			\hline
 		\end{tabular}
-	\end{center}
+	 }
+	    \vspace{-.5cm}
+	%\end{center}
 	%\centering
 \end{table}
 
@@ -259,9 +256,9 @@ Third, in terms of query-wise improvement, BLuAMIR improves result ranks of 41\%
 
 Thus, this paper makes the following contributions:
 \begin{itemize}
-	\item A novel technique that not only considers the lexical similarity between a bug report and the source code but also exploits their implicit associations through bug-fixing history for bug localization.
-	\item Comprehensive evaluation of the technique using three widely used performance metrics and a total of 3,431 bug reports from four subject systems --Eclipse, SWT, AspectJ and ZXing.
-	\item Comparison with not only two baselines \cite{vector-space-model,MarcusLSI} but also three state-of-the-art approaches -- BugScout \cite{Nguyen}, BugLocator \cite{Jian} and BLUiR \cite{Saha} with statistical tests.
+	\item A novel technique that not only considers the \emph{lexical similarity} between a bug report and the source code but also exploits their \emph{implicit associations} through bug-fixing history for bug localization.
+	\item Comprehensive evaluation of the technique using \emph{three} widely used performance metrics and a total of 3,431 bug reports from \emph{four} subject systems -- Eclipse, SWT, AspectJ and ZXing.
+	\item Comparison with not only \emph{two} baselines \cite{vector-space-model,MarcusLSI} but also \emph{three} state-of-the-art approaches -- BugScout \cite{Nguyen}, BugLocator \cite{Jian} and BLUiR \cite{Saha} with statistical tests.
 	\item Experimental meta data and our used dataset for  replication and third party reuse.
 \end{itemize}
 
@@ -269,25 +266,35 @@ The rest of the paper is organized as follows. Section \ref{sec:motivatingexampl
 discusses the existing studies related to our research, and finally,  
 Section \ref{sec:conclusionANDfuture} concludes the paper with future plan.
 \section{Motivating Example}\label{sec:motivatingexample}
-Let us consider a bug report (ID 37026) on the Eclipse UI Platform. Table \ref{tab:BugInfo} shows the \textit{title} and \textit{description} of the bug report. We preprocess both fields, and construct a query. Then we apply both Vector Space Model (VSM) and our approach on this query, and locate possible buggy files. 
-%The retrieved ranked results are presented in Table \ref{tab:workingexample}. 
-%From the commit log, it is found that gold set contains 14 number of source code for this bug. 
-In Table \ref{tab:workingexample}, we can see that basic VSM approach locates only 2 buggy files in Top-5 where, our proposed tool BLuAMIR correctly identifies 3 buggy files. The ranking from basic VSM is 1 and 4 where the rank from BLuAMIR is 1,2,3. However, VSM and association scores are also provided for each recommended buggy file. 
-Note that Same file is retrieved in rank 1 for both techniques. 
-The buggy file,  
-IWorkingSet.java was in the fourth position by VSM, but BLUAMIR returned it at the second position which is promising.
+Let us consider a bug report (ID 95167) on an Eclipse subsystem namely \texttt{eclipse.jdt.core}. Table \ref{tab:BugInfo} shows the \textit{title} and \textit{description} of the bug report. We capture both fields and construct a baseline query by employing standard natural language preprocessing (e.g., stop word removal, token splitting) on them. Then we execute the query with Vector Space Model (VSM) and our approach--BLuAMIR, and attempt to locate the buggy source documents.
 
-We also investigate why BLuAMIR can locate more buggy files than VSM.  
-VSM score is based on overlap of terms found both in the bug reports and source files. On the contrary, association score do not directly compare terms between bug reports and source files. So vocabulary mismatch problem is resolved here. Moreover, in the working example, this association map aids locating more buggy files than VSM technique. IF we go deeper, we can find that due to vocabulary missmatch problem, VSM failed to retrieve some buggy files. Our proposed approach makes use of an association map that successfully captures previous relationship between bug report keywords and their source buggy files. 
-In BLuAMIR, we collect keywords from a current bug report (i.e., query) and then retrieve their associated source files from the constructed association map. 
-This association map is created from keywords extracted from previously fixed bug report and their fixed buggy codebase. So, the idea is, if a current bug shares same keywords (i.e., concepts) with a previous fixed bug, there is possibility they might share some codebase. This is how our proposed approach overcome vocabulary missmatch problem.
+According to the ground truth based on bug-fixing history, one source code document (\texttt{CompletionEngine.java}) was changed to fix the reported bug. 
+As shown in Table \ref{tab:workingexample}, we see that traditional \emph{lexical similarity} based approach (VSM) fails to retrieve any buggy source document within the Top-5 positions. On the contrary, our approach, BLuAMIR, combines both \emph{lexical similarity} and \emph{implicit association}, and returns the target buggy document at the top most position of the result list. This is not only promising but also the best possible outcome that an automated approach can deliver.   
+
+We also investigate why BLuAMIR performs better than VSM in localizing the buggy document(s). Table \ref{tab:workingexample} shows different scores from both approaches. We see that several source documents (e.g., \texttt{ClasspathLocation.java}) that are retrieved by VSM are  
+strongly similar to the query. However, such similarity does not necessarily make them buggy. In fact, VSM returns the ground truth document at the lowest position of the Top-10 results (not shown in Table \ref{tab:workingexample}). Thus, \emph{lexical similarity} alone might not be sufficient enough for effective bug localization. However, our approach overcomes such challenge 
+by exploiting the \emph{implicit association} between the query and the buggy documents (Section \ref{sec:vsm-assoc-sore}), and returns the target ground truth at the top-most position. Although the lexical similarity is low (e.g., 0.40), our approach correctly identifies the buggy document using its strong implicit association score (e.g., 1.00) with the given query.    
+
+%by exploiting the  derived from the bug-fixing history.
+
+
+   %can locate more buggy files than VSM.  
+%VSM score is based on overlap of terms found both in the bug reports and source files. On the contrary, association score do not directly compare terms between bug reports and source files. So vocabulary mismatch problem is resolved here. Moreover, in the working example, this association map aids locating more buggy files than VSM technique. IF we go deeper, we can find that due to vocabulary missmatch problem, VSM failed to retrieve some buggy files. 
+
+
+%Our proposed approach makes use of an association map that successfully captures previous relationship between bug report keywords and their source buggy files. 
+%In BLuAMIR, we collect keywords from a current bug report (i.e., query) and then retrieve their associated source files from the constructed association map. 
+%This association map is created from keywords extracted from previously fixed bug report and their fixed buggy codebase. So, the idea is, if a current bug shares same keywords (i.e., concepts) with a previous fixed bug, there is possibility they might share some codebase. This is how our proposed approach overcome vocabulary missmatch problem.
 
 \begin{figure*}
 	\centering
 	\includegraphics[scale=0.60]{SD-Feb04}
-	\caption{Proposed Schematic Diagram: (a) Construction of association map between bug report keywords and source documents and (b) Bug Localization Using VSM and association score}
+	\vspace{-1cm}
+	\caption{Schematic diagram of BLuAMIR: (a) Construction of association map between keywords and source documents,  and (b) Bug Localization using VSM and implicit association}
 	\label{fig:systemDiagram}
+		\vspace{-.2cm}
 \end{figure*}
+
 \section{BLuAMIR: Proposed Approach for Bug Localization} \label{sec:proposedmethod} 
 Figure \ref{fig:systemDiagram} shows the schematic diagram of our proposed approach.
 %Our proposed approach combine lexical similarity and co-occurence similarity measure.  \citet{Jian} proposed BugLocator based on two different similarity scores- one is rVSM score and the other one is Simi score. 
@@ -300,18 +307,23 @@ Then we (b) retrieve buggy source code documents for a given query (bug report) 
 %As we have combined two existing scores with our proposed word co-occirence score, 
 We discuss different parts of our proposed approach -- BLuAMIR -- in the following sections.
 
-\subsection{Construction of Association Map}\label{sec:MapConstruction}
+\subsection{Construction of Keyword--Document Association Map}\label{sec:MapConstruction}
 We construct an association map between keywords from previously fixed bug reports and their corresponding changed source documents.
 The map construction involves three steps.
-We not only show different steps of our map construction in Fig. \ref{fig:systemDiagram}-(a) but also provide the relevant pseudo-code in  Algorithm \ref{algo:map}. We discuss each of these steps as follows:
+We not only show different steps of our map construction  (Fig. \ref{fig:systemDiagram}-(a)) but also provide the corresponding pseudo-code (Algorithm \ref{algo:map}). We discuss each of these steps as follows:
 
 %refer to both figure and algorithm in the texts. 
 
 
-\textbf{Keyword Extraction from Bug Reports:} First, we collect \emph{title} and \emph{description} of each bug report extracted from a subject system.  
-Then we perform standard natural language preprocessing, and remove punctuation marks, stop words and small words from them. Stop words contain very little semantic for a sentence. Stemming extracts the root of each of the word. We use this stop word list\footnote{{1}https://www.ranks.nl/stopwords} during stop word removal and Porter Stemming stemmer\footnote{{2}http://tartarus.org/martin/PorterStemmer/} for stemming. Finally, we select a list of remaining keywords from each bug report. 
-So, we create a mapping relationship between bug IDs and keywords contained in those bug reports, as described in Algorithm \ref{algo:map} line 5. We also construct another connected relationship between keywords and bug IDs, presented in
-line 6 of Algorithm \ref{algo:map}.
+\textbf{(1) Keyword Extraction from Bug Reports:} First, we collect \emph{title} and \emph{description} of each bug report extracted from a subject system.  
+Then we perform standard natural language preprocessing, and remove punctuation marks, stop words and small words from them. Stop words convey very little semantics in a sentence. 
+%Stemming extracts the root of each of the word. 
+We use appropriate regular expressions to discard all the punctuation marks and 
+a standard list\footnote{{1}https://www.ranks.nl/stopwords} for stop word removal. 
+%and Porter Stemming stemmer\footnote{{2}http://tartarus.org/martin/PorterStemmer/} for stemming. 
+Finally, we select a list of remaining keywords from each bug report. 
+Then we create an inherent mapping between the ID of each bug report and their corresponding keywords (Lines 5--6, Algorithm \ref{algo:map}).   
+We also construct an inverted index between keywords and their corresponding bug report IDs (Lines 7-8, Algorithm \ref{algo:map}).
 
 % We then retrieve the source documents that were changed in order to fix each reported bug (i.e., bug report).
 %which have been changed in order to fix a given bug. %Here the idea is, we first extract keywords from bug report and corresponding buggy source code files information for the same bug report from commit log. Then
@@ -326,62 +338,59 @@ line 6 of Algorithm \ref{algo:map}.
 
 %This section can be further divided into several parts: keyword extraction from bug reports, source code information extraction from commit logs, keyword- source code linking. We also create an algorithm for creating association map database between bug report keywords into their buggy source files, which is given in Algorithm \ref{algo:map}. However, several steps of map database construction are discussed in the followings:
 
-\begin{algorithm}[!t]
+\begin{algorithm}[!tb]
 	\caption{Construction of Association Map}
 	\label{algo:map}
 	\begin{algorithmic}[1]
-		\Procedure{MapConstruction}{$BRC$, $CommitLogs$}
+		\Procedure{MapConstruction}{$BRC$, $BFC$}
 		
-		\LineComment{$BRC$: a collection of bug reports}
+		\LineComment{$BRC$: a collection of past bug reports}
 		
-		\LineComment{$CommitLogs$: a collection of commit messages}
+		\LineComment{$BFC$: bug-fix commit history}
 		\State $MAP_{KS} \gets$ \{\}
 		\Comment{an empty association map}
 		%\Comment{creating adjacency map database from the bug reports collection}
 		%\State $MAP_{adj} \gets$ createAdjacencyDatabase($BRC$)
 		%\Comment{creating a map that links keywords into their bug ids}
+		\LineComment{Create map between Bug ID and keywords}
 		\State $MAP_{bk} \gets$ createBugIDtoKeywordMap($BRC$)
 		
-		\Comment{Create Map between BugID and Keywords}
-		
+		\LineComment{Create an inverted index between keywords and ID}
 		\State $MAP_{kb} \gets$ createKeywordtoBugIDMap($MAP_{bk}$)
 		
-		\Comment{Create Map between Keywords and BugID}
 		
-		\State $MAP_{bs} \gets$ createBugIDtoSourceMap($CommitLogs$)
+		\LineComment{Map between Bug ID and changed source documents}
+		\State $MAP_{bs} \gets$ createBugIDtoSourceMap($BFC$)
 		
-		\Comment{Create Map between BugID and codebase}
-		
-		\Comment{Linking keywords into change source code}
+		\LineComment{Mapping keywords to the changed source documents}
 		%\LineComment{preprocess the collected keywords}
 		%\For{Keyword $K_i \in$ $K$}
-		\State $KB \gets$ collectKeywords($MAP_{kb}$)
+		\State $KW \gets$ collectKeywords($MAP_{kb}$)
 		
 		
-		
-		\For{keywords $KB_{_i}$ $\in$ $KB$}
-		\State $BUG_{id} \gets$ retrieveBugIds ($KB_{_i}$)
-		\For{each bug id $BUG_{id_j} \in BUG_{id}$}
-		\State $SF_{link} \gets$ getLinkedSourceFiles($MAP_{bs}$, $BUG_{id}$)
-		
-		\Comment{Retrieve associated source from $MAP_{bs}}$
+		\For{Keyword $kw$ $\in$ $KW$}
+		\State $ID_{kw} \gets$ extractBugIDs ($kw$, $MAP_{kb}$)
+		\For{BugID $id_{kw}$ $\in ID_{kw}$}
+		\LineComment{Get the linked source documents}
+		\State $SD_{link} \gets$ getDocuments($MAP_{bs}$, $id_{kw}$)
+		%\Comment{Retrieve associated source from $MAP_{bs}}$
 		%\State $MAO_{BUG_{id}} \gets$ linkSourceCodeFiles$Adj_{T_i}, Adj_{K_j}$) 
-		\State $MAP[KB_i].link \gets MAP[KB_{i}].link + SF_{link}$
-		
-		\Comment{maps all source code files to its keywords}
+		\LineComment{Map all source documents to this keyword}
+		\State $MAP[kw].link \gets MAP[kw].link \cup SD_{link}$
 		\EndFor
 		\EndFor
 		
-		
+		\LineComment{collect all keyword--source document mappings}
 		\State $MAP_{KS} \gets$ $MAP[KB]$ 
 		
-		\Comment{collecting all keyword-source code links}
+		
 		%\LineComment{put them into map}
 		%\State $MAP \gets$ mapping()
 		\State \textbf{return} $MAP_{KS}$
 		\EndProcedure
 	\end{algorithmic}
 \end{algorithm}
+%\vspace{-.3cm}
 
 
 
@@ -391,73 +400,82 @@ line 6 of Algorithm \ref{algo:map}.
 %{\footnotesize \textsuperscript{1}http://tartarus.org/martin/PorterStemmer/}
 
 
-\textbf{Source Code Link Extraction from Commit Logs:}
-Second, we consult with version control history of each system, and identify the bug-fixing commits using appropriate regular expressions \cite{bugid,Wang2}.
-We go through all commit messages and identify those commits that contain keywords related to bug fix such as fix, fixed and so on.
-In  GitHub, we  note  that any commit that either solves a software bug or implements a feature request generally mentions the corresponding Issue ID
-in the very title of the commit.
-We identify such commits from the commit history of each of the selected projects using suitable regular expressions, and select them for our experiments
-\cite{Bachmann}. Then, we collect the changeset (i.e., list of changed files)
-for each of those commit operations, and develop solution set (i.e.,
-goldset) for the corresponding change tasks. Thus, for experiments, we collect not only the actual change requests from the reputed subject systems but also their solutions which were applied in practice by the developers \cite{SHaiduc}. We use several
-utility commands such as git, clone and log on GitHub for collecting those information. This step is done line 7 of Algotrithm \ref{algo:map}. 
+\textbf{(2) Extraction of Changed Source Documents from Bug-Fix Commits:}
+We consult with version control history of each subject system, and identify the bug-fixing commits using appropriate regular expressions \cite{bugid,Wang2}.
+In particular, we go through all the commits and identify such commits that contain keywords related to bug fix or resolution in their messages.
+Then, we collect the changeset (i.e., list of changed documents)
+from each of these bug-fix commits for our study (Lines 9--10, Algorithm \ref{algo:map}). 
+%Thus, for experiments, we collect not only the actual change requests from the reputed subject systems but also their solutions which were applied in practice by the developers \cite{SHaiduc}. 
+We use several
+utility commands such as \texttt{git, clone} and \texttt{log} on Git-based repository for collecting the above information. 
+
+%This step is done line 7 of Algorithm \ref{algo:map}. 
 %Each of these commit messages presents other information such as the ID of bug report for which it was created and the links of the corresponding changed source code files. 
 %We then construct a linking relationship between each fixed bug report ID into their changed source code files, which is mentioned in line 4 of Algorithm \ref{algo:map}.
 
-\textbf{Keyword-Source Code Linking:}
-At this point, we have pre-processed keywords from each bug report. We also have a implied relationship between bug ID and buggy source code links.
-It should be noted each bug-fixing commit establishes an inherent relationship between its changed documents and the target bug report. 
-Thus, the keywords from this bug report enjoy an implicit relationships with the changed source code documents.
-Third, we leverage such implicit relationships and construct the bipartite graph (i.e., discussed bellows) by explicitly connecting keywords from each bug report and the corresponding changed source documents.
+\textbf{(3) Construction of Mapping between Keywords and Changed Source Documents:}
+The above two steps deliver (1) an inverted index ($MAP_{kb}$) that maps each individual keyword to numerous bug report IDs, and (2) a map ($MAP_{bs}$) that links each bug report ID to its corresponding changed source documents based on the bug-fixing history.
+%It should be noted each bug-fixing commit establishes an inherent relationship between its changed documents and the target bug report. 
+Since both of these maps are connected through bug report IDs,
+keywords from each bug report also enjoy an implicit relationships with the corresponding changed source code documents.
+We leverage such implicit, transitive relationships and construct a bipartite graph (e.g., Fig. \ref{fig:BipartiteGraph}) by explicitly connecting the keywords from each bug report and their corresponding changed source documents (Lines 8--24, Algorithm \ref{algo:map}).
 %We construct the bipartite graph (i.e., discussed bellows) between keywords collected from a bug report and buggy source document links.
-Here, one or more keywords can be linked to a single buggy source code files links. A source code file can be linked to one or more keywords, which is constructed from lines 8-15 in Algorithm \ref{algo:map}.
+Here, one or more keywords could be linked to single buggy source document. Conversely, single source document could be linked to one or more keywords from multiple bug reports. 
 
-\textbf{A Bipartite Graph Example:} In mathematics, a bipartite graph is a graph in which the vertices can be put into two separate groups so that the only edges are between those two groups, and there are no edges between vertices within the same group. 
-\begin{table}[htbp]
+\textbf{An Example Association Map with Bipartite Graph:} In Mathematics, \emph{bipartite graph} is defined as a special graph that   
+(1) has two disjoint set of nodes and a set of edges and (2) each of its edges connects two nodes from the two different sets but not from the same set \cite{bipartite}.  
+%only edges are between those two groups, and there are no edges between vertices within the same group. 
+\begin{table}[!tb]
 	\caption{A Bug Report (\#322401, eclipse.UI.platform)}
 	\label{tab:BugInfo2}
 	%\centering
-	\begin{center}
-		\begin{tabular}{ p{1.5cm} | p{6cm}}
+	%\begin{center}
+	\vspace{-.2cm}
+	\resizebox{3.5in}{!}{%
+		\begin{tabular}{ p{1cm} | p{5.2cm}}
 			\hline
 			\textbf{Field}  & \textbf{Content} \\
 			\hline
 			\hline Title &
 		[LinkedResources] Linked Resources properties page should have a Remove button
 			\\ \hline
-		   Description &  I20100810-0800
-		   
+		   Description &  
 		   Project properties $>$ Resource $>$ Linked Resources:
 		   Especially for invalid locations, a Remove button would be handy to remove one or multiple links. \\
 			\hline
 		\end{tabular}
-	\end{center}
+	}
+  \vspace{-.5cm}
+	%\end{center}
 	%\centering
 \end{table}
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.53]{BGraph2}
-	\caption{A Bipartite Graph Constructed for Bug \#46669. 
-		%Here, S1 represents %\textit{org.eclipse.ui.internal.ide.IDEWorkbenchMessages.java} and S2 represents %\textit{org.eclipse.ui.internal.ide.dialogs.LinkedResourceEditor.java}
-	}
+	\caption{An example association map using bipartite graph}
 	\label{fig:BipartiteGraph}
+	\vspace{-.6cm}
 \end{figure}
+In our study, these two sets correspond to keywords and source code documents. 
+Thus, no connection between any two keywords or any two source documents is allowed.
+%Hence, nether two keywords nor two source files can be connected. There exist only one type of valid link, which can be established between a keyword and its corresponding sources. 
+We construct an example bipartite graph for a bug report (ID 322401) from Eclipse UI Platform. Table \ref{tab:BugInfo2} shows the \textit{title} and \textit{description} of the bug report. According to the bug-fix history, these two classes - \texttt{\textbf{S1}:IDEWorkbenchMessages.java} and \texttt{\textbf{S2}: LinkedResourceEditor.java}-- constitute the ground truth for the bug report. Fig. \ref{fig:BipartiteGraph} shows the bipartite graph for the bug report along with its ground truth. We see that ten unique keywords and two source documents represent the two set of nodes and each node is connected to all the nodes from another set. In our approach, we enrich such a graph with nodes and connections generated from each of the bug reports of a subject system.     
 
 
-In our work, two groups correspond to keywords and codebase. Hence, nether two keywords nor two source files can be connected. There exist only one type of valid link, which can be established between a keyword and its corresponding sources. 
-We construct a bipartite graph for a bug report (ID 322401) on the Eclipse UI Platform. Table \ref{tab:BugInfo2} shows the \textit{title} and \textit{description} of the bug report. The bipartite graph is presented in Figure \ref{fig:BipartiteGraph}. Note, that ten unique keywords are extracted from the bug report (i.e., from title and description) and are connected through edges with their corresponding change codes (i.e., $S1$ represents 
+%The bipartite graph is presented in . Note, that ten unique keywords are extracted from the bug report (i.e., from title and description) and are connected through edges with their corresponding change codes (i.e., $S1$ represents 
 %org.eclipse.ui.internal.ide.
-\textit{IDEWorkbenchMessages.java} and $S2$ represents 
+%and $S2$ represents 
 %org.eclipse.ui.internal.ide.dialogs.
-\textit{LinkedResourceEditor.java}). 
-\subsection{Bug Localization Using VSM and Association Scores}
 
-The system diagram for this part has illustrated in Figure \ref{fig:systemDiagram}(b), which 
-%In BLuAMIR, we perform bug localization in two different ways - Approach I 
-is based on the combination of VSM and association scores (i.e., Figure \ref{fig:systemDiagram}(b)).
-%(b)) and Approach II is based on rVSM, Simi and association scores (i.e., Figure \ref{fig:systemDiagram} (c)). 
-We have constructed an association map databases from keywords collected from bug report into its corresponding source code information in Section \ref{sec:MapConstruction}.
-For the candidate keyword tokens for the initial query, we exploit association map database (i.e., keyword-source code links) and retrieve the relevant source code files. We use some heuristic functions in order to combine two ranks and recommend buggy relevant source files. Algorithm \ref{algo:localization} shows pseudo-code for our bug localization approach.
+\subsection{Bug Localization using VSM and Implicit Association}\label{sec:vsm-assoc-sore}
+Fig. \ref{fig:systemDiagram}-(b) shows the schematic diagram
+and Algorithm \ref{algo:localization} presents the pseudo-code
+of our bug localization approach.
+We have constructed an association map that connects the keywords from a bug report to its corresponding changed source documents (Section \ref{sec:MapConstruction}). For a given bug report (the query), we return a list of source documents that are not only lexically similar but also strongly associated with the query. Thus, we calculate two scores for each source document and then suggest the Top-K documents as follows:
+
+
+%For the candidate keyword tokens for the initial query, we exploit association map database (i.e., keyword-source code links) and retrieve the relevant source code files. We use some heuristic functions in order to combine two ranks and recommend buggy relevant source files. 
+%for our bug localization approach.
 
 
 \begin{algorithm}[!t]
@@ -637,14 +655,9 @@ For the candidate keyword tokens for the initial query, we exploit association m
 %\section{Part II: Localizing Buggy Source Code Files} \label{Sec:Localize}
 %In this part, we combine existing two lexical similarity based bug localization approaches with our proposed keyword-source co-occurence relation. One is with VSM score and other one is with rVSM and Simi ranks which are proposed in BugLocator \cite{Jian}. So, there are two sub parts of this section.
 %\subsection{Approach I: Combinition of VSM and Co-occurence Rank:}
-For locating a new bug we compute similarity scores for all source code files for a given project. However, we need to focus on some concepts which are required to understand our proposed system. They are described as follows:
+%For locating a new bug we compute similarity scores for all source code files for a given project. However, we need to focus on some concepts which are required to understand our proposed system. They are described as follows:
 
-\textbf{Association Scores Calculation}
-A query typically contains several keywords or words. For each keyword, we look for relevant source files in the keyword-source files association map. We assume these files are relevant because we created the map between the content of bug reports and their buggy source files for previously fixed bug reports. When we analysis these links for all keywords in a query, a relevant file can be found from the association relationship more than once. Therefore, we then normalize the frequency of source files using standard TFIDF normalization technique. Finally we recommend first Top-K files with their association. The equation for computing association score is given belows:
-\begin{equation}\label{CoOccequation}
-AssociationScore=\sum_{All S_{i} that connect to W_{j}}(Link(W{j},S_{i}))
-\end{equation}
-Here, the link $Link(W{j},S_{i})$ between keyword and source file is 1 if they are connected in the association map and 0 otherwise. This step is done in line 4 of Algorithm \ref{algo:localization}.
+
 
 \textbf{Vector Space Model:}
 The vector space model (VSM) is a classical method for constructing vector representations for documents \cite{Salton}. 
@@ -674,7 +687,12 @@ VSMScore(q,d)= cos(q,d) =
 \end{multline}
 This \textit{VSM} score is calculated for each query bug report {$q$} against every document {$d$} in the corpus. However, in the above equation {$\#terms$} refers to the total number of terms in a corpus, {$n\textsubscript{t}$} is the number of documents where term {$t$} occurs. This score is calculated in line 5 of Algorithm \ref{algo:localization},
 
-
+\textbf{Association Scores Calculation}
+A query typically contains several keywords or words. For each keyword, we look for relevant source files in the keyword-source files association map. We assume these files are relevant because we created the map between the content of bug reports and their buggy source files for previously fixed bug reports. When we analysis these links for all keywords in a query, a relevant file can be found from the association relationship more than once. Therefore, we then normalize the frequency of source files using standard TFIDF normalization technique. Finally we recommend first Top-K files with their association. The equation for computing association score is given belows:
+\begin{equation}\label{CoOccequation}
+AssociationScore=\sum_{All S_{i} that connect to W_{j}}(Link(W{j},S_{i}))
+\end{equation}
+Here, the link $Link(W{j},S_{i})$ between keyword and source file is 1 if they are connected in the association map and 0 otherwise. This step is done in line 4 of Algorithm \ref{algo:localization}.
 
 
 \textbf{Final Score Calculation}

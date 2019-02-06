@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{38}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -12,11 +12,10 @@ R.~Abreu, P.~Zoeteweij, R.~Golsteijn, and A.~J.~C. van Gemund.
 \newblock \emph{J. Syst. Softw.}, 82\penalty0 (11):\penalty0 1780--1792,
   November 2009.
 
-\bibitem[Bachmann and Bernstein()]{Bachmann}
-A.~Bachmann and A.~Bernstein.
-\newblock Software {P}rocess {D}ata {Q}uality and {C}haracteristics: {A}
-  {H}istorical {V}iew on {O}pen and {C}losed {S}ource {P}rojects.
-\newblock In \emph{Proc. IWPSE}, IWPSE-Evol '09, pages 119--128.
+\bibitem[Asratian et~al.(1998)Asratian, Denley, and H\"{a}ggkvist]{bipartite}
+A.~S. Asratian, T.~M.~J. Denley, and R.~H\"{a}ggkvist.
+\newblock \emph{Bipartite Graphs and Their Applications}.
+\newblock Cambridge University Press, New York, NY, USA, 1998.
 
 \bibitem[Bachmann and Bernstein(2009)]{bugid}
 A.~Bachmann and A.~Bernstein.
@@ -44,13 +43,6 @@ A.~Feldman and A.~van Gemund.
   {D}iagnosis.
 \newblock In \emph{Proceedings of the 21st National Conference on Artificial
   Intelligence - Volume 1}, AAAI'06, pages 827--833, 2006.
-
-\bibitem[Haiduc et~al.(2012)Haiduc, Bavota, Oliveto, Marcus, and
-  Lucia]{SHaiduc}
-S.~Haiduc, G.~Bavota, R.~Oliveto, A.~Marcus, and A.~De Lucia.
-\newblock Evaluating the {S}pecificity of {T}ext {R}etrieval {Q}ueries to
-  {S}upport {S}oftware {E}ngineering {T}asks.
-\newblock In \emph{Proc. ICSE}, pages 1273--1276, 2012.
 
 \bibitem[Hofmann()]{Hofmann}
 Thomas Hofmann.
