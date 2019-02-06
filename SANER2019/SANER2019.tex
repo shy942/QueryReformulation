@@ -12,6 +12,7 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{multirow}
+\usepackage{threeparttable}
 \usepackage{pifont}
 %\usepackage{subcaption}
 \usepackage{subfigure}
@@ -152,22 +153,23 @@ Other related studies \cite{LukinsBL,Nguyen} adopt Latent Dirichlet Allocation (
 	\label{tab:workingexample}
 	\vspace{-.2cm}
 	\resizebox{7.1in}{!}{%
+		\begin{threeparttable}
 		\begin{tabular}{c|l|c|c||l|c|c|c|c}
 			\hline
 			%\begin{tabular}[c]{@{}c@{}}\#Bugs for \\ developing \\ map databases\end{tabular} &
-			& \multicolumn{3}{c||}{\textbf{VSM: Lexical Similarity Only}} &
-			\multicolumn{5}{c}{\textbf{BLuAMIR: Lexical Similarity + Implicit Association}}\\
+			& \multicolumn{3}{c||}{\textbf{VSM (Lexical Similarity Only)}} &
+			\multicolumn{5}{c}{\textbf{BLuAMIR (Lexical Similarity + Implicit Association)}}\\
 			\hline
 			\textbf{Rank}
 			& \textbf{Retrieved Documents } 
 			&  \textbf{$\mathbf{Score_{VSM}}$}  & 
-			\textbf{Ground Truth}  &
+			\textbf{GT}  &
 			\textbf{Retrieved Documents } &
-			\textbf{$Score_{VSM}$}  & 
-			\textbf{$Score_{Assoc}$} &
-			\textbf{$Score_{Total}$} &
+			\textbf{$\mathbf{Score_{VSM}}$}  & 
+			\textbf{$\mathbf{Score_{Assoc}}$} &
+			\textbf{$\mathbf{Score_{Total}}$} &
 			
-			\textbf{Ground Truth}\\
+			\textbf{GT}\\
 			\hline
 			\hline
 			1 &  WorkingSetLabelProvider.java  & 1.00  & \checkmark &WorkingSetLabelProvider.java & 0.60  & 0.25  & 0.85 & \checkmark \\
@@ -190,8 +192,14 @@ Other related studies \cite{LukinsBL,Nguyen} adopt Latent Dirichlet Allocation (
 			%			\cline{2-9}
 			%			& 0.64 & WorkingSetTypePage.java & \xmark & 0.24 & 0.33 & 0.57 & IAction.java & \xmark\\
 			
-	\end{tabular}}
-	\centering
+	\end{tabular}
+		\centering
+		\textbf{GT} = \textbf{G}round \textbf{T}ruth
+    
+    \end{threeparttable}
+
+}
+
 \end{table*}
 \begin{table}[!tb]
 	\caption{A Bug Report (\#37026, eclipse.UI.platform)}
@@ -208,8 +216,6 @@ Other related studies \cite{LukinsBL,Nguyen} adopt Latent Dirichlet Allocation (
 			\\
 			\hline
 			Description &  
-		build 20030422
-		
 		IWorkingSet.getImage returns an ImageDescriptor and should therefore be named 
 		getImageDescriptor.
 		This is new API in 2.1. Should consider deprecating getImage and creating 
