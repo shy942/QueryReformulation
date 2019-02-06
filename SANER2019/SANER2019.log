@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.26)  6 FEB 2019 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.26)  6 FEB 2019 16:56
 entering extended mode
 **./SANER2019.tex
 (SANER2019.tex
@@ -832,7 +832,7 @@ Package pdftex.def Info: BGraph2.png  used on input line 454.
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
 (Font)              Font shape `OT1/pcr/b/n' tried instead on input line 462.
 [3 <./SD6Trans.png>] [4 <./BGraph2.png>]
-Underfull \hbox (badness 4805) in paragraph at lines 694--696
+Underfull \hbox (badness 4805) in paragraph at lines 670--672
 \OT1/ptm/m/n/10 the bug-fixing his-tory of a sub-ject sys-tem. That is,
  []
 
@@ -840,57 +840,57 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 748--748
 []|\OT1/ptm/b/n/7 Project
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 748--748
 []|\OT1/ptm/b/n/7 #Fixed
  []
 
 
-Overfull \hbox (2.64226pt too wide) in paragraph at lines 772--773
+Overfull \hbox (2.64226pt too wide) in paragraph at lines 748--749
 []|\OT1/ptm/b/n/7 #Source
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 777--777
+Underfull \hbox (badness 10000) in paragraph at lines 753--753
 []|\OT1/ptm/m/n/7 Eclipse
  []
 
 
-Underfull \hbox (badness 5924) in paragraph at lines 777--777
+Underfull \hbox (badness 5924) in paragraph at lines 753--753
 []|\OT1/ptm/m/n/7 An open de-vel-op-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 777--777
+Underfull \hbox (badness 10000) in paragraph at lines 753--753
 []|\OT1/ptm/m/n/7 Oct 2004 -
  []
 
 
-Underfull \hbox (badness 4899) in paragraph at lines 778--778
+Underfull \hbox (badness 4899) in paragraph at lines 754--754
 []|\OT1/ptm/m/n/7 SWT (V
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 779--779
+Underfull \hbox (badness 10000) in paragraph at lines 755--755
 []|\OT1/ptm/m/n/7 Aspect-oriented
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 779--779
+Underfull \hbox (badness 10000) in paragraph at lines 755--755
 []|\OT1/ptm/m/n/7 July 2002 -
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 780--780
+Underfull \hbox (badness 1521) in paragraph at lines 756--756
 []|\OT1/ptm/m/n/7 A bar-code im-age pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 780--780
+Underfull \hbox (badness 10000) in paragraph at lines 756--756
 []|\OT1/ptm/m/n/7 Mar 2010 -
  []
 
@@ -898,40 +898,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 780--780
 <VSM+AssoTop-1.png, id=42, 289.68225pt x 174.05025pt>
 File: VSM+AssoTop-1.png Graphic file (type png)
 <use VSM+AssoTop-1.png>
-Package pdftex.def Info: VSM+AssoTop-1.png  used on input line 870.
+Package pdftex.def Info: VSM+AssoTop-1.png  used on input line 846.
 (pdftex.def)             Requested size: 170.28094pt x 102.31161pt.
 <VSM+AssoTop-5.png, id=43, 289.08pt x 174.05025pt>
 File: VSM+AssoTop-5.png Graphic file (type png)
 <use VSM+AssoTop-5.png>
-Package pdftex.def Info: VSM+AssoTop-5.png  used on input line 876.
+Package pdftex.def Info: VSM+AssoTop-5.png  used on input line 852.
 (pdftex.def)             Requested size: 170.28094pt x 102.52142pt.
 <VSM+AssoTop-10.png, id=44, 289.08pt x 173.448pt>
 File: VSM+AssoTop-10.png Graphic file (type png)
 <use VSM+AssoTop-10.png>
-Package pdftex.def Info: VSM+AssoTop-10.png  used on input line 882.
+Package pdftex.def Info: VSM+AssoTop-10.png  used on input line 858.
 (pdftex.def)             Requested size: 170.28094pt x 102.16669pt.
 
-Overfull \hbox (4.04266pt too wide) in paragraph at lines 869--886
+Overfull \hbox (4.04266pt too wide) in paragraph at lines 845--862
 [][][]  [][]  [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 869--886
+Underfull \hbox (badness 10000) in paragraph at lines 845--862
 
  []
 
 <VSM+AssoTop-MRR.png, id=45, 289.08pt x 173.448pt>
 File: VSM+AssoTop-MRR.png Graphic file (type png)
 <use VSM+AssoTop-MRR.png>
-Package pdftex.def Info: VSM+AssoTop-MRR.png  used on input line 892.
+Package pdftex.def Info: VSM+AssoTop-MRR.png  used on input line 868.
 (pdftex.def)             Requested size: 202.35461pt x 121.41277pt.
 <VSM+AssoTop-MAP.png, id=46, 289.08pt x 173.448pt>
 File: VSM+AssoTop-MAP.png Graphic file (type png)
 <use VSM+AssoTop-MAP.png>
-Package pdftex.def Info: VSM+AssoTop-MAP.png  used on input line 898.
+Package pdftex.def Info: VSM+AssoTop-MAP.png  used on input line 874.
 (pdftex.def)             Requested size: 202.35461pt x 121.41277pt.
 
-Overfull \hbox (0.95477pt too wide) in paragraph at lines 974--1021
+Overfull \hbox (0.95477pt too wide) in paragraph at lines 950--997
  [][] 
  []
 
@@ -939,16 +939,16 @@ Overfull \hbox (0.95477pt too wide) in paragraph at lines 974--1021
 <comapre-mrr.png, id=50, 437.38406pt x 246.1697pt>
 File: comapre-mrr.png Graphic file (type png)
 <use comapre-mrr.png>
-Package pdftex.def Info: comapre-mrr.png  used on input line 1116.
+Package pdftex.def Info: comapre-mrr.png  used on input line 1092.
 (pdftex.def)             Requested size: 240.56197pt x 135.39374pt.
 <compare-map-lsi-proposed.png, id=51, 433.62pt x 243.15843pt>
 File: compare-map-lsi-proposed.png Graphic file (type png)
 <use compare-map-lsi-proposed.png>
-Package pdftex.def Info: compare-map-lsi-proposed.png  used on input line 1122.
+Package pdftex.def Info: compare-map-lsi-proposed.png  used on input line 1098.
 
 (pdftex.def)             Requested size: 238.49173pt x 133.73755pt.
 
-Overfull \hbox (0.95464pt too wide) in paragraph at lines 1137--1178
+Overfull \hbox (0.95464pt too wide) in paragraph at lines 1113--1154
  [][] 
  []
 
@@ -957,44 +957,44 @@ soTop-MRR.png> <./VSM+AssoTop-MAP.png>]
 <Performance-rvsm+simi+co.png, id=56, 289.68225pt x 174.05025pt>
 File: Performance-rvsm+simi+co.png Graphic file (type png)
 <use Performance-rvsm+simi+co.png>
-Package pdftex.def Info: Performance-rvsm+simi+co.png  used on input line 1318.
+Package pdftex.def Info: Performance-rvsm+simi+co.png  used on input line 1294.
 
 (pdftex.def)             Requested size: 231.74611pt x 139.24037pt.
  [8 <./comapre-mrr.png> <./compare-map-lsi-proposed.png>]
 <MRR-SWT-Zxing.png, id=62, 289.68225pt x 174.05025pt>
 File: MRR-SWT-Zxing.png Graphic file (type png)
 <use MRR-SWT-Zxing.png>
-Package pdftex.def Info: MRR-SWT-Zxing.png  used on input line 1333.
+Package pdftex.def Info: MRR-SWT-Zxing.png  used on input line 1309.
 (pdftex.def)             Requested size: 231.74611pt x 139.24037pt.
 <MAP-SWT-Zxing.png, id=63, 289.68225pt x 174.05025pt>
 File: MAP-SWT-Zxing.png Graphic file (type png)
 <use MAP-SWT-Zxing.png>
-Package pdftex.def Info: MAP-SWT-Zxing.png  used on input line 1340.
+Package pdftex.def Info: MAP-SWT-Zxing.png  used on input line 1316.
 (pdftex.def)             Requested size: 231.74611pt x 139.24037pt.
 
 
 LaTeX Warning: Reference `fig:RankImprovement' on page 9 undefined on input lin
-e 1427.
+e 1403.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1435--1440
+Underfull \hbox (badness 10000) in paragraph at lines 1411--1416
 []\OT1/ptm/b/n/10 case #1 \OT1/ptm/m/n/10 Con-sider bug #95561. The ti-tle of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1435--1440
+Underfull \hbox (badness 10000) in paragraph at lines 1411--1416
 \OT1/ptm/m/n/10 this bug is \OT1/ptm/m/it/10 [Per-spec-tives] Work-bench flashe
 s when
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 1435--1440
+Underfull \hbox (badness 1596) in paragraph at lines 1411--1416
 \OT1/ptm/m/it/10 syn-chro-niz-ing\OT1/ptm/m/n/10 . We have found 1 source code 
 file (i.e.,
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 1435--1440
+Underfull \hbox (badness 1939) in paragraph at lines 1411--1416
 \OT1/ptm/m/n/10 map-ping be-tween fixed bug re-port key-words into their
  []
 
@@ -1074,7 +1074,7 @@ an/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users
 /MasudRahman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
 b><C:/Users/MasudRahman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/zapfd
 ing/uzdr.pfb>
-Output written on SANER2019.pdf (12 pages, 575175 bytes).
+Output written on SANER2019.pdf (12 pages, 575177 bytes).
 PDF statistics:
  139 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

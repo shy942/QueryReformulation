@@ -506,37 +506,13 @@ We have constructed an association map that connects the keywords from a bug rep
 		\State $C\gets$\{$VSM.docs$ $\cup$ $Assoc.docs$\} 
 		
 		\For{SourceDocument $d\in C$}
-		\LineComment{Combine both scores}
-		\State $C[d].score\gets VSM[d].score$+$Assoc[d].score$
-		 
-		
-		%\State $Rank_{Assoc_{i}} \gets$ retrieveAssocScore ($Score_{Assoc}$)
-		
-		%\Comment{retrieve association score for each source file}
-		
-		%\State $Rank_{VSM_{i}} \gets$ retrieveVSMScore ($Score_{VSM}$)
-		
-		%\Comment{retrieve VSM score for the same source file}
-		
-		%\State $CombineS[SC_{i}]\gets Rank_{Assoc_{i}} + %Rank_{VSM_{i}}$
-		
-		%\Comment{Combine both scores utilizing a heuristic metric}
-		
+		\LineComment{Combine lexical and association scores}
+		\State $C[d].score\gets VSM[d].score$
+		\State $C[d].score\gets$ $C[d].score$+$Assoc[d].score$
 		\EndFor
-	
-	
-		
-		
-		
-	
-		
-		
-		\State $RankedR \gets$ retrieveTopRSF ($CombineS[SC_{i}]$)
-		
-		\Comment{Sort combine score and retrieve top ranked buggy files}
-		%\LineComment{put them into map}
-		%\State $MAP \gets$ mapping()
-		\State \textbf{return} $RankedR$
+		\LineComment{Sort the candidates and collect Top-K documents}
+		\State $RL\gets$ getTopKDocuments(sortByScore($C$))
+		\State \textbf{return} $RL$
 		\EndProcedure
 	\end{algorithmic}
 \end{algorithm}
@@ -667,9 +643,9 @@ Since term frequency (TF)-based vector representation might be biased toward lar
 TF-IDF stands for term frequency times inverse document frequency.
 In classic VSM, term frequency $tf(t,d)$ and inverse document frequency $idf (t)$ are defined as follows:
 \begin{equation*}
-tf(t,d)=\frac{f_{td}}{\#terms},~~idf(t)=log\frac{\#doc}{n_{t}}
+tf(t,d)=\frac{f_{td}}{\#terms},~~idf(t)=log\frac{\#docs}{n_{t}}
 \end{equation*}
-Here $f_{td}$ refers to the frequency of each unique term {$t$} in a document {$d$}, $n_t$ denotes the document frequency of term $t$ and $\#doc$ is the total number of documents in the collection.   
+Here $f_{td}$ refers to the frequency of each unique term {$t$} in a document {$d$}, $n_t$ denotes the document frequency of term $t$ and $\#docs$ is the total number of documents in the collection.   
 %and {$f\textsubscript{td}$} is the number of times term {$t$} appears in document {$d$}.
 Thus, the lexical similarity between a given query $Q$ (bug report) and a candidate source document $d$ is calculated as follows:
 \begin{multline*}\label{VSMequation}
@@ -682,7 +658,7 @@ lexicalSimScore(Q,d)= cosine(Q,d) =
 \frac{1}{\sqrt{\sum_{t\epsilon d}((\frac{f_{td}}{\#terms})\times log(\frac{\#docs}{n_{t}}))^{2}}}
 \end{multline*}
 Here, {$\#terms$} refers to the total number of terms 
-in a document collection. $lexicalSimScore$ takes a value between 0 and 1 where 0 means means total dissimilarity and 1 means strong lexical similarity between the query $Q$ and the candidate source code document $d$. We use Apache Lucene for calculating the lexical similarity.
+in a document collection. $lexicalSimScore$ takes a value between 0 and 1 where 0 means means total dissimilarity and 1 means strong lexical similarity between the query $Q$ and the candidate source code document $d$. We use Apache Lucene for calculating the lexical similarity (Lines 6--9, Algorithm \ref{algo:localization}).
 
 \textbf{Implicit Association Score:} We analyse the implicit associations between a given query (bug report) and each candidate source document using our association map (i.e., bipartite graph) (Section \ref{sec:MapConstruction}). In this map, while each keyword could be linked to multiple candidate documents, each document could also be linked to multiple keywords. 
 We perform standard natural language processing on a given query, and extract a list of query keywords.
