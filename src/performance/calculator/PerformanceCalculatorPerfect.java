@@ -40,7 +40,7 @@ public class PerformanceCalculatorPerfect {
 		// TODO Auto-generated method stub
 		
 		//new PerformanceCalculatorPerfect().getSingleResult("");
-		new PerformanceCalculatorPerfect().getAvgPerformance(10, 0.4, "VSMAndme");
+		new PerformanceCalculatorPerfect().getAvgPerformance(20, 0.0, "VSM");
 		//new PerformanceCalculatorPerfect().getAvgPerformance(1, 0, "VSMandMe");
 	}
 
@@ -59,10 +59,10 @@ public class PerformanceCalculatorPerfect {
 			//Fort Eclipse   
 			//PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep12"+baseNamePart+alpha+"-"+test+".txt");	
 			//For SWT
-			corpus="EclipseAll";
+			corpus="Zxing";
 			
-			 base="E:\\PhD\\"+corpus; 
-			 obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfoNew.txt",base+"\\data\\Results/"+"/eclipseAllJOct2"+baseNamePart+alpha+"-"+test+".txt");		
+			 base="E:\\PhD\\Repo\\"+corpus; 
+			 obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfoAll"+corpus+".txt",base+"\\data\\Results/"+"/Feb07"+baseNamePart+alpha+"-"+test+".txt");		
 			 //obj=new PerformanceCalculatorPerfect(base+"\\gitInfo"+corpus+"SingleFile.txt","E:\\PhD\\LSI\\Repo\\"+corpus+"\\data\\Results\\"+test+".txt");     
 			//PerformanceCalculatorPerfect 
 			//obj=new PerformanceCalculatorPerfect("E:/PhD/Repo/"+corpus+"/data/gitInfo1KB"+corpus+".txt","E:/BugLocator/output/"+corpus+"outputJan04-9.txt");	
