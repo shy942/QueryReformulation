@@ -288,7 +288,7 @@ by exploiting the \emph{implicit association} between the query and the buggy do
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=5in]{SD6Trans}
+	\includegraphics[width=4.8in]{SD6Trans}
 	\vspace{-.2cm}
 	\caption{Schematic diagram of BLuAMIR: (a) Construction of association map between keywords and source documents,  and (b) Bug Localization using VSM and implicit association}
 	\label{fig:systemDiagram}
@@ -315,15 +315,15 @@ We not only show different steps of our map construction  (Fig. \ref{fig:systemD
 %refer to both figure and algorithm in the texts. 
 
 
-\textbf{(1) Keyword Extraction from Bug Reports:} First, we collect \emph{title} and \emph{description} of each bug report extracted from a subject system.  
-Then we perform standard natural language preprocessing, and remove punctuation marks, stop words and small words from them. Stop words convey very little semantics in a sentence. 
+\textbf{(1) Extraction of Keywords from Bug Reports:} We collect \emph{title} and \emph{description} of each bug report from a subject system.  
+Then we perform standard natural language preprocessing, and remove punctuation marks, stop words and small words (i.e., \emph{length $\le$ 2}) from them. Stop words convey very little semantics in a sentence. 
 %Stemming extracts the root of each of the word. 
 We use appropriate regular expressions to discard all the punctuation marks and 
 a standard list\footnote{{1}https://www.ranks.nl/stopwords} for stop word removal. 
 %and Porter Stemming stemmer\footnote{{2}http://tartarus.org/martin/PorterStemmer/} for stemming. 
 Finally, we select a list of remaining keywords from each bug report. 
-Then we create an inherent mapping between the ID of each bug report and their corresponding keywords (Lines 5--6, Algorithm \ref{algo:map}).   
-We also construct an inverted index between keywords and their corresponding bug report IDs (Lines 7-8, Algorithm \ref{algo:map}).
+We then create a \emph{map} (e.g., $M_{bk}$) between the ID of each bug report and their corresponding keywords (Lines 5--6, Algorithm \ref{algo:map}).   
+We also construct an \emph{inverted index} (e.g., $M_{kb}$) between keywords and their corresponding bug report IDs (Lines 7-8, Algorithm \ref{algo:map}) by using the above map.
 
 % We then retrieve the source documents that were changed in order to fix each reported bug (i.e., bug report).
 %which have been changed in order to fix a given bug. %Here the idea is, we first extract keywords from bug report and corresponding buggy source code files information for the same bug report from commit log. Then
@@ -347,46 +347,46 @@ We also construct an inverted index between keywords and their corresponding bug
 		\LineComment{$BRC$: a collection of past bug reports}
 		
 		\LineComment{$BFC$: bug-fix commit history}
-		\State $MAP_{KS} \gets$ \{\}
+		\State $M_{KS} \gets$ \{\}
 		\Comment{an empty association map}
 		%\Comment{creating adjacency map database from the bug reports collection}
 		%\State $MAP_{adj} \gets$ createAdjacencyDatabase($BRC$)
 		%\Comment{creating a map that links keywords into their bug ids}
 		\LineComment{Create map between Bug ID and keywords}
-		\State $MAP_{bk} \gets$ createBugIDtoKeywordMap($BRC$)
+		\State $M_{bk} \gets$ createBugIDtoKeywordMap($BRC$)
 		
 		\LineComment{Create an inverted index between keywords and ID}
-		\State $MAP_{kb} \gets$ createKeywordtoBugIDMap($MAP_{bk}$)
+		\State $M_{kb} \gets$ createKeywordtoBugIDMap($M_{bk}$)
 		
 		
 		\LineComment{Map between Bug ID and changed source documents}
-		\State $MAP_{bs} \gets$ createBugIDtoSourceMap($BFC$)
+		\State $M_{bs} \gets$ createBugIDtoSourceMap($BFC$)
 		
 		\LineComment{Mapping keywords to the changed source documents}
 		%\LineComment{preprocess the collected keywords}
 		%\For{Keyword $K_i \in$ $K$}
-		\State $KW \gets$ collectKeywords($MAP_{kb}$)
+		\State $KW \gets$ collectKeywords($M_{kb}$)
 		
 		
 		\For{Keyword $kw$ $\in$ $KW$}
-		\State $ID_{kw} \gets$ extractBugIDs ($kw$, $MAP_{kb}$)
+		\State $ID_{kw} \gets$ extractBugIDs ($kw$, $M_{kb}$)
 		\For{BugID $id_{kw}$ $\in ID_{kw}$}
 		\LineComment{Get the linked source documents}
-		\State $SD_{link} \gets$ getDocuments($MAP_{bs}$, $id_{kw}$)
+		\State $SD_{link} \gets$ getDocuments($M_{bs}$, $id_{kw}$)
 		%\Comment{Retrieve associated source from $MAP_{bs}}$
 		%\State $MAO_{BUG_{id}} \gets$ linkSourceCodeFiles$Adj_{T_i}, Adj_{K_j}$) 
 		\LineComment{Map all source documents to this keyword}
-		\State $MAP[kw].link \gets MAP[kw].link \cup SD_{link}$
+		\State $M[kw].link \gets \{M[kw].link~~\cup~~SD_{link}$\}
 		\EndFor
 		\EndFor
 		
 		\LineComment{collect all keyword--source document mappings}
-		\State $MAP_{KS} \gets$ $MAP[KB]$ 
+		\State $M_{KS} \gets$ $M[KW]$ 
 		
 		
 		%\LineComment{put them into map}
 		%\State $MAP \gets$ mapping()
-		\State \textbf{return} $MAP_{KS}$
+		\State \textbf{return} $M_{KS}$
 		\EndProcedure
 	\end{algorithmic}
 \end{algorithm}
@@ -401,32 +401,32 @@ We also construct an inverted index between keywords and their corresponding bug
 
 
 \textbf{(2) Extraction of Changed Source Documents from Bug-Fix Commits:}
-We consult with version control history of each subject system, and identify the bug-fixing commits using appropriate regular expressions \cite{bugid,Wang2}.
-In particular, we go through all the commits and identify such commits that contain keywords related to bug fix or resolution in their messages.
-Then, we collect the changeset (i.e., list of changed documents)
-from each of these bug-fix commits for our study (Lines 9--10, Algorithm \ref{algo:map}). 
+We analyse the version control history of each subject system, and identify the bug-fixing commits using appropriate regular expressions \cite{bugid,Wang2}.
+In particular, we go through all the commits and identify such commits that contain keywords related to bug fix or resolution in their title messages.
+Then, we collect the \emph{changeset} (i.e., list of changed documents)
+from each of these bug-fix commits, and construct a Bug ID--document map (e.g., $M_{bs}$) for our study (Lines 9--10, Algorithm \ref{algo:map}). 
 %Thus, for experiments, we collect not only the actual change requests from the reputed subject systems but also their solutions which were applied in practice by the developers \cite{SHaiduc}. 
 We use several
-utility commands such as \texttt{git, clone} and \texttt{log} on Git-based repository for collecting the above information. 
+utility commands such as \texttt{git, clone} and \texttt{log} on Git-based repository of each system for collecting the above information. 
 
 %This step is done line 7 of Algorithm \ref{algo:map}. 
 %Each of these commit messages presents other information such as the ID of bug report for which it was created and the links of the corresponding changed source code files. 
 %We then construct a linking relationship between each fixed bug report ID into their changed source code files, which is mentioned in line 4 of Algorithm \ref{algo:map}.
 
 \textbf{(3) Construction of Mapping between Keywords and Changed Source Documents:}
-The above two steps deliver (1) an inverted index ($MAP_{kb}$) that maps each individual keyword to numerous bug report IDs, and (2) a map ($MAP_{bs}$) that links each bug report ID to its corresponding changed source documents based on the bug-fixing history.
+The above two steps deliver (1) an inverted index ($M_{kb}$) that maps each individual keyword to numerous bug report IDs, and (2) a map ($M_{bs}$) that links each bug report ID to its corresponding changed source documents based on the bug-fixing history.
 %It should be noted each bug-fixing commit establishes an inherent relationship between its changed documents and the target bug report. 
 Since both of these maps are connected through bug report IDs,
-keywords from each bug report also enjoy an implicit relationships with the corresponding changed source code documents.
-We leverage such implicit, transitive relationships and construct a bipartite graph (e.g., Fig. \ref{fig:BipartiteGraph}) by explicitly connecting the keywords from each bug report and their corresponding changed source documents (Lines 8--24, Algorithm \ref{algo:map}).
+keywords from each bug report also enjoy an implicit, transitive relationship with the corresponding changed source code documents.
+We leverage such transitive relationship and construct a bipartite graph (e.g., Fig. \ref{fig:BipartiteGraph}) by explicitly connecting the keywords from each bug report to their corresponding changed source documents (Lines 11--22, Algorithm \ref{algo:map}).
 %We construct the bipartite graph (i.e., discussed bellows) between keywords collected from a bug report and buggy source document links.
-Here, one or more keywords could be linked to single buggy source document. Conversely, single source document could be linked to one or more keywords from multiple bug reports. 
+Here, one or more keywords could be linked to single buggy source code document. Conversely, single source document could also be linked to one or more keywords from multiple bug reports. 
 
 \textbf{An Example Association Map with Bipartite Graph:} In Mathematics, \emph{bipartite graph} is defined as a special graph that   
-(1) has two disjoint set of nodes and a set of edges and (2) each of its edges connects two nodes from the two different sets but not from the same set \cite{bipartite}.  
+(1) has two disjoint sets of nodes and a set of edges and (2) each of its edges connects two nodes from the two different sets but not from the same set \cite{bipartite}.  
 %only edges are between those two groups, and there are no edges between vertices within the same group. 
 \begin{table}[!tb]
-	\caption{A Bug Report (\#322401, eclipse.UI.platform)}
+	\caption{An Example Bug Report (\#322401, eclipse.ui.platform)}
 	\label{tab:BugInfo2}
 	%\centering
 	%\begin{center}
@@ -451,15 +451,15 @@ Here, one or more keywords could be linked to single buggy source document. Conv
 \end{table}
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.53]{BGraph2}
+	\includegraphics[width=3in]{BGraph2}
 	\caption{An example association map using bipartite graph}
 	\label{fig:BipartiteGraph}
-	\vspace{-.6cm}
+	\vspace{-.5cm}
 \end{figure}
-In our study, these two sets correspond to keywords and source code documents. 
+In our study, these two sets correspond to keywords (from bug reports) and source code documents. 
 Thus, no connection between any two keywords or any two source documents is allowed.
 %Hence, nether two keywords nor two source files can be connected. There exist only one type of valid link, which can be established between a keyword and its corresponding sources. 
-We construct an example bipartite graph for a bug report (ID 322401) from Eclipse UI Platform. Table \ref{tab:BugInfo2} shows the \textit{title} and \textit{description} of the bug report. According to the bug-fix history, these two documents - \texttt{\textbf{S1}:IDEWorkbenchMessages.java} and \texttt{\textbf{S2}: LinkedResourceEditor.java}-- constitute the ground truth for the bug report. Fig. \ref{fig:BipartiteGraph} shows the bipartite graph for the bug report along with its ground truth. We see that ten unique keywords and two source documents represent the two set of nodes and each node is connected to all the nodes from another set. In our approach, we iteratively update such a bipartite graph with new nodes and connections generated from each of the bug reports of a subject system.     
+We construct an example bipartite graph for a bug report (ID 322401) from Eclipse UI Platform. Table \ref{tab:BugInfo2} shows the \textit{title} and \textit{description} of the bug report. According to the bug-fix history, these two documents - \texttt{\textbf{S$_1$}:IDEWorkbenchMessages.java} and \texttt{\textbf{S$_2$}: LinkedResourceEditor.java}-- constitute the ground truth of the bug report above. Fig. \ref{fig:BipartiteGraph} shows the bipartite graph for the bug report along with its ground truth. We see that ten unique keywords and two source documents represent the two sets of nodes and each node is connected to all the nodes from another set. In our approach, we iteratively update such a bipartite graph with new nodes and new connections generated from each of the bug reports of a subject system (Lines 15--20, Algorithm \ref{algo:map}).     
 
 
 %The bipartite graph is presented in . Note, that ten unique keywords are extracted from the bug report (i.e., from title and description) and are connected through edges with their corresponding change codes (i.e., $S1$ represents 
@@ -471,7 +471,7 @@ We construct an example bipartite graph for a bug report (ID 322401) from Eclips
 Fig. \ref{fig:systemDiagram}-(b) shows the schematic diagram
 and Algorithm \ref{algo:localization} presents the pseudo-code
 of our bug localization component.
-We have constructed an association map that connects the keywords from a bug report to its corresponding changed source documents (Section \ref{sec:MapConstruction}). We leverage this association map, and return a list of source code documents that are not only lexically similar but also strongly associated with a given query (bug report at hand) through bug-fixing history. We thus calculate two scores for each candidate source document and then suggest the Top-K documents as follows:
+We have constructed an association map (e.g., $M_{KS}$) that connects the keywords from a bug report to its corresponding changed source documents (Section \ref{sec:MapConstruction}). We leverage this association map, and return a list of buggy source documents that are not only lexically similar but also strongly associated with a given query (i.e., bug report at hand). We thus calculate two different scores for each candidate source document and then suggest the Top-K buggy documents as follows:
 
 %For the candidate keyword tokens for the initial query, we exploit association map database (i.e., keyword-source code links) and retrieve the relevant source code files. We use some heuristic functions in order to combine two ranks and recommend buggy relevant source files. 
 %for our bug localization approach.
@@ -481,11 +481,11 @@ We have constructed an association map that connects the keywords from a bug rep
 	\caption{Proposed Bug Localization Approach}
 	\label{algo:localization}
 	\begin{algorithmic}[1]
-		\Procedure{BugLocalization}{$Q$, $SCrepo$, $MAP_{KS}$}
+		\Procedure{BugLocalization}{$Q$, $SCrepo$, $M_{KS}$}
 		
-		\LineComment{$Q$: a given query (bug report)}
+		\LineComment{$q$: a given query (bug report)}
 		\LineComment{$SCrepo$: a source code repository}
-		\LineComment{$MAP_{KS}$: keyword-source document  map}
+		\LineComment{$M_{KS}$: keyword-source document  map}
 		
 		
 		\State $RL \gets$ \{\}
@@ -494,9 +494,9 @@ We have constructed an association map that connects the keywords from a bug rep
 		\LineComment{Create an index of source documents}
 		\State $Index \gets$ createLuceneIndex($SCrepo$)
 		\LineComment{Collect lexically similar documents}
-		\State $VSM\gets$ getLexSimDocuments($Q$, $Index$)
+		\State $VSM\gets$ getLexSimDocuments($q$, $Index$)
 		\LineComment{Collecting associated documents}
-		\State $Assoc\gets$ getAssociatedDocuments($Q$, $MAP_{bk}$)
+		\State $Assoc\gets$ getAssociatedDocuments($q$, $M_{KS}$)
 		
 		%\Comment{Linking keywords into change source code}
 		%\LineComment{preprocess the collected keywords}
@@ -506,37 +506,13 @@ We have constructed an association map that connects the keywords from a bug rep
 		\State $C\gets$\{$VSM.docs$ $\cup$ $Assoc.docs$\} 
 		
 		\For{SourceDocument $d\in C$}
-		\LineComment{Combine both scores}
-		\State $C[d].score\gets VSM[d].score$+$Assoc[d].score$
-		 
-		
-		%\State $Rank_{Assoc_{i}} \gets$ retrieveAssocScore ($Score_{Assoc}$)
-		
-		%\Comment{retrieve association score for each source file}
-		
-		%\State $Rank_{VSM_{i}} \gets$ retrieveVSMScore ($Score_{VSM}$)
-		
-		%\Comment{retrieve VSM score for the same source file}
-		
-		%\State $CombineS[SC_{i}]\gets Rank_{Assoc_{i}} + %Rank_{VSM_{i}}$
-		
-		%\Comment{Combine both scores utilizing a heuristic metric}
-		
+		\LineComment{Combine lexical and association scores}
+		\State $C[d].score\gets VSM[d].score$
+		\State $C[d].score\gets$ $C[d].score$+$Assoc[d].score$
 		\EndFor
-	
-	
-		
-		
-		
-	
-		
-		
-		\State $RankedR \gets$ retrieveTopRSF ($CombineS[SC_{i}]$)
-		
-		\Comment{Sort combine score and retrieve top ranked buggy files}
-		%\LineComment{put them into map}
-		%\State $MAP \gets$ mapping()
-		\State \textbf{return} $RankedR$
+		\LineComment{Sort the candidates and collect Top-K documents}
+		\State $RL\gets$ getTopKDocuments(sortByScore($C$))
+		\State \textbf{return} $RL$
 		\EndProcedure
 	\end{algorithmic}
 \end{algorithm}
@@ -649,8 +625,6 @@ We have constructed an association map that connects the keywords from a bug rep
 
 
 
-
-
 %\section{Part II: Localizing Buggy Source Code Files} \label{Sec:Localize}
 %In this part, we combine existing two lexical similarity based bug localization approaches with our proposed keyword-source co-occurence relation. One is with VSM score and other one is with rVSM and Simi ranks which are proposed in BugLocator \cite{Jian}. So, there are two sub parts of this section.
 %\subsection{Approach I: Combinition of VSM and Co-occurence Rank:}
@@ -659,55 +633,57 @@ We have constructed an association map that connects the keywords from a bug rep
 
 
 \textbf{Lexical Similarity Score:}
-Source code documents often share a major overlap in vocabulary with a submitted bug report. Many of the existing studies \cite{Jian,Saha,Saha2,Wang2} consider such vocabulary overlap (i.e., lexical similarity) as a mean to localize the buggy source documents. These studies generally use Vector Space Model (VSM) for calculating the vocabulary overlap. VSM is a classical approach for constructing vector representation of any text document (e.g., bug report, source document) \cite{vector-space-model}. First, it encodes a document collection using a term-by-document matrix where each row represents a term and each column represents a document. Second, each matrix cell is defined as the frequency of a term (i.e., term frequency) within a specific document. 
-Thus, lexical similarity between a given query (bug report) and a candidate source document is computed as the cosine or inner product between their corresponding vectors from the matrix.
-Since term frequency (TF)-based vector representation might be biased toward large documents, several studies \cite{Jian,Saha} represent their vectors using TF-IDF. TF-IDF assigns higher weights to such terms that are frequent within a document but not not frequent across the document collection \cite{Salton}.       
+Source code documents often share a major \emph{overlap} in the vocabulary with a submitted bug report. Many of the existing studies \cite{Jian,Saha,Saha2,Wang2} consider such vocabulary overlap (i.e., lexical similarity) as a mean to localize the buggy source documents. These studies generally employ Vector Space Model (VSM) \cite{vector-space-model} for calculating the vocabulary overlap. VSM is a classical approach for constructing vector representation of any text document (e.g., bug report, source code document) \cite{vector-space-model}. First, it encodes a document collection (a.k.a., corpus) using a term-by-document matrix where each row represents a term and each column represents a document. Second, each matrix cell is defined as the frequency of a term within a specific document (i.e., term frequency). 
+Thus, \emph{lexical similarity} between a given query (bug report) and a candidate source document is computed as the \emph{cosine} or \emph{inner product} between their corresponding vectors from the matrix.
+Since term frequency (TF)-based vector representation might be biased toward large documents, several studies \cite{Jian,Saha} also represent their vectors using TF-IDF. It stands for term frequency times inverse document frequency.
+TF-IDF assigns higher weights to such terms that are frequent within a document but not not frequent across the whole document collection \cite{Salton}.       
 %The weight of a term in a document increases with its occurrence frequency in this specific document and decreases with its occurrence frequency in other documents.
 %In our proposed approach we have used both classical Vector Space Model (VSM)  and revised Vector Space Model (rVSM) proposed by \citet{Jian} in order to index and rank source code files. 
-TF-IDF stands for term frequency times inverse document frequency.
+
 In classic VSM, term frequency $tf(t,d)$ and inverse document frequency $idf (t)$ are defined as follows:
 \begin{equation*}
-tf(t,d)=\frac{f_{td}}{\#terms},~~idf(t)=log\frac{\#doc}{n_{t}}
+tf(t,d)=\frac{f_{td}}{\#terms},~~idf(t)=1+log(\frac{\#docs}{n_{t}})
 \end{equation*}
-Here $f_{td}$ refers to the frequency of each unique term {$t$} in a document {$d$}, $n_t$ denotes the document frequency of term $t$ and $\#doc$ is the total number of documents in the collection.   
+Here $f_{td}$ refers to the frequency of each unique term {$t$} in a document {$d$}, $n_t$ denotes the document frequency of term $t$, $\#docs$ is the total number of documents in the corpus and $\#terms$ refers to the total number of unique terms in the corpus.  
 %and {$f\textsubscript{td}$} is the number of times term {$t$} appears in document {$d$}.
-Thus, the lexical similarity between a given query $Q$ (bug report) and a candidate source document $d$ is calculated as follows:
+Thus, the lexical similarity between a given query $q$ (i.e., given bug report) and a candidate source code document $d$ is calculated as follows:
 \begin{multline*}\label{VSMequation}
-lexicalSimScore(Q,d)= cosine(Q,d) =
+lexicalSimScore(q,d)= cosine(q,d) =
 \\
-\sum_{t\epsilon Q\bigcap d}(\frac{f_{tQ}}{\#terms})\times (\frac{f_{td}}{\#terms})\times log(\frac{\#docs}{n_{t}})^{2} \times
-\\
-\frac{1}{\sqrt{\sum_{t\epsilon Q}((\frac{f_{tQ}}{\#terms})\times log(\frac{\#docs}{n_{t}}))^{^{2}}}}\times 
-\\
-\frac{1}{\sqrt{\sum_{t\epsilon d}((\frac{f_{td}}{\#terms})\times log(\frac{\#docs}{n_{t}}))^{2}}}
+\frac{\sum_{t\epsilon \{q\bigcap d\}}tf(t,q)\times tf(t,d)\times idf(t)^{2}
+}{\sqrt{\sum_{t\epsilon q}(tf(t,q)\times idf(t))^2}\times
+\sqrt{\sum_{t\epsilon d}(tf(t,d)\times idf(t))^2}}
 \end{multline*}
-Here, {$\#terms$} refers to the total number of terms 
-in a document collection. $lexicalSimScore$ takes a value between 0 and 1 where 0 means means total dissimilarity and 1 means strong lexical similarity between the query $Q$ and the candidate source code document $d$. We use Apache Lucene for calculating the lexical similarity.
+%Here, {$\#terms$} refers to the total number of terms in a document collection. 
+Here $lexicalSimScore$ takes a value between 0 and 1 where 0 means means total lexical dissimilarity and 1 means strong lexical similarity between the query $q$ and the candidate source code document $d$. We use \emph{Apache Lucene} for first creating the corpus index and then for calculating the above lexical similarity (Lines 6--9, Algorithm \ref{algo:localization}).
 
-\textbf{Implicit Association Score:} We analyse the implicit associations between a given query (bug report) and each candidate source document using our association map (i.e., bipartite graph) (Section \ref{sec:MapConstruction}). In this map, while each keyword could be linked to multiple candidate documents, each document could also be linked to multiple keywords. 
-We perform standard natural language processing on a given query, and extract a list of query keywords.
-We then identify such source documents in the map that are linked to each of these keywords. Since these links were established based on the bug-fixing history, they represent an \emph{implicit relevance} between the keywords and the documents. It should be noted that such relevance does not warrant for lexical similarity.
+\textbf{Implicit Association Score:} We analyse implicit associations between a given query (bug report) and each candidate source document using our constructed association map (from Section \ref{sec:MapConstruction}). In this map, while each keyword could be linked to multiple candidate documents, each document could also be linked to multiple keywords across multiple bug reports. 
+We perform standard natural language preprocessing on a given query, and extract a list of query keywords.
+We then identify such source documents in the map that are linked to each of these keywords. Since these links were established based on the bug-fixing history, they represent an \emph{implicit relevance} between the keywords and the candidate documents. It should be noted that such relevance does not warrant for lexical similarity.
 %We assume these files are relevant because we created the map between the content of bug reports and their buggy source files for previously fixed bug reports. 
-We analyse such links for all the keywords ($q\in Q$) of a query, and determine how frequently each candidate source document $d$ has associated with these keywords as follows: 
+We analyse such links for all the keywords ($\forall t\in q$) of a query $q$, and determine how frequently each candidate source document $d$ was associated with these keywords in the past as follows: 
 \begin{equation*}\label{CoOccequation}
-associationScore(Q,d)=\sum_{q\in Q}\#Link(q,d)
+associationScore(q,d)=\sum_{t\in q}\sum_{id\in ID_t} \#link(t,d,id)
 \end{equation*}
-Here $\#Link(q,d)$ returns the frequency of association between the keyword $q$ and the source document $d$ across the bug-fixing history of a subject system. That is, $associationScore$ assigns a score to each candidate document by capturing their historical co-occurrences with the query keywords across the bug-fixing history.
+Here $\#link(t,d,id)$ returns the frequency of association between the keyword $t\in q$ and the source document $d$ for the bug report with ID $id\in ID_t$.   
+%across the bug-fixing history of a subject system. 
+That is, $associationScore$ assigns a score to each candidate document by capturing their historical co-occurrences with the query keywords across the bug-fixing history of a subject system.
 
 
 
 %Here, the link $Link(W{j},S_{i})$ between keyword and source file is 1 if they are connected in the association map and 0 otherwise. This step is done in line 4 of Algorithm \ref{algo:localization}.
 
 
-\textbf{Final Score Calculation:} The above two sections deliver two different scores (\emph{lexical similarity}, \emph{implicit association}) for each of the candidate source code documents. Since these scores could be of different ranges, we normalize both of them, combine them, and then calculate the final score (Lines 7--12, Algorithm \ref{algo:localization}) as follows:
+\textbf{Final Score Calculation:} The above two sections deliver two different scores (\emph{lexical similarity}, \emph{implicit association}) for each of the candidate source code documents. Since these scores could be of different ranges, we normalize both of them between 0 and 1. We then
+combine both scores using a weighted summation, and calculate the final score for each candidate (Lines 14--18, Algorithm \ref{algo:localization}) as follows:
 \begin{multline*}\label{equationVSMme}
-FinalScore=(1-\alpha )\times Norm(lexicalSimScore)+ \\
+FinalScore(q,d)=(1-\alpha )\times Norm(lexicalSimScore)+ \\
 \alpha \times Norm(associationScore)
 \end{multline*}
 Here, the weighting factor $\alpha$ varies from 0.2 to 0.4, and
-the detailed justification is provided during experiment and discussions (Section \ref{RQ2Answer}). 
+the detailed justification is provided in the experiment and discussion section (Section \ref{RQ2Answer}). 
 
-Once the final score is calculated for each of the candidate source documents from the corpus, we return the Top-K results as the buggy documents for the given query $Q$.
+Once the final score is calculated for each of the candidate source documents from the corpus, we return the Top-K results as the buggy source documents for the given query $q$ (Lines 19--21, Algorithm \ref{algo:localization}).
 
 %which we discuss results in the experiment section \ref{RQ2Answer}.
 %a relevant file can be found from the association relationship more than once. Therefore, we then normalize the frequency of source files using standard TFIDF normalization technique. 
@@ -715,117 +691,95 @@ Once the final score is calculated for each of the candidate source documents fr
 %We compute VSM score using Appache Lucene library. Then we combine that score with our association using equation \ref{equationVSMme}.
 %We combine both scores using equation \ref{equationVSMme} in Algorithm \ref{algo:localization} line 7-11. Finally, top ranked recommended buggy files are retrieved, which is done line 12 of Algorithm \ref{algo:localization}.
 
+\section{Experiment} \label{sec:expANDdiss}
+We evaluate our technique in three different aspects using
+three widely used performance metrics and 3,431 bug reports (i.e.,
+queries) from four open source subject systems. We compare not only with two baseline techniques but also three state-of-the-art studies from the literature. We also answer three research questions with our experiment as follows: 
+\begin{itemize}
+	\item \textbf{RQ$_1$}: How does the proposed approach perform in bug localization compared to the baseline approaches? 
+	\item \textbf{RQ$_2$}: (a) Can implicit association make any significant difference in IR-based bug localization? (b) Can BLuAMIR overcome the challenges with large documents?   
+	\item \textbf{RQ$_3$}: Can the proposed approach outperform the state-of-the-art studies in bug localization?
+\end{itemize}
 
 
 
+\subsection{Experimental Dataset}\label{sec:dataset}
+Table \ref{tab:DDSl} shows our experimental dataset. We use a total of 3,431 bug reports from four open source systems--Eclipse, AspectJ, SWT and ZXing--for our experiment. These systems are collected from two existing, frequently used public benchmarks \cite{Jian,Saha}. 
+%In order to evaluate our proposed tool we have used the same four dataset that \citet{Jian} and \citet{Saha} used
+%to evaluate BugLocator and BLUiR respectively. This dataset contains 3479 bug reports in total from four popular open source projects–Eclipse, SWT, AspectJ and ZXing along with the information of fixed files for those bugs.
+%The detail of our dataset is presented in \ref{tab:DDSl}. 
+\emph{Eclipse} is a well-known large-scale system which is frequently used in empirical Software Engineering research.
+\emph{SWT} is a component of Eclipse IDE.
+\emph{AspectJ} is a part of iBUGs dataset provided by University of Saarland. 
+ZXing is an android based system maintained by Google. We collect \emph{title} and \emph{description} from each of these 3,431 bug reports. We perform standard natural language preprocessing on them, and remove stop words, punctuation marks, and small words from them. Then each of these preprocessed bug reports is used as the \emph{baseline query} for our experiment. 
 
-\section{Experiment and Discussion} \label{sec:expANDdiss}
-In this section, at first we discuss detail of our data set, then we describe the evaluation metrics, research questions and finally we present our experimental results.
+%as generally done 
+%preprocess them with standard n use them as queries for the bug localization.
 
+%We create quires from each bugs considering their title and short summary (i.e., description).
 
+\textbf{Ground Truth Selection:} We analyse the bug-fixing commits from each subject system, and select the ground truth for our experiment. In particular, we go through all commit messages of a system and identify such commits that deals with bug fixing or resolution (i.e., bug fixing commits) using appropriate regular expressions \cite{bugid}. We then extract the changed source documents from each of these commits, and map them to the fixed bug ID. Such changed documents are then used as the \emph{ground truth} for the corresponding bug reports (i.e., queries). The same approach has been widely used by the literature \cite{Saha2,Wang2,Jian} for the ground truth selection. 
 
-
-%\begin{table}[htbp]
-%\caption{Table Type Styles}
-%\begin{center}
-%\begin{tabular}{|c|c|c|c|}
-%\hline
-%\textbf{Table}&\multicolumn{3}{|c|}{\textbf{Table Column Head}} \\
-%\cline{2-4} 
-%\textbf{Head} & \textbf{\textit{Table column subhead}}& \textbf{\textit{Subhead}}& \textbf{\textit{Subhead}} \\
-%\hline
-%copy& More table copy$^{\mathrm{a}}$& &  \\
-%\hline
-%\multicolumn{4}{l}{$^{\mathrm{a}}$Sample of a Table footnote.}
-%\end{tabular}
-%\label{tab1}
-%\end{center}
-%\end{table}
-
-
-
-\subsection{Experimental Dataset}
-We work with four different dataset - Eclipse, AspectJ, SWT aand Zxing.
-In order to evaluate our proposed tool we have used the same four dataset that \citet{Jian} and \citet{Saha} used
-to evaluate BugLocator and BLUiR respectively. This dataset contains 3479 bug reports in total from four popular open source projects–Eclipse, SWT, AspectJ and ZXing along with the information of fixed files for those bugs.
-The detail of our dataset is presented in \ref{tab:DDSl}. 
-Eclipse\footnote{https://bugs.eclipse.org/} is a well-known large-scale open source system and it is widely used in empirical software engineering research.
-SWT\footnote{http://www.eclipse.org/swt/} is a component of Eclipse.
-The AspectJ\footnote{http://www.st.cs.uni-saarland.de/ibugs/} project is a part of the iBUGs public dataset provided by the University of Saarland. 
-Zxing\footnote{http://code.google.com/p/zxing/} is an android based project maintained by google.
-%We work with Eclipse data set which is a popular IDE for Java. 
-%We downloaed a git based Eclipse project from git repository \footnote{https://git.eclipse.org/c/platform/eclipse.platform.ui.git/}. We work with Eclipse Platform UI project. 
-%These source codes are contained in our source code repository. 
-%On the other hand, currently Eclipse Platform UI project contains more than 10K number of bugs where we only work with the bugs which are fixed. 
-We create quires from each bugs considering their title and short summary (i.e., description).
-%We have two parts in our corpus. One is source code files downloaded as git based project and another part is bug reports collection. All bug reports are collected from. 
-In order to obtain the links between previously fixed bugs and source code files, we analyze git project commit message. We ran through all commit messages and track Bug IDs associated with examined source code files. Then we construct the association map between keywords extracted from bug reports and their source code links. During creating the map we have noticed some bug reports do not contain their fixed source files in codebase. So, we discarded those bug reports which yield total 3431 bug reports as depicted in table \ref{tab:DDSl}.
+%track Bug IDs associated with examined source code files. Then we construct the association map between keywords extracted from bug reports and their source code links. During creating the map we have noticed some bug reports do not contain their fixed source files in codebase. So, we discarded those bug reports which yield total 3431 bug reports as depicted in table \ref{tab:DDSl}.
  
 
-\begin{table}[htbp]
-	\caption{Description of Data Sets}
+\begin{table}[!tb]
+	\caption{Experimental Dataset}
 	\label{tab:DDSl}
 	%\centering
-	\begin{center}
-		\begin{tabular}{ p{1cm} | p{2.5cm} | p{1.5cm} | p{.75cm} | p{.75cm} }
+	\vspace{-.1cm}
+	%\begin{center}
+		\resizebox{3.45in}{!}{%
+		\begin{tabular}{ l| c | p{2.2cm} | c | c }
 			\hline
-			\textbf{Project Name}  & \textbf{Description} & \textbf{Study Period}& \textbf{\#Fixed Bugs} & \textbf{\#Source Files}\\
+			\textbf{Project} & \textbf{Version} & \textbf{Study Period}& \textbf{\#Bugs} & \textbf{\#Documents}\\
 			\hline
 			%{Eclipse Platform Ant} & Popular IDE for Java & Nov 2001 - April 2010 & {3855} & 11732\\ \hline
 		 \hline
 				
-			{Eclipse (v3.1)} & An open development platform for Java & Oct 2004 - Mar 2011 & {3071} & 11831\\ \hline
-			SWT (V 3.1)& An open source widget toolkit for Java & Oct 2004 - Apr 2010 & 98 &  484\\ \hline
-			AspectJ& Aspect-oriented extension to Java & July 2002 - Oct 2006 & 244 & 3519 \\ \hline
-			ZXing & A barcode image processing library for Android Application & Mar 2010 - Sep 2010 & 20 & 391 \\
+			Eclipse & v3.1  & Oct 2004 - Mar 2011 & {3071} & 11831\\ \hline
+			SWT &  v3.1 & Oct 2004 - Apr 2010 & 98 &  484\\ \hline
+			AspectJ & - & July 2002 - Oct 2006 & 244 & 3519 \\ \hline
+			ZXing & - & Mar 2010 - Sep 2010 & 20 & 391 \\
 			\hline
-			
 		\end{tabular}
-	\end{center}
+	}
+    \vspace{-.6cm}
+	%\end{center}
 	%\centering
 \end{table}
-\subsection{Evaluation Metrices}
-To measure the effectiveness of the proposed bug localization approach, we use the following metrics:
+\subsection{Performance Metrics}
+%To measure the effectiveness of the proposed bug localization approach, we use the following metrics:
 
-\textbf{Ton N-Rank (Hit@N):} It represents the number of bug, for which their associated files are returned in a ranked list. Here, \textit{N} may be 1, 5 or 10. We assume that if at least one associated file is presented in the resulted ranked list, then the given bug is located. The higher the metric value, the better the bug localization performance.
+\textbf{Recall at Top K / Hit@K:} It represents the percentage of bug reports for each of which at least one ground truth buggy document is successfully retrieved within the Top-K results. Here, $K$ could be 1, 5 or 10.  The higher the Hit@K value is, the better the bug localization performance is.
 
-\textbf{MRR (Mean Reciprocal Rank)}
-The reciprocal rank of a query is the multiplicative inverse of the rank of the first correct answer. So mean reciprocal rank is the average of the reciprocal ranks of results of a set of queries $Q$
-\begin{equation}
-MRR=\frac{1}{\left | Q \right |}\sum_{i=1}^{\left | Q \right |}\frac{1}{rank_{i}}
-\end{equation}
-where $rank_i$ is the position of the first buggy file in the returned ranked files for the first query in $Q$.
+\textbf{Mean Reciprocal Rank (MRR):}
+The reciprocal rank of a query is the multiplicative inverse of the rank of the first buggy document within the result list. Hence, mean reciprocal rank is calculated as the mean of reciprocal ranks of a set of queries $Q$ as follows:
+\begin{equation*}
+MRR(Q) = \frac{1}{\left | Q \right |}\sum_{q\in Q}\frac{1}{firstRank(q)}
+\end{equation*}
+where $firstRank(q)$ is the rank of the first buggy source document within the returned result list for each query $q\in Q$. Reciprocal rank takes a value between 0 and 1. Here, 0 value suggests that no buggy document is retrieved whereas 1 value suggests that the first buggy document is retrieved at the topmost position of the result list.
 
-\textbf{MAP (Mean Average Precision)}
-Mean Average Precision is the most commonly used IR metric to evaluate ranking approaches. It considers the ranks of all buggy files into consideration. So, MAP emphasizes all of the buggy files instead of only the first one.
-MAP for a set of queries is the mean of the average precision scores for each query. The average precision of a single query is computed as:
-\begin{equation}
-AP=\sum_{k=1}^{M}\frac{P(k)\times pos(k)}{number \, of \, positive \, instances}
-\end{equation}
-where $k$ is a rank in the returned ranked files, $M$ is the number of ranked files and $pos(k)$ indicates whether the $k_{th}$ file is a buggy file or not. $P(k)$ is the precision at a given top $k$ files and is computed as follows:
-\begin{equation}
-P(k)=\frac{\#buggy \, Files}{k}
-\end{equation}
+\textbf{Mean Average Precision (MAP):}
+Mean Average Precision is a commonly used metric for evaluating the ranking approaches. Unlike MRR, it considers the ranks of all buggy documents into consideration. 
+%Hence, MAP emphasizes all of the buggy files instead of only the first one.
+%MAP for a set of queries is the mean of the average precision scores for each query. 
+Average Precision of a query $q$ can be computed as follows:
+\begin{equation*}
+AP(q)=\sum_{k=1}^{K}\frac{P(k)\times buggy(k)}{|R|},~~P(k)=\frac{\#buggy ~Docs}{k}
+\end{equation*}
+where $k$ is a rank in the ranked results, $K$ is the number of total documents, and $S$ is the set of true positive instances. $buggy(k)$ function indicates whether the $k_{th}$ document is buggy file or not. $P(k)$ returns the calculated precision at a given rank position. Since AP is a metric for single query $q$, MAP can be calculated for a set of queries $Q$ as follows:
+\begin{equation*}
+MAP(Q) = \frac{1}{|Q|}\sum_{q\in Q}AP(q)
+\end{equation*}
+MAP takes a value between 0 and 1. The higher the metric value is, the better the bug localization performance is.
+
 
 %\textbf{Wilcoxon signed-rank test}
 %The Wilcoxon signed-rank test is a non-parametric statistical hypothesis test used to compare two related samples, matched samples, or repeated measurements on a single sample to assess whether their population mean ranks differ. We perform this test with the help of \footnote{https://www.socscistatistics.com/tests/signedranks/Default.aspx}.
 %
 %\textbf{Cross Validation}
 %We divide our query data into k number of sets. Typically k is 10, but we work with k =5 and k=10. Each set contains a training set and tesing set. Training data is used to create mapping between keywords extracted from bug reports and source code files. 10-fold-cross validation data is presented in table \ref{tab:Performance1} and table \ref{tab:Performance2}.
-
-
-\subsection{Research Questions}
-Our proposed tool-BLuAMIR are designed to  answer the following research questions.
-\begin{itemize}
-	%\item RQ1: How many bugs can be successfully located by BLuAMIR?
-	\item RQ1: (a) How does our proposed approach-BLuAMIR perform in Bug Localization? (b) How does our proposed association score affect its performance?
-	\item RQ2: Does our proposed approach-BLuAMIR resolve the vocabulary missmatch problem and how?
-	\item RQ3: Does our proposed approach-BLuAMIR eliminate large files problem and how?
-	\item RQ4: Is BLuAMIR comparable with the state-of-the-art techniques in identifying buggy files?
-\end{itemize}
-
-
-
 
 
 
