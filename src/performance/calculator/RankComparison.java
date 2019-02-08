@@ -27,15 +27,17 @@ public class RankComparison {
 		// TODO Auto-generated method stub
 		String basePart="E:\\PhD\\Repo\\SWT";
 		RankComparison obj=new RankComparison();
+		HashMap<String, Long> baselineMap=new HashMap<>();
+		HashMap<String, Long> Othermap=new HashMap<>();
 		for(int i=1;i<=98;i++)
 		{
 		
-			HashMap<String, Long> baselineMap=obj.LoadRankMap(basePart+"\\data\\"+"bestRank"+i+".txt");
-			HashMap<String, Long> BLuAMIRmap=obj.LoadRankMap(basePart+"\\data\\"+"bestRankBugLocator"+i+".txt");
+			obj.LoadRankMap(baselineMap, basePart+"\\data\\"+"bestRank"+i+".txt");
+			obj.LoadRankMap(Othermap, basePart+"\\data\\"+"bestRankBugLocator"+i+".txt");
 			System.out.println(baselineMap.size());
-			System.out.println(BLuAMIRmap.size());
-			obj.RanKComp(obj,baselineMap, BLuAMIRmap);
-			System.out.println(baselineMap+"   "+BLuAMIRmap);
+			System.out.println(Othermap.size());
+			obj.RanKComp(obj,baselineMap, Othermap);
+			System.out.println(baselineMap+"  \n "+Othermap);
 		}
 		System.out.println("Total: "+obj.totalBug+" Improvement: "+obj.totalImprovement+" Worsen: "+obj.totalWorsen+" Preserve: "+obj.totalPreserve);
 		System.out.println("Improvement Mean: "+FindMean(obj.improveList)+" min: "+FindMin(obj.improveList)+" max: "+FindMax(obj.improveList));
@@ -74,18 +76,18 @@ public class RankComparison {
 		return max;
 	}
 	
-	public HashMap<String, Long> LoadRankMap(String filePath)
+	public HashMap<String, Long> LoadRankMap(HashMap<String, Long> Map, String filePath)
 	{
-		HashMap<String, Long> rankMap=new HashMap<>();
+		//HashMap<String, Long> rankMap=new HashMap<>();
 		ArrayList<String> list=ContentLoader.getAllLinesList(filePath);
 		for(String line:list)
 		{
 			String[] spilter=line.split(":");
 			String bugID=spilter[0];
 			Long bestRank=Long.valueOf(spilter[1]);
-			rankMap.put(bugID, bestRank);
+			Map.put(bugID, bestRank);
 		}
-		return rankMap;
+		return Map;
 	}
 	
 	public static void RanKComp(RankComparison obj,HashMap<String, Long> baselineMap, HashMap<String, Long> BLuAMIRmap)
