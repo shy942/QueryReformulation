@@ -512,7 +512,7 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		int total_test=20;
+		int total_test=3071;
 		double alpha=0.0;
 		for(int i=1;i<=total_test;i++)
 		{
@@ -541,7 +541,7 @@ public class BugLocalizationUsingNumbers {
 			
 			//For SWT/Zxing/AspectJ/Eclipse
 			int test=i;
-			String corpus="Zxing";
+			String corpus="Eclipse";
 			String base="E:\\PhD\\Repo\\"+corpus+"\\"; 
 			//String base="E:\\PhD\\LSI\\Repo\\Zxing\\";
 			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers(base+"\\data\\FinalMap\\TokenSourceMapTrainset"+test+".txt",base+"\\data\\testset\\test"+test+".txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\data\\changeset-pointer\\ID-SourceFile.txt",base+"\\data\\ID-Keyword.txt");
@@ -549,26 +549,26 @@ public class BugLocalizationUsingNumbers {
 			//For Mac
 			//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
 			//ForWindows
-			String sourceFolder = base+"\\ProcessedSourceCorpus\\";
+			String sourceFolder = base+"\\ProcessedSourceCorpusDec17-2\\";
 				
 			//String goldsetFile = base+"\\data\\"+corpus+"All.txt";
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			=base+"\\data\\Results\\Feb07VSM"+alpha+"-"+test+".txt";
+			=base+"\\data\\Results\\Feb08VSM"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 			System.out.println(bugReportFolder);
 			//obj.bugLocator(obj, outputFilePath, sourceFolder, bugReportFolder, goldsetFile);
-			obj.bugLocatorLuceneAndMe(corpus,obj, outputFilePath, bugReportFolder);
+			obj.bugLocatorLuceneAndMe(alpha,corpus,obj, outputFilePath, bugReportFolder);
 			//call the bug localizer
 		
 		}
 	}
 
-	 public void bugLocatorLuceneAndMe(String corpus,BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
+	 public void bugLocatorLuceneAndMe(double ALPHA,String corpus,BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
 	    {
-		 	double ALPHA=0.0;
+		 	//double ALPHA=0.7;
 		 	double BETA=1-ALPHA;
 		 	
 		 	//For Eclipse
@@ -617,7 +617,7 @@ public class BugLocalizationUsingNumbers {
 					{
 					    {
 					    count++;
-						if(count>100)break; 
+						if(count>1000)break; 
 						//finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+sortedResultMyTool.get(key)+","+SortedBLresult.get(key));
 						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+SortedBLresult.get(key));
 					    }
