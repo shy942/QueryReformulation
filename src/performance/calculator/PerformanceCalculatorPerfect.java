@@ -40,7 +40,7 @@ public class PerformanceCalculatorPerfect {
 		// TODO Auto-generated method stub
 		
 		//new PerformanceCalculatorPerfect().getSingleResult("");
-		new PerformanceCalculatorPerfect().getAvgPerformance(3071, 0.4, "VSMandMe");
+		new PerformanceCalculatorPerfect().getAvgPerformance(3071, 0.0, "VSMandMe");
 		//new PerformanceCalculatorPerfect().getAvgPerformance(1, 0, "VSMandMe");
 	}
 

@@ -617,7 +617,7 @@ public class BugLocalizationUsingNumbers {
 					{
 					    {
 					    count++;
-						if(count>1000)break; 
+						if(count>10000)break; 
 						//finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+sortedResultMyTool.get(key)+","+SortedBLresult.get(key));
 						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+SortedBLresult.get(key));
 					    }

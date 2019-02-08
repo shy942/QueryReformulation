@@ -32,11 +32,11 @@ public class RankComparison {
 		for(int i=1;i<=3071;i++)
 		{
 		
-			obj.LoadRankMap(baselineMap, basePart+"\\data\\"+"bestRank"+i+".txt");
+			obj.LoadRankMap(baselineMap, basePart+"\\data\\"+"bestRankVSM"+i+".txt");
 			obj.LoadRankMap(Othermap, basePart+"\\data\\"+"bestRankVSMandMe"+i+".txt");
 			//System.out.println(baselineMap.size());
 			//System.out.println(Othermap.size());
-			
+		
 			//System.out.println(baselineMap+"  \n "+Othermap);
 		}
 		System.out.println(baselineMap.size());
@@ -124,8 +124,8 @@ public class RankComparison {
 			}
 			else
 			{
-			    improvement++;
-			    obj.improveList.add((long) 1000);
+			    //improvement++;
+			    //obj.improveList.add((long) 1000);
 			}
 		}
 		int total=improvement+worsen+preserve;
