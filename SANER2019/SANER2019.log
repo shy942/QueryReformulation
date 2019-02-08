@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.24)  8 FEB 2019 01:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.24)  8 FEB 2019 01:35
 entering extended mode
 **./SANER2019.tex
 (SANER2019.tex
@@ -991,12 +991,12 @@ Overfull \hbox (0.95071pt too wide) in paragraph at lines 1133--1177
 <alpha-calibration-mrr.png, id=56, 374.14781pt x 238.64156pt>
 File: alpha-calibration-mrr.png Graphic file (type png)
 <use alpha-calibration-mrr.png>
-Package pdftex.def Info: alpha-calibration-mrr.png  used on input line 1357.
+Package pdftex.def Info: alpha-calibration-mrr.png  used on input line 1360.
 (pdftex.def)             Requested size: 180.67499pt x 115.2385pt.
 <alpha-calibration-map.png, id=57, 374.90062pt x 234.8775pt>
 File: alpha-calibration-map.png Graphic file (type png)
 <use alpha-calibration-map.png>
-Package pdftex.def Info: alpha-calibration-map.png  used on input line 1365.
+Package pdftex.def Info: alpha-calibration-map.png  used on input line 1368.
 (pdftex.def)             Requested size: 180.67499pt x 113.19507pt.
  [8 <./alpha-calibration-mrr.png> <./alpha-calibration-map.png>] [9] (SANER2019
 .bbl
@@ -1057,7 +1057,7 @@ KTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/MasudRahman/AppData/Local/
 Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/MasudRahman/AppD
 ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb><C:/Users/Masud
 Rahman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on SANER2019.pdf (11 pages, 563799 bytes).
+Output written on SANER2019.pdf (11 pages, 563798 bytes).
 PDF statistics:
  132 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

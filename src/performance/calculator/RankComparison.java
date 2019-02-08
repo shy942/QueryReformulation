@@ -25,20 +25,25 @@ public class RankComparison {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String basePart="E:\\PhD\\Repo\\SWT";
+		String basePart="E:\\PhD\\Repo\\Eclipse";
 		RankComparison obj=new RankComparison();
 		HashMap<String, Long> baselineMap=new HashMap<>();
 		HashMap<String, Long> Othermap=new HashMap<>();
-		for(int i=1;i<=98;i++)
+		for(int i=1;i<=3071;i++)
 		{
 		
 			obj.LoadRankMap(baselineMap, basePart+"\\data\\"+"bestRank"+i+".txt");
-			obj.LoadRankMap(Othermap, basePart+"\\data\\"+"bestRankBugLocator"+i+".txt");
-			System.out.println(baselineMap.size());
-			System.out.println(Othermap.size());
-			obj.RanKComp(obj,baselineMap, Othermap);
-			System.out.println(baselineMap+"  \n "+Othermap);
+			obj.LoadRankMap(Othermap, basePart+"\\data\\"+"bestRankVSMandMe"+i+".txt");
+			//System.out.println(baselineMap.size());
+			//System.out.println(Othermap.size());
+			
+			//System.out.println(baselineMap+"  \n "+Othermap);
 		}
+		System.out.println(baselineMap.size());
+        System.out.println(Othermap.size());
+        
+        System.out.println(baselineMap+"  \n "+Othermap);
+		obj.RanKComp(obj,baselineMap, Othermap);
 		System.out.println("Total: "+obj.totalBug+" Improvement: "+obj.totalImprovement+" Worsen: "+obj.totalWorsen+" Preserve: "+obj.totalPreserve);
 		System.out.println("Improvement Mean: "+FindMean(obj.improveList)+" min: "+FindMin(obj.improveList)+" max: "+FindMax(obj.improveList));
 		System.out.print("Worsen Mean: "+FindMean(obj.worsenList)+" min: "+FindMin(obj.improveList)+" max: "+FindMax(obj.worsenList));
@@ -116,6 +121,11 @@ public class RankComparison {
 						obj.worsenList.add(-difference);
 					}
 				//System.out.println(bugID+" "+improvement+" "+worsen+" "+preserve);
+			}
+			else
+			{
+			    improvement++;
+			    obj.improveList.add((long) 1000);
 			}
 		}
 		int total=improvement+worsen+preserve;
