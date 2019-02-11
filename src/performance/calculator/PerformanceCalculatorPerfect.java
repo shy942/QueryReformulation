@@ -40,7 +40,7 @@ public class PerformanceCalculatorPerfect {
 		// TODO Auto-generated method stub
 		
 		//new PerformanceCalculatorPerfect().getSingleResult("");
-		new PerformanceCalculatorPerfect().getAvgPerformance(3071, 0.0, "VSMandMe");
+		new PerformanceCalculatorPerfect().getAvgPerformance(10, 0.4, "VSMandMe");
 		//new PerformanceCalculatorPerfect().getAvgPerformance(1, 0, "VSMandMe");
 	}
 
@@ -62,7 +62,7 @@ public class PerformanceCalculatorPerfect {
 			corpus="Eclipse";
 			
 			 base="E:\\PhD\\Repo\\"+corpus; 
-			 obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfoAll"+corpus+".txt",base+"\\data\\Results/"+"/Feb08"+baseNamePart+alpha+"-"+test+".txt");		
+			 obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfoAll"+corpus+".txt",base+"\\data\\Results/"+"/Oct31"+baseNamePart+alpha+"-"+test+".txt");		
 			 //obj=new PerformanceCalculatorPerfect(base+"\\gitInfo"+corpus+"SingleFile.txt","E:\\PhD\\LSI\\Repo\\"+corpus+"\\data\\Results\\"+test+".txt");     
 			//PerformanceCalculatorPerfect 
 			//obj=new PerformanceCalculatorPerfect("E:/PhD/Repo/"+corpus+"/data/gitInfo1KB"+corpus+".txt","E:/BugLocator/output/"+corpus+"outputJan04-9.txt");	
@@ -83,7 +83,8 @@ public class PerformanceCalculatorPerfect {
 			if(bestRankListHM.size()>0){
 			for(String bug:bestRankListHM.keySet())
 			{
-				bestRankstr+=bug+":"+bestRankListHM.get(bug)+"\n";
+			   int rank=(Integer.valueOf(bestRankListHM.get(bug))-1);
+				bestRankstr+=bug+":"+String.valueOf(rank)+"\n";
 			}
 			}
 			/*
@@ -100,7 +101,7 @@ public class PerformanceCalculatorPerfect {
 		writeForBoxPlot(resultContainer,base,method,corpus);
 		
 		//System.out.println(resultContainer);
-		ContentWriter.writeContent(base+"\\data\\performance\\allperformance.txt", resultContainer);
+		//ContentWriter.writeContent(base+"\\data\\performance\\allperformance+"+baseNamePart+".txt", resultContainer);
 	}
 	
 	public static void writeForBoxPlot(HashMap <String, HashMap<String, Double>> resultContainer, String base, String method, String dataset)
