@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  11 FEB 2019 16:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.24)  16 FEB 2019 23:12
 entering extended mode
 **./SANER2019.tex
 (SANER2019.tex
@@ -973,14 +973,21 @@ Package pdftex.def Info: alpha-calibration-map.png  used on input line 1370.
 (pdftex.def)             Requested size: 180.67499pt x 113.19507pt.
 [8 <./alpha-calibration-mrr.png> <./alpha-calibration-map.png>] [9]
 (SANER2019.bbl
+Underfull \vbox (badness 2035) has occurred while \output is active []
+
+
 
 Package balance Warning: You have called \balance in second column
 (balance)                Columns might not be balanced.
 
 [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1424) has occurred while \output is active []
 
-)
+
+Overfull \vbox (0.54251pt too high) has occurred while \output is active []
+
+
+[11])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -993,20 +1000,20 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 
-Overfull \vbox (1.27316pt too high) has occurred while \output is active []
+Overfull \vbox (2.16492pt too high) has occurred while \output is active []
 
 
-[11] (SANER2019.aux)
+[12] (SANER2019.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 14708 strings out of 492973
- 257112 string characters out of 3126692
- 320446 words of memory out of 3000000
- 18424 multiletter control sequences out of 15000+200000
- 573593 words of font info for 100 fonts, out of 3000000 for 9000
+ 14704 strings out of 492973
+ 257060 string characters out of 3126692
+ 320555 words of memory out of 3000000
+ 18421 multiletter control sequences out of 15000+200000
+ 572457 words of font info for 99 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,15n,61p,1639b,371s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
@@ -1032,9 +1039,9 @@ w/times/utmbi8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmr8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/urw/times/utmri8a.pfb><C:/Users/Mukta/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on SANER2019.pdf (11 pages, 564866 bytes).
+Output written on SANER2019.pdf (12 pages, 562462 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
+ 135 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
