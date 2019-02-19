@@ -34,8 +34,8 @@ public class RankComparison {
 		
 			obj.LoadRankMap(baselineMap, basePart+"\\data\\"+"bestRankVSM"+i+".txt");
 			obj.LoadRankMap(Othermap, basePart+"\\data\\"+"bestRankVSMandMe"+i+".txt");
-			//System.out.println(baselineMap.size());
-			//System.out.println(Othermap.size());
+			//System.out.println(baselineMap);
+			//System.out.println(Othermap);
 		
 			//System.out.println(baselineMap+"  \n "+Othermap);
 		}
@@ -109,7 +109,7 @@ public class RankComparison {
 				Long baseRank=Long.valueOf(baselineMap.get(bugID));
 				Long BLuAMIRrank=Long.valueOf(BLuAMIRmap.get(bugID));
 				Long difference=baseRank-BLuAMIRrank;
-				System.out.println(baseRank+" "+BLuAMIRrank+" "+difference);
+				//System.out.println(baseRank+" "+BLuAMIRrank+" "+difference);
 				if(difference==0)preserve++;
 				else if(difference>0) 
 					{
@@ -121,7 +121,7 @@ public class RankComparison {
 						worsen++;
 						obj.worsenList.add(-difference);
 					}
-				System.out.println(bugID+" "+improvement+" "+worsen+" "+preserve);
+				//System.out.println(bugID+" "+improvement+" "+worsen+" "+preserve);
 			}
 			else
 			{

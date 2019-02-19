@@ -92,14 +92,15 @@
 \maketitle
 
 \begin{abstract}
-Bug localization is one of the most challenging tasks undertaken by the developers during software maintenance.
-Most of the existing studies rely on lexical similarity between the bug reports and source code for bug localization.
-Unfortunately, such similarity always does not exist, and these studies suffer from vocabulary mismatch issues.
+Bug localization is one of the most challenging tasks undertaken by developers during software maintenance.
+Most existing studies rely on the lexical similarity between the bug reports and source code for bug localization.
+%Unfortunately, such similarity always does not exist, and these studies suffer from vocabulary mismatch issues.
+Unfortunately, this approach suffers due to vocabulary mismatch issues and results in unrecognised similarity. 
 In this paper, we propose a bug localization technique that (1) not only uses lexical similarity between a given bug report and source code documents  
 but also (2) exploits the association between keywords from the previously resolved bug reports and their corresponding changed source documents.
 Experiments using a collection of 3,431 bug reports show that on average our technique can locate buggy files with a Top-10 accuracy of 74.06\%, a mean reciprocal rank@10 of 0.52 and a mean average precision@10 of 41\% which are highly promising. 
-Comparison with the state-of-the-art techniques
-and their variants report that our technique can improve upon them by 32.26\% in MAP@10 and 26.74\% in Top-5 accuracy. 
+Comparison with state-of-the-art techniques
+and their variants shows that our technique can have improvements of 32.26\% in MAP@10 and 26.74\% in Top-5 accuracy. 
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -107,11 +108,11 @@ bug localization, bug report, source code, information retrieval, keyword-source
 \end{IEEEkeywords}
 
 \section{Introduction}
-Bug localization is a process of locating such source code that needs to be changed in order to fix a given bug. 
-Manually locating buggy files is not only time-consuming but also prohibitively costly in terms of development efforts \cite{Wang}. This is even more challenging for the large software systems. Thus, effective, automated approaches are highly warranted for localizing the software bugs. 
-Traditional Information Retrieval (IR) based bug localization techniques \cite{Saha,Jian} accept a bug report and a subject system as inputs and then return a list of buggy entities (e.g., classes, methods) against the bug report. They localize the bugs by simply relying on the \emph{lexical similarity} between a bug report and the source code. 
+Bug localization is a process of locating source code that needs to be changed in order to fix a given bug. 
+Manually locating buggy files is not only time-consuming but also prohibitively costly in terms of development efforts \cite{Wang}. This is even more challenging for large software systems. Thus, effective, automated approaches are highly warranted for localizing software bugs. 
+Traditional Information Retrieval (IR) based bug localization techniques \cite{Saha,Jian} accept a bug report and a subject system as inputs and return a list of buggy entities (e.g., classes, methods) against the bug report. They localize bugs by simply relying on the \emph{lexical similarity} between a bug report and the source code. 
 Hence, they are likely to be affected by the quality and content of a submitted query (i.e., bug report). That is, if a query does not contain adequate information, then the retrieved results might not be relevant at all. As existing findings \cite{parninireval,fse2018masud} suggest, bug reports could be of low quality and could miss the appropriate keywords. 
- Thus, lexical similarity alone might not be sufficient enough to solve the bug localization problem. 
+ Thus, lexical similarity alone is likely not sufficient enough to solve the bug localization problem. 
 %However, static bug localization technique has an advantage over dynamic technique, as it does not require any working subject system rather it can apply on any stage of a system. 
 %In this work, we additionally consider an association between bug reports and their corresponding changed code extracted from commit logs for the bug localization.
 
@@ -139,7 +140,7 @@ Hence, they are likely to be affected by the quality and content of a submitted 
 %in the literature.
 %Most of these IR-based bug localization techniques simply rely on only lexical similarity for retrieving relevant documents from the codebase. Hence, the search queries constructed from a given bug report should contain keywords similar to the code terms. Unfortunately, bug reports could be of low quality and could miss the appropriate keywords. Besides, an appropriate query also warrants for domain expertise on the project from a developer, which can always not be guaranteed. 
 
-In order to address the limitations with lexical similarity, several existing studies \cite{Maletic, MarcusMaletic,irmarcus} derive underlying semantics of a text document by employing Latent Semantic Analysis (LSA). \citeauthor{irmarcus} and colleagues adopt this technology in the context of concept location \cite{irmarcus,MarcusMaletic}, program comprehension \cite{Maletic} and traceability link recovery problems \cite{MarcusLSI}, and reported higher performance than traditional Vector Space Model (VSM) and probabilistic models.
+In order to address the limitations with lexical similarity, several existing studies \cite{Maletic, MarcusMaletic,irmarcus} derive the underlying semantics of a text document by employing Latent Semantic Analysis (LSA). \citeauthor{irmarcus} and colleagues adopt this technology in the context of concept location \cite{irmarcus,MarcusMaletic}, program comprehension \cite{Maletic} and traceability link recovery problems \cite{MarcusLSI}, and reported higher performance than the traditional Vector Space Model (VSM) and probabilistic models.
 Unfortunately, their approach suffers from a major limitation.
 %They use this information to identify traceability links based on similarity measures. To automatically recover traceability links from system documentation to program source code, \citet{MarcusLSI} proposed a method using Latent Semantic Indexing (LSI), and their experiments suggest that this technique is promising than VSM, and other probabilistic IR methods.
 %Second, when treating files as single units, they are affected by the noise of the large files. This issue also reduces the performance of the applicability of exploiting lexical similarity measure.
@@ -227,8 +228,8 @@ Other related studies \cite{LukinsBL,Nguyen} adopt Latent Dirichlet Allocation (
 \end{table}
 
 
-In this paper, we propose a bug localization approach namely BLuAMIR that not only considers \emph{lexical similarity} between a bug report (the query) and the source code but also captures \emph{implicit association} between them from the bug fixing history. First, we determine the lexical similarity between each source document and the query using Vector Space Model (VSM).
-Second, we construct association maps between keywords of previously fixed bug reports and their corresponding changed documents using a bipartite graph \cite{bipartite}. Third, we prioritize such source documents that are associated with the keywords (from query at hand) in these maps. Then, we rank the source documents based on their \emph{lexical} and \emph{association scores}.
+In this paper, we propose a bug localization approach namely BLuAMIR that not only considers \emph{lexical similarity} between a bug report (the query) and the source code but also captures \emph{implicit association} between them from the bug fixing history. First, we determine the lexical similarity between each source document and the query using the Vector Space Model (VSM).
+Second, we construct association maps between keywords of previously fixed bug reports and their corresponding changed documents using a bipartite graph \cite{bipartite}. Third, we prioritize such source documents that are associated with the keywords (from the query at hand) in these maps. Then, we rank the source documents based on their \emph{lexical} and \emph{association scores}.
 Thus, our approach caters for the vocabulary mismatch between a bug report (the query) and the source code with implicit association. 
 That is, unlike traditional IR-based approaches \cite{Jian,Saha}, it could return the buggy documents even if the query does not lexically match with the source code documents. Our approach also does not require the dimensionality reduction since we use a finite graph rather than a large sparse term-document matrix \cite{MarcusLSI,MarcusMaletic}.
 
@@ -239,10 +240,10 @@ That is, unlike traditional IR-based approaches \cite{Jian,Saha}, it could retur
 %The vocabulary between keywords extracted from a previously fixed bug report and its corresponding source code can not be matched, but can be linked in an association mapping. Thus, by exploiting this kind of relationship can aid locating future bug even if there exist no matched keywords between keywords from that bug and recommended source code.
 %We compare the performance of our proposed tool with a state of the art bug localization techniques \cite{Jian}.
 
-We evaluate our technique in three different aspects using
+We evaluate our technique from three different aspects using
 three widely used performance metrics and 3,431 bug reports (i.e.,
 queries) from four open source subject systems. 
-First, we evaluate in terms of the performance metrics, and contrast with two replicated baselines -- Latent Semantic Indexing (LSI) \cite{MarcusLSI} and basic Vector Space Model (VSM) \cite{vector-space-model}.
+First, we evaluate in terms of performance metrics, and contrast with two replicated baselines -- Latent Semantic Indexing (LSI) \cite{MarcusLSI} and the basic Vector Space Model (VSM) \cite{vector-space-model}.
 BLuAMIR localizes bugs with 9\%--37\% higher accuracy (i.e., Hit@10), 12\%--63\% higher precision (i.e., MAP), and 11\%--64\% higher reciprocal ranks (i.e., MRR) than these baselines (Section  \ref{RQ1answer}).
 %BLuAMIR also localizes bugs with in average 9\% higher accuracy (i.e.,
 %Hit@10), 12\% higher precision (i.e., MAP@10) and 11\%
@@ -255,7 +256,7 @@ Our technique can localize bugs with 6\%--54\% higher accuracy (i.e., Hit@5), 4\
 %Our technique also shows 5.63\% higher accuracy at Hit@5, 4\% higher precision (i.e., MAP@10) and 7.79\% higher recall rate (i.e., MRR@10) than BLUiR \cite{Saha}.
 %12\% in MAP@10
 %and 12.6\% in Top-5 accuracy over the state-of-the-art (Section \ref{RQ4answer}).
-Third, in terms of query-wise improvement, BLuAMIR improves result ranks of 46.37\% and degrades 26.64\% queries than those of baseline VSM (Section \ref{RQ1answer}) with Eclipse system.
+Third, in terms of query-wise improvement, BLuAMIR improves result ranks of 46.37\% and degrades 26.64\% queries than those of the baseline VSM (Section \ref{RQ1answer}) with Eclipse system.
 
 Thus, this paper makes the following contributions:
 \begin{itemize}
@@ -1452,6 +1453,7 @@ Information Retrieval based techniques by collecting additional information from
 \citet{Sisman} propose a history-aware IR-based bug localization solution to achieve a better
 result. \citet{Jian} propose BugLocator, which leverages similarities among bug reports and uses refined vector space model to perform bug localization. \citet{Saha} build BLUiR that consider the structure of bug reports and source code files and employ structured retrieval to achieve a better result. \citet{Moreno} uses a text retrieval based technique and stack trace analysis to perform bug localization. To locate buggy files, they combines the textual similarity between a bug report and a code unit and the structural similarity between the stack trace and the code unit. Different from the existing IR-based bug localization approaches, \citet{Wang} propose AmaLgam, a new method for locating relevant buggy files that put together version history, similar report, and structure, to achieve better performance. Later \cite{Wang2} also propose AmaLgam+, which is a method for locating relevant buggy files that puts together fives sources of information i.e., version history, similar reports, structure, stack traces, and reporter information. 
 However, in our proposed technique BLuAMIR, we consider only three sources of information i.e., bug reports, source code documents and bug fixing history. Hence, we perform extensive comparison with two closely related studies such as BugLocator \cite{Jian}, and BLUiR\cite{Saha}.
+The detailed of this comparison can be found in Section \ref{RQ1answer} (i.e., RQ2).
 Unlike the above traditional IR-based approaches \cite{Sisman, Jian, Saha, Moreno, Wang, Wang2}, our proposed approach could deliver the buggy documents even if the query bug report does not lexically match with source code documents.
 
 
@@ -1460,13 +1462,13 @@ Unlike the above traditional IR-based approaches \cite{Sisman, Jian, Saha, Moren
 
 
 \section{Conclusion and Future Work} \label{sec:conclusionANDfuture}
-During software evolution of a system, a large number of bug reports are submitted. For a large software project, developers typically need to examine a large number of source code files in order to locate the buggy files responsible for a bug, which is a tedious and expensive work. In this paper, we propose BLuAMIR, a new bug localization technique not only based on lexical similarity but also an implicit association map between bug report keywords with their associated source code documents. We perform a large-scale experiments with four subject systems, namely Eclipse, SWT, AspectJ and ZXing to localize more than 3,000 bug reports.
+During evolution of a software system, a large number of bug reports are submitted. For a large software project, developers typically need to examine a large number of source code files in order to locate the buggy files responsible for a bug, which is tedious and expensive work. In this paper, we propose BLuAMIR, a new bug localization technique not only based on lexical similarity but also on an implicit association map between bug report keywords with their associated source code documents. We perform large-scale experiments with four subject systems, namely Eclipse, SWT, AspectJ and ZXing to localize more than 3,000 bug reports.
 We also compare our technique with two baseline techniques i.e., \cite{vector-space-model}, \cite{MarcusLSI}, and three state-of-the-art IR-based bug localization techniques i.e., BugScout\cite{Nguyen}, BugLocator\cite{Jian} and BLUiR\cite{Saha}.
-Our experiment with those dataset show that on average our technique can locate buggy files with a Top-10 accuracy of 74.06\% and a mean reciprocal rank@10 of 0.52 and a mean precision average@10 of 41\%, which are highly promising.   
+Our experiment with those dataset shows that on average our technique can locate buggy files with a Top-10 accuracy of 74.06\% and a mean reciprocal rank@10 of 0.52 and a mean precision average@10 of 41\%, which is highly promising.   
 %This also confirms superiority of our technique. 
 Our technique can localize bugs with 6\%--54\% higher accuracy (i.e., Hit@5), 4\%--32\% higher precision (i.e., MAP) and 8\%--27\% higher reciprocal ranks (i.e., MRR) than these state-of-the-art approaches. This also confirms superiority of our proposed bug localization approach. 
 
-In the future, we will explore if several other bug related information such as bug report structure, source code structure, stack traces, reporter information, similar bug information can be integrated into our approach in order to improve bug localization performance. We would also like to reduce the threats to external validity further by applying our approach on more bug reports collected from other software systems.
+In the future, we will explore if other bug related information such as bug report structure, source code structure, stack traces, reporter information, and similar bug information can be integrated into our approach in order to improve bug localization performance. We would also like to reduce the threats to external validity further by applying our approach on more bug reports collected from other software systems.
 
 \balance
 

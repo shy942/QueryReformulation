@@ -19,8 +19,8 @@ public class SourceCodeCorpusBuilder {
 	public SourceCodeCorpusBuilder(String base)
 	{
 		this.base=base;
-		this.sourceCodeFolder=new File(base+"\\Source\\swt-3.659BLA\\");
-		this.sourceCodePPFolder=base+"\\ProcessedSourceCorpusDec21SWT3.65\\";
+		this.sourceCodeFolder=new File(base+"\\Source\\eclipse-3.1Test\\");
+		this.sourceCodePPFolder=base+"\\ProcessedSourceCorpusFeb19eclipse-3.1Test\\";
 		this.javaFilePaths=new ArrayList<String>();
 		this.javaFilePathsLastName=new ArrayList<String>();
 		this.noOfFile=0;
@@ -31,8 +31,11 @@ public class SourceCodeCorpusBuilder {
 	{
 		int file_track=0;
 		ArrayList<String> listofFiles=new ArrayList<>();
+		int i=0;
 		for (String s : javaFilePaths)
 	    {
+		    i++;
+		    if(i>3) break;
 	        String fileName=javaFilePathsLastName.get(file_track++);
 	    	//Remove initial copyright comment
 			CommentFilterer cf=new CommentFilterer(s,fileName);

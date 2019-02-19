@@ -4,13 +4,23 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+
 import utility.ContentWriter;
 import utility.MiscUtility;
 
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ParseException;
 import com.github.javaparser.ast.CompilationUnit;
+import com.github.javaparser.ast.Node;
 import com.github.javaparser.ast.PackageDeclaration;
+import com.github.javaparser.ast.body.BodyDeclaration;
+import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
+import com.github.javaparser.ast.body.FieldDeclaration;
+import com.github.javaparser.ast.body.MethodDeclaration;
+import com.github.javaparser.ast.body.TypeDeclaration;
+import com.github.javaparser.ast.body.VariableDeclarator;
+import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
 import config.StaticData;
 
@@ -24,6 +34,7 @@ public class MethodCorpusDeveloper {
 	String base;
 	String packageName;
 	ArrayList<String> listNoOfMethod;
+	public static int count=0;
 	public MethodCorpusDeveloper(String repoFolder, String methodFolder, String base) {
 		//this.repoName = repoName;
 		this.repoFolder = repoFolder;
@@ -39,13 +50,40 @@ public class MethodCorpusDeveloper {
 		
 	//}
 	
+
 	protected void extractMethods(String javaFileURL) {
 		// extracting methods from the class
 		try {
+		    
 			CompilationUnit cu = JavaParser.parse(new File(javaFileURL));
 			
 			
 			if (cu != null) {
+			    
+			    //System.out.println(cu;
+			    /*
+			    for (TypeDeclaration typeDec : cu.getTypes()) {
+			        List<BodyDeclaration> members = typeDec.getMembers();
+			        if(members != null) {
+			            for (BodyDeclaration member : members) {
+			            //Check just members that are FieldDeclarations
+			               
+			            FieldDeclaration field = (FieldDeclaration) member;
+			            
+			            System.out.println(field.getType());
+			         
+			            //Print the field's name 
+			            System.out.println(field.getVariables().get(0).getId().getName());
+			            //Print the field's init value, if not null
+			            Object initValue = field.getVariables().get(0).getInit();
+			            if(initValue != null) {
+			                 System.out.println(field.getVariables().get(0).getInit().toString());
+			          
+			            }
+			        }
+			    }*/
+			    
+			    
 				PackageDeclaration packageDec=cu.getPackage();
 				if(packageDec!=null){
 				//System.out.println(packageDec.toString());
@@ -156,6 +194,8 @@ public class MethodCorpusDeveloper {
 					createMethodCorpus(f.getAbsolutePath());
 				} else {
 					if (f.getName().endsWith(".java")) {
+					    count++;
+					    if(count>3)break;
 						extractMethods(f.getAbsolutePath());
 						saveMethods(f.getAbsolutePath());
 						methodmap.clear();
@@ -164,6 +204,8 @@ public class MethodCorpusDeveloper {
 			}
 		} else {
 			if (dir.getName().endsWith(".java")) {
+			    count++;
+                
 				extractMethods(dir.getAbsolutePath());
 				saveMethods(dir.getAbsolutePath());
 				methodmap.clear();
