@@ -68,7 +68,7 @@ public class PerformanceCalculatorPerfect {
 		for(int i=1;i<=no_of_fold;i++)
 		{
 			int test=i;
-			String resultFilePath=base+"\\data\\Results/"+"/Feb08"+baseNamePart+alpha+"-"+test+".txt";
+			String resultFilePath=base+"\\data\\Results/"+"/Jan17"+baseNamePart+alpha+"-"+test+".txt";
 			if(resultFilePath.length()<=0)System.out.println(test+" "+resultFilePath.length());
 			//Fort Eclipse   
 			//PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep12"+baseNamePart+alpha+"-"+test+".txt");	
@@ -76,7 +76,7 @@ public class PerformanceCalculatorPerfect {
 			corpus="Eclipse";
 			
 			 base="E:\\PhD\\Repo\\"+corpus; 
-			 obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfoAll"+corpus+".txt",base+"\\data\\Results/"+"/Feb08"+baseNamePart+alpha+"-"+test+".txt");		
+			 obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfoAll"+corpus+".txt",base+"\\data\\Results/"+"/Jan17"+baseNamePart+alpha+"-"+test+".txt");		
 			 //obj=new PerformanceCalculatorPerfect(base+"\\gitInfo"+corpus+"SingleFile.txt","E:\\PhD\\LSI\\Repo\\"+corpus+"\\data\\Results\\"+test+".txt");     
 			//PerformanceCalculatorPerfect 
 			//obj=new PerformanceCalculatorPerfect("E:/PhD/Repo/"+corpus+"/data/gitInfo1KB"+corpus+".txt","E:/BugLocator/output/"+corpus+"outputJan04-9.txt");	
@@ -117,7 +117,7 @@ public class PerformanceCalculatorPerfect {
 		writeForBoxPlot(resultContainer,base,method,corpus);
 		
 		//System.out.println(resultContainer);
-		//ContentWriter.writeContent(base+"\\data\\performance\\allperformance+"+baseNamePart+".txt", resultContainer);
+		ContentWriter.writeContent(base+"\\data\\performance\\allperformance+"+baseNamePart+"Jan17.txt", resultContainer);
 	}
 	
 	public static void writeForBoxPlot(HashMap <String, HashMap<String, Double>> resultContainer, String base, String method, String dataset)
