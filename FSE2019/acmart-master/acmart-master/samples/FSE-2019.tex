@@ -601,29 +601,6 @@ queries) from four open source subject systems. We compare not only with two bas
 	\item \textbf{RQ$_3$}: (a) Can implicit association make any significant difference in IR-based bug localization? (b) Can BLuAMIR overcome the challenges with large documents?   
 \end{itemize}
 
-
-
-
-\subsection{Experimental Dataset}\label{sec:dataset}
-Table \ref{tab:DDSl} shows our experimental dataset. We use a total of 3,431 bug reports from four open source systems--Eclipse, AspectJ, SWT and ZXing--for our experiment. These systems are collected from two existing, frequently used public benchmarks \cite{Jian,Saha}. 
-%In order to evaluate our proposed tool we have used the same four dataset that \citet{Jian} and \citet{Saha} used
-%to evaluate BugLocator and BLUiR respectively. This dataset contains 3479 bug reports in total from four popular open source projects–Eclipse, SWT, AspectJ and ZXing along with the information of fixed files for those bugs.
-%The detail of our dataset is presented in \ref{tab:DDSl}. 
-\emph{Eclipse} is a well-known large-scale system which is frequently used in empirical Software Engineering research.
-\emph{SWT} is a component of Eclipse IDE.
-\emph{AspectJ} is a part of iBUGs dataset provided by University of Saarland. 
-ZXing is an android based system maintained by Google. We collect \emph{title} and \emph{description} from each of these 3,431 bug reports. We perform standard natural language preprocessing on them, and remove stop words, punctuation marks, and small words from them. Then each of these preprocessed bug reports is used as the \emph{baseline query} for our experiment. 
-
-%as generally done 
-%preprocess them with standard n use them as queries for the bug localization.
-
-%We create quires from each bugs considering their title and short summary (i.e., description).
-
-\textbf{Ground Truth Selection:} We analyse the bug-fixing commits from each subject system, and select the ground truth for our experiment. In particular, we go through all commit messages of a system and identify such commits that deals with bug fixing or resolution (i.e., bug fixing commits) using appropriate regular expressions \cite{bugid}. We then extract the changed source documents from each of these commits, and map them to the fixed bug ID. Such changed documents are then used as the \emph{ground truth} for the corresponding bug reports (i.e., queries). The same approach has been widely used by the literature \cite{Saha2,Wang2,Jian} for the ground truth selection. 
-
-%track Bug IDs associated with examined source code files. Then we construct the association map between keywords extracted from bug reports and their source code links. During creating the map we have noticed some bug reports do not contain their fixed source files in codebase. So, we discarded those bug reports which yield total 3431 bug reports as depicted in table \ref{tab:DDSl}.
-
-
 \begin{table}[!tb]
 	\caption{Experimental Dataset}
 	\label{tab:DDSl}
@@ -649,6 +626,29 @@ ZXing is an android based system maintained by Google. We collect \emph{title} a
 	%\end{center}
 	%\centering
 \end{table}
+
+
+\subsection{Experimental Dataset}\label{sec:dataset}
+Table \ref{tab:DDSl} shows our experimental dataset. We use a total of 3,431 bug reports from four open source systems--Eclipse, AspectJ, SWT and ZXing--for our experiment. These systems are collected from two existing, frequently used public benchmarks \cite{Jian,Saha}. 
+%In order to evaluate our proposed tool we have used the same four dataset that \citet{Jian} and \citet{Saha} used
+%to evaluate BugLocator and BLUiR respectively. This dataset contains 3479 bug reports in total from four popular open source projects–Eclipse, SWT, AspectJ and ZXing along with the information of fixed files for those bugs.
+%The detail of our dataset is presented in \ref{tab:DDSl}. 
+\emph{Eclipse} is a well-known large-scale system which is frequently used in empirical Software Engineering research.
+\emph{SWT} is a component of Eclipse IDE.
+\emph{AspectJ} is a part of iBUGs dataset provided by University of Saarland. 
+ZXing is an android based system maintained by Google. We collect \emph{title} and \emph{description} from each of these 3,431 bug reports. We perform standard natural language preprocessing on them, and remove stop words, punctuation marks, and small words from them. Then each of these preprocessed bug reports is used as the \emph{baseline query} for our experiment. 
+
+%as generally done 
+%preprocess them with standard n use them as queries for the bug localization.
+
+%We create quires from each bugs considering their title and short summary (i.e., description).
+
+\textbf{Ground Truth Selection:} We analyse the bug-fixing commits from each subject system, and select the ground truth for our experiment. In particular, we go through all commit messages of a system and identify such commits that deals with bug fixing or resolution (i.e., bug fixing commits) using appropriate regular expressions \cite{bugid}. We then extract the changed source documents from each of these commits, and map them to the fixed bug ID. Such changed documents are then used as the \emph{ground truth} for the corresponding bug reports (i.e., queries). The same approach has been widely used by the literature \cite{Saha2,Wang2,Jian} for the ground truth selection. 
+
+%track Bug IDs associated with examined source code files. Then we construct the association map between keywords extracted from bug reports and their source code links. During creating the map we have noticed some bug reports do not contain their fixed source files in codebase. So, we discarded those bug reports which yield total 3431 bug reports as depicted in table \ref{tab:DDSl}.
+
+
+
 \subsection{Performance Metrics}\label{sec:pmetrics}
 %To measure the effectiveness of the proposed bug localization approach, we use the following metrics:
 
@@ -1134,14 +1134,20 @@ A bug report could be of low quality and could miss the appropriate keywords.
 Hence, such a “bad” bug report could cause a delay in the bug fixing process. Our proposed approach relies on both lexical similarity as well as implicit association between a bug report and their corresponding source code documents. Therefore, if a bug report does not provide adequate information, or provides inappropriate keywords, the performance of BLuAMIR is adversely affected.
 
 \textbf{External Validity:} 
-The nature of the data in open source projects may be different from those in projects developed by well-managed software organizations. We need to evaluate if our solution can be directly applied to commercial projects. We leave this area as a future study. 
+Threats to external validity is related to the generalizability of our findings. 
+To reduce this threat, we have analyzed 3,431 bug reports from four popular subject systems.  
+Still in the future, we plan to reduce these threats further by analyzing more bug reports from more projects written in multiple programming languages.
+
+%The nature of the data in open source projects may be different from those in projects developed by well-managed software organizations. We need to evaluate if our solution can be directly applied to commercial projects. We leave this area as a future study. 
 %Then we will perform statistical tests to show that the improvement of our approach is statistically significant.
 
 \textbf{Construct Validity}
 In our experiment, we use three evaluation metrics, i.e., Hit@k rank, MAP and MRR, and one statistical test, i.e., Wilcoxon signed-rank test. These metrics have been widely used before to evaluate previous approaches \cite{Jian, Saha} and are well-known IR metrics. Thus, we argue that our research has strong construct validity.
 
 \textbf{Reliability:}
-In our experiment section, we performed numerous experiments using various combinations of weighting functions to find the optimum parameters and the best accuracy of bug localization. The optimized $\alpha$ values are based on our experiments and are only for our proposed tool BLuAMIR. To automatically optimize control parameters for target projects, in the future we will expand our proposed approach using machine learning methods or generic algorithms.
+In our experiment section, we performed numerous experiments using various combinations of weighting functions to find the optimum parameters and the best accuracy of bug localization. 
+%The optimized $\alpha$ values are based on our experiments and are only for our proposed tool BLuAMIR. 
+To automatically optimize control parameters for target projects, in the future we will expand our proposed approach using machine learning methods or generic algorithms.
 
 \section{Related Work}\label{relatedwork}
 Existing automatic bug localization or automatic debugging approaches can be broadly categorized into two types - dynamic and static techniques. Generally, dynamic approaches can localize a bug much more precisely than static approaches. These techniques usually contrast the program spectra information (such as execution statistics) between passed and failed executions to compute the fault suspiciousness of individual program elements (i.e., statements, branches, and predicates), and rank these program elements by their fault suspiciousness. Developers may then locate faults by examining a list of program elements sorted by their suspiciousness. Some of the well known dynamic approaches are spectrum-based fault localization \cite{Abreu,Jones,Lucia,SahaFault}, model-based fault localization \cite{Feldman,Mayer}, dynamic slicing \cite{Zhang:2005}, and delta debugging \cite{Zeller:2002}. These approaches require a test case suite and need to execute the program for collecting the passed and failed execution traces. Moreover, the approaches are computationally expensive. 
@@ -1150,9 +1156,11 @@ Our proposed approach neither requires a test case nor is computationally expens
 
 
 Static approaches, on the other hand, do not require any program test cases or execution traces. In most cases, they need only program source code documents and bug reports. They are also computationally efficient. The static approaches usually can be categorized into two groups: program analysis based approaches and IR-based approaches. FindBugs is a program analysis based approach that locates a bug based on some predefined bug patterns \cite{FindBug}. 
-Therefore, FindBug does not even need a bug report. However, it often detects too many false positives and misses many real bugs \cite{Tang}. On the contrary, our proposed technique does not depend on any predefined bug patterns. Thus, our proposed approach does not produce too many false positive results 
+Therefore, FindBug does not even need a bug report. However, it often detects too many false positives and misses many real bugs \cite{Tang}. 
+%On the contrary, our proposed technique does not depend on any predefined bug patterns. Thus, our proposed approach does not produce too many false positive results 
 %and particularly, it does not miss too many bugs. 
-and, in particular, it does not miss too many bugs.
+%and, in particular, it does not miss too many bugs.
+On the contrary, our proposed approach is not program analysis based, and thus, does not depend on any predefined bug patterns.
 
 Traditional Information Retrieval based techniques localize the bugs by simply relying on the \emph{lexical similarity} to calculate the similarity between a bug report and the source code. 
 There are three traditionally-dominant IR paradigms: TFIDF \cite{Salton}, the “probabilistic approach” known as BM25 \cite{Robertson}, and more recently, language modeling \cite{Ponte}. However, in an empirical study \citet{Fang} show that all three approaches perform comparably when well-tuned. On the other hand, \citet{Rao} investigated many standard information retrieval techniques for bug localization and found that simpler techniques, e.g., TFIDF and SUM, perform the best. However, If a bug report does not contain adequate information (i.e., appropriate keywords), lexical similarity alone might not be sufficient to localize bugs successfully. In order to address the issue with lexical similarity, 
@@ -1162,7 +1170,7 @@ Unfortunately, their approach suffers from a major limitation.
 Latent Semantic Indexing (LSI) requires the use of a dimensionality reduction parameter that must be tuned for each document collection \cite{Kontostathis}.
 The results returned by LSI can also be difficult to interpret, as
 they are expressed using a numeric spatial representation.
-Our approach does not require the dimensionality reduction since we use a finite graph rather than a large sparse term-document matrix \cite{MarcusLSI,MarcusMaletic}.
+Our approach does not require dimensionality reduction since we use a finite graph rather than a large sparse term-document matrix \cite{MarcusLSI,MarcusMaletic}.
 %On the other hand, \citet{Lukins} created a Latent Dirichlet Allocation (LDA) model from the source code which provided word-topic modeling and topic-document distribution.
 %\citet{Lukins2} use Latent Dirichlet Allocation (LDA), which is a well-known topic modeling approach, to localize bug. 
 \citet{LukinsBL} and \cite{Nguyen} adopt Latent Dirichlet Allocation (LDA) for bug localization. LDA is not able to predict the appropriate topic because it follows a generative topic model in a probabilistic way \cite{Lukins}. However, they are subject to their hyper-parameters and could even be outperformed by simpler models (e.g., rVSM \cite{Jian}).  
