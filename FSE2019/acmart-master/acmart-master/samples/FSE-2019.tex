@@ -308,9 +308,9 @@ three widely used performance metrics and 3,431 bug reports (i.e.,
 queries) from four open source subject systems. 
 First, we evaluate in terms of bug localization performance metrics, and contrast with two replicated baselines -- Latent Semantic Indexing (LSI) \cite{MarcusLSI} and the basic Vector Space Model (VSM) \cite{vector-space-model}.
 BLuAMIR localizes bugs with 9\%--37\% higher accuracy (i.e., Hit@10), 12\%--63\% higher precision (i.e., MAP), and 11\%--64\% higher reciprocal ranks (i.e., MRR) than these baselines (Section  \ref{RQ1answer}).
-Second, we compare our technique with three state of the art approaches -- BugScout \cite{Nguyen}, BugLocator \cite{Jian} and BLUiR \cite{Saha} (Section \ref{RQ1answer}).
+Second, we compare our technique with three state-of-the-art approaches -- BugScout \cite{Nguyen}, BugLocator \cite{Jian} and BLUiR \cite{Saha} (Section \ref{RQ1answer}).
 Our technique can localize bugs with 6\%--54\% higher accuracy (i.e., Hit@5), 4\%--32\% higher precision (i.e., MAP) and 8\%--27\% higher reciprocal ranks (i.e., MRR) than those of the state-of-the-art approaches.
-Third, in terms of query-wise improvement, BLuAMIR improves the result ranks of 46.37\% baseline queries from Eclipse system and outperforms the baseline VSM approach (Section \ref{RQ1answer}).
+Third, in terms of query-wise improvement, BLuAMIR improves the result ranks of 46.37\% baseline queries from Eclipse subject system and outperforms the baseline VSM approach (Section \ref{RQ1answer}).
 Thus, this paper makes the following contributions:
 \begin{enumerate}[noitemsep,topsep=0pt]
 	\item A novel technique that not only considers the \emph{lexical similarity} between a bug report and the source code but also exploits their \emph{implicit associations} through bug-fixing history for bug localization.
@@ -601,7 +601,7 @@ lexicalSimScore(q,d)= cosine(q,d) =
 	\sqrt{\sum_{t\epsilon d}(tf(t,d)\times idf(t))^2}}
 \end{multline*}
 %Here, {$\#terms$} refers to the total number of terms in a document collection. 
-Here $lexicalSimScore$ takes a value between 0 and 1 where 0 means means total lexical dissimilarity and 1 means strong lexical similarity between the query $q$ and the candidate source code document $d$. We use \emph{Apache Lucene} for first creating the corpus index and then for calculating the above lexical similarity (Lines 6--9, Algorithm \ref{algo:localization}).
+Here $lexicalSimScore$ takes a value between 0 and 1 where 0 means total lexical dissimilarity and 1 means strong lexical similarity between the query $q$ and the candidate source code document $d$. We use \emph{Apache Lucene} for first creating the corpus index and then for calculating the above lexical similarity (Lines 6--9, Algorithm \ref{algo:localization}).
 
 \textbf{Implicit Association Score:} We analyse implicit associations between a given query (bug report) and each candidate source document using our constructed association map (from Section \ref{sec:MapConstruction}). In this map, while each keyword could be linked to multiple candidate documents, each document could also be linked to multiple keywords across multiple bug reports. 
 We perform standard natural language preprocessing on a given query, and extract a list of query keywords.
@@ -629,11 +629,11 @@ Once the final score is calculated for each of the candidate source documents fr
 \section{Experiment} \label{sec:expANDdiss}
 We evaluate our technique in three different aspects using
 three widely used performance metrics and 3,431 bug reports (i.e.,
-queries) from four open source subject systems. We compare not only with two baseline techniques \cite{vector-space-model,MarcusLSI} but also three state-of-the-art studies \cite{Nguyen,Jian,Saha} from the literature. We also answer three research questions with our experiment as follows: 
+queries) from four open source subject systems. We compare not only with two baseline techniques \cite{vector-space-model,MarcusLSI} but also three state-of-the-art studies \cite{Nguyen,Jian,Saha} from the literature. In particular, we answer three research questions with our experiment as follows: 
 \begin{itemize}
 	\item \textbf{RQ$_1$}: How does the proposed approach perform in bug localization compared to the baseline approaches? 
 	\item \textbf{RQ$_2$}: Can the proposed approach outperform the state-of-the-art studies in bug localization?
-	\item \textbf{RQ$_3$}: (a) Can implicit association make any significant difference in IR-based bug localization? (b) Can BLuAMIR overcome the challenges with large documents?   
+	\item \textbf{RQ$_3$}: (a) Can implicit association make any significant difference in IR-based bug localization? and (b) Can BLuAMIR overcome the challenges with large documents?   
 \end{itemize}
 
 \begin{table}[!tb]
@@ -686,6 +686,7 @@ ZXing is an android based system maintained by Google. We collect \emph{title} a
 
 \subsection{Performance Metrics}\label{sec:pmetrics}
 %To measure the effectiveness of the proposed bug localization approach, we use the following metrics:
+We choose three performance metrics for evaluation of our proposed bug localization approach. These metrics have been widely used by the relevant literature \cite{Jian, Saha}, and are well-known IR metrics. Thus, they are highly appropriate for our experiments as well.
 
 \textbf{Recall at Top K / Hit@K:} It represents the percentage of bug reports for each of which at least one ground truth buggy document is successfully retrieved within the Top-K results. 
 %We analyse only Top-10 results for each query, and thus, $K$ could be 1, 5 or 10.  
@@ -795,7 +796,7 @@ We compare the performance of BLuAMIR with two baseline approaches -- Vector Spa
 	\centering
 \end{table}
 
-\textbf{Baseline VSM vs BLuAMIR:} While VSM approach simply relies on lexical similarity between a given query (bug report) and the source code document, our approach additionally considers their implicit associations based on the bug-fixing history.
+\textbf{Baseline VSM vs BLuAMIR:} While VSM approach simply relies on the lexical similarity between a given query (bug report) and the source code document, our approach additionally considers their implicit associations based on the bug-fixing history.
 We thus compare BLuAMIR with VSM, and investigate whether the addition of association score could improve the overall bug localization performance or not. Table \ref{tab:Performance2} and Figures \ref{fig:VSM+AssoTopK}, \ref{fig:VSM+AssoTop-MRR-MAP} show the comparison between VSM and our approach for \emph{Eclipse} system. From Table \ref{tab:Performance2}, we see that the baseline VSM achieves only 23\% Hit@1, 48\% Hit@5 and 58\% Hit@10. On the contrary, our approach achieves 28\% Hit@1, 54\% Hit@5 and 63\% Hit@10 which are 19\%, 13\% and 10\% higher respectively. BLuAMIR also achieves 15\% higher MRR and 13\% higher MAP than the baseline measures. Since our experiment involves 10-fold cross validation, we also compare our performance with that of baseline VSM for each of these folds. As shown in Fig. \ref{fig:VSM+AssoTopK}, we that our Hit@K is better than the baseline for each fold of dataset. Fig. \ref{fig:VSM+AssoTop-MRR-MAP} shows how BLuAMIR outperforms the baseline VSM in MRR and MAP respectively for each of these folds. We also perform Wilcoxon Signed-Rank tests, and found that BLuAMIR achieves statistically significant improvement over the baseline in terms of both MRR (i.e., \emph{p-value}=0.005$<$0.05) and MAP (i.e., \emph{p-value}=0.005$<$0.05).
 
 \textbf{Baseline LSI vs BLuAMIR:} Traditional VSM often suffers from vocabulary mismatch problem. Latent Semantic Indexing (LSI)
@@ -960,8 +961,8 @@ We see that our approach outperforms LSI in all the cases. For example, baseline
 	\centering
 \end{table}
 %\subsection{Answering RQ4}\label{RQ4answer}
-\textbf{Answering RQ$_2$--Comparison with the State-of-the-Art:}
-We compare BLuAMIR with three state-of-the-art techniques -- BugScout \cite{Nguyen}, BugLocator \cite{Jian} and BLUiR \cite{Saha} -- with our benchmark subject systems. 
+\textbf{Answering RQ$_2$--Comparison with the State-of-the-Art:} While the above evaluation clearly shows that our approach is promising, we still wanted to see where our method stands compared to the state-of-the-art methods. Thus, 
+we compare BLuAMIR with three state-of-the-art techniques -- BugScout \cite{Nguyen}, BugLocator \cite{Jian} and BLUiR \cite{Saha} -- with our benchmark subject systems. 
 BugScout employs Latent Dirichlet Allocation (LDA) for localizing software bugs. BugLocator combines a revised Vector Space Model (rVSM) and past bug reports for improving the IR-based bug localization. Finally, BLUiR exploits the structures from both bug reports (queries) and source code documents, and then improves the bug localization with structured information retrieval.    
 Table \ref{tab:performance3} summarizes our comparison details.
 \citet{Nguyen} used two subject systems (Eclipse and AspectJ) in order to evaluate BugScout.
@@ -1088,7 +1089,11 @@ We also investigate how each of the three approaches -- BugLocator, BLUiR and BL
 	%two baseline approaches with statistically significant, large margins. BLuAMIR can even deliver \textbf{10\%--55\%} higher Hit@10, \textbf{15\%--163\%} higher MRR and \textbf{13\%--194\%} higher MAP than the baseline approaches.  
 \end{framed}
 
-\textbf{Answering RQ3-(a) Impact of Association Score on Bug Localization:} We investigate the impact of association score on the bug localization performance of our approach across multiple subject systems. 
+\textbf{Answering RQ3-(a) Impact of Association Score on Bug Localization:} 
+While the above two findings suggest that our proposed approach is highly potential in bug localization, at this point we wanted to investigate why our proposed approach outperforms than the lexical similarity-based state-of-the-art methods. 
+Note that in our proposed approach, we make use of not only the lexical similarity but also the implicit association between a bug report and the source code from the bug fixing history. We still wanted to see, is implicit association making any significant difference in IR-based bug localization? 
+This implicit association capture the historical relevance between the query keywords and their corresponding source code, based on bug-fixing history. It should be noted that such relevance does not warrant for lexical similarity. 
+Thus, we investigate the impact of association score on the bug localization performance of our approach across multiple subject systems. 
 In particular, we tune our approach with different $\alpha$ values, and record the responses. Since $\alpha$ is the relative weight of association score, such tuning actually evaluates the impact of association score.  
 Table \ref{tab:alphaApproach1} shows how the gradual increment in $\alpha$ value improves the overall performance. We see that each of the metrics improves consistently up to $\alpha$ = 0.4 with Eclipse system. 
 \begin{table}[!tb]
@@ -1167,7 +1172,7 @@ This section discusses the validity and generalizability of our findings. In par
 \textbf{Internal Validity:} We used three artifacts of a software repository: bug reports, source code documents and bug fixing history, which are generally well understood. Our evaluation uses four open source subject systems - Eclipse, AspectJ, SWT, and ZXing. These systems are collected from two existing, frequently used public benchmarks \cite{Jian, Saha}. 
 Bug reports provide crucial information for developers to fix the bugs.
 A bug report could be of low quality and could miss the appropriate keywords.
-Hence, such a “bad” bug report could cause a delay in the bug fixing process. Our proposed approach relies on both lexical similarity as well as implicit association between a bug report and their corresponding source code documents. Therefore, if a bug report does not provide adequate information, or provides inappropriate keywords, the performance of BLuAMIR is adversely affected.
+Hence, such a “bad” bug report could cause a delay in the bug fixing process. Our proposed approach makes use of both lexical similarity as well as implicit association between a bug report and their corresponding source code documents. Therefore, if a bug report does not provide adequate information, or provides inappropriate keywords, the performance of BLuAMIR is adversely affected.
 
 \textbf{External Validity:} 
 Threats to external validity is related to the generalizability of our findings. 
@@ -1210,21 +1215,22 @@ Our approach does not require dimensionality reduction since we use a finite gra
 %On the other hand, \citet{Lukins} created a Latent Dirichlet Allocation (LDA) model from the source code which provided word-topic modeling and topic-document distribution.
 %\citet{Lukins2} use Latent Dirichlet Allocation (LDA), which is a well-known topic modeling approach, to localize bug. 
 \citet{LukinsBL} and \cite{Nguyen} adopt Latent Dirichlet Allocation (LDA) for bug localization. LDA is not able to predict the appropriate topic because it follows a generative topic model in a probabilistic way \cite{Lukins}. However, they are subject to their hyper-parameters and could even be outperformed by simpler models (e.g., rVSM \cite{Jian}).  
-LDA is also computationally expensive. In this paper, we compare with a baseline LSI \cite{MarcusLSI} and a LDA based technique namely BugScout \cite{Nguyen} and the detailed comparison can be found in Section \ref{RQ1answer} (i.e., RQ1 and RQ2 respectively).
+LDA is also computationally expensive. In this paper, we compare with a baseline LSI \cite{MarcusLSI} and a LDA based technique namely BugScout \cite{Nguyen} and the detailed comparison can be found in Section \ref{RQ1answer} (i.e., RQ1 and RQ2 respectively). Our approach outperforms both the baseline LSI \cite{MarcusLSI} and BugScout \cite{Nguyen} with large margins across all subject systems. 
 
 Recently automatic bug localization techniques have gone beyond traditional
 Information Retrieval based techniques by collecting additional information from software repositories \cite{Sisman, Jian, Saha, Moreno, Wang}.
 \citet{Sisman} propose a history-aware IR-based bug localization solution to achieve a better
-result. \citet{Jian} propose BugLocator, which leverages similarities among bug reports and uses a refined vector space model to perform bug localization. \citet{Saha} build BLUiR that consider the structure of bug reports and source code files and employs structured retrieval to achieve a better result. \citet{Moreno} uses a text retrieval based technique and stack trace analysis to perform bug localization. To locate buggy files, they combine the textual similarity between a bug report and a code unit and the structural similarity between the stack trace and the code unit. Different from the existing IR-based bug localization approaches, \citet{Wang} proposed AmaLgam, a new method for locating relevant buggy files that puts together version history, similar reports, and structure, to achieve better performance. 
+result. \citet{Jian} propose BugLocator, which leverages similarities among bug reports and uses a refined vector space model to perform bug localization. \citet{Saha} build BLUiR that consider the structure of bug reports and source code files and employs structured retrieval to achieve a better result. \citet{Moreno} use a text retrieval based technique and stack trace analysis to perform bug localization. To locate buggy files, they combine the textual similarity between a bug report and a code unit and the structural similarity between the stack trace and the code unit. Different from the existing IR-based bug localization approaches, \citet{Wang} proposed AmaLgam, a new method for locating relevant buggy files that puts together version history, similar reports, and structure, to achieve better performance. 
 %Later \cite{Wang2} also propose AmaLgam+
 Later, they proposed AmaLgam+\cite{Wang2}, which is a method for locating relevant buggy files that puts together fives sources of information i.e., version history, similar reports, structure, stack traces, and reporter information. 
 However, in our proposed technique BLuAMIR, we consider only three sources of information i.e., bug reports, source code documents and bug fixing history. 
 Hence, we performed extensive comparison with two closely related studies, BugLocator \cite{Jian}, and BLUiR\cite{Saha}.
 The details of this comparison can be found in Section \ref{RQ1answer} (i.e., RQ2).
 Unlike the above traditional IR-based approaches \cite{Sisman, Jian, Saha, Moreno, Wang, Wang2}, our proposed approach could deliver the buggy documents even if the query bug report does not lexically match with source code documents.
+Our proposed approach outperforms BugLocator \cite{Jian} consistently across all the subject systems. However, BLuAMIR performs better than BLuIR \cite{Saha} with three out of four subject systems and comparably with the rest. 
 
 \section{Conclusion and Future Work} \label{sec:conclusionANDfuture}
-During evolution of a software system, a large number of bug reports are submitted. For a large software project, developers typically need to examine a large number of source code files in order to locate the buggy files responsible for a bug, which is tedious and expensive work. In this paper, we propose BLuAMIR, a new bug localization technique not only based on lexical similarity but also on an implicit association map between bug report keywords with their associated source code documents. We perform large-scale experiments with four subject systems, namely Eclipse, SWT, AspectJ and ZXing to localize 3,431 bug reports.
+During the evolution of a software system, a large number of bug reports are submitted. For a large software project, developers typically need to examine a large number of source code files in order to locate the buggy files responsible for a bug, which is tedious and expensive work. In this paper, we propose BLuAMIR, a new bug localization technique not only based on lexical similarity but also on an implicit association map between bug report keywords with their associated source code documents. We perform large-scale experiments with four subject systems, namely Eclipse, SWT, AspectJ and ZXing to localize 3,431 bug reports.
 We also compare our technique with two baseline techniques i.e., \cite{vector-space-model}, \cite{MarcusLSI}, and three state-of-the-art IR-based bug localization techniques i.e., BugScout\cite{Nguyen}, BugLocator\cite{Jian} and BLUiR\cite{Saha}.
 Our experiment with those dataset shows that on average our technique can locate buggy files with a Top-10 accuracy of 74.06\% and a mean reciprocal rank@10 of 0.52 and a mean precision average@10 of 41\%, which is highly promising.   
 %This also confirms superiority of our technique. 
