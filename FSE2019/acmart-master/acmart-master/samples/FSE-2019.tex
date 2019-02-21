@@ -1093,7 +1093,7 @@ We also investigate how each of the three approaches -- BugLocator, BLUiR and BL
 While the above two findings suggest that our proposed approach is highly potential in bug localization, at this point we wanted to investigate why our proposed approach outperforms than the lexical similarity-based state-of-the-art methods. 
 Note that in our proposed approach, we make use of not only the lexical similarity but also the implicit association between a bug report and the source code from the bug fixing history. We still wanted to see, is implicit association making any significant difference in IR-based bug localization? 
 This implicit association capture the historical relevance between the query keywords and their corresponding source code, based on bug-fixing history. It should be noted that such relevance does not warrant for lexical similarity. 
-Thus, we investigate the impact of association score on the bug localization performance of our approach across multiple subject systems. 
+We investigate the impact of association score on the bug localization performance of our approach across multiple subject systems. 
 In particular, we tune our approach with different $\alpha$ values, and record the responses. Since $\alpha$ is the relative weight of association score, such tuning actually evaluates the impact of association score.  
 Table \ref{tab:alphaApproach1} shows how the gradual increment in $\alpha$ value improves the overall performance. We see that each of the metrics improves consistently up to $\alpha$ = 0.4 with Eclipse system. 
 \begin{table}[!tb]
