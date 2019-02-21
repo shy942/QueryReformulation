@@ -1,6 +1,6 @@
 %
 % The first command in your LaTeX source must be the \documentclass command.
-\documentclass[sigconf]{acmart}
+\documentclass[sigconf,review,anonymous]{acmart}
 \usepackage{syntax}
 \usepackage{textcomp}
 \usepackage{xcolor}
@@ -42,15 +42,17 @@
 % the commands and values with those provided to you when you complete the rights form.
 %
 % These commands are for a PROCEEDINGS abstract or paper.
-\copyrightyear{2018}
-\acmYear{2018}
-\setcopyright{acmlicensed}
-\acmConference[Woodstock '18]{Woodstock '18: ACM Symposium on Neural Gaze Detection}{June 03--05, 2018}{Woodstock, NY}
-\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection, June 03--05, 2018, Woodstock, NY}
-\acmPrice{15.00}
-\acmDOI{10.1145/1122445.1122456}
-\acmISBN{978-1-4503-9999-9/18/06}
+%\copyrightyear{2018}
+%\acmYear{2018}
+%\setcopyright{acmlicensed}
+%\acmConference[Woodstock '18]{Woodstock '18: ACM Symposium on Neural Gaze Detection}{June 03--05, 2018}{Woodstock, NY}
+%\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection, June 03--05, 2018, Woodstock, NY}
+%\acmPrice{15.00}
+%\acmDOI{10.1145/1122445.1122456}
+%\acmISBN{978-1-4503-9999-9/18/06}
 
+\hypersetup{draft}
+\setcopyright{rightsretained}
 %
 % These commands are for a JOURNAL article.
 %\setcopyright{acmcopyright}
@@ -155,14 +157,15 @@
 % The abstract is a short summary of the work to be presented in the article.
 \begin{abstract}
 Bug localization is one of the most challenging tasks undertaken by developers during software maintenance.
-Most existing studies rely on the lexical similarity between the bug reports and source code for bug localization.
+Most existing studies rely on the lexical similarity between a bug report and the source code for bug localization.
 %Unfortunately, such similarity always does not exist, and these studies suffer from vocabulary mismatch issues.
-Unfortunately, this approach suffers due to vocabulary mismatch issues and results in unrecognised similarity. 
-In this paper, we propose a bug localization technique that (1) not only uses lexical similarity between a given bug report and source code documents  
-but also (2) exploits the association between keywords from the previously resolved bug reports and their corresponding changed source documents.
-Experiments using a collection of 3,431 bug reports show that on average our technique can locate buggy files with a Top-10 accuracy of 74.06\%, a mean reciprocal rank@10 of 0.52 and a mean average precision@10 of 41\% which are highly promising. 
-Comparison with state-of-the-art techniques
-and their variants shows that our technique can have improvements of 32.26\% in MAP@10 and 26.74\% in Top-5 accuracy.
+Unfortunately, this approach suffers due to vocabulary mismatch issues and often results into unrecognised similarity or spurious matching. 
+In this paper, we propose a bug localization technique namely BLuAMIR that (1) not only uses lexical similarity between a given bug report (query) and the source code documents  
+but also (2) exploits the implicit associations between them based on the bug-fixing history.
+Experiments using a collection of 3,431 bug reports show that on average our technique can localize buggy files with a Top-10 accuracy of 74.06\%, a mean reciprocal rank of 0.52 and a mean average precision of 41\% which are highly promising. 
+Comparison with three state-of-the-art approaches
+and their variants shows that our technique can achieve 32.26\% higher MAP and 
+26.74\% higher Top-5 accuracy.
 \end{abstract}
 
 %
@@ -194,15 +197,15 @@ and their variants shows that our technique can have improvements of 32.26\% in 
 </ccs2012>
 \end{CCSXML}
 
-\ccsdesc[500]{Computer systems organization~Embedded systems}
-\ccsdesc[300]{Computer systems organization~Redundancy}
-\ccsdesc{Computer systems organization~Robotics}
-\ccsdesc[100]{Networks~Network reliability}
+\ccsdesc[500]{Software and its engineering~Software verification and validation}
+\ccsdesc[500]{Software and its engineering~Software testing and debugging}
+%\ccsdesc[300]{Software and its engineering~Software defect analysis}
+%\ccsdesc[100]{Software and its engineering~Software maintenance tools}
 
 %
 % Keywords. The author(s) should pick words that accurately describe the work being
 % presented. Separate the keywords with commas.
-\keywords{bug localization, bug report, source code, information retrieval, keyword-source code association}
+\keywords{Bug localization, bug report, source code, information retrieval, keyword-source code association}
 
 %
 % A "teaser" image appears between the author and affiliation information and the body 
@@ -213,6 +216,13 @@ and their variants shows that our technique can have improvements of 32.26\% in 
 %  \Description{Enjoying the baseball game from the third-base seats. Ichiro Suzuki preparing to bat.}
 %  \label{fig:teaser}
 %\end{teaserfigure}
+\copyrightyear{2019} 
+\acmYear{2019} 
+%\setcopyright{acmcopyright}
+\acmConference[ESEC/FSE '19]{Proceedings of the 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering}{August 26--30, 2019}{Tallinn, Estonia}
+%\acmBooktitle{Proceedings of the 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE '19), August 26--30, 2019, Tallinn, Estonia}
+\acmPrice{15.00}
+
 
 %
 % This command processes the author and affiliation and title information and builds
@@ -222,16 +232,16 @@ and their variants shows that our technique can have improvements of 32.26\% in 
 \section{Introduction}
 Bug localization is a process of locating source code that needs to be changed in order to fix a given bug. 
 Manually locating buggy files is not only time-consuming but also prohibitively costly in terms of development efforts \cite{Wang}. This is even more challenging for large software systems. Thus, effective automated approaches are highly warranted for localizing software bugs. 
-Traditional Information Retrieval (IR) based bug localization techniques \cite{Saha,Jian} accept a bug report and a subject system as inputs and return a list of buggy entities (e.g., classes, methods) against the bug report. They localize bugs by simply relying on the \emph{lexical similarity} between a bug report and the source code. 
-Hence, they are likely to be affected by the quality and content of a submitted query (i.e., bug report). That is, if a query does not contain adequate information, then the retrieved results might not be relevant at all. As existing findings \cite{parninireval,fse2018masud} suggest, bug reports could be of low quality and could miss the appropriate keywords. 
-Thus, lexical similarity alone is likely not sufficient enough to solve the bug localization problem. 
+Traditional Information Retrieval (IR) based bug localization techniques \cite{Saha,Jian} accept a bug report (query) and a subject system as inputs and return a list of buggy entities (e.g., classes, methods). They localize the bugs by simply relying on the \emph{lexical similarity} between a bug report and the source code. 
+Hence, they are likely to be affected by the quality and content of a submitted query (i.e., bug report). That is, if the query does not contain adequate information, then the retrieved results might not be relevant at all. As existing findings \cite{parninireval,fse2018masud} suggest, bug reports could be of low quality and could miss the appropriate keywords. 
+Thus, lexical similarity alone is likely not sufficient enough for solving the bug localization problem. 
 
-In order to address the limitations with lexical similarity, several existing studies \cite{Maletic, MarcusMaletic,irmarcus} derive the underlying semantics of a text document by employing Latent Semantic Analysis (LSA). \citeauthor{irmarcus} and colleagues adopt this technology in the context of concept location \cite{irmarcus,MarcusMaletic}, program comprehension \cite{Maletic} and traceability link recovery problems \cite{MarcusLSI}, and reported higher performance than the traditional Vector Space Model (VSM) and probabilistic models.
+In order to address the limitations of lexical similarity based approaches, several existing studies \cite{Maletic, MarcusMaletic,irmarcus} derive the underlying semantics of a text document by employing Latent Semantic Analysis (LSA). \citeauthor{irmarcus} and colleagues adopt this technology in the context of concept location \cite{irmarcus,MarcusMaletic}, program comprehension \cite{Maletic} and traceability link recovery problems \cite{MarcusLSI}, and reported higher performance than that of the Vector Space Model (VSM) and probabilistic models.
 Unfortunately, their approach suffers from a major limitation.
 Latent Semantic Indexing (LSI) requires the use of a dimensionality reduction parameter that must be tuned for each document collection \cite{Kontostathis}.
 The results returned by LSI can also be difficult to interpret, as
-they are expressed using a numeric spatial representation.
-Other related studies \cite{LukinsBL,Nguyen} adopt Latent Dirichlet Allocation (LDA) for bug localization. However, they are also subject to their hyper-parameters and could even be outperformed by simpler models (e.g., rVSM \cite{Jian}). 
+they are expressed using a \emph{numeric spatial representation}.
+Other related studies \cite{LukinsBL,Nguyen} adopt Latent Dirichlet Allocation (LDA) for bug localization. However, they are also subject to their \emph{hyper-parameter tuning} and could even be outperformed by much simpler models (e.g., rVSM \cite{Jian}). 
 \begin{table*}[t]
 	\centering
 	\caption{A working example of BLuAMIR}
@@ -270,17 +280,18 @@ Other related studies \cite{LukinsBL,Nguyen} adopt Latent Dirichlet Allocation (
 			\end{tabular}
 			\centering
 			\textbf{GT} = \textbf{G}round \textbf{T}ruth,
-			\textbf{$\mathbf{S_{Total}}$}=(1-$\alpha$)$*$
+			\textbf{$\mathbf{S_{Total}}$} = (1-$\alpha$)$\times$
 			\textbf{$\mathbf{S_{LS}}$}
-			+$\alpha$$*$
+			+$\alpha$$\times$
 			\textbf{$\mathbf{S_{Assoc}}$}
-			and $\alpha$$=$ 0.4
+			and $\alpha$$ = $ 0.4
 		\end{threeparttable}
 }
-\vspace{-.5cm}
+\vspace{-.3cm}
 \end{table*}
-In this paper, we propose a bug localization approach namely BLuAMIR that not only considers \emph{lexical similarity} between a bug report (the query) and the source code but also captures \emph{implicit association} between them from the bug fixing history. First, we determine the lexical similarity between each source document and the query using the Vector Space Model (VSM).
-Second, we construct association maps between keywords of previously fixed bug reports and their corresponding changed documents using a bipartite graph \cite{bipartite}. Third, we prioritize such source documents that are associated with the keywords (from the query at hand) in these maps. Then, we rank the source documents based on their \emph{lexical} and \emph{association scores}.
+
+In this paper, we propose a bug localization approach namely \textbf{BLuAMIR} that (1) not only considers \emph{lexical similarity} between a bug report (the query) and the source code (2) but also captures \emph{implicit association} between them from the bug fixing history. First, we determine the lexical similarity between each source document and the query using Vector Space Model (VSM).
+Second, we construct association maps between keywords of previously fixed bug reports and their corresponding changed documents using a bipartite graph \cite{bipartite}. Third, we prioritize such source documents that are associated with the keywords (from the query at hand) according to these maps. Then, we rank the source code documents based on their \emph{lexical} and \emph{association scores}.
 %Thus, our approach caters for the vocabulary mismatch between a bug report (the query) and the source code with implicit association.
 Thus, our approach uses implicit association to address the vocabulary mismatch between a bug report (the query) and the source code. 
 That is, unlike traditional IR-based approaches \cite{Jian,Saha}, it could return the buggy documents even if the query does not lexically match with the source code documents. Our approach also does not require the dimensionality reduction since we use a finite graph rather than a large sparse term-document matrix \cite{MarcusLSI,MarcusMaletic}.
@@ -293,7 +304,6 @@ BLuAMIR localizes bugs with 9\%--37\% higher accuracy (i.e., Hit@10), 12\%--63\%
 Second, we compare our technique with three state of the art approaches -- BugScout \cite{Nguyen}, BugLocator \cite{Jian} and BLUiR \cite{Saha} (Section \ref{RQ1answer}).
 Our technique can localize bugs with 6\%--54\% higher accuracy (i.e., Hit@5), 4\%--32\% higher precision (i.e., MAP) and 8\%--27\% higher reciprocal ranks (i.e., MRR) than these state-of-the-art approaches.
 Third, in terms of query-wise improvement, BLuAMIR improves result ranks of 46.37\% and degrades 26.64\% queries than those of the baseline VSM (Section \ref{RQ1answer}) with Eclipse system.
-
 Thus, this paper makes the following contributions:
 \begin{itemize}
 	\item A novel technique that not only considers the \emph{lexical similarity} between a bug report and the source code but also exploits their \emph{implicit associations} through bug-fixing history for bug localization.
@@ -310,7 +320,7 @@ Section \ref{sec:conclusionANDfuture} concludes the paper with future plan.
 \begin{table}[!tb]
 	\caption{An Example Bug Report (\#95167, eclipse.jdt.core)}
 	\label{tab:BugInfo}
-	\vspace{-.2cm}
+	\vspace{-.3cm}
 	%\centering
 	%\begin{center}
 	\resizebox{3.4in}{!}{%
@@ -850,7 +860,7 @@ We see that our approach outperforms LSI in all the cases. For example, baseline
 	\centering
 	\includegraphics[width=3in]{comapre-mrr}
 	\vspace{-.3cm}
-	\caption {Comparison between baseline LSI and BLuAMIR in MRR}
+	\caption {Comparison between LSI and BLuAMIR in MRR}
 	\label{box:LSI+AssoMRR}
 	\vspace{-.5cm}
 \end{figure}
