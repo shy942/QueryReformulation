@@ -1,6 +1,7 @@
+/LIB/
+/parameter/
 /BugLocator/
 /Gold/
-/LIB/
 /Test10FoldCrVld/
 /adjacent/
 /bug/
@@ -11,4 +12,12 @@
 /demo/
 /file/
 /graph/
-/parameter/
+/performance/
+/query/
+/source/
+/stemmer/
+/stopwords/
+/term/
+/text/
+/token/
+/utility/

@@ -42,7 +42,7 @@ public class PerformanceCalculatorPerfect {
 		
 		//new PerformanceCalculatorPerfect().getSingleResult("");
 	   // new PerformanceCalculatorPerfect().checkResultSizeAndContent(3071, "E:\\PhD\\Repo\\Eclipse", "VSMandMe", 0.4);
-		new PerformanceCalculatorPerfect().getAvgPerformance(3071, 0.4, "VSMandMe");
+		new PerformanceCalculatorPerfect().getAvgPerformance(96, 0.4, "VSMandMe");
 		//new PerformanceCalculatorPerfect().getAvgPerformance(1, 0, "VSMandMe");
 	}
 
@@ -68,15 +68,16 @@ public class PerformanceCalculatorPerfect {
 		for(int i=1;i<=no_of_fold;i++)
 		{
 			int test=i;
-			String resultFilePath=base+"\\data\\Results/"+"/Jan17"+baseNamePart+alpha+"-"+test+".txt";
+			String date="Mar19";
+			String resultFilePath=base+"\\data\\Results//"+date+baseNamePart+alpha+"-"+test+".txt";
 			if(resultFilePath.length()<=0)System.out.println(test+" "+resultFilePath.length());
 			//Fort Eclipse   
 			//PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep12"+baseNamePart+alpha+"-"+test+".txt");	
 			//For SWT
-			corpus="Eclipse";
+			corpus="SWT";
 			
 			 base="E:\\PhD\\Repo\\"+corpus; 
-			 obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfoAll"+corpus+".txt",base+"\\data\\Results/"+"/Jan17"+baseNamePart+alpha+"-"+test+".txt");		
+			 obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfo"+corpus+".txt",base+"\\data\\Results//"+date+baseNamePart+alpha+"-"+test+".txt");		
 			 //obj=new PerformanceCalculatorPerfect(base+"\\gitInfo"+corpus+"SingleFile.txt","E:\\PhD\\LSI\\Repo\\"+corpus+"\\data\\Results\\"+test+".txt");     
 			//PerformanceCalculatorPerfect 
 			//obj=new PerformanceCalculatorPerfect("E:/PhD/Repo/"+corpus+"/data/gitInfo1KB"+corpus+".txt","E:/BugLocator/output/"+corpus+"outputJan04-9.txt");	
@@ -86,7 +87,7 @@ public class PerformanceCalculatorPerfect {
 			obj.resultsMap=obj.getResults(obj.resultPath); 
 			
 			String key=obj.resultPath;
-			//System.out.println(key);
+			System.out.println(key);
 			HashMap<String, Double> resultHM=getResultForTopK(obj);
 			
 			HashMap<String, String> bestRankListHM=new HashMap<>();
@@ -117,7 +118,7 @@ public class PerformanceCalculatorPerfect {
 		writeForBoxPlot(resultContainer,base,method,corpus);
 		
 		//System.out.println(resultContainer);
-		ContentWriter.writeContent(base+"\\data\\performance\\allperformance+"+baseNamePart+"Jan17.txt", resultContainer);
+		ContentWriter.writeContent(base+"\\data\\performance\\allperformance+"+baseNamePart+"Mar18.txt", resultContainer);
 	}
 	
 	public static void writeForBoxPlot(HashMap <String, HashMap<String, Double>> resultContainer, String base, String method, String dataset)
@@ -129,13 +130,17 @@ public class PerformanceCalculatorPerfect {
 	    String contentMRR="method"+","+"MRR"+"\n";
 	    String contentMAP="";
 	            //"method"+","+"MAP"+"\n";
+	    int i=0;
 	    for(String key:resultContainer.keySet())
 	    {
-	        //System.out.println(key);
+	       
 	        HashMap<String, Double> resultHM=resultContainer.get(key);
+	       
 	        
-	        //if(Double.valueOf(resultHM.get("T1"))>0)
 	            contentT1=contentT1+method+","+Double.valueOf(resultHM.get("T1"))/100.00+"\n";
+	          if(Double.valueOf(resultHM.get("T1"))>0){
+	            System.out.println(resultHM.get("bugid"));
+	            System.out.println("=========================="+(++i)+" "+resultHM.get("T1"));}
 	        //if(Double.valueOf(resultHM.get("T5"))>0)
 	            contentT5=contentT5+method+","+Double.valueOf(resultHM.get("T5"))/100.00+"\n";
 	        //if(Double.valueOf(resultHM.get("T10"))>0)
@@ -192,7 +197,7 @@ public class PerformanceCalculatorPerfect {
 	{
 	    String corpus="Eclipse";
         
-	    PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("E:/PhD/Repo/"+corpus+"/data/gitInfoAll"+corpus+".txt","E:/BugLocator/output/"+corpus+"outputJan04.txt");
+	    PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("E:/PhD/Repo/"+corpus+"/data/gitInfo"+corpus+".txt","E:/BugLocator/output/"+corpus+"outputJan04.txt");
 		//PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("E:/PhD/Repo/SWT/data/gitInfo1KBSWT.txt","E:/BugLocator/output/SWT75outputConverted.txt");	
 			
 		obj.gitResultsMap=obj.getGitOutput(obj.gitPath);
@@ -301,9 +306,9 @@ public class PerformanceCalculatorPerfect {
 		if(emptybug==false)resultHM.put("MRR@5", ComputeMRR(resultTop5,obj, TOP_K)); else resultHM.put("MRR@5", 0.0);
 		
 		
-		System.out.println("=============================================================================");
+		//System.out.println("=============================================================================");
 		TOP_K=10;
-		System.out.println("Result for Top-"+TOP_K);
+		//System.out.println("Result for Top-"+TOP_K);
 		HashMap<String, ArrayList<String>> resultTop10=ComputePerformancePercent(TOP_K, obj);
 		
 		double percentageT10=Double.valueOf(resultTop10.size())/Double.valueOf(obj.resultsMap.size())*100;
@@ -432,6 +437,7 @@ public class PerformanceCalculatorPerfect {
 			for(String GoldFile:gitList){
 				if(GoldFile.equalsIgnoreCase(file.trim())){
 					found=1;
+					System.out.println(file);
 				}	
 			}
 			
@@ -478,6 +484,7 @@ public class PerformanceCalculatorPerfect {
 	        	if(list.size()>0){
 	        		
 	        		total_found++;
+	        		System.out.println(bugID);
 	        		finalRankedResultlocal.put(bugID, list);
 	        	}
 	        }
@@ -485,8 +492,8 @@ public class PerformanceCalculatorPerfect {
 	       
 	    }
 	    
-	    System.out.println("Total found: "+finalRankedResultlocal);
-	    System.out.println("Total bug: "+obj.resultsMap.size());
+	   // System.out.println("Total found: "+finalRankedResultlocal);
+	    //System.out.println("Total bug: "+obj.resultsMap.size());
 	    //System.out.println("Top "+TOP_K+" %: "+(Double.valueOf(total_found)/Double.valueOf(no_of_bug_matched))*100);
 	    //System.out.print((Double.valueOf(total_found)/Double.valueOf(no_of_bug_matched))*100+" ");
 	    return finalRankedResultlocal;

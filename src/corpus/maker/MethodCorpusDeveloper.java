@@ -195,7 +195,7 @@ public class MethodCorpusDeveloper {
 				} else {
 					if (f.getName().endsWith(".java")) {
 					    count++;
-					    if(count>3)break;
+					   // if(count>3)break;
 						extractMethods(f.getAbsolutePath());
 						saveMethods(f.getAbsolutePath());
 						methodmap.clear();
@@ -215,9 +215,9 @@ public class MethodCorpusDeveloper {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String base="E:\\PhD\\Repo\\Eclipse";
-		String repoName=base+"\\Source\\eclipse-3.1FromBLIA\\";
-		String methodFolder=base+"\\methodDec25\\";
+		String base="E:\\PhD\\Repo\\SWT";
+		String repoName=base+"\\Source\\swt-3.1\\";
+		String methodFolder=base+"\\methodMar2019\\";
 		MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoName,methodFolder,base);
 		developer.createMethodCorpus(developer.repoFolder);
 		developer.saveMethods(methodFolder);

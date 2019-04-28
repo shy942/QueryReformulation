@@ -37,7 +37,7 @@ public class DataSetsPreaparation {
 		//For MAc
 		//DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","/Users/user/Documents/Ph.D/2018/Data/ProcessedBugData/");
 		//For Windows
-	    String corpus="SWT";
+	    String corpus="ZXing";
 		String base="E:PhD\\Repo\\"+corpus;
 		//Dont do this now
 		//new DataSetsPreaparation().creatAllbugs(base+"\\BugData3071\\",base+"\\data\\allBug.txt");
@@ -49,8 +49,8 @@ public class DataSetsPreaparation {
 		
 		
 		obj.bugContentHM=obj.LoadBugData();
-		ArrayList<String> foldList=obj.FoldPreparation(96);
-		obj.TrainAndTestSetPrep(foldList,96);
+		ArrayList<String> foldList=obj.FoldPreparation(20);
+		obj.TrainAndTestSetPrep(foldList,20);
 	}
       
 	private void creatAllbugs(String bugFolder, String outFile) {

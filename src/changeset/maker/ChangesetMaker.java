@@ -84,8 +84,8 @@ public class ChangesetMaker {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	    String corpus="Eclipse";
-		String gitInfoFile = "E:\\PhD\\Repo\\"+corpus+"\\data\\gitInfoAll"+corpus+".txt";
+	    String corpus="ZXing";
+		String gitInfoFile = "E:\\PhD\\Repo\\"+corpus+"\\data\\gitInfo"+corpus+".txt";
 		new ChangesetMaker(gitInfoFile).makeChangeset(corpus);
 	}
 }

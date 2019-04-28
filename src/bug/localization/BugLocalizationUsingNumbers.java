@@ -513,8 +513,9 @@ public class BugLocalizationUsingNumbers {
         
 		//Work on necessary inputs or maps
 		int total_test=3071;
-		double alpha=0.4;
+		double alpha=0.0;
 		ArrayList<String> resultAll=new ArrayList<String>();
+		String corpus="Eclipse";
 		for(int i=1;i<=total_test;i++)
 		{
 			/*
@@ -542,7 +543,7 @@ public class BugLocalizationUsingNumbers {
 			
 			//For SWT/Zxing/AspectJ/Eclipse
 			int test=i;
-			String corpus="Eclipse";
+			
 			String base="E:\\PhD\\Repo\\"+corpus+"\\"; 
 			//String base="E:\\PhD\\LSI\\Repo\\Zxing\\";
 			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers(base+"\\data\\FinalMap\\TokenSourceMapTrainset"+test+".txt",base+"\\data\\testset\\test"+test+".txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\data\\changeset-pointer\\ID-SourceFile.txt",base+"\\data\\ID-Keyword.txt");
@@ -556,7 +557,7 @@ public class BugLocalizationUsingNumbers {
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			=base+"\\data\\Results\\Feb08VSM"+alpha+"-"+test+".txt";
+			=base+"\\data\\Results\\Mar22AsSc"+alpha+"-"+test+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 			//System.out.println(bugReportFolder);
@@ -567,7 +568,7 @@ public class BugLocalizationUsingNumbers {
 			resultAll.add(obj.bugLocatorLuceneAndMeReturnList(alpha,corpus,obj, outputFilePath, bugReportFolder));
 		
 		}
-		ContentWriter.writeContent("E:\\PhD\\BugLocatorP2\\results\\Eclipse\\BLuAMIR\\resultsEclipse.txt", resultAll);
+		ContentWriter.writeContent("E:\\PhD\\BugLocatorP2\\results\\"+corpus+"\\BLuAMIR\\results"+corpus+"AsSc.txt", resultAll);
 	}
 
 	 public void bugLocatorLuceneAndMe(double ALPHA,String corpus,BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
@@ -623,8 +624,8 @@ public class BugLocalizationUsingNumbers {
 					    count++;
 						if(count>10)break; 
 						//finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+sortedResultMyTool.get(key)+","+SortedBLresult.get(key));
-						//finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+SortedBLresult.get(key));
-						finalResult.add(queryID+","+this.SourceIDMap.get(key));
+						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+SortedBLresult.get(key)+","+sortedResultMyTool.get(key));
+						//finalResult.add(queryID+","+this.SourceIDMap.get(key));
 					    }
 						
 					}
@@ -666,7 +667,7 @@ public class BugLocalizationUsingNumbers {
                  HashMap<Integer,Double> resultBugLocator=new HashMap<>();
                  if(obj.buglocatorRESULT.containsKey(queryID)){
                      System.out.println(++i);
-                     if(i>5) break;
+                     //if(i>5) break;
                      resultBugLocator=obj.convertSIDtoNum(queryID,obj.buglocatorRESULT);
                  
              
@@ -679,29 +680,34 @@ public class BugLocalizationUsingNumbers {
                  =obj.ResultBasedOnTF(queryID);
                  
                  HashMap<Integer, Double> resultMap
-                 //=sortedResultMyTool;
+                 =sortedResultMyTool;
                  //=SortedBLresult;
-                 =obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
+                 //=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
              
                  String result=queryID+",";
                  int count=0;
+                 int resultMapSize=resultMap.size();
+                 int lastkey=0;
                  for(int key:resultMap.keySet())
                  {
-                     {
                      count++;
-                     if(count>10)break; 
+                     if(count==100||count==resultMapSize-1)
+                     {
+                         lastkey=key;
+                         break; 
+                     }
                      //finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+sortedResultMyTool.get(key)+","+SortedBLresult.get(key));
                      //finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+SortedBLresult.get(key));
                      //finalResult.add(queryID+","+this.SourceIDMap.get(key));
-                     if(count<=9)finalResult=finalResult+queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+"\n";
-                     else if(count==10) finalResult=finalResult+queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key);
+                     if(count<100)finalResult=finalResult+queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+"\n";
+                     //else if(count==50) finalResult=finalResult+queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key);
                      System.out.println(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key));
-                     }
-                     
                  }
+                 finalResult=finalResult+queryID+","+this.SourceIDMap.get(lastkey)+","+resultMap.get(lastkey);
+                 System.out.println(queryID+","+this.SourceIDMap.get(lastkey)+","+resultMap.get(lastkey));
                  
              }   
-                 //ContentWriter.writeContent(outputFilePath+queryID, finalResult);
+                 ContentWriter.writeContent(outputFilePath, finalResult);
          }
          
          //ContentWriter.writeContent(outputFilePath, finalResult);

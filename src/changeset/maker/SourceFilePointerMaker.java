@@ -13,18 +13,22 @@ public class SourceFilePointerMaker {
 
 	String changeDir;
 	String corpus;
+	String allFileInfo;
 	HashMap<String, Integer> fileIDMap;
 	HashMap<Integer, String> bugIDFileMap;
+	ArrayList<String> totalFileList;
 
-	public SourceFilePointerMaker(String changeDir, String corpus) {
+	public SourceFilePointerMaker(String changeDir, String corpus, String allFileInfo) {
 		this.changeDir = changeDir;
 		this.corpus=corpus;
+		this.allFileInfo=allFileInfo;
 		this.fileIDMap = new HashMap<>();
 		this.bugIDFileMap = new HashMap<>();
+		this.totalFileList=new ArrayList<>();
 	}
 
 	protected HashMap<String, Integer> developSourceFilePointer() {
-		
+		this.totalFileList=ContentLoader.getAllLinesList(this.allFileInfo);
 		File[] files = new File(this.changeDir).listFiles();
 		int index = 0;
 		HashMap<Integer,String> tempFileMap=new HashMap<>();
@@ -43,10 +47,18 @@ public class SourceFilePointerMaker {
 			}
 			
 		}
-
+		
 		// saving the map
-		this.saveIDSourceMap(tempFileMap);
-
+		this.saveIDSourceMap(tempFileMap,"E:\\PhD\\Repo\\"+this.corpus+"\\data\\changeset-pointer\\ID-SourceFile.txt");
+		
+        for(String file:this.totalFileList)
+        {
+            if(!tempFileMap.containsValue(file))
+            {
+                tempFileMap.put(++index, file);
+            }
+        }
+        this.saveIDSourceMap(tempFileMap, "E:\\PhD\\BugLocatorP2\\FileKeyMap\\"+this.corpus+"FileKeyMap.txt");
 		return fileIDMap;
 	}
 
@@ -56,13 +68,13 @@ public class SourceFilePointerMaker {
 		else return false;
 	}
 	
-	protected void saveIDSourceMap(HashMap<Integer,String> tempFileIDMap) {
+	protected void saveIDSourceMap(HashMap<Integer,String> tempFileIDMap, String outputFile) {
 		ArrayList<String> tempList = new ArrayList<>();
 		int size = tempFileIDMap.size();
 		for (int key = 1; key <= size; key++) {
 			tempList.add(key + ": " + tempFileIDMap.get(key));
 		}
-		String outputFile = "E:\\PhD\\Repo\\"+this.corpus+"\\data\\changeset-pointer\\ID-SourceFile.txt";
+		
 		//String outputFile = "./data/changeset-pointer/ID-SourceFile.txt";
 		ContentWriter.writeContent(outputFile, tempList);
 		System.out.println("Done!");
@@ -92,8 +104,9 @@ public class SourceFilePointerMaker {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//String changeDir="/Users/user/Documents/Ph.D/2018/Data/changeset/";
-	    String corpus="Eclipse";
+	    String corpus="ZXing";
 		String changeDir="E:\\PhD\\Repo\\"+corpus+"\\data\\changeset\\";
-		new SourceFilePointerMaker(changeDir,corpus).developBugSrcFilePointer(corpus);
+		String allFileInfo="E:\\PhD\\Repo\\"+corpus+"\\data\\allFilesName.txt\\";
+		new SourceFilePointerMaker(changeDir,corpus,allFileInfo).developBugSrcFilePointer(corpus);
 	}
 }
