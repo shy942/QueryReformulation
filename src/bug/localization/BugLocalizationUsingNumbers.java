@@ -278,7 +278,7 @@ public class BugLocalizationUsingNumbers {
     		if(resultBugLocator.containsKey(key))
     		{
     			count++;
-    			double combineScore=resultMyTool.get(key)*BETA+resultBugLocator.get(key);
+    			double combineScore=resultMyTool.get(key)*BETA+resultBugLocator.get(key)*(1-BETA);
     			//System.out.println(key+" "+resultMyTool.get(key)*BETA+" "+resultBugLocator.get(key)+" "+combineScore);
     			//if(key==firstkey) 
     				//{tempCombineResult.put(key, resultBugLocator.get(key)/0.6);}
@@ -295,7 +295,7 @@ public class BugLocalizationUsingNumbers {
     	for(int key:resultBugLocator.keySet())
     	{
     		count++;
-    		if(!tempCombineResult.containsKey(key))tempCombineResult.put(key, resultBugLocator.get(key)/0.6);
+    		if(!tempCombineResult.containsKey(key))tempCombineResult.put(key, resultBugLocator.get(key)/(1-BETA));
     	}
     	HashMap<Integer, Double> sortedCombineResult=MiscUtility.sortByValues(tempCombineResult);
         //System.out.println("=========================================");
@@ -512,10 +512,10 @@ public class BugLocalizationUsingNumbers {
 		// TODO Auto-generated method stub
         
 		//Work on necessary inputs or maps
-		int total_test=3071;
-		double alpha=0.4;
+		int total_test=20;
+		double alpha=0.0;
 		ArrayList<String> resultAll=new ArrayList<String>();
-		String corpus="Eclipse";
+		String corpus="Zxing";
 		for(int i=1;i<=total_test;i++)
 		{
 			/*
@@ -551,16 +551,16 @@ public class BugLocalizationUsingNumbers {
 			//For Mac
 			//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
 			//ForWindows
-			String sourceFolder = base+"\\ProcessedSourceCorpusDec17-2\\";
+			String sourceFolder = base+"\\ProcessedSourceCorpus\\";
 				
 			//String goldsetFile = base+"\\data\\"+corpus+"All.txt";
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			=base+"\\data\\Results\\";
-			        //+ "Apr29"+alpha+"-"
-			//+test;
-			//+".txt";
+			=base+"\\data\\Results\\"
+			        + "VSMonlyApr29"+alpha+"-"
+			+test
+			+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 			//System.out.println(bugReportFolder);
@@ -599,7 +599,7 @@ public class BugLocalizationUsingNumbers {
 			for(int queryID:testSet.keySet())
 			{
 				
-				   if(queryID==95167){
+				 
 					HashMap<Integer,Double> resultBugLocator=new HashMap<>();
 					if(obj.buglocatorRESULT.containsKey(queryID)){
 						System.out.println(++i);
@@ -611,14 +611,14 @@ public class BugLocalizationUsingNumbers {
 					
 					//MiscUtility.showResult(10,SortedBLresult );
 					
-					HashMap<Integer,Double> sortedResultMyTool
+					//HashMap<Integer,Double> sortedResultMyTool
 					//=obj.findBugForEachQueryCosineSimBased(queryID);
-					=obj.ResultBasedOnTF(queryID);
+					//=obj.ResultBasedOnTF(queryID);
 					
 					HashMap<Integer, Double> resultMap
 					//=sortedResultMyTool;
-					//=SortedBLresult;
-					=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
+					=SortedBLresult;
+					//=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
 					querypath=String.valueOf(queryID);
 					String result=queryID+",";
 					int count=0;
@@ -628,17 +628,16 @@ public class BugLocalizationUsingNumbers {
 					    count++;
 						if(count>10)break; 
 						//finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+sortedResultMyTool.get(key)+","+SortedBLresult.get(key));
-						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+SortedBLresult.get(key)+","+sortedResultMyTool.get(key));
+						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+SortedBLresult.get(key));
 						//finalResult.add(queryID+","+this.SourceIDMap.get(key));
 					    }
 						
 					}
 					
-				}	}
-					//ContentWriter.writeContent(outputFilePath+queryID, finalResult);
+				}						//ContentWriter.writeContent(outputFilePath+queryID, finalResult);
 			}
 			
-			ContentWriter.writeContent(outputFilePath+querypath+".txt", finalResult);
+			ContentWriter.writeContent(outputFilePath, finalResult);
 			//ContentWriter.appendContent("E:\\PhD\\BugLocatorP2\\results\\Eclipse\\BLiAMIR\\Eclipse3071_BLuAMIR.txt", finalResult);
 	    }
 	 public String bugLocatorLuceneAndMeReturnList(double ALPHA,String corpus,BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)

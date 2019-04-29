@@ -20,7 +20,7 @@ public class BLPerformanceCalc {
 		this.TOPK = TOPK;
 		this.selectedBugs = new ArrayList<>();
 		this.rankMap = new HashMap<>();
-		this.resultMap = extractResultsForOwn();
+		this.resultMap = extractResultsForBLuIR();
 		this.goldMap = loadGoldsetMap(goldFile);
 	}
 
@@ -88,14 +88,16 @@ public class BLPerformanceCalc {
 		// + selectedBugs.size());
 		return resultMap;
 	}
+	
+	
 
-	protected HashMap<Integer, ArrayList<String>> extractResultsForOwn() {
+	protected HashMap<Integer, ArrayList<String>> extractResultsForBLuIR() {
 		ArrayList<String> lines = ContentLoader
 				.getAllLinesList(this.resultFile);
 		// .getAllLinesOptList(this.resultFile);
 		HashMap<Integer, ArrayList<String>> resultMap = new HashMap<>();
 		for (String line : lines) {
-			String[] parts = line.trim().split(",");
+			String[] parts = line.trim().split(" ");
 			int bugID = Integer.parseInt(parts[0]);
 			// int rank = Integer.parseInt(parts[2].trim());
 			// if (rank >= 0 && rank < TOPK) {
@@ -313,7 +315,8 @@ public class BLPerformanceCalc {
 
 		//String resultFile = "./Data/Results/eclipseoutput.txt"; 
 		String resultFile
-		= "E:/BugLocator/output/EclipseoutputJan07.txt";
+		//= "E:/BugLocator/output/EclipseoutputJan07.txt";
+		="E:\\PhD\\BugLocatorP2\\results\\Eclipse\\BLUiR\\resultsEclipse100.txt";
 		//= "./data/Results/Aug24TFbasedTest2.txt";
 		//= "./data/Results/Aug24BLTest7.txt";
 		String goldFile = "E:/PhD/Repo/Eclipse/data/gitInfoEclipse.txt";

@@ -42,7 +42,7 @@ public class PerformanceCalculatorPerfect {
 		
 		//new PerformanceCalculatorPerfect().getSingleResult("");
 	   // new PerformanceCalculatorPerfect().checkResultSizeAndContent(3071, "E:\\PhD\\Repo\\Eclipse", "VSMandMe", 0.4);
-		new PerformanceCalculatorPerfect().getAvgPerformance(96, 0.4, "VSMandMe");
+		new PerformanceCalculatorPerfect().getAvgPerformance(1, 0.0, "");
 		//new PerformanceCalculatorPerfect().getAvgPerformance(1, 0, "VSMandMe");
 	}
 
@@ -68,24 +68,24 @@ public class PerformanceCalculatorPerfect {
 		for(int i=1;i<=no_of_fold;i++)
 		{
 			int test=i;
-			String date="Mar19";
+			String date="";
 			String resultFilePath=base+"\\data\\Results//"+date+baseNamePart+alpha+"-"+test+".txt";
 			if(resultFilePath.length()<=0)System.out.println(test+" "+resultFilePath.length());
 			//Fort Eclipse   
 			//PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep12"+baseNamePart+alpha+"-"+test+".txt");	
 			//For SWT
-			corpus="SWT";
-			
-			 base="E:\\PhD\\Repo\\"+corpus; 
-			 obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfo"+corpus+".txt",base+"\\data\\Results//"+date+baseNamePart+alpha+"-"+test+".txt");		
-			 //obj=new PerformanceCalculatorPerfect(base+"\\gitInfo"+corpus+"SingleFile.txt","E:\\PhD\\LSI\\Repo\\"+corpus+"\\data\\Results\\"+test+".txt");     
+			corpus="Eclipse";
+			base="E:\\PhD\\BugLocatorP2\\results\\Eclipse\\BLUiR"; 
+			// base="E:\\PhD\\Repo\\"+corpus; 
+			 //obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfo"+corpus+".txt",base+"\\data\\Results//"+date+baseNamePart+alpha+"-"+test+".txt");		
+			 obj=new PerformanceCalculatorPerfect("E:\\PhD\\Repo\\Eclipse\\data\\"+"\\gitInfo"+corpus+".txt",base+"\\results"+corpus+"10000.txt");     
 			//PerformanceCalculatorPerfect 
 			//obj=new PerformanceCalculatorPerfect("E:/PhD/Repo/"+corpus+"/data/gitInfo1KB"+corpus+".txt","E:/BugLocator/output/"+corpus+"outputJan04-9.txt");	
 			obj.gitResultsMap=obj.getGitOutput(obj.gitPath);
 		    //System.out.println(obj.gitResultsMap);
 			//System.out.println("/Dec27"+baseNamePart+no_of_fold+alpha+"-"+test+".txt");
-			obj.resultsMap=obj.getResults(obj.resultPath); 
-			
+			//obj.resultsMap=obj.getResults(obj.resultPath); 
+			obj.resultsMap=obj.extractResultsForOwn(); 
 			String key=obj.resultPath;
 			System.out.println(key);
 			HashMap<String, Double> resultHM=getResultForTopK(obj);
@@ -115,7 +115,7 @@ public class PerformanceCalculatorPerfect {
 		getAverageResult(resultContainer, no_of_fold);
 		ContentWriter.writeContent(base+".\\bestRank"+baseNamePart+"All.txt", listBRall);
         //MiscUtility.showResult(resultContainer.size(), resultContainer);
-		writeForBoxPlot(resultContainer,base,method,corpus);
+		//writeForBoxPlot(resultContainer,base,method,corpus);
 		
 		//System.out.println(resultContainer);
 		ContentWriter.writeContent(base+"\\data\\performance\\allperformance+"+baseNamePart+"Mar18.txt", resultContainer);
@@ -534,6 +534,8 @@ public class PerformanceCalculatorPerfect {
 	
 	}
 
+	
+	
 
 	private HashMap<String, ArrayList<String>> getResults(String resultPath) {
 		// TODO Auto-generated method stub
@@ -563,5 +565,37 @@ public class PerformanceCalculatorPerfect {
 	    }
 		return hm;
 	}
+
+	
+	protected HashMap<String, ArrayList<String>> extractResultsForOwn() {
+        ArrayList<String> lines = ContentLoader
+                .getAllLinesList(this.resultPath);
+        // .getAllLinesOptList(this.resultFile);
+        HashMap<String, ArrayList<String>> resultMap = new HashMap<>();
+        HashMap<String, ArrayList<String>> hm=new HashMap<>();
+        for (String line : lines) {
+            String[] parts = line.trim().split(" ");
+            String bugID = (parts[0]);
+            String file=parts[2];
+            // int rank = Integer.parseInt(parts[2].trim());
+            // if (rank >= 0 && rank < TOPK) {
+            ArrayList<String> fileAddress=new ArrayList<String>();
+            if(hm.containsKey(bugID))
+            {
+                fileAddress=hm.get(bugID);
+                fileAddress.add(file);
+            }
+            else
+            {
+                fileAddress.add(file);
+            }
+            hm.put(bugID, fileAddress);
+        
+
+        }
+        // System.out.println(repoName + ": Results:" + resultMap.size() + "\t"
+        // + selectedBugs.size());
+        return hm;
+    }
 
 }
