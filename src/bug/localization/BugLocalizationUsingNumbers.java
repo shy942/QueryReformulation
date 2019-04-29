@@ -513,7 +513,7 @@ public class BugLocalizationUsingNumbers {
         
 		//Work on necessary inputs or maps
 		int total_test=3071;
-		double alpha=0.0;
+		double alpha=0.4;
 		ArrayList<String> resultAll=new ArrayList<String>();
 		String corpus="Eclipse";
 		for(int i=1;i<=total_test;i++)
@@ -557,15 +557,18 @@ public class BugLocalizationUsingNumbers {
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
-			=base+"\\data\\Results\\Mar22AsSc"+alpha+"-"+test+".txt";
+			=base+"\\data\\Results\\";
+			        //+ "Apr29"+alpha+"-"
+			//+test;
+			//+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
 		
 			//System.out.println(bugReportFolder);
 			
 			//Actual working function
-			//obj.bugLocatorLuceneAndMe(alpha,corpus,obj, outputFilePath, bugReportFolder);
+			obj.bugLocatorLuceneAndMe(alpha,corpus,obj, outputFilePath, bugReportFolder);
 		    //For list return
-			resultAll.add(obj.bugLocatorLuceneAndMeReturnList(alpha,corpus,obj, outputFilePath, bugReportFolder));
+			//resultAll.add(obj.bugLocatorLuceneAndMeReturnList(alpha,corpus,obj, outputFilePath, bugReportFolder));
 		
 		}
 		ContentWriter.writeContent("E:\\PhD\\BugLocatorP2\\results\\"+corpus+"\\BLuAMIR\\results"+corpus+"AsSc.txt", resultAll);
@@ -581,8 +584,8 @@ public class BugLocalizationUsingNumbers {
 		 	//ForSWT
 		 	String indexDir="E:\\PhD\\Repo\\"+corpus+"\\data\\Index"+corpus;
 			obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
-					.getLuceneBasedScore(BETA);
-			System.out.println(obj.buglocatorRESULT+"                99999999999999999999999999999999999999999999999999999999999");
+					.getLuceneBasedScore();
+			//System.out.println(obj.buglocatorRESULT+"                99999999999999999999999999999999999999999999999999999999999");
 	    	obj.trainMapTokenSource=obj.loadTrainMap(obj.trainMapTokenSourceAddress);
 	    	//MiscUtility.showResult(10, obj.trainMapTokenSource);
 			obj.testSet=obj.loadHashMap(obj.testSetAddress);
@@ -592,10 +595,11 @@ public class BugLocalizationUsingNumbers {
 			ArrayList<String> finalResult=new ArrayList<>();
 			ArrayList<String> workingExample=new ArrayList<>();
 			int i=0;
+			String querypath="";
 			for(int queryID:testSet.keySet())
 			{
 				
-				
+				   if(queryID==95167){
 					HashMap<Integer,Double> resultBugLocator=new HashMap<>();
 					if(obj.buglocatorRESULT.containsKey(queryID)){
 						System.out.println(++i);
@@ -615,7 +619,7 @@ public class BugLocalizationUsingNumbers {
 					//=sortedResultMyTool;
 					//=SortedBLresult;
 					=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA);
-				
+					querypath=String.valueOf(queryID);
 					String result=queryID+",";
 					int count=0;
 					for(int key:resultMap.keySet())
@@ -630,11 +634,11 @@ public class BugLocalizationUsingNumbers {
 						
 					}
 					
-				}	
+				}	}
 					//ContentWriter.writeContent(outputFilePath+queryID, finalResult);
 			}
 			
-			ContentWriter.writeContent(outputFilePath, finalResult);
+			ContentWriter.writeContent(outputFilePath+querypath+".txt", finalResult);
 			//ContentWriter.appendContent("E:\\PhD\\BugLocatorP2\\results\\Eclipse\\BLiAMIR\\Eclipse3071_BLuAMIR.txt", finalResult);
 	    }
 	 public String bugLocatorLuceneAndMeReturnList(double ALPHA,String corpus,BugLocalizationUsingNumbers obj, String outputFilePath, String bugReportFolder)
