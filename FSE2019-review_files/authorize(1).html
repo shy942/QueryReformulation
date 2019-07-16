@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- saved from url=(0174)https://webshell.suite.office.com/iframe/TokenFactoryIframe?origin=https%3A%2F%2Foutlook.office.com&shsid=cc1508b1-fe81-48e3-a9f9-340451b3f28d&cshver=16.00.3026.000&apiver=g2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="./tokenfactoryiframe_5f412e37.js.download"></script>
+</head>
+<body>
+    <script type="text/javascript" nonce="">
+        
+                    
+                var requestExecutorSettings = {
+                    originAuthorityValidator: O365SuiteServiceProxy.ServiceHandlers.validateOrigin,
+                    trustedOriginAuthorities: ["^outlook\\.office\\.com$"],
+                    allowedEndpoints: [{host: "^webshell\\.suite\\.office\\.com$",paths: ["^api/(.*?)"]},{host: "^ocws\\.officeapps\\.live\\.com$",paths: ["^ocs/(.*?)"]},{host: "^graph\\.microsoft\\.com$",paths: ["^v1\\.0/(.*?)"]},{host: "^management\\.azure\\.com$",paths: ["^providers/Microsoft.BusinessAppDiscovery/(.*?)"]},{host: "^.*[0-4]-sphome[dsbp]\\.svc\\.ms$",paths: ["^api/(.*?)"]},{host: "^substrate\\.office\\.com$",paths: ["^search/(.*?)"]}],
+                    allowedResources: [{resource: "officeapps.live.com",hosts: ["ocws.officeapps.live.com"]},{resource: "graph.microsoft.com",hosts: ["graph.microsoft.com"]},{resource: "webshell.suite.office.com",hosts: ["webshell.suite.office.com"]},{resource: "management.azure.com",hosts: ["management.azure.com"]},{resource: "^.*[0-4]-sphome[dsbp]\\.svc\\.ms$",hosts: ["^.*[0-4]-sphome[dsbp]\\.svc\\.ms$"]},{resource: "substrate.office.com",hosts: ["substrate.office.com"]}],
+                    shouldAttachOauthTokens: true,
+                    trustedOriginAuthoritiesSetFromServer: true
+                };
+
+                O365SuiteServiceProxy.RequestExecutorMessageProcessor.init(requestExecutorSettings);
+            
+                    
+                var tokenFactorySettings = {
+                    clientId: "89bee1f7-5e6e-4d8a-9f3d-ecd601259da7",
+                    instance: "https://login.microsoftonline.com/",
+                    tenant: 'common',
+                    cacheLocation: "sessionStorage",
+                    clientShellServiceOrigin: "https://webshell.suite.office.com",
+                    parentPageOrigin: "https://outlook.office.com",
+                    shsid: "cc1508b1-fe81-48e3-a9f9-340451b3f28d",
+                    upn: ""
+                };
+
+                O365TokenFactoryIframe.TokenFactoryInsideIframe.init(tokenFactorySettings);
+    </script>
+
+
+</body></html>

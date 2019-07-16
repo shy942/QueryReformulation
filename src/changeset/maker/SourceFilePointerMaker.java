@@ -10,7 +10,7 @@ import utility.ContentWriter;
 import utility.MiscUtility;
 
 public class SourceFilePointerMaker {
-
+    String base;
 	String changeDir;
 	String corpus;
 	String allFileInfo;
@@ -18,17 +18,18 @@ public class SourceFilePointerMaker {
 	HashMap<Integer, String> bugIDFileMap;
 	ArrayList<String> totalFileList;
 
-	public SourceFilePointerMaker(String changeDir, String corpus, String allFileInfo) {
+	public SourceFilePointerMaker(String base,String changeDir, String corpus) {
+	    this.base=base;
 		this.changeDir = changeDir;
 		this.corpus=corpus;
-		this.allFileInfo=allFileInfo;
+		//this.allFileInfo=allFileInfo;
 		this.fileIDMap = new HashMap<>();
 		this.bugIDFileMap = new HashMap<>();
 		this.totalFileList=new ArrayList<>();
 	}
 
-	protected HashMap<String, Integer> developSourceFilePointer() {
-		this.totalFileList=ContentLoader.getAllLinesList(this.allFileInfo);
+	protected void developSourceFilePointer() {
+		//this.totalFileList=ContentLoader.getAllLinesList(this.allFileInfo);
 		File[] files = new File(this.changeDir).listFiles();
 		int index = 0;
 		HashMap<Integer,String> tempFileMap=new HashMap<>();
@@ -49,8 +50,8 @@ public class SourceFilePointerMaker {
 		}
 		
 		// saving the map
-		this.saveIDSourceMap(tempFileMap,"E:\\PhD\\Repo\\"+this.corpus+"\\data\\changeset-pointer\\ID-SourceFile.txt");
-		
+		this.saveIDSourceMap(tempFileMap,this.base+"\\data\\changeset-pointer\\ID-SourceFile.txt");
+		/*
         for(String file:this.totalFileList)
         {
             if(!tempFileMap.containsValue(file))
@@ -58,8 +59,8 @@ public class SourceFilePointerMaker {
                 tempFileMap.put(++index, file);
             }
         }
-        this.saveIDSourceMap(tempFileMap, "E:\\PhD\\BugLocatorP2\\FileKeyMap\\"+this.corpus+"FileKeyMap.txt");
-		return fileIDMap;
+        this.saveIDSourceMap(tempFileMap, "E:\\PhD\\BugLocatorP2\\FileKeyMap\\"+this.corpus+"FileKeyMap.txt");*/
+		//return fileIDMap;
 	}
 
 	protected boolean IsFileExist(String file, ArrayList<String> list)
@@ -80,8 +81,9 @@ public class SourceFilePointerMaker {
 		System.out.println("Done!");
 	}
 
-	protected void developBugSrcFilePointer(String corpus) {
-		HashMap<String, Integer> fileIDMap = developSourceFilePointer();
+	protected void developBugSrcFilePointer(String base) {
+		//HashMap<String, Integer> fileIDMap = 
+		        this.developSourceFilePointer();
 		File[] files = new File(this.changeDir).listFiles();
 		ArrayList<String> bugSrcList = new ArrayList<>();
 		for (File f : files) {
@@ -90,23 +92,29 @@ public class SourceFilePointerMaker {
 					.getAbsolutePath());
 			ArrayList<Integer> tempIDs = new ArrayList<>();
 			for (String srcURL : srcFiles) {
-				if (fileIDMap.containsKey(srcURL)) {
+				//if (fileIDMap.containsKey(srcURL)) {
 					tempIDs.add(fileIDMap.get(srcURL));
-				}
+			//	}
 			}
 			bugSrcList.add(bugID + ":" + MiscUtility.listInt2Str(tempIDs));
 		}
-		String outputFile = "E:/PhD/Repo/"+corpus+"/data/changeset-pointer/Bug-ID-SrcFile-ID-Mapping.txt";
+		String outputFile = base+"/data/changeset-pointer/Bug-ID-SrcFile-ID-Mapping.txt";
 		ContentWriter.writeContent(outputFile, bugSrcList);
 		System.out.println("Done!");
+		//this.saveIDSourceMap(tempFileMap,"E:\\PhD\\Repo\\"+this.corpus+"\\data\\changeset-pointer\\ID-SourceFile.txt");
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//String changeDir="/Users/user/Documents/Ph.D/2018/Data/changeset/";
-	    String corpus="ZXing";
-		String changeDir="E:\\PhD\\Repo\\"+corpus+"\\data\\changeset\\";
-		String allFileInfo="E:\\PhD\\Repo\\"+corpus+"\\data\\allFilesName.txt\\";
-		new SourceFilePointerMaker(changeDir,corpus,allFileInfo).developBugSrcFilePointer(corpus);
+	    String corpus="Apache";
+	   
+	        String project="HBASE";
+	        String version="1_2_4";
+	        String base= "E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;
+	        String changeDir=base+"\\data\\changeset\\";
+		//String changeDir="E:\\PhD\\Repo\\"+corpus+"\\data\\changeset\\";
+		//String allFileInfo="E:\\PhD\\Repo\\"+corpus+"\\data\\allFilesName.txt\\";
+		new SourceFilePointerMaker(base,changeDir,corpus).developBugSrcFilePointer(base);
 	}
 }

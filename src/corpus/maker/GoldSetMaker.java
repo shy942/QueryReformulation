@@ -23,42 +23,82 @@ public class GoldSetMaker {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String gitPath="./data/gitInfoFile2.txt";
+		/*
+	    String gitPath="./data/gitInfoFile2.txt";
 		GoldSetMaker maker=new GoldSetMaker();
 		maker.goldSetMaker(gitPath);
+		*/
+	    String base="E:\\PhD\\Repo\\";
+	    String corpus="Apache";
+	    String gitPath=base+corpus+"\\GitInfo/FixLink.txt";
+	    String outpath=base+corpus+"\\data\\gitinfo"+corpus+".txt";
+        GoldSetMaker maker=new GoldSetMaker();
+        maker.GoldSetMakerFromBench4BLtoMyTool(gitPath, outpath);
 	}
+	
 
 	
+	public void GoldSetMakerFromBench4BLtoMyTool(String gitpath, String outpath)
+	{
+	    ArrayList <String> writeContent=new ArrayList<>();
+        this.LoadList(gitpath);
+        ArrayList <String> write_content=this.writeContent();
+        ContentWriter.writeContent(outpath, write_content);
+	}
+	
+	public void LoadList(String gitpath)
+	{
+	    ArrayList <String> gitContent=ContentLoader.getAllLinesList(gitpath);
+	    System.out.println(gitContent);
+        //Create a hushMap to contain git information for easier further processing 
+        for(int i=0;i<gitContent.size();i++)
+        {         
+             String[] spilter=gitContent.get(i).split("\\s");
+             String bugID=spilter[0];
+             String address=spilter[1];
+             System.out.println(bugID+" "+address);
+             if(this.gitInfoMap.containsKey(bugID)){
+                 ArrayList<String> list=this.gitInfoMap.get(bugID);
+                 list.add(address);
+                 this.gitInfoMap.put(bugID, list);
+             }
+             else
+             {
+                 ArrayList<String> list=new ArrayList<>();
+                 list.add(address);
+                 this.gitInfoMap.put(bugID, list);
+             }
+        }
+	}
 	
 	public void goldSetMaker(String gitFilePath)
 	{
-		ArrayList <String> writeContent=new ArrayList<>();
+		//ArrayList <String> writeContent=new ArrayList<>();
 		this.loadFilesAndLists(gitFilePath);
-		
-		boolean String;
+		ArrayList <String> write_content=this.writeContent();
+		ContentWriter.writeContent("./data/gitInfoNew.txt", write_content);
+	}
+	public ArrayList <String> writeContent()
+	{
+	    ArrayList <String> write_content=new ArrayList<>();
+	    boolean String;
 		for(String bugID:this.gitInfoMap.keySet())
 		{
 			ArrayList<String> listS=gitInfoMap.get(bugID);
-			ArrayList<String> tempList=new ArrayList<>();
-			for(String sourcePath:listS)
+			//ArrayList<String> tempList=new ArrayList<>();
+			
+			if(listS.size()>0)
 			{
-				if(listFromProS.contains(sourcePath)&&listFromSFolder.contains(sourcePath))
-				{
-					tempList.add(sourcePath);
-				}
-			}
-			if(tempList.size()>0)
-			{
-				writeContent.add(bugID+" "+tempList.size());
-				for(int i=0;i<tempList.size();i++)
+				write_content.add(bugID+" "+listS.size());
+				for(int i=0;i<listS.size();i++)
 					
 				{
-					writeContent.add(tempList.get(i));
+					write_content.add(listS.get(i));
 				}
 			}
 		}
+		return write_content;
 		
-		ContentWriter.writeContent("./data/gitInfoNew.txt", writeContent);
 	}
 	
 	public void loadFilesAndLists(String gitFilePath)

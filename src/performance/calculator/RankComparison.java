@@ -32,14 +32,14 @@ public class RankComparison {
 		for(int i=1;i<=3071;i++)
 		{
 		
-			obj.LoadRankMap(baselineMap, basePart+"\\data\\"+"bestRankVSM"+i+".txt");
-			obj.LoadRankMap(Othermap, basePart+"\\data\\"+"bestRankVSMandMe"+i+".txt");
+			obj.LoadRankMap(baselineMap, basePart+"\\data\\"+"bestRankVSMonly"+i+".txt");
+			
 			//System.out.println(baselineMap);
 			//System.out.println(Othermap);
 		
 			//System.out.println(baselineMap+"  \n "+Othermap);
 		}
-		
+		obj.LoadRankMap(Othermap, basePart+"\\data\\"+"bestRankVSMandMeAll.txt");
         
         System.out.println(baselineMap+"  \n "+Othermap);
 		obj.RanKComp(obj,baselineMap, Othermap);

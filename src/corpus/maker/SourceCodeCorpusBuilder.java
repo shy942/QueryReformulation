@@ -19,8 +19,8 @@ public class SourceCodeCorpusBuilder {
 	public SourceCodeCorpusBuilder(String base)
 	{
 		this.base=base;
-		this.sourceCodeFolder=new File(base+"\\Source\\swt-3.1\\");
-		this.sourceCodePPFolder=base+"\\ProcessedSourceCorpusMar2019\\";
+		this.sourceCodeFolder=new File(base+"\\Source\\HBASE_1_2_4\\");
+		this.sourceCodePPFolder=base+"\\ProcessedSourceCorpusJuly2019\\";
 		this.javaFilePaths=new ArrayList<String>();
 		this.javaFilePathsLastName=new ArrayList<String>();
 		this.noOfFile=0;
@@ -41,9 +41,9 @@ public class SourceCodeCorpusBuilder {
 			CommentFilterer cf=new CommentFilterer(s,fileName);
 			cf.discardClassHeaderComment();
 			
-			String repoFolder=this.base+"\\Source\\swt-3.1\\";
+			String repoFolder=this.base+"\\Source\\HBASE_1_2_4\\";
 			//String repoFolder="E:\\BugLocator\\Source\\swt-3.1\\";
-			String methodFolder=this.base+"\\methodMar2019\\";
+			String methodFolder=this.base+"\\methodJuly2019\\";
 			MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoFolder, methodFolder,this.base);
 			//developer.createMethodCorpus(developer.repoFolder);
 			developer.extractMethods(s);
@@ -75,7 +75,7 @@ public class SourceCodeCorpusBuilder {
 			ContentWriter.writeContent(this.sourceCodePPFolder+filePart, preprocessed);
 		}
 		System.out.println("Total no. of files: "+file_track);
-		ContentWriter.writeContent("E:\\PhD\\Repo\\"+corpus+"\\data\\SourceFileNames.txt", listofFiles);
+		ContentWriter.writeContent(this.base+"\\data\\allFilesName.txt", listofFiles);
 	}
 	
 	public void loadJavaFilesOnly(final File folder) {
@@ -96,8 +96,11 @@ public class SourceCodeCorpusBuilder {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String corpus="SWT";
-		String base="E:\\PhD\\Repo\\"+corpus+"\\";
+		String corpus="Apache";
+	    String project="HBASE";
+        String version="1_2_4";
+        String base= "E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;
+		//String base="E:\\PhD\\Repo\\"+corpus+"\\";
 		new SourceCodeCorpusBuilder( base).createPreprocessedRepo(corpus);
 		//This is a simple change.
 	}

@@ -29,12 +29,12 @@ public class BugReportCorpusBuilderTitleAndDescription {
 	{
 	    this.corpus=corpus;
 		this.bugFolder="E:\\PhD\\Repo\\"+this.corpus+"\\BugDataExtracted\\";
-		this.bugPPFolder="E:\\PhD\\Repo\\"+this.corpus+"\\BugData3071\\";
+		this.bugPPFolder="E:\\PhD\\Repo\\"+this.corpus+"\\BugData\\";
 		this.noOfBugReports=noOfBugReports;
 	}
 	protected void createPreprocessedRepo()
 	{
-	    ArrayList<String> bugIDs=ContentLoader.getAllLinesList("E:\\PhD\\Repo\\"+this.corpus+"\\data\\bugIDs.txt");
+	    ArrayList<String> bugIDs=ContentLoader.getAllLinesList("E:\\PhD\\Repo\\"+this.corpus+"\\data\\BugIDdateBased.txt");
 	    System.out.println(bugIDs);
 		File[] files=new File(bugFolder).listFiles();
 		//String allInOne="";
@@ -107,7 +107,7 @@ public class BugReportCorpusBuilderTitleAndDescription {
 		// TODO Auto-generated method stub
 		//IndividualYearProcessing();
 		//PutAll2gether();
-	    String corpus="Eclipse";
+	    String corpus="Apache\\HIVE\\2_1_0";
 		new BugReportCorpusBuilderTitleAndDescription(corpus).createPreprocessedRepo();
 	}
 

@@ -13,8 +13,8 @@ public class ChangesetMaker {
 		this.gitInfoFile = gitInfoFile;
 	}
 
-	protected void makeChangeset(String corpus) {
-		ArrayList<String> BugList=ContentLoader.readContent("E:\\PhD\\Repo\\"+corpus+"\\data\\allBug.txt");
+	protected void makeChangeset(String base, String corpus, String project) {
+		ArrayList<String> BugList=ContentLoader.readContent(base+"\\data\\BugIDdateBased.txt");
 		System.out.println(BugList);
 		ArrayList<String> lines = ContentLoader
 				.getAllLinesOptList(this.gitInfoFile);
@@ -41,7 +41,7 @@ public class ChangesetMaker {
 					    //&&cfiles.size()<=5)
 					    {
 					       
-					        String outputFile = "E:\\PhD\\Repo\\"+corpus+"\\data\\changeset\\" + bugID + ".txt";
+					        String outputFile = base+"\\data\\changeset\\" + bugID + ".txt";
 					        ContentWriter.writeContent(outputFile, cfiles);
 					        //System.out.println(cfiles);
 					        newGitContent=newGitContent+currentLine+"\n";
@@ -69,8 +69,8 @@ public class ChangesetMaker {
 			}
 		}
 		//System.out.println(newGitContent);
-		ContentWriter.writeContent("E:\\PhD\\Repo\\"+corpus+"\\data\\gitInfoAll"+corpus+".txt", newGitContent);
-		ContentWriter.writeContent("E:\\PhD\\Repo\\"+corpus+"\\data\\bugIdsNotCluded.txt", listBugNotIncluded);
+		ContentWriter.writeContent(base+"\\data\\gitInfoAll"+corpus+"-"+project+".txt", newGitContent);
+		ContentWriter.writeContent(base+"\\data\\bugIdsNotCluded.txt", listBugNotIncluded);
 	}
 
 	
@@ -84,8 +84,13 @@ public class ChangesetMaker {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	    String corpus="ZXing";
-		String gitInfoFile = "E:\\PhD\\Repo\\"+corpus+"\\data\\gitInfo"+corpus+".txt";
-		new ChangesetMaker(gitInfoFile).makeChangeset(corpus);
+	   
+	    String corpus="Apache";
+	    String project="HBASE";
+	    String version="1_2_4";
+	    String base= "E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;
+	    String gitInfoFile = base+"\\data\\gitInfo"+project+".txt";
+		//String gitInfoFile = "E:\\PhD\\Repo\\"+corpus+"\\data\\gitInfo"+corpus+".txt";
+		new ChangesetMaker(gitInfoFile).makeChangeset(base, corpus, project);
 	}
 }

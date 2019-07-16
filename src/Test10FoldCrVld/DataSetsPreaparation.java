@@ -34,23 +34,24 @@ public class DataSetsPreaparation {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//Divide data sets
-		//For MAc
+		//For MAcww
 		//DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","/Users/user/Documents/Ph.D/2018/Data/ProcessedBugData/");
 		//For Windows
-	    String corpus="ZXing";
-		String base="E:PhD\\Repo\\"+corpus;
+	    String corpus="Apache";
+	    String project="HBASE";
+	    String version="1_2_4";
+	    String base= "E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;
 		//Dont do this now
 		//new DataSetsPreaparation().creatAllbugs(base+"\\BugData3071\\",base+"\\data\\allBug.txt");
 		//new DataSetsPreaparation(base+"\\data\\allBug.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData1KB\\",base).DataPreparation(base+"\\data\\allBug.txt",base+"\\data\\gitInfoEclipse.txt",base+"\\data\\bugIDs.txt",base+"\\BugData1KB\\");
 		
-		DataSetsPreaparation obj=new DataSetsPreaparation(base+"\\data\\bugIDs.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData\\", base);
-		
-		
+		DataSetsPreaparation obj=new DataSetsPreaparation(base+"\\data\\BugIDdateBased.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData\\", base);
+			
 		
 		
 		obj.bugContentHM=obj.LoadBugData();
-		ArrayList<String> foldList=obj.FoldPreparation(20);
-		obj.TrainAndTestSetPrep(foldList,20);
+		ArrayList<String> foldList=obj.FoldPreparation(2);
+		obj.TrainAndTestSetPrepIncremental(foldList,2);
 	}
       
 	private void creatAllbugs(String bugFolder, String outFile) {
@@ -167,7 +168,57 @@ public class DataSetsPreaparation {
     	
     	
     }
-	
+    public void TrainAndTestSetPrepIncremental(ArrayList<String> foldList, int no_of_fold)
+    {
+        System.out.println(bugIDlist.size());
+        System.out.println(foldList.size());
+        
+        
+        String line=foldList.get(0);
+        String[]spilter=line.split(" ");
+        //int trainP1start=Integer.valueOf(spilter[0]);
+        int trainP1start=1;
+        int trainP1end=0;
+        //int trainP2start=0;
+        //int trainP2end=0;
+        int n=no_of_fold;
+        int teststart=0;
+        int testend=0;
+        for(int i=1;i<=no_of_fold;i++)
+        {
+            System.out.println("index: "+i);
+            int Fj=n-i;
+            //Create training sets part-1
+            
+            //line=foldList.get(Fj-1);
+            line=foldList.get(i-1);
+            spilter=line.split(" ");
+            trainP1end=Integer.valueOf(spilter[1]);
+            CreateTrainSet(i, trainP1start,trainP1end,0,0,this.base+"\\data\\trainset\\");
+            System.out.println(trainP1start+" "+trainP1end);
+            
+            //Create testing sets
+            //String line2=foldList.get(Fj);
+            String line2=foldList.get(i);
+            spilter=line2.split(" ");
+            teststart=Integer.valueOf(spilter[0]);
+            testend=Integer.valueOf(spilter[1]);
+            CreateTestSet(i, teststart, testend, this.base+"\\data\\testset\\");
+            System.out.println(teststart+" "+testend);
+            //Create training sets part-2
+            //trainP2start=0;
+            //trainP2end=0;
+            
+            
+        }
+        //Create last training set
+        //CreateTrainSet(no_of_fold, 0, 0, teststart+1, 0, this.base+"\\data\\trainset\\");
+        
+        //Create last testing set
+        //CreateTestSet(no_of_fold, 1,trainP2start-1 ,  this.base+"\\data\\testset\\");
+        
+        
+    }
     public void CreateTestSet(int step, int teststart, int testend, String outfilepath)
     {
     	ArrayList<String> testID=new ArrayList<>();
@@ -237,6 +288,7 @@ public class DataSetsPreaparation {
     	
     	
     	ArrayList<String> createdTrainData=new ArrayList<>();
+    	ArrayList<String> trainBugIDs=new ArrayList<>();
     	//System.out.println(bugKeywordLines);
     
     	for(String ID:trainID)
@@ -252,6 +304,7 @@ public class DataSetsPreaparation {
     				if(ID.equals(bugID))
     				{
     					createdTrainData.add(bugID+":"+content);
+    					trainBugIDs.add(bugID);
     					break;
     				}
     				
@@ -260,6 +313,7 @@ public class DataSetsPreaparation {
     	}
     	
     	ContentWriter.writeContent(outfilepath+"Train"+step+".txt", createdTrainData);
+    	ContentWriter.writeContent(this.base+"\\data\\trainBugIDs\\"+"TrainIDs"+step+".txt", trainBugIDs);
     	System.out.println(createdTrainData);
     	
     }
@@ -272,7 +326,8 @@ public class DataSetsPreaparation {
 		
 		int N=bugIDlist.size();
 		
-		int k=Integer.valueOf(N/no_of_fold);
+		//int k=Integer.valueOf(N/no_of_fold);
+		int k=50;
 		System.out.println("k="+k);
 		int start=1;
 		int end=k;

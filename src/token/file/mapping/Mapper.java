@@ -127,6 +127,8 @@ public class Mapper {
 			else if(len<min)min=len;
 			System.out.println(tokenSourceMap.get(token).size()+" ");
 			ContentWriter.appendContent(tokenSourceFile, token+":\n"+tokenSourceMap.get(token));
+			//String content=MiscUtility.listInt2Str(tokenSourceMap.get(token));
+			//ContentWriter.appendContent(tokenSourceFile, token+":"+content);
 		}
 		//ContentWriter.writeContent(tokenSourceFile, List);
 		//MiscUtility.showResult(10, tokenSourceMap);
@@ -167,7 +169,8 @@ public class Mapper {
 		// TODO Auto-generated method stub
 
 		long start=System.currentTimeMillis();
-		int tatoaltrain=20;
+		long end=0;
+		int tatoaltrain=2;
 		for(int i=1;i<=tatoaltrain;i++)
 		{
 			/*
@@ -182,19 +185,27 @@ public class Mapper {
 		obj.bugSourceMap=obj.LoadMap("./data/changeset-pointer/Bug-ID-SrcFile-ID-Mapping.txt");
 		obj.KeywordSourceMap=obj.CreateTokenSouceFileMap(obj.tokenBugMap,obj.bugSourceMap, "./data/FinalMap/TokenSourceMapTrainset"+train+".txt");*/
 			int train=i;
-			String corpus="ZXing";
-			String base="E:\\PhD\\Repo\\"+corpus+"\\";
+			String corpus="Apache";
+		    String project="HBASE";
+	        String version="1_2_4";
+	        String base= "E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;
 			Mapper obj=new Mapper(base+"\\data\\trainset\\Train"+train+".txt");
 			obj.bugKeywordMap=obj.LoadMap(base+"\\data\\trainset\\Train"+train+".txt");
 			obj.tokenBugMap=obj.CreateTokenBugMap(obj.bugKeywordMap);
-			//long end=System.currentTimeMillis();
-			//System.out.println("Time elapsed:"+(end-start)/1000+" s");
+			
 			
 			
 			obj.bugSourceMap=obj.LoadMap(base+"\\data\\changeset-pointer\\Bug-ID-SrcFile-ID-Mapping.txt");
 			obj.KeywordSourceMap=obj.CreateTokenSouceFileMap(obj.tokenBugMap,obj.bugSourceMap, base+"\\data\\FinalMap\\TokenSourceMapTrainset"+train+".txt");
-			//obj.CreateSourceToTokenMap(obj.tokenSourceMap, "./data/FinalMap/SourceTokenMapTrainset"+train+".txt");
+			//obj.Cr=eateSourceToTokenMap(obj.tokenSourceMap, "./data/FinalMap/SourceTokenMapTrainset"+train+".txt");
+		     
+		     //long time_elapsed=(end-start)/1000;
+            //System.out.println("Time elapsed:"+(end-start)/1000+" s");
 		}
+		
+		end=System.currentTimeMillis();
+		//long end=System.currentTimeMillis();
+        System.out.println("Time elapsed:"+(end-start)/1000+" s");
 	}
 
 	

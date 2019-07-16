@@ -42,13 +42,13 @@ public class PerformanceCalculatorPerfect {
 		
 		//new PerformanceCalculatorPerfect().getSingleResult("");
 	   // new PerformanceCalculatorPerfect().checkResultSizeAndContent(3071, "E:\\PhD\\Repo\\Eclipse", "VSMandMe", 0.4);
-		new PerformanceCalculatorPerfect().getAvgPerformance(1, 0.0, "");
+		new PerformanceCalculatorPerfect().getAvgPerformance(2, 0.4, "VSMandMe");
 		//new PerformanceCalculatorPerfect().getAvgPerformance(1, 0, "VSMandMe");
 	}
 
     public static void checkResultSizeAndContent(int no_of_fold, String base, String baseNamePart, double alpha)
     {
-        for(int i=1;i<=no_of_fold;i++)
+        for(int i=2;i<=no_of_fold;i++)
         {
             int test=i;
             String resultFilePath=base+"\\data\\Results/"+"/Feb08"+baseNamePart+alpha+"-"+test+".txt";
@@ -61,31 +61,35 @@ public class PerformanceCalculatorPerfect {
 	{
 		HashMap <String, HashMap<String, Double>> resultContainer=new HashMap<>();
 		PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect();
-		String base="";
-		String method="BLuAMIR";
-		String corpus="";
+		
+		//String method="VSM";
+		
+		String corpus="Apache";
+	    String project="HBASE";
+        String version="1_2_4";
+        String base= "E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;
 		ArrayList<String> listBRall=new ArrayList<>();
 		for(int i=1;i<=no_of_fold;i++)
 		{
 			int test=i;
-			String date="";
+			String date="July10";
 			String resultFilePath=base+"\\data\\Results//"+date+baseNamePart+alpha+"-"+test+".txt";
 			if(resultFilePath.length()<=0)System.out.println(test+" "+resultFilePath.length());
 			//Fort Eclipse   
 			//PerformanceCalculatorPerfect obj=new PerformanceCalculatorPerfect("./data/gitInfoNew.txt","./data/Results/Sep12"+baseNamePart+alpha+"-"+test+".txt");	
 			//For SWT
-			corpus="Eclipse";
-			base="E:\\PhD\\BugLocatorP2\\results\\Eclipse\\BLUiR"; 
+			//corpus="Eclipse";
+			//base="E:\\PhD\\BugLocatorP2\\results\\Eclipse\\BLUiR"; 
 			// base="E:\\PhD\\Repo\\"+corpus; 
-			 //obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfo"+corpus+".txt",base+"\\data\\Results//"+date+baseNamePart+alpha+"-"+test+".txt");		
-			 obj=new PerformanceCalculatorPerfect("E:\\PhD\\Repo\\Eclipse\\data\\"+"\\gitInfo"+corpus+".txt",base+"\\results"+corpus+"10000.txt");     
+			 obj=new PerformanceCalculatorPerfect(base+"\\data\\gitInfo"+project+".txt",base+"\\data\\Results//"+baseNamePart+date+alpha+"-"+test+".txt");		
+			 //obj=new PerformanceCalculatorPerfect("E:\\PhD\\Repo\\Eclipse\\data\\"+"\\gitInfo"+corpus+".txt",base+"\\results"+"1000.txt");     
 			//PerformanceCalculatorPerfect 
 			//obj=new PerformanceCalculatorPerfect("E:/PhD/Repo/"+corpus+"/data/gitInfo1KB"+corpus+".txt","E:/BugLocator/output/"+corpus+"outputJan04-9.txt");	
 			obj.gitResultsMap=obj.getGitOutput(obj.gitPath);
 		    //System.out.println(obj.gitResultsMap);
 			//System.out.println("/Dec27"+baseNamePart+no_of_fold+alpha+"-"+test+".txt");
-			//obj.resultsMap=obj.getResults(obj.resultPath); 
-			obj.resultsMap=obj.extractResultsForOwn(); 
+			obj.resultsMap=obj.getResults(obj.resultPath); 
+			//obj.resultsMap=obj.extractResultsForOwn(); 
 			String key=obj.resultPath;
 			System.out.println(key);
 			HashMap<String, Double> resultHM=getResultForTopK(obj);
@@ -109,16 +113,16 @@ public class PerformanceCalculatorPerfect {
 			    listBRall.add(resultFilePath);
 			    //bestRankstr+=bug+":"+bestRankListHM.get(bug)+"\n";
 			}
-		ContentWriter.writeContent(base+".\\data\\bestRank"+baseNamePart+test+".txt", bestRankstr);
+		//ContentWriter.writeContent(base+".\\data\\bestRank"+baseNamePart+test+".txt", bestRankstr);
 		}
 		//Now get the averageResult
 		getAverageResult(resultContainer, no_of_fold);
-		ContentWriter.writeContent(base+".\\bestRank"+baseNamePart+"All.txt", listBRall);
-        //MiscUtility.showResult(resultContainer.size(), resultContainer);
+		ContentWriter.writeContent(base+"\\bestRank"+baseNamePart+"May1All.txt", listBRall);
+        MiscUtility.showResult(resultContainer.size(), resultContainer);
 		//writeForBoxPlot(resultContainer,base,method,corpus);
 		
 		//System.out.println(resultContainer);
-		ContentWriter.writeContent(base+"\\data\\performance\\allperformance+"+baseNamePart+"Mar18.txt", resultContainer);
+		//ContentWriter.writeContent(base+"\\data\\performance\\allperformance+"+baseNamePart+"Mar18.txt", resultContainer);
 	}
 	
 	public static void writeForBoxPlot(HashMap <String, HashMap<String, Double>> resultContainer, String base, String method, String dataset)
@@ -314,6 +318,7 @@ public class PerformanceCalculatorPerfect {
 		double percentageT10=Double.valueOf(resultTop10.size())/Double.valueOf(obj.resultsMap.size())*100;
 		if(emptybug==false)resultHM.put("T10", percentageT10); else resultHM.put("T10", 0.0);
 		//resultHM.put("T10", ComputePerformancePercent(TOP_K, obj));
+		//System.out.println(resultTop10.size());
 		//MiscUtility.showResult(resultTop10.size(), resultTop10);
 		//System.out.println("=================="+finalRankedResult.size());
 		//System.out.println("MRR at "+TOP_K+" "+ComputeMRR(resultTop10,obj, TOP_K));
@@ -437,7 +442,7 @@ public class PerformanceCalculatorPerfect {
 			for(String GoldFile:gitList){
 				if(GoldFile.equalsIgnoreCase(file.trim())){
 					found=1;
-					System.out.println(file);
+					System.out.println(bugID+"                        "+file);
 				}	
 			}
 			
@@ -469,7 +474,7 @@ public class PerformanceCalculatorPerfect {
 		int no_of_bug_matched=0;
 		
 		int total_found=0;
-	
+	  
 		for(String bugID:obj.resultsMap.keySet())
 		{
 		    
@@ -484,18 +489,19 @@ public class PerformanceCalculatorPerfect {
 	        	if(list.size()>0){
 	        		
 	        		total_found++;
-	        		System.out.println(bugID);
+	        		//System.out.println(bugID);
 	        		finalRankedResultlocal.put(bugID, list);
 	        	}
 	        }
 	       
-	       
+	        //else System.out.println("Not in Git?                              "+bugID);
 	    }
 	    
-	   // System.out.println("Total found: "+finalRankedResultlocal);
-	    //System.out.println("Total bug: "+obj.resultsMap.size());
-	    //System.out.println("Top "+TOP_K+" %: "+(Double.valueOf(total_found)/Double.valueOf(no_of_bug_matched))*100);
-	    //System.out.print((Double.valueOf(total_found)/Double.valueOf(no_of_bug_matched))*100+" ");
+	    System.out.println("Total found: "+total_found);
+	    System.out.println("Total bug: "+obj.resultsMap.size());
+	    System.out.println("No. of Matched Bug: "+no_of_bug_matched);
+	    System.out.println("Top "+TOP_K+" %: "+(Double.valueOf(total_found)/Double.valueOf(no_of_bug_matched))*100);
+	    System.out.print((Double.valueOf(total_found)/Double.valueOf(no_of_bug_matched))*100+" ");
 	    return finalRankedResultlocal;
 	  
 	}
