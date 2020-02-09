@@ -30,12 +30,12 @@ public class ClassNameBasedScore {
         // TODO Auto-generated method stub
         //Required input
         //Bug Report Query
-        String corpus="Apache";
-        String project="HBASE";
-        String version="1_2_4";
+        String corpus="Spring";
+        String project="ROO";
+        String version="1_1_0";
         String base= "E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;
         
-        String test="test2";
+        String test="test1";
         
         String QueryFolderPath=base+"\\data\\testsetForBL\\"+test+"\\";
         String IDsourcePath=base+"\\data\\changeset-pointer\\ID-SourceFile.txt";

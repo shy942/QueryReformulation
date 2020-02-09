@@ -13,7 +13,7 @@ public class GSMaker {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String fileAddress="C:\\Users\\Mukta\\Workspace-2018\\eclipse.platform.swt\\filename.txt";
+		String fileAddress="E:/PhD/Repo/Apache/HIVE/1_2_1/bugXML/HIVE_1_2_1.xml";
 		GSMaker obj=new GSMaker();
 		ArrayList<String> rawList=obj.readFile(fileAddress);
 		HashMap<String, ArrayList<String>> hm=obj.preProcessList(rawList);
@@ -37,7 +37,7 @@ public class GSMaker {
 				}
 			}
 		}
-		ContentWriter.writeContent("E:\\PhD\\SWT\\gitInfoSWT.txt", writeContent);
+		ContentWriter.writeContent("E:/PhD/Repo/Apache/HIVE/1_2_1/data/gitInfoApaceHIVE.txt", writeContent);
 	}
 	
 	public ArrayList<String> readFile(String gitfileAddress)

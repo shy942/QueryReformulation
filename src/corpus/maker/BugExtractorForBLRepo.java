@@ -34,8 +34,8 @@ public class BugExtractorForBLRepo {
 		// TODO Auto-generated method stub
 		
 		String corpus="Apache";
-		String project="HIVE";
-		String version="2_1_0";
+		String project="HBASE";
+		String version="1_2_4";
 		String base="E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;
 		String XMLfolderPath=base+"\\bugXML\\"+project+"_"+version+".xml";
 		//String outputBase="E:\\PhD\\ASE2019\\BugReports\\"+corpus;
@@ -83,7 +83,7 @@ public class BugExtractorForBLRepo {
             String outFile=bugFolder+"\\"+bugID+".txt";
             ContentWriter.writeContent(outFile, bugFixInfoHM.get(bugID));
         }
-        ;
+        
     }
 	protected void extractBugReports(String XMLfolderPath, String bugFolder, String gitFileadddress) {
 		try {
@@ -98,7 +98,7 @@ public class BugExtractorForBLRepo {
 
 			// normalize text representation
 			doc.getDocumentElement().normalize();
-
+			ArrayList<String> allBugIDs=new ArrayList<>();
 			NodeList listOfBugs = doc.getElementsByTagName("bug");
 			int totalBug = listOfBugs.getLength();
 			System.out.println("Total Bug: " + totalBug);
@@ -114,6 +114,7 @@ public class BugExtractorForBLRepo {
 		               Element eElement = (Element) nNode;
 		               //System.out.println(eElement.getAttribute("id"));
 		               bugID=eElement.getAttribute("id");
+		               allBugIDs.add(bugID);
 		               String opendate=eElement.getAttribute("opendate");
 		               long milis=processOpenDate(opendate);
 		               dateInforMillis.put(bugID, milis);
@@ -165,7 +166,7 @@ public class BugExtractorForBLRepo {
 			//MiscUtility.showResult(90, bugFixInfoHM);
 			HashMap<String, Long> dateInforMillisSorted=MiscUtility.sortByValuesIncrement(dateInforMillis);
 			WriteContent(bugInfoHM, bugFixInfoHM, bugFolder, gitFileadddress, dateInforMillisSorted);
-			
+			ContentWriter.writeContent(bugFolder+"/data/BugIDs.txt", allBugIDs);
 		} catch (Exception exc) {
 			exc.printStackTrace();
 		}

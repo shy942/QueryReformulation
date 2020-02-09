@@ -107,7 +107,7 @@ public class BugReportCorpusBuilderTitleAndDescription {
 		// TODO Auto-generated method stub
 		//IndividualYearProcessing();
 		//PutAll2gether();
-	    String corpus="Apache\\HIVE\\2_1_0";
+	    String corpus="Spring\\ROO\\1_1_0";
 		new BugReportCorpusBuilderTitleAndDescription(corpus).createPreprocessedRepo();
 	}
 

@@ -85,9 +85,9 @@ public class ChangesetMaker {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	   
-	    String corpus="Apache";
-	    String project="HBASE";
-	    String version="1_2_4";
+	    String corpus="Eclipse";
+	    String project="";
+	    String version="";
 	    String base= "E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;
 	    String gitInfoFile = base+"\\data\\gitInfo"+project+".txt";
 		//String gitInfoFile = "E:\\PhD\\Repo\\"+corpus+"\\data\\gitInfo"+corpus+".txt";

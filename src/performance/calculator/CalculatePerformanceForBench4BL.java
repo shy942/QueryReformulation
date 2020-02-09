@@ -12,83 +12,92 @@ import utility.ContentWriter;
 import utility.MiscUtility;
 
 public class CalculatePerformanceForBench4BL {
-
+  public ArrayList<String> listAllTestBugs;
     public HashMap<String, ArrayList<String>> gitResultsMap;
     public HashMap<String, ArrayList<String>> resultsMap;
     public String gitPath;
     public String resultPath;
-    public String trainIDsPath;
+    public String allBugPath;
     //public HashMap<String, String> bestRankListHM;
     //static HashMap<String, ArrayList<String>> finalRankedResult; 
     
     
-    public CalculatePerformanceForBench4BL(String gitPath, String resultPath)
+    public CalculatePerformanceForBench4BL(String gitPath, String resultPath, String allBugPath)
     {
         this.gitPath=gitPath;
         this.resultPath=resultPath;
         
         this.resultsMap=new HashMap<>();
         this.gitResultsMap=new HashMap<>();
+        this.listAllTestBugs=ContentLoader.getAllLinesOptList(allBugPath);
         //this.bestRankListHM=new HashMap<>();
         //this.finalRankedResult=new HashMap();
     }
     
     
-    public CalculatePerformanceForBench4BL(String trainIDsPath) {
+    public CalculatePerformanceForBench4BL() {
         // TODO Auto-generated constructor stub
-        this.trainIDsPath=trainIDsPath;
+        
+        
+        
     }
 
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         
-        //new PerformanceCalculatorPerfect().getSingleResult("");
-       // new PerformanceCalculatorPerfect().checkResultSizeAndContent(3071, "E:\\PhD\\Repo\\Eclipse", "VSMandMe", 0.4);
-        new CalculatePerformanceForBench4BL("TrainIDs2.txt").getAvgPerformance(1, "BugLocator_HBASE_HBASE_1_2_4_output.txt");
-        //new PerformanceCalculatorPerfect().getAvgPerformance(1, 0, "VSMandMe");
+        String [] methodList={"BugLocator","BLUiR","BRTracer","Amalgam","BLIA", "Locus"};
+        for(int index=0;index<methodList.length;index++){
+            System.out.print("Result For: "+methodList[index]);
+            new CalculatePerformanceForBench4BL().getAvgPerformance("Spring","ROO", "1_1_0", methodList[index]);
+        }
+       //new CalculatePerformanceForBench4BL().getAvgPerformance("Apache","HIVE", "1_2_1", "Locus");
+       
     }
 
    
     
-    public static void getAvgPerformance(int no_of_fold, String resultoutput)
+    public static void getAvgPerformance( String corpus, String project, String version,  String technique)
     {
         HashMap <String, HashMap<String, Double>> resultContainer=new HashMap<>();
-        CalculatePerformanceForBench4BL obj=new CalculatePerformanceForBench4BL("TrainIDs2.txt");
+        CalculatePerformanceForBench4BL obj=new CalculatePerformanceForBench4BL();
         
-        String corpus="Apache";
-        String project="HBASE";
-        String version="1_2_4";
-        
-        String technique="BugLocator";
+        //String corpus="Apache";
+        //String project="CAMEL";
+       // String version="1_6_0";
+        String resultoutput=technique+"_"+project+"_"+project+"_"+version+"_output.txt";
+        String expName="exp"+corpus+project+"_"+version;
         String base= "E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;
-        String trainIDs=base+"\\data\\trainBugIDs\\"+obj.trainIDsPath;
-        
-        ArrayList<String> listTrainIds=ContentLoader.getAllLinesOptList(trainIDs);
-        System.out.println(listTrainIds);
-        
+       
+       // String alltestBugs=base+"/data/"+"allTestBugs.txt";
+        String alltestBugs=base+"/data/"+"BugIDs.txt";
         ArrayList<String> listBRall=new ArrayList<>();
-        for(int i=1;i<=no_of_fold;i++)
-        {
-            int test=i;
+        
+       
+        
+        
+
+      
             
-            obj=new CalculatePerformanceForBench4BL(base+"\\data\\gitInfo"+project+".txt",base+"\\OthersResult\\"+technique+"//"+resultoutput);       
-                         obj.gitResultsMap=obj.getGitOutput(obj.gitPath);
-            
-            obj.resultsMap=obj.getResults(obj.resultPath, listTrainIds); 
+            obj=new CalculatePerformanceForBench4BL(base+"\\data\\gitInfo.txt",base+"/Bench4BLresults/"+expName+"/"+corpus+"/"+project+"/"+resultoutput, alltestBugs);       
+                        
+            obj.gitResultsMap=obj.getGitOutput(obj.gitPath);
+            HashMap<String, ArrayList<String>> resultsMap=obj.getResults(obj.resultPath); 
          
             String key=obj.resultPath;
-            System.out.println(key);
-            System.out.println(obj.resultsMap);
-            HashMap<String, Double> resultHM=getResultForTopK(obj);
+           // System.out.println(key);
+            //System.out.println(resultsMap);
+           // System.out.println(resultsMap.size());
             
-          
+            HashMap<String, Double> resultHM=obj.getResultForTopK(resultsMap);
+            resultContainer.put(key, resultHM);
+            
        
-        }
+        
         //Now get the averageResult
-        getAverageResult(resultContainer, no_of_fold);
+       // getAverageResult(resultContainer);
        
-        MiscUtility.showResult(resultContainer.size(), resultContainer);
+        //MiscUtility.showResult(resultContainer.size(), resultContainer);
   
     }
     
@@ -97,7 +106,7 @@ public class CalculatePerformanceForBench4BL {
   
     
    
-    public static void getAverageResult(HashMap <String, HashMap<String, Double>> resultContainer, int no_of_fold)
+    public static void getAverageResult(HashMap <String, HashMap<String, Double>> resultContainer)
     {
         double top1=0.0;
         double top5=0.0;
@@ -122,14 +131,14 @@ public class CalculatePerformanceForBench4BL {
             //System.out.println(top1+" "+top5+" "+top10+" ");
         }
         
-        System.out.println(no_of_fold);
-        System.out.println(top1+" "+top1/Double.valueOf(no_of_fold));
-        System.out.println(top5+" "+top5/Double.valueOf(no_of_fold));
-        System.out.println(top10+" "+top10/Double.valueOf(no_of_fold));
-        System.out.println("MRR @ 10 "+MRR10/Double.valueOf(no_of_fold));
-        System.out.println("MAP @ 10 "+MAP10/Double.valueOf(no_of_fold));
+        System.out.println();
+        System.out.println(top1+" "+top1);
+        System.out.println(top5+" "+top5);
+        System.out.println(top10+" "+top10);
+        System.out.println("MRR @ 10 "+MRR10);
+        System.out.println("MAP @ 10 "+MAP10);
     }
-    public static HashMap<String, Double> getResultForTopK(CalculatePerformanceForBench4BL obj)
+    public HashMap<String, Double> getResultForTopK(HashMap<String, ArrayList<String>> resultsMap)
     {
         
         boolean emptybug=false;
@@ -137,99 +146,71 @@ public class CalculatePerformanceForBench4BL {
         int TOP_K=1;
         int count=0;
         //System.out.println("Result for Top-"+TOP_K);
-        HashMap<String, ArrayList<String>> resultTop1=ComputePerformancePercent(TOP_K, obj);
-        /*if(resultTop1.size()>0){
-            for(String key:resultTop1.keySet()) {
-                //System.out.println(++count+" "+key+" "+resultTop1.get(key));
-                resultHM.put("bugid", Double.valueOf(key));
-            }
-        }
-        else {
-            Set<String> hashset=obj.resultsMap.keySet();
-            String id=hashset.toString();
-            id=id.substring(1,id.length()-1);
-            //System.out.println(id);
-            if(id.isEmpty()==false)
-            {
-                resultHM.put("bugid", Double.valueOf(id));
-               
-            }
-            else 
-            {
-                resultHM.put("bugid", 1.00);
-                emptybug=true;
-            }
-        }*/
-        //MiscUtility.showResult(resultTop1.size(), resultTop1);
-        
-        for(String key:resultTop1.keySet())
-            {
-               // System.out.println(++count+" "+key+" "+resultTop1.get(key));
-                //resultHM.put("bugid", Double.valueOf(key));
-            }
-        
-        double percentageT1=Double.valueOf(resultTop1.size())/Double.valueOf(obj.resultsMap.size())*100;
-        if(emptybug==false)resultHM.put("T1", percentageT1); else resultHM.put("T1", 0.0);
-        if(emptybug==false)resultHM.put("MAP@1", ComputeMAP(resultTop1,obj));else resultHM.put("MAP@1", 0.0);
-        if(emptybug==false)resultHM.put("MRR@1", ComputeMRR(resultTop1,obj, TOP_K));else resultHM.put("MRR@1", 0.0);
-        //System.out.println("MRR at "+TOP_K+" "+ComputeMRR(resultTop1,obj, TOP_K));
-        //System.out.println("MAP at "+TOP_K+" "+ComputeMAP(resultTop1,obj));
-        
-        //finalRankedResult.clear();
-        //System.out.println("=============================================================================");
+        HashMap<String, ArrayList<String>> resultTop1=ComputePerformancePercent(TOP_K, resultsMap);
+        System.out.println("============================="+resultTop1.size()+" "+this.gitResultsMap.size());
+
+
+       double percentageT1=Double.valueOf(resultTop1.size())/this.gitResultsMap.size()*100;
+       //double percentageT1=Double.valueOf(resultTop1.size())/resultsMap.size()*100;
+       System.out.println(percentageT1);
+   
+       resultHM.put("T1", percentageT1); 
+       //resultHM.put("MAP@1", ComputeMAP(resultTop1));
+            
+         //   resultHM.put("MRR@1", ComputeMRR(resultTop1, TOP_K));
+
         TOP_K=5;
-        //System.out.println("Result for Top-"+TOP_K);
-        HashMap<String, ArrayList<String>> resultTop5=ComputePerformancePercent(TOP_K, obj);
-        count=0;
-        //for(String key:resultTop5.keySet())System.out.println(++count+" "+key+" "+resultTop5.get(key));
-        double percentageT5=Double.valueOf(resultTop5.size())/Double.valueOf(obj.resultsMap.size())*100;
-        if(emptybug==false)resultHM.put("T5", percentageT5);else resultHM.put("T5", 0.0); 
-        if(emptybug==false)resultHM.put("MAP@5", ComputeMAP(resultTop5,obj)); else resultHM.put("MAP@5", 0.0);
-        if(emptybug==false)resultHM.put("MRR@5", ComputeMRR(resultTop5,obj, TOP_K)); else resultHM.put("MRR@5", 0.0);
+        HashMap<String, ArrayList<String>> resultTop5=ComputePerformancePercent(TOP_K, resultsMap);
+        System.out.println("============================="+resultTop5.size()+" "+this.gitResultsMap.size());
+       double percentageT5=Double.valueOf(resultTop5.size())/this.gitResultsMap.size()*100;
+        //double percentageT5=Double.valueOf(resultTop5.size())/resultsMap.size()*100;
+        System.out.println(percentageT5);
+        //double total_size=Double.valueOf(obj.resultsMap.size());
         
-        
-        //System.out.println("=============================================================================");
+       // double percentageT5=(p5/total_size)*100;
+       
+           // resultHM.put("T5", percentageT5);
+           //
+          //  resultHM.put("MAP@5", ComputeMAP(resultTop5)); 
+            
+            //resultHM.put("MRR@5", ComputeMRR(resultTop5,TOP_K));
+            
         TOP_K=10;
-        //System.out.println("Result for Top-"+TOP_K);
-        HashMap<String, ArrayList<String>> resultTop10=ComputePerformancePercent(TOP_K, obj);
-        
-        double percentageT10=Double.valueOf(resultTop10.size())/Double.valueOf(obj.resultsMap.size())*100;
-        if(emptybug==false)resultHM.put("T10", percentageT10); else resultHM.put("T10", 0.0);
-        //resultHM.put("T10", ComputePerformancePercent(TOP_K, obj));
-        //System.out.println(resultTop10.size());
-        //MiscUtility.showResult(resultTop10.size(), resultTop10);
-        //System.out.println("=================="+finalRankedResult.size());
-        //System.out.println("MRR at "+TOP_K+" "+ComputeMRR(resultTop10,obj, TOP_K));
-        //System.out.println("MAP at "+TOP_K+" "+ComputeMAP(resultTop10,obj));
-        
-        if(emptybug==false)resultHM.put("MAP@10", ComputeMAP(resultTop10,obj));else resultHM.put("MAP@10", 0.0);
-        if(emptybug==false)resultHM.put("MRR@10", ComputeMRR(resultTop10,obj, TOP_K)); else resultHM.put("MRR@10", 0.0);
-        //MiscUtility.showResult(10, resultHM);
-        //FindBestRank(1000, obj);
+        HashMap<String, ArrayList<String>> resultTop10=ComputePerformancePercent(TOP_K, resultsMap);
+        System.out.println("============================="+resultTop10.size()+" "+this.gitResultsMap.size());
+        double percentageT10=Double.valueOf(resultTop10.size())/this.gitResultsMap.size()*100;
+        //double percentageT10=Double.valueOf(resultTop10.size())/resultsMap.size()*100;
+        System.out.println(percentageT10);
+           // resultHM.put("T10", percentageT10);
+            
+          //  resultHM.put("MAP@10", ComputeMAP(resultTop10));
+          
+          //  resultHM.put("MRR@10", ComputeMRR(resultTop10 TOP_K));
+            
         return resultHM;
     }
     
     
     
     
-    public static double ComputeMAP(HashMap<String, ArrayList<String>> finalRankedResult, CalculatePerformanceForBench4BL obj)
+    public static double ComputeMAP(HashMap<String, ArrayList<String>> finalRankedResult)
     {
         double averagePrecision=0.0;
         for(String queryID: finalRankedResult.keySet())
         {
             ArrayList<String> rankList=finalRankedResult.get(queryID);
-            averagePrecision+=getAvgPrecisionEachQuery(rankList, queryID, obj);
+            //averagePrecision+=getAvgPrecisionEachQuery(rankList, queryID);
             //System.out.println(rankList);
             //System.out.println(getAvgPrecisionEachQuery(rankList));
         }
-        int totalQuery=obj.resultsMap.size();
+      //  int totalQuery=.size();
         //System.out.println("averagePrecision: "+averagePrecision);
-        double MAP=averagePrecision/Double.valueOf(totalQuery);
+      //  double MAP=averagePrecision/Double.valueOf(totalQuery);
         //System.out.println("Total Query: "+totalQuery+" MAP: "+MAP);
-        return MAP;
+        return 0.0;
     }
     
-    public static double getAvgPrecisionEachQuery(ArrayList<String> rankList, String queryID, CalculatePerformanceForBench4BL obj)
+    public double getAvgPrecisionEachQuery(ArrayList<String> rankList, String queryID)
     {
         double Precision=0.0;
         int count =0;
@@ -239,7 +220,7 @@ public class CalculatePerformanceForBench4BL {
             int rank=Integer.valueOf(rankStr);
             Precision+=Double.valueOf(count)/Double.valueOf(rank);
         }
-        int length=obj.gitResultsMap.get(queryID).size();
+        int length=this.gitResultsMap.get(queryID).size();
         //double AvgPrecision=Precision/Double.valueOf(count);
         double AvgPrecision=Precision/Double.valueOf(length);
         return AvgPrecision;
@@ -269,7 +250,7 @@ public class CalculatePerformanceForBench4BL {
         int count =0;
         int length=rankList.size();
         
-        recall1st=1/Double.valueOf(rankList.get(0));
+        recall1st=1/Double.valueOf(rankList.get(0)+1);
         
         return recall1st;
         
@@ -320,7 +301,7 @@ public class CalculatePerformanceForBench4BL {
             for(String GoldFile:gitList){
                 if(GoldFile.equalsIgnoreCase(file.trim())){
                     found=1;
-                    System.out.println(bugID+"                        "+file);
+                    //System.out.println(bugID+"                        "+file);
                 }   
             }
             
@@ -345,52 +326,52 @@ public class CalculatePerformanceForBench4BL {
         return list;
     }
     
-    private static HashMap<String, ArrayList<String>> ComputePerformancePercent(int TOP_K, CalculatePerformanceForBench4BL obj) {
+    private HashMap<String, ArrayList<String>> ComputePerformancePercent(int TOP_K, HashMap<String, ArrayList<String>> resultsMap) {
         // TODO Auto-generated method stub
         
         HashMap<String, ArrayList<String>> finalRankedResultlocal=new HashMap<>();
         int no_of_bug_matched=0;
         
         int total_found=0;
-      
-        for(String bugID:obj.resultsMap.keySet())
+       
+        for(String bugID:resultsMap.keySet())
         {
-            
-            ArrayList <String> resultList= obj.resultsMap.get(bugID); //Get the experimented results
-            if(obj.gitResultsMap.containsKey(bugID))// Truth set contains the bug
+          //  if(this.listAllTestBugs.contains(bugID))
             {
-                ArrayList <String> gitList=obj.gitResultsMap.get(bugID);
-                no_of_bug_matched++;
-                //ArrayList<String> list=getRankedResult(resultList,gitList, bugID, TOP_K);
-                for(int i=0;i<resultList.size();i++)
+            ArrayList<String> list=new ArrayList<String>();
+            int found=0;
+            ArrayList <String> resultList=resultsMap.get(bugID); //Get the experimented results
+            for(int i=0;i<resultList.size();i++)
                 {
                     for(int j=0;j<TOP_K;j++)
                     {
                         if(Integer.valueOf(resultList.get(i))==j)
                             {
-                                total_found++;
+                                
+                                list.add(resultList.get(i));
+                                found++;
                                 break;
                             }
                     }
                         
                 }
-                 
-                //if(list.size()>0){
+                if(list.size()>0){
                     
-                   // total_found++;
-                    //System.out.println(bugID);
-                   // finalRankedResultlocal.put(bugID, list);
+                    total_found++;
                 }
+                
+                if(found>0)finalRankedResultlocal.put(bugID, list);
+                
             
         }
             //else System.out.println("Not in Git?                              "+bugID);
+        }
         
-        
-        System.out.println("Total found: "+total_found);
-        System.out.println("Total bug: "+obj.resultsMap.size());
-        System.out.println("No. of Matched Bug: "+no_of_bug_matched);
-        System.out.println("Top "+TOP_K+" %: "+(Double.valueOf(total_found)/Double.valueOf(no_of_bug_matched))*100);
-        System.out.print((Double.valueOf(total_found)/Double.valueOf(no_of_bug_matched))*100+" ");
+        //System.out.println("Total found: "+total_found);
+        //System.out.println("Total bug: "+resultsMap.size());
+        //System.out.println("No. of Matched Bug: "+no_of_bug_matched);
+        //System.out.println("Top "+TOP_K+" %: "+(Double.valueOf(total_found)/Double.valueOf(no_of_bug_matched))*100);
+        //System.out.print((Double.valueOf(total_found)/Double.valueOf(no_of_bug_matched))*100+" ");
         return finalRankedResultlocal;
       
     }
@@ -423,7 +404,7 @@ public class CalculatePerformanceForBench4BL {
                         i++;
                     }
                 }
-                System.out.println("Changeset reloaded successfully for :"
+                System.out.println("\nChangeset reloaded successfully for :"
                         + hm.size());
                 return hm;
     
@@ -432,7 +413,7 @@ public class CalculatePerformanceForBench4BL {
     
     
 
-    private HashMap<String, ArrayList<String>> getResults(String resultPath, ArrayList<String> listTrainIds) {
+    private HashMap<String, ArrayList<String>> getResults(String resultPath) {
         // TODO Auto-generated method stub
         HashMap<String, ArrayList<String>> hm=new HashMap<>();
         ArrayList <String> list =new ArrayList<String>();
@@ -442,15 +423,16 @@ public class CalculatePerformanceForBench4BL {
         if(list.size()>1){
         for(String line: list)
         {
-            //System.out.println(line);
+           // System.out.println(line);
             String [] spilter=line.split("\\s");
             String bugID=spilter[0];
-            if(!listTrainIds.contains(bugID))
+           if(this.listAllTestBugs.contains(bugID))
             {
             String rankInfo=spilter[2];
-            int rank=Integer.valueOf(spilter[2]);
-            
-            //ArrayList<String> fileAddress=new ArrayList<String>();
+            int rank=Integer.valueOf(rankInfo);
+           // rank=rank+1;
+            rankInfo=String.valueOf(rank);
+           
             ArrayList<String> rankList=new ArrayList<>();
             if(rank<10)
             {
@@ -465,9 +447,7 @@ public class CalculatePerformanceForBench4BL {
                 }
                 hm.put(bugID, rankList);
             }
-            else
             
-                hm.put(bugID, rankList);
         }
         }
         }

@@ -107,10 +107,10 @@ public class SourceFilePointerMaker {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//String changeDir="/Users/user/Documents/Ph.D/2018/Data/changeset/";
-	    String corpus="Apache";
+	    String corpus="Spring";
 	   
-	        String project="HBASE";
-	        String version="1_2_4";
+	        String project="ROO";
+	        String version="1_1_0";
 	        String base= "E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;
 	        String changeDir=base+"\\data\\changeset\\";
 		//String changeDir="E:\\PhD\\Repo\\"+corpus+"\\data\\changeset\\";

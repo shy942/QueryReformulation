@@ -185,9 +185,9 @@ public class Mapper {
 		obj.bugSourceMap=obj.LoadMap("./data/changeset-pointer/Bug-ID-SrcFile-ID-Mapping.txt");
 		obj.KeywordSourceMap=obj.CreateTokenSouceFileMap(obj.tokenBugMap,obj.bugSourceMap, "./data/FinalMap/TokenSourceMapTrainset"+train+".txt");*/
 			int train=i;
-			String corpus="Apache";
-		    String project="HBASE";
-	        String version="1_2_4";
+			String corpus="Eclipse";
+		    String project="";
+	        String version="";
 	        String base= "E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;
 			Mapper obj=new Mapper(base+"\\data\\trainset\\Train"+train+".txt");
 			obj.bugKeywordMap=obj.LoadMap(base+"\\data\\trainset\\Train"+train+".txt");

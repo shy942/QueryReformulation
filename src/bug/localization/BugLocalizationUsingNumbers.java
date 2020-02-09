@@ -555,32 +555,32 @@ public class BugLocalizationUsingNumbers {
         
 		//Work on necessary inputs or maps
 		int total_test=2;
-		double alpha=0.4;
+		double alpha=0.0;
 		ArrayList<String> resultAll=new ArrayList<String>();
-		String corpus="Apache";
+		String corpus="Eclipse";
 		for(int i=1;i<=total_test;i++)
 		{
 			
 			int test=i;
-		    String project="HBASE";
-	        String version="1_2_4";
-	        String base= "E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;
+		    String project="";
+	        String version="";
+	       // String base= "E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;
 	        
-			//String base="E:\\PhD\\Repo\\"+corpus+"\\"; 
+			String base="E:\\PhD\\Repo\\"+corpus+"\\"; 
 			
 			BugLocalizationUsingNumbers obj=new BugLocalizationUsingNumbers(base+"\\data\\FinalMap\\TokenSourceMapTrainset"+test+".txt",base+"\\data\\testset\\test"+test+".txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\data\\changeset-pointer\\ID-SourceFile.txt",base+"\\data\\ID-Keyword.txt");
 			String bugReportFolder = base+"\\data\\testsetForBL\\test"+test;
 			//For Mac
 			//String sourceFolder = "/Users/user/Documents/Ph.D/2018/Data/ProcessedSourceForBL/";
 			//ForWindows
-			String sourceFolder = base+"\\ProcessedSourceCorpusJuly2019\\";
+			String sourceFolder = base+"\\ProcessedSourceCorpus3\\";
 				
 			//String goldsetFile = base+"\\data\\"+corpus+"All.txt";
 			
 			String outputFilePath
 			//="./data/Results/Aug24BLTest"+test+".txt";
 			=base+"\\data\\Results\\"
-			        + "VSMandMeJuly10"+alpha+"-"
+			        + "VSMandMeFeb06-2020"+alpha+"-"
 			+test
 			+".txt";
 			//="./data/Results/Aug24TFbasedTest"+test+".txt";
@@ -625,8 +625,8 @@ public class BugLocalizationUsingNumbers {
 		 	//For Eclipse
 		 	//String indexDir="C:\\Users\\Mukta\\Workspace-2018\\BigLocatorRVSM\\Data\\Index\\";
 		 	//ForSWT
-		 	String indexDir=base+"\\data\\Index"+corpus+project+version;
-		 	//String indexDir="E:\\PhD\\Repo\\"+corpus+"\\data\\Index"+corpus;
+		 	//String indexDir=base+"\\data\\Index"+corpus+project+version;
+		 	String indexDir="E:\\PhD\\Repo\\"+corpus+"\\data\\Index"+corpus;
 			obj.buglocatorRESULT=new BugLocatorLuceneBased(indexDir, bugReportFolder )
 					.getLuceneBasedScore();
 			System.out.println(obj.buglocatorRESULT+"                99999999999999999999999999999999999999999999999999999999999");
@@ -657,15 +657,15 @@ public class BugLocalizationUsingNumbers {
 					
 					//System.out.println("===========================BL");
 					//MiscUtility.showResult(10,SortedBLresult );
-					HashMap<Integer,Double> sortedResultMyTool
+					//HashMap<Integer,Double> sortedResultMyTool
 					//=obj.findBugForEachQueryCosineSimBased(queryID);
-					=obj.ResultBasedOnTF(queryID);
+					//=obj.ResultBasedOnTF(queryID);
 					//System.out.println("===========================My");
 					//MiscUtility.showResult(10, sortedResultMyTool);
 					HashMap<Integer, Double> resultMap
 					//=sortedResultMyTool;
-					//=SortedBLresult;
-					=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA, hmQueryClassFileScore);
+					=SortedBLresult;
+					//=obj.CombileScoreMaker(queryID,SortedBLresult, sortedResultMyTool, ALPHA, hmQueryClassFileScore);
 					//System.out.println("===========================Comp");
 					//MiscUtility.showResult(10, resultMap);
 					querypath=String.valueOf(queryID);
@@ -676,8 +676,8 @@ public class BugLocalizationUsingNumbers {
 					    {
 					    count++;
 						if(count>10)break; 
-						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+sortedResultMyTool.get(key)+","+SortedBLresult.get(key));
-						//finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+SortedBLresult.get(key));
+						//finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+sortedResultMyTool.get(key)+","+SortedBLresult.get(key));
+						finalResult.add(queryID+","+this.SourceIDMap.get(key)+","+resultMap.get(key)+","+SortedBLresult.get(key));
 						//finalResult.add(queryID+","+this.SourceIDMap.get(key));
 					    }
 						

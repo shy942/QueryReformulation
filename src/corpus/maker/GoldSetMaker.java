@@ -29,8 +29,8 @@ public class GoldSetMaker {
 		maker.goldSetMaker(gitPath);
 		*/
 	    String base="E:\\PhD\\Repo\\";
-	    String corpus="Apache";
-	    String gitPath=base+corpus+"\\GitInfo/FixLink.txt";
+	    String corpus="Apache/HIVE/1_2_1";
+	    String gitPath=base+corpus+"\\data/FixLink.txt";
 	    String outpath=base+corpus+"\\data\\gitinfo"+corpus+".txt";
         GoldSetMaker maker=new GoldSetMaker();
         maker.GoldSetMakerFromBench4BLtoMyTool(gitPath, outpath);

@@ -15,6 +15,7 @@ public class DataSetsPreaparation {
 	private String bugInFolder;
 	private HashMap<String, String> bugContentHM;
 	String base;
+	ArrayList<String> allTestingBug;
 	public DataSetsPreaparation(String bugIDFile, String bugKeywordFile, String bugInFolder, String base)
 	{
 		this.bugIDlist=bugIDlist;
@@ -25,6 +26,7 @@ public class DataSetsPreaparation {
 		this.bugInFolder=bugInFolder;
 		this.bugContentHM=new HashMap<>();
 		this.base=base;
+		this.allTestingBug=new ArrayList<>();
 	}
 	
 	public DataSetsPreaparation()
@@ -37,21 +39,23 @@ public class DataSetsPreaparation {
 		//For MAcww
 		//DataSetsPreaparation obj=new DataSetsPreaparation("./data/bugIDs.txt","./data/Bug-ID-Keyword-ID-Mapping.txt","/Users/user/Documents/Ph.D/2018/Data/ProcessedBugData/");
 		//For Windows
-	    String corpus="Apache";
-	    String project="HBASE";
-	    String version="1_2_4";
+	    String corpus="Eclipse";
+	    String project="";
+	    String version="";
 	    String base= "E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;
-		//Dont do this now
+		
+	    //Dont do this now
 		//new DataSetsPreaparation().creatAllbugs(base+"\\BugData3071\\",base+"\\data\\allBug.txt");
 		//new DataSetsPreaparation(base+"\\data\\allBug.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData1KB\\",base).DataPreparation(base+"\\data\\allBug.txt",base+"\\data\\gitInfoEclipse.txt",base+"\\data\\bugIDs.txt",base+"\\BugData1KB\\");
 		
-		DataSetsPreaparation obj=new DataSetsPreaparation(base+"\\data\\BugIDdateBased.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugData\\", base);
+		DataSetsPreaparation obj=new DataSetsPreaparation(base+"\\data\\BugIDdateBased.txt",base+"\\data\\Bug-ID-Keyword-ID-Mapping.txt",base+"\\BugDataAll\\", base);
 			
 		
 		
 		obj.bugContentHM=obj.LoadBugData();
 		ArrayList<String> foldList=obj.FoldPreparation(2);
 		obj.TrainAndTestSetPrepIncremental(foldList,2);
+		ContentWriter.writeContent(base+"/data/allTestBugs.txt", obj.allTestingBug);
 	}
       
 	private void creatAllbugs(String bugFolder, String outFile) {
@@ -237,6 +241,7 @@ public class DataSetsPreaparation {
     
     	for(String ID:testID)
     	{
+    	    this.allTestingBug.add(ID);
     		for(String line:bugKeywordLines)
     		{
     			
@@ -327,7 +332,7 @@ public class DataSetsPreaparation {
 		int N=bugIDlist.size();
 		
 		//int k=Integer.valueOf(N/no_of_fold);
-		int k=50;
+		int k=1000;
 		System.out.println("k="+k);
 		int start=1;
 		int end=k;

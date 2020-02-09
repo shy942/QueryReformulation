@@ -19,7 +19,7 @@ public class SourceCodeCorpusBuilder {
 	public SourceCodeCorpusBuilder(String base)
 	{
 		this.base=base;
-		this.sourceCodeFolder=new File(base+"\\Source\\HBASE_1_2_4\\");
+		this.sourceCodeFolder=new File(base+"\\Source\\AspectJ_1_6_0_M2\\AspectJ_1_6_0_M2\\");
 		this.sourceCodePPFolder=base+"\\ProcessedSourceCorpusJuly2019\\";
 		this.javaFilePaths=new ArrayList<String>();
 		this.javaFilePathsLastName=new ArrayList<String>();
@@ -41,7 +41,7 @@ public class SourceCodeCorpusBuilder {
 			CommentFilterer cf=new CommentFilterer(s,fileName);
 			cf.discardClassHeaderComment();
 			
-			String repoFolder=this.base+"\\Source\\HBASE_1_2_4\\";
+			String repoFolder=this.base+"\\Source\\AspectJ_1_6_0_M2\\";
 			//String repoFolder="E:\\BugLocator\\Source\\swt-3.1\\";
 			String methodFolder=this.base+"\\methodJuly2019\\";
 			MethodCorpusDeveloper developer=new MethodCorpusDeveloper(repoFolder, methodFolder,this.base);
@@ -96,10 +96,12 @@ public class SourceCodeCorpusBuilder {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String corpus="Apache";
-	    String project="HBASE";
-        String version="1_2_4";
-        String base= "E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;
+		/*String corpus="Spring";
+	    String project="ROO";
+        String version="1_1_0";
+        String base= "E:\\PhD\\Repo\\"+corpus+"\\"+project+"\\"+version;*/
+	    String corpus="AspectJ";
+	    String base= "E:\\PhD\\Repo\\"+corpus+"\\";
 		//String base="E:\\PhD\\Repo\\"+corpus+"\\";
 		new SourceCodeCorpusBuilder( base).createPreprocessedRepo(corpus);
 		//This is a simple change.

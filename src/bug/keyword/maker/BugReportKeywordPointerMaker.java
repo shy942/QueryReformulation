@@ -94,8 +94,9 @@ public class BugReportKeywordPointerMaker {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String base="E:PhD\\Repo\\Apache\\HBASE\\1_2_4";
-		String bugReportDir = base+"\\BugData\\";  
+		//String base="E:PhD\\Repo\\Spring\\ROO\\1_1_0";
+		String base="E:PhD\\Repo\\Eclipse";
+		String bugReportDir = base+"\\BugDataAll\\";  
 		new BugReportKeywordPointerMaker(bugReportDir,base+"\\data\\BugIDdateBased.txt",base).developBugKeywordPointer();
 	}
 }
